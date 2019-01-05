@@ -1,5 +1,9 @@
 # Java Packages Tutorial
 
+##Prerequisites
+This tutorial assumes that the reader has a knowledge of basic Unix commands and experience working with a command-line text editor (e.g. emacs, vi, etc.).
+
+##Java Packages
 In Java, a **package** is a grouping of related types providing access protection and name space management. 
 Note that types refers to classes, interfaces, enumerations, and annotation types [[1]](https://docs.oracle.com/javase/tutorial/java/package/packages.html).
 The two primary benefits of packages are:
