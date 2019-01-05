@@ -1,9 +1,9 @@
 # Java Packages Tutorial
 
-##Prerequisites
+## Prerequisites
 This tutorial assumes that the reader has a knowledge of basic Unix commands and experience working with a command-line text editor (e.g. emacs, vi, etc.).
 
-##Java Packages
+## Java Packages
 In Java, a **package** is a grouping of related types providing access protection and name space management. 
 Note that types refers to classes, interfaces, enumerations, and annotation types [[1]](https://docs.oracle.com/javase/tutorial/java/package/packages.html).
 The two primary benefits of packages are:
@@ -53,7 +53,7 @@ temporary applications or when just beginning development
 Let's try it! 
    
 1. Using Emacs, create a basic "Hello, World!" program in a driver class
-   called `HelloWorld` in the default package directory.
+   called `HelloWorld` in the default package directory (`src`).
    For example, the contents of the `HelloWorld.java` file might be:
       
    ```java
@@ -102,7 +102,9 @@ Let's try it!
    The error message clearly states that the `HelloWorld` class containing the `main` method
    could not be found or loaded. 
   
-   Now try running the program again, specifying the class path using `-cp`:
+   Now try running the program again, specifying the location of the default package where our compiled code resides.  
+   Since we compiled the class into the 'src' directory, 'src' is the default package for our compiled code (for now).  
+   Execute the following command to specify the class path:
       
    ```
    $ java -cp src HelloWorld
@@ -131,7 +133,7 @@ Let's try it!
    ```
       
    Now, if you list the contents of the `bin` directory, you will see that it contains
-   `HelloWorld.java`.
+   `HelloWorld.class`.
       
    Try running the program again, specifying the new class path using `-cp`:
       
@@ -172,7 +174,7 @@ Let's try it by placing the `HelloWorld` class into the `cs1302.hello` package!
    package cs1302.hello;
    ```
       
-   This satisfies the first requirement for placing a class in a named package.
+   This satisfies the second requirement for placing a class in a named package.
       
    In Java, a package statement, if included, must be the first line of code in
    the file (i.e., excluding comments and white space).
@@ -183,7 +185,8 @@ Let's try it by placing the `HelloWorld` class into the `cs1302.hello` package!
    $ javac -d bin src/cs1302/hello/HelloWorld.java
    ```
       
-   Note that the `HelloWorld.class` file was created under `bin/cs1302/hello`.
+   Note that the `HelloWorld.class` file was created under `bin/cs1302/hello`. The compiler automatically created
+   the necessary package directories for our compiled code under `bin`.
       
 5. Try to run the program using `javac` specify the classpath using `-cp` and include the
    fully qualified name of the class containing the `main` method:
