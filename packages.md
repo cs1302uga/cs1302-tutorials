@@ -203,7 +203,10 @@ Let's try it by placing the `HelloWorld` class into the `cs1302.hello` package!
    `HelloWorld` class in the `cs1302.hello` package. You have seen fully qualified names before--they
    are often used with `import` statements to make classes in other packages available using their
    simple class name. In this case, the `HelloWorld` part of `cs1302.hello.HelloWorld` is known as 
-   the **name** or **simple name** of the class. 
+   the **name** or **simple name** of the class.
+   
+   **PROTIP:** Although packages correspond to directories, a fully qualified name uses `.` (dot) 
+   for the name separator and not a slash.
  
 5. Congratulations, you've successfully completed this tutorial!
 
