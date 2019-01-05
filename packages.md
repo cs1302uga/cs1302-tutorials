@@ -1,15 +1,19 @@
 # Java Packages Tutorial
 
 ## Prerequisites
+
 This tutorial assumes that the reader has a knowledge of basic Unix commands and experience working with a command-line text editor (e.g. emacs, vi, etc.).
 
 ## Java Packages
+
 In Java, a **package** is a grouping of related types providing access protection and name space management. 
 Note that types refers to classes, interfaces, enumerations, and annotation types [[1]](https://docs.oracle.com/javase/tutorial/java/package/packages.html).
 The two primary benefits of packages are:
+
 * **Name Space Management:**  Packages allow you to give a common name to a group of related types.
   For example, `java.util.Scanner` and `java.util.Random` are two utility classes provided in the `java.util` package.
   You and other programmers can easily determine that these types are related.
+  
 * **Access Protection:** Visibility in Java is not limited to `public` and `private`. 
   Packages and additional visibility modifiers enable programmers to declare things as visible only within a package.
 
@@ -113,8 +117,8 @@ Let's try it!
    This time it worked! 
       
    **PROTIP:** You can execute a Java program anywhere on the system as long as you know
-   the name of the class containing the `main` method and the location of that compiled class's
-   associated default package, assuming proper file permissions. 
+   the fully qualified name of the class containing the `main` method and the location of that 
+   compiled class's associated default package, assuming proper file permissions. 
       
 6. You may have noticed in the previous step that the `.java` file and `.class` file
    for the `HelloWorld` class are in the same directory. Let's keep things clean and
@@ -198,7 +202,8 @@ Let's try it by placing the `HelloWorld` class into the `cs1302.hello` package!
    In this example, `cs1302.hello.HelloWorld` is known as the **fully qualified name** of the
    `HelloWorld` class in the `cs1302.hello` package. You have seen fully qualified names before--they
    are often used with `import` statements to make classes in other packages available using their
-   simple class name. 
+   simple class name. In this case, the `HelloWorld` part of `cs1302.hello.HelloWorld` is known as 
+   the **name** or **simple name** of the class. 
  
 5. Congratulations, you've successfully completed this tutorial!
 
