@@ -67,6 +67,13 @@ for a particular class of user for the file.
 | `6`   | `110`  | `rw-`    | 
 | `7`   | `111`  | `rwx`    | 
 
+In the case of `644`, the file has the following permissions:
+
+| Class | Octal | Binary | Symbolic |
+|-------|-------|--------|----------|
+| User  | `6`   | `110`  | `rw-`    |
+| Group | `4`   | `100`  | `r--`    |
+| Other | `4`   | `100`  | `r--`    |
 
 <hr/>
 
