@@ -1,4 +1,4 @@
-# Octal Mode Tutorial
+# Octal Mode
 
 ## Prerequisites
 
