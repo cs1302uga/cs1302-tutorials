@@ -39,11 +39,33 @@ portion of the mode is using octal notation.
 
 **NOTE:** Although the symoblic mode may be more readable in many cases, octal notation is vastly
 more prevalent in literature and examples that you may find online. 
- 
 
-## More stuff
+Consider the output to the following command:
 
-1. 
+```
+$ stat newfile
+```
+   
+Observe the four digit number listed near the symbolic mode, listed by "Access". It is likely
+`0644`. Each bit in the binary representation of this number represents a permission bit in the mode.
+Technically, there are twelve permission bits, however, we only cover the first nine as they are
+the most commonly used. For `0644`, the first nine bits, starting from the right, would leave us 
+with the number `644` with a binary representation of `110010010`. 
+
+The notation is called octal because there are eight possiblilities for each digit, each
+corresponding to a sequence of three bits that describe the read, write, and execute permissions
+for a particular class of user for the file. 
+
+| Octal | Binary | Symbolic |
+|-------|--------|----------|
+| `0`   | `000`  | `---`    | 
+| `1`   | `001`  | `---`    | 
+| `2`   | `010`  | `---`    | 
+| `3`   | `011`  | `---`    | 
+| `4`   | `100`  | `---`    | 
+| `5`   | `101`  | `---`    | 
+| `6`   | `110`  | `---`    | 
+| `7`   | `111`  | `---`    | 
 
 
 <hr/>
