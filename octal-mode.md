@@ -87,7 +87,7 @@ Try the following on Nike:
 
 1. Create regular files and directory files varying modes using combinations of 
    `touch`, `mkdir`, and `chmod`. The `chmod` command accepts both symbolic and octal
-   notations for the mode. Try using one notation and determine the other!
+   notations for the mode. Try using one notation and determine the other by hand!
 
 <hr/>
 
