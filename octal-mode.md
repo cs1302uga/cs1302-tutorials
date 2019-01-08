@@ -89,7 +89,8 @@ Try the following on Nike:
    `touch`, `mkdir`, and `chmod`. The `chmod` command accepts both symbolic and octal
    notations for the mode. Try using one notation and determine the other by hand!
    
-   Remember, you can see both mode notations at the same time when using `stat` on Nike. 
+   Remember, if you get stuck, then you can see both mode notations at the same time 
+   by using `stat` on Nike. 
 
 <hr/>
 
