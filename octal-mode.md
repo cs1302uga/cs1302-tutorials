@@ -83,6 +83,12 @@ permissions. In the case of a file with octal mode `644`, the file has the follo
 | Group | `4`   | `100`  | `r--`    |
 | Other | `4`   | `100`  | `r--`    |
 
+Try the following on Nike:
+
+1. Create regular files and directory files varying modes using combinations of 
+   `touch`, `mkdir`, and `chmod`. The `chmod` command accepts both symbolic and octal
+   representations for the mode. Try using one notation and guessing the other!
+
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
