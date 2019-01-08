@@ -70,9 +70,12 @@ for a particular class of user for the file.
 In the table above, the numbers `0` through `7` are written along with their corresponding three digit 
 binary representation. If read from left to right, the binary representation lets us know the
 read, write, and execute permissions, respectively. If there is a `1`, then that permission is set.
-If there is a `0`, then that permission is not set. 
+If there is a `0`, then that permission is not set. For convenience, the table also includes the
+corresponding symbolic mode for each digit. 
 
-In the case of `644`, the file has the following permissions:
+Since each file has a set of permissions for each of the three different classes of users 
+(i.e., the user, group, and other), three digits are needed to express the standard full set of nine
+permissions. In the case of a file with octal mode `644`, the file has the following permissions:
 
 | Class | Octal | Binary | Symbolic |
 |-------|-------|--------|----------|
