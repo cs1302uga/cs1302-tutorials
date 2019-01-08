@@ -10,6 +10,8 @@ In Unix, both regular files and directory files have associated metadata that is
 independent of a file's contents. This metadata is commonly referred to as the _status information_ 
 for the file and is accessible in a couple different ways. 
 
+On Nike, try the following:
+
 1. Create a new, empty regular file called `newfile` using the following command:
 
 ```
