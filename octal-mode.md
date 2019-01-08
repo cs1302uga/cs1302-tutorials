@@ -1,10 +1,10 @@
-# File Permissions Tutorial
+# Octal Mode Tutorial
 
 ## Prerequisites
 
-This tutorial assumes that the reader has a knowledge of basic Unix commands.
+* Unix Tutorial Five: http://www.ee.surrey.ac.uk/Teaching/Unix/unix5.html
 
-## File Status Information
+## Status Information and Mode
 
 In Unix, both regular files and directory files have associated metadata that is, for the most part,
 independent of a file's contents. This metadata is commonly referred to as the _status information_ 
@@ -28,7 +28,15 @@ $ ls -l newfile
 $ stat newfile
 ```
 
-## File Mode
+## Octal Mode
+
+One very important part of a file's status information is its _mode_, which contains information
+about the file's type (e.g., regular file or directory file) and its associated permissions. In
+the output to `ls -l`, you see the symbolic mode. However, another way to express the permission
+portion of the mode is using octal notation.
+
+**NOTE:** Although the symoblic mode may be more readable in many cases, octal notation is vastly
+more prevalent in literature and examples that you may find online. 
  
 
 ## More stuff
