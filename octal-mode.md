@@ -67,6 +67,11 @@ for a particular class of user for the file.
 | `6`   | `110`  | `rw-`    | 
 | `7`   | `111`  | `rwx`    | 
 
+In the table above, the numbers `0` through `7` are written along with their corresponding three digit 
+binary representation. If read from left to right, the binary representation lets us know the
+read, write, and execute permissions, respectively. If there is a `1`, then that permission is set.
+If there is a `0`, then that permission is not set. 
+
 In the case of `644`, the file has the following permissions:
 
 | Class | Octal | Binary | Symbolic |
