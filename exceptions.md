@@ -1,7 +1,7 @@
 # Checked vs. Unchecked Exceptions
 
-In Java, exceptions are either _checked_ or _unchecked_. Checked exceptions must be explicitly caught or propagated by the programmer, whereas 
-unchecked exception may or may not be handled by the programmer.  Let's look at an example.
+In Java, exceptions are either _checked_ or _unchecked_. Checked exceptions must be explicitly caught or propagated by the programmer,
+whereas unchecked exception may or may not be handled by the programmer.  Let's look at an example.
 
 1. On Nike, create the class `exceptions.Unchecked` containing the following code:
 
@@ -16,21 +16,21 @@ unchecked exception may or may not be handled by the programmer.  Let's look at 
    } // Test
    ```
 
-1. Compile and run `exceptions.Test`. You should get the following error message:
+1. Compile and run `exceptions.Test`. You should get an error message similar to the following:
 
    ```
    Exception in thread "main" java.lang.ArithmeticException: / by zero
       at exceptions.Test.main(Test.java:5)
    ```
    An [`ArithmeticException`](https://docs.oracle.com/javase/8/docs/api/java/lang/ArithmeticException.html)
-   (divide by zero) caused our program to crash. Since `ArithmeticException` is an **unchecked exception**, the
-   Java compiler did not force us (the programmer) to catch or throw this exception.  It is completely up to the programmer to decide 
+   (specifically, a divide by zero) caused our program to crash. Since `ArithmeticException` is an **unchecked exception**, the
+   Java compiler did not force us (the programmer) to catch or propagate this exception.  It is completely up to the programmer to decide 
    whether or not to handle exceptions of this type. You've probably experienced other, unchecked exceptions such as:
    [`StringIndexOutOfBoundsException`](https://docs.oracle.com/javase/8/docs/api/java/lang/StringIndexOutOfBoundsException.html), 
    [`NullPointerException`](https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html),
    [`NumberFormatException`](https://docs.oracle.com/javase/8/docs/api/java/lang/NumberFormatException.html), etc.
 
-1. One nike, create the class `exceptions.Checked` containing the following code:
+1. On Nike, create the class `exceptions.Checked` containing the following code:
 
    ```java
    package exceptions;
@@ -48,8 +48,8 @@ unchecked exception may or may not be handled by the programmer.  Let's look at 
    ```
 
    In this program, we are reading the first line of the file `notes.txt`. The first line of the `main` method creates a `File` object 
-   called `notesFile`.  Then, it passes this object to the `Scanner` constructor.  As you may have guessed, the `input` object will read
-   its input from the file (instead of the keyboard).  We will create the `notes.txt` file in a bit.
+   which is referred to by `notesFile`.  Then, it passes this object reference to the `Scanner` constructor.  As you may have guessed, the 
+   `input` object will read its input from the file (not the keyboard).  We will create the `notes.txt` file in a later step.
 
 1. Compile `Checked.java`.  You should get an error similar to the following:
 
@@ -58,11 +58,14 @@ unchecked exception may or may not be handled by the programmer.  Let's look at 
       Scanner input = new Scanner(notesFile);
                       ^
    ```
-   This error indicates that the `Scanner` constructor throws a `FileNotFoundException`.  This is a **checked exception**.  The programmer
-   must either surround this line of code with a try-catch or add a throws clause to the main method to propogate this exception if it
-   occurs.  However, we never want to add a throws clause to the main method.
+   This error indicates that the `Scanner` constructor throws a `FileNotFoundException`.  `FileNotFoundException` is a 
+   **checked exception**.  When a method or constructor call throws a checked exception, the programmer must either:
+      * surround the relevant call with a try-catch or
+      * add a throws clause to the enclosing method (i.e., the method containing the call) to propogate this exception if it occurs.  
+   In `Checked.java`, the enclosing method is `main`.  We never want to add a `throws` clause to the `main` method as there is no code in 
+   our program above the `main` method to handle the exception. To fix `Checked.java`, we will use the first approach.
    
-1. Modify `Checked.java` to include an appropriate try-catch:
+1. Now, let's modify `Checked.java` to include an appropriate try-catch:
 
    ```java
    import java.util.Scanner;
@@ -83,24 +86,25 @@ unchecked exception may or may not be handled by the programmer.  Let's look at 
    } // Checked
    ```
 
-1. Create a `notes.txt` file in the same directory that you execute the `java` command to run the program. Write a single line in that
-file.
+1. Create a `notes.txt` file in the directory where you will execute the program. Add a single line of text to the file.
 
-1. Execute `Checked.java`.  It should print the first line of `notes.txt`.
+1. Execute `exceptions.Checked`.  It should print the first line of `notes.txt`.
 
 ## How to tell if an exception is checked or unchecked
 
 For now, we will use a simple method for checking if an exception is checked or unchecked.
 
-1. Visit the java API page for [`ArithmeticException`](https://docs.oracle.com/javase/8/docs/api/java/lang/ArithmeticException.html)
+1. Visit the Java API page for [`ArithmeticException`](https://docs.oracle.com/javase/8/docs/api/java/lang/ArithmeticException.html).
 
-1. At the top of the page, you will see a hierarchy of Java classes which looks like this: 
+1. At the top of the page, there is a hierarchy of Java classes which looks like this: 
 
    <img src="img/ArithmeticException.png" width="50%" alt="ArithmeticException Unchecked Example">
 
-   You can tell that `ArithmeticException` is an unchecked exception because `java.lang.RuntimeException` exists in the hierarchy. 
-1. If you cannot find `java.lang.RuntimeException` in the hierarchy for a given exception, that tells you it is a checked exception.  For 
-example, see [`FileNotFoundException`](https://docs.oracle.com/javase/8/docs/api/java/io/FileNotFoundException.html)
+   You can tell that `ArithmeticException` is an unchecked exception because `java.lang.RuntimeException` is listed in the hierarchy. If 
+   you cannot find `java.lang.RuntimeException` in the hierarchy for a given exception, then that tells you it is a checked exception. 
+   
+1. For an example of a checked exception, see 
+[`FileNotFoundException`](https://docs.oracle.com/javase/8/docs/api/java/io/FileNotFoundException.html)
 
 <hr/>
 
