@@ -1,8 +1,4 @@
-# Octal Mode
-
-## Prerequisites
-
-## Checked vs. Unchecked Exceptions
+# Checked vs. Unchecked Exceptions
 
 In Java, exceptions are either _checked_ or _unchecked_. Checked exceptions must be explicitly caught or propagated by the programmer, whereas 
 unchecked exception may or may not be handled by the programmer.  Let's look at an example.
@@ -99,6 +95,8 @@ For now, we will use a simple method for checking if an exception is checked or 
 1. Visit the java API page for [`ArithmeticException`](https://docs.oracle.com/javase/8/docs/api/java/lang/ArithmeticException.html)
 
 1. Notice 
+
+   ![ArithmeticException Unchecked Example](img/ArithmeticException.png)
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
