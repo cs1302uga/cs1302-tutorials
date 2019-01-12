@@ -4,7 +4,7 @@
 
 ## Checked vs. Unchecked Exceptions
 
-In Java, exceptions are either checked or unchecked. Checked exceptions must be explicitly caught or propagated by the programmer whereas 
+In Java, exceptions are either _checked_ or _unchecked_. Checked exceptions must be explicitly caught or propagated by the programmer, whereas 
 unchecked exception may or may not be handled by the programmer.  Let's look at an example.
 
 1. On Nike, create the class `exceptions.Unchecked` containing the following code:
@@ -14,8 +14,8 @@ unchecked exception may or may not be handled by the programmer.  Let's look at 
 
    public class Unchecked {
        public static void main(String [] args) {
-         int result = 4/0;
-         System.out.println(result);
+          int result = 4/0;
+          System.out.println(result);
        } // main
    } // Test
    ```
@@ -26,10 +26,13 @@ unchecked exception may or may not be handled by the programmer.  Let's look at 
    Exception in thread "main" java.lang.ArithmeticException: / by zero
       at exceptions.Test.main(Test.java:5)
    ```
-   An `ArithmeticException` (divide by zero) caused our program to crash. Since `ArithmeticException` is an **unchecked exception**, the
-   java compiler did not force us (the programmers) to catch or throw this exception.  It is completely up to the programmer to decide 
+   An [`ArithmeticException`](https://docs.oracle.com/javase/8/docs/api/java/lang/ArithmeticException.html)
+   (divide by zero) caused our program to crash. Since `ArithmeticException` is an **unchecked exception**, the
+   Java compiler did not force us (the programmer) to catch or throw this exception.  It is completely up to the programmer to decide 
    whether or not to handle exceptions of this type. You've probably experienced other, unchecked exceptions such as:
-   `StringIndexOutOfBoundsException`, `NullPointerException`, `NumberFormatException`, etc.
+   [`StringIndexOutOfBoundsException`](https://docs.oracle.com/javase/8/docs/api/java/lang/StringIndexOutOfBoundsException.html), 
+   [`NullPointerException`](https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html),
+   [`NumberFormatException`](https://docs.oracle.com/javase/8/docs/api/java/lang/NumberFormatException.html), etc.
 
 1. One nike, create the class `exceptions.Checked` containing the following code:
 
@@ -41,9 +44,9 @@ unchecked exception may or may not be handled by the programmer.  Let's look at 
 
    public class Checked {
        public static void main (String[] args) {
-         File notesFile = new File("notes.txt");
-         Scanner input = new Scanner(notesFile);
-         System.out.println(input.nextLine());
+           File notesFile = new File("notes.txt");
+           Scanner input = new Scanner(notesFile);
+           System.out.println(input.nextLine());
        } // main
    } // Checked
    ```
@@ -72,14 +75,14 @@ unchecked exception may or may not be handled by the programmer.  Let's look at 
 
    public class Checked {
        public static void main (String[] args) {
-         File notesFile = new File("notes.txt");
-         Scanner input = null;
-         try {
-             input = new Scanner(notesFile);
-         } catch(FileNotFoundException e) {
-             System.out.println(e.getMessage());
-         }
-         System.out.println(input.nextLine());
+           File notesFile = new File("notes.txt");
+           Scanner input = null;
+           try {
+               input = new Scanner(notesFile);
+           } catch(FileNotFoundException e) {
+               System.out.println(e.getMessage());
+           }
+           System.out.println(input.nextLine());
        } // main
    } // Checked
    ```
