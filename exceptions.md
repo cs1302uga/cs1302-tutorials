@@ -97,11 +97,12 @@ For now, we will use a simple method for checking if an exception is checked or 
 1. At the top of the page, you will see a hierarchy of Java classes which looks like this: 
 
    ![ArithmeticException Unchecked Example](img/ArithmeticException.png)
-<hr/>
 
    You can tell that `ArithmeticException` is an unchecked exception because `java.lang.RuntimeException` exists in the hierarchy. 
 1. If you cannot find `java.lang.RuntimeException` in the hierarchy for a given exception, that tells you it is a checked exception.  For 
 example, see [`FileNotFoundException`](https://docs.oracle.com/javase/8/docs/api/java/io/FileNotFoundException.html)
+
+<hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
 
