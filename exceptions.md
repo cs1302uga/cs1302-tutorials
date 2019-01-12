@@ -4,91 +4,94 @@
 
 ## Checked vs. Unchecked Exceptions
 
-In Unix, both regular files and directory files have associated metadata that is, for the most part,
-independent of a file's contents. This metadata is commonly referred to as the _status information_ 
-for the file and is accessible in a couple different ways. 
+In Java, exceptions are either checked or unchecked. Checked exceptions must be explicitly caught or propagated by the programmer whereas 
+unchecked exception may or may not be handled by the programmer.  Let's look at an example.
 
-On Nike, try the following:
+1. On Nike, create the class `exceptions.Unchecked` containing the following code:
 
-1. Create a new, empty regular file called `newfile` using the following command:
+   ```java
+   package exceptions;
 
-```
-$ touch newfile
-```
+   public class Unchecked {
+       public static void main(String [] args) {
+         int result = 4/0;
+         System.out.println(result);
+       } // main
+   } // Test
+   ```
 
-2. Now, use `ls` to display some of the file's status information:
+1. Compile and run `exceptions.Test`. You should get the following error message:
 
-```
-$ ls -l newfile
-```
+   ```
+   Exception in thread "main" java.lang.ArithmeticException: / by zero
+      at exceptions.Test.main(Test.java:5)
+   ```
+   An `ArithmeticException` (divide by zero) caused our program to crash. Since `ArithmeticException` is an **unchecked exception**, the
+   java compiler did not force us (the programmers) to catch or throw this exception.  It is completely up to the programmer to decide 
+   whether or not to handle exceptions of this type. You've probably experienced other, unchecked exceptions such as:
+   `StringIndexOutOfBoundsException`, `NullPointerException`, `NumberFormatException`, etc.
 
-3. To see more detailed status information, use the `stat` command:
+1. One nike, create the class `exceptions.Checked` containing the following code:
 
-```
-$ stat newfile
-```
+   ```java
+   package exceptions;
 
-## Octal Mode
+   import java.util.Scanner;
+   import java.io.File;
 
-One very important part of a file's status information is its _mode_, which contains information
-about the file's type (e.g., regular file or directory file) and its associated permissions. In
-the output to `ls -l`, you see the symbolic mode. However, another way to express the permission
-portion of the mode is using octal notation.
+   public class Checked {
+       public static void main (String[] args) {
+      File notesFile = new File("notes.txt");
+      Scanner input = new Scanner(notesFile);
+      System.out.println(input.nextLine());
+       } // main
+   } // Checked
+   ```
 
-**NOTE:** Although the symoblic mode may be more readable in many cases, octal notation is vastly
-more prevalent in literature and examples that you may find online. 
+In this program, we are reading the first line of the file `notes.txt`. The first line of the `main` method creates a `File` object called
+`notesFile`.  Then, it passes this object to the `Scanner` constructor.  As you may have guessed, the `input` object will read its 
+input from the file (instead of the keyboard).  We will create the `notes.txt` file in a bit.
 
-Consider the output to the following command:
+1. Compile `Checked.java`.  You should get an error similar to the following:
 
-```
-$ stat newfile
-```
+   ```
+   src/exceptions/Checked.java:9: error: unreported exception FileNotFoundException; must be caught or declared to be thrown
+      Scanner input = new Scanner(notesFile);
+                      ^
+   ```
+   This error indicates that the `Scanner` constructor throws a `FileNotFoundException`.  This is a **checked exception**.  The programmer
+   must either surround this line of code with a try-catch or add a throws clause to the main method to propogate this exception if it
+   occurs.  However, we never want to add a throws clause to the main method.
    
-Observe the four digit number listed near the symbolic mode, listed by "Access". It is likely
-`0644`. Each bit in the binary representation of this number represents a permission bit in the mode.
-Technically, there are twelve permission bits, however, we only cover the first nine as they are
-the most commonly used. For `0644`, the first nine bits, starting from the right, would leave us 
-with the number `644` with a binary representation of `110010010`. 
+1. Modify `Checked.java` to include an appropriate try-catch:
 
-The notation is called octal because there are eight possiblilities for each digit, each
-corresponding to a sequence of three bits that describe the read, write, and execute permissions
-for a particular class of user for the file. 
+   ```java
+   import java.util.Scanner;
+   import java.io.File;
+   import java.io.FileNotFoundException;
 
-| Octal | Binary | Symbolic |
-|-------|--------|----------|
-| `0`   | `000`  | `---`    | 
-| `1`   | `001`  | `--x`    | 
-| `2`   | `010`  | `-w-`    | 
-| `3`   | `011`  | `-wx`    | 
-| `4`   | `100`  | `r--`    | 
-| `5`   | `101`  | `r-x`    | 
-| `6`   | `110`  | `rw-`    | 
-| `7`   | `111`  | `rwx`    | 
+   public class Checked {
+       public static void main (String[] args) {
+      File notesFile = new File("notes.txt");
+      Scanner input = null;
+      try {
+          input = new Scanner(notesFile);
+      } catch(FileNotFoundException e) {
+          System.out.println(e.getMessage());
+      }
+      System.out.println(input.nextLine());
+       } // main
+   } // Checked
+```
 
-In the table above, the numbers `0` through `7` are written along with their corresponding three digit 
-binary representation. If read from left to right, the binary representation lets us know the
-read, write, and execute permissions, respectively. If there is a `1`, then that permission is set.
-If there is a `0`, then that permission is not set. For convenience, the table also includes the
-corresponding symbolic mode for each digit. 
+1. Create a `notes.txt` file in the same directory that you execute the `java` command to run the program. Write a single line in that
+file.
 
-Since each file has a set of permissions for each of the three different classes of users 
-(i.e., the user, group, and other), three digits are needed to express the standard full set of nine
-permissions. In the case of a file with octal mode `644`, the file has the following permissions:
+1. Execute `Checked.java`.  It should print the first line of `notes.txt`.
 
-| Class | Octal | Binary | Symbolic |
-|-------|-------|--------|----------|
-| User  | `6`   | `110`  | `rw-`    |
-| Group | `4`   | `100`  | `r--`    |
-| Other | `4`   | `100`  | `r--`    |
+## How to tell if an exception is checked or unchecked
 
-Try the following on Nike:
 
-1. Create regular files and directory files varying modes using combinations of 
-   `touch`, `mkdir`, and `chmod`. The `chmod` command accepts both symbolic and octal
-   notations for the mode. Try using one notation and determine the other by hand!
-   
-   Remember, if you get stuck, then you can see both mode notations at the same time 
-   by using `stat` on Nike. 
 
 <hr/>
 
