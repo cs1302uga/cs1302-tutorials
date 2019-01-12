@@ -94,8 +94,11 @@ file.
 
 ## How to tell if an exception is checked or unchecked
 
+For now, we will use a simple method for checking if an exception is checked or unchecked.
 
+1. Visit the java API page for [`ArithmeticException`](https://docs.oracle.com/javase/8/docs/api/java/lang/ArithmeticException.html)
 
+1. Notice 
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
