@@ -41,16 +41,16 @@ unchecked exception may or may not be handled by the programmer.  Let's look at 
 
    public class Checked {
        public static void main (String[] args) {
-      File notesFile = new File("notes.txt");
-      Scanner input = new Scanner(notesFile);
-      System.out.println(input.nextLine());
+         File notesFile = new File("notes.txt");
+         Scanner input = new Scanner(notesFile);
+         System.out.println(input.nextLine());
        } // main
    } // Checked
    ```
 
-In this program, we are reading the first line of the file `notes.txt`. The first line of the `main` method creates a `File` object called
-`notesFile`.  Then, it passes this object to the `Scanner` constructor.  As you may have guessed, the `input` object will read its 
-input from the file (instead of the keyboard).  We will create the `notes.txt` file in a bit.
+   In this program, we are reading the first line of the file `notes.txt`. The first line of the `main` method creates a `File` object 
+   called `notesFile`.  Then, it passes this object to the `Scanner` constructor.  As you may have guessed, the `input` object will read
+   its input from the file (instead of the keyboard).  We will create the `notes.txt` file in a bit.
 
 1. Compile `Checked.java`.  You should get an error similar to the following:
 
@@ -72,17 +72,17 @@ input from the file (instead of the keyboard).  We will create the `notes.txt` f
 
    public class Checked {
        public static void main (String[] args) {
-      File notesFile = new File("notes.txt");
-      Scanner input = null;
-      try {
-          input = new Scanner(notesFile);
-      } catch(FileNotFoundException e) {
-          System.out.println(e.getMessage());
-      }
-      System.out.println(input.nextLine());
+         File notesFile = new File("notes.txt");
+         Scanner input = null;
+         try {
+             input = new Scanner(notesFile);
+         } catch(FileNotFoundException e) {
+             System.out.println(e.getMessage());
+         }
+         System.out.println(input.nextLine());
        } // main
    } // Checked
-```
+   ```
 
 1. Create a `notes.txt` file in the same directory that you execute the `java` command to run the program. Write a single line in that
 file.
