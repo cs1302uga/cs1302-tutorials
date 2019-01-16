@@ -210,6 +210,59 @@ Let's try it by placing the `HelloWorld` class into the `cs1302.hello` package!
  
 5. Congratulations, you've successfully completed this tutorial!
 
+## Further Important Notes
+
+### Setting the Class Path
+
+Both `javac` and `java` allow you specify the classpath using the `-cp` or `-classpath` command-line
+option. They usual syntax is as follows:
+
+```
+-cp some/path/to/default
+```
+
+If more than one default package is needed, then a colon `:` can be used to help list multiple paths:
+
+```
+-cp path1:path2
+```
+
+Each path can be a path to a directory or a `.jar` file (usually used for third party libraries).
+
+**NOTE:** The class path should always point to a default package for _compiled_ code. If you are
+compiling a `.java` file that depends on an already compiled class, then will need to specifiy the
+class path to the corresponding default package for that dependency when invoking `javac`.
+
+### Import Statements
+
+In Java, you do not have to import classes that are in the same package. However, it's interesting to
+note that `import` statements are actually never required in Java. We just use them for convenience. 
+Assuming the corresponding default package for class's package in on the class path when compiling 
+and/or running, you can always refer to a class by its fully qualified name. Consider two uses of the
+[`java.util.Random`](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html) below:
+
+```java
+// assuming the class was imported
+Random rng = new Random();
+```
+
+```java
+// assuming the class was NOT imported
+java.util.Random rng = new java.util.Random();
+```
+
+As you can imagine, the latter (without an import statement) might get annoying and repetetive.
+Therefore, we usually prefer to use an `import` statement for the convenience it provides.
+Why would anyone prefer to use the fully qualified name instead of the simple name for a class?
+It enables you to use two classes from different packages with the same simple name at the
+same time!
+
+### The `java.lang` Package
+
+Java automatically performs a wilcard import of the `java.lang` package (i.e., `import java.lang.*;`) in 
+every Java file, without requiring the programmer to explicitly write it. That is why you can use classes
+such as `java.lang.String` and `java.lang.System` by their simple names without importing!
+
 ## References
 
 * [[1] Creating and Using Packages](https://docs.oracle.com/javase/tutorial/java/package/packages.html)
