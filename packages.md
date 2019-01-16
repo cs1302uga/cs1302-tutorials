@@ -221,7 +221,8 @@ option. The usual syntax is as follows:
 -cp some/path
 ```
 
-If more than one default package is needed, then a colon `:` can be used to help list multiple paths:
+If more than one default package is needed, then a colon `:` can be used to separate each path in a
+list of multiple paths:
 
 ```
 -cp path1:path2
