@@ -260,7 +260,7 @@ same time!
 
 ### The `java.lang` Package
 
-Java automatically performs a wilcard import of the `java.lang` package (i.e., `import java.lang.*;`) in 
+Java automatically performs a wildcard import of the `java.lang` package (i.e., `import java.lang.*;`) in 
 every Java file, without requiring the programmer to explicitly write it. That is why you can use classes
 such as `java.lang.String` and `java.lang.System` by their simple names without importing!
 
