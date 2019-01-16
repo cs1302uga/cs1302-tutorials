@@ -239,7 +239,7 @@ class path to the corresponding default package for that dependency when invokin
 In Java, you do not have to import classes that are in the same package. However, it's interesting to
 note that `import` statements are actually never required in Java. We just use them for convenience. 
 Assuming the corresponding default package for class's package is on the class path when compiling 
-and/or running, you can always refer to a class by its fully qualified name. Consider two uses of the
+and/or running, you can always refer to a class by its fully qualified name. Consider two uses of
 [`java.util.Random`](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html) below:
 
 ```java
