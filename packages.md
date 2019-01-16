@@ -218,7 +218,7 @@ Both `javac` and `java` allow you specify the classpath using the `-cp` or `-cla
 option. They usual syntax is as follows:
 
 ```
--cp some/path/to/default
+-cp some/path
 ```
 
 If more than one default package is needed, then a colon `:` can be used to help list multiple paths:
