@@ -215,7 +215,7 @@ Let's try it by placing the `HelloWorld` class into the `cs1302.hello` package!
 ### Setting the Class Path
 
 Both `javac` and `java` allow you specify the class path using the `-cp` or `-classpath` command-line
-option. They usual syntax is as follows:
+option. The usual syntax is as follows:
 
 ```
 -cp some/path
