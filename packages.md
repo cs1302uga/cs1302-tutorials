@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-This tutorial assumes that the reader has a knowledge of basic Unix commands and experience working with a command-line text editor (e.g. emacs, vi, etc.).
+This tutorial assumes that the reader has a knowledge of basic Unix commands and experience working with a command-line text editor (e.g. emacs, vi, etc.). To get the most out of this tutorial, you should follow along and take notes.
 
 ## Java Packages
 
@@ -208,7 +208,8 @@ Let's try it by placing the `HelloWorld` class into the `cs1302.hello` package!
    **PROTIP:** Although packages correspond to directories, a fully qualified name uses `.` (dot) 
    for the name separator and not a slash.
  
-5. Congratulations, you've successfully completed this tutorial!
+5. Congratulations, you've successfully completed this tutorial! Please read the sections below for
+   some important information regarding class path and `import` statements. 
 
 ## Further Important Notes
 
