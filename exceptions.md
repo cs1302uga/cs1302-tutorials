@@ -16,11 +16,11 @@ whereas unchecked exception may or may not be handled by the programmer.  Let's 
    } // Test
    ```
 
-1. Compile and run `exceptions.Test`. You should get an error message similar to the following:
+1. Compile and run `exceptions.Unchecked`. You should get an error message similar to the following:
 
    ```
    Exception in thread "main" java.lang.ArithmeticException: / by zero
-      at exceptions.Test.main(Test.java:5)
+      at exceptions.Unchecked.main(Test.java:5)
    ```
    An [`ArithmeticException`](https://docs.oracle.com/javase/8/docs/api/java/lang/ArithmeticException.html)
    (specifically, a divide by zero) caused our program to crash. Since `ArithmeticException` is an **unchecked exception**, the
