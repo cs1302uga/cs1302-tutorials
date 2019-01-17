@@ -20,7 +20,7 @@ whereas unchecked exception may or may not be handled by the programmer.  Let's 
 
    ```
    Exception in thread "main" java.lang.ArithmeticException: / by zero
-      at exceptions.Unchecked.main(Test.java:5)
+      at exceptions.Unchecked.main(Unchecked.java:5)
    ```
    An [`ArithmeticException`](https://docs.oracle.com/javase/8/docs/api/java/lang/ArithmeticException.html)
    (specifically, a divide by zero) caused our program to crash. Since `ArithmeticException` is an **unchecked exception**, the
