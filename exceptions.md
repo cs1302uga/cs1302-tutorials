@@ -63,6 +63,7 @@ whereas unchecked exception may or may not be handled by the programmer.  Let's 
    **checked exception**.  When a method or constructor call throws a checked exception, the programmer must either:
       * surround the relevant call with a try-catch or
       * add a throws clause to the enclosing method (i.e., the method containing the call) to propogate this exception if it occurs.  
+      
    In `Checked.java`, the enclosing method is `main`.  We never want to add a `throws` clause to the `main` method as there is no code in 
    our program above the `main` method to handle the exception. To fix `Checked.java`, we will use the first approach.
    
