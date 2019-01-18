@@ -7,6 +7,7 @@
    ```
    $ git clone --depth 1 --no-checkout https://github.com/cs1302uga/cs1302-tutorials.git cs1302-javadoc
    $ cd cs1302-javadoc && git checkout master -- javadoc
+   $ bash setup.sh
    ```
   
 1. 
