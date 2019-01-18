@@ -16,7 +16,8 @@ whereas unchecked exception may or may not be handled by the programmer.  Let's 
    } // Test
    ```
 
-1. Compile and run `exceptions.Unchecked`. You should get an error message similar to the following:
+1. Compile and run `exceptions.Unchecked`. You should get an error message similar to the following
+   when you run the program:
 
    ```
    Exception in thread "main" java.lang.ArithmeticException: / by zero
