@@ -2,8 +2,8 @@
 
 ### Getting Started
 
-1. Use the following command to download download and execute a shell script that 
-   retrieves the starter code for this tutorial and place it into a subdirectory 
+1. Use the following command to download and execute a shell script that retrieves 
+   the starter code for this tutorial and place it into a subdirectory 
    called `cs1302-javadoc`:
 
    ```
