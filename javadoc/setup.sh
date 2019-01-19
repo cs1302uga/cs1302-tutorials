@@ -8,6 +8,7 @@ if [ ! -d "cs1302-javadoc" ]; then
   mv javadoc/* ./
   rm -rf javadoc
   rm -rf .git
+  mkdir bin doc
   echo "subdirectory cs1302-javadoc successfully created"
 else
   >&2 echo "subdirectory cs1302-javadoc already exists"
