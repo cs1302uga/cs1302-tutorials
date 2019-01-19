@@ -10,13 +10,19 @@ must rely solely on documentation to help determine how that code should be used
 
 Such documentation
 is usually referred to as **API documentation**, and it should be written to provide enough detail 
-that others can use the code being documented without seeing the implementation of the code itself.
+so that others can use the code being documented without seeing the implementation of the code itself.
 In other words, API documentation usually describes *what* a piece of code does and not *how* it
 does what it does (i.e., unless absolutely needed to explain the "what"). Most students should
 be familar with the API documentation for the 
 [`String`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html) and
 [`Scanner`](https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html) classes
 provided by Java.
+
+By convention, API documentation for Java code is written directly in the source code in special
+comments called Javadoc comments. The Javadoc tool is used to parse the source code and
+Javadoc comments to produce a nicely formatted website for the documentation. In this tutorial,
+you will see Javadoc comments in action, write your own, and learn how to generate and host
+the corresponding API documentation website.
 
 ### Getting Started
 
