@@ -57,6 +57,11 @@ public class Circle {
         return Math.PI * getDiamter();
     } // getArea
 
+    /**
+     * Returns a string representation of this {@code Circle} object
+     * in the following format: {@code Circle(radius = value)}.
+     * @return a string representation of the object
+     */
     public String toString() {
         return String.format("Circle(radius = %f)", radius);
     } // toString
