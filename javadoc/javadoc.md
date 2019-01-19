@@ -32,7 +32,7 @@ TODO intro
 
 The Javadoc tool (`javadoc`) parses the Javadoc comments in a set of Java source files and 
 produces a corresponding set of HTML pages describing classes, interfaces, constructors, 
-methods, and fields.
+methods, and fields. This effectively creates a website for the API documentation.
 
 1. Make sure you are in `cs1302-javadoc`. Use the command presented below to generate the API 
    documentation website for the code contained in this tutorial and place it in the `doc`
@@ -51,13 +51,15 @@ methods, and fields.
 
 ### Hosting the API Documentation Website
 
-TODO intro
+Generating the API documentation is great, but seeing it is even better. You can use the steps
+provided below to host the generated website using your Nike account. Alternatives approaches 
+to explicit instructions provided below are explored in the FAQ section towards the end of this
+tutorial. 
 
 1. Ensure that you have a `public_html` directory in your home directory. If the `~/public_html` 
    directory does not exist, then you should create it. The purpose of this directory on Nike (and
    on many systems) is to support user websites, which will be illustrated in the following steps. 
-
-   **NOTE:** You are fully responsible for anything that you host through your Nike website.
+   You are fully responsible for anything that you host through your Nike website.
 
 1. Use `ln`, as described below, to create a symbolic link (shortcut) in your `public_html` 
    directory to the `doc` subdirectory containing the API documentation website that you 
