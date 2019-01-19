@@ -1,5 +1,7 @@
 # Javadoc
 
+Theis tutorial assumes that you are logged into the Nike server. 
+
 ### Getting Started
 
 1. Use the following command to download and execute a shell script that retrieves 
