@@ -2,12 +2,11 @@
 
 ### Getting Started
 
-1. Use Git to clone the repository for this tutorial onto Nike into a subdirectory called `cs1302-javadoc`:
+1. Use the following command to get the starter code for this tutorial and place into a subdirectory
+   called `cs1302-javadoc`:
 
    ```
-   $ git clone --depth 1 --no-checkout https://github.com/cs1302uga/cs1302-tutorials.git cs1302-javadoc
-   $ cd cs1302-javadoc && git checkout master -- javadoc
-   $ bash setup.sh
+   $ wget -O - https://git.io/fh0nG | bash
    ```
   
 1. 
