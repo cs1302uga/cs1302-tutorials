@@ -2,11 +2,12 @@
 
 ### Getting Started
 
-1. Use the following command to download the starter code for this tutorial and place it into a 
-   subdirectory called `cs1302-javadoc`:
+1. Use the following command to download download and execute a shell script that 
+   retrieves the starter code for this tutorial and place it into a subdirectory 
+   called `cs1302-javadoc`:
 
    ```
-   $ wget -qO - https://git.io/fh0nG | bash
+   $ curl -s -L https://git.io/fh0nG | bash
    ```
   
 1. 
