@@ -22,6 +22,12 @@ Javadoc comments to produce a nicely formatted website for the documentation. In
 you will see Javadoc comments in action, write your own, and learn how to generate and host
 the corresponding API documentation website on Nike.
 
+### Prerequisites
+
+This tutorial assumes that the reader has a knowledge of basic Unix commands and experience working 
+with a command-line text editor (e.g. emacs, vi, etc.). To get the most out of this tutorial, 
+you should follow along and take notes.
+
 ### Getting Started
 
 The steps in this tutorial assume that you are logged into the Nike server. 
