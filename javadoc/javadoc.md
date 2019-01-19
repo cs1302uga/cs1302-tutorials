@@ -2,7 +2,7 @@
 
 This tutorial assumes that you are logged into the Nike server. 
 
-### Getting Started
+### Generating API Documentation Website
 
 1. Use the following command to download and execute a shell script that retrieves 
    the starter code for this tutorial and place it into a subdirectory 
