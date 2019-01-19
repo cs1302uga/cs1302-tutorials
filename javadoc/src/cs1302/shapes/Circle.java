@@ -4,8 +4,8 @@ package cs1302.shapes;
  * This class represents a circle object. Each {@code Circle} has an
  * associated {@code radius} value. Given a {@code Circle}, various
  * other values can be calculated such as diameter, area, and perimeter
- * via the {@link getDiameter()}, {@link getArea()}, and 
- * {@link getPerimeter()} methods, respectively.
+ * via the {@link #getDiameter()}, {@link #getArea()}, and 
+ * {@link #getPerimeter()} methods, respectively.
  *
  * <p>
  * A {@code Circle} object cannot have a negative {@code radius}. The
@@ -35,31 +35,15 @@ public class Circle {
         return radius;
     } // getRadius
 
-    /**
-     * Sets the radius of this {@code Circle} to the given {@code radius}
-     * value. The value for {@code radius} cannot be a negative number. 
-     * @param radius the given radius value
-     * @throws Exception if {@code radius} is negative
-     */
     public void setRadius(double radius) throws Exception {
         checkRadius();
         return radius;
     } // getRadius
 
-    /**
-     * Computes and returns the diameter of this {@code Circle} based on
-     * its radius.
-     * @return the computed diameter
-     */
     public double getDiameter() {
         return 2.0 * radius;
     } // getDiameter
 
-    /**
-     * Computes and returns the area of this {@code Circle} based on
-     * its radius.
-     * @return the computed area
-     */
     public double getArea() {
         return Math.PI * radius * radius;
     } // getArea
@@ -79,7 +63,10 @@ public class Circle {
 
     /**
      * Checks the value of the given {@code radius} and throws an
-     * exception if the value is negative.
+     * exception if the value is negative. The purpose of this method is
+     * to help the {@code Circle} class provide consistency in
+     * the way it generates the exception for negative {@code radius}
+     * values.
      * @param radius the given radius value
      * @throws Exception if {@code radius} is negative
      */
