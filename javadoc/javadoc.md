@@ -10,6 +10,68 @@
    $ curl -s -L https://git.io/fh0nG | bash
    ```
   
+1. Change into the `cs1302-javadoc` directory that was just created and look around. There should be
+   multiple Java files contained within the directory structure. To see a listing of all of the 
+   files under the current directory, use the `find` command as follows:
+   
+   ```
+   $ find .
+   ```
+   
+   Inspect each `.java` file that was listed. You will notice that some of them contain special
+   multiline comments that begin with `/**` instead of `/*`. These are known as Javadoc comments,
+   and they are used to provide API documentation in Java. 
+
+1. Make sure you are in the `cs1302-javadoc`. Use the command presented below to generate the API 
+   documentation website for the code contained in this tutorial and place it in the `doc`
+   subdirectory. 
+
+   ```
+   $ javadoc -d doc -sourcepath src -subpackages .
+   ```
+
+   Be sure to verify that files were generated and placed in the `doc` directory before continuing.
+   Consult the manual page for the `javadoc` for an explanation of the `-d` and `-sourcepath` 
+   command-line options.
+
+1. Ensure that you have a `public_html` directory in your home directory. If the `~/public_html` 
+   directory does not exist, then you should create it. The purpose of this directory on Nike (and
+   on many systems) is to support user websites, which will be illustrated in the following steps. 
+
+   **NOTE:** You are fully responsible for anything that you host through your Nike website.
+
+1. Use `ln`, as described below, to create a symbolic link (shortcut) in your `public_html` 
+   directory to the `doc` subdirectory containing the API documentation website that you 
+   created in a previous step. The exact command is presented below--it assumes you are currently 
+   in the `cs1302-javadoc` directory. 
+
+   ```
+   $ ln -s $(pwd)/doc ~/public_html/cs1302-javadoc-doc
+   ```
+   
+   In the command above, the abolute path to our link's target (in this case, `doc`) must be provided. 
+   Since our intended target is in the current directory, we know that its absolute path
+   is the same as the absolute path of the current directory followed by `/` followed by
+   the name of our target. We could manually figure out the desired path with the help of `pwd` 
+   or we can use `$(pwd)`, as seen above, to fill in the output of `pwd` instead. 
+   
+   In this scenario, the symbolic link is called `cs1302-javadoc-doc`. You can see it if you
+   change into your `public_html` directory and perform an `ls -l`. The entry for 
+   `cs1302-javadoc-doc` in the long listing indicates that the file is a symbolic link in
+   two different ways: i) an `l` is prefixed in the mode instead of `-` or `d`; and ii) the
+   filename lists an arrow pointing to the link target. 
+
+1. Navigate to the following URL in your web browser, replacing `user` with your Nike
+   username:
+
+   ```
+   http://cs.uga.edu/~user/cs1302-javadoc-doc/
+   ```
+
+   Congratulations! If you followed the steps correctly, then you should see actual API
+   documentation website that you generated. Does this website look similar to any other
+   websites that you may have visited? 
+
 ### Tutorial
 
 
