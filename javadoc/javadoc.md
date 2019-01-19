@@ -4,6 +4,8 @@ This tutorial assumes that you are logged into the Nike server.
 
 ### Getting Started
 
+TODO intro
+
 1. Use the following command to download and execute a shell script that retrieves 
    the starter code for this tutorial and place it into a subdirectory 
    called `cs1302-javadoc`:
@@ -11,8 +13,6 @@ This tutorial assumes that you are logged into the Nike server.
    ```
    $ curl -s -L https://git.io/fh0nG | bash
    ```
-
-### Generating API Documentation Website
   
 1. Change into the `cs1302-javadoc` directory that was just created and look around. There should be
    multiple Java files contained within the directory structure. To see a listing of all of the 
@@ -25,6 +25,10 @@ This tutorial assumes that you are logged into the Nike server.
    Inspect each `.java` file that was listed. You will notice that some of them contain special
    multiline comments that begin with `/**` instead of `/*`. These are known as Javadoc comments,
    and they are used to provide API documentation in Java. 
+   
+### Generating the API Documentation Website
+
+TODO intro
 
 1. Make sure you are in the `cs1302-javadoc`. Use the command presented below to generate the API 
    documentation website for the code contained in this tutorial and place it in the `doc`
@@ -37,6 +41,10 @@ This tutorial assumes that you are logged into the Nike server.
    Be sure to verify that files were generated and placed in the `doc` directory before continuing.
    Consult the manual page for the `javadoc` for an explanation of the `-d` and `-sourcepath` 
    command-line options.
+
+### Hosting the API Documentation Website
+
+TODO intro
 
 1. Ensure that you have a `public_html` directory in your home directory. If the `~/public_html` 
    directory does not exist, then you should create it. The purpose of this directory on Nike (and
