@@ -6,7 +6,7 @@
    called `cs1302-javadoc`:
 
    ```
-   $ wget -O - https://git.io/fh0nG | bash
+   $ wget -qO - https://git.io/fh0nG | bash
    ```
   
 1. 
