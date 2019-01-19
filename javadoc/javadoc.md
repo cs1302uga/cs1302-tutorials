@@ -1,12 +1,24 @@
 __IN PROGRESS; THIS TUTORIAL IS STILL BEING WRITTEN__
 
-# Javadoc
+# Javadoc and API Documentation
 
-This tutorial assumes that you are logged into the Nike server. 
+A well written, organized collection of code provides an **Application Programming Interface (API)**
+for users of that code. That is, the design choices that were made in the naming of certain things
+such as classes and methods impose an interface that programmers must follow when interacting with
+that code. In many cases, the exact implementation for a piece of code is not available, and users 
+must rely soely on documentation to help determine how that code should be used. Such documentation
+is usually referred to as **API documentation**, and it should be written to provide enough detail 
+that others can use the code being documented without seeing the implementation of the code itself.
+In other words, API documentation usually describes *what* a piece of code does and not *how* it
+does what it does (i.e., unless absolutely needed to explain the "what"). Most students should
+be familar with the API documentation for the 
+[`String'](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html) and
+[`Scanner`](https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html) classes
+provided by Java.
 
 ### Getting Started
 
-TODO intro
+The steps in this tutorial assume that you are logged into the Nike server. 
 
 1. Use the following command to download and execute a shell script that retrieves 
    the starter code for this tutorial and places it into a subdirectory 
@@ -27,7 +39,12 @@ TODO intro
    Inspect each `.java` file that was listed. You will notice that some of them contain special
    multiline comments that begin with `/**` instead of `/*`. These are known as Javadoc comments,
    and they are used to provide API documentation in Java. Some comments have been purposefully 
-   omitted so that you can write them yourself later in this tutorial. 
+   omitted so that you can write them yourself later in this tutorial. For more information on
+   the format of Javadoc comments and the various tags that are supported, see 
+   [[1]](https://www.baeldung.com/javadoc) and
+   [[2]](https://www.oracle.com/technetwork/java/javase/tech/index-137868.html).
+
+How to Write Doc Comments for the Javadoc Tool
    
 ### Generating the API Documentation Website
 
@@ -152,6 +169,11 @@ this tutorial.
    Since our use of `ln` created a symbolc link to the `doc` directory, we can now
    regenerate the API documentation website in `doc` and have those changes be automatically
    reflected in `~/public_html/cs1302-javadoc-doc`. 
+
+### References
+
+* [[1] Baeldung: Introduction to Javadoc](https://www.baeldung.com/javadoc)
+* [[2] Oracle: How to Write Doc Comments for the Javadoc Tool](https://www.oracle.com/technetwork/java/javase/tech/index-137868.html)
 
 <hr/>
 
