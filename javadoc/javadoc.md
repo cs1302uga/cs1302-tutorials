@@ -39,8 +39,8 @@ TODO intro
    ```
 
    Be sure to verify that files were generated and placed in the `doc` directory before continuing.
-   Consult the manual page for the `javadoc` for an explanation of the `-d` and `-sourcepath` 
-   command-line options.
+   Consult the manual page for the `javadoc` for an explanation of the `-d`, `-sourcepath`, and
+   `-subpackages` command-line options.
 
 ### Hosting the API Documentation Website
 
