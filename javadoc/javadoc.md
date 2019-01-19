@@ -1,3 +1,5 @@
+__IN PROGRESS; THIS TUTORIAL IS STILL BEING WRITTEN__
+
 # Javadoc
 
 This tutorial assumes that you are logged into the Nike server. 
