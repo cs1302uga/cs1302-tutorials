@@ -22,7 +22,7 @@ By convention, API documentation for Java code is written directly in the source
 comments called Javadoc comments. The Javadoc tool is used to parse the source code and
 Javadoc comments to produce a nicely formatted website for the documentation. In this tutorial,
 you will see Javadoc comments in action, write your own, and learn how to generate and host
-the corresponding API documentation website.
+the corresponding API documentation website on Nike.
 
 ### Getting Started
 
