@@ -56,8 +56,6 @@ The steps in this tutorial assume that you are logged into the Nike server.
    [[1]](https://www.baeldung.com/javadoc) and
    [[2]](https://www.oracle.com/technetwork/java/javase/tech/index-137868.html).
 
-How to Write Doc Comments for the Javadoc Tool
-   
 ### Generating the API Documentation Website
 
 The Javadoc tool (`javadoc`) parses the Javadoc comments in a set of Java source files and 
