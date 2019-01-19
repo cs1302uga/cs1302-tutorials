@@ -121,8 +121,21 @@ this tutorial.
    
 1. Under the Method Summary section, you will notice that only some of the methods contain Javadoc
    comments.  We intentionally left out the comments for the `setRadius`, `getDiameter` and `getArea`
-   methods.
+   methods to give you an opportunity to write your own Javadoc comments.
+   
+1. Before adding comments to `Circle.java`, take a moment to look at the Method Detail section of the
+   website. Compare a documented method (`getRadius` or `getPerimeter`) to an undocumented method.
 
+1. In `Circle.java`, add Javadoc comments for each undocumented method.  In each of your comments, 
+   include a sentence that describes the method, along with tags that document, as needed, the parameters, 
+   return type, and propagated exceptions. Use the `@code` tag where appropriate in your description.
+   
+1. Make sure you are in `cs1302-javadoc`. Use the same command presented earlier to regenerate the API 
+   documentation website for the code contained in this tutorial. Executing this command will update the
+   files in the `doc` directory. Remember, we created a symbolic link in `public_html` that targets `doc`.
+   Therefore, we don't have to take additional steps to update the website--they are now visible by
+   refreshing the page in your web browser. Go look!
+   
 ### FAQ
 
 1. __Why not tell `javadoc` to generate the API documentation website directly in__ 
