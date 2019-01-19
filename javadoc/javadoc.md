@@ -2,7 +2,7 @@
 
 This tutorial assumes that you are logged into the Nike server. 
 
-### Generating API Documentation Website
+### Getting Started
 
 1. Use the following command to download and execute a shell script that retrieves 
    the starter code for this tutorial and place it into a subdirectory 
@@ -11,6 +11,8 @@ This tutorial assumes that you are logged into the Nike server.
    ```
    $ curl -s -L https://git.io/fh0nG | bash
    ```
+
+### Generating API Documentation Website
   
 1. Change into the `cs1302-javadoc` directory that was just created and look around. There should be
    multiple Java files contained within the directory structure. To see a listing of all of the 
