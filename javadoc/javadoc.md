@@ -39,7 +39,7 @@ methods, and fields. This effectively creates a website for the API documentatio
    subdirectory. 
 
    ```
-   $ javadoc -d doc -sourcepath src -subpackages .
+   $ javadoc -d doc -sourcepath src -subpackages cs1302
    ```
    
    Here is a brief description of the command-line option that were used:
