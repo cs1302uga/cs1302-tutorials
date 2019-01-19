@@ -41,7 +41,7 @@ TODO intro
    Here is a brief description of the command-line option that were used:
    * `-d` -- specifies the destination directory where javadoc saves the generated HTML files;
    * `-sourcepath` -- specifies the search paths for finding source files (`.java`); and
-   * `-subpackages` -- specifies that packages for which documentation should be generated. 
+   * `-subpackages` -- specifies the packages for which documentation should be generated. 
 
    Be sure to verify that files were generated and placed in the `doc` directory before continuing.
 
