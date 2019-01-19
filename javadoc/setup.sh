@@ -3,7 +3,7 @@
 if [ ! -d "cs1302-javadoc" ]; then
   git clone --depth 1 --no-checkout https://github.com/cs1302uga/cs1302-tutorials.git cs1302-javadoc --quiet
   cd cs1302-javadoc
-  git checkout master -- javadoc --quiet
+  git checkout master -- javadoc
   rm -f javadoc/setup.sh
   mv javadoc/* ./
   rm -rf javadoc
