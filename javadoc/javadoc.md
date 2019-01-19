@@ -1,5 +1,3 @@
-__IN PROGRESS; THIS TUTORIAL IS STILL BEING WRITTEN__
-
 # Javadoc and API Documentation
 
 A well written, organized collection of code provides an **Application Programming Interface (API)**
