@@ -6,13 +6,15 @@ A well written, organized collection of code provides an **Application Programmi
 for users of that code. That is, the design choices that were made in the naming of certain things
 such as classes and methods impose an interface that programmers must follow when interacting with
 that code. In many cases, the exact implementation for a piece of code is not available, and users 
-must rely soely on documentation to help determine how that code should be used. Such documentation
+must rely solely on documentation to help determine how that code should be used. 
+
+Such documentation
 is usually referred to as **API documentation**, and it should be written to provide enough detail 
 that others can use the code being documented without seeing the implementation of the code itself.
 In other words, API documentation usually describes *what* a piece of code does and not *how* it
 does what it does (i.e., unless absolutely needed to explain the "what"). Most students should
 be familar with the API documentation for the 
-[`String'](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html) and
+[`String`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html) and
 [`Scanner`](https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html) classes
 provided by Java.
 
