@@ -30,7 +30,9 @@ TODO intro
    
 ### Generating the API Documentation Website
 
-TODO intro
+The Javadoc tool (`javadoc`) parses the Javadoc comments in a set of Java source files and 
+produces a corresponding set of HTML pages describing classes, interfaces, constructors, 
+methods, and fields.
 
 1. Make sure you are in the `cs1302-javadoc`. Use the command presented below to generate the API 
    documentation website for the code contained in this tutorial and place it in the `doc`
