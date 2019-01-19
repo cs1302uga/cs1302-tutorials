@@ -1,6 +1,6 @@
 # Javadoc
 
-Theis tutorial assumes that you are logged into the Nike server. 
+This tutorial assumes that you are logged into the Nike server. 
 
 ### Getting Started
 
