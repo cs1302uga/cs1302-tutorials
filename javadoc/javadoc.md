@@ -26,7 +26,8 @@ TODO intro
    
    Inspect each `.java` file that was listed. You will notice that some of them contain special
    multiline comments that begin with `/**` instead of `/*`. These are known as Javadoc comments,
-   and they are used to provide API documentation in Java. 
+   and they are used to provide API documentation in Java. Some comments have been purposefully 
+   omitted so that you can write them yourself later in this tutorial. 
    
 ### Generating the API Documentation Website
 
