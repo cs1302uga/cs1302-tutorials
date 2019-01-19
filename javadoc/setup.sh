@@ -7,4 +7,5 @@ if [ ! -d "cs1302-javadoc" ]; then
   mv javadoc/* ./
   rm -rf javadoc
   rm -rf .git
+  rm -f setup.sh
 fi  
