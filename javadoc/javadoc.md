@@ -52,9 +52,9 @@ methods, and fields. This effectively creates a website for the API documentatio
 ### Hosting the API Documentation Website
 
 Generating the API documentation is great, but seeing it is even better. You can use the steps
-provided below to host the generated website using your Nike account. Alternatives approaches 
-to explicit instructions provided below are explored in the FAQ section towards the end of this
-tutorial. 
+provided below to host the generated website using your Nike account. Alternative approaches 
+to the explicit instructions provided below are explored in the FAQ section towards the end of 
+this tutorial. 
 
 1. Ensure that you have a `public_html` directory in your home directory. If the `~/public_html` 
    directory does not exist, then you should create it. The purpose of this directory on Nike (and
