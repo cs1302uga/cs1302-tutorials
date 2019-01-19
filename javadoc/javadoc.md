@@ -7,7 +7,7 @@ This tutorial assumes that you are logged into the Nike server.
 TODO intro
 
 1. Use the following command to download and execute a shell script that retrieves 
-   the starter code for this tutorial and place it into a subdirectory 
+   the starter code for this tutorial and places it into a subdirectory 
    called `cs1302-javadoc`:
 
    ```
