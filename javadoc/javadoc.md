@@ -80,9 +80,9 @@ TODO intro
    http://cs.uga.edu/~user/cs1302-javadoc-doc/
    ```
 
-   Congratulations! If you followed the steps correctly, then you should see actual API
-   documentation website that you generated. Does this website look similar to any other
-   websites that you may have visited? 
+   Congratulations! If you followed the steps correctly, then you should see the API
+   documentation website that you generated earlier. Does this website look similar to any 
+   other websites that you may have visited? 
 
 ### Tutorial
 
