@@ -94,6 +94,35 @@ this tutorial.
    documentation website that you generated earlier. Does this website look similar to any 
    other websites that you may have visited? 
 
+### Try It
+
+1. When you first visit the website, you will see a link to the `Circle` class on the left and
+   under the Class Summary. 
+   If there were multiple classes within this package, it would display all of the classes 
+   in the package. To see the documentation for the `Circle` class, click on either of the links.
+   
+1. Open `Circle.java` in your terminal. Compare the Javadoc comments for the `Circle` class to what
+   you see on the website. Notice how the text is rendered differently in your browser based on the
+   tags that were used in the comments. Look closely at the effect of `@code` vs. `@link`.
+
+1. With `Circle.java` still open in your terminal, compare the Javadoc comments for the `Circle` 
+   constructor to what you see under the Constructor Summary on the website. The Javadoc tool was
+   able to correctly determine that this method is a constructor based on the fact that it has
+   the same name as the class and is lacking a return type.
+   
+1. Take note of any Javadoc tags in the constructor comments that weren't present in the comments for
+   the class.  Our constructor takes in a parameter which is described using the `@param` tag.  
+   Immediately after the `@param` tag is the name of the parameter followed by a description. The 
+   `@throws` tag works similarly for any exceptions that are propagated by the method.
+   
+1. Notice that neither the `@param` nor the `@throws` descriptions are listed in the Method Summary
+   section of the website.  To see those comments, you can either click on the constructor name in
+   the Constructors list or scroll down to the Constructor Detail section of the webpage.
+   
+1. Under the Method Summary section, you will notice that only some of the methods contain Javadoc
+   comments.  We intentionally left out the comments for the `setRadius`, `getDiameter` and `getArea`
+   methods.
+
 ### FAQ
 
 1. __Why not tell `javadoc` to generate the API documentation website directly in__ 
