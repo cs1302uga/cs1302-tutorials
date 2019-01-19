@@ -105,7 +105,7 @@ TODO intro
    __website directly to `~/public_html/cs1302-javadoc-doc` instead using `ln`?__
    
    Since our use of `ln` created a symbolc link to the `doc` directory, we can now
-   regenerate the API documentation website in `doc` and have those changes automatically
+   regenerate the API documentation website in `doc` and have those changes be automatically
    reflected in `~/public_html/cs1302-javadoc-doc`. 
 
 <hr/>
