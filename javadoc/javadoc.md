@@ -2,7 +2,7 @@
 
 ### Getting Started
 
-1. Use the following command to get the starter code for this tutorial and place it into a 
+1. Use the following command to download the starter code for this tutorial and place it into a 
    subdirectory called `cs1302-javadoc`:
 
    ```
