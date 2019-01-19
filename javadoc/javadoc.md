@@ -86,16 +86,16 @@ TODO intro
 
 ### FAQ
 
-1. Why not tell `javadoc` to generate the API documentation website directly in 
-   `~/public_html/cs1302-javadoc-doc` instead of `doc`?
+1. __Why not tell `javadoc` to generate the API documentation website directly in__ 
+   __`~/public_html/cs1302-javadoc-doc` instead of `doc`?__
    
    That is definitely an option, assuming the `~/public_html/cs1302-javadoc-doc` directory
    already exists. We chose the symbolic link approach in the tutorial because
    it helps keep the `javadoc` command nice and short and to provide an example of
    a symbolic link. 
    
-2. Why not use `cp` or `mv` to copy or move (respectively) the generated API documentation 
-   website directly to `~/public_html/cs1302-javadoc-doc` instead using `ln`?
+2. __Why not use `cp` or `mv` to copy or move (respectively) the generated API documentation__
+   __website directly to `~/public_html/cs1302-javadoc-doc` instead using `ln`?__
    
    Since our use of `ln` created a symbolc link to the `doc` directory, we can now
    regenerate the API documentation website in `doc` and have those changes automatically
