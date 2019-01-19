@@ -2,8 +2,8 @@
 
 ### Getting Started
 
-1. Use the following command to get the starter code for this tutorial and place into a subdirectory
-   called `cs1302-javadoc`:
+1. Use the following command to get the starter code for this tutorial and place it into a 
+   subdirectory called `cs1302-javadoc`:
 
    ```
    $ wget -qO - https://git.io/fh0nG | bash
