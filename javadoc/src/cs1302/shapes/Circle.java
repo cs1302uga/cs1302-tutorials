@@ -37,7 +37,7 @@ public class Circle {
 
     public void setRadius(double radius) throws Exception {
         checkRadius();
-        return radius;
+        this.radius = radius;
     } // getRadius
 
     public double getDiameter() {
