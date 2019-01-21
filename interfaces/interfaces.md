@@ -53,6 +53,13 @@ abstract methods, constants, static methods, nested types, and default methods
 [[2]](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html).
 Nested types and default methods will not be covered in this tutorial. 
 
+Interfaces are used to specify that a type *can do* a set of things specified by its
+abstract methods and constants. An interface serves as a contract for the classes that 
+claim to implement the interface. Multiple classes can implement the same interface,
+each providing their own implementation of the contracted functionality. For this
+reason, it is important that the documentation for an interface describe *what* a method
+does and necessarily *how* it should do it. Such documentation is usually written using
+Javadoc comments in the interface.
 
 1. 
 
