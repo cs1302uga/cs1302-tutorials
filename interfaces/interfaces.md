@@ -40,17 +40,24 @@ The steps in this tutorial assume that you are logged into the Nike server.
    "type" declaration because a `.java` file can be used to declare any kind of reference type in
    Java, including classes, interfaces, and class-based enumerations. A **reference type** in Java
    is any type that can serve as the type for a variable that refers to an object. Such a variable
-   is known as a **reference variable**.
+   is known as a **reference variable**. We will elaborate on this terminology a little more later 
+   in this tutorial.
 
-### SECTION TITLE
+### What is an Interface?
 
-TODO write intro
+In its simplest form, a Java **interface** is a reference type composed of abstract methods and 
+constants. An **abstract method** is a non-static method without an implementation. Constants
+are variables (static or not) that are declared using the `final` keyword. As of Java 8, the
+technical definition for an *interface* allows it to contain only the following 
+[[2]](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html): 
+abstract methods, constants, static methods, nested types, and default methods. Nested types
+and default methods will not be covered in this tutorial.
 
 1. 
 
 1. 
 
-### SECTION TITLE
+### Implementing an Interface
 
 TODO write intro
 
@@ -61,6 +68,7 @@ TODO write intro
 ### References
 
 * [[1] Lewis, DePasquale, and Chase. _Java Foundations_. Fourth Edition.](https://www.pearson.com/us/higher-education/program/Lewis-Java-Foundations-Introduction-to-Program-Design-and-Data-Structures-4th-Edition/PGM76634.html)
+* [[2] Oracle Java Tutorials: Interfaces](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html)
 
 
 <hr/>
