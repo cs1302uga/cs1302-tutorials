@@ -38,7 +38,9 @@ The steps in this tutorial assume that you are logged into the Nike server.
    instead of classes. They can be identified by looking for the `interface` keyword instead of
    the `class` keyword in the overall type declaration specified near the top of the file. We say
    "type" declaration because a `.java` file can be used to declare any kind of reference type in
-   Java. 
+   Java, including classes, interfaces, and class-based enumerations. A **reference type** in Java
+   is any type that can serve as the type for a variable that refers to an object. Such a variable
+   is known as a **reference variable**.
 
 ### SECTION TITLE
 
