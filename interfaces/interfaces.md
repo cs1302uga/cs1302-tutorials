@@ -23,7 +23,7 @@ The steps in this tutorial assume that you are logged into the Nike server.
    called `cs1302-interfaces`:
 
    ```
-   $ curl -s -L REPLACE_URL_HERE | bash
+   $ curl -s -L https://git.io/fhgce | bash
    ```
   
 1. Change into the `cs1302-interfaces` directory that was just created and look around. There should be
