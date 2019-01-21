@@ -48,10 +48,10 @@ The steps in this tutorial assume that you are logged into the Nike server.
 In its simplest form, a Java **interface** is a reference type composed of abstract methods and 
 constants. An **abstract method** is a non-static method without an implementation. Constants
 are variables (static or not) that are declared using the `final` keyword. As of Java 8, the
-technical definition for an *interface* allows it to contain only the following 
-[[2]](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html): 
+technical definition for an *interface* allows it to contain only the following:
 abstract methods, constants, static methods, nested types, and default methods. Nested types
-and default methods will not be covered in this tutorial.
+and default methods will not be covered in this tutorial
+[[2]](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html).
 
 1. 
 
