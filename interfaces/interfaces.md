@@ -49,9 +49,10 @@ In its simplest form, a Java **interface** is a reference type composed of abstr
 constants. An **abstract method** is a non-static method without an implementation. Constants
 are variables (static or not) that are declared using the `final` keyword. As of Java 8, the
 technical definition for an *interface* allows it to contain only the following:
-abstract methods, constants, static methods, nested types, and default methods. Nested types
-and default methods will not be covered in this tutorial
+abstract methods, constants, static methods, nested types, and default methods 
 [[2]](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html).
+Nested types and default methods will not be covered in this tutorial. 
+
 
 1. 
 
