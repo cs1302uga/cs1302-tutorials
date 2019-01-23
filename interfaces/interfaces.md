@@ -61,23 +61,24 @@ reason, it is important that the documentation for an interface describe *what* 
 does and necessarily *how* it should do it. Such documentation is usually written using
 Javadoc comments in the interface.
 
-1. See [`Encryptable.java:21`](src/cs1302/interfaces/contract/Encryptable.java#L21).
+1. Interface declaration: [`Encryptable.java:21`](src/cs1302/interfaces/contract/Encryptable.java#L21).
 
-1. 
+1. Abstract method declaration: `encrypt()` method in [`Encryptable.java:27`](src/cs1302/interfaces/contract/Encryptable.java#L27).
+
+1. Generate and view the HTML website for the Javadoc comments.
 
 ### Implementing an Interface
 
 TODO write intro
 
-1.
+1. See the use of the `implements` keyword in [`Secret.java:15`](src/cs1302/interfaces/impl/Secret.java#L15).
 
-1.
+1. See also the implementation of the `encrypt()` method in [`Secret.java:44`](src/cs1302/interfaces/impl/Secret.java#L15). Compare the Javadoc comments in the source code with the corresponding documentation for the method in API documentation website. 
 
 ### References
 
 * [[1] Lewis, DePasquale, and Chase. _Java Foundations_. Fourth Edition.](https://www.pearson.com/us/higher-education/program/Lewis-Java-Foundations-Introduction-to-Program-Design-and-Data-Structures-4th-Edition/PGM76634.html)
 * [[2] Oracle Java Tutorials: Interfaces](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html)
-
 
 <hr/>
 
