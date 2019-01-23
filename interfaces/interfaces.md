@@ -68,12 +68,14 @@ Javadoc comments in the interface.
    called `cs1302.interfaces.Encryptable` has an implied position within the package
    directories of your source code and should be placed in an `Encryptable.java` file.
    The first big syntax difference between a class and an interface is illustrated in
-   [`Encryptable.java:21`](src/cs1302/interfaces/contract/Encryptable.java#L21). Note the
-   use of the `interface` keyword instead of `class` in the type header:
+   [`Encryptable.java:21`](src/cs1302/interfaces/contract/Encryptable.java#L21):
    
    ```java
    public interface Encryptable {
-   ```   
+   ```
+   
+   Note the use of the `interface` keyword instead of `class` in the type header.
+   
 
 1. The second big syntax difference involves the inclusion of abstract methods, illustrated
    by the `encrypt()` method in [`Encryptable.java:27`](src/cs1302/interfaces/contract/Encryptable.java#L27).
