@@ -61,7 +61,7 @@ reason, it is important that the documentation for an interface describe *what* 
 does and necessarily *how* it should do it. Such documentation is usually written using
 Javadoc comments in the interface.
 
-1. 
+1. See [`Encryptable.java:21`](src/cs1302/interfaces/contract/Encryptable.java#L21).
 
 1. 
 
