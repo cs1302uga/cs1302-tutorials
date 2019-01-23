@@ -1,6 +1,6 @@
 __IN PROGRESS; THIS TUTORIAL IS NOT YET FINISHED.__
 
-# Interfaces
+# Interfaces Tutorial
 
 TODO write intro
 
@@ -150,6 +150,101 @@ Javadoc comments in the interface.
    generated API documentation website.
 
 ### Using an Interface
+
+1. As mentioned earlier, interfaces are reference types in Java. This means that they can be serve as 
+   the type for a reference variable. You should be familiar with the use of class names for reference
+   variable types. The code snippet below illustrates both scenarios:
+   
+   ```java
+   Secret s;
+   Encryptable e;
+   ```
+   
+1. Reference variables are called as such because they refer to objects. However, you can only create
+   objects from classes! Therefore, what can an `Encryptable` variable refer to? The answer is that 
+   a variable with an interface as its type can refer to any object of class that implements that
+   interface. The code snippet below illustrates this:
+   
+   ```java
+   Encryptable e = new Secret("some message");
+   ```
+   
+1. When an object is referred to via a reference variable with an interface type, the only methods
+   than can be called using that variable are the ones declared in the interface, regardless of whether
+   the object's class declared other methods. For example, even though the
+   `getAbout()` method is declared in the [`SuperSecret`](src/cs1302/interfaces/impl/SuperSecret.java#L81)
+   class and therefore _is_ part of a `SuperSecret` object, it would not be available via an
+   `Encryptable` variable. The following two code snippets illustrate this difference:
+   
+   ```java
+   SuperSecret ss = new SuperSecret("some secreter message?");
+   ss.encrypt();                  // OK
+   ss.decrypt();                  // OK
+   String about = ss.getAbout();  // OK -- variable type is SuperSecret   
+   ```
+   
+   ```java
+   Encryptable ss = new SuperSecret("some secreter message?");
+   ss.encrypt();                  // OK
+   ss.decrypt();                  // OK
+   String about = ss.getAbout();  // NOT OK! -- variable type is Encryptable   
+   ```
+   
+   **NOTE:** The only other methods available via a reference variable with an interface type
+   are the methods listed in the 
+   [`java.lang.Object`](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html)
+   class, which are common to all objects in Java. We will come back to the `Object` class
+   in a future tutorial or reading, but it includes methods like `equals` and `toString`. 
+   
+1. You might be wondering why the previous example is useful? If so, that's okay. In general,
+   you should try to be specific with the types you use for variables. However, the ability
+   to assign object references to variables with interface types leads to a power programming
+   technique known as **polymorphism**. Polymorphism is a fancy word, derived from the Greek
+   words _poly_ and _morphus_, which roughly translates to _many bodies_. It's a powerful
+   programming technique that leverages our ability to have a variable appear to take on
+   many forms (or bodies) depending on the object it refers to. 
+   
+   Consider the following code snippet:
+   
+   ```java
+   Encryptable e;
+   
+   e = new Secret("some secret message");
+   e.encrypt();
+   System.out.println(e); // invoke toString() method
+   
+   e = new SuperSecret("some secreter message?");
+   e.encrypt()
+   System.out.println(e); // invoke toString() method
+   ```
+   
+   Notice how we were able to refer to two different objects using the same variable! When
+   `e.encrypt()` is called the first time, it invokes the `Secret` class version of the
+   method, because that's the type of object being referred to. When `e.encrypt()` is
+   called the second time, it invokes the `SuperSecret` version of the method for a
+   similar reason. The exact same thing happens with the implicit call to `toString()`
+   when printing the objects. 
+   
+ 1. You may have noticed some repetition in the previous example. Without loss of generality,
+    the two parts of the code snippet that seem to repeat can be refactored into a method.
+    Something similar to this is done in the `main` and `test` methods of the 
+    [`cs1302.interfaces.SecretDriver`](src/cs1302/interfaces/SecretDriver.java) class.
+    You should inspect both methods in the source code closely. What should they do? 
+    What do they do? 
+    
+    To answer the second question, compile and run the code provided
+    with this tutorial. Since there are multiple dependencies, the order of compilation
+    matters:
+    
+    1. `src/cs1302/interfaces/contract/Encryptable.java`
+    1. `src/cs1302/interfaces/impl/Secret.java`
+    1. `src/cs1302/interfaces/impl/Secret.java`
+    1. `rc/cs1302/interfaces/SecretDriver.java
+    
+    Remember, you may need to specify the class path in addition to the destination
+    when using `javac` to compile Java code that depends on other Java code. If you need a
+    refresher on this subject, then refer to the 
+    [Java Packages Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/packages.md).
 
 ### References
 
