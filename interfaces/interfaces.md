@@ -124,7 +124,7 @@ Javadoc comments in the interface.
    `cs1302.interfaces.impl.Secret` class, you will see the abstract methods from `Encryptable` 
    implemented. Notice that the implementatons contain method bodies (instead of their signatures
    ending with a semicolon). A specific example can be seen with the `encrypt()` method 
-   in [`Secret.java:44`](src/cs1302/interfaces/impl/Secret.java#L15):
+   in [`Secret.java:44`](src/cs1302/interfaces/impl/Secret.java#L44):
    
    ```java
    public void encrypt() {
