@@ -239,7 +239,7 @@ Javadoc comments in the interface.
     1. `src/cs1302/interfaces/contract/Encryptable.java`
     1. `src/cs1302/interfaces/impl/Secret.java`
     1. `src/cs1302/interfaces/impl/Secret.java`
-    1. `rc/cs1302/interfaces/SecretDriver.java
+    1. `src/cs1302/interfaces/SecretDriver.java`
     
     Remember, you may need to specify the class path in addition to the destination
     when using `javac` to compile Java code that depends on other Java code. If you need a
