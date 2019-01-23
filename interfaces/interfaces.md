@@ -69,9 +69,29 @@ Javadoc comments in the interface.
    directories of your source code and should be placed in an `Encryptable.java` file.
    The first big syntax difference between a class and an interface is illustrated in
    [`Encryptable.java:21`](src/cs1302/interfaces/contract/Encryptable.java#L21). Note the
-   use of the `interface` keyword instead of `class` in the type header. 
+   use of the `interface` keyword instead of `class` in the type header:
+   
+   ```java
+   
+   ```
 
-1. Abstract method declaration: `encrypt()` method in [`Encryptable.java:27`](src/cs1302/interfaces/contract/Encryptable.java#L27).
+1. The second big syntax difference involves the inclusion of abstract methods, illustrated
+   by the `encrypt()` method in [`Encryptable.java:27`](src/cs1302/interfaces/contract/Encryptable.java#L27).
+   
+   ```java
+   public void encrypt();
+   ```
+   
+   Notice that the `encrypt()` method does not contain an implementation. The signature of the method 
+   ends with a semicolon. An abstract method may not have an implemention. The following is **NOT** an
+   abstract method:
+   
+   ```java
+   public void encrypt() { }
+   ```
+   
+   While the `{ }` may not do anything, it is in fact an impementation that does nothing. Compare that
+   to the actual abstract method signature presented above that ends with a semicolon. 
 
 1. Generate and view the HTML website for the Javadoc comments.
 
