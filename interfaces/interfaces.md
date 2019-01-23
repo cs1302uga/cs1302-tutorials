@@ -49,8 +49,8 @@ In its simplest form, a Java **interface** is a reference type composed of abstr
 constants. An **abstract method** is a non-static method without an implementation. Constants
 are variables (static or not) that are declared using the `final` keyword. As of Java 8, the
 technical definition for an *interface* allows it to contain only the following:
-abstract methods, constants, static methods, nested types, and default methods 
-[[2]](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html).
+abstract methods, constants, static methods, nested types, and default implementation
+methods [[2]](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html).
 Nested types and default methods will not be covered in this tutorial. 
 
 Interfaces are used to specify that a type *can do* a set of things specified by its
@@ -95,18 +95,61 @@ Javadoc comments in the interface.
    While the `{ }` may not do anything, it is, in fact, an impementation that does nothing. Compare that
    to the actual abstract method signature presented above that ends with a semicolon, thus lacking an
    implementation. 
+   
+   **NOTE:** In Java, the declaration of an abstract method in the source code for an interface may omit
+   the `public` visibility modifier. If `public` is omitted in this context, the abstract method is
+   still assumed to have `public` visibility. This behavior is different for classe, a topic that will
+   be covered more in depth at a later time when the nuances of visibility are presented. 
 
 1. Generate, host, and view the API documentation website for the starter code provided with this tutorial.
-   Find the `Encryptable` interface on the website and compare the documentation provided their with what
+   Find the `Encryptable` interface on the website and compare the documentation provided there with what
    you see in the Javadoc comments included in `Encryptable.java`. 
 
 ### Implementing an Interface
 
-TODO write intro
+1. In Java, a class can implement an interface using the `implements` keyword, e.g., as seen 
+   in [`Secret.java:15`](src/cs1302/interfaces/impl/Secret.java#L15):
 
-1. See the use of the `implements` keyword in [`Secret.java:15`](src/cs1302/interfaces/impl/Secret.java#L15).
+   ```java
+   public class Secret implements Encryptable {
+   ```
+   
+   If the interface is not in the same package as the implementing class, then you will need to add
+   an `import` statement or use the fully qualified name of the interface. If more than one interface
+   is being implemented, then they can be written in a comma sepearated list following the
+   `implements` keyword.
+   
+1. When a class properly implements an interface in Java, it is required to provide implementations 
+   for each of the abstract methods defined in the interface. If you inspect the source code for the 
+   `cs1302.interfaces.impl.Secret` class, you will see the abstract methods from `Encryptable` 
+   implemented. Notice that the implementatons contain method bodies (instead of their signatures
+   ending with a semicolon). A specific example can be seen with the `encrypt()` method 
+   in [`Secret.java:44`](src/cs1302/interfaces/impl/Secret.java#L15):
+   
+   ```java
+   public void encrypt() {
+   ```
+   
+   Again, this differs from the abstract method defined in the interface only in so far as it has an
+   implementation. The other aspects of the method signature are the same.
+   
+   **NOTE:** As mentioned earlier, it is syntactically correct for an abstract method in an interface
+   to omit the `public` keyword. Remember, in this context, the method is still assumed to be have
+   public visibility. Therefore, the implementation of such a method in an implementing class will
+   need to include the `public` visibility modifier.
+   
+1. Compare the Javadoc comments in the source code for the interface with the comments written in the
+   source code for the implementing `Secret` class. In some cases, new comments are provided. In others,
+   it appears as though Javadoc comments are omitted. In the latter case, this is actually not true. 
+   View the API documentation website for both the `Encryptable` interface and the `Secret` class--bring
+   them up side-by-side, if possible. All of the methods in `Secret` are documented! 
+   
+   This happens because the Javadoc tool has the ability to inherit comments from an interface when omitted
+   or when explicitly requested in the implementing class's Javadoc comment using the `{@inheritDoc}` tag. 
+   Pay close attention to the difference between these two scenarios, both in the source code and in the
+   generated API documentation website.
 
-1. See also the implementation of the `encrypt()` method in [`Secret.java:44`](src/cs1302/interfaces/impl/Secret.java#L15). Compare the Javadoc comments in the source code with the corresponding documentation for the method in API documentation website. 
+### Using an Interface
 
 ### References
 
