@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ ! -d "cs1302-javadoc" ]; then
+if [ ! -d "cs1302-interfaces" ]; then
   git clone --depth 1 --no-checkout https://github.com/cs1302uga/cs1302-tutorials.git cs1302-interfaces
   cd cs1302-interfaces
   git checkout master -- interfaces
