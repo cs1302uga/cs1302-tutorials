@@ -1,8 +1,6 @@
-__IN PROGRESS; THIS TUTORIAL IS NOT YET FINISHED.__
-
 # Interfaces Tutorial
 
-TODO write intro
+This tutorial introduces the reader to Java interfaces and polymorphism.
 
 **NOTE:** Many of the code examples in this tutorial are adapted from
 [[1]](https://www.pearson.com/us/higher-education/program/Lewis-Java-Foundations-Introduction-to-Program-Design-and-Data-Structures-4th-Edition/PGM76634.html)
@@ -11,8 +9,10 @@ under academic fair use.
 ### Prerequisites
 
 This tutorial assumes that the reader has a knowledge of basic Unix commands and experience working 
-with a command-line text editor (e.g. emacs, vi, etc.). To get the most out of this tutorial, 
-you should follow along and take notes.
+with a command-line text editor (e.g. emacs, vi, etc.). The reader should be familiar with compiling
+and running Java code contained in packages and working with the Javadoc tool. 
+
+To get the most out of this tutorial, you should follow along and take notes.
 
 ### Getting Started
 
@@ -85,20 +85,20 @@ Javadoc comments in the interface.
    ```
    
    Notice that the `encrypt()` method does not contain an implementation. The signature of the method 
-   ends with a semicolon. An abstract method may not have an implemention. The following is **NOT** an
+   ends with a semicolon. An abstract method may not have an implementation. The following is **NOT** an
    abstract method:
    
    ```java
    public void encrypt() { }
    ```
    
-   While the `{ }` may not do anything, it is, in fact, an impementation that does nothing. Compare that
+   While the `{ }` may not do anything, it is, in fact, an implementation that does nothing. Compare that
    to the actual abstract method signature presented above that ends with a semicolon, thus lacking an
    implementation. 
    
    **NOTE:** In Java, the declaration of an abstract method in the source code for an interface may omit
    the `public` visibility modifier. If `public` is omitted in this context, the abstract method is
-   still assumed to have `public` visibility. This behavior is different for classe, a topic that will
+   still assumed to have `public` visibility. This behavior is different for classes, a topic that will
    be covered more in depth at a later time when the nuances of visibility are presented. 
 
 1. Generate, host, and view the API documentation website for the starter code provided with this tutorial.
@@ -116,7 +116,7 @@ Javadoc comments in the interface.
    
    If the interface is not in the same package as the implementing class, then you will need to add
    an `import` statement or use the fully qualified name of the interface. If more than one interface
-   is being implemented, then they can be written in a comma sepearated list following the
+   is being implemented, then they can be written in a comma separated list following the
    `implements` keyword.
    
 1. When a class properly implements an interface in Java, it is required to provide implementations 
