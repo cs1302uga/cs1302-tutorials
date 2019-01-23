@@ -61,7 +61,15 @@ reason, it is important that the documentation for an interface describe *what* 
 does and necessarily *how* it should do it. Such documentation is usually written using
 Javadoc comments in the interface.
 
-1. Interface declaration: [`Encryptable.java:21`](src/cs1302/interfaces/contract/Encryptable.java#L21).
+### Declaring an Interface
+
+1. Interfaces, just like classes, have a fully qualified name. Their source code should be 
+   positioned and named within your project the same as with classes. That is, an interface
+   called `cs1302.interfaces.Encryptable` has an implied position within the package
+   directories of your source code and should be placed in an `Encryptable.java` file.
+   The first big syntax difference between a class and an interface is illustrated in
+   [`Encryptable.java:21`](src/cs1302/interfaces/contract/Encryptable.java#L21). Note the
+   use of the `interface` keyword instead of `class` in the type header. 
 
 1. Abstract method declaration: `encrypt()` method in [`Encryptable.java:27`](src/cs1302/interfaces/contract/Encryptable.java#L27).
 
