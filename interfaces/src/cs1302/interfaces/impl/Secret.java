@@ -1,6 +1,7 @@
 package cs1302.interfaces.impl;
 
 import java.util.Random;
+import cs1302.interfaces.contract.Encryptable;
 
 /**
  * This class representes a <i>secret</i> message.
@@ -11,7 +12,7 @@ import java.util.Random;
  * @see <a href="https://www.pearson.com/us/higher-education/program/Lewis-Java-Foundations-Introduction-to-Program-Design-and-Data-Structures-4th-Edition/PGM76634.html"> Java Foundations </a>
  *
  */
-public class Secret implements cs1302.interfaces.contract.Encryptable {
+public class Secret implements Encryptable {
 
     private String message;
     private boolean encrypted;
