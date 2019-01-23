@@ -94,7 +94,9 @@ Javadoc comments in the interface.
    to the actual abstract method signature presented above that ends with a semicolon, thus lacking an
    implementation. 
 
-1. Generate and view the HTML website for the Javadoc comments.
+1. Generate, host, and view the API documentation website for the starter code provided with this tutorial.
+   Find the `Encryptable` interface on the website and compare the documentation provided their with what
+   you see in the Javadoc comments included in `Encryptable.java`. 
 
 ### Implementing an Interface
 
