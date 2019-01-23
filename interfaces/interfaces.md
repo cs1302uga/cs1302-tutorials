@@ -72,8 +72,8 @@ Javadoc comments in the interface.
    use of the `interface` keyword instead of `class` in the type header:
    
    ```java
-   
-   ```
+   public interface Encryptable {
+   ```   
 
 1. The second big syntax difference involves the inclusion of abstract methods, illustrated
    by the `encrypt()` method in [`Encryptable.java:27`](src/cs1302/interfaces/contract/Encryptable.java#L27).
@@ -90,8 +90,9 @@ Javadoc comments in the interface.
    public void encrypt() { }
    ```
    
-   While the `{ }` may not do anything, it is in fact an impementation that does nothing. Compare that
-   to the actual abstract method signature presented above that ends with a semicolon. 
+   While the `{ }` may not do anything, it is, in fact, an impementation that does nothing. Compare that
+   to the actual abstract method signature presented above that ends with a semicolon, thus lacking an
+   implementation. 
 
 1. Generate and view the HTML website for the Javadoc comments.
 
