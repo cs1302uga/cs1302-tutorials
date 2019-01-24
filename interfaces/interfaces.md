@@ -198,11 +198,11 @@ Javadoc comments in the interface.
    
 1. You might be wondering why the previous example is useful? If so, that's okay. In general,
    you should try to be specific with the types you use for variables. However, the ability
-   to assign object references to variables with interface types leads to a power programming
+   to assign object references to variables with interface types leads to a powerful programming
    technique known as **polymorphism**. Polymorphism is a fancy word, derived from the Greek
-   words _poly_ and _morphus_, which roughly translates to _many bodies_. It's a powerful
-   programming technique that leverages our ability to have a variable appear to take on
-   many forms (or bodies) depending on the object it refers to. 
+   words _poly_ and _morphus_, which roughly translates to _many bodies_. Polymorphism leverages 
+   our ability to have a variable appear to take on many forms (or bodies) depending on the 
+   object it refers to. 
    
    Consider the following code snippet:
    
