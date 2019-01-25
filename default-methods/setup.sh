@@ -2,7 +2,7 @@
 
 TUTNAME="default-methods"
 DIR="cs1302-$TUTNAME"
-if [ ! -d DIR ]; then
+if [ ! -d $DIR ]; then
   git clone --depth 1 --no-checkout https://github.com/cs1302uga/cs1302-tutorials.git $DIR
   cd $DIR
   git checkout master -- $TUTNAME
