@@ -94,7 +94,7 @@ on all of those developers.
    ```
 
    Notice that each of the errors state that the implementing class "does not override abstract method 
-   `isEncrypted` in Encryptable. Since these classes don't implement all of the methods in `Encryptable`,
+   `getState` in Encryptable. Since these classes don't implement all of the methods in `Encryptable`,
    they won't compile.
    
 ### Default Methods
