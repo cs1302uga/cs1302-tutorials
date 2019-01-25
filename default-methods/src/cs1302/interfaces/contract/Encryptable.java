@@ -16,10 +16,17 @@ package cs1302.interfaces.contract;
  * This code example is adapted from Java Foundations 4th Edition
  * under academic fair use.
  *
+ * @version 2.0
  * @see <a href="https://www.pearson.com/us/higher-education/program/Lewis-Java-Foundations-Introduction-to-Program-Design-and-Data-Structures-4th-Edition/PGM76634.html"> Java Foundations </a>
  */
 public interface Encryptable {
 
+    /**
+     * Represents the state of an {@code Encryptable} object.
+     * 
+     */
+    //enum State{ENCRYPTED, UNENCRYPTED, UNKNOWN};
+    
     /**
      * Encrypts the object. This method has no effect if the 
      * object is already encrypted.
@@ -32,4 +39,14 @@ public interface Encryptable {
      *
      */
     public void decrypt();
+
+    /**
+     * Returns the state of this {@code Encryptable} object.
+     * Implementations of this interface prior to version 2.0
+     * will return {@code UNKNOWN}.
+     * @since 2.0
+     * @return the state.
+     */
+    //public State getState();
+    
 } // Encryptable
