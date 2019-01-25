@@ -100,9 +100,10 @@ on all of those developers.
 ### Default Methods
 
 Given that we only have three classes that implement `Encryptable` we _could_ go through them one at a 
-time add the `getState` method to each. However, this is not always feasible. *Default Methods* allow 
-methods to be defined within the interface. Since the method is defined at the interface level, the
-implementation is often quite general. 
+time add the `getState` method to each. However, this is not always feasible (remember the Oracle example). 
+A nice alternative is to use a *Default Method*. When we define a default method in an interface, we can also
+provide an implementation. Since the method is defined at the interface level, the implementation is often 
+quite general. 
 
 1. As an example, modify the `Encryptable` interface by replacing the current `getState` abstract 
    method with the following default method alternative:
