@@ -62,29 +62,33 @@ a direct impact on all of those developers!
 1. To see the impact of such a change on a **much** smaller scale, go to the source code for the 
    `Encryptable` interface and uncomment the `getState` method along with the `State` enumeration.
 
-1. Compile the `Encryptable` interface using `bin` as the default directory for compiled code. If you
-   uncommented the code correctly in the previous step, there should be no syntax errors.
+1. Recompile only the `Encryptable` interface using `bin` as the default directory for compiled code. If 
+   you uncommented the code correctly in the previous step, there should be no compile-time errors.
 
 1. Compile `BasicSecret.java`, `Secret.java`, and `SuperSecret.java`.
 
-   *Aside* Compilation Shortcut:
-   From the `cs1302-default-methods` directory, you can attempt to compile `BasicSecret.java`,
-   `Secret.java` and `SuperSecret.java` simultaneously using the following command:
+   **Aside Compilation Shortcut:**
+   From the `cs1302-default-methods` directory, you can compile `BasicSecret.java`,
+   `Secret.java`, and `SuperSecret.java` simultaneously using the following command:
 
    ```
-   javac -d bin -cp bin src/cs1302/interfaces/impl/*.java
+   $ javac -d bin -cp bin src/cs1302/interfaces/impl/*.java
    ```
 
    Note the use of the wildcard character `*`. When you execute this command, the bash shell expands the
-   `*` into all filenames ending in ".java" in the `impl` directory. This provides three files as
+   `*` into all filenames ending in `.java` in the `impl` directory. This provides three files as
    command-line arguments to `javac`. An equivalent (but longer) way to write the above command would be:
 
    ```
-   javac -d bin -cp bin src/cs1302/interfaces/impl/SuperSecret.java src/cs1302/interfaces/impl/Secret.java
+   $ javac -d bin -cp bin src/cs1302/interfaces/impl/SuperSecret.java src/cs1302/interfaces/impl/Secret.java
     /src/cs1302/interfaces/impl/BasicSecret.java
    ```
-
-1. Compilation of the three `Encryptable` classes results in the following compile-time errors:
+   
+   Just to be clear, both of the command examples provided above supply the same number of command-line
+   argumensts to `javac`.
+   
+1. Compilation of the three `Encryptable` classes in the step above results in the following compile-time 
+   errors if steps 2 and 3 were followed correctly:
 
    ```
    src/cs1302/interfaces/impl/BasicSecret.java:15: error: BasicSecret is not abstract and does not override   abstract method isEncrypted() in Encryptable
@@ -98,31 +102,48 @@ a direct impact on all of those developers!
    ```
 
    Notice that each of the errors state that the implementing class "does not override abstract method 
-   `getState` in Encryptable. Since these classes don't implement all of the methods in `Encryptable`,
+   `getState` in `Encryptable`". Since these classes don't implement all of the methods in `Encryptable`,
    they won't compile.
    
 ### Default Methods
 
-Given that we only have three classes that implement `Encryptable` we _could_ go through them one at a 
-time add the `getState` method to each. However, this is not always feasible (remember the Oracle example). 
-A nice alternative is to use a *Default Method*. When we add a default method to an interface, we can 
-provide an implementation. Since the method is defined at the interface level, the implementation is often 
-quite general. 
+Given that we only have three classes that implement `Encryptable` and access to the source code, we _could_ 
+go through them one at a time and add the `getState` method to each. However, this is not always feasible 
+(remember the Oracle example). A nice alternative is to use a *Default Method* which allows the programmer
+to provide a default implementation for the method. Since the method is defined at the interface level, the 
+implementation should be general.
 
 1. As an example, modify the `Encryptable` interface by replacing the current `getState` abstract 
-   method with the following default method alternative:
-
+   method with the following public method alternative:
 
    ```java
-   default State getState() {
+   public State getState() {
       return State.UNKNOWN;
-   }
+   } // getState
    ```
+
+1. Recompile only the `Encryptable` interface using `bin` as the default directory for compiled code. You 
+   will see a compile-time error which includes a message stating "interface abstract methods cannot have
+   body". The problem occurred because we added what looks like an instance method to the interface. Since
+   all non-static methods in an interface are implicitly abstract, we cannot provide an implementation in 
+   this way.
+
+1. In order to provide a default implementation for `getState`, we must explicitly declare the method as 
+   `default`. The `default` keyword is place after the visibility modifier, if present, and before the 
+   return type. Why is this keyword required? Well, default methods were not originally part of the Java 
+   programming language. They were added in Java 8. While the compiler could be updated to allow default
+   implementations in interfaces without the need for a `default` keyword, the reason likely boiled down
+   to two reasons: i) millions of Java programmers were already accustomed to existing syntax within 
+   Java interfaces; and ii) it's easy for the compiler to identify these methods by the keyword. 
+
+1. If you haven't done so already, add the `default` keyword to the `getState` method signature. Recompile 
+   only the `Encryptable` interface using `bin` as the default directory for compiled code. Now it should 
+   compile properly.
 
 1. Compile `BasicSecret.java`, `Secret.java`, and `SuperSecret.java`.
 
    ```
-   javac -d bin -cp bin src/cs1302/interfaces/impl/*.java
+   $ javac -d bin -cp bin src/cs1302/interfaces/impl/*.java
    ```
 
    This time it compiled!  
