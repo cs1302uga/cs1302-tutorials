@@ -23,9 +23,13 @@ public interface Encryptable {
 
     /**
      * Represents the state of an {@code Encryptable} object.
-     * 
      */
-    //enum State{ENCRYPTED, UNENCRYPTED, UNKNOWN};
+    /*
+    enum State {
+        ENCRYPTED, 
+        UNENCRYPTED, 
+        UNKNOWN
+    };*/
     
     /**
      * Encrypts the object. This method has no effect if the 
