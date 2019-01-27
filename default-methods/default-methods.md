@@ -146,15 +146,19 @@ implementation should be general.
    $ javac -d bin -cp bin src/cs1302/interfaces/impl/*.java
    ```
 
-   This time it compiled!  
+   This time they compiled!  
 
-You probably already have noticed the benefit of default methods. Since we provided a default 
+You have probably already noticed the benefit of default methods. Since we provided a default 
 implementation for the `getState` method in the interface, we don't have to go through each 
-implementing class and add the method. 
+implementing class and add the method. However, please note that the default implementation is
+a general implementation and does not properly reflect the state of the `Encryptable` object. It
+simply allows the existing implementing classes to compile without modification.
 
-The real benefit of default methods is that programmers who develop and maintain the implementing
-classes have a **choice** of whether or not to implement the new method. If they choose not to,
-the `getState` method will simply return "UNKNOWN" as the state. 
+To summarize, there are two important benefits to default methods:
+* They give programmers who develop and maintain the implementing
+classes a **choice** of whether or not to implement the new method. 
+* They allow interface designers to evolve an interface without
+disrupting existing implementations.
  
 ### Overriding a Default Method
 
