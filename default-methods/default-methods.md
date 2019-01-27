@@ -24,16 +24,15 @@ The steps in this tutorial assume that you are logged into the Nike server.
    called `cs1302-default-methods`:
 
    ```
-   curl -s -L https://git.io/fhKfi | bash
-
+   $ curl -s -L https://git.io/fhKfi | bash
    ```
   
 1. Change into the `cs1302-default-methods` directory that was just created and look around.
    There should be multiple Java files contained within the directory structure. To see a listing
-   of all of the files under the current directory, use the `find` command as follows:
+   of all of the files under the `src` subdirectory, use the `find` command as follows:
    
    ```
-   $ find .
+   $ find src
    ```
    
    Inspect each `.java` file that was listed. You will notice that there are three classes that
@@ -46,20 +45,25 @@ The steps in this tutorial assume that you are logged into the Nike server.
    algorithms.
 
 1. Generate, host, and view the API documentation website for the starter code provided with this tutorial.
+   Use `cs1302-default-methods-doc` as the name of the symbolic link.
 
+1. Look through the documentation website you just created. You might notice that the page for the 
+   `Encryptable` interface lists all known implementing classes just below the interface name near
+   the top of the page. 
+   
 ### Modifying an Interface
 
-Since a class that implements an interface **must** implement all methods of the interface, any change to
-an interface has a direct impact on all implementing classes. Therefore, the decision to modify an
-interface should not be taken lightly. Imagine if Oracle decided to add a few methods to a Java
-interface used by millions of programmers around the world. This decision would have a direct impact
-on all of those developers. 
+Since a conrete (i.e., instantiable) class that implements an interface **must** implement all methods 
+of the interface, any change to an interface has a direct impact on all implementing classes. Therefore,
+the decision to modify an interface should not be taken lightly. Imagine if Oracle decided to add a few 
+methods to a Java interface used by millions of programmers around the world. This decision would have 
+a direct impact on all of those developers!
 
-1. To see the impact of such a change on a **much** smaller scale, uncomment the method `getState` and
-   the `State` enumeration in the `Encryptable` interface. 
+1. To see the impact of such a change on a **much** smaller scale, go to the source code for the 
+   `Encryptable` interface and uncomment the `getState` method along with the `State` enumeration.
 
 1. Compile the `Encryptable` interface using `bin` as the default directory for compiled code. If you
-   added the code correctly in the previous step, there should be no syntax errors.
+   uncommented the code correctly in the previous step, there should be no syntax errors.
 
 1. Compile `BasicSecret.java`, `Secret.java`, and `SuperSecret.java`.
 
