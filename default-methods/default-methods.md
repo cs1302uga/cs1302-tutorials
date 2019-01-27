@@ -169,16 +169,18 @@ If a programmer chooses to implement a default method, they can override the beh
 class. In our example, let's implement `getState` in the `SuperSecret` class so it returns the actual state
 of the object instead of `UNKNOWN`.
 
-1. In the `SuperSecret` class, add a private instance variable of type `Encryptable.State` called `state`. 
-   This instance variable will represent the state of this `Encryptable` object.  Remember, the state can 
-   be any of the constants contained in the enumeration (`ENCRYPTED`, `UNENCRYPTED`, or `UNKNOWN`).
+1. Go to the source code for the `SuperSecret` class and make the following changes:
+
+   * Add a private instance variable of type `Encryptable.State` called `state`. 
+     This instance variable will represent the state of this `Encryptable` object.  Remember, the state can 
+     be any of the constants contained in the enumeration (`ENCRYPTED`, `UNENCRYPTED`, or `UNKNOWN`).
    
-1. In the constructor of `SuperSecret`, set the value of `state` to `Encryptable.State.UNENCRYPTED`.
+   * In the constructor, set the value of the `state` instance variable to `Encryptable.State.UNENCRYPTED`.
 
-1. Recompile **only** `SuperSecret` using `bin` as the default package for compiled code. Since we haven't
-   changed the other implementing classes, they don't need to be recompiled.
+   * In the `encrypt` and `decrypt` methods, set the state of the object appropriately.
 
-1. In the `encrypt` and `decrypt` methods of `SuperSecret`, set the state of the object appropriately.
+1. Recompile **only** `SuperSecret` using `bin` as the default package for compiled code. Since we didn't
+   change the other implementing classes, they don't need to be recompiled.
 
 1. To override the default method of `Encryptable`, add the following code to the `SuperSecret` class:
 
