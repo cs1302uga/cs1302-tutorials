@@ -1,6 +1,6 @@
 # Default Methods Tutorial
 
-This tutorial introduces the reader to default methods in Java.
+This tutorial introduces the reader to default methods in Java, a powerful way to evolve an interface.
 
 **NOTE:** Many of the code examples in this tutorial are adapted from
 [[1]](https://www.pearson.com/us/higher-education/program/Lewis-Java-Foundations-Introduction-to-Program-Design-and-Data-Structures-4th-Edition/PGM76634.html)
