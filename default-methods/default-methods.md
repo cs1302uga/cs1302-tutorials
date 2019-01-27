@@ -201,19 +201,24 @@ of the object instead of `UNKNOWN`.
    
    ```
    src/cs1302/interfaces/impl/SuperSecret.java:61: error: method does not override or implement a method from a supertype
-    @Override
+       @Override
+       ^
    ```
+
    If the annotation were omitted, the `SuperSecret` class would have compiled but would contain two separate
    methods: `getStat` and `getState`.  Calling `getState` would return `UNKNOWN` and calling `getStat` would
    return the state of the calling object. In general, this is a difficult mistake to catch without compiler
    assistance. Therefore, the use of the `@Override` annotation, although not required, is always recommended 
    when your intent is to override.
    
-1. Change `getStat` back to `getState` and recompile your program to make sure it is working.
+1. Change `getStat` back to `getState` and recompile your `SuperSecret` class. If done properly, the code should now
+   compile.
 
-1. In the `test` method for `SecretDriver`, add a print statement to output the state immediately following
-   each time we print the `Encryptable` reference `e`.  Compile and run `SecretDriver`.  Your output should
-   look something like this:
+1. Go to the source code for `SecretDriver`. In the `test` method, identify the lines that print to standard
+   output the `Encryptable` object that `e` refers to (should be three). After each line, add a `println` 
+   statement that prints the value returned by `e.getState()`. After recompiling and running the `SecretDriver`
+   class, your output should look something like the output provided below. **NOTE:** The encrypted message 
+   contents may differ slightly due to the random nature of the encryption algorithms employed.
    
    ```
    # Secret Test
@@ -239,7 +244,7 @@ of the object instead of `UNKNOWN`.
    UNKNOWN
    ```
    
-   Notice the output from `SuperSecret`.  Compare that to `Secret` and `BasicSecret`.
+   Notice the output related to `SuperSecret`.  Compare that to the output related to `Secret` and `BasicSecret`.
    
 That's it!  You've completed the default methods tutorial.  Hopefully, you've gained an appreciation for the 
 power (and limitations) of these methods.
