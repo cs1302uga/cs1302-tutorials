@@ -182,7 +182,42 @@ of the object instead of `UNKNOWN`.
 1. Recompile **only** `SuperSecret` using `bin` as the default package for compiled code. Since we didn't
    change the other implementing classes, they don't need to be recompiled.
 
-1. To override the default method of `Encryptable`, add the following code to the `SuperSecret` class:
+1. Go to the source code for `SecretDriver`. In the `test` method, identify the lines that print to standard
+   output the `Encryptable` object that `e` refers to (should be three). After each line, add a `println` 
+   statement that prints the value returned by `e.getState()`. After recompiling and running the `SecretDriver`
+   class, your output should look something like the output provided below. **NOTE:** The encrypted message 
+   contents may differ slightly due to the random nature of the encryption algorithms employed.
+   
+   ```
+   # Secret Test
+   Secret(Hello, world...)
+   UNKNOWN
+   Secret(©ÆÍÍÐØÐÓÍÅ)
+   UNKNOWN
+   Secret(Hello, world...)
+   UNKNOWN
+   # SuperSecret Test
+   SuperSecret(Hello, world!!!)
+   UNKNOWN
+   SuperSecret(_ŝ²ºÐ½_§ôŝ»ïú)
+   UNKNOWN
+   SuperSecret(Hello, world!!!)
+   UNKNOWN
+   # BasicSecret Test
+   Secret(Hello, world?)
+   UNKNOWN
+   Secret(Ifmmp-!xpsme@)
+   UNKNOWN
+   Secret(Hello, world?)
+   UNKNOWN
+   ```
+
+   Notice that all of the objects use the default implementation of `getState` resulting in their state 
+   being printed as `UNKNOWN`.
+   
+1. We can now change the behavior of `getState` in any new or existing implementing class, as needed. As an
+   example, override the `getState` default method of the `Encryptable` interface in the `SuperSecret` class 
+   by adding the following code to `SuperSecret`:
 
    ```java
    @Override
@@ -211,14 +246,11 @@ of the object instead of `UNKNOWN`.
    assistance. Therefore, the use of the `@Override` annotation, although not required, is always recommended 
    when your intent is to override.
    
-1. Change `getStat` back to `getState` and recompile your `SuperSecret` class. If done properly, the code should now
-   compile.
+1. Change `getStat` back to `getState` and recompile your `SuperSecret` class. If done properly, the `SuperSecret`
+   class should now compile.
 
-1. Go to the source code for `SecretDriver`. In the `test` method, identify the lines that print to standard
-   output the `Encryptable` object that `e` refers to (should be three). After each line, add a `println` 
-   statement that prints the value returned by `e.getState()`. After recompiling and running the `SecretDriver`
-   class, your output should look something like the output provided below. **NOTE:** The encrypted message 
-   contents may differ slightly due to the random nature of the encryption algorithms employed.
+1. Rerun the `SecretDriver` class. Since we haven't made any modifications to this class since we last compiled it,
+   recompilation isn't necessary. Your output should look something like the output provided below. 
    
    ```
    # Secret Test
