@@ -246,13 +246,15 @@ of the object instead of `UNKNOWN`.
    
    Notice the output related to `SuperSecret`.  Compare that to the output related to `Secret` and `BasicSecret`.
    
-That's it!  You've completed the default methods tutorial.  Hopefully, you've gained an appreciation for the 
-power (and limitations) of these methods.
+That's it!  You've completed the default methods tutorial.  Hopefully, you've recognized some of the pros and cons
+related to the different strategies for involving an interface. In some scenarios, it may be appropriate to add
+more abstact methods to an interface at the cost of modifying existing implementing classes. In other scenarios,
+it may be more appropriate (or even necessary) to add default methods at the cost of providing only a general 
+implementation to the existing implementing classes. Other scenarios may necessitate a mix of both approaches. 
 
 ### References
 
 * [[1] Lewis, DePasquale, and Chase. _Java Foundations_. Fourth Edition.](https://www.pearson.com/us/higher-education/program/Lewis-Java-Foundations-Introduction-to-Program-Design-and-Data-Structures-4th-Edition/PGM76634.html)
-* [[2] Oracle Java Tutorials: Interfaces](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html)
 
 <hr/>
 
