@@ -118,10 +118,13 @@ implementation should be general.
 
    ```java
    public Encryptable.State getState() {
-      return State.UNKNOWN;
+      return Encryptable.State.UNKNOWN;
    } // getState
    ```
 
+   Notice that the return type is `Encryptable.State`. Since an enumerated type in an interface is implicitly
+   static, we refer to the type using the interface name.
+   
 1. Recompile only the `Encryptable` interface using `bin` as the default directory for compiled code. You 
    will see a compile-time error which includes a message stating "interface abstract methods cannot have
    body". The problem occurred because we added what looks like an instance method to the interface. Since
@@ -182,7 +185,7 @@ of the object instead of `UNKNOWN`.
    ```java
    @Override
    public Encryptable.State getState() {
-      return state;
+      return this.state;
    } // getState
    ```
 
