@@ -117,7 +117,7 @@ implementation should be general.
    method with the following public method alternative:
 
    ```java
-   public State getState() {
+   public Encryptable.State getState() {
       return State.UNKNOWN;
    } // getState
    ```
@@ -164,13 +164,16 @@ disrupting existing implementations.
 
 If a programmer chooses to implement a default method, they can override the behavior in the implementing
 class. In our example, let's implement `getState` in the `SuperSecret` class so it returns the actual state
-of the object instead of "UNKNOWN".
+of the object instead of `UNKNOWN`.
 
-1. In the `SuperSecret` class, add an instance variable of type `Encryptable.State` called `state`. This 
-   instance variable will represent the state of this `Encryptable` object.  Remember, the state can be
-   "ENCRYPTED", "UNENCRYPTED", or "UNKNOWN".
+1. In the `SuperSecret` class, add a private instance variable of type `Encryptable.State` called `state`. 
+   This instance variable will represent the state of this `Encryptable` object.  Remember, the state can 
+   be any of the constants contained in the enumeration (`ENCRYPTED`, `UNENCRYPTED`, or `UNKNOWN`).
    
-1. In the constructor of `SuperSecret`, set the value of `state` to `Encrypted.State.UNENCRYPTED`.
+1. In the constructor of `SuperSecret`, set the value of `state` to `Encryptable.State.UNENCRYPTED`.
+
+1. Recompile **only** `SuperSecret` using `bin` as the default package for compiled code. Since we haven't
+   changed the other implementing classes, they don't need to be recompiled.
 
 1. In the `encrypt` and `decrypt` methods of `SuperSecret`, set the state of the object appropriately.
 
@@ -178,7 +181,7 @@ of the object instead of "UNKNOWN".
 
    ```java
    @Override
-   public State getState() {
+   public Encryptable.State getState() {
       return state;
    } // getState
    ```
