@@ -51,6 +51,6 @@ public interface Encryptable {
      * @since 2.0
      * @return the state.
      */
-    //public State getState();
+    //public Encryptable.State getState();
     
 } // Encryptable
