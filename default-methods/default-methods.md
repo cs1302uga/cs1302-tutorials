@@ -191,19 +191,25 @@ of the object instead of `UNKNOWN`.
    } // getState
    ```
 
-1. Notice that the signature of `getState` matches the signature in the `Encryptable` interface. The two
-   signatures must match perfectly to correctly override the method. To ensure the match, we add the 
-   `@Override` annotation. This annotation tells the compiler that we are intending to override a method.
-   If we made a mistake when typing the method signature, the compiler would let us know.
+1. Notice that the signature of the `getState` method in `SuperSecret` matches the signature of the default
+   method in the `Encryptable` interface, except the `default` keyword is omitted. To have the compiler
+   verify that the signatures match, we added the `@Override` annotation. If we make a mistake when typing 
+   the method signature, the compiler will let us know that the signatures do not match.
    
-1. Try it.  Change the method name to `getStat` (instead of `getState`) in `SuperSecret`.  You should see
+1. Try it. Change the method name to `getStat` (instead of `getState`) in `SuperSecret`.  You will see
    the following error message indicating that the method does not override a method of `Encryptable`:
    
    ```
    src/cs1302/interfaces/impl/SuperSecret.java:61: error: method does not override or implement a method from a supertype
     @Override
    ```
-1. Change `getStat` back to `getState` and recompile your program to make sure it is all working.
+   If the annotation were omitted, the `SuperSecret` class would have compiled but would contain two separate
+   methods: `getStat` and `getState`.  Calling `getState` would return `UNKNOWN` and calling `getStat` would
+   return the state of the calling object. In general, this is a difficult mistake to catch without compiler
+   assistance. Therefore, the use of the `@Override` annotation, although not required, is always recommended 
+   when your intent is to override.
+   
+1. Change `getStat` back to `getState` and recompile your program to make sure it is working.
 
 1. In the `test` method for `SecretDriver`, add a print statement to output the state immediately following
    each time we print the `Encryptable` reference `e`.  Compile and run `SecretDriver`.  Your output should
