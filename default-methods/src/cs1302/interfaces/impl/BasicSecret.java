@@ -58,7 +58,7 @@ public class BasicSecret implements Encryptable {
 	} else {
 	    content = message;
 	} // if
-	return String.format("Secret(%s)", content);
+	return String.format("BasicSecret(%s)", content);
     } // toString
     
 } // Secret
