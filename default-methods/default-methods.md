@@ -49,13 +49,13 @@ The steps in this tutorial assume that you are logged into the Nike server.
 
 ### Modifying an Interface
 
-Since a class that implements an interface *must* implement all methods of the interface, any changes to
+Since a class that implements an interface **must** implement all methods of the interface, any change to
 an interface has a direct impact on all implementing classes. Therefore, the decision to modify an
 interface should not be taken lightly. Imagine if Oracle decided to add a few methods to a Java
 interface used by millions of programmers around the world. This decision would have a direct impact
 on all of those developers. 
 
-1. To see the impact of such a change on a *much* smaller scale, uncomment the method `getState` and
+1. To see the impact of such a change on a **much** smaller scale, uncomment the method `getState` and
    the `State` enumeration in the `Encryptable` interface. 
 
 1. Compile the `Encryptable` interface using `bin` as the default directory for compiled code. If you
@@ -101,7 +101,7 @@ on all of those developers.
 
 Given that we only have three classes that implement `Encryptable` we _could_ go through them one at a 
 time add the `getState` method to each. However, this is not always feasible (remember the Oracle example). 
-A nice alternative is to use a *Default Method*. When we define a default method in an interface, we can also
+A nice alternative is to use a *Default Method*. When we add a default method to an interface, we can 
 provide an implementation. Since the method is defined at the interface level, the implementation is often 
 quite general. 
 
@@ -127,14 +127,79 @@ You probably already have noticed the benefit of default methods. Since we provi
 implementation for the `getState` method in the interface, we don't have to go through each 
 implementing class and add the method. 
 
-So, what's the downside? Well, all of our classes return "UNKNOWN" as their state. This isn't the
-desired behavior. Instead, we would like it if all classes returned their actual state. In order
-to make this work, we could implement the `getState` method in any implementing class that would
-benefit from this new behavior.
+The real benefit of default methods is that programmers who develop and maintain the implementing
+classes have a **choice** of whether or not to implement the new method. If they choose not to,
+the `getState` method will simply return "UNKNOWN" as the state. 
  
 ### Overriding a Default Method
 
-1. 
+If a programmer chooses to implement a default method, they can override the behavior in the implementing
+class. In our example, let's implement `getState` in the `SuperSecret` class so it returns the actual state
+of the object instead of "UNKNOWN".
+
+1. In the `SuperSecret` class, add an instance variable of type `Encryptable.State` called `state`. This 
+   instance variable will represent the state of this `Encryptable` object.  Remember, the state can be
+   "ENCRYPTED", "UNENCRYPTED", or "UNKNOWN".
+   
+1. In the constructor of `SuperSecret`, set the value of `state` to `Encrypted.State.UNENCRYPTED`.
+
+1. In the `encrypt` and `decrypt` methods of `SuperSecret`, set the state of the object appropriately.
+
+1. To override the default method of `Encryptable`, add the following code to the `SuperSecret` class:
+
+   ```java
+   @Override
+   public State getState() {
+      return state;
+   } // getState
+   ```
+
+1. Notice that the signature of `getState` matches the signature in the `Encryptable` interface. The two
+   signatures must match perfectly to correctly override the method. To ensure the match, we add the 
+   `@Override` annotation. This annotation tells the compiler that we are intending to override a method.
+   If we made a mistake when typing the method signature, the compiler would let us know.
+   
+1. Try it.  Change the method name to `getStat` (instead of `getState`) in `SuperSecret`.  You should see
+   the following error message indicating that the method does not override a method of `Encryptable`:
+   
+   ```
+   src/cs1302/interfaces/impl/SuperSecret.java:61: error: method does not override or implement a method from a supertype
+    @Override
+   ```
+1. Change `getStat` back to `getState` and recompile your program to make sure it is all working.
+
+1. In the `test` method for `SecretDriver`, add a print statement to output the state immediately following
+   each time we print the `Encryptable` reference `e`.  Compile and run `SecretDriver`.  Your output should
+   look something like this:
+   
+   ```
+   # Secret Test
+   Secret(Hello, world...)
+   UNKNOWN
+   Secret(©ÆÍÍÐØÐÓÍÅ)
+   UNKNOWN
+   Secret(Hello, world...)
+   UNKNOWN
+   # SuperSecret Test
+   SuperSecret(Hello, world!!!)
+   UNENCRYPTED
+   SuperSecret(_ŝ²ºÐ½_§ôŝ»ïú)
+   ENCRYPTED
+   SuperSecret(Hello, world!!!)
+   UNENCRYPTED
+   # BasicSecret Test
+   Secret(Hello, world?)
+   UNKNOWN
+   Secret(Ifmmp-!xpsme@)
+   UNKNOWN
+   Secret(Hello, world?)
+   UNKNOWN
+   ```
+   
+   Notice the output from `SuperSecret`.  Compare that to `Secret` and `BasicSecret`.
+   
+That's it!  You've completed the default methods tutorial.  Hopefully, you've gained an appreciation for the 
+power (and limitations) of these methods.
 
 ### References
 
