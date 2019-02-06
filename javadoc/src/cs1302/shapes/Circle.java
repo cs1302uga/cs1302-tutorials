@@ -23,7 +23,7 @@ public class Circle {
      * @throws Exception if {@code radius} is negative
      */
     public Circle(double radius) throws Exception {
-        checkRadius();
+        checkRadius(radius);
         this.radius = radius;
     } // Circle
 
@@ -36,7 +36,7 @@ public class Circle {
     } // getRadius
 
     public void setRadius(double radius) throws Exception {
-        checkRadius();
+        checkRadius(radius);
         this.radius = radius;
     } // getRadius
 
@@ -54,7 +54,7 @@ public class Circle {
      * @return the computed perimeter
      */
     public double getPerimeter() {
-        return Math.PI * getDiamter();
+        return Math.PI * getDiameter();
     } // getArea
 
     /**
