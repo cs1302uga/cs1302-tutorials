@@ -19,6 +19,13 @@ and take notes.
 
 The steps in this tutorial assume that you are logged into the Nike server. 
 
+1. Look at the source code contained in this tutorial.  Notice that the container classes differ only in
+   the type of data that they hold.
+
+1. Since the code is all very similar, you may imagine trying to move the similar methods to a parent, abstract
+   class to remove the redundancy. The problem is that the types are different.
+
+
 1. Use the following command to download and execute a shell script that retrieves 
    the starter code for this tutorial and places it into a subdirectory 
    called `cs1302-default-methods`:
