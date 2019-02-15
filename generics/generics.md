@@ -1,6 +1,6 @@
 # Java Generics Tutorial
 
-This tutorial introduces the reader to Java Generics, a powerful way to write classes, interfaces, and methods using a parameterized type.
+This tutorial introduces the reader to Java Generics, a powerful way to write classes, interfaces, and methods using a type parameter.
 
 Generics are used when you want to apply the exact same implementation (code) to various types. Contrast this with Inheritance which is
 used when you need common functionality to be implemented in different ways. Think of a `getPerimeter()` method that can be applied to
