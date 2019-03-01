@@ -32,7 +32,7 @@ the many packages included ith JavaFX can be found
    $ curl -s -L https://git.io/fhAR8 | bash
    ```
    
-1. Change into the `cs1302-javadoc` directory that was just created and look around. There should be
+1. Change into the `cs1302-javafx` directory that was just created and look around. There should be
    multiple Java files contained within the directory structure. To see a listing of all of the 
    files under the `src` subdirectory, use the `find` command as follows:
    
