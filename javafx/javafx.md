@@ -58,8 +58,8 @@ the many packages included ith JavaFX can be found
 	  
 1. The error message that displays is related to the JavaFX graphics renderer. By default, it
    attempts to perform hardware-accelerated rendering. However, we need to enable to software-based
-   render to work nicely with X-forwarding. Close out of the small GUI app. Now, rerun the driver but
-   add `-Dprism.order=sw` in addition to the usualy options when executing the related `java`
+   rendering in order for it to work nicely with X-forwarding. Close out of the small GUI app. Now, rerun 
+   the driver but add `-Dprism.order=sw` in addition to the usualy options when executing the related `java`
    command.
    
 1. If the small GUI app appears again with no render errors, then you are okay to proceed!
