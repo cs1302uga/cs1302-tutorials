@@ -19,6 +19,11 @@ the many packages included ith JavaFX can be found
    $ ssh -XY username@nike.cs.uga.edu
    ```
    
+   If you encounter problems in this step, then please ensure that you have followed the
+   instructions provided at the beginning of the semester for
+   [MacOS users](https://github.com/cs1302uga/cs1302-exercises/blob/master/misc/MacOS.md) or
+   [Windows 10 users](https://github.com/cs1302uga/cs1302-exercises/blob/master/misc/Windows10.md).
+   
 1. Use the following command to download and execute a shell script that retrieves 
    the starter code for this tutorial and places it into a subdirectory 
    called `cs1302-javafx`:
