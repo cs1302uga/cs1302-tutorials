@@ -11,7 +11,9 @@ the many packages included ith JavaFX can be found
 
 1. First, you need to ensure that your terminal emulator supports X-forwarding. This allows
    the GUI parts of your application to be forwarded to your local computer in addition to
-   the terminal output. 
+   the terminal output. To check this, work through the rest of this section of the
+   tutorial. First, login to Nike using the `ssh` command along with the `-XY` option. 
+   As always, be sure to replace `username` with your Nike username.
    
    ```
    $ ssh -XY username@nike.cs.uga.edu
