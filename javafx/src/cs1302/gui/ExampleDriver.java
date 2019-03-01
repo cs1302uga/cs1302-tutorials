@@ -2,8 +2,15 @@ package cs1302.gui;
 
 import javafx.application.Application;
 
+/**
+ * Driver class for the {@link ExampleApp} class.
+ */
 public class ExampleDriver {
 
+    /**
+     * Main entry-point into the application.
+     * @param args the command-line arguments.
+     */
     public static void main(String[] args) {
 	try {
 	    Application.launch(ExampleApp.class, args);
