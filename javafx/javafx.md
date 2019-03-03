@@ -214,6 +214,7 @@ register an event handler for one of the events the button might generate.
 
 ## References
 
+* [JavaFX 8 Bookmarks and Notes](http://cobweb.cs.uga.edu/~mec/cs1302/gui/)
 * [JavaFX 8 API Documentation](https://docs.oracle.com/javase/8/javafx/api/overview-summary.html)
 
 <hr/>
