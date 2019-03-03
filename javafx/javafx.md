@@ -115,11 +115,26 @@ the many packages included ith JavaFX can be found
       before making it visible. You should refer to the API documentation for the [`Stage`] class about
       different properties a stage can have, including decorations and modality options.
    
-   1. What is a `Scene` object? In JavaFX, a scene 
+   1. What is a `Scene` object? In JavaFX, a scene is the container for all content in a scene graph. The term
+      "scene graph" is just a fancy term for a structured hierarchy of the components contained in your app.
    
       * There can only be one `Scene` on a `Stage` at a time, and a `Scene` can only be on one `Stage` at a time. 
       * You may swap scenes on a `Stage` at any time so long as the call to `setScene` is made on the 
         JavaFX Application Thread (more on this later).
+      
+      One reason that JavaFX exmploys the use of scenes instead of directly adding components to stage is to
+      enable easier swapping between modes of an app. For example, consider a video game with a title screen,
+      main game screen, and an options screen. In this scenario, each "screen" might be its own scene.
+	
+   1. The scene graph for the `ExampleApp` might look like this:
+      ```
+      HBox
+        |
+      Text
+      ```
+      The "root" of this scene graph is an object of the [`HBox`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/layout/HBox.html)
+      container class. This object has one child, an object of the [`Text`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/text/Text.html) 
+      class. 
 
 ## References
 
