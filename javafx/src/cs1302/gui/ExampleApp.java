@@ -26,7 +26,7 @@ public class ExampleApp extends Application {
 	stage.setTitle("ExampleApp!");
 	stage.show();
 	
-    } // main
+    } // start
 
 } // ExampleApp
 
