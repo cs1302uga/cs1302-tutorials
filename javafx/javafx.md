@@ -1,7 +1,7 @@
 # JavaFX Starter Tutorial
 
 JavaFX is a library for creating and delivering applications with graphical user interfaces (GUIs)
-in Java. In this couse, we will use JavaFX 8 as it comes with Java 8. The API documentation for
+in Java. In this tutorial, we will use JavaFX 8 as it comes with Java 8. The API documentation for
 the many packages included ith JavaFX can be found 
 [here](https://docs.oracle.com/javase/8/javafx/api/toc.htm).
 
