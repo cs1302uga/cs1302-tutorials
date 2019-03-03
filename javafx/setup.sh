@@ -8,6 +8,7 @@ if [ ! -d $DIR ]; then
   git checkout master -- $TUTNAME
   rm -f $TUTNAME/setup.sh
   mv $TUTNAME/* ./
+  mv $TUTNAME/.gitignore ./
   rm -rf $TUTNAME
   rm -rf .git
   git init
