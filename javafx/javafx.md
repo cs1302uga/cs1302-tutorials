@@ -71,7 +71,8 @@ the many packages included ith JavaFX can be found
    the driver but add `-Dprism.order=sw` in addition to the usualy options when executing the related `java`
    command.
    
-1. If the small GUI app appears again with no render errors, then you are okay to proceed!
+1. If the small GUI app containing a nice message appears with no renderer errors, then you are okay to proceed!
+   **Note**: You may have to wait a few seconds to see the message.
 
 ## High-Level Walkthrough 
 
