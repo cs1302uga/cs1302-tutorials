@@ -176,7 +176,7 @@ objects. This can happen automatically or in response to user input. Each event 
 i.e., a method that is registered to handle the event when its generated. Let's add a button to `ExampleApp`, then
 register an event handler for one of the events the button might generate.
 
-1. In `ExampleApp.java`, import the import the [`Button`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/Button.html),
+1. In `ExampleApp.java`, import the [`Button`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/Button.html),
    then add the following line immediately after the line that creates the `Text` object:
    ```java
    Button button = new Button("Click me!");
