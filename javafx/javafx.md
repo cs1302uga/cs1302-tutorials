@@ -64,7 +64,7 @@ the many packages included ith JavaFX can be found
    
 1. If the small GUI app appears again with no render errors, then you are okay to proceed!
 
-## Walkthrough 
+## High-Level Walkthrough 
 
 1. In JavaFX, applications (or apps) are created by creating a class that extends the
    [`javafx.application.Application`](https://docs.oracle.com/javase/8/javafx/api/javafx/application/Application.html)
@@ -87,7 +87,8 @@ the many packages included ith JavaFX can be found
    1. Constructs an instance of the specified `Application` subclass;
    1. Calls the app's [`init`](https://docs.oracle.com/javase/8/javafx/api/javafx/application/Application.html#init--)
       method, which the programmer may have overidden;
-   1. Creates a `Stage` object and calls the app's `start` method with a reference to that `Stage` object;
+   1. Creates a `Stage` object and calls the app's [`start`](https://docs.oracle.com/javase/8/javafx/api/javafx/application/Application.html#start-javafx.stage.Stage-)
+      method with a reference to that `Stage` object;
    1. Waits for the app to finish, which happens when either of the following occur:
       
       * the app calls [`Platform.exit`](https://docs.oracle.com/javase/8/javafx/api/javafx/application/Platform.html#exit--)
@@ -96,6 +97,30 @@ the many packages included ith JavaFX can be found
    1. Calls the app's [`stop`](https://docs.oracle.com/javase/8/javafx/api/javafx/application/Application.html#stop--) 
       method, which the programmer may have overidden;
 
+## Mid-Level Walkthrough 
+
+1. Now, let's go back to `ExampleApp.java`. Insepct the `start` method, which is required to be overridden in concrete
+   subclasses of the `Application` class.
+   
+   1. This method is considered the main entry point for a JavaFX app. 
+      The `start` method is called after the `init` method has returned, and after the system is ready for the 
+      app to begin running.
+      
+   1. The method's only parameter is a reference to a [`Stage`](https://docs.oracle.com/javase/8/javafx/api/javafx/stage/Stage.html)
+      object. The JavaFX `Stage` class is the top level JavaFX container (i.e., consider it to be the window). 
+      The primary `Stage` is constructed by the platform during step (iv) of the JavaFX application life-cycle. 
+      Additional `Stage` objects may be constructed by the application.
+      
+   1. By default, a stage is not visible. You must initialize it with a reference to a `Scene` object 
+      before making it visible. You should refer to the API documentation for the [`Stage`] class about
+      different properties a stage can have, including decorations and modality options.
+   
+   1. What is a `Scene` object? In JavaFX, a scene 
+   
+      * There can only be one `Scene` on a `Stage` at a time, and a `Scene` can only be on one `Stage` at a time. 
+      * You may swap scenes on a `Stage` at any time so long as the call to `setScene` is made on the 
+        JavaFX Application Thread (more on this later).
+
 ## References
 
-
+* [JavaFX 8 API Documentation](https://docs.oracle.com/javase/8/javafx/api/overview-summary.html)
