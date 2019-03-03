@@ -42,18 +42,29 @@ the many packages included ith JavaFX can be found
    need to create the `bin` directory.
    
 1. Attempt to run the `cs1302.gui.ExampleDriver` class in the usual manner. If successful, then
-   two things should happen:
+   one of two things should happen:
    
    1. A small, but blank, GUI app will appear on your screen. This may appear in another
-      desktop or minimized if your computer utilizes multiple windows.
-	  
-   1. The following error message will appear:
+      desktop or minimized if your computer utilizes multiple windows. However, the following 
+      error message will appear in the terminal:
       ```
       libGL error: No matching fbConfigs or visuals found
       libGL error: failed to load driver: swrast
       Prism-ES2 Error : GL_VERSION (major.minor) = 1.4
       ```
-	  
+   1. A scary error message similar to the following will appear and no GUI app will appear 
+      on your screen (don't panic):
+      ```
+      libGL error: No matching fbConfigs or visuals found
+      libGL error: failed to load driver: swrast
+      X Error of failed request:  BadValue (integer parameter out of range for operation)
+        Major opcode of failed request:  149 (GLX)
+        Minor opcode of failed request:  24 (X_GLXCreateNewContext)
+        Value in failed request:  0x0
+        Serial number of failed request:  23
+        Current serial number in output stream:  24
+      ```
+
 1. The error message that displays is related to the JavaFX graphics renderer. By default, it
    attempts to perform hardware-accelerated rendering. However, we need to enable to software-based
    rendering in order for it to work nicely with X-forwarding. Close out of the small GUI app. Now, rerun 
