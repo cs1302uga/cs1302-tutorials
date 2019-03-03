@@ -51,10 +51,10 @@ the many packages included ith JavaFX can be found
 	  
    1. The following error message will appear:
       ```
-	  libGL error: No matching fbConfigs or visuals found
+      libGL error: No matching fbConfigs or visuals found
       libGL error: failed to load driver: swrast
       Prism-ES2 Error : GL_VERSION (major.minor) = 1.4
-	  ```
+      ```
 	  
 1. The error message that displays is related to the JavaFX graphics renderer. By default, it
    attempts to perform hardware-accelerated rendering. However, we need to enable to software-based
@@ -63,6 +63,38 @@ the many packages included ith JavaFX can be found
    command.
    
 1. If the small GUI app appears again with no render errors, then you are okay to proceed!
+
+## Walkthrough 
+
+1. In JavaFX, applications (or apps) are created by creating a class that extends the
+   [`javafx.application.Application`](https://docs.oracle.com/javase/8/javafx/api/javafx/application/Application.html)
+   class and overriding the `start` method. In the starter code, inspect the class declaration inside of `ExampleApp.java`.
+   We will explain the inside of the `start` method shortly.
+   
+1. Assuming you have a JavaFX app class (e.g., `ExampleApp`), the perferred way of launching an instance of the
+   app is by using the static `Application.launch` inside of some driver class. In the starter code, inspect the
+   `main` method inside of `ExampleDriver.java`.
+   
+   * The `try-catch` statement is included to ensure that if any exceptions propogate up to `main` method, then
+     the user is presented with a nicer message than the usual stack trace. We also do this because one such
+     exception relates to a timeout issue with the X-forwaring -- in this case, we want to inform the user that
+     they can logout, then log back in to resolve the problem.
+     
+1. The [`launch`](https://docs.oracle.com/javase/8/javafx/api/javafx/application/Application.html#launch-java.lang.Class-java.lang.String...-)
+   launches the app by initiating the JavaFX application life-cycle, a sequence of steps that occur over the life
+   of the launched application. The JavaFX runtime does the following, in order, whenever an application is launched:
+
+   1. Constructs an instance of the specified `Application` subclass;
+   1. Calls the app's [`init`](https://docs.oracle.com/javase/8/javafx/api/javafx/application/Application.html#init--)
+      method, which the programmer may have overidden;
+   1. Creates a `Stage` object and calls the app's `start` method with a reference to that `Stage` object;
+   1. Waits for the app to finish, which happens when either of the following occur:
+      
+      * the app calls [`Platform.exit`](https://docs.oracle.com/javase/8/javafx/api/javafx/application/Platform.html#exit--)
+      * the last window has been closed and the `implicitExit` attribute on `Platform` is true -- this is the default.
+    
+   1. Calls the app's [`stop`](https://docs.oracle.com/javase/8/javafx/api/javafx/application/Application.html#stop--) 
+      method, which the programmer may have overidden;
 
 ## References
 
