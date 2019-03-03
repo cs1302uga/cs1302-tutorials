@@ -141,9 +141,9 @@ the many packages included ith JavaFX can be found
 	
    1. The scene graph for the `ExampleApp` might look like this:
       ```
-      HBox
-        |
-      Text
+      root: HBox
+          |
+      hello: Text
       ```
       The "root" of this scene graph is an object of the [`HBox`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/layout/HBox.html)
       container class. This object has one child, an object of the [`Text`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/text/Text.html) 
@@ -152,7 +152,23 @@ the many packages included ith JavaFX can be found
 1. Before you continue, you should note what each line in the `start` method of `ExampleApp.java` is doing by
    referring to the corresponsing API documentation. This is something that you will be doing a lot while
    working with JavaFX (and most other libraries).
-      
+   
+   The scene graph was given in the previous step. You might also find the overall containment hierarchy for
+   `ExampleApp` helpful.  It would look something like this:
+      ```
+      stage: Stage
+          |
+      scene: Scene
+          |
+      root: HBox
+          |
+      hello: Text
+      ```
+      The "root" of the containment hierarchy is an object of the 
+      [`Stage`](https://docs.oracle.com/javase/8/javafx/api/javafx/stage/Stage.html)
+      container class. The `stage` object contains the 
+      [`Scene`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/Scene.html).
+   
 ## Events and Event Handlers
 
 In JavaFX, nodes can generate [`Event`](https://docs.oracle.com/javase/8/javafx/api/javafx/event/Event.html)
