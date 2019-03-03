@@ -126,8 +126,8 @@ the many packages included ith JavaFX can be found
       different properties a stage can have, including decorations and modality options.
    
    1. What is a `Scene` object? In JavaFX, a scene is the container for all content in a scene graph. The term
-      "scene graph" is just a fancy term for a structured hierarchy of the nodes / components contained in your app.
-      We use the term "node" because all such objects have an upper bound of 
+      "scene graph" is just a fancy term for a structured hierarchy of the nodes / components contained in a
+      particular scene. We use the term "node" because all such objects have an upper bound of 
       [`javafx.scene.Node`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/Node.html).
    
       * There can only be one `Scene` on a `Stage` at a time, and a `Scene` can only be on one `Stage` at a time. 
