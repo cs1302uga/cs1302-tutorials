@@ -116,13 +116,15 @@ the many packages included ith JavaFX can be found
       different properties a stage can have, including decorations and modality options.
    
    1. What is a `Scene` object? In JavaFX, a scene is the container for all content in a scene graph. The term
-      "scene graph" is just a fancy term for a structured hierarchy of the components contained in your app.
+      "scene graph" is just a fancy term for a structured hierarchy of the nodes / components contained in your app.
+      We use the term "node" because all such objects have an upper bound of 
+      [`javafx.scene.Node`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/Node.html).
    
       * There can only be one `Scene` on a `Stage` at a time, and a `Scene` can only be on one `Stage` at a time. 
       * You may swap scenes on a `Stage` at any time so long as the call to `setScene` is made on the 
         JavaFX Application Thread (more on this later).
       
-      One reason that JavaFX exmploys the use of scenes instead of directly adding components to stage is to
+      One reason that JavaFX exmploys the use of scenes instead of directly adding nodes / components to a stage is to
       enable easier swapping between modes of an app. For example, consider a video game with a title screen,
       main game screen, and an options screen. In this scenario, each "screen" might be its own scene.
 	
@@ -135,6 +137,80 @@ the many packages included ith JavaFX can be found
       The "root" of this scene graph is an object of the [`HBox`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/layout/HBox.html)
       container class. This object has one child, an object of the [`Text`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/text/Text.html) 
       class. 
+
+1. Before you continue, you should note what each line in the `start` method of `ExampleApp.java` is doing by
+   referring to the corresponsing API documentation. This is something that you will be doing a lot while
+   working with JavaFX (and most other libraries).
+      
+## Events and Event Handlers
+
+In JavaFX, nodes can generate [`Event`](https://docs.oracle.com/javase/8/javafx/api/javafx/event/Event.html)
+objects. This can happen automatically or in response to user input. Each event has a corresponding event handler,
+i.e., a method that is registered to handle the event when its generated. Let's add a button to `ExampleApp`, then
+register an event handler for one of the events the button might generate.
+
+1. In `ExampleApp.java`, import the import the [`Button`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/Button.html),
+   then add the following line immediately after the line that creates the `Text` object:
+   ```java
+   Button button = new Button("Click me!");
+   ```
+   This creates a `Button` object, however, it will NOT automatically appear in the app's GUI!
+
+1. To add the `Button` object to the GUI, you need to add it to the scene.
+   Here, we will add the button as a child of the `HBox` object already contained in the scene graph.
+   This can be accomplished by adding the following line immediately after the line
+   that adds the `Text` object to the `HBox`:
+   ```java
+   root.getChildren().add(button);
+   ```
+   If you are adding multiple children to a node, you may prefer to use the variadic method `addAll`
+   instead of `add` on the `ObservableList<Node>` returned by the `getChildren` method.
+   
+1. Compile `ExampleApp.java`, then rerun `ExampleDriver`. You should now see the button!
+   
+   * Move your mouse over the button. You should notice that the styling of the button changes automatically
+     as your mouse cursor enters and leaves the visual area of the button. Click on the button.
+     Similarly, the styling of the button will change. As you interact with the button, you are actually 
+     causing the button to generate events! These events have default ebent handlers that cause the 
+     button's style to change.
+     
+1. When a user clicks on a button, that causes the button to generate an
+   [`ActionEvent`](https://docs.oracle.com/javase/8/javafx/api/javafx/event/ActionEvent.html) object.
+   You can register an event handler for this event by calling the `setOnAction` method. Here is the
+   signature of the `setOnAction` method:
+   ```java
+   public final void setOnAction(EventHandler<ActionEvent> value)
+   ```
+
+1. As you can see, to call the `setOnAction` method, we will need to supply a reference to an `EventHandler<ActionEvent>`
+   object. It turns out that [`EventHandler<T>`](https://docs.oracle.com/javase/8/javafx/api/javafx/event/EventHandler.html)
+   is an interface. This gives us many options. It also turns out that this interface is a functional interface,
+   which means that we can use a lambda expression. We point out that `EventHandler<T>` is an interface before 
+   to remind you that you can always implement the interface the interface in the usual way instead of using a
+   lambda expression. Let's create a handler that prints a message to standard output
+   whenever the user clicks on the button.
+   
+   1. Let's implement the `EventHandler<ActionEvent>` using a lambda expresison. To do this, consult the API documentation
+      for the interface and inspect its abstract `handle` method. The lambda expression will represent that method. 
+      Import the relevant types, then add the following line directly below the line where you created the button:
+      ```java
+      EventHandler<ActionEvent> buttonHandler = event -> System.out.println("you clicked me!");
+      ```
+      
+   1. The previous step only created the `EventHandler<ActionEvent>` object. Now we need to register it with
+      the button using the `setOnAction` method. Add the following line directly below that line you added 
+      in the previous step:
+      ```java
+      button.setOnAction(buttonHandler);
+      ```
+   
+1. Compile `ExampleApp.java`, then rerun `ExampleDriver`. Click on the button! If you followed the steps correctly,
+   then you should see the text `you clicked me!` appear in your terminal window.
+   
+1. **Congratulations!** You have successfully created your first interactive GUI app! The next step is to add more
+   nodes / components to the scene graph, then register event handlers that cause changes in those components
+   instead of merely printing a message to standard output. This will be explored in the class exercises and
+   some of your projects.
 
 ## References
 
