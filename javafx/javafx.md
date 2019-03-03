@@ -196,9 +196,9 @@ register an event handler for one of the events the button might generate.
 1. Compile `ExampleApp.java`, then rerun `ExampleDriver`. You should now see the button!
    
    * Move your mouse over the button. You should notice that the styling of the button changes automatically
-     as your mouse cursor enters and leaves the visual area of the button. Click on the button.
-     Similarly, the styling of the button will change. As you interact with the button, you are actually 
-     causing the button to generate events! These events have default ebent handlers that cause the 
+     as your mouse cursor enters and leaves the visual area of the button (the change is very subtle. look closely). 
+     Click on the button. Similarly, the styling of the button will change. As you interact with the button, 
+     you are actually causing the button to generate events! These events have default ebent handlers that cause the 
      button's style to change.
      
 1. When a user clicks on a button, that causes the button to generate an
