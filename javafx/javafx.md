@@ -116,13 +116,14 @@ the many packages included ith JavaFX can be found
       The `start` method is called after the `init` method has returned, and after the system is ready for the 
       app to begin running.
       
-   1. The method's only parameter is a reference to a [`Stage`](https://docs.oracle.com/javase/8/javafx/api/javafx/stage/Stage.html)
-      object. The JavaFX `Stage` class is the top level JavaFX container (i.e., consider it to be the window). 
+   1. The method's only parameter is a reference to a `Stage` object. The JavaFX `Stage` class is the top level 
+      JavaFX container (i.e., consider it to be the window). 
       The primary `Stage` is constructed by the platform during step (iii) of the JavaFX application life-cycle. 
       Additional `Stage` objects may be constructed by the application.
       
    1. By default, a stage is not visible. You must initialize it with a reference to a `Scene` object 
-      before making it visible. You should refer to the API documentation for the [`Stage`] class about
+      before making it visible. You should refer to the API documentation for the 
+      [`Stage`](https://docs.oracle.com/javase/8/javafx/api/javafx/stage/Stage.html) class about
       different properties a stage can have, including decorations and modality options.
    
    1. What is a `Scene` object? In JavaFX, a scene is the container for all content in a scene graph. The term
