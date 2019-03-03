@@ -1,5 +1,3 @@
-**NOTE: This tutorial is in-progress. Do not regard it as ready until this message is removed.**
-
 # JavaFX Tutorial
 
 JavaFX is a library for creating and delivering applications with graphical user interfaces (GUIs)
