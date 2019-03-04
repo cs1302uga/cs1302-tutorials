@@ -47,13 +47,16 @@ the many packages included ith JavaFX can be found
    1. A small, but blank, GUI app will appear on your screen. This may appear in another
       desktop or minimized if your computer utilizes multiple windows. However, the following 
       error message will appear in the terminal:
+      
       ```
       libGL error: No matching fbConfigs or visuals found
       libGL error: failed to load driver: swrast
       Prism-ES2 Error : GL_VERSION (major.minor) = 1.4
       ```
+      
    1. A scary error message similar to the following will appear and no GUI app will appear 
       on your screen (don't panic):
+      
       ```
       libGL error: No matching fbConfigs or visuals found
       libGL error: failed to load driver: swrast
