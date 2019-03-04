@@ -22,8 +22,9 @@ the many packages included ith JavaFX can be found
    [MacOS users](https://github.com/cs1302uga/cs1302-exercises/blob/master/misc/MacOS.md) or
    [Windows 10 users](https://github.com/cs1302uga/cs1302-exercises/blob/master/misc/Windows10.md).
    
-   Also, the `-X` and `-Y` options can be used individually without the other. See the manual
-   page for `ssh` for more information.
+   Also, the `-X` and `-Y` options can be used individually with orwithout each other. 
+   See the manual page for `ssh` for more information about the differences between
+   these two options.
    
 1. Use the following command to download and execute a shell script that retrieves 
    the starter code for this tutorial and places it into a subdirectory 
