@@ -10,7 +10,7 @@ the many packages included ith JavaFX can be found
 1. First, you need to ensure that your terminal emulator supports X-forwarding. This allows
    the GUI parts of your application to be forwarded to your local computer in addition to
    the terminal output. To check this, work through the rest of this section of the
-   tutorial. First, login to Nike using the `ssh` command along with the `-XY` option. 
+   tutorial. First, login to Nike using the `ssh` command along with the `-XY` option.
    As always, be sure to replace `username` with your Nike username.
    
    ```
@@ -21,6 +21,9 @@ the many packages included ith JavaFX can be found
    instructions provided at the beginning of the semester for
    [MacOS users](https://github.com/cs1302uga/cs1302-exercises/blob/master/misc/MacOS.md) or
    [Windows 10 users](https://github.com/cs1302uga/cs1302-exercises/blob/master/misc/Windows10.md).
+   
+   Also, the `-X` and `-Y` options can be used individually without the other. See the manual
+   page for `ssh` for more information.
    
 1. Use the following command to download and execute a shell script that retrieves 
    the starter code for this tutorial and places it into a subdirectory 
