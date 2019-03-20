@@ -86,7 +86,7 @@ the many packages included ith JavaFX can be found
                            |                                   |
                          Scene                                 |
           |--              |                                   |
-          |               VBox                                 |
+          |               HBox                                 |
           |                |\                                  |
           |                | \------------------\              |
           |                |                    |              |
@@ -110,7 +110,7 @@ the many packages included ith JavaFX can be found
                            |                                   |
                          Scene                                 |
           |--              |                                   | Overall
-          |               VBox                                 | Containment
+          |               HBox                                 | Containment
    Scene  |                |\                                  | Hierarchy
    Graph  |                | \------------------\              |
           |                |                    |              |
