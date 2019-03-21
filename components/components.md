@@ -199,6 +199,7 @@ the many packages included ith JavaFX can be found
       of other custom components you could build by extending existing JavaFX
       components. We will explore more uses of the `ImageLoader` component in 
       class.
+      
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
