@@ -196,6 +196,11 @@ the many packages included ith JavaFX can be found
       should see something like the image below:
       
       <img src="https://github.com/cs1302uga/cs1302-tutorials/raw/master/components/TwoPaneScreenShot.png?raw=true" width=300>
+      
+   1. Imagine all the ways you could use your new, custom component. Also, think
+      of other custom components you could build by extending existing JavaFX
+      components. We will explore more uses of the `ImageLoader` component in 
+      class.
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
