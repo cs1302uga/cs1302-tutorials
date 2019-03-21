@@ -109,7 +109,8 @@ the many packages included ith JavaFX can be found
    
    Consider the following scene graph where we replace the lower `VBox` 
    sub-graphs with `ImageLoader`, a custom component that we will create 
-   in the next step. The resulting scene graph is much cleaner!
+   in the next step. The resulting scene graph is much cleaner (kinda looks
+   like a giraffe, no?)!
 
    ```
                                                              --|
