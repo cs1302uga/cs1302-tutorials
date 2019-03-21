@@ -31,7 +31,7 @@ the many packages included ith JavaFX can be found
    called `cs1302-components`:
 
    ```
-   $ curl -s -L https://git.io/fhAR8 | bash
+   $ curl -s -L https://git.io/fjfie | bash
    ```
    
 1. Change into the `cs1302-components` directory that was just created and look around. There should be
@@ -42,8 +42,9 @@ the many packages included ith JavaFX can be found
    $ find src
    ```
    
-1. Compile and run the provided code without any errors or warnings. The program should look very similar
-   to the app you created in class exercise 19. See the overall containment heirarchy and image below:
+1. Compile and run the provided code without any errors or warnings. If you completed the previous steps 
+   correctly, your app should look similar to the screenshot below. You may also find it helpful to review
+   the scene graph for this app (also seen below).
    
    <table>
    <tr>
@@ -67,17 +68,16 @@ the many packages included ith JavaFX can be found
 1. The default size for the image in the ImageView container is 500x500. Do a quick google search for
    "500x500 images" and load one or two of the images to make sure the app is functioning properly.
 
-1. If you completed the steps correctly, your app should look similar to
-   the screenshot provided above. Congratulations on compiling a good
-   looking app!
+1. Congratulations on compiling and running a good looking app!
    
 ## Creating a Custom Component
 
-1. Now that you have your app compiled, let's create a custom component.
-   Up to this point, you've been using provided components such as
-   `TextField` and `ImageView`. In this next set of steps, we will 
-   walk you through the creation of a custom, reusable component based on
-   the set of existing components contained in the application.
+1. Up to this point, you've been building apps using provided JavaFX
+   components such as `TextField` and `ImageView`. In this next set 
+   of steps, we will walk you through the creation of your own custom, 
+   reusable component based on the set of existing components contained 
+   in the application.
+   
    Consider the following containment hieararchy:
    
    ```
@@ -100,9 +100,16 @@ the many packages included ith JavaFX can be found
           |--                                                --|
    ```
    
-   In this scenario, there is a lot of work duplicated. Let's
-   instead denote the lower `VBox` sub-graphs as an `ImageLoader`,
-   a custom component that we will create in the next step:
+   In this scenario, the root `HBox` of the scene graph contains two
+   separate, but identical, `VBox` objects. Building this app would
+   require the programmer to repeat the exact same code to create
+   these two `VBox` objects. Now, imagine that there are hundreds
+   of these in an app. Custom components allow us to avoid this type
+   of redundancy!
+   
+   Consider the following scene graph where we replace the lower `VBox` 
+   sub-graphs with `ImageLoader`, a custom component that we will create 
+   in the next step. The resulting scene graph is much cleaner!
 
    ```
                                                              --|
@@ -134,7 +141,7 @@ the many packages included ith JavaFX can be found
    ```
    
    Note that root of this sub-graph is a `VBox`. With this in mind, 
-   create a class called `ImageLoader` in the `cs1302.ce21` package
+   create a class called `ImageLoader` in the `cs1302.gui` package
    that extends the `VBox` class. As this class extends `VBox`,
    it "is-a" `VBox` and inherits all of the members of `VBox`
    (although only `public` and `protected` members will be directly
@@ -142,31 +149,53 @@ the many packages included ith JavaFX can be found
 
    1. The class should contain the `static` constants from
       the `ImageApp` class. The can be cut and paste directly
-	  from that class, perhaps changing them to `protected`
-	  visibility if you wish to do so.
+      from that class, perhaps changing them to `protected`
+      visibility if you wish to do so.
 
    1. Your class should have instance variables for the other
       nodes in the sub-graph. For example, you will need
-	  an instance variable called `urlLayer` of type `HBox`
-	  as well as instance variables for the remaining nodes.
-	  For the most part, these can be cut and paste from the
-	  `ImageApp` class.
+      an instance variable called `urlLayer` of type `HBox`
+      as well as instance variables for the remaining nodes.
+      For the most part, these can be cut and paste from the
+     `ImageApp` class. Any instance variables that you move
+      into the `ImageLoader` class can be removed from `ImageApp`.
 	  
-   1. Your class should have a default constructor that explicitly
+   1. In `ImageLoader`, add a default constructor that explicitly
       calls `super()`. After the call to `super`, the constructor
-	  should instantiate the other nodes and add them to the
-	  sub-graph rooted at `this` similarly to how they are 
-	  added to the `VBox` node in the `ImageApp` class. 
-	  For example, you might start by doing this:
+      should instantiate the other nodes in the `ImageLoader` sub-graph
+      (`HBox`, `ImageView`, `TextField`, and `Button`). Since 
+      `ImageLoader` extends `VBox`, it is-a `VBox`. Therefore, you
+      can call any `VBox` methods using `this` as the calling object.
+      Use this knowledge to add your newly created nodes to the
+      sub-graph rooted at `this` similarly to how they are 
+      added to the `VBox` node in the `ImageApp` class. 
+      Your code will likely look something like this:
 	  
-	  ```java
-	  public ImageLoader() {
-          super();
-          / instantiate other objects
-          this.getChildren().addAll(urlLayer, imgView);
+      ```java
+      public ImageLoader() {
+         super();
+         // instantiate other objects
+         this.getChildren().addAll(urlLayer, imgView);
       } // ImageLoader
 	  ```
-
+   1. Move the `loadImage` method from `ImageApp` to `ImageLoader`.
+      Don't forget to set the handler on your `ImageLoader`'s button.
+      
+   1. You've probably noticed that `ImageApp` has significantly decreased
+      in size.  We moved a lot of that code over into our custom component!
+      Now, instantiate two objects of type `ImgLoader` within the `start`
+      method of `ImageApp`.
+      
+      **NOTE: WE PASS IMAGEAPP AS PARAMETER TO CONSTRUCTOR TO RESIZE THE SCENE. REMOVE THIS?**
+      
+   1. Add the two `ImgLoader` objects to the `HBox` object of `ImageApp`. Set
+      the `spacing` property of the `HBox` to 10 by passing 10 into the `HBox`
+      constructor.
+      
+   1. Compile and run your new app and load up a few 500x500 images.  You 
+      should see something like the image below:
+      
+      <img src="https://github.com/cs1302uga/cs1302-ce21/blob/master/ScreenShot.png?raw=true" width=300>
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
