@@ -186,8 +186,6 @@ the many packages included ith JavaFX can be found
       Now, instantiate two objects of type `ImgLoader` within the `start`
       method of `ImageApp`.
       
-      **NOTE: WE PASS IMAGEAPP AS PARAMETER TO CONSTRUCTOR TO RESIZE THE SCENE. REMOVE THIS?**
-      
    1. Add the two `ImgLoader` objects to the `HBox` object of `ImageApp`. Set
       the `spacing` property of the `HBox` to 10 by passing 10 into the `HBox`
       constructor.
