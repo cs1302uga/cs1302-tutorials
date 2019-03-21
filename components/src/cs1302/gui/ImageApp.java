@@ -97,7 +97,6 @@ public class ImageApp extends Application {
         try {
             Image newImg = new Image(urlField.getText(), DEF_HEIGHT, DEF_WIDTH, false, false);
             imgView.setImage(newImg);
-            stage.sizeToScene();
         } catch(IllegalArgumentException iae) {
             System.out.println("The supplied URL is invalid");
         } // try
