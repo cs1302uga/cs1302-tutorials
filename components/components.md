@@ -195,7 +195,7 @@ the many packages included ith JavaFX can be found
    1. Compile and run your new app and load up a few 500x500 images.  You 
       should see something like the image below:
       
-      <img src="https://github.com/cs1302uga/cs1302-ce21/blob/master/ScreenShot.png?raw=true" width=300>
+      <img src="https://github.com/cs1302uga/cs1302-tutorials/raw/master/components/TwoPaneScreenShot.png?raw=true" width=300>
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
