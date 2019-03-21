@@ -22,7 +22,7 @@ the many packages included ith JavaFX can be found
    [MacOS users](https://github.com/cs1302uga/cs1302-exercises/blob/master/misc/MacOS.md) or
    [Windows 10 users](https://github.com/cs1302uga/cs1302-exercises/blob/master/misc/Windows10.md).
    
-   Also, the `-X` and `-Y` options can be used individually with orwithout each other. 
+   Also, the `-X` and `-Y` options can be used individually with or without each other. 
    See the manual page for `ssh` for more information about the differences between
    these two options.
    
