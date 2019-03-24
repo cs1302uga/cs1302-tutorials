@@ -166,13 +166,14 @@ using Maven.
    commands that we're used to typing out manually. Here is a list of the basic phases that
    you need to know:
    
-   | Phase     | Description |
-   |-----------|-------------|
-   | `compile` | Compile the source code of the project. | 
-   | `clean`   | Remove compiled files from the project. |
-   | `site`    | Generate a website for the project that includes the API documention. |
-   | `package` | Take the compiled code and package it into a JAR file. |
-   | `test`    | Execute unit tests, if available, using the project's unit testing framework. |
+   | Phase       | Description |
+   |-------------|-------------|
+   | `compile`   | Compile the source code of the project. | 
+   | `clean`     | Remove compiled files from the project. |
+   | `site`      | Generate a website for the project that includes the API documention. |
+   | `package`   | Take the compiled code and package it into a JAR file. |
+   | `test`      | Execute unit tests, if available, using the project's unit testing framework. |
+   | `exec:java` | Execute the class specified by `-Dexec.mainClass` with dependencies added to the class path. |
    
    To execute a phase using Maven, simply type the phase name after the `mvn` command.
    Pay careful attention to the output of each command as it usually provides lots of
