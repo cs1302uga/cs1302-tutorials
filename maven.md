@@ -78,6 +78,10 @@ mode later in this tutorial once you are more familiar with the tool.
 	 -DarchetypeVersion=1.4
    ```
    
+   If you ommit the `-DarchetypeVersion`, then the oldest version is automatically used.
+   If you ommit the `-DarchetypeArtifactId`, then most Maven installations default to
+   `maven-archetype-quickstart` for the archetype.
+   
 1. Look inside the directory that Maven just created:
 
    ```
