@@ -52,7 +52,7 @@ In order to use Apache Maven on Nike, you will need to add it to your executable
 
 Now that Maven is installed, let's create a simple project! Maven supports both interactive
 and non-interactive modes for project creation. As the former is often intimidating for beginners,
-we will start with Maven's non-interactive mode. We'll make a note about how to use the interactive
+we will start with Maven's non-interactive (batch) mode. We'll make a note about how to use the interactive
 mode later in this tutorial once you are more familiar with the tool.
 
 1. In order to create a simple Maven project, you will need to remember the four options listed
@@ -110,6 +110,10 @@ mode later in this tutorial once you are more familiar with the tool.
    `src/main/java/cs1302/mvn/App.java`. The last file that you see above, `pom.xml`,
    contains the configuration settings / metadata for the Project Object Model (POM), 
    which is what Maven uses to do its magic.
+   
+1. In the future, you might try omitting the `-B` (batch mode) and subsequent options
+   to use Maven's interactive mode. Instead of specifiying some of the project properies
+   as command-line options, Maven will prompt you for their values. 
 
 ## Updating the POM
 
