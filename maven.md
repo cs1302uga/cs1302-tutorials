@@ -108,8 +108,8 @@ mode later in this tutorial once you are more familiar with the tool.
    a topic that will be covered at a later point int time. A simple driver class
    with a fully qualified name of `cs1302.mvn.App` was created for you in
    `src/main/java/cs1302/mvn/App.java`. The last file that you see above, `pom.xml`,
-   contains the configuration settings for the Project Object Model (POM), which
-   is what Maven uses to do its magic.
+   contains the configuration settings / metadata for the Project Object Model (POM), 
+   which is what Maven uses to do its magic.
 
 ## Updating the POM
 
@@ -128,9 +128,62 @@ to use Java 7 (`1.7`)! We can remedy this by updating the project's `pom.xml` fi
    </properties>
    ```
    
-1. That's it! Your project is now setup to use Java 8.
+   That's it! After making that change, your project is now setup to use Java 8.
 
-You can also edit the `pom.xml` to add dependcies:
+1. You can also add / update project dependencies. In the past, you may have done this
+   by manually including a JAR file on your class path. With Mave, we can add the 
+   describe the dependency in the POM and Maven will download and add it to the 
+   class path for us! For example, the `pom.xml` file in your `cs1302-mvn` project already
+   contains the following dependencies:
+   
+   ```xml
+   <dependencies>
+     <dependency>
+       <groupId>junit</groupId>
+       <artifactId>junit</artifactId>
+       <version>4.11</version>
+       <scope>test</scope>
+     </dependency>
+   </dependencies>
+   ```
+   
+   This adds a dependency called [JUnit 4.11](https://search.maven.org/artifact/junit/junit-dep/4.11/pom)
+   To add more dependecies, you would simply add an additional `<dependency></dependency>` tag
+   with appropriate values before the closing `</dependencies>` tag. Many libraries are packages
+   for Maven. You can try searching for some on [Maven Central](https://search.maven.org/).
+
+## Using Maven
+
+If you haven't already done so, change into the `cs1302-mvn` directory that you created earlier
+using Maven. 
+
+1. To use Maven, we need to talk about _phases_. Each Maven lifecycle **phase** is 
+   responsible for doing a particular sequence of actions. They help us automate some of the 
+   commands that we're used to typing out manually. Here is a list of the basic phases that
+   you need to know:
+   
+   | Phase     | Description |
+   |-----------|-------------|
+   | `compile` | Compile the source code of the project. | 
+   | `clean`   | Remove compiled file from the project. |
+   | `site`    | Generate a website for the project that includes the API documention. |
+   | `package` | Take the compiled code and package it into a JAR file. |
+   | `test`    | Execute unit tests, if available, using the project's unit testing framework. |
+   
+1. Let's try compiling the code:
+
+   ```
+   $ mvn compile
+   ```
+   
+   The first time that you do this for a particular project, Maven might neeed to download some
+   of the dependencies defined in the POM -- it should not need to download every time. If
+   compilation is successful, then you should see something similar to the following:
+   
+   ```
+   
+   ```
+
 
 
 
