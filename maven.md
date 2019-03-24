@@ -67,7 +67,7 @@ mode later in this tutorial once you are more familiar with the tool.
    | `-DarchetypeArtifactId` | Archetype         | An archetype is a template for the project. For most Java-based projects, the `maven-archetype-quickstart` archetype can be used. |
    | `-DarchetypeVersion`    | Archetype Version | The archetype / template version to use. At the time of this writing, the latest version of the `maven-archetype-quickstart` archetype is `1.4`. |
    
-1. With those terms in mind, let's create a project driectory for this turorial called `cs1302-mvn` 
+1. With those terms in mind, let's create a project directory for this turorial called `cs1302-mvn` 
    with a primary package called `cs1302.mvn` using following command:
    
    ```
@@ -105,7 +105,7 @@ mode later in this tutorial once you are more familiar with the tool.
    You probably notice that created some starter code for you! Here, the
    `src/main/java` subdirectory is the defualt package location for source code.
    The `src/test/java` directory is the default package location for unit tests,
-   a topic that will be covered at a later point int time. A simple driver class
+   a topic that will be covered at a later point in time. A simple driver class
    with a fully qualified name of `cs1302.mvn.App` was created for you in
    `src/main/java/cs1302/mvn/App.java`. The last file that you see above, `pom.xml`,
    contains the configuration settings / metadata for the Project Object Model (POM), 
@@ -135,7 +135,7 @@ to use Java 7 (`1.7`)! We can remedy this by updating the project's `pom.xml` fi
    That's it! After making that change, your project is now setup to use Java 8.
 
 1. You can also add / update project dependencies. In the past, you may have done this
-   by manually including a JAR file on your class path. With Mave, we can add the 
+   by manually including a JAR file on your class path. With Maven, we can add the 
    describe the dependency in the POM and Maven will download and add it to the 
    class path for us! For example, the `pom.xml` file in your `cs1302-mvn` project already
    contains the following dependencies:
@@ -169,7 +169,7 @@ using Maven.
    | Phase     | Description |
    |-----------|-------------|
    | `compile` | Compile the source code of the project. | 
-   | `clean`   | Remove compiled file from the project. |
+   | `clean`   | Remove compiled files from the project. |
    | `site`    | Generate a website for the project that includes the API documention. |
    | `package` | Take the compiled code and package it into a JAR file. |
    | `test`    | Execute unit tests, if available, using the project's unit testing framework. |
@@ -211,7 +211,7 @@ using Maven.
    ```
    
    If you pay careful attention to the output, you will see that Maven used
-   the `target/classes` subdirectory as the defulat package for compiled code.
+   the `target/classes` subdirectory as the default package for compiled code.
    With this in mind, we can run the `cs1302.mvn.App` class as follows:
    
    ```
@@ -299,7 +299,7 @@ using Maven.
    you did for API documentation websites created using the Javadoc tool
    in the past.
 
-1. In some of the exemples above, we walked you through how to run a driver
+1. In some of the examples above, we walked you through how to run a driver
    class after compiling for packaging the project. There is also a way
    to run a driver class driectly using Maven using the `exec:java` phase:
    
