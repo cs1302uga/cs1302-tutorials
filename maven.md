@@ -102,7 +102,37 @@ mode later in this tutorial once you are more familiar with the tool.
    cs1302-mvn/pom.xml
    ````
    
-   You probably notice that created some starter code for you! Here 
+   You probably notice that created some starter code for you! Here, the
+   `src/main/java` subdirectory is the defualt package location for source code.
+   The `src/test/java` directory is the default package location for unit tests,
+   a topic that will be covered at a later point int time. A simple driver class
+   with a fully qualified name of `cs1302.mvn.App` was created for you in
+   `src/main/java/cs1302/mvn/App.java`. The last file that you see above, `pom.xml`,
+   contains the configuration settings for the Project Object Model (POM), which
+   is what Maven uses to do its magic.
+
+## Updating the POM
+
+By default, the `maven-archetype-quickstart` archetype (version `1.4`) is configured
+to use Java 7 (`1.7`)! We can remedy this by updating the project's `pom.xml` file.
+
+1. Change into the `cs1302-mvn` driectory, then change the values of the
+   `maven.compiler.source` and `maven.compiler.target` to `1.8`. It should look
+   similar to the following:
+   
+   ```xml
+   <properties>
+     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+     <maven.compiler.source>1.8</maven.compiler.source>
+     <maven.compiler.target>1.8</maven.compiler.target>
+   </properties>
+   ```
+   
+1. That's it! Your project is now setup to use Java 8.
+
+You can also edit the `pom.xml` to add dependcies:
+
+
 
 ## References
 
