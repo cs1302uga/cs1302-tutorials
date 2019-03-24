@@ -166,7 +166,8 @@ If you haven't already done so, change into the `cs1302-mvn` directory that you 
 using Maven. 
 
 1. To use Maven, we need to talk about _phases_. Each Maven lifecycle **phase** is 
-   responsible for doing a particular sequence of actions. They help us automate some of the 
+   responsible for doing a particular sequence of actions. Phases are sometimes also
+   referred to as **goals**. They help us automate some of the 
    commands that we're used to typing out manually. Here is a list of the basic phases that
    you need to know:
    
