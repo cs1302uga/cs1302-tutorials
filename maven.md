@@ -170,6 +170,10 @@ using Maven.
    | `package` | Take the compiled code and package it into a JAR file. |
    | `test`    | Execute unit tests, if available, using the project's unit testing framework. |
    
+   To execute a phase using Maven, simply type the phase name after the `mvn` command.
+   Pay careful attention to the output of each command as it usually provides lots of
+   useful information about what worked or didn't work related to that command.
+   
 1. Let's try compiling the code:
 
    ```
@@ -181,12 +185,161 @@ using Maven.
    compilation is successful, then you should see something similar to the following:
    
    ```
+   [INFO] Scanning for projects...
+   [INFO]
+   [INFO] -----------------------< cs1302.mvn:cs1302-mvn >------------------------
+   [INFO] Building cs1302-mvn 1.0-SNAPSHOT
+   [INFO] --------------------------------[ jar ]---------------------------------
+   [INFO]
+   [INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ cs1302-mvn ---
+   [INFO] Using 'UTF-8' encoding to copy filtered resources.
+   [INFO] skip non existing resourceDirectory cs1302-mvn/src/main/resources
+   [INFO]
+   [INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ cs1302-mvn ---
+   [INFO] Changes detected - recompiling the module!
+   [INFO] Compiling 1 source file to cs1302-mvn/target/classes
+   [INFO] ------------------------------------------------------------------------
+   [INFO] BUILD SUCCESS
+   [INFO] ------------------------------------------------------------------------
+   [INFO] Total time:  1.417 s
+   [INFO] Finished at: 2019-03-24T16:26:39-04:00
+   [INFO] ------------------------------------------------------------------------
+   ```
+   
+   If you pay careful attention to the output, you will see that Maven used
+   the `target/classes` subdirectory as the defulat package for compiled code.
+   With this in mind, we can run the `cs1302.mvn.App` class as follows:
    
    ```
+   $ java -cp target/classes cs1302.mvn.App
+   Hello World!
+   ```
+   
+1. From time to time, you may need to delete the compiled files from your project
+   (e.g., after moving a type from one package to another). This is commonly 
+   referred to as _cleaning_ the project. To clean your project using Maven,
+   use the following command:
+   
+   ```
+   $ mvn clean
+   ```
+   
+   If done correctly, you should see something similar to the following:
+   
+   ```
+   [INFO] Scanning for projects...
+   [INFO]
+   [INFO] -----------------------< cs1302.mvn:cs1302-mvn >------------------------
+   [INFO] Building cs1302-mvn 1.0-SNAPSHOT
+   [INFO] --------------------------------[ jar ]---------------------------------
+   [INFO]
+   [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ cs1302-mvn ---
+   [INFO] Deleting cs1302-mvn/target
+   [INFO] ------------------------------------------------------------------------
+   [INFO] BUILD SUCCESS
+   [INFO] ------------------------------------------------------------------------
+   [INFO] Total time:  0.357 s
+   [INFO] Finished at: 2019-03-24T16:33:35-04:00
+   [INFO] ------------------------------------------------------------------------
+   ```
+   
+1. Now, let's package the project into a JAR file. In the past, you may have done
+   this manually using the `jar` command. Here, we'll use the `package` phase:
+   
+   ```
+   $ mvn package
+   ```
+   
+   If done correctly, you should see something similar to the following (output
+   condensed):
+   
+   ```
+   [INFO] Scanning for projects...
+   [INFO]
+   [INFO] -----------------------< cs1302.mvn:cs1302-mvn >------------------------
+   [INFO] Building cs1302-mvn 1.0-SNAPSHOT
+   [INFO] --------------------------------[ jar ]---------------------------------
+   [INFO]
+   [INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ cs1302-mvn ---
+   [INFO] Building jar: cs1302-mvn/target/cs1302-mvn-1.0-SNAPSHOT.jar
+   [INFO] ------------------------------------------------------------------------
+   [INFO] BUILD SUCCESS
+   [INFO] ------------------------------------------------------------------------
+   [INFO] Total time:  2.738 s
+   [INFO] Finished at: 2019-03-24T16:45:03-04:00
+   [INFO] ------------------------------------------------------------------------
+   ```
+   
+   If you pay careful attention to the output, you will see that Maven created
+   a `cs1302-mvn-1.0-SNAPSHOT.jar` in the `target` subdirectory.
+   With this in mind, we can run the `cs1302.mvn.App` class as follows:
+   
+   ```
+   $ java -cp target/cs1302-mvn-1.0-SNAPSHOT.jar cs1302.mvn.App
+   Hello World!
+   ```
+   
+   The version number `1.0-SNAPSHOT` comes directly from the `<version>`
+   tag contained in the POM. If your project is constantly being updated
+   within a single version number, as often is the case in development,
+   then keeping the `-SNAPSHOT` is actually recommended. In this scenario,
+   we're developing version `1.0` of the project. Every time we compile,
+   that might not be the _final_ version `1.0` that we want to release.
+   As such, we use `1.0-SNAPSHOT` to indicate that this is a _snapshot_ 
+   of version `1.0` in order to inform users of the project that the code
+   may not be in its final state.
+   
+1. Try using the `site` phase. The output will show you where the files
+   for the website are created. You can copy or symlink these to a location
+   under your `~/public_html` directory to host the site on Nike just as
+   you did for API documentation websites created using the Javadoc tool
+   in the past.
 
-
-
-
+1. In some of the exemples above, we walked you through how to run a driver
+   class after compiling for packaging the project. There is also a way
+   to run a driver class driectly using Maven using the `exec:java` phase:
+   
+   ```
+   $ mvn exec:java -Dexec.mainClass="cs1302.mvn.App"
+   [INFO] Scanning for projects...
+   [INFO]
+   [INFO] -----------------------< cs1302.mvn:cs1302-mvn >------------------------
+   [INFO] Building cs1302-mvn 1.0-SNAPSHOT
+   [INFO] --------------------------------[ jar ]---------------------------------
+   [INFO]
+   [INFO] --- exec-maven-plugin:1.6.0:java (default-cli) @ cs1302-mvn ---
+   Hello World!
+   [INFO] ------------------------------------------------------------------------
+   [INFO] BUILD SUCCESS
+   [INFO] ------------------------------------------------------------------------
+   [INFO] Total time:  0.747 s
+   [INFO] Finished at: 2019-03-24T17:03:22-04:00
+   [INFO] ------------------------------------------------------------------------
+   ```
+   
+   As you can see, this requires a little more typing (to include the `-Dexec.mainClass` option)
+   and adds additional output to the output of the program. There are some more caveats
+   involved when using the `exec:java` phase:
+   
+   * It does not automatically recompile code if changed -- you will need to manually perform
+     the `compile` phase, as needed.
+	 
+   * It redirects standard output to an output stream that does not flush automatically. This
+     can cause issues if your program reads and writes from standard input and standard output,
+	 respectively. This can usually be mitigated by peforming `System.out.flush()` whenever
+	 you need to synchronize between a print and subsequent read. For example:
+	 
+	 ```java
+	 System.out.print("enter a number: ");
+	 System.out.flush();
+	 int num = input.nextInt();
+	 ```
+	 
+   However, if your project has a runtime dependency, i.e., a library that is required during
+   runtime, then the `exec:java` phase will automatically ensure that it is on the class path
+   when the driver class is executed! This is especially conventient when there are multiple
+   such dependencies.
+   
 ## References
 
 * [[1] What is Maven?](https://maven.apache.org/what-is-maven.html)
