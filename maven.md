@@ -76,7 +76,7 @@ mode later in this tutorial once you are more familiar with the tool.
 	 -DgroupId=cs1302.mvn \
 	 -DarchetypeArtifactId=maven-archetype-quickstart \
 	 -DarchetypeVersion=1.4
-   ``
+   ```
    
 1. Look inside the directory that Maven just created:
 
