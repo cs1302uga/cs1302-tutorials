@@ -175,7 +175,8 @@ the many packages included ith JavaFX can be found
       ```java
       public ImageLoader() {
          super();
-         // instantiate other objects
+         // instantiate objects for the component's sub-graph, then
+	 // add them to the ImageLoader (i.e., this)...
          this.getChildren().addAll(urlLayer, imgView);
       } // ImageLoader
 	  ```
