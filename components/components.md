@@ -48,7 +48,7 @@ the many packages included ith JavaFX can be found
    
    <table>
    <tr>
-      <td><img src="https://github.com/cs1302uga/cs1302-ce21/blob/master/ScreenShot.png?raw=true" width=300>
+      <td><img src="https://github.com/cs1302uga/cs1302-tutorials/raw/master/components/ScreenShot.png?raw=true" width=300>
       <td><pre><code>                                     --|
                          Stage            |
                            |              |
