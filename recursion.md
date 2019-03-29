@@ -5,7 +5,7 @@
 This tutorial is designed to help you learn about and understand recursion - a powerful
 programming technique in which a method can call itself in orer to fulfill its purpose.
 
-A **recursive devinition** is one which uses the word or concept being defined in the
+A **recursive definition** is one which uses the word or concept being defined in the
 definition itself.
     Ex: GNU stands for "GNUs not Unix"
 
@@ -20,25 +20,25 @@ Ex: An inductively defined recursive list definition
 Consider the following list of numbers:
     `24, 88, 40, 37`
 Such a list can be defined recursively. A LIST is a:
-    * number
-    * or a: number comma LIST
+	* number
+	* or a: number comma LIST
 That is, a LIST can be a number, or a number followed by a comma followed by a LIST. Here,
 the concept of a LIST is used to define itself!
 
 **Maybe show recursion tree for list above?**
     
 In general, to create a recursive definition of some concept, we need to establish two things:
-    * **Base Case**: create a non-recursive definition as a "base".
-    * **Recursive Case**: create a definition in terms of itself, changing it somehow
-    (usually towards the base case).
+	* **Base Case**: create a non-recursive definition as a "base".
+	* **Recursive Case**: create a definition in terms of itself, changing it somehow 
+	(usually towards the base case).
 
 ## Infinite Recursion
 If a recursive definition doesn't have a base case or the recursive case doesn't move
 towards and eventually reach a base case, then there is no way to terminate the recursive
 path.
-    * This is called **infinite recursion**.
-    * This problem is similar to an infinite loop -- with the definition itself causing
-    the infinite "looping".
+	* This is called **infinite recursion**.
+	* This problem is similar to an infinite loop -- with the definition itself causing
+	the infinite "looping".
     * The biggest difference is that an infinite recursion is guaranteed to cause a
     stack overflow error.
 
