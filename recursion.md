@@ -56,23 +56,34 @@ Let's try it!  Compile and run the following code on `nike`:
         }
 
     } // InfRecursion
-
     ```
 
 Eventually, the program will end because it will run out of memory (stack space). You will
 see an error that looks something like the following:
 
-    ```
-    Exception in thread "main" java.lang.StackOverflowError
+	```
+	Exception in thread "main" java.lang.StackOverflowError
 	at InfRecursion.recurse(InfRecursion.java:8)
 	at InfRecursion.recurse(InfRecursion.java:8)
 	at InfRecursion.recurse(InfRecursion.java:8)
-    ...
-    ```
+	...
+	```
 
 Each method call sets up a new execution environment (*stack frame*), with new parameters
 and local variables. Each stack frame takes up memory in a special region called the
 stack. When the stack fills up due to too many method calls, you get a `StackOverflowError`.
+
+## Problems and Sub-problems
+
+As you can probably imagine, we generally want to avoid infinite recursion.  That's why we have to 
+make sure our recursive algorithms make progress toward the base case. It's often a good idea to think
+of ways to break the overall problem into subproblems:
+	* Problem: what you're trying to solve.
+	* Sub-problem: a smaller version or part of the problem that's easier to solve.
+
+With respect to recursion:
+	* Sub-problems that *cannot* be solved directly are the *recursive cases*.
+	* Sub-problems that *can* be solved directly correspond to *base cases*.
 
 ## Recursive Countdown
 
@@ -88,7 +99,8 @@ likely write a for-loop and create a method that looks something like:
     } // countFrom
     ```
     
-You might also see a recursive solution to this problem!
+You might also see a recursive solution to this problem! Can you identify the recursive cases (subproblems)
+and base cases?
 
 Think of countFrom(5) as: print(5) then call countFrom(4)
          countFrom(4) as: print(4) then call countFrom(3)
@@ -111,7 +123,6 @@ The code to implement this idea might look like:
         System.out.println(num);
 
     } // countFrom
-
     ```
 
 Try out the above method. Call it from your `main` method using various input values to
@@ -137,7 +148,36 @@ the following structure:
     countFrom(1): countFrom(0) then print(1)
     countFrom(0): return
 
-##Using Recursion with Loops
+## Recursive Factorial
+
+**Problem**: What is the factorial of the non-negative integer `n`?
+
+	* By definition, the first number in the factorial sequence is 1.
+	
+	* Example:
+	```
+	0! = 1 (base case)
+	1! = 0! * 1 = 1 * 1
+	2! = 1! * 2 = 1 * 1 * 2
+	3! = 2! * 3 = 1 * 1 * 2 * 3
+	4! = 3! * 4 = 1 * 1 * 2 * 3 * 4
+	```
+	
+Given the above problem description, identify the base cases and the recursive cases. Now, try to write a
+method called `factorial` that takes a single integer argument, `n`, and returns `n!`.
+
+
+    **Don't read beyond this point until you've attempted to write the recursive factorial method. -25 if you do.**
+
+
+**Solution**
+	```java
+	int factorial(int n) {
+		if(n == 0) return 1;            //base case
+		return n * factorial(n - 1);    //recursive case
+	} // factorial
+
+## Using Recursion with Loops
 Sometimes, it may be appropriate to combine loops with recursion.
 
     Do some things 
