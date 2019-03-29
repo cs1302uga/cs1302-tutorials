@@ -103,7 +103,7 @@ With respect to recursion:
 If asked to write a static method to countdown from a specified value to zero, you would
 likely write a for-loop and create a method that looks something like:
 
-    ```java
+    ``` java
     public static void countFrom(int value) {
         for(int i = value; i >= 0; i++) {
             System.out.println(i);
@@ -124,7 +124,7 @@ and base cases? You might think of it like this:
 
 The code to implement this idea might look like:
 
-    ```java
+    ``` java
     public static void countFrom(int num) {
         //Base Case
         if(num == 0) {
@@ -185,7 +185,7 @@ method called `factorial` that takes a single integer argument, `n`, and returns
 
 **Solution**
 
-	```java
+	``` java
 	int factorial(int n) {
 		if(n == 0) return 1;            //base case
 		return n * factorial(n - 1);    //recursive case
