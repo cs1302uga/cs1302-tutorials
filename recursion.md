@@ -7,56 +7,67 @@ programming technique in which a method can call itself in orer to fulfill its p
 
 A **recursive definition** is one which uses the word or concept being defined in the
 definition itself.
-    Ex: GNU stands for "GNUs not Unix"
+
+	``` Ex: GNU stands for "GNUs not Unix" ```
 
 In some situations, a recursive definition can be an appropriate way to express a concept.
 Before applying recursion to programming, it is best to practice thinking recursively.
 
 ## Inductively Defined Recursive Data Definition
+
 An inductively defined recursive data definition is one that specifies how to construct
 instances of the data. We often call these **recursive definitions**.
 
-Ex: An inductively defined recursive list definition
+**Example**: An inductively defined recursive list definition
+
 Consider the following list of numbers:
-    `24, 88, 40, 37`
-Such a list can be defined recursively. A LIST is a:
+
+	`24, 88, 40, 37`
+
+Such a list can be defined recursively. 
+
+A LIST is a:
 	* number
 	* or a: number comma LIST
+
 That is, a LIST can be a number, or a number followed by a comma followed by a LIST. Here,
 the concept of a LIST is used to define itself!
 
 **Maybe show recursion tree for list above?**
     
 In general, to create a recursive definition of some concept, we need to establish two things:
+	
 	* **Base Case**: create a non-recursive definition as a "base".
 	* **Recursive Case**: create a definition in terms of itself, changing it somehow 
 	(usually towards the base case).
 
 ## Infinite Recursion
+
 If a recursive definition doesn't have a base case or the recursive case doesn't move
 towards and eventually reach a base case, then there is no way to terminate the recursive
 path.
+
 	* This is called **infinite recursion**.
-	* This problem is similar to an infinite loop -- with the definition itself causing
+	* This problem is similar to an infinite loop -- with the definition itself causing 
 	the infinite "looping".
-    * The biggest difference is that an infinite recursion is guaranteed to cause a
-    stack overflow error.
+	* The biggest difference is that an infinite recursion is guaranteed to cause a
+	stack overflow error.
 
 Let's try it!  Compile and run the following code on `nike`:
 
-    ```java
-    public class InfRecursion {
+	```java
+	public class InfRecursion {
 
-        public static void main(String[] args) {
-            recurse();
-        } // main
+	        public static void main(String[] args) {
+        	    recurse();
+	        } // main
 
-        public static void recurse() {
-            recurse();
-        }
+        	public static void recurse() {
+	            recurse();
+		}
 
-    } // InfRecursion
-    ```
+	} // InfRecursion
+	```
 
 Eventually, the program will end because it will run out of memory (stack space). You will
 see an error that looks something like the following:
@@ -78,10 +89,12 @@ stack. When the stack fills up due to too many method calls, you get a `StackOve
 As you can probably imagine, we generally want to avoid infinite recursion.  That's why we have to 
 make sure our recursive algorithms make progress toward the base case. It's often a good idea to think
 of ways to break the overall problem into subproblems:
+	
 	* Problem: what you're trying to solve.
 	* Sub-problem: a smaller version or part of the problem that's easier to solve.
 
 With respect to recursion:
+	
 	* Sub-problems that *cannot* be solved directly are the *recursive cases*.
 	* Sub-problems that *can* be solved directly correspond to *base cases*.
 
@@ -100,9 +113,9 @@ likely write a for-loop and create a method that looks something like:
     ```
     
 You might also see a recursive solution to this problem! Can you identify the recursive cases (subproblems)
-and base cases?
+and base cases? You might think of it like this:
 
-Think of countFrom(5) as: print(5) then call countFrom(4)
+	 countFrom(5) as: print(5) then call countFrom(4)
          countFrom(4) as: print(4) then call countFrom(3)
          countFrom(3) as: print(3) then call countFrom(2)
          countFrom(2) as: print(2) then call countFrom(1)
@@ -171,6 +184,7 @@ method called `factorial` that takes a single integer argument, `n`, and returns
 
 
 **Solution**
+
 	```java
 	int factorial(int n) {
 		if(n == 0) return 1;            //base case
@@ -182,7 +196,6 @@ Sometimes, it may be appropriate to combine loops with recursion.
 
     Do some things 
   
-        
 ## References
 
 * [[1] What is Maven?](https://maven.apache.org/what-is-maven.html)
