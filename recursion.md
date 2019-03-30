@@ -2,23 +2,24 @@
 
 ## Introduction
 
-This tutorial is designed to help you learn about and understand recursion - a powerful
+This tutorial is designed to help you learn about and understand recursion, a powerful
 programming technique in which a method can call itself in orer to fulfill its purpose.
 
 A **recursive definition** is one which uses the word or concept being defined in the
 definition itself.
 
-   `GNU stands for "GNUs not Unix"`
+   `GNU stands for "GNU's not Unix"`
 
-In some situations, a recursive definition can be an appropriate way to express a concept.
-Before applying recursion to programming, it is best to practice thinking recursively.
+In some situations, a recursive definition can be an appropriate and concise 
+way to express a concept. Before applying recursion to programming, it is best to 
+practice thinking recursively.
 
 ## Inductively Defined Recursive Data Definition
 
 An inductively defined recursive data definition is one that specifies how to construct
 instances of the data. We often call these **recursive definitions**.
 
-**Example**: An inductively defined recursive list definition
+**Example**: An inductively defined recursive _list_ definition
 
 Consider the following list of numbers:
 
@@ -26,22 +27,23 @@ Consider the following list of numbers:
 
 Such a list can be defined recursively. 
 
-A LIST is a:
-   * number
-   * or a number comma LIST `[#, LIST]`
+A `LIST` is a:
+   * number `#`
+   * or a number comma LIST `#, LIST`
 
-That is, a LIST can be a number, or a `[#, LIST]`. Here, the concept of a LIST is used to define itself!
+That is, a `LIST` can be a `#` or a `#, LIST`. 
+Here, the concept of a `LIST` is used to define itself!
 
-We can demonstrate that `[88, 42, 37]` is a LIST using the inductively defined recursive data definition by
+We can demonstrate that `88, 42, 37` is a `LIST` using the inductively defined recursive data definition by
 following the definition one step at a time until we reach the base case.
 
-1. `[88, 42, 37]` does not correspond to the base case. So, we must verify that it matches the recursive case.
-We see that it starts with a number and a comma. However, in order to show that this is a LIST, we need to know
-if `[42, 37]` is a LIST. Don't jump ahead! We are limited to the rules given in our recursive definition.
-1. `[42, 37]` does not correspond to the base case. It is a number, `42`, followed by a comma followed by `[37]`. 
-In order to verify `[42, 37]` is a LIST, we need to verify that `[37]` is a LIST.
-1. `[37]` corresponds to our base case and, therefore, fits the recursive definition of a LIST.
-1. Since `[37]` is a LIST, `[42, 37]` is a LIST and so is `[88, 42, 37]`
+1. `88, 42, 37` does not correspond to the base case. So, we must verify that it matches the recursive case.
+We see that it starts with a number and a comma. However, in order to show that this is a `LIST`, we need to know
+if `42, 37` is a `LIST`. Don't jump ahead! We are limited to the rules given in our recursive definition.
+1. `42, 37` does not correspond to the base case. It is a number, `42`, followed by a comma followed by `37`. 
+In order to verify `42, 37` is a `LIST`, we need to verify that `37` is a `LIST`.
+1. `37` corresponds to our base case and, therefore, fits the recursive definition of a `LIST`.
+1. Since `37` is a `LIST`, `42, 37` is a `LIST` and so is `88, 42, 37`
 
 We might also represent this with a **recursion tree** as follows:
 
