@@ -28,17 +28,18 @@ Such a list can be defined recursively.
 
 A LIST is a:
    * number
-   * or a: number comma LIST
+   * or a number comma LIST `[#, LIST]`
 
-That is, a LIST can be a number, or a number followed by a comma followed by a LIST (#, LIST). Here,
-the concept of a LIST is used to define itself!
+That is, a LIST can be a number, or a `[#, LIST]`. Here, the concept of a LIST is used to define itself!
 
-In order to demonstrate that `[88, 42, 37]` is a LIST using the inductively defined recursive data definition,
-we need to follow the definition one step at a time until we hit the base case.
-1. `[88, 42, 37]` does not correspond to the base case. It is a number (88) followed by a comma followed
-by `[42, 37]`. In order to verify that `[88, 42, 37]` is a list, we need to show that `[42, 37]` is a LIST.
-1. `[42, 37]` is a number (42) followed by a comma followed by `[37]`. In order to verify `[42, 37]` is a LIST,
-we need to verify that `[37]` is a LIST.
+We can demonstrate that `[88, 42, 37]` is a LIST using the inductively defined recursive data definition by
+following the definition one step at a time until we reach the base case.
+
+1. `[88, 42, 37]` does not correspond to the base case. So, we must verify that it matches the recursive case.
+We see that it starts with a number and a comma. However, in order to show that this is a LIST, we need to know
+if `[42, 37]` is a LIST. Don't jump ahead! We are limited to the rules given in our recursive definition.
+1. `[42, 37]` does not correspond to the base case. It is a number, `42`, followed by a comma followed by `[37]`. 
+In order to verify `[42, 37]` is a LIST, we need to verify that `[37]` is a LIST.
 1. `[37]` corresponds to our base case and, therefore, fits the recursive definition of a LIST.
 1. Since `[37]` is a LIST, `[42, 37]` is a LIST and so is `[88, 42, 37]`
 
@@ -71,7 +72,7 @@ path.
    * The biggest difference is that an infinite recursion is guaranteed to cause a
      stack overflow error.
 
-Let's try it!  Compile and run the following code on `nike`:
+Let's try some code!  Compile and run the following on `nike`:
 
    ```java
    public class InfRecursion {
@@ -85,7 +86,7 @@ Let's try it!  Compile and run the following code on `nike`:
    } // InfRecursion
    ```
 
-Eventually, the program will end because it will run out of memory (stack space). You will
+Eventually, the program will throw a `RuntimeException` because it runs out of memory (stack space). You should
 see an error that looks something like the following:
 
    ```
@@ -96,15 +97,16 @@ see an error that looks something like the following:
    ...
    ```
 
-Each method call sets up a new execution environment (*stack frame*), with new parameters
-and local variables. Each stack frame takes up memory in a special region called the
+Each call to `recurse` (called infinitely) sets up a new execution environment (*stack frame*), 
+with new parameters and local variables. Each stack frame takes up memory in a special region called the
 stack. When the stack fills up due to too many method calls, you get a `StackOverflowError`.
 
 ## Problems and Sub-problems
 
 As you can probably imagine, we generally want to avoid infinite recursion.  That's why we have to 
-make sure our recursive algorithms make progress toward the base case. It's often a good idea to think
-of ways to break the overall problem into subproblems:
+make sure our recursive algorithms make progress toward the base case. In order to do this, we typically 
+want our recursive call to work on a smaller version of the original problem -- eventually reaching the
+base case. A few general definitions:
 	
    * **Problem**: what you're trying to solve.
    * **Sub-problem**: a smaller version or part of the problem that's easier to solve.
@@ -129,7 +131,9 @@ likely write a for-loop and create a method that looks something like:
    ```
     
 You might also see a recursive solution to this problem! Can you identify the recursive cases (subproblems)
-and base cases? You might think of it like this:
+and base cases? **Take a second to think about it before reading ahead**
+
+You might have come up with something like this:
 
    ```
    countFrom(5) as: print(5) then call countFrom(4)
@@ -139,13 +143,21 @@ and base cases? You might think of it like this:
    countFrom(1) as: print(1) then call countFrom(0)
    countFrom(0) as: simply return
    ```
-   
-The code to implement this idea might look like:
+
+If `countFrom` is passed any value other than `0`, we are in the recursive case where the method prints its
+current value and then calls itself with the value minus one. This will eventually lead to the base case and
+each call to `countFrom` works on a smaller version of the original problem (a smaller sequence to print).
+
+
+**Take a few minutes to think about what the code for this might look like**
+
+
+**One Possible Solution:**
 
    ```java
    public static void countFrom(int num) {
       //Base Case
-      if(num == 0) {
+      if(num < 0) {
           return;
       } // if
 
@@ -162,7 +174,7 @@ make sure it's working properly.
 ## Recursive CountUp
 
 How could you modify the previous code to make it count up instead of down? **Hint**: You can
-do this by swapping two lines of code.
+do this simply by swapping two lines of code.
 
 
    **Don't read beyond this point until you've attempted to change the above code to count up**
@@ -181,6 +193,28 @@ the following structure:
    countFrom(0): return
    ```
    
+To better understand how this works, consider the recursion tree below:
+
+   ```
+                         countFrom(5)
+                         /          \
+                      countFrom(4)  print(5)
+                      /          \
+                  countFrom(3)   print(4)
+                  /         \
+             countFrom(2)  print(3)
+             /          \
+        countFrom(1)   print(2)
+        /          \
+    countFrom(0)  print(1)
+         |
+        return
+   ```
+   
+**NOTE**: The recursion tree traverses down the left-hand side of the tree first. For example,
+after our call to `countFrom(5)`, `countFrom(4)` has to completely finish its execution before
+`print(5)` executes. This explains why all other numbers are printed *before* 5 in the output.
+
 ## Recursive Factorial
 
 ** Problem **: What is the factorial of the non-negative integer `n`?
