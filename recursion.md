@@ -351,6 +351,59 @@ Now, try to write a method called `factorial` that takes a single `int` argument
    } // factorial
    ```
    
+**Sample Recursion Tree**
+
+Here is a sample recursion tree for `factorial(3)`:
+
+   ```
+   factorial(3)
+        \
+   3 * factorial(2)
+            \
+        2 * factorial(1)
+                 \
+             1 * factorial(0)
+                      \
+		       1
+   ```
+
+**Sample Call Stack**
+
+The recursion tree above only shows the method calls. Notice how the multiplications
+are shown to the side. It is interesting to note that these multiplications, although
+written in a return statement on the same line as the recursive call, are actually 
+evaluated after the associated recursive call returns (just as with the print statements
+in the `countFrom` example). To help us better understand what is going on, step-by-step,
+here is a depiction of how the _call stack_ changes as the recursive method calls approach 
+and reach the base case for `factorial(3)`:
+
+```
+ immediately             immediately             immediately             immediately
+ after calling           after calling           after calling           after calling 
+ factorial(3)            factorial(2)            factorial(1)            factorial(0)
+|------------------|    |------------------|    |------------------|    |------------------|
+| [calling method] | => | [calling method] | => | [calling method] | => | [calling method] |
+|------------------|    |------------------|    |------------------|    |------------------|
+| [factorial(3)]   |    | [factorial(3)]   |    | [factorial(3)]   |    | [factorial(3)]   |
+| n = 3            |    | n = 3            |    | n = 3            |    | n = 3            |
+| return 3 * ?     |    | return 3 * ?     |    | return 3 * ?     |    | return 3 * ?     |
+|------------------|    |------------------|    |------------------|    |------------------|
+                        | [factorial(2)]   |    | [factorial(2)]   |    | [factorial(2)]   | 
+                        | n = 2            |    | n = 2            |    | n = 2            |
+			| return 2 * ?     |    | return 2 * ?     |    | return 2 * ?     |
+                        |------------------|    |------------------|    |------------------|
+                                                | [factorial(1)]   |    | [factorial(1)]   | 
+                                                | n = 1            |    | n = 1            |
+						| return 1 * ?     |    | return 1 * ?     |
+                                                |------------------|    |------------------|
+                                                                        | [factorial(0)]   |
+                                                                        | n = 0            |
+									| return 1         |
+                                                                        |------------------|
+```
+
+
+   
 ## Using Recursion with Loops
 
 Sometimes, it may be appropriate to combine loops with recursion.
