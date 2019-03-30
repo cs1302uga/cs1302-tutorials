@@ -402,7 +402,29 @@ and reach the base case for `factorial(3)`:
                                                                         |------------------|
 ```
 
+As the recusive method calls return back to their calling methods, we begin to see the program 
+perform the multiplications in order to produce the return values:
 
+```
+ immediately             immediately             immediately             immediately
+ after returning         after returning         after returning         after returning
+ factorial(0)            factorial(1)            factorial(2)            factorial(3)
+|------------------|    |------------------|    |------------------|    |------------------|
+| [calling method] | => | [calling method] | => | [calling method] | => | [calling method] |
+|------------------|    |------------------|    |------------------|    |------------------|
+| [factorial(3)]   |    | [factorial(3)]   |    | [factorial(3)]   |
+| n = 3            |    | n = 3            |    | n = 3            |     Now has value 6
+| return 3 * ?     |    | return 3 * ?     |    | return 3 * 2 = 6 |
+|------------------|    |------------------|    |------------------|
+| [factorial(2)]   |    | [factorial(2)]   |
+| n = 2            |    | n = 2            |
+| return 2 * ?     |    | return 2 * 1 = 2 |
+|------------------|    |------------------|
+| [factorial(1)]   |
+| n = 1            |
+| return 1 * 1 = 1 |
+|------------------|
+```
    
 ## Using Recursion with Loops
 
