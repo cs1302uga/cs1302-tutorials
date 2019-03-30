@@ -22,7 +22,7 @@ instances of the data. We often call these **recursive definitions**.
 
 Consider the following list of numbers:
 
-   `24, 88, 40, 37`
+   `88, 42, 37`
 
 Such a list can be defined recursively. 
 
@@ -30,11 +30,18 @@ A LIST is a:
    * number
    * or a: number comma LIST
 
-That is, a LIST can be a number, or a number followed by a comma followed by a LIST. Here,
+That is, a LIST can be a number, or a number followed by a comma followed by a LIST (#, LIST). Here,
 the concept of a LIST is used to define itself!
 
-**Maybe show recursion tree for list above?**
-    
+In order to demonstrate that `[88, 42, 37]` is a LIST using the inductively defined recursive data definition,
+we need to follow the definition one step at a time until we hit the base case.
+1. `[88, 42, 37]` does not correspond to the base case. It is a number (88) followed by a comma followed
+by `[42, 37]`. In order to verify that `[88, 42, 37]` is a list, we need to show that `[42, 37]` is a LIST.
+1. `[42, 37]` is a number (42) followed by a comma followed by `[37]`. In order to verify `[42, 37]` is a LIST,
+we need to verify that `[37]` is a LIST.
+1. `[37]` corresponds to our base case and, therefore, fits the recursive definition of a LIST.
+1. Since `[37]` is a LIST, `[42, 37]` is a LIST and so is `[88, 42, 37]`
+
 In general, to create a recursive definition of some concept, we need to establish two things:
 	
    * ** Base Case **: create a non-recursive definition as a "base".
