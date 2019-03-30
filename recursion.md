@@ -425,7 +425,10 @@ perform the multiplications in order to produce the return values:
 | return 1 * 1 = 1 |
 |------------------|
 ```
-  
+After all of our recursive calls complete, the value 6 is what is ultimately returned to the main method.
+
+Congratulations! You now have a basic understanding of recursion!
+
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
