@@ -1,6 +1,6 @@
-# Recursion Tutorial
+# CSCI 1302 Recursion Tutorial
 
-## Recursion
+## Introduction
 
 This tutorial is designed to help you learn about and understand recursion - a powerful
 programming technique in which a method can call itself in orer to fulfill its purpose.
@@ -234,9 +234,9 @@ Given the above problem description, identify the base cases and the recursive c
 method called `factorial` that takes a single integer argument, `n`, and returns `n!`.
 
 
-    **Don't read beyond this point until you've attempted to write the recursive factorial method.**
+   **Don't read beyond this point until you've attempted to write the recursive factorial method.**
 
-** Solution **
+**Solution**
 
    ```java
    int factorial(int n) {
