@@ -249,8 +249,8 @@ Here is a similar recursion tree for `countFrom(3)`:
 
 The recursion tree may give you the impression that all sub-problems are being evaluated
 concurrently. Without special code to facilitate this (e.g., using threads), these method
-calls occur only one at a time. To better illustrate this, here is a depiction of the 
-method _call stack_ as the method calls approach and reach the base case
+calls occur only one at a time. To better illustrate this, here is a depiction how
+the _call stack_ changes as the recursive method calls approach and reach the base case
 (for an explanation of the call stack, please see the [On the Call Stack](#aside-on-the-call-stack) aside):
 
 ```
@@ -336,18 +336,18 @@ so we assume that only one method is ever executing at any given time.
       4! = 3! * 4 = 1 * 1 * 2 * 3 * 4
       ```
 	
-Given the above problem description, identify the base cases and the recursive cases. Now, try to write a
-method called `factorial` that takes a single integer argument, `n`, and returns `n!`.
-
+Given the above problem description, identify the base cases and the recursive cases. 
+Now, try to write a method called `factorial` that takes a single `int` argument, 
+`n`, and returns `n!` as a `long`.
 
 **Don't read beyond this point until you've attempted to write the recursive factorial method.**
 
 **Sample Solution**
 
    ```java
-   int factorial(int n) {
-       if(n == 0) return 1;               // base case
-          return n * factorial(n - 1);    // recursive case
+   long factorial(int n) {
+       if (n == 0) return 1;           // base case
+       return n * factorial(n - 1);    // recursive case
    } // factorial
    ```
    
