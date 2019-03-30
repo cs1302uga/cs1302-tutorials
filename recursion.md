@@ -42,6 +42,17 @@ we need to verify that `[37]` is a LIST.
 1. `[37]` corresponds to our base case and, therefore, fits the recursive definition of a LIST.
 1. Since `[37]` is a LIST, `[42, 37]` is a LIST and so is `[88, 42, 37]`
 
+We might also represent this with a **recursion tree** as follows:
+
+   ```
+                   [88, 42, 37]
+		     /   |    \
+		    88   ,  [42, 37]
+		             /  |  \
+			    42  ,  [37]
+			             |
+				     37
+   ```
 In general, to create a recursive definition of some concept, we need to establish two things:
 	
    * ** Base Case **: create a non-recursive definition as a "base".
