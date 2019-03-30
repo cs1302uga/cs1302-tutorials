@@ -37,22 +37,36 @@ Here, the concept of a `LIST` is used to define itself!
 We can demonstrate that `88, 42, 37` is a `LIST` using the inductively defined recursive data definition by
 following the definition one step at a time until we reach the base case.
 
-1. `88, 42, 37` does not correspond to the base case. So, we must verify that it matches the recursive case.
-We see that it starts with a number and a comma. However, in order to show that this is a `LIST`, we need to know
-if `42, 37` is a `LIST`. Don't jump ahead! We are limited to the rules given in our recursive definition.
-1. `42, 37` does not correspond to the base case. It is a number, `42`, followed by a comma followed by `37`. 
-In order to verify `42, 37` is a `LIST`, we need to verify that `37` is a `LIST`.
-1. `37` corresponds to our base case and, therefore, fits the recursive definition of a `LIST`.
-1. Since `37` is a `LIST`, `42, 37` is a `LIST` and so is `88, 42, 37`
+1. If we look at `88, 42, 37`, we see that it does not correspond to the base case. 
+   Therefore, we must verify that it matches the recursive case.
+   We see that it starts with a number and a comma. 
+   However, in order to show that this is a `LIST`, we need to know if `42, 37` is a `LIST`. 
+   Don't jump ahead! We are limited to the rules given in our recursive definition.
+   
+1. If we look at`42, 37`, we see that is also does not correspond to the base case. 
+   It is a number, `42`, followed by a comma followed by `37`.
+   In order to verify `42, 37` is a `LIST`, we need to verify that `37` is a `LIST`.
+   
+1. If we look at `37`, we see that is corresponds to our base!
+   Therefore, fits the recursive definition of a `LIST`.
+   
+1. Since `37` is a `LIST`, we can also say that `42, 37` is a `LIST`. 
+   Finally, since `42, 37` is a `LIST`, we can confidently say that `88, 42, 37` is also a list.
+   
+As you can see, in order to answer the original problem of whether or not `88, 42, 37`
+is a list, we used the recursive definition to break it up into smaller sub-problems
+that get easier to answer. We do not know the overall answer to the original problem
+until we have answered all of the sub-problems. We'll explore the idea of problems and
+sub-problems again in a later section.
 
 We might also represent this with a **recursion tree** as follows:
 
    ```
-            [88, 42, 37]
+             88, 42, 37
               /   |    \
-             88   ,  [42, 37]
+             88   ,   42, 37
                       /  |  \
-                     42  ,  [37]
+                     42  ,   37
                               |
                              37
    ```
@@ -78,17 +92,17 @@ Let's try some code!  Compile and run the following on `nike`:
 
    ```java
    public class InfRecursion {
-      public static void main(String[] args) {
-         recurse();
-      } // main
+       public static void main(String[] args) {
+          recurse();
+       } // main
 
-      public static void recurse() {
-         recurse();
-      }
+       public static void recurse() {
+          recurse();
+       }
    } // InfRecursion
    ```
 
-Eventually, the program will throw a `RuntimeException` because it runs out of memory (stack space). You should
+Eventually, the program will throw a `StackOverflowError` because it runs out of memory (stack space). You should
 see an error that looks something like the following:
 
    ```
@@ -103,9 +117,15 @@ Each call to `recurse` (called infinitely) sets up a new execution environment (
 with new parameters and local variables. Each stack frame takes up memory in a special region called the
 stack. When the stack fills up due to too many method calls, you get a `StackOverflowError`.
 
+**ASIDE:** You may have noticed that `StackOverflowError` is reported as an exception but it does not have
+`Exception` in its name. Indeed, it is reported the same as exceptions because it is a sub-class
+of `java.lang.Throwable`, however, it is NOT a sub-class of `java.lang.Exception`. Instead it is
+a sub-class of `java.lang.Error`, a class whose children comprise what the Java Virtual Machine
+considers to be errors that are non-recoverable during runtime.
+
 ## Problems and Sub-problems
 
-As you can probably imagine, we generally want to avoid infinite recursion.  That's why we have to 
+As you can probably imagine, we generally want to avoid infinite recursion.  That's why 
 make sure our recursive algorithms make progress toward the base case. In order to do this, we typically 
 want our recursive call to work on a smaller version of the original problem -- eventually reaching the
 base case. A few general definitions:
@@ -128,45 +148,43 @@ likely write a for-loop and create a method that looks something like:
       for(int i = value; i >= 0; i++) {
          System.out.println(i);
       } // for
-    
    } // countFrom
    ```
     
-You might also see a recursive solution to this problem! Can you identify the recursive cases (subproblems)
+You might also see a recursive solution to this problem! Can you identify the recursive cases (sub-problems)
 and base cases? **Take a second to think about it before reading ahead**
 
-You might have come up with something like this:
+You may have come up with a _problem decomposition_ similar to the following:
 
    ```
-   countFrom(5) as: print(5) then call countFrom(4)
-   countFrom(4) as: print(4) then call countFrom(3)
-   countFrom(3) as: print(3) then call countFrom(2)
-   countFrom(2) as: print(2) then call countFrom(1)
-   countFrom(1) as: print(1) then call countFrom(0)
-   countFrom(0) as: simply return
+   countFrom(5): print(5) then call countFrom(4)
+   countFrom(4): print(4) then call countFrom(3)
+   countFrom(3): print(3) then call countFrom(2)
+   countFrom(2): print(2) then call countFrom(1)
+   countFrom(1): print(1) then call countFrom(0)
+   countFrom(0): simply return
    ```
 
 If `countFrom` is passed any value other than `0`, we are in the recursive case where the method prints its
 current value and then calls itself with the value minus one. This will eventually lead to the base case and
 each call to `countFrom` works on a smaller version of the original problem (a smaller sequence to print).
 
-
 **Take a few minutes to think about what the code for this might look like**
-
 
 **One Possible Solution:**
 
    ```java
    public static void countFrom(int num) {
-      //Base Case
-      if(num < 0) {
-          return;
-      } // if
+   
+       // Base Case
+       if(num < 0) {
+           return;
+       } // if
 
-      //Recursive Case
-      countFrom(num-1);
-      System.out.println(num);
-
+       // Recursive Case
+       countFrom(num - 1);
+       System.out.println(num);
+       
    } // countFrom
    ```
 
@@ -178,11 +196,9 @@ make sure it's working properly.
 How could you modify the previous code to make it count up instead of down? **Hint**: You can
 do this simply by swapping two lines of code.
 
+**Don't read beyond this point until you've attempted to change the above code to count up.**
 
-   **Don't read beyond this point until you've attempted to change the above code to count up**
-
-
-If you haven't realized the solution, try swapping the last two lines in the `countFrom` method.
+Did you try swapping the last two lines in the `countFrom` method? If not, then try it!
 Now, the method will print the current value before calling itself recursively.  It results in
 the following structure:
 
