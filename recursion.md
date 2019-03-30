@@ -233,9 +233,97 @@ To better understand how this works, consider the recursion tree below:
 after our call to `countFrom(5)`, `countFrom(4)` has to completely finish its execution before
 `print(5)` executes. This explains why all other numbers are printed *before* 5 in the output.
 
+Here is a similar recursion tree for `countFrom(3)`:
+
+   ```
+                  countFrom(3)
+                  /         \
+             countFrom(2)  print(3)
+             /          \
+        countFrom(1)   print(2)
+        /          \
+    countFrom(0)  print(1)
+         |
+        return
+   ```
+
+The recursion tree may give you the impression that all sub-problems are being evaluated
+concurrently. Without special code to facilitate this (e.g., using threads), these method
+calls occur only one at a time. To better illustrate this, here is a depiction of the 
+method _call stack_ as the method calls approach and reach the base case
+(for an explanation of the call stack, please see the [On the Call Stack](#aside-on-the-call-stack) aside):
+
+```
+ immediately             immediately             immediately             immediately
+ after calling           after calling           after calling           after calling 
+ countFrom(3)            countFrom(2)            countFrom(1)            countFrom(0)
+|------------------|    |------------------|    |------------------|    |------------------|
+| [calling method] | => | [calling method] | => | [calling method] | => | [calling method] |
+|------------------|    |------------------|    |------------------|    |------------------|
+| [countFrom(3)]   |    | [countFrom(3)]   |    | [countFrom(3)]   |    | [countFrom(3)]   |
+| num = 3          |    | num = 3          |    | num = 3          |    | num = 3          |
+|------------------|    |------------------|    |------------------|    |------------------|
+                        | [countFrom(2)]   |    | [countFrom(2)]   |    | [countFrom(2)]   | 
+ NO OUTPUT YET          | num = 2          |    | num = 2          |    | num = 2          |
+                        |------------------|    |------------------|    |------------------|
+                                                | [countFrom(1)]   |    | [countFrom(1)]   | 
+                          NO OUTPUT YET         | num = 1          |    | num = 1          |
+                                                |------------------|    |------------------|
+                                                                        | [countFrom(0)]   |
+                                                  NO OUTPUT YET         | num = 0          |
+                                                                        |------------------|  
+                                                                        
+                                                                          NO OUTPUT YET
+```
+
+Since the print statements are written after the recursive calls, we do not see any output
+as the program approaches the base case. However, as the recusive method calls return
+back to their calling methods, we begin to see the program produce the expected output.
+as depicted below:
+
+```
+ immediately             immediately             immediately             immediately
+ after returning         after returning         after returning         after returning
+ countFrom(0)            countFrom(1)            countFrom(2)            countFrom(3)
+|------------------|    |------------------|    |------------------|    |------------------|
+| [calling method] | => | [calling method] | => | [calling method] | => | [calling method] |
+|------------------|    |------------------|    |------------------|    |------------------|
+| [countFrom(3)]   |    | [countFrom(3)]   |    | [countFrom(3)]   |
+| num = 3          |    | num = 3          |    | num = 3          |      OUTPUT:
+|------------------|    |------------------|    |------------------|      1
+| [countFrom(2)]   |    | [countFrom(2)]   |                              2
+| num = 2          |    | num = 2          |     OUTPUT:                  3
+|------------------|    |------------------|     1
+| [countFrom(1)]   |                             2
+| num = 1          |     OUTPUT:
+|------------------|     1
+
+ STILL
+ NO OUTPUT YET
+```
+
+### Aside: On the Call Stack
+
+You've seen a call stack before! When your Java programs crash from an exception
+or error, the output produces a _stack trace_. Each line in the stack trace represents a each method
+call that was made (exluding methods that have already returned), starting from `main` up to the 
+method that whose execution caused the crash. 
+
+In our depiction of the call stack, each boxed area called a _stack frame_ 
+and represents a specific method call, including its local variables. You should think of this
+as the scratch space for that specific invocation of the method. The frames are usually
+depicted in a downward-moving stack as that is how they are generally stored in 
+computer memory. If a method calls another method, then the frame for that other method
+is pushed / added to the bottom end of this stack. When the other method returns, its frame 
+is popped / removed from the stack. Therefore, the frame at the end always represents the
+specific method where code is being executed at any given moment in time. 
+Of course, this assumes single-threaded execution. In a multi-threaded application, there is usually
+one call stack per thread. In our recursion examples, we do not explicitly create new threads
+so we assume that only one method is ever executing at any given time.
+
 ## Recursive Factorial
 
-** Problem **: What is the factorial of the non-negative integer `n`?
+**Problem**: What is the factorial of the non-negative integer `n`?
 
    * By definition, the first number in the factorial sequence is 1.
    * Example:
@@ -252,14 +340,14 @@ Given the above problem description, identify the base cases and the recursive c
 method called `factorial` that takes a single integer argument, `n`, and returns `n!`.
 
 
-   **Don't read beyond this point until you've attempted to write the recursive factorial method.**
+**Don't read beyond this point until you've attempted to write the recursive factorial method.**
 
-**Solution**
+**Sample Solution**
 
    ```java
    int factorial(int n) {
-      if(n == 0) return 1;               //base case
-         return n * factorial(n - 1);    //recursive case
+       if(n == 0) return 1;               // base case
+          return n * factorial(n - 1);    // recursive case
    } // factorial
    ```
    
