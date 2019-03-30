@@ -37,8 +37,8 @@ the concept of a LIST is used to define itself!
     
 In general, to create a recursive definition of some concept, we need to establish two things:
 	
-   * **Base Case**: create a non-recursive definition as a "base".
-   * **Recursive Case**: create a definition in terms of itself, changing it somehow 
+   * ** Base Case **: create a non-recursive definition as a "base".
+   * ** Recursive Case **: create a definition in terms of itself, changing it somehow 
    (usually towards the base case).
 
 ## Infinite Recursion
@@ -101,7 +101,7 @@ With respect to recursion:
 If asked to write a static method to countdown from a specified value to zero, you would
 likely write a for-loop and create a method that looks something like:
 
-   ``` java
+   ```java
    public static void countFrom(int value) {
       for(int i = value; i >= 0; i++) {
          System.out.println(i);
@@ -124,19 +124,19 @@ and base cases? You might think of it like this:
    
 The code to implement this idea might look like:
 
-    ``` java
-    public static void countFrom(int num) {
-        //Base Case
-        if(num == 0) {
-            return;
-        } // if
+   ```java
+   public static void countFrom(int num) {
+      //Base Case
+      if(num == 0) {
+          return;
+      } // if
 
-        //Recursive Case
-        countFrom(num-1);
-        System.out.println(num);
+      //Recursive Case
+      countFrom(num-1);
+      System.out.println(num);
 
-    } // countFrom
-    ```
+   } // countFrom
+   ```
 
 Try out the above method. Call it from your `main` method using various input values to
 make sure it's working properly.
@@ -165,7 +165,7 @@ the following structure:
    
 ## Recursive Factorial
 
-**Problem**: What is the factorial of the non-negative integer `n`?
+** Problem **: What is the factorial of the non-negative integer `n`?
 
    * By definition, the first number in the factorial sequence is 1.
    * Example:
@@ -184,11 +184,11 @@ method called `factorial` that takes a single integer argument, `n`, and returns
 
     **Don't read beyond this point until you've attempted to write the recursive factorial method.**
 
-**Solution**
+** Solution **
 
    ```java
    int factorial(int n) {
-      if(n == 0) return 1;            //base case
+      if(n == 0) return 1;               //base case
          return n * factorial(n - 1);    //recursive case
    } // factorial
    ```
