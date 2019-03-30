@@ -364,7 +364,7 @@ Here is a sample recursion tree for `factorial(3)`:
                  \
              1 * factorial(0)
                       \
-		       1
+                       1
    ```
 
 **Sample Call Stack**
