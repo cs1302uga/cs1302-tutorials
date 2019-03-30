@@ -8,7 +8,7 @@ programming technique in which a method can call itself in orer to fulfill its p
 A **recursive definition** is one which uses the word or concept being defined in the
 definition itself.
 
-   ` Ex: GNU stands for "GNUs not Unix" `
+   `GNU stands for "GNUs not Unix"`
 
 In some situations, a recursive definition can be an appropriate way to express a concept.
 Before applying recursion to programming, it is best to practice thinking recursively.
@@ -45,18 +45,18 @@ we need to verify that `[37]` is a LIST.
 We might also represent this with a **recursion tree** as follows:
 
    ```
-                   [88, 42, 37]
-		     /   |    \
-		    88   ,  [42, 37]
-		             /  |  \
-			    42  ,  [37]
-			             |
-				     37
+            [88, 42, 37]
+              /   |    \
+             88   ,  [42, 37]
+                      /  |  \
+                     42  ,  [37]
+                              |
+                             37
    ```
 In general, to create a recursive definition of some concept, we need to establish two things:
 	
-   * ** Base Case **: create a non-recursive definition as a "base".
-   * ** Recursive Case **: create a definition in terms of itself, changing it somehow 
+   * **Base Case**: create a non-recursive definition as a "base".
+   * **Recursive Case**: create a definition in terms of itself, changing it somehow 
    (usually towards the base case).
 
 ## Infinite Recursion
@@ -106,13 +106,13 @@ As you can probably imagine, we generally want to avoid infinite recursion.  Tha
 make sure our recursive algorithms make progress toward the base case. It's often a good idea to think
 of ways to break the overall problem into subproblems:
 	
-   * Problem: what you're trying to solve.
-   * Sub-problem: a smaller version or part of the problem that's easier to solve.
+   * **Problem**: what you're trying to solve.
+   * **Sub-problem**: a smaller version or part of the problem that's easier to solve.
 
 With respect to recursion:
 	
-   * Sub-problems that *cannot* be solved directly are the *recursive cases*.
-   * Sub-problems that *can* be solved directly correspond to *base cases*.
+   * **Recursive Cases**: sub-problems that cannot be solved directly.
+   * **Base Cases**: sub-problems that can be solved directly.
 
 ## Recursive Countdown
 
