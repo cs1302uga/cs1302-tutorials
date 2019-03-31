@@ -182,8 +182,8 @@ each call to `countFrom` works on a smaller version of the original problem (a s
        } // if
 
        // Recursive Case
-       countFrom(num - 1);
        System.out.println(num);
+       countFrom(num - 1);     
        
    } // countFrom
    ```
@@ -191,7 +191,7 @@ each call to `countFrom` works on a smaller version of the original problem (a s
 Try out the above method. Call it from your `main` method using various input values to
 make sure it's working properly.
     
-## Recursive CountUp
+## Recursive Count Up
 
 How could you modify the previous code to make it count up instead of down? **Hint**: You can
 do this simply by swapping two lines of code.
