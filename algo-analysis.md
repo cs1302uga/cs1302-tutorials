@@ -81,8 +81,7 @@ What is T(n) if the key processing step is `System.out.println`?
 
 **Think about the answers to the previous two questions before reading ahead**
 
-<table><tr><td><pre> 
-    void printN(int n) {
+<table><tr><td><pre>    void printN(int n) {
         for(int i = 0; i < n; i++) {
             System.out.println(n);
         } // for
