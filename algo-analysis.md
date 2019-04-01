@@ -7,6 +7,7 @@ is to determine if it is appropriate for the application. This tutorial is desig
 help you understand the basics of algorithm analysis.
 
 We will focus on:
+
     * What it means for an algorithm to be efficient
     * The concept of algorithm analysis
     * Comparing algorithmic growth functions
@@ -42,6 +43,7 @@ occur if you look closely.
 
 For the purposes of analysis, instead of focusing on everything, we usually only focus
 on **key processing steps**. These are the operations that we're intested in.
+
     * If downloading images from iTunes, downloading a single image might be the
     key processing step.
     * In searching and sorting, the key processing step is usually the number of
@@ -52,10 +54,12 @@ Sometimes, we might focus on other operations. It depends on the problem.
 ## Time Complexity Analysis
 
 Given:
+    
     * Problem size = n
     * Set of key processing steps
 
 Goal:
+    
     * Derive a **timing function**, T(n), that reflects the number of key processing
     steps in terms of the problem size.
     * Classify T(n) into a **complexity class** based on the formula for the function.
@@ -63,13 +67,13 @@ Goal:
 
 Example 1:
 
-    ```java
-    void printN(int n) {
-        for(int i = 0; i < n; i++) {
-            System.out.println(n);
-        } // for
-    } // printN
-    ```
+```java    
+void printN(int n) {
+    for(int i = 0; i < n; i++) {
+        System.out.println(n);
+    } // for
+} // printN
+```
     
 What is the problem size?
 
@@ -77,23 +81,20 @@ What is T(n) if the key processing step is `System.out.println`?
 
 **Think about the answers to the previous two questions before reading ahead**
 
-<table>
-    <tr>
-        <td>
-            ```java
-            void printN(int n) {
-                for(int i = 0; i < n; i++) {
-                    System.out.println(n);
-                } // for
-            } // printN
-            ```
-        </td>
-        <td>
-
-                                      _
-         <--- 1 println per iteration  | n iterations
-                                      -           
-        </td>
+<table><tr><td><pre> 
+    void printN(int n) {
+        for(int i = 0; i < n; i++) {
+            System.out.println(n);
+        } // for
+    } // printN
+</pre></td>
+<td>
+<pre>
+                             
+ 1 println per iteration  n iterations
+                                        
+     </pre>
+     </td>
     </tr>
 </table>
 
