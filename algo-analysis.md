@@ -86,17 +86,20 @@ What is T(n) if the key processing step is `System.out.println`?
             System.out.println(n);
         } // for
     } // printN
-</pre></td>
-<td>
-<pre>
-                             
- 1 println per iteration  n iterations
-                                        
-     </pre>
-     </td>
-    </tr>
-</table>
+</pre>
+</td>
+<td>   <pre>
+                                +---+
+                                    |
+<--------+1 println per iteration   | n iterations
+                                    |
+                                +---+
+</pre>
 
+</td>
+</tr>
+</table>
+   
 What is the problem size?
 In this example, the problem size is the number of times we execute the key processing
 step (`System.out.println`). So, it is `n`.
