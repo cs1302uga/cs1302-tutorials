@@ -65,7 +65,9 @@ Goal:
     * Classify T(n) into a **complexity class** based on the formula for the function.
 
 
-Example 1:
+## Examples
+
+**Example 1**:
 
 ```java    
 void printN(int n) {
@@ -94,7 +96,7 @@ What is T(n) if the key processing step is `System.out.println`?
          <pre>
                                 +---+
                                     |
-<--------+1 println per iteration   | n iterations
+<-------- 1 println per iteration   | n iterations
                                     |
                                 +---+
          </pre>
@@ -109,6 +111,53 @@ step (`System.out.println`). So, it is `n`.
 What is T(n) if the key processing step is `System.out.println`?
 T(n) = 1 * n = n
     
+    
+**Example 2**:
+
+```java
+void printN(int n) {
+    for(int i = 0; i < n; i++) {
+        for(int j = 0; j < n; j++) {
+            System.out.println(i + j);
+        } // for
+    } // for
+} // printN
+```
+
+What is the problem size?
+
+What is T(n) if the key processing step is `System.out.println`?
+
+**Think about the answers to the previous two questions before reading ahead**
+
+<table>
+   <tr>
+      <td>
+         <pre>    void printN(int n) {
+        for(int i = 0; i < n; i++) {
+            for(int j = 0; j < n; j++) {
+                System.out.println(i + j);
+            } // for
+        } // for
+    } // printN </pre>
+      </td>
+      <td>   
+         <pre>
+
+```
+
+
+                            +--+
+                 +-+           |
+<------ 1 println  | n iters   | n iters
+                 +-+           |
+                            +--+
+```
+
+         </pre>
+      </td>
+   </tr>
+</table>
 Congratulations! You now have a basic understanding of algorithm analysis!
 
 <hr/>
