@@ -20,5 +20,8 @@ To set up your account:
 
 1. Login to [GitHub](www.github.com)
 1. Click on "New" under the repositories section on the left-hand side of the page.
-1. You should see a screen similar to the image below. Type `cs1302-my-first-repo`
-   as the name of your repository, click `private`
+1. You should see a screen similar to the image below. Type `cs1302-test-repo`
+   as the name of your repository, click the "private" radio button and then press
+   the "Create Repository" button.
+
+![Create Repo](https://github.com/cs1302uga/cs1302-tutorials/raw/master/img/create_repo.png)
