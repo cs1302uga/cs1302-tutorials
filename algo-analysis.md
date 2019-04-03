@@ -5,7 +5,7 @@
 In computer science, there often exist multiple algorithms that a programmer can choose to
 use or implement to solve a problem. For example, to sort an array of directly comparable 
 values such as integers, there are some famous algorithms such as bubble sort and merge 
-sort (see [President Obama on Bubble Sort](https://youtu.be/k4RRi_ntQc8?t=47)).
+sort (see [President Obama on Bubble Sort](https://youtu.be/k4RRi_ntQc8?t=34)).
 In scenarios such as these where multiple algorithms are available, it's important
 to understand the trade-offs between the different choice. One way to help us do this
 is to characterize an algorithm's performance with respect to some criteria. If you're
