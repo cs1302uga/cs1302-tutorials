@@ -202,7 +202,7 @@ void printN(int n) {
     for (int i = 0; i < n; i++) {                             +------+
         System.out.println(i);               <----------+ 1 per iter |
         for (int j = 0; j < n; j++) {                +--+            |
-            System.out.println(i+j); <-----+ 1 per iter | n iters    | n iters
+            System.out.println(i+j); <-----  1 per iter | n iters    | n iters
         } // for                                     +--+            |
         System.out.println(i);               <----------+ 1 per iter |
     } // for                                                  +------+
@@ -229,7 +229,7 @@ going across then add going down. The steps would look something like this:
 4. Now, we add the three values we just calculated (add going down) to get: 
    `T(n) = n + n + n^2 = n^2 + 2n`.
 
-`T(n) = n^2 + 2n`
+    `T(n) = n^2 + 2n`
 
 
 **Example 5 [Even Trickier]**:
@@ -254,7 +254,7 @@ What is T(n) if the key processing step is `System.out.println`?
 In this example, an exact formula for T(n) is tough to compute.  We can, however, give a worst case
 analysis of:
 
-T(n) <= (1 * `n`) + (1 * `n` * `n`) + (1 * `n`) = `n`^2 + 2n
+`T(n) <= (1 * n) + (1 * n * n) + (1 * n)` = `n^2 + 2n`
 
 Congratulations! You now have a basic understanding of algorithm analysis!
 
