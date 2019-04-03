@@ -2,9 +2,15 @@
 
 ## Introduction
 
-In computer science it is important to understand how efficient a particular algorithm
-is to determine if it is appropriate for the application. This tutorial is designed to
-help you understand the basics of algorithm analysis.
+In computer science, there often exist multiple algorithms that a programmer can choose to
+use or implement to solve a problem. For example, to sort an array of directly comparable 
+values such as integers, there are some famous algorithms such as bubble sort and merge 
+sort. In scenarios such as these where multiple algorithms are available, it's important
+to understand the trade-offs between the different choice. One way to help us do this
+is to characterize an algorithm's performance with respect to some criteria. If you're
+able to characterize the performance of bubble sort and merge sort, for example, then
+you might discover that one is better than the other for your particular use case. 
+This is the goal of algorithm analysis. 
 
 We will focus on:
 
