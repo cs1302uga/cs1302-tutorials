@@ -82,6 +82,9 @@ What is the problem size?
 What is T(n) if the key processing step is `System.out.println`?
 
 **Think about the answers to the previous two questions before reading ahead**
+To derive the timing function, you might consider putting in a few values for `n`. For example,
+if `n` is 5, how many times does the key processing step execute? If `n` is 10? 100? 1000000?
+After thinking about these, can you define the timing function in terms of `n`?
 
 <table>
    <tr>
@@ -105,12 +108,10 @@ What is T(n) if the key processing step is `System.out.println`?
 </table>
    
 What is the problem size?
-In this example, the problem size is the number of times we execute the key processing
-step (`System.out.println`). So, it is `n`.
+In this example, the problem size is the parameter, `n`.
     
 What is T(n) if the key processing step is `System.out.println`?
 T(n) = 1 * n = n
-    
     
 **Example 2**:
 
@@ -130,38 +131,145 @@ What is T(n) if the key processing step is `System.out.println`?
 
 **Think about the answers to the previous two questions before reading ahead**
 
-<table>
-   <tr>
-      <td>
-         <pre>    void printN(int n) {
-        for(int i = 0; i < n; i++) {
-            for(int j = 0; j < n; j++) {
-                System.out.println(i + j);
-            } // for
+
+```
+void printN(int n) {
+    for(int i = 0; i < n; i++) {                                             +--+
+        for(int j = 0; j < n; j++) {                               +--+         |
+            System.out.println(i + j); <----- 1 println per iteration | n iters | n iters
+        } // for                                                   +--+         |
+    } // for                                                                 +--+
+} // printN
+```
+
+What is the problem size?
+In this example, the problem size is the parameter `n`.
+
+What is T(n) if the key processing step is `System.out.println`?
+T(n) = 1 * n * n = n^2
+
+**Example 3 [Tricky]**:
+
+```java
+void printN(int n) {
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < 10; j++) {
+            System.out.println(i+j);
         } // for
-    } // printN </pre>
-      </td>
-      <td>   
-         <pre>
+    } // for
+} // printN
+```
+
+What is the problem size?
+
+What is T(n) if the key processing step is `System.out.println`?
+
+**Think about the answers to the previous two questions before reading ahead**
+
+
+```
+void printN(int n) {
+    for(int i = 0; i < n; i++) {                                              +--+
+        for(int j = 0; j < 10; j++) {                              +--+          |
+            System.out.println(i + j); <----- 1 println per iteration | 10 iters | n iters
+        } // for                                                   +--+          |
+    } // for                                                                  +--+
+} // printN
+```
+
+What is the problem size?
+In this example, the problem size is the parameter `n`.
+
+What is T(n) if the key processing step is `System.out.println`?
+
+This is the tricky part. **Note**: just because we have a nested loop, that doesn't mean the
+order of the polynomial is increased. Since the inner loop always executes 10 times, our
+timing function would be:
+
+T(n) = 1 * 10 * n = 10n
+
+**Example 4 [Trickier]**:
+
+```java
+void printN(int n) {
+    for (int i = 0; i < n; i++) {
+        System.out.println(i);
+        for (int j = 0; j < n; j++) {
+            System.out.println(i+j);
+        } // for
+        System.out.println(i);
+    } // for
+} // printN
+```
+
+What is the problem size?
+
+What is T(n) if the key processing step is `System.out.println`?
+
+**Think about the answers to the previous two questions before reading ahead**
+
+
+```
+void printN(int n) {
+    for (int i = 0; i < n; i++) {                             +------+
+        System.out.println(i);               <----------+ 1 per iter |
+        for (int j = 0; j < n; j++) {                +--+            |
+            System.out.println(i+j); <-----+ 1 per iter | n iters    | n iters
+        } // for                                     +--+            |
+        System.out.println(i);               <----------+ 1 per iter |
+    } // for                                                  +------+
+} // printN
 
 ```
 
+What is the problem size?
+In this example, the problem size is the parameter `n`.
 
-                            +--+
-                 +-+           |
-<------ 1 println  | n iters   | n iters
-                 +-+           |
-                            +--+
+What is T(n) if the key processing step is `System.out.println`?
+
+This is the `trickier` part. To the get timing function, we can multiply the values above
+going across then add going down. The steps would look something like this:
+    1. The first `println` statement happens once per iteration of the outer loop and this outer 
+       loop executes `n` times.  The total number of times this line executes is `1 * n = `**n**.
+       (an example of multiplying across).
+    2. The second `println` statement (nested within two loops) executes once per execution
+       of the inner loop which executes `n` times. Since the inner loop is wrapped in a loop
+       that also executes `n` times, the total number of times this `println` statement executes
+       is `1 * n * n = `**n^2**. (Again, multiplying across)
+    3. Similar to the first `println` statement, the last one executes `n` times.
+    4. Now, we add the three values we just calculated (add going down) to get: 
+       `T(n) = n + n + n^2 =` **n^2 + 2n**.
+
+T(n) = n^2 + 2n
+
+
+**Example 5 [Even Trickier]**:
+
+```java
+void printN(int n) {
+    for (int i = 0; i < n; i++) {
+        System.out.println(i);
+        for (int j = i; j < n; j++) {
+            System.out.println(i+j);
+        } // for
+    System.out.println(i);
+    } // for
+} // printN
 ```
 
-         </pre>
-      </td>
-   </tr>
-</table>
+What is the problem size?
+In this example, the problem size is the parameter `n`.
+
+What is T(n) if the key processing step is `System.out.println`?
+
+In this example, an exact formula for T(n) is tough to compute.  We can, however, give a worst case
+analysis of:
+
+T(n) <= (1 * `n`) + (1 * `n` * `n`) + (1 * `n`) = `n`^2 + 2n
+
 Congratulations! You now have a basic understanding of algorithm analysis!
 
 <hr/>
-
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 <small>
