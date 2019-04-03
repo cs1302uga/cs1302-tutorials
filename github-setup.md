@@ -23,7 +23,7 @@ will need to create an SSH public/private key pair on Nike. This will allow you 
 key to GitHub (think of it as a padlock) that GitHub can use to authenticate your requests in
 addition to or in lieu of your GitHub username and password. It's sufficient to think of this 
 key-based authentication process as you unlocking the public key (i.e., the padlock) using your
-private key -- the Git program will do this so long as the key pair is setup correctly. 
+private key -- the Git program will do this with GitHub so long as the key pair is setup correctly. 
 
 1. Login to Nike.
 
@@ -38,7 +38,7 @@ private key -- the Git program will do this so long as the key pair is setup cor
    This creates a public / private key pair in the default location: `~/.ssh/`.
   
 1. View your public key using `cat` and copy its output to your clipboard (usually by selecting
-   the text in your terminal, then right clicking on the selection and selecting "Copy"):
+   the text in your terminal, then right clicking on the selection and clicking "Copy"):
 
    ```
    $ cat ~/.ssh/id_rsa.pub
