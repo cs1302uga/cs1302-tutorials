@@ -67,8 +67,51 @@ private key -- the Git program will do this with GitHub so long as the key pair 
 
 1. Login to [GitHub](https://www.github.com/)
 1. Click on "New" under the repositories section on the left-hand side of the page.
-1. You should see a screen similar to the image below. Type `cs1302-test-repo`
+1. You should see a screen similar to the image below. Type `cs1302-testRepo`
    as the name of your repository, click the "private" radio button and then press
    the "Create Repository" button.
 
 ![Create Repo](https://github.com/cs1302uga/cs1302-tutorials/raw/master/img/create_repo.png)
+
+1. Once you've clicked the "Create Repository" button, your repository is created
+   but still needs to be setup. GitHub should be showing a website which gives you
+   a few options on how to setup your repository. Instead of following those instructions
+   directly, we will setup our repository from Nike using the following commands:
+   
+   1. Clone your repository on nike using `git clone git@github.com:username/cs1302-testRepo.git`
+      replacing `username` with your GitHub username. You may get a message saying
+      you've cloned an empty repository. That's okay! You should now have a folder
+      called `cs1302-testRepo`.
+   1. Change into the `cs1302-testRepo` directory.
+   1. Create an initial `README` file using `echo "# cs1302-testRepo" >> README.md`.
+   1. Add your `README` file to the repository using `git add README.md`.
+   1. Commit your changes using `git commit -am "first commit".
+   1. Push your changes to GitHub using `git push origin master`
+   1. Refresh your GitHub page to see the changes to the repository. Your repository should
+      look similar to the below image. Note the number of commits (1 so far) to this
+      repository, the latest commit time, and the contents of the `README` file are
+      all shown on `GitHub`.
+
+1. Now that your repository is set up, let's get some more pracice. On Nike, do the following:
+   1. Open your `README.md` file.
+   1. Type a few additional sentences.
+   1. Commit your changes locally.
+   1. Push your changes to GitHub.
+   1. Refresh the GitHub page to make sure your changes have been added to the online repository.
+   1. Delete the entire `cs1302-testRepo` folder from Nike.
+   1. Wait. Delete my entire project from Nike?!? Yep, do it.
+   1. Execute the `git clone` command from above. And it's back!
+   1. Note: you could clone from any machine that has `git` installed. You've all been cloning
+      cs1302 GitHub repositories all semester.
+      
+Congratulations on becoming a member of GitHub!
+
+<hr/>
+
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
+
+<small>
+Copyright &copy; Michael E. Cotterell, Brad Barnes, and the University of Georgia.
+This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a> to students and the public.
+The content and opinions expressed on this Web page do not necessarily reflect the views of nor are they endorsed by the University of Georgia or the University System of Georgia.
+</small>
