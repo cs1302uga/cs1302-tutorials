@@ -23,12 +23,11 @@ We will focus on:
 
 ## Algorithm Efficiency
 
-An algorithm's efficiency is a major factor in determining how fast a program executes.
-
 Algorithm analysis can be performed relative to the amount of memory a program uses
 (**space complexity**) or the amount of CPU time required to complete the work
 (**time complexity**). The amount of CPU time is usually a more interesting issue and
-will be the focus of this reading.
+will be the focus of this reading. There is usually trade-off between these two
+complexities. 
 
 ## Defining Problem Size
 
@@ -46,31 +45,41 @@ For every algorithm we want to analyze, we need to define the **size of the prob
 ## Processing Steps
 
 Algorithms (or more generally functions or methods) have many operations/steps that
-occur if you look closely.
-
-For the purposes of analysis, instead of focusing on everything, we usually only focus
-on **key processing steps**. These are the operations that we're intested in.
+occur if you look closely. For the purposes of analysis, instead of focusing on 
+everything, we usually only focus on a set of **key processing steps**. 
+These are the operations that we're intested in.
 
 * If downloading images from iTunes, downloading a single image might be the
   key processing step.
 * In searching and sorting, the key processing step is usually the number of
   comparisons done.
 
-Sometimes, we might focus on other operations. It depends on the problem.
+Sometimes, we might focus on other operations. It depends on the problem. In general,
+this set usually comprises of operations that expensive (i.e., take a long time or
+require a lot of memory) as they will dominate less expensive operations in their 
+impact towards the overall complexity of the algorithm. 
 
 ## Time Complexity Analysis
 
-Given:
+First, let's focus on ((time complexity analysis**. Supose you have a set of
+algorithms that all solve the same problem. In order to analyze each of them, 
+we first need to do the following:
     
-* Problem size = `n`
-* Set of key processing steps
+1. Define the problem size = `n`; then
 
-Goal:
+2. Degine the set of key processing steps.
+
+Think of this as identifying the units. We need to define the problem size and
+set of key processing steps the same way for all of the algorithms we wish to
+compare based on their time complexities so that it's a fair comparison. 
+
+In order to actually determine these time complexities, we need to do the
+following: 
     
-* Derive a **timing function**, `T(n)`, that reflects the number of key processing
-  steps in terms of the problem size.
-* Classify `T(n)` into a **complexity class** based on the formula for the function.
-
+3. Derive a **timing function**, `T(n)`, that reflects the number of key processing
+   steps in terms of the problem size.
+  
+4. Classify `T(n)` into a **complexity class** based on the formula for the function.
 
 ## Examples
 
