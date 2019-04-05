@@ -81,9 +81,14 @@ following:
   
 4. Classify `T(n)` into a **complexity class** based on the formula for the function.
 
-## Examples
+That's it! Those four steps are what you need to do in order to perform a time complexity
+analysis for an algorithm. The trickiest part is usually the third step, which is what
+most of this tutorial will focus on. We will have a separate tutorial that focuses 
+exclusively on the fourth step.
 
-**Example 1**:
+## Example Problems
+
+### Example 1
 
 ```java    
 void printN(int n) {
@@ -92,12 +97,17 @@ void printN(int n) {
     } // for
 } // printN
 ```
-    
-What is the problem size?
+  
+Questions:
 
-What is `T(n)` if the key processing step is `System.out.println`?
+* What is the problem size?
+
+* What is `T(n)` if the key processing step is `System.out.println`?
 
 **Think about the answers to the previous two questions before reading ahead**
+
+Sample Solutions:
+
 To derive the timing function, you might consider putting in a few values for `n`. For example,
 if `n` is 5, how many times does the key processing step execute? For example:
 
