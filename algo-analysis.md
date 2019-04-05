@@ -90,9 +90,16 @@ What is `T(n)` if the key processing step is `System.out.println`?
 
 **Think about the answers to the previous two questions before reading ahead**
 To derive the timing function, you might consider putting in a few values for `n`. For example,
-if `n` is 5, how many times does the key processing step execute? If `n` is 10? 100? 1000000?
-After thinking about these, try to find a pattern to help define thecan you define the timing 
-function as a function of `n`?
+if `n` is 5, how many times does the key processing step execute? For example:
+
+|    `n`   |   `T(n)` |
+|----------|----------|
+| 5        |     ?    |
+| 100      |     ?    |
+| 1000     |     ?    |
+| 100000   |     ?    |
+
+After thinking about these, can you define the timing function as a function of `n`?
 
 ```
 void printN(int n) {
