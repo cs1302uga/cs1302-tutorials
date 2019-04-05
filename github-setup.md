@@ -91,6 +91,9 @@ private key -- the Git program will do this with GitHub so long as the key pair 
       look similar to the below image. Note the number of commits (1 so far) to this
       repository, the latest commit time, and the contents of the `README` file are
       all shown on `GitHub`.
+      
+![Test Repo](https://github.com/cs1302uga/cs1302-tutorials/raw/master/img/testRepo.png)
+
 
 1. Now that your repository is set up, let's get some more pracice. On Nike, do the following:
    1. Open your `README.md` file.
