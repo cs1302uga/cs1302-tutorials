@@ -88,53 +88,56 @@ exclusively on the fourth step.
 
 ## Example Problems
 
-### Example 1
+1. **Example 1**
 
-```java    
-void printN(int n) {
-    for(int i = 0; i < n; i++) {
-        System.out.println(n);
-    } // for
-} // printN
-```
+   Here is an algorithm that solves the problem of printing the numbers `0` through `n` 
+   (exclusive).
+
+   ```java    
+   void printN(int n) {
+       for(int i = 0; i < n; i++) {
+           System.out.println(n);
+       } // for
+   } // printN
+   ```
   
-Questions:
+   Questions:
 
-* What is the problem size?
+   * What is the problem size?
 
-* What is `T(n)` if the key processing step is `System.out.println`?
+   * What is `T(n)` if the set of key processing steps only includes `System.out.println`?
 
-**Think about the answers to the previous two questions before reading ahead**
+   **Think about the answers to the previous two questions before reading ahead**
 
-Sample Solutions:
+   Towards a Sample Solution:
 
-To derive the timing function, you might consider putting in a few values for `n`. For example,
-if `n` is 5, how many times does the key processing step execute? For example:
+   * To derive the timing function, you might consider putting in a few values for `n`. For example,
+     if `n` is 5, how many times does the key processing step execute? For example:
 
-|    `n`   |   `T(n)` |
-|----------|----------|
-| 5        |     ?    |
-| 100      |     ?    |
-| 1000     |     ?    |
-| 100000   |     ?    |
+     |    `n`   |   `T(n)` |
+     |----------|----------|
+     | 5        |     ?    |
+     | 100      |     ?    |
+     | 1000     |     ?    |
+     | 100000   |     ?    |
 
-After thinking about these, can you define the timing function as a function of `n`?
+   * After thinking about these, can you define the timing function as a function of `n`?
 
-```
-void printN(int n) {
-    for(int i = 0; i < n; i++) {                              +--+
-        System.out.println(n);  <------- 1 println per iteration | n iterations
-    } // for                                                  +--+
-} // printN
-```
+   Sample Solution Derivation:
    
-What is the problem size?
-In this example, the problem size is the parameter, `n`.
+   ```
+   void printN(int n) {
+       for(int i = 0; i < n; i++) {                              +--+
+           System.out.println(n);  <------- 1 println per iteration | n iterations
+       } // for                                                  +--+
+   } // printN
+   ```
+   
+   * What is the problem size? In this example, the problem size is the parameter, `n`.
     
-What is `T(n)` if the key processing step is `System.out.println`?
-`T(n) = 1 * n = n`
+   * What is `T(n)`? In this example, `T(n) = 1 * n = n`.
     
-**Example 2**:
+1. **Example 2**:
 
 ```java
 void printN(int n) {
