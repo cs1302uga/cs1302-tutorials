@@ -104,7 +104,7 @@ exclusively on the fourth step.
 
    * What is the problem size?
 
-   * What is `T(n)` if the set of key processing steps only includes `System.out.println`?
+   * What is `T(n)` if the set of key processing steps only includes print-like statements?
 
    *Think about the answers to the previous two questions before reading ahead*
 
@@ -114,7 +114,7 @@ exclusively on the fourth step.
      In this example, the problem size is the array length. 
      Therefore, let `n = a.length`.
      
-   * What is `T(n)` if the set of key processing steps only includes `System.out.println`?
+   * What is `T(n)` if the set of key processing steps only includes print-like statements?
      To answer this question, let's first identify the most nested operation:
      
      ```java    
@@ -160,78 +160,170 @@ exclusively on the fourth step.
 
 1. **Example 2**:
 
-```java
-void printN(int n) {
-    for(int i = 0; i < n; i++) {
-        for(int j = 0; j < n; j++) {
-            System.out.println(i + j);
-        } // for
-    } // for
-} // printN
-```
+   Here is an algorithm that solves the problem of printing all elements of an array
+   in a square fashion:
 
-What is the problem size?
+   ```java    
+   void printA(int[] a) {
+       for(int i = 0; i < a.length; i++) {
+           for(int j = 0; j < a.length; j++) {
+               System.out.print(a[i] + " ");
+           } // for
+           System.out.println();
+       } // for
+   } // printA
+   ```
+   
+   **Questions:**
 
-What is `T(n)` if the key processing step is `System.out.println`?
+   * What is the problem size?
 
-**Think about the answers to the previous two questions before reading ahead**
+   * What is `T(n)` if the set of key processing steps only includes print-like statements?
 
+   *Think about the answers to the previous two questions before reading ahead*
 
-```
-void printN(int n) {
-    for(int i = 0; i < n; i++) {                                             +--+
-        for(int j = 0; j < n; j++) {                               +--+         |
-            System.out.println(i + j); <----- 1 println per iteration | n iters | n iters
-        } // for                                                   +--+         |
-    } // for                                                                 +--+
-} // printN
-```
+   **Towards a Sample Solution:**
+   
+   * What is the problem size? 
+     In this example, the problem size is the array length. 
+     Therefore, let `n = a.length`.
+     
+   * What is `T(n)` if the set of key processing steps only includes print-like statements?
+     To answer this question, let's first identify the most nested operation:   
 
-What is the problem size?
-In this example, the problem size is the parameter `n`.
+     ```java    
+     void printA(int[] a) {
+         for(int i = 0; i < a.length; i++) {
+             for(int j = 0; j < a.length; j++) {
+                 System.out.print(a[i] + " ");  // -------> 1
+             } // for
+             System.out.println();
+         } // for
+     } // printA
+     ```
+     
+     Next, we identify the enclosing loop and its number of iterations:
+     
+     ```java    
+     void printA(int[] a) {
+         for(int i = 0; i < a.length; i++) {
+             for(int j = 0; j < a.length; j++) { // ----------\
+                 System.out.print(a[i] + " ");  // -------> 1 | n
+             } // for  // ------------------------------------/
+             System.out.println();
+         } // for
+     } // printA
+     ```
+     
+     It appears that there is another print-like statement at the same level
+     as the loop we just identified: 
+     
+     ```java    
+     void printA(int[] a) {
+         for(int i = 0; i < a.length; i++) {
+             for(int j = 0; j < a.length; j++) { // ----------\
+                 System.out.print(a[i] + " ");  // -------> 1 | n
+             } // for  // ------------------------------------/
+             System.out.println(); // ------------------------> 1
+         } // for
+     } // printA
+     ```
+     
+     Now, we identify the next enclosing loop and its number of iterations:
 
-What is T(n) if the key processing step is `System.out.println`?
-`T(n) = 1 * n * n = n^2`
+     ```java    
+     void printA(int[] a) {
+         for(int i = 0; i < a.length; i++) { // ------------------\
+             for(int j = 0; j < a.length; j++) { // ----------\   |
+                 System.out.print(a[i] + " ");  // -------> 1 | n | n
+             } // for  // ------------------------------------/   |
+             System.out.println(); // ------------------------> 1 |
+         } // for ------------------------------------------------/
+     } // printA
+     ```
+     
+     If you label the operations and iterations as we did in the diagram above, then 
+     you can simply multiply across and add up the results in a scenario like this:
+     
+     ```java    
+     void printA(int[] a) {
+         for(int i = 0; i < a.length; i++) { // ------------------\
+             for(int j = 0; j < a.length; j++) { // ----------\   |
+                 System.out.print(a[i] + " ");  // -------> 1 | n | n = 1 * n * n
+             } // for  // ------------------------------------/   |   
+             System.out.println(); // ------------------------> 1 |   +     1 * n
+         } // for ------------------------------------------------/
+     } // printA
+     ```
+     
+     Therefore, `T(n) = n^2 + n` for this particular `printA` method.
+ 
+ 1. **Example 3 [Tricky]**:
 
-**Example 3 [Tricky]**:
+   Here is a modified version of the previous example:
 
-```java
-void printN(int n) {
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < 10; j++) {
-            System.out.println(i+j);
-        } // for
-    } // for
-} // printN
-```
+   ```java    
+   void printA(int[] a) {
+       for(int i = 0; i < a.length; i++) {
+           for(int j = 0; j < 10; j++) {
+               System.out.print(a[i] + " ");
+           } // for
+           System.out.println();
+       } // for
+   } // printA
+   ```
+   
+   **Questions:**
 
-What is the problem size?
+   * What is the problem size?
 
-What is `T(n)` if the key processing step is `System.out.println`?
+   * What is `T(n)` if the set of key processing steps only includes print-like statements?
 
-**Think about the answers to the previous two questions before reading ahead**
+   *Think about the answers to the previous two questions before reading ahead*
 
-
-```
-void printN(int n) {
-    for(int i = 0; i < n; i++) {                                              +--+
-        for(int j = 0; j < 10; j++) {                              +--+          |
-            System.out.println(i + j); <----- 1 println per iteration | 10 iters | n iters
-        } // for                                                   +--+          |
-    } // for                                                                  +--+
-} // printN
-```
-
-What is the problem size?
-In this example, the problem size is the parameter `n`.
-
-What is `T(n)` if the key processing step is `System.out.println`?
-
-This is the tricky part. **Note**: just because we have a nested loop, that doesn't mean the
-order of the polynomial is increased. Since the inner loop always executes 10 times, our
-timing function would be:
-
-`T(n) = 1 * 10 * n = 10n`
+   **Towards a Sample Solution:**
+   
+   * What is the problem size? 
+     In this example, the problem size is the array length. 
+     Therefore, let `n = a.length`.
+     
+   * What is `T(n)` if the set of key processing steps only includes print-like statements?
+     To answer this question, let's diagram the code the way we did in the previous
+     examples:
+   
+     ```java    
+     void printA(int[] a) {
+         for(int i = 0; i < a.length; i++) { // -------------------\
+             for(int j = 0; j < 10; j++) { // ----------------\    |
+                 System.out.print(a[i] + " ");  // -------> 1 | 10 | n
+             } // for  // ------------------------------------/    |
+             System.out.println(); // ------------------------> 1  |
+         } // for -------------------------------------------------/
+     } // printA
+     ```
+     
+     This was the tricky part. The inner for-loop only iterates `10` times. 
+     This changes the overall timing function. Just as before, you can simply 
+     multiply across and add up the results:
+     
+     ```java    
+     void printA(int[] a) {
+         for(int i = 0; i < a.length; i++) { // -------------------\
+             for(int j = 0; j < 10; j++) { // ----------------\    |
+                 System.out.print(a[i] + " ");  // -------> 1 | 10 | n = 1 * 10 * n
+             } // for  // ------------------------------------/    |
+             System.out.println(); // ------------------------> 1  |   +      1 * n
+         } // for -------------------------------------------------/
+     } // printA
+     ```
+     
+     Therefore, `T(n) = 11n` for this particular `printA` method!
+   
+     **Note:** One brutally common mistake is to assume that the number of the
+     resulting polynomial always increases with the number of loop nestings. 
+     This is not the case, as is illustrated in the last example. Even though
+     there are two loops that are nested, the overall degree of the polynomial
+     is `1` and not `2`. 
 
 **Example 4 [Trickier]**:
 
