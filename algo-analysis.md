@@ -262,7 +262,7 @@ exclusively on the fourth step.
      
      Therefore, `T(n) = n^2 + n` for this particular `printA` method.
  
- 1. **Example 3 [Tricky]**:
+1. **Example 3 [Tricky]**:
 
    Here is a modified version of the previous example:
 
