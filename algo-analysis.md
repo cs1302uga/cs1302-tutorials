@@ -549,7 +549,9 @@ exclusively on the fourth step.
     
  ## Closing Remarks
 
-Congratulations! You now have a basic understanding of algorithm analysis!
+Congratulations! You now have a basic understanding of the first three steps involved in
+an algorithm analysis! We will have a separate tutorial that focuses exclusively on the 
+fourth step.
 
 <hr/>
 
