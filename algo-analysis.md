@@ -34,11 +34,14 @@ complexities.
 For every algorithm we want to analyze, we need to define the **size of the problem**.
 
 * When downloading a file, the size of the problem is the size of the file.
+
 * When searching for a target value, the size of the problem is the size of the
   search pool (e.g. if finding a value in an array, the array size is the problem
   size).
+  
 * For a sorting algorithm, the size of the problem is the number of elements to
   be sorted.
+  
 * When downloading images from iTunes, the problem size is the number of images
   to be downloaded.
 
@@ -51,6 +54,7 @@ These are the operations that we're intested in.
 
 * If downloading images from iTunes, downloading a single image might be the
   key processing step.
+  
 * In searching and sorting, the key processing step is usually the number of
   comparisons done.
 
@@ -67,7 +71,7 @@ we first need to do the following:
     
 1. Define the problem size = `n`; then
 
-2. Degine the set of key processing steps.
+2. Define the set of key processing steps.
 
 Think of this as identifying the units. We need to define the problem size and
 set of key processing steps the same way for all of the algorithms we wish to
@@ -397,6 +401,153 @@ exclusively on the fourth step.
      choice in all such scenarios for a particular analysis. That is, either
      always choose the min or always choose the max. For our purposes, we want 
      to find an uppper-bound for `T(n)`, so choosing the max is perfectly fine.
+
+## Space Complexity Analysis
+
+Now, let's briefly focus on **space complexity analysis**. Supose you have a set of
+algorithms that all solve the same problem. In order to analyze each of them, 
+we first need to do the following:
+    
+1. Define the problem size = `n`; then
+
+2. Define the unit of measurement.
+
+We need to define the problem size and the unit the same way for all of the 
+algorithms we wish to compare based on their spave complexities so that it's a 
+fair comparison. 
+
+In order to actually determine these space complexities, we need to do the
+following: 
+    
+3. Derive a **spacing function**, `S(n)`, that reflects the number of units required
+   to solve the problem in terms of the problem size.
+  
+4. Classify `S(n)` into a **complexity class** based on the formula for the function.
+
+That's it! Those four steps are what you need to do in order to perform a space complexity
+analysis for an algorithm. The trickiest part is usually the third step, which is what
+most of this tutorial will focus on. We will have a separate tutorial that focuses 
+exclusively on the fourth step.
+
+### Example Problems
+
+1. **Example 1**
+
+   Here is an algorithm that solves the problem of recursively printing all characters 
+   of a string:
+
+   ```java    
+   void printS(String s) {
+       for(int i = init; i < s.length(); i++) {
+           System.out.println(s.charAt(i));
+       } // for
+   } // printS
+   ```
+  
+   **Considerations:**
+
+   * As usual, let's define the problem size as the input length. 
+     Therefore, let `n = s.length()`.
+
+   * Let's also define the unit of measurement as bytes.
+
+   **Towards a Sample Solution:**
+   
+   * What is `S(n)` if the units are bytes? Without loss of generality, we'll 
+     assume that `init` is initially supplied a value of `0`. 
+     To answer this question, let's first consider how much memory the array
+     itself takes and use that as a starting amount for `S(n)`:
+     
+     ```
+     S(n) = n + ?
+     ```
+     
+     This starting value is derived from the fact that a `char` in Java is
+     1 byte. Additionally, each of the local variables for the method take
+     up a spot in the method's call stack frame:
+     
+     | Variable | Description                                 |
+     |----------|---------------------------------------------|
+     | `s`      | `8`-byte automatic local reference variable |
+     | `i`      | `4`-byte local `int` variable               |
+
+     Therefore, we get the following spacing function:
+     
+     ```
+     S(n) = n + 12`
+     ```
+     
+1. **Example 1**
+
+   Here is an algorithm that solves the problem of recursively printing all characters 
+   of a string:
+
+   ```java    
+   void printS(String s) {
+       if (!s.isEmpty()) {
+           System.out.println(s.charAt(0));
+           printS(s.substring(1));
+       } // if
+   } // printS
+   ```
+  
+   **Considerations:**
+
+   * As usual, let's define the problem size as the array length. 
+     Therefore, let `n = a.length`.
+
+   * Let's also define the unit of measurement as bytes.
+
+   **Towards a Sample Solution:**
+   
+   * What is `S(n)` if the units are bytes? Without loss of generality, we'll 
+     assume that `init` is initially supplied a value of `0`. 
+     To answer this question, let's first consider how much memory the array
+     itself takes and use that as a starting amount for `S(n)`:
+     
+     ```
+     S(n) = n + ?
+     ```
+     
+     This starting value is derived from the fact that a `char` in Java is
+     1 byte. Additionally, each of the local variables for the method take
+     up a spot in the method's call stack frame:
+     
+     | Variable | Description                                 |
+     |----------|---------------------------------------------|
+     | `a`      | `8`-byte automatic local reference variable |
+
+     This provides us with something like this:
+     
+     ```
+     S(n) = n + 8 + ?`
+     ```     
+     
+     However, we're not done! In order to complete it's work, the recursive
+     `printR` method calls itself on a slightly smaller `printS` method:
+     
+     ```
+     S(n) = n + 8 + S(n - 1)
+     S(0) = 8
+     ```
+     
+     This is known as a recurrence relation, and it does not have an obvious,
+     intuitive solution. You should learn how to solve relations such as this
+     in a Discrete Mathematics course. For now, we'll provide you with the
+     solution:
+     
+     ```
+     S(n) = 0.5 * (n + 1)(n + 16)
+     ```
+     
+     This can simplified to the following if we're concerned with identifying
+     an upper bound:
+     
+     ```
+     S(n) ≤ n^2 + 17n + 16
+     ```
+    
+ ## Closing Remarks
 
 Congratulations! You now have a basic understanding of algorithm analysis!
 
