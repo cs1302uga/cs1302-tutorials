@@ -325,85 +325,78 @@ exclusively on the fourth step.
      there are two loops that are nested, the overall degree of the polynomial
      is `1` and not `2`. 
 
-**Example 4 [Trickier]**:
+1. **Example 4 [Trickier]**:
 
-```java
-void printN(int n) {
-    for (int i = 0; i < n; i++) {
-        System.out.println(i);
-        for (int j = 0; j < n; j++) {
-            System.out.println(i+j);
-        } // for
-        System.out.println(i);
-    } // for
-} // printN
-```
+   Here is a slightly modified version of the previous example (pay close attention to
+   spot the subtle differences):
 
-What is the problem size?
+   ```java    
+   void printA(int[] a) {
+       for(int i = 0; i < a.length; i++) {
+           for(int j = 0; j < i; j++) {
+               System.out.print(a[i] + " ");
+           } // for
+           System.out.println();
+       } // for
+   } // printA
+   ```
+   
+   **Questions:**
 
-What is `T(n)` if the key processing step is `System.out.println`?
+   * What is the problem size?
 
-**Think about the answers to the previous two questions before reading ahead**
+   * What is `T(n)` if the set of key processing steps only includes print-like statements?
 
+   *Think about the answers to the previous two questions before reading ahead*
 
-```
-void printN(int n) {
-    for (int i = 0; i < n; i++) {                             +------+
-        System.out.println(i);               <----------+ 1 per iter |
-        for (int j = 0; j < n; j++) {                +--+            |
-            System.out.println(i+j); <-----  1 per iter | n iters    | n iters
-        } // for                                     +--+            |
-        System.out.println(i);               <----------+ 1 per iter |
-    } // for                                                  +------+
-} // printN
-
-```
-
-What is the problem size?
-In this example, the problem size is the parameter `n`.
-
-What is `T(n)` if the key processing step is `System.out.println`?
-
-This is the `trickier` part. To the get timing function, we can multiply the values above
-going across then add going down. The steps would look something like this:
-
-1. The first `println` statement happens once per iteration of the outer loop and this outer 
-   loop executes `n` times.  The total number of times this line executes is `1 * n = n`.
-   (an example of multiplying across).
-2. The second `println` statement (nested within two loops) executes once per execution
-   of the inner loop which executes `n` times. Since the inner loop is wrapped in a loop
-   that also executes `n` times, the total number of times this `println` statement executes
-   is `1 * n * n = n^2`. (Again, multiplying across)
-3. Similar to the first `println` statement, the last one executes `n` times.
-4. Now, we add the three values we just calculated (add going down) to get: 
-   `T(n) = n + n + n^2 = n^2 + 2n`.
-
-    `T(n) = n^2 + 2n`
-
-
-**Example 5 [Even Trickier]**:
-
-```java
-void printN(int n) {
-    for (int i = 0; i < n; i++) {
-        System.out.println(i);
-        for (int j = i; j < n; j++) {
-            System.out.println(i+j);
-        } // for
-    System.out.println(i);
-    } // for
-} // printN
-```
-
-What is the problem size?
-In this example, the problem size is the parameter `n`.
-
-What is T(n) if the key processing step is `System.out.println`?
-
-In this example, an exact formula for T(n) is tough to compute.  We can, however, give a worst case
-analysis of:
-
-`T(n) <= (1 * n) + (1 * n * n) + (1 * n)` = `n^2 + 2n`
+   **Towards a Sample Solution:**
+   
+   * What is the problem size? 
+     In this example, the problem size is the array length. 
+     Therefore, let `n = a.length`.
+     
+   * What is `T(n)` if the set of key processing steps only includes print-like statements?
+     To answer this question, let's diagram the code the way we did in the previous
+     examples:
+     
+     ```java    
+     void printA(int[] a) {
+         for(int i = 0; i < a.length; i++) { // -------------------\
+             for(int j = i; j < n; j++) { // -----------------\    |
+                 System.out.print(a[i] + " ");  // -------> 1 | ≤n | n
+             } // for  // ------------------------------------/    |
+             System.out.println(); // ------------------------> 1  |
+         } // for -------------------------------------------------/
+     } // printA
+     ```
+     
+     This was the tricky part. The inner for-loop may have as many as
+     `n` iterations, however, this number changes based on what iteration
+     of the outer-most loop the code is in. We don't want to mark the loop
+     as having the minumum number since that would undercount, however, it's
+     okay in this scenarion to mark it with the maximum number (technically
+     an overcount) so long as we indicate it's `≤` that number. Just as before, 
+     you can simply multiply across and add up the results, this time accounting
+     for the presence of `≤` instead of an `=`:
+     
+     ```java    
+     void printA(int[] a) {
+         for(int i = 0; i < a.length; i++) { // -------------------\
+             for(int j = i; j < n; j++) { // -----------------\    |
+                 System.out.print(a[i] + " ");  // -------> 1 | ≤n | n  1 * 10 * n
+             } // for  // ------------------------------------/    |
+             System.out.println(); // ------------------------> 1  |   +     1 * n
+         } // for -------------------------------------------------/
+     } // printA
+     ```
+     
+     Therefore, `T(n) ≤ 11n` for this particular `printA` method!
+   
+     **Note:** You could pick either the min or max in scenarios similar to
+     the one encountered above, so long as you consistently make the same
+     choice in all such scenarios for a particular analysis. That is, either
+     always choose the min or always choose the max. For our purposes, we want 
+     to find an uppper-bound for `T(n)`, so choosing the max is perfectly fine.
 
 Congratulations! You now have a basic understanding of algorithm analysis!
 
