@@ -61,7 +61,7 @@ impact towards the overall complexity of the algorithm.
 
 ## Time Complexity Analysis
 
-First, let's focus on ((time complexity analysis**. Supose you have a set of
+First, let's focus on **time complexity analysis**. Supose you have a set of
 algorithms that all solve the same problem. In order to analyze each of them, 
 we first need to do the following:
     
@@ -86,57 +86,78 @@ analysis for an algorithm. The trickiest part is usually the third step, which i
 most of this tutorial will focus on. We will have a separate tutorial that focuses 
 exclusively on the fourth step.
 
-## Example Problems
+### Example Problems
 
 1. **Example 1**
 
-   Here is an algorithm that solves the problem of printing the numbers `0` through `n` 
-   (exclusive).
+   Here is an algorithm that solves the problem of printing all elements of an array.
 
    ```java    
-   void printN(int n) {
-       for(int i = 0; i < n; i++) {
-           System.out.println(n);
+   void printA(int[] a) {
+       for(int i = 0; i < a.length; i++) {
+           System.out.println(a[i]);
        } // for
-   } // printN
+   } // printA
    ```
   
-   Questions:
+   **Questions:**
 
    * What is the problem size?
 
    * What is `T(n)` if the set of key processing steps only includes `System.out.println`?
 
-   **Think about the answers to the previous two questions before reading ahead**
+   *Think about the answers to the previous two questions before reading ahead*
 
-   Towards a Sample Solution:
-
-   * To derive the timing function, you might consider putting in a few values for `n`. For example,
-     if `n` is 5, how many times does the key processing step execute? For example:
-
-     |    `n`   |   `T(n)` |
-     |----------|----------|
-     | 5        |     ?    |
-     | 100      |     ?    |
-     | 1000     |     ?    |
-     | 100000   |     ?    |
-
-   * After thinking about these, can you define the timing function as a function of `n`?
-
-   Sample Solution Derivation:
+   **Towards a Sample Solution:**
    
-   ```
-   void printN(int n) {
-       for(int i = 0; i < n; i++) {                              +--+
-           System.out.println(n);  <------- 1 println per iteration | n iterations
-       } // for                                                  +--+
-   } // printN
-   ```
-   
-   * What is the problem size? In this example, the problem size is the parameter, `n`.
-    
-   * What is `T(n)`? In this example, `T(n) = 1 * n = n`.
-    
+   * What is the problem size? 
+     In this example, the problem size is the array length. 
+     Therefore, let `n = a.length`.
+     
+   * What is `T(n)` if the set of key processing steps only includes `System.out.println`?
+     To answer this question, let's first identify the most nested operation:
+     
+     ```java    
+     void printA(int[] a) {
+         for(int i = 0; i < a.length; i++) { 
+             System.out.println(a[i]); // -------> 1
+         } // for 
+     } // printA
+     ```
+     
+     Next, we identify the enclosing loop:
+     
+     ```java    
+     void printA(int[] a) {
+         for(int i = 0; i < a.length; i++) { // -----\
+             System.out.println(a[i]); // -------> 1 | n
+         } // for // --------------------------------/
+     } // printA
+     ```
+     
+     Finally, we identify how many iterations the loop will have with respect to `n`:
+     
+     ```java    
+     void printA(int[] a) {
+         for(int i = 0; i < a.length; i++) { // -----\
+             System.out.println(a[i]); // -------> 1 | n
+         } // for // --------------------------------/
+     } // printA
+     ```
+     
+     If you label the operations and iterations as we did in the diagram above, then 
+     you can simply multiply across in a simple scenario like this:
+     
+     ```java    
+     void printA(int[] a) {
+         for(int i = 0; i < a.length; i++) { // -----\
+             System.out.println(a[i]); // -------> 1 | n = 1 * n
+         } // for // --------------------------------/
+     } // printA
+     ```
+     
+     Therefore, `T(n) = n` for this `printA` method. 
+
 1. **Example 2**:
 
 ```java
