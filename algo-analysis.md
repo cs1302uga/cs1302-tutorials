@@ -383,9 +383,9 @@ exclusively on the fourth step.
      void printA(int[] a) {
          for(int i = 0; i < a.length; i++) { // -------------------\
              for(int j = i; j < n; j++) { // -----------------\    |
-                 System.out.print(a[i] + " ");  // -------> 1 | ≤n | n  1 * 10 * n
+                 System.out.print(a[i] + " ");  // -------> 1 | ≤n | n ≤ 1 * 10 * n
              } // for  // ------------------------------------/    |
-             System.out.println(); // ------------------------> 1  |   +     1 * n
+             System.out.println(); // ------------------------> 1  |   +      1 * n
          } // for -------------------------------------------------/
      } // printA
      ```
