@@ -431,7 +431,7 @@ exclusively on the fourth step.
 
 ### Example Problems
 
-1. **Example 1**
+1. **Iterative Example**
 
    Here is an algorithm that solves the problem of recursively printing all characters 
    of a string:
@@ -477,7 +477,7 @@ exclusively on the fourth step.
      S(n) = n + 12`
      ```
      
-1. **Example 1**
+1. **Recursive Example**
 
    Here is an algorithm that solves the problem of recursively printing all characters 
    of a string:
