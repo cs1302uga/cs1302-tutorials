@@ -602,31 +602,46 @@ exclusively on the fourth step.
      To answer the "how many times can you integer divide", we need only solve for `k` using
      some precalculus magic (i.e., logarithms):
      
-     1. ```
+     1. Original model:
+        
+        ```
         n / 3^k = 1
         ```
      
-     1. ```
+     1. Multiply both sides by `3^k`:
+     
+        ```
         3^k = n
         ```
      
-     1. ```
+     1. Take the logarithm of both sides:
+     
+        ```
         log(3^k) = log(n)
         ```
      
-     1. ```
+     1. Move the exponent out of the logarithm:
+     
+        ```
         k * log(3) = log(n)
         ```
      
-     1. ```
+     1. Divide both sides by `log(3)`:
+     
+        ```
         k = log(n) / log(3)
         ```
      
-     1. ```
+     1. Assuming both logarithms are the same base (they are), dividing the first
+        logarithm by `log(3)` changes the base of the logarithm to base `3`:
+     
+        ```
         k = log3(n)
         ```
      
-     where `log3(n)` denotes the base-3 logarithm of `n`. We did make a pretty big assumption
+        where `log3(n)` denotes the base-3 logarithm of `n`. 
+        
+     We did make a pretty big assumption
      that `n` is a power of `3`. If `n` is not a power of `3`, then the base-3 logarithm will
      not be in an integer -- this poses a problem as the count for the number of iterations
      must be an integer. We could get fancy as use the `ceil` (ceiling function) to
