@@ -560,7 +560,7 @@ exclusively on the fourth step.
      ```java    
      void printS(String s) {
          for(int i = s.length() - 1; i > 0; i = i / 3) { // --\
-             System.out.println(s.charAt(i)); // ---------> 1 | ≤ n ⇒ T(n) ≤ 1 * n * n
+             System.out.println(s.charAt(i)); // ---------> 1 | ≤ n ⇒ T(n) ≤ 1 * n
          } // for // -----------------------------------------/
      } // printS
      ```
