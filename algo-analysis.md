@@ -711,7 +711,7 @@ exclusively on the fourth step.
 
 1. **Iterative Example**
 
-   Here is an algorithm that solves the problem of recursively printing all characters 
+   Here is an algorithm that solves the problem of iteratively printing all characters 
    of a string:
 
    ```java    
@@ -733,26 +733,30 @@ exclusively on the fourth step.
    
    * What is `S(n)` if the units are bytes? Without loss of generality, we'll 
      assume that `init` is initially supplied a value of `0`. 
-     To answer this question, let's first consider how much memory the array
+     To answer this question, let's first consider how much memory the string
      itself takes and use that as a starting amount for `S(n)`:
+     
+     ```
+     S(n) = (n * 1) + ?
+     ```
      
      ```
      S(n) = n + ?
      ```
      
      This starting value is derived from the fact that a `char` in Java is
-     1 byte. Additionally, each of the local variables for the method take
+     one byte. Additionally, each of the local variables for the method take
      up a spot in the method's call stack frame:
      
-     | Variable | Description                                 |
-     |----------|---------------------------------------------|
-     | `s`      | `8`-byte automatic local reference variable |
-     | `i`      | `4`-byte local `int` variable               |
+     | Variable | Description                       |
+     |----------|-----------------------------------|
+     | `s`      | `8`-byte local reference variable |
+     | `i`      | `4`-byte local `int` variable     |
 
      Therefore, we get the following spacing function:
      
      ```
-     S(n) = n + 12`
+     S(n) = n + 12
      ```
      
 1. **Recursive Example**
@@ -791,9 +795,9 @@ exclusively on the fourth step.
      1 byte. Additionally, each of the local variables for the method take
      up a spot in the method's call stack frame:
      
-     | Variable | Description                                 |
-     |----------|---------------------------------------------|
-     | `a`      | `8`-byte automatic local reference variable |
+     | Variable | Description                       |
+     |----------|-----------------------------------|
+     | `a`      | `8`-byte local reference variable |
 
      This provides us with something like this:
      
