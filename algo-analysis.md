@@ -394,12 +394,12 @@ exclusively on the fourth step.
      
      ```java    
      void printA(int[] a) {
-         for(int i = 0; i < a.length; i++) { // -------------------\
-             for(int j = i; j < n; j++) { // -----------------\    |
-                 System.out.print(a[i] + " ");  // -------> 1 | ≤n | n
-             } // for  // ------------------------------------/    |
-             System.out.println(); // ------------------------> 1  |
-         } // for -------------------------------------------------/
+         for(int i = 0; i < a.length; i++) { // --------------------\
+             for(int j = i; j < n; j++) { // -----------------\     |
+                 System.out.print(a[i] + " ");  // -------> 1 | ≤ n | n
+             } // for  // ------------------------------------/     |
+             System.out.println(); // ------------------------> 1   |
+         } // for --------------------------------------------------/
      } // printA
      ```
      
@@ -414,12 +414,12 @@ exclusively on the fourth step.
      
      ```java    
      void printA(int[] a) {
-         for(int i = 0; i < a.length; i++) { // -------------------\
-             for(int j = i; j < n; j++) { // -----------------\    |
-                 System.out.print(a[i] + " ");  // -------> 1 | ≤n | n ⇒ T(n) ≤ 1 * n * n
-             } // for  // ------------------------------------/    |
-             System.out.println(); // ------------------------> 1  |           +     1 * n
-         } // for -------------------------------------------------/
+         for(int i = 0; i < a.length; i++) { // --------------------\
+             for(int j = i; j < n; j++) { // -----------------\     |
+                 System.out.print(a[i] + " ");  // -------> 1 | ≤ n | n ⇒ T(n) ≤ 1 * n * n
+             } // for  // ------------------------------------/     |
+             System.out.println(); // ------------------------> 1   |           +     1 * n
+         } // for --------------------------------------------------/
      } // printA
      ```
      
@@ -577,11 +577,13 @@ exclusively on the fourth step.
      determine how many iterations of the loop occur, we might ask the following
      question:
      
-     > If you start with `n`, how many times can you integer divide by `3` before you get to `0`?
+     > If you start with `n - 1`, how many times can you integer divide by `3` before you 
+     > get to `0`?
      
      This can be slightly reworded to:
      
-     > If you start with `n`, how many times can you integer divide by `3` until the value is `1`?
+     > If you start with `n`, how many times can you integer divide by `3` until 
+     > the value is `1`?
      
      If we let `k` denote the number of iterations of the loop, then we have the following:
      
@@ -596,11 +598,11 @@ exclusively on the fourth step.
      This can be modeled as a math problem:
      
      ```
-     n / 2^k = 1
+     n / 3^k = 1
      ```
      
-     To answer the "how many times can you integer divide", we need only solve for `k` using
-     some precalculus magic (i.e., logarithms):
+     To answer the question "how many times can you integer divide", we need only solve 
+     for `k` using some precalculus magic (i.e., logarithms):
      
      1. Original model:
         
@@ -633,7 +635,7 @@ exclusively on the fourth step.
         ```
      
      1. Assuming both logarithms are the same base (they are), dividing the first
-        logarithm by `log(3)` changes the base of the logarithm to base `3`:
+        logarithm by `log(3)` changes the base of the logarithm to `3`:
      
         ```
         k = log3(n)
@@ -641,8 +643,8 @@ exclusively on the fourth step.
      
         where `log3(n)` denotes the base-3 logarithm of `n`. 
         
-     We did make a pretty big assumption
-     that `n` is a power of `3`. If `n` is not a power of `3`, then the base-3 logarithm will
+     We did make a pretty big assumption that `n` is a power of `3`. 
+     If `n` is not a power of `3`, then the base-3 logarithm will
      not be in an integer -- this poses a problem as the count for the number of iterations
      must be an integer. We could get fancy as use the `ceil` (ceiling function) to
      get an exact answer:
@@ -652,7 +654,7 @@ exclusively on the fourth step.
      ```
      
      However, this will make formally establishing a complexity class (covered later) a little
-     tricker. Instead, we'll let `k` denote an upper bound instead of an equality -- that is,
+     trickier. Instead, we'll let `k` denote an upper bound instead of an equality -- that is,
      we'll express it as some value (assumed to be an integer) less than or equal to 
      the logarithm plus one:
      
@@ -668,7 +670,7 @@ exclusively on the fourth step.
      ```java    
      void printS(String s) {
          for(int i = s.length() - 1; i > 0; i = i / 3) { // --\
-             System.out.println(s.charAt(i)); // ---------> 1 | ≤log3(n) + 1 ⇒ T(n) ≤ 1 * log3(n) + 1
+             System.out.println(s.charAt(i)); // ---------> 1 | ≤ log3(n) + 1 ⇒ T(n) ≤ 1 * log3(n) + 1
          } // for // -----------------------------------------/
      } // printS
      ```
