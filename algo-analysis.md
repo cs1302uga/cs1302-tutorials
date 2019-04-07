@@ -119,7 +119,36 @@ exclusively on the fourth step.
      Therefore, let `n = a.length`.
      
    * What is `T(n)` if the set of key processing steps only includes print-like statements?
-     To answer this question, let's first identify the most nested operation:
+     
+     You could try to find a pattern by performing multiple executions of the program
+     with different array lengths and recording the number of print-like statements:
+     
+     | `n = a.length` | `# print-like statements` |
+     |----------------|---------------------------|
+     |            `0` |                       `0` |
+     |            `1` |                       `1` |
+     |            `2` |                       `2` |
+     |          `...` |                     `...` |
+     |            `4` |                       `4` |
+     |          `...` |                     `...` |
+     |            `8` |                       `8` |
+     |          `...` |                     `...` |
+     |           `16` |                      `16` |
+     |          `...` |                     `...` |
+     
+     After multiple executions, we think we see a pattern: `T(n) = n`. Indeed, if we
+     check this formula for each row in the table we made, then we'll see that this
+     formula works! However, this strategy of finding a pattern is often tedious and
+     error prone as the algorithms get more complicated. Instead, we prefer to use
+     a more systematic approach that leads to less errors and gives us insight into
+     the structure of the algorithm with respect to the key processing steps.
+     
+     **NOTE:** That being said, creating the table is a good way to verify your 
+     formula for `T(n)` after deriving it systematically.
+   
+     Now, to derive `T(n)` for this algorithm in a more systematic way, let's first 
+     identify the most nested operation -- here, operation refers to any instruction
+     in the set of key processing steps:
      
      ```java    
      void printA(int[] a) {
@@ -155,7 +184,7 @@ exclusively on the fourth step.
      ```java    
      void printA(int[] a) {
          for(int i = 0; i < a.length; i++) { // -----\
-             System.out.println(a[i]); // -------> 1 | n = 1 * n
+             System.out.println(a[i]); // -------> 1 | n ⇒ T(n) = 1 * n
          } // for // --------------------------------/
      } // printA
      ```
@@ -253,9 +282,9 @@ exclusively on the fourth step.
      void printA(int[] a) {
          for(int i = 0; i < a.length; i++) { // ------------------\
              for(int j = 0; j < a.length; j++) { // ----------\   |
-                 System.out.print(a[i] + " ");  // -------> 1 | n | n = 1 * n * n
+                 System.out.print(a[i] + " ");  // -------> 1 | n | n ⇒ T(n) = 1 * n * n
              } // for  // ------------------------------------/   |   
-             System.out.println(); // ------------------------> 1 |   +     1 * n
+             System.out.println(); // ------------------------> 1 |           +     1 * n
          } // for ------------------------------------------------/
      } // printA
      ```
@@ -314,9 +343,9 @@ exclusively on the fourth step.
      void printA(int[] a) {
          for(int i = 0; i < a.length; i++) { // -------------------\
              for(int j = 0; j < 10; j++) { // ----------------\    |
-                 System.out.print(a[i] + " ");  // -------> 1 | 10 | n = 1 * 10 * n
+                 System.out.print(a[i] + " ");  // -------> 1 | 10 | n ⇒ T(n) = 1 * 10 * n
              } // for  // ------------------------------------/    |
-             System.out.println(); // ------------------------> 1  |   +      1 * n
+             System.out.println(); // ------------------------> 1  |           +      1 * n
          } // for -------------------------------------------------/
      } // printA
      ```
@@ -387,9 +416,9 @@ exclusively on the fourth step.
      void printA(int[] a) {
          for(int i = 0; i < a.length; i++) { // -------------------\
              for(int j = i; j < n; j++) { // -----------------\    |
-                 System.out.print(a[i] + " ");  // -------> 1 | ≤n | n ≤ 1 * n * n
+                 System.out.print(a[i] + " ");  // -------> 1 | ≤n | n ⇒ T(n) ≤ 1 * n * n
              } // for  // ------------------------------------/    |
-             System.out.println(); // ------------------------> 1  |   +     1 * n
+             System.out.println(); // ------------------------> 1  |           +     1 * n
          } // for -------------------------------------------------/
      } // printA
      ```
@@ -402,6 +431,238 @@ exclusively on the fourth step.
      always choose the min or always choose the max. For our purposes, we want 
      to find an uppper-bound for `T(n)`, so choosing the max is perfectly fine.
 
+
+1. **Example 5 [Even Trickier]**:
+
+   Here is a slightly modified version of the previous example, now decomposed
+   into two separate methods:
+
+   ```java 
+   void printUntil(int[] a, int i) {
+       for(int j = 0; j < i; j++) {
+           System.out.print(a[i] + " ");
+       } // for
+   } // printUntil
+   ```
+   
+   ```java
+   void printA(int[] a) {
+       for(int i = 0; i < a.length; i++) {
+           printUntil(a, i);
+           System.out.println();
+       } // for
+   } // printA
+   ```
+   
+   Here, we will focus our analysis on the algorithm described by `printA`.
+   
+   **Questions:**
+
+   * What is the problem size?
+
+   * What is `T(n)` if the set of key processing steps only includes print-like statements?
+
+   *Think about the answers to the previous two questions before reading ahead*
+
+   **Towards a Sample Solution:**
+   
+   * What is the problem size? 
+     In this example, the problem size is the array length. 
+     Therefore, let `n = a.length`.
+     
+   * What is `T(n)` if the set of key processing steps only includes print-like statements?
+     To answer this question, let's diagram the code the way we did in the previous
+     examples:
+     
+     ```java
+     void printA(int[] a) {
+         for(int i = 0; i < a.length; i++) { // -------------------\
+             printUntil(a, i);     // -------------------> U(n, i) | n 
+             System.out.println(); // -------------------> 1       |
+         } // for // ----------------------------------------------/
+     } // printA
+     ```
+     
+     Before we continue, we note that `U(n, i)` here is a function that we made up to denote
+     the number of print-like statements in an execution of `printUntil` with respect to the
+     problem size. Therefore, in order to find `T(n)`, we must first find `U(n, i)`:
+     
+     ```java 
+     void printUntil(int[] a, int i) {
+         for(int j = 0; j < i; j++) { // -------------------\
+             System.out.print(a[i] + " "); // ----------> 1 | ≤i ⇒ U(n, i) ≤ 1 * i
+         } // for // ---------------------------------------/
+     } // printUntil
+     ```
+     
+     To complete this tricky derivation, we now use mathematical function composition
+     to replace `U(n, i)`:
+     
+     ```java
+     void printA(int[] a) {
+         for(int i = 0; i < a.length; i++) { // -------------------\
+             printUntil(a, i);     // -------------------> ≤ 1 * i | n 
+             System.out.println(); // -------------------> 1       |
+         } // for // ----------------------------------------------/
+     } // printA
+     ```
+     
+     We want out final derivation to be in terms of `n`. Within the observed loop, we see
+     that `printUntil(a, i)` will execute `≤ 1 * i` print-like statements. We further
+     observe that the largest value that `i` can be inside its enclosed loop is `n`.
+     Therefore, we simply the expression in order to provide a reasonable upper bound with
+     respect to `n`, then complete the derivation:
+     
+     ```java
+     void printA(int[] a) {
+         for(int i = 0; i < a.length; i++) { // -------------------\
+             printUntil(a, i);     // -------------------> ≤ 1 * n | n ⇒ T(n) ≤ 1 * n * n
+             System.out.println(); // -------------------> 1       |           +     1 * n
+         } // for // ----------------------------------------------/
+     } // printA
+     ```
+     
+     Therefore, `T(n) ≤ n^2 + n` for this particular `printA` method! This should not be
+     surprising as this is the same algorithm from **Example 4** decomposed into two
+     separate methods.
+     
+1. **Example 6 [Even Trickier 2]**:
+
+   Here is an algorithm that solves the problem of printing characters of a string, in
+   reverse, cutting the index value by `3` each time.
+
+   ```java    
+   void printS(String s) {
+       for(int i = s.length() - 1; i > 0; i = i / 3) {
+           System.out.println(s.charAt(i));
+       } // for
+   } // printS
+   ```
+  
+   **Questions:**
+
+   * What is the problem size?
+
+   * What is `T(n)` if the set of key processing steps only includes print-like statements?
+
+   *Think about the answers to the previous two questions before reading ahead*
+
+   **Towards a Sample Solution:**
+   
+   * What is the problem size? 
+     In this example, the problem size is the string length. 
+     Therefore, let `n = s.length()`.
+     
+   * What is `T(n)` if the set of key processing steps only includes print-like statements?
+     If we follow our established strategy for a derivation, we might end up with the
+     following diagram:
+     
+     ```java    
+     void printS(String s) {
+         for(int i = s.length() - 1; i > 0; i = i / 3) { // --\
+             System.out.println(s.charAt(i)); // ---------> 1 | ≤ n ⇒ T(n) ≤ 1 * n * n
+         } // for // -----------------------------------------/
+     } // printS
+     ```
+     
+     While this **is correct**, it is **not the best estimate for an upper bound** that
+     we can derive for the number of iterations of the observed loop. To get a better
+     estimate, we first observe that this loop behaves a little differently than the
+     loops we've observed in the previous examples -- instead of incrementing or decrementing
+     by some fixed value, the loop variable instead decreases by multiplying or dividing
+     by some fixed value. In this case, the loop variable `i` is divided by `3` after each
+     iteration. We can use this to our advantage to derive a better estimate.
+     
+     Without loss of generality, assume that `n = s.length()` is a power of `3`. To
+     determine how many iterations of the loop occur, we might ask the following
+     question:
+     
+     > If you start with `n`, how many times can you integer divide by `3` before you get to `0`?
+     
+     This can be slightly reworded to:
+     
+     > If you start with `n`, how many times can you integer divide by `3` until the value is `1`?
+     
+     If we let `k` denote the number of iterations of the loop, then we have the following:
+     
+     ```java    
+     void printS(String s) {
+         for(int i = s.length() - 1; i > 0; i = i / 3) { // --\
+             System.out.println(s.charAt(i)); // ---------> 1 | k
+         } // for // -----------------------------------------/
+     } // printS
+     ```
+     
+     This can be modeled as a math problem:
+     
+     ```
+     n / 2^k = 1
+     ```
+     
+     To answer the "how many times can you integer divide", we need only solve for `k` using
+     some precalculus magic (i.e., logarithms):
+     
+     1. ```
+        n / 3^k = 1
+        ```
+     
+     1. ```
+        3^k = n
+        ```
+     
+     1. ```
+        log(3^k) = log(n)
+        ```
+     
+     1. ```
+        k * log(3) = log(n)
+        ```
+     
+     1. ```
+        k = log(n) / log(3)
+        ```
+     
+     1. ```
+        k = log3(n)
+        ```
+     
+     where `log3(n)` denotes the base-3 logarithm of `n`. We did make a pretty big assumption
+     that `n` is a power of `3`. If `n` is not a power of `3`, then the base-3 logarithm will
+     not be in an integer -- this poses a problem as the count for the number of iterations
+     must be an integer. We could get fancy as use the `ceil` (ceiling function) to
+     get an exact answer:
+     
+     ```
+     k = ceil(log3(n))
+     ```
+     
+     However, this will make formally establishing a complexity class (covered later) a little
+     tricker. Instead, we'll let `k` denote an upper bound instead of an equality -- that is,
+     we'll express it as some value (assumed to be an integer) less than or equal to 
+     the logarithm plus one:
+     
+     ```
+     k ≤ log3(n) + 1
+     ```
+     
+     This is okay since `ceil(log3(n)) ≤ log3(n) + 1` for all reasonable `n` values. In a
+     Discrete Mathematics course, you would need to be more rigorous about this. For now,
+     we'll take it as a reasonable estimate. Now that we have a value for `k`, we
+     can subsitute it into our derivation: 
+     
+     ```java    
+     void printS(String s) {
+         for(int i = s.length() - 1; i > 0; i = i / 3) { // --\
+             System.out.println(s.charAt(i)); // ---------> 1 | ≤log3(n) + 1 ⇒ T(n) ≤ 1 * log3(n) + 1
+         } // for // -----------------------------------------/
+     } // printS
+     ```
+     
+     Therefore, `T(n) ≤ log3(n) + 1` for this particular `printS` method! Taking
+     advantage of the way the loop iterates differently (i.e., multiply/dividing
+     vs. adding/subtracting) leads us to a much better estimate for the number
+     of key processing steps with respect to the problem size.
+     
 ## Space Complexity Analysis
 
 Now, let's briefly focus on **space complexity analysis**. Supose you have a set of
