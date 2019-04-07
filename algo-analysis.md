@@ -784,7 +784,7 @@ exclusively on the fourth step.
    
    * What is `S(n)` if the units are bytes? Without loss of generality, we'll 
      assume that `init` is initially supplied a value of `0`. 
-     To answer this question, let's first consider how much memory the array
+     To answer this question, let's first consider how much memory the string
      itself takes and use that as a starting amount for `S(n)`:
      
      ```
