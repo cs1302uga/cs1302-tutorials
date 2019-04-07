@@ -802,7 +802,7 @@ exclusively on the fourth step.
      This provides us with something like this:
      
      ```
-     S(n) = n + 8 + ?`
+     S(n) = n + 8 + ?
      ```     
      
      However, we're not done! In order to complete it's work, the recursive
