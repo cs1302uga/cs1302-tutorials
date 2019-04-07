@@ -12,7 +12,6 @@ As students, you receive **free access** to [GitHub Pro](https://github.com/pric
 To set up your account:
 
 1. [Click Here](https://education.github.com/pack/join)
-1. Click on "Get your Pack"
 1. Click on "Yes, I'm a Student"
 1. Fill out the form and submit for review
 1. Wait on email confirmation from GitHub. Hopefully, this will take less than a day.
