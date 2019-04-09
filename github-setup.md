@@ -32,7 +32,7 @@ private key -- the Git program will do this with GitHub so long as the key pair 
    executing.
 
    ```
-   $ ssh-keygen -t rsa -b 4096 -C "your_email@euga.edu"
+   $ ssh-keygen -t rsa -b 4096 -C "your_email@uga.edu"
    ```
   
    This creates a public / private key pair in the default location: `~/.ssh/`.
