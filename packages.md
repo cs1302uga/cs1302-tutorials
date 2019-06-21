@@ -4,6 +4,13 @@
 
 This tutorial assumes that the reader has a knowledge of basic Unix commands and experience working with a command-line text editor (e.g. emacs, vi, etc.). To get the most out of this tutorial, you should follow along and take notes.
 
+## Course-Specific Learning Outcomes
+
+* LO1.a: Navigate and modify files, directories, and permissions in a multi-user Unix-like environment.
+* LO1.c: Create and modify textfiles and source code using a powerful terminal-based text editor such as Emacs or Vi.
+* LO1.d: Use shell commands to compile new and existing software solutions that are organized into multi-level packages
+  and have external dependencies.
+  
 ## Java Packages
 
 In Java, a **package** is a grouping of related types providing access protection and name space management. 
