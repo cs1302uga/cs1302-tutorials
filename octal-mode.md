@@ -4,6 +4,11 @@
 
 * Unix Tutorial Five: http://www.ee.surrey.ac.uk/Teaching/Unix/unix5.html
 
+## Course-Specific Learning Outcomes
+
+* **LO1.a:** Navigate and modify files, directories, and permissions in a multi-user Unix-like environment.
+* **LO1.b:** (Partial) Execute, redirect, pipe, and manage programs/processes in a multi-user Unix-like environment.
+  
 ## Status Information and Mode
 
 In Unix, both regular files and directory files have associated metadata that is, for the most part,
