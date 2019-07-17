@@ -159,7 +159,7 @@ For now, we will use a simple method for checking if an exception is checked or 
 
 1. At the top of the page, there is a hierarchy of Java classes which looks like this: 
 
-   <img src="img/ArithmeticException.png" width="50%" alt="ArithmeticException Unchecked Example">
+   <img src="../img/ArithmeticException.png" width="50%" alt="ArithmeticException Unchecked Example">
 
    You can tell that `ArithmeticException` is an unchecked exception because `java.lang.RuntimeException` is listed in the hierarchy. If 
    you cannot find `java.lang.RuntimeException` in the hierarchy for a given exception, then that tells you it is a checked exception. 
