@@ -1,4 +1,6 @@
-# Checked vs. Unchecked Exceptions
+# Exceptions
+
+## Checked vs. Unchecked Exceptions
 
 In Java, exceptions are either _checked_ or _unchecked_. Checked exceptions must be explicitly caught or propagated by the programmer,
 whereas unchecked exception may or may not be handled by the programmer.  Let's look at an example.
