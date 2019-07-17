@@ -30,6 +30,8 @@ In general, there are two ways to deal with exceptions:
 1. avoid them; and
 2. handle them.
 
+## Avoiding Exceptions 
+
 To avoid the exception in the example above, you just need to ensure
 that you do not attempt to invoke members (i.e., call methods or
 access instance variables) using `s` when it is `null`. Here are
@@ -51,10 +53,14 @@ if ((s != null) && (s.length() > 1)) {
 } // if
 ```
 
+## Handling Exceptions
+
 ## Checked vs. Unchecked Exceptions
 
-In Java, exceptions are either _checked_ or _unchecked_. Checked exceptions must be explicitly caught or propagated by the programmer,
-whereas unchecked exception may or may not be handled by the programmer.  Let's look at an example.
+In Java, exceptions are either _checked_ or _unchecked_. 
+Checked exceptions must be explicitly caught or propagated by the programmer,
+whereas unchecked exception may or may not be handled by the programmer.  
+Let's look at an example.
 
 1. On Nike, create the class `exceptions.Unchecked` containing the following code:
 
