@@ -72,14 +72,11 @@ special control flow snytax known as a **try block** or **try-catch block**.
 With this syntax, you place code that can throw an exception into the
 `try` block, then place code for how you want to deal with the exception
 in the `catch` block. These two go together, which is why we often 
-refer to it as a try-catch block. During execution, we simply let the
-exception occur. When it does, two things happen:
-
-1. the exception object is thrown; and
-1. the normal flow of control is disrupted.
-
-However, instead of terminating program execution, the JVM redirects
-the flow of control into an appropriate `catch` block. 
+refer to it as a try-catch block. During execution, each line in a `try` block
+is executed until an exception object is throw. When the exception is thrown, 
+the JVM redirects the flow of control into an appropriate associated
+`catch` block. After the `catch` block is executed, flow of control is
+redirected to immediately after the ensite try-catch construct. 
 Here is an example:
 
 ```java
@@ -90,6 +87,7 @@ try {
 } catch (NullPointerException npe) {
     System.out.println("a NullPointerException was thrown!");
 } // try
+System.out.println("I will print regardless of the value of s.");
 ```
 
 This try-catch block differentiates itself from the previous examples in
