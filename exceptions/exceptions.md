@@ -1,5 +1,12 @@
 # Exceptions
 
+In Java, an **exception** is an event that occurs during the execution of a program that
+encounters an error or some kind of exceptional situation. When an exception occurs,
+two things happen:
+
+1. an **exception object** is said to be _thrown_; and
+1. the normal flow of control is disrupted.
+
 ## Checked vs. Unchecked Exceptions
 
 In Java, exceptions are either _checked_ or _unchecked_. Checked exceptions must be explicitly caught or propagated by the programmer,
