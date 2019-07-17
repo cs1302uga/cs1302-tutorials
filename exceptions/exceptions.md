@@ -76,7 +76,7 @@ refer to it as a try-catch block. During execution, each line in a `try` block
 is executed until an exception object is throw. When the exception is thrown, 
 the JVM redirects the flow of control into an appropriate associated
 `catch` block. After the `catch` block is executed, flow of control is
-redirected to immediately after the ensite try-catch construct. 
+redirected to immediately after the entire try-catch construct. 
 Here is an example:
 
 ```java
