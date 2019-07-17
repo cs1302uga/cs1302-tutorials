@@ -7,6 +7,17 @@ two things happen:
 1. an **exception object** is said to be _thrown_; and
 1. the normal flow of control is disrupted.
 
+You have likely encountered the dreaded 
+[`NullPointerException`](https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html)
+before reading this tutorial. If not, it's easy enough to create a program that will
+throw a `NullPointerException`:
+
+```java
+String s = null;
+int len = s.length();
+System.out.printf("len = %d\n", len); 
+```
+
 ## Checked vs. Unchecked Exceptions
 
 In Java, exceptions are either _checked_ or _unchecked_. Checked exceptions must be explicitly caught or propagated by the programmer,
