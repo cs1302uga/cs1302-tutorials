@@ -20,8 +20,7 @@ if (s.length() > 1) { // <------------------ throws NullPointerException object
 ```
 
 If you run this code, then the JVM: 
-i) throws a `NullPointerException` object 
-on the second line; and 
+i) throws a `NullPointerException` object on the second line; and 
 ii) disrupts the normal flow of control to report to the
 user that the exception was thrown and abruptly terminates the program.
 
@@ -32,10 +31,10 @@ In general, there are two ways to deal with exceptions:
 
 ## Avoiding Exceptions 
 
-To avoid the exception in the example above, you just need to ensure
-that you do not attempt to invoke members (i.e., call methods or
-access instance variables) using `s` when it is `null`. Here are
-some examples:
+To avoid the exception in the example above, you need only ensure that you 
+do not invoke members (i.e., call methods or access instance variables) 
+using `s` when `s` is `null`. 
+Here are some examples:
 
 ```java
 // use an if-statement to check
