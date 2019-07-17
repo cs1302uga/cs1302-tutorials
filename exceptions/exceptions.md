@@ -14,13 +14,42 @@ throw a `NullPointerException` object:
 
 ```java
 String s = null;
-int len = s.length(); // <---- throws NullPointerException object
-System.out.printf("len = %d\n", len); 
+if (s.length() > 1) { // <------------------ throws NullPointerException object
+    System.out.println("string legth > 1");
+} // if
 ```
 
-If you run this code, then the JVM: i) throws a `NullPointerException` object 
-on the second line; ii) disrupts the normal flow of control to report to the
-user that the exception was thrown and abruptly terminates the program. 
+If you run this code, then the JVM: 
+i) throws a `NullPointerException` object 
+on the second line; and 
+ii) disrupts the normal flow of control to report to the
+user that the exception was thrown and abruptly terminates the program.
+
+In general, there are two ways to deal with exceptions:
+
+1. avoid them; and
+2. handle them.
+
+To avoid the exception in the example above, you just need to ensure
+that you do not attempt to invoke members (i.e., call methods or
+access instance variables) using `s` when it is `null`. Here are
+some examples:
+
+```java
+// use an if-statement to check
+if (s != null) {
+    if (s.length() > 1)) {
+        System.out.println("string legth > 1");
+    } // if
+} // if
+```
+
+```java
+// avoid NPE via short circuiting
+if ((s != null) && (s.length() > 1)) {
+    System.out.println("string legth > 1");
+} // if
+```
 
 ## Checked vs. Unchecked Exceptions
 
