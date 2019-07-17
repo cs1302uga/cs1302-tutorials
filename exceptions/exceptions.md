@@ -9,12 +9,12 @@ two things happen:
 
 You have likely encountered the dreaded 
 [`NullPointerException`](https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html)
-before reading this tutorial. If not, it's easy enough to create a program that will
-throw a `NullPointerException`:
+before reading this tutorial. If not, it's easy to create a program that will
+throw a `NullPointerException` object:
 
 ```java
 String s = null;
-int len = s.length();
+int len = s.length(); // <---- throws NullPointerException object
 System.out.printf("len = %d\n", len); 
 ```
 
