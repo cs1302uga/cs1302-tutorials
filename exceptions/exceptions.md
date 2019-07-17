@@ -31,7 +31,7 @@ In general, there are two ways to deal with exceptions:
 
 ## Avoiding Exceptions 
 
-To avoid the exception in the example above, you need only ensure that you 
+To *avoid the exception* in the example above, you need only ensure that you 
 do not invoke members (i.e., call methods or access instance variables) 
 using `s` when `s` is `null`. 
 Here are some examples:
@@ -66,6 +66,42 @@ instead of avoided, although there is no reason a combination of both can
 be employed.
 
 ## Handling Exceptions
+
+To *handle the exception* in the example above, you need to make use of a
+special control flow snytax known as a **try block** or **try-catch block**.
+With this syntax, you place code that can throw an exception into the
+`try` block, then place code for how you want to deal with the exception
+in the `catch` block. These two go together, which is why we often 
+refer to it as a try-catch block. During execution, we simply let the
+exception occur. When it does, two things happen:
+
+1. the exception object is thrown; and
+1. the normal flow of control is disrupted.
+
+However, instead of terminating program execution, the JVM redirects
+the flow of control into an appropriate `catch` block. 
+Here is an example:
+
+```java
+try {
+    if (s.length() > 1)) {
+        System.out.println("string legth > 1");
+    } // if
+} catch (NullPointerException npe) {
+    System.out.println("a NullPointerException was thrown!");
+} // try
+```
+
+This try-catch block differentiates itself from the previous examples in
+two ways:
+
+1. we did not perform any condition checking for the exceptional
+   situation--in this case, we did not compare the value of `s`
+   to `null`; and
+   
+2. the exception is still reported, however, it's done so using code
+   that we wrote (and, therefore, can customize) and using code
+   that does not necessarily cause the program to abruptly terminate.
 
 ## Checked vs. Unchecked Exceptions
 
