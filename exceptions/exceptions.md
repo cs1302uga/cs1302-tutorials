@@ -52,6 +52,17 @@ if ((s != null) && (s.length() > 1)) {
 } // if
 ```
 
+In general, in order to avoid an exception object, you need to understand the 
+conditions under which that exeption object is thrown, then write code that
+correctly identifies if those conditions are met prior to the line of code
+that throws the exception object. Although it is relatively easy to ammend code
+to avoid `NullPointerException` objects as they arise when attempting to 
+invoke members of an object using a reference variable that contains the 
+value `null`, the same statement cannot be said about exception objects that 
+are thrown in more complicated exceptional situations. Here, we take complicated
+to mean that there are a lot of conditions to check, including some that are
+potentially tricky to identify. 
+
 ## Handling Exceptions
 
 ## Checked vs. Unchecked Exceptions
