@@ -18,6 +18,10 @@ int len = s.length(); // <---- throws NullPointerException object
 System.out.printf("len = %d\n", len); 
 ```
 
+If you run this code, then the JVM: i) throws a `NullPointerException` object 
+on the second line; ii) disrupts the normal flow of control to report to the
+user that exception was thrown and abruptly terminate the program. 
+
 ## Checked vs. Unchecked Exceptions
 
 In Java, exceptions are either _checked_ or _unchecked_. Checked exceptions must be explicitly caught or propagated by the programmer,
