@@ -15,7 +15,7 @@ throw a `NullPointerException` object:
 ```java
 String s = null;
 if (s.length() > 1) { // <------------------ throws NullPointerException object
-    System.out.println("string legth > 1");
+    System.out.println("string length > 1");
 } // if
 ```
 
@@ -40,7 +40,7 @@ Here are some examples:
 // use an if-statement to check
 if (s != null) {
     if (s.length() > 1)) {
-        System.out.println("string legth > 1");
+        System.out.println("string length > 1");
     } // if
 } // if
 ```
@@ -48,7 +48,7 @@ if (s != null) {
 ```java
 // avoid NPE via short circuiting
 if ((s != null) && (s.length() > 1)) {
-    System.out.println("string legth > 1");
+    System.out.println("string length > 1");
 } // if
 ```
 
@@ -82,7 +82,7 @@ Here is an example:
 ```java
 try {
     if (s.length() > 1)) {
-        System.out.println("string legth > 1");
+        System.out.println("string length > 1");
     } // if
 } catch (NullPointerException npe) {
     System.out.println("a NullPointerException was thrown!");
