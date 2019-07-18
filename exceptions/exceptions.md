@@ -53,7 +53,7 @@ if ((s != null) && (s.length() > 1)) {
 ```
 
 In general, in order to avoid an exception object, you need to understand the 
-conditions in which that exeption object is thrown, then write code that
+conditions in which that exception object is thrown, then write code that
 correctly identifies if those conditions are met prior to the line of code
 that throws the exception object. Although it is relatively easy to ammend code
 to avoid `NullPointerException` objects as they arise when attempting to 
@@ -62,8 +62,8 @@ value `null`, the same statement cannot be said about exception objects that
 are thrown in more complicated exceptional situations. Here, we take complicated
 to mean that there are a lot of conditions to check, including some that are
 potentially tricky to identify. Such exceptions are generally handled
-instead of avoided, although there is no reason a combination of both can
-be employed.
+instead of avoided, although there is no reason a combination of both 
+handling and avoiding can be employed.
 
 ## Handling Exceptions
 
