@@ -101,6 +101,14 @@ two ways:
    that we wrote (and, therefore, can customize) and using code
    that does not necessarily cause the program to abruptly terminate.
 
+## Video Example
+
+TODO
+
+## Multiple Catch Blocks
+
+TODO
+
 ## Checked vs. Unchecked Exceptions
 
 In Java, exceptions are either _checked_ or _unchecked_. 
@@ -212,6 +220,10 @@ For now, we will use a simple method for checking if an exception is checked or 
    
 1. For an example of a checked exception, see 
 [`FileNotFoundException`](https://docs.oracle.com/javase/8/docs/api/java/io/FileNotFoundException.html)
+
+## Explicitly Throwing Exceptions & Exception Propagation
+
+TODO
 
 <hr/>
 
