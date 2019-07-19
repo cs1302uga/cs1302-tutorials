@@ -6,7 +6,7 @@
 * [Video Example](#video-example)
 * [Multiple Catch Blocks](#multiple-catch-blocks)
 * [Checked vs. Unchecked Exceptions (Tutorial)](#checked-vs-unchecked-exceptions)
-* [Identifying Checked vs. Unchecked Exceptions]()
+* [Identifying Checked vs. Unchecked Exceptions](#identifying-checked-vs-unchecked-exceptions)
 * [Explicitly Throwing Exceptions & Exception Propagation]()
 
 ## Definition
