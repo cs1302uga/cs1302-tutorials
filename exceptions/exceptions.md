@@ -1,5 +1,12 @@
 # Exceptions
 
+* [Definition](#definition)
+* [Avioiding Exceptions](#avoiding-exceptions)
+* [Handling Exceptions](#handling-exceptions)
+* [Multiple Catch Blocks](#multiple-catch-blocks)
+
+## Definition
+
 In Java, an **exception** is an event that occurs during the execution of a program that
 encounters an error or some kind of exceptional situation. When an exception occurs,
 two things happen:
