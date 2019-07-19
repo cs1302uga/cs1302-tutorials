@@ -4,6 +4,9 @@
 * [Avioiding Exceptions](#avoiding-exceptions)
 * [Handling Exceptions](#handling-exceptions)
 * [Multiple Catch Blocks](#multiple-catch-blocks)
+* [Checked vs. Unchecked Exceptions (Tutorial)](#checked-vs-unchecked-exceptions)
+* [Identifying Checked vs. Unchecked Exceptions]()
+* [Explicitly Throwing Exceptions & Exception Propagation]()
 
 ## Definition
 
@@ -212,7 +215,7 @@ Let's look at an example.
 
 1. Execute `exceptions.Checked`.  It should print the first line of `notes.txt`.
 
-## How to tell if an exception is checked or unchecked
+## Identifying Checked vs. Unchecked Exceptions
 
 For now, we will use a simple method for checking if an exception is checked or unchecked.
 
