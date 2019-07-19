@@ -114,7 +114,6 @@ two ways:
 
 ## Video Example
 
-https://youtu.be/TETdh48t4YM
 
 ## Multiple Catch Blocks
 
