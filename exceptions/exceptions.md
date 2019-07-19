@@ -234,7 +234,22 @@ For now, we will use a simple method for checking if an exception is checked or 
 
 ## Explicitly Throwing Exceptions & Exception Propagation
 
-TODO
+Now that you have used code that can throw exceptions, it's important understand how and
+why you can throw exceptions yourself. In Java, the `throw` keyword is used to explicitly
+throw an exception. Here is an example:
+
+```java
+int computeAverage(double[] nums) {
+    if (nums.length == 0) {
+        throw new ArithmeticException("bad situation!");
+    } // if
+    double sum = 0;
+    for (double num : nums) {
+        sum += num;
+    } // for
+    return sum / nums.length;
+} // computeAverage
+```
 
 <hr/>
 
