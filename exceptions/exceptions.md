@@ -3,6 +3,7 @@
 * [Definition](#definition)
 * [Avioiding Exceptions](#avoiding-exceptions)
 * [Handling Exceptions](#handling-exceptions)
+* [Video Example](#video-example)
 * [Multiple Catch Blocks](#multiple-catch-blocks)
 * [Checked vs. Unchecked Exceptions (Tutorial)](#checked-vs-unchecked-exceptions)
 * [Identifying Checked vs. Unchecked Exceptions]()
