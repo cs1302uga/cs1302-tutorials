@@ -119,7 +119,7 @@ Here is a video that demonstrates how to handle exceptions instead of avoid them
 https://www.youtube.com/watch?v=TETdh48t4YM
 
 <a href="https://www.youtube.com/watch?v=TETdh48t4YM">
-<img src="https://img.youtube.com/vi/TETdh48t4YM/0.jpg" alt="IMAGE ALT TEXT">
+<img src="https://img.youtube.com/vi/TETdh48t4YM/0.jpg?20190726" alt="IMAGE ALT TEXT">
 </a>
 
 ## Multiple Catch Blocks
