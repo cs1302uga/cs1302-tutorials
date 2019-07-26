@@ -34,6 +34,7 @@ If you run this code, then the JVM:
 i) throws a `NullPointerException` object on the second line; and 
 ii) disrupts the normal flow of control to report to the
 user that the exception was thrown and abruptly terminates the program.
+Go ahead and test it out. 
 
 In general, there are two ways to deal with exceptions:
 
