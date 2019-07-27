@@ -32,18 +32,20 @@ provided by Java.
 
 By convention, API documentation for Java code is written directly in the source code in special
 comments called Javadoc comments. The Javadoc tool is used to parse the source code and
-Javadoc comments to produce a nicely formatted website for the documentation. In this tutorial,
-you will see Javadoc comments in action, write your own, and learn how to generate and host
-the corresponding API documentation website on Nike. Here is an example:
+Javadoc comments to produce a nicely formatted website for the documentation. 
+Here is an example:
 
 ![Javadoc Figure](javadoc-figure.png)
 
 In the figure above, we see a Javadoc comment for the `getRoom` method. It starts with `/**`
-and end with `*/`. The body of the comment is a set of correctly punctuated English
+and ends with `*/`. The body of the comment is a set of correctly punctuated English
 sentences. Special `@` tags are used throughout the comment to provide semantic context
 for terms. Semantic information is used to influence formatting in the generated website.
 Toward the end of the comment, you see that the parameters and the return value are
 documented using two `@param` tags and a `@return` tag.
+
+In this tutorial, you will see Javadoc comments in action, write your own, and learn how 
+to generate and host the corresponding API documentation website on Nike.
 
 ### Getting Started
 
