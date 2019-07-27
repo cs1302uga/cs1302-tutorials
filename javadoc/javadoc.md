@@ -28,6 +28,12 @@ This tutorial assumes that the reader has a knowledge of basic Unix commands and
 with a command-line text editor (e.g. emacs, vi, etc.). To get the most out of this tutorial, 
 you should follow along and take notes.
 
+## Course-Specific Learning Outcomes
+
+* **LO3.b:** Create class, interface, method, and inline documentation that satisfies a 
+set of requirements.
+* **LO3.c:** Generate user-facing API documentation for a software solution.
+
 ### Getting Started
 
 The steps in this tutorial assume that you are logged into the Nike server. 
