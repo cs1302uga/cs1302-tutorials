@@ -22,6 +22,8 @@ Javadoc comments to produce a nicely formatted website for the documentation. In
 you will see Javadoc comments in action, write your own, and learn how to generate and host
 the corresponding API documentation website on Nike.
 
+![Javadoc Figure](javadoc-figure.png)
+
 ## Prerequisites
 
 This tutorial assumes that the reader has a knowledge of basic Unix commands and experience working 
