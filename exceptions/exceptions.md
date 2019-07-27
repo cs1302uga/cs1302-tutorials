@@ -3,10 +3,9 @@
 * [Definition](#definition)
 * [Avioiding Exceptions](#avoiding-exceptions)
 * [Handling Exceptions](#handling-exceptions)
-* [Video Example](#video-example)
-* [Multiple Catch Blocks](#multiple-catch-blocks)
 * [Checked vs. Unchecked Exceptions](#checked-vs-unchecked-exceptions)
 * [Identifying Checked vs. Unchecked Exceptions](#identifying-checked-vs-unchecked-exceptions)
+* [Multiple Catch Blocks](#multiple-catch-blocks)
 * [Explicitly Throwing Exceptions & Exception Propagation](#explicitly-throwing-exceptions--exception-propagation)
 
 ## Definition
@@ -113,7 +112,7 @@ two ways:
    that we wrote (and, therefore, can customize) and using code
    that does not necessarily cause the program to abruptly terminate.
 
-## Video Example
+### Video Example
 
 Here is a video that demonstrates how to handle exceptions instead of avoid them:
 
@@ -122,10 +121,6 @@ https://www.youtube.com/watch?v=TETdh48t4YM
 <a href="https://www.youtube.com/watch?v=TETdh48t4YM">
 <img src="https://img.youtube.com/vi/TETdh48t4YM/0.jpg?20190726" alt="IMAGE ALT TEXT">
 </a>
-
-## Multiple Catch Blocks
-
-TODO
 
 ## Checked vs. Unchecked Exceptions
 
@@ -238,6 +233,17 @@ For now, we will use a simple method for checking if an exception is checked or 
    
 1. For an example of a checked exception, see 
 [`FileNotFoundException`](https://docs.oracle.com/javase/8/docs/api/java/io/FileNotFoundException.html)
+
+## Multiple Catch Blocks
+
+Here is a video that demonstrates how to handle multiple exceptions at the same
+time using multiple catch blocks:
+
+https://www.youtube.com/watch?v=j-GNWvLNLjs
+
+<a href="https://www.youtube.com/watch?v=j-GNWvLNLjs">
+<img src="https://img.youtube.com/vi/j-GNWvLNLjs/0.jpg?20190726" alt="IMAGE ALT TEXT">
+</a>
 
 ## Explicitly Throwing Exceptions & Exception Propagation
 
