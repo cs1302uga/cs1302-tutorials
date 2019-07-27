@@ -245,8 +245,9 @@ https://www.youtube.com/watch?v=j-GNWvLNLjs
 
 ## Explicitly Throwing Exceptions & Exception Propagation
 
-Now that you have used code that can throw exceptions, it's important understand how and
-why you can throw exceptions yourself. In Java, the `throw` keyword is used to explicitly
+Now that you have seen how to handle exceptions in code written by others
+that can throw exceptions, it's important understand how and why you can 
+throw exceptions yourself. In Java, the `throw` keyword is used to explicitly
 throw an exception. Here is an example:
 
 ```java
