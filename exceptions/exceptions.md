@@ -1,6 +1,12 @@
 
 # Exceptions
 
+## Prerequisites
+
+This tutorial assumes that the reader has a knowledge of basic Unix commands and experience working 
+with a command-line text editor (e.g. emacs, vi, etc.). To get the most out of this tutorial, 
+you should follow along and take notes.
+
 ## Course-Specific Learning Outcomes
 
 * **LO2.b:** Define, throw, and propagate exceptions appropriately in a software solution.
