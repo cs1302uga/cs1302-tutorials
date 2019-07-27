@@ -116,6 +116,7 @@ two ways:
 ## Video Example
 
 Here is a video that demonstrates how to handle exceptions instead of avoid them:
+
 https://www.youtube.com/watch?v=TETdh48t4YM
 
 <a href="https://www.youtube.com/watch?v=TETdh48t4YM">
