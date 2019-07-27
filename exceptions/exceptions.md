@@ -112,8 +112,6 @@ two ways:
    that we wrote (and, therefore, can customize) and using code
    that does not necessarily cause the program to abruptly terminate.
 
-### Video Example
-
 Here is a video that demonstrates how to handle exceptions instead of avoid them:
 
 https://www.youtube.com/watch?v=TETdh48t4YM
