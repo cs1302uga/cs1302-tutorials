@@ -1,4 +1,11 @@
+
 # Exceptions
+
+## Course-Specific Learning Outcomes
+
+* **LO2.b:** Define, throw, and propagate exceptions appropriately in a software solution.
+
+## Table of Contents
 
 * [Definition](#definition)
 * [Avioiding Exceptions](#avoiding-exceptions)
