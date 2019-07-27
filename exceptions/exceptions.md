@@ -248,12 +248,24 @@ https://www.youtube.com/watch?v=j-GNWvLNLjs
 Now that you have seen how to handle exceptions in code written by others
 that can throw exceptions, it's important understand how and why you can 
 throw exceptions yourself. In Java, the `throw` keyword is used to explicitly
-throw an exception. Here is an example:
+throw an exception. Here is an example where we create an
+[`IllegalArgumentException`](https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html)
+and explicitly throw it:
 
 ```java
-int computeAverage(double[] nums) {
+throw new IllegalArgumentException("nums array cannot be empty");
+```
+
+Since `IllegalArgumentException` is a checked exception, we would
+usually be required to handle the line by placing it in a try block.
+That may not be ideal. Instead of handling the exception immediately,
+let's make it someone else's responsibility using the `throws` keyword
+in the signature of the method containing the line:
+
+```java
+int computeAverage(double[] nums) throws IllegalArgumentException {
     if (nums.length == 0) {
-        throw new ArithmeticException("bad situation!");
+        throw new IllegalArgumentException("nums array cannot be empty");
     } // if
     double sum = 0;
     for (double num : nums) {
@@ -262,6 +274,18 @@ int computeAverage(double[] nums) {
     return sum / nums.length;
 } // computeAverage
 ```
+
+Using the `throws` keyword, we told Java that the `IllegalArgumentException`
+will not be handled directly in this method. Intead it will be _propagated_
+up to the calling method, i.e., the method or methods, somewhere else, that are
+actually calling `computeAverage`. In that other method, the programmer
+can either handle the exception (using a try-catch) or choose to propagate it again
+by repeating the `throws` in the calling method's signature.
+
+In Java, checked exceptions must either be handled directly using a try-catch
+or progated up using `throws`. Note, while it is possible to place a `throws`
+in the signature of a program's `main` method, doing so is _strongly_ discouraged
+as exceptions propagated past `main` will always cause the program to crash.
 
 <hr/>
 
