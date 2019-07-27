@@ -256,9 +256,9 @@ and explicitly throw it:
 throw new IllegalArgumentException("nums array cannot be empty");
 ```
 
-Since `IllegalArgumentException` is a checked exception, we would
-usually be required to handle the line by placing it in a try block.
-That may not be ideal. Instead of handling the exception immediately,
+Since this line of code is known to throw an exception, we would
+usually want to handle the exception by placing the line in a try block.
+That may not always be ideal. Instead of handling the exception immediately,
 let's make it someone else's responsibility using the `throws` keyword
 in the signature of the method containing the line:
 
