@@ -1,5 +1,19 @@
 # Javadoc and API Documentation
 
+## Prerequisites
+
+This tutorial assumes that the reader has a knowledge of basic Unix commands and experience working 
+with a command-line text editor (e.g. emacs, vi, etc.). To get the most out of this tutorial, 
+you should follow along and take notes.
+
+## Course-Specific Learning Outcomes
+
+* **LO3.b:** Create class, interface, method, and inline documentation that satisfies a 
+set of requirements.
+* **LO3.c:** Generate user-facing API documentation for a software solution.
+
+## Introduction
+
 A well written, organized collection of code provides an **Application Programming Interface (API)**
 for users of that code. That is, the design choices that were made in the naming of certain things
 such as classes and methods impose an interface that programmers must follow when interacting with
@@ -20,21 +34,16 @@ By convention, API documentation for Java code is written directly in the source
 comments called Javadoc comments. The Javadoc tool is used to parse the source code and
 Javadoc comments to produce a nicely formatted website for the documentation. In this tutorial,
 you will see Javadoc comments in action, write your own, and learn how to generate and host
-the corresponding API documentation website on Nike.
+the corresponding API documentation website on Nike. Here is an example:
 
 ![Javadoc Figure](javadoc-figure.png)
 
-## Prerequisites
-
-This tutorial assumes that the reader has a knowledge of basic Unix commands and experience working 
-with a command-line text editor (e.g. emacs, vi, etc.). To get the most out of this tutorial, 
-you should follow along and take notes.
-
-## Course-Specific Learning Outcomes
-
-* **LO3.b:** Create class, interface, method, and inline documentation that satisfies a 
-set of requirements.
-* **LO3.c:** Generate user-facing API documentation for a software solution.
+In the figure above, we see a Javadoc comment for the `getRoom` method. It starts with `/**`
+and end with `*/`. The body of the comment is a set of correctly punctuated English
+sentences. Special `@` tags are used throughout the comment to provide semantic context
+for terms. Semantic information is used to influence formatting in the generated website.
+Toward the end of the comment, you see that the parameters and the return value are
+documented using two `@param` tags and a `@return` tag.
 
 ### Getting Started
 
