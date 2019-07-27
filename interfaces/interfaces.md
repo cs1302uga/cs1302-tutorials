@@ -2,10 +2,6 @@
 
 This tutorial introduces the reader to Java interfaces and polymorphism.
 
-**NOTE:** Many of the code examples in this tutorial are adapted from
-[[1]](https://www.pearson.com/us/higher-education/program/Lewis-Java-Foundations-Introduction-to-Program-Design-and-Data-Structures-4th-Edition/PGM76634.html)
-under academic fair use.
-
 ### Prerequisites
 
 This tutorial assumes that the reader has a knowledge of basic Unix commands and experience working 
@@ -248,8 +244,7 @@ Javadoc comments in the interface.
 
 ### References
 
-* [[1] Lewis, DePasquale, and Chase. _Java Foundations_. Fourth Edition.](https://www.pearson.com/us/higher-education/program/Lewis-Java-Foundations-Introduction-to-Program-Design-and-Data-Structures-4th-Edition/PGM76634.html)
-* [[2] Oracle Java Tutorials: Interfaces](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html)
+* [[1] Oracle Java Tutorials: Interfaces](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html)
 
 <hr/>
 
@@ -259,4 +254,9 @@ Javadoc comments in the interface.
 Copyright &copy; Michael E. Cotterell, Brad Barnes, and the University of Georgia.
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a> to students and the public.
 The content and opinions expressed on this Web page do not necessarily reflect the views of nor are they endorsed by the University of Georgia or the University System of Georgia.
+</small>
+
+<small>
+Some of the code examples in this tutorial are inspired by code included with 
+Lewis, DePasquale, and Chase. _Java Foundations_. Fourth Edition.
 </small>
