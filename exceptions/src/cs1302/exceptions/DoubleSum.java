@@ -1,73 +1,53 @@
 package cs1302.exceptions;
 
 import java.util.Scanner;
-import java.util.InputMismatchException;
-
-private static Scanner input;
 
 /**
- *
- * Does not work with scientific notation.
- *
+ * A class containing two methods to read a series of floating point numbers
+ * from the user and sum up the values. The two methods handle invalid input
+ * in different ways. The first method attempts to avoid exceptions
+ * altogether and the second handles exceptions when they occur.
  *
  */
 public class DoubleSum {
+
+    private static Scanner input;
+
     public static void main(String[] args) {
         input = new Scanner(System.in);
-
-        loopValidate();
-        
+        System.out.println(loopInputSum());
     } // main
-
-
-    public static void validate(String s) {
-        // Create a Scanner to parse each token of the user's input
-/*        Scanner inputParser = new Scanner(s);
-
-        while(inputParser.hasNext()) {
-            Double.parseDouble(inputParser.next());
-        } // while
-                while(!valid) {
-            try{
-                validate(userInput);
-                valid = true;
-            } catch(InputMismatchException ime) {
-                System.out.println("Invalid input. Try again");
-                userInput = input.nextLine();
-            } // try
-        } // while
-*/
-    } // validate
     
     /**
-     * Preemptively checking for invalid input. This is error-prone and it's
-     * the same work that the nextDouble() method would do internally.
-     * Why do the same work twice and then potentially do it incorrectly when
-     * we could just call nextDouble and catch any thrown exceptions.
-     *
-     * Don't be afraid of exceptions - know how to handle them when they occur.
+     * Preemptively checking for invalid input. This is error-prone and it forces
+     * the computer to duplicate the work as parseDouble() is validating the input
+     * internally.
      */
-    public static double loopValidate() {
+    public static double loopInputSum() {
+
         double sum = 0.0;
         // Create a Scanner to parse each token of the user's input
-        Scanner inputParser = new Scanner(s);
+        Scanner inputParser;// = new Scanner(s);
         boolean valid = true;
 
         System.out.println("Enter positive floating point numbers separated by a space");
         String userInput = input.nextLine();
 
         do {            
+            // The inputParser gets its values from the userInput String - not the keyboard.
+            inputParser = new Scanner(userInput);
+            valid = true;
             //Validate the user input
-            while(inputParser.hasNext()) {
+            while (inputParser.hasNext()) {
                 // Store the characters up to the next space in variable token
                 String token = inputParser.next();
 
                 int decimalCount = 0;
-                for(int i = 0; i < token.length(); i++) {
+                for (int i = 0; i < token.length(); i++) {
                     char cur = token.charAt(i);
-                    if(!Character.isDigit(cur)) {
-                        if((cur == '.')) {
-                            if(decimalCount == 0) {
+                    if (!Character.isDigit(cur)) {
+                        if ((cur == '.')) {
+                            if (decimalCount == 0) {
                                 decimalCount++;
                             } else {
                                 valid = false;
@@ -77,7 +57,7 @@ public class DoubleSum {
                         } // if
                     } // if
                 } // for
-                if(valid) {
+                if (valid) {
                     //The token is valid. We can safely turn it into a double.
                     sum += Double.parseDouble(token);
                 } else {
@@ -86,11 +66,45 @@ public class DoubleSum {
                     userInput = input.nextLine();
                 } // if
             } // while
-        } while(!valid);
+        } while (!valid);
         
-        //All tokens were found to be valid
+        // All tokens were found to be valid
         return sum;
 
     } // doubleSum
-    
+
+    public static double exceptionInputSum() {
+
+        double sum = 0.0;
+        boolean valid = true;
+        System.out.println("Enter positive floating point numbers separated by a space");
+        String userInput = input.nextLine();
+
+        // Create a Scanner to parse each token of the user's input
+        Scanner inputParser;
+
+        do {
+            valid = true;
+            inputParser = new Scanner(userInput);
+
+            try {
+                while(inputParser.hasNext()) {
+                    String curToken = inputParser.next();
+                    double curVal = Double.parseDouble(curToken);
+                    sum += curVal;
+                } // while
+            } catch (NumberFormatException nfe) {
+                System.out.println("Input error. Try again");
+                userInput = input.nextLine();
+                valid = false;
+                sum = 0.0;
+            } // try
+            
+        } while (!valid);
+
+        // Implement me with exception handling!
+        return sum;
+        
+    } // validate
+
 } // DoubleSum
