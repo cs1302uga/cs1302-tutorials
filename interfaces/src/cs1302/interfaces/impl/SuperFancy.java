@@ -31,6 +31,16 @@ public class SuperFancy implements Styleable {
     } // unstyle
 
     /**
+     * Returns a {@code String} containing information about this object.
+     *
+     * @return the about information
+     */
+    public String getAbout() {
+        return "A styled SuperFancy object contains characters that alternate" +
+            " between upper and lowercase.";
+    } // getAbout
+    
+    /**
      * Returns a {@code String} representation of this {@code SuperFancy}
      * object, consistent with {@link cs1302.interfaces.contract.Styleable}.
      * @return the {@code String} value of this object
