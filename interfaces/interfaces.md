@@ -14,10 +14,9 @@ To get the most out of this tutorial, you should follow along and take notes.
 
 ## Course-Specific Learning Outcomes
 
-* **LO2.e:** (Partial) Define, throw, and propagate exceptions appropriately in a software solution.
-* **LO3.b:** Create class, interface, method, and inline documentation that satisfies a 
-set of requirements.
+* **LO2.e:** (Partial) Utilize existing generic methods, interfaces, and classes in a software solution.
 * **LO3.c:** Generate user-facing API documentation for a software solution.
+* **LO4.b:** Utilize interface-based polymorphism in a software solution.
 
 ### Getting Started
 
@@ -39,14 +38,15 @@ The steps in this tutorial assume that you are logged into the Nike server.
    $ find .
    ```
    
-   Inspect each `.java` file that was listed. You will notice that some of them contain interfaces
-   instead of classes. They can be identified by looking for the `interface` keyword instead of
-   the `class` keyword in the overall type declaration specified near the top of the file. We say
-   "type" declaration because a `.java` file can be used to declare any kind of reference type in
-   Java, including classes, interfaces, and class-based enumerations. A **reference type** in Java
-   is any type that can serve as the type for a variable that refers to an object. Such a variable
-   is known as a **reference variable**. We will elaborate on this terminology a little more later 
-   in this tutorial.
+   Execute the `cat` command on each `.java` file that was listed to view the contents. You will 
+   notice that some of 
+   them contain interfaces instead of classes. They can be identified by looking for the `interface` 
+   keyword instead ofthe `class` keyword in the overall type declaration specified near the top of 
+   the file. We say "type" declaration because a `.java` file can be used to declare any kind of 
+   reference type in Java, including classes, interfaces, and class-based enumerations. A 
+   **reference type** in Java is any type that can serve as the type for a variable that refers to 
+   an object. Such a variable is known as a **reference variable**. We will elaborate on this 
+   terminology a little more later in this tutorial.
 
 ### What is an Interface?
 
@@ -63,38 +63,38 @@ abstract methods and constants. An interface serves as a contract for the classe
 claim to implement the interface. Multiple classes can implement the same interface,
 each providing their own implementation of the contracted functionality. For this
 reason, it is important that the documentation for an interface describe *what* a method
-does and necessarily *how* it should do it. Such documentation is usually written using
+does and not necessarily *how* it should do it. Such documentation is usually written using
 Javadoc comments in the interface.
 
 ### Declaring an Interface
 
 1. Interfaces, just like classes, have a fully qualified name. Their source code should be 
    positioned and named within your project the same as with classes. That is, an interface
-   called `cs1302.interfaces.Encryptable` has an implied position within the package
-   directories of your source code and should be placed in an `Encryptable.java` file.
+   called `cs1302.interfaces.contract.Styleable` has an implied position within the package
+   directories of your source code and should be placed in a `Styleable.java` file.
    The first big syntax difference between a class and an interface is illustrated in
-   [`Encryptable.java:21`](src/cs1302/interfaces/contract/Encryptable.java#L21):
+   [`Styleable.java:21`](src/cs1302/interfaces/contract/Styleable.java#L21):
    
    ```java
-   public interface Encryptable {
+   public interface Styleable {
    ```
    
    Note the use of the `interface` keyword instead of `class` in the type header.
    
 
 1. The second big syntax difference involves the inclusion of abstract methods, illustrated
-   by the `encrypt()` method in [`Encryptable.java:27`](src/cs1302/interfaces/contract/Encryptable.java#L27).
+   by the `style()` method in [`Styleable.java:27`](src/cs1302/interfaces/contract/Styleable.java#L27).
    
    ```java
-   public void encrypt();
+   public void style();
    ```
    
-   Notice that the `encrypt()` method does not contain an implementation. The signature of the method 
+   Notice that the `style()` method does not contain an implementation. The signature of the method 
    ends with a semicolon. An abstract method may not have an implementation. The following is **NOT** an
    abstract method:
    
    ```java
-   public void encrypt() { }
+   public void style() { }
    ```
    
    While the `{ }` may not do anything, it is, in fact, an implementation that does nothing. Compare that
@@ -107,8 +107,8 @@ Javadoc comments in the interface.
    be covered more in depth at a later time when the nuances of visibility are presented. 
 
 1. Generate, host, and view the API documentation website for the starter code provided with this tutorial.
-   Find the `Encryptable` interface on the website and compare the documentation provided there with what
-   you see in the Javadoc comments included in `Encryptable.java`. 
+   Find the `Styleable` interface on the website and compare the documentation provided there with what
+   you see in the Javadoc comments included in `Styleable.java`. 
 
 ### Implementing an Interface
 
