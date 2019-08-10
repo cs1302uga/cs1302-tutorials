@@ -14,7 +14,7 @@ public class StyleDriver {
      * Runs a {@code style()} and {@code unstyle()} test on the 
      * given {@link Styleable} object.
      * @param testName the name of the test
-     * @param e        the given {@link Styleable}
+     * @param s        the given {@link Styleable}
      */
     public static void test(String testName, Styleable s) {
         System.out.printf("# %s Test\n", testName);

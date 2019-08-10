@@ -4,7 +4,7 @@ import cs1302.interfaces.contract.Styleable;
 
 /**
  * This class representes a <i>super fancy</i> message.
- * <p>
+ * 
  */
 public class SuperFancy implements Styleable {
 
