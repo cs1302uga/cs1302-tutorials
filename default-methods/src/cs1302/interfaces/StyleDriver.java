@@ -3,6 +3,7 @@ package cs1302.interfaces;
 import cs1302.interfaces.contract.Styleable;
 import cs1302.interfaces.impl.Fancy;
 import cs1302.interfaces.impl.SuperFancy;
+import cs1302.interfaces.impl.BasicFancy;
 
 /** 
  * This class contains some test code for the {@link Styleable}
@@ -33,11 +34,14 @@ public class StyleDriver {
 
         Styleable message;
 
-        message = new Fancy("Hello, world...");
+        message = new Fancy("important message");
         test("Fancy", message);
 
-        message = new SuperFancy("Hello, world...");
+        message = new SuperFancy("important message");
         test("Super Fancy", message);
+
+        message = new BasicFancy("important message");
+        test("Basic Fancy", message);
 	
     } // main
 
