@@ -20,7 +20,7 @@ public class SuperFancy implements Styleable {
     public SuperFancy(String msg) {
         message = msg;
         styled = false;
-    } // SuperFancy
+    } // Secret
 
     public void style() {
         styled = true;
