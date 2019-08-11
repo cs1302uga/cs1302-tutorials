@@ -2,10 +2,6 @@
 
 This tutorial introduces the reader to default methods in Java, a powerful way to evolve an interface.
 
-**NOTE:** Many of the code examples in this tutorial are adapted from
-[[1]](https://www.pearson.com/us/higher-education/program/Lewis-Java-Foundations-Introduction-to-Program-Design-and-Data-Structures-4th-Edition/PGM76634.html)
-under academic fair use.
-
 ### Prerequisites
 
 This tutorial assumes that the reader has a knowledge of creating and implementing Java interfaces
@@ -15,6 +11,11 @@ and running Java code contained in packages and working with the Javadoc tool.
 To get the most out of this tutorial, you should follow along by executing and modifying the code
 and take notes.
 
+## Course-Specific Learning Outcomes
+
+* **LO2.e:** (Partial) Utilize existing generic methods, interfaces, and classes in a software solution.
+* **LO3.c:** Generate user-facing API documentation for a software solution.
+* **LO4.b:** Utilize interface-based polymorphism in a software solution.
 ### Getting Started
 
 The steps in this tutorial assume that you are logged into the Nike server. 
@@ -36,40 +37,40 @@ The steps in this tutorial assume that you are logged into the Nike server.
    ```
    
    Inspect each `.java` file that was listed. You will notice that there are three classes that
-   implement the `Encryptable` interface using different types of encryption.
+   implement the `Styleable` interface using different styles.
 
 1. Compile the code you downloaded using `bin` as the default directory for compiled code. Pay
    close attention to dependencies to ensure proper compilation order.
 
-1. Run the `SecretDriver` class. Notice how the messages are encrypted using various encryption
-   algorithms.
+1. Run the `StyleDriver` class. Notice how the messages are styled using various styling algorithms.
 
 1. Generate, host, and view the API documentation website for the starter code provided with this tutorial.
    Use `cs1302-default-methods-doc` as the name of the symbolic link.
 
 1. Look through the documentation website you just created. You might notice that the page for the 
-   `Encryptable` interface lists all known implementing classes just below the interface name near
+   `Styleable` interface lists all known implementing classes just below the interface name near
    the top of the page. 
    
 ### Modifying an Interface
 
 Since a conrete (i.e., instantiable) class that implements an interface **must** implement all methods 
 of the interface, any change to an interface has a direct impact on all implementing classes. Therefore,
-the decision to modify an interface should not be taken lightly. Imagine if Oracle decided to add a few 
-methods to a Java interface used by millions of programmers around the world. This decision would have 
-a direct impact on all of those developers!
+the decision to modify an interface should not be taken lightly. Especially if there are dependencies
+on the interface. Imagine if Oracle decided to add a few methods to an interface used by millions of 
+programmers around the world. This decision would have a direct impact on all of those developers, as
+they would all need to go through their entire codebase and update it to work with the new interface.
 
 1. To see the impact of such a change on a **much** smaller scale, go to the source code for the 
-   `Encryptable` interface and uncomment the `getState` method along with the `State` enumeration.
+   `Styleable` interface and uncomment the `getState` method along with the `State` enumeration.
 
-1. Recompile only the `Encryptable` interface using `bin` as the default directory for compiled code. If 
+1. Recompile only the `Styleable` interface using `bin` as the default directory for compiled code. If 
    you uncommented the code correctly in the previous step, there should be no compile-time errors.
 
-1. Compile `BasicSecret.java`, `Secret.java`, and `SuperSecret.java`.
+1. Compile `BasicFancy.java`, `Fancy.java`, and `SuperFancy.java`.
 
    **Aside Compilation Shortcut:**
-   From the `cs1302-default-methods` directory, you can compile `BasicSecret.java`,
-   `Secret.java`, and `SuperSecret.java` simultaneously using the following command:
+   From the `cs1302-default-methods` directory, you can compile `BasicFancy.java`,
+   `Fancy.java`, and `SuperFancy.java` simultaneously using the following command:
 
    ```
    $ javac -d bin -cp bin src/cs1302/interfaces/impl/*.java
@@ -80,29 +81,30 @@ a direct impact on all of those developers!
    command-line arguments to `javac`. An equivalent (but longer) way to write the above command would be:
 
    ```
-   $ javac -d bin -cp bin src/cs1302/interfaces/impl/SuperSecret.java src/cs1302/interfaces/impl/Secret.java
-    /src/cs1302/interfaces/impl/BasicSecret.java
+   $ javac -d bin -cp bin src/cs1302/interfaces/impl/SuperFancy.java src/cs1302/interfaces/impl/Fancy.java
+    /src/cs1302/interfaces/impl/BasicFancy.java
    ```
    
    Just to be clear, both of the command examples provided above supply the same number of command-line
    argumensts to `javac`.
    
-1. Compilation of the three `Encryptable` classes in the step above results in the following compile-time 
+1. Compilation of the three `Styleable` classes in the step above results in the following compile-time 
    errors if steps 2 and 3 were followed correctly:
 
    ```
-   src/cs1302/interfaces/impl/BasicSecret.java:15: error: BasicSecret is not abstract and does not override   abstract method isEncrypted() in Encryptable
-   public class BasicSecret implements Encryptable {
-   ^
-   src/cs1302/interfaces/impl/Secret.java:15: error: Secret is not abstract and does not override abstract method isEncrypted() in Encryptable
-   public class Secret implements Encryptable {
-   ^
-   src/cs1302/interfaces/impl/SuperSecret.java:15: error: SuperSecret is not abstract and does not override abstract method isEncrypted() in Encryptable
-   public class SuperSecret implements Encryptable {
+   src/cs1302/interfaces/impl/BasicFancy.java:9: error: BasicFancy is not abstract and does not override abstract method getState() in     Styleable
+   public class BasicFancy implements Styleable {
+          ^
+   src/cs1302/interfaces/impl/Fancy.java:9: error: Fancy is not abstract and does not override abstract method getState() in Styleable
+   public class Fancy implements Styleable {
+          ^
+   src/cs1302/interfaces/impl/SuperFancy.java:9: error: SuperFancy is not abstract and does not override abstract method getState() in   Styleable
+   public class SuperFancy implements Styleable {
+          ^
    ```
 
    Notice that each of the errors state that the implementing class "does not override abstract method 
-   `getState` in `Encryptable`". Since these classes don't implement all of the methods in `Encryptable`,
+   `getState` in `Styleable`". Since these classes don't implement all of the methods in `Styleable`,
    they won't compile.
    
 ### Default Methods
