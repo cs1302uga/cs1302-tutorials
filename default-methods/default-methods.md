@@ -109,25 +109,28 @@ they would all need to go through their entire codebase and update it to work wi
    
 ### Default Methods
 
-Given that we only have three classes that implement `Encryptable` and access to the source code, we _could_ 
+Given that we only have three classes that implement `Styleable` and access to the source code, we _could_ 
 go through them one at a time and add the `getState` method to each. However, this is not always feasible 
-(remember the Oracle example). A nice alternative is to use a *Default Method* which allows the programmer
-to provide a default implementation for the method. Since the method is defined at the interface level, the 
-implementation should be general.
+(remember the Oracle example where there are millions of implementing classes). A nice alternative is to 
+use a *Default Method* which allows the programmer to provide a default implementation for the method. Since 
+the method is defined at the interface level, the implementation should be general in the sense that it is
+not specific to any implementing class. In this case, we have three states: `STYLED`, `UNSTYLED`, and
+`UNKNOWN`. At the interface level, using `UNKNOWN` is the most appropriate since we can't say whether a 
+particular object is styled or unstyled at this level.
 
-1. As an example, modify the `Encryptable` interface by replacing the current `getState` abstract 
+1. As an example, modify the `Styleable` interface by replacing the current `getState` abstract 
    method with the following public method alternative:
 
    ```java
-   public Encryptable.State getState() {
-      return Encryptable.State.UNKNOWN;
+   public Styleable.State getState() {
+      return Styleable.State.UNKNOWN;
    } // getState
    ```
 
-   Notice that the return type is `Encryptable.State`. Since an enumerated type in an interface is implicitly
+   Notice that the return type is `Styleable.State`. Since an enumerated type in an interface is implicitly
    static, we refer to the type using the interface name.
    
-1. Recompile only the `Encryptable` interface using `bin` as the default directory for compiled code. You 
+1. Recompile only the `Styleable` interface using `bin` as the default directory for compiled code. You 
    will see a compile-time error which includes a message stating "interface abstract methods cannot have
    body". The problem occurred because we added what looks like an instance method to the interface. Since
    all non-static methods in an interface are implicitly abstract, we cannot provide an implementation in 
@@ -142,10 +145,10 @@ implementation should be general.
    Java interfaces; and ii) it's easy for the compiler to identify these methods by the keyword. 
 
 1. If you haven't done so already, add the `default` keyword to the `getState` method signature. Recompile 
-   only the `Encryptable` interface using `bin` as the default directory for compiled code. Now it should 
+   only the `Styleable` interface using `bin` as the default directory for compiled code. Now it should 
    compile properly.
 
-1. Compile `BasicSecret.java`, `Secret.java`, and `SuperSecret.java`.
+1. Compile `BasicFancy.java`, `Fancy.java`, and `SuperFancy.java`.
 
    ```
    $ javac -d bin -cp bin src/cs1302/interfaces/impl/*.java
@@ -156,7 +159,7 @@ implementation should be general.
 You have probably already noticed the benefit of default methods. Since we provided a default 
 implementation for the `getState` method in the interface, we don't have to go through each 
 implementing class and add the method. However, please note that the default implementation is
-a general implementation and does not properly reflect the state of the `Encryptable` object. It
+a general implementation and does not properly reflect the state of the `Styleable` object. It
 simply allows the existing implementing classes to compile without modification.
 
 To summarize, there are two important benefits to default methods:
@@ -168,49 +171,48 @@ disrupting existing implementations.
 ### Overriding a Default Method
 
 If a programmer chooses to implement a default method, they can override the behavior in the implementing
-class. In our example, let's implement `getState` in the `SuperSecret` class so it returns the actual state
+class. In our example, let's implement `getState` in the `SuperFancy` class so it returns the actual state
 of the object instead of `UNKNOWN`.
 
-1. Go to the source code for the `SuperSecret` class and make the following changes:
+1. Go to the source code for the `SuperFancy` class and make the following changes:
 
-   * Add a private instance variable of type `Encryptable.State` called `state`. 
-     This instance variable will represent the state of this `Encryptable` object.  Remember, the state can 
-     be any of the constants contained in the enumeration (`ENCRYPTED`, `UNENCRYPTED`, or `UNKNOWN`).
+   * Add a private instance variable of type `Styleable.State` called `state`. 
+     This instance variable will represent the state of this `Styleable` object.  Remember, the state can 
+     be any of the constants contained in the enumeration (`STYLED`, `UNSTYLED`, or `UNKNOWN`).
    
-   * In the constructor, set the value of the `state` instance variable to `Encryptable.State.UNENCRYPTED`.
+   * In the constructor, set the value of the `state` instance variable to `Stylable.State.UNSTYLED`.
 
-   * In the `encrypt` and `decrypt` methods, set the state of the object appropriately.
+   * In the `style` and `unstyle` methods, set the state of the object appropriately.
 
-1. Recompile **only** `SuperSecret` using `bin` as the default package for compiled code. Since we didn't
+1. Recompile **only** `SuperFancy` using `bin` as the default package for compiled code. Since we didn't
    change the other implementing classes, they don't need to be recompiled.
 
-1. Go to the source code for `SecretDriver`. In the `test` method, identify the lines that print to standard
-   output the `Encryptable` object that `e` refers to (should be three). After each line, add a `println` 
-   statement that prints the value returned by `e.getState()`. After recompiling and running the `SecretDriver`
-   class, your output should look something like the output provided below. **NOTE:** The encrypted message 
-   contents may differ slightly due to the random nature of the encryption algorithms employed.
+1. Go to the source code for `StyleDriver`. In the `test` method, identify the lines that print to standard
+   output the `Styleable` object that `s` refers to (should be three). After each line, add a `println` 
+   statement that prints the value returned by `s.getState()`. After recompiling and running the `StyleDriver`
+   class, your output should look like the output provided below. 
    
    ```
-   # Secret Test
-   Secret(Hello, world...)
+   # Fancy Test
+   Fancy(important message)
    UNKNOWN
-   Secret(©ÆÍÍÐØÐÓÍÅ)
+   Fancy(*** important message ***)
    UNKNOWN
-   Secret(Hello, world...)
+   Fancy(important message)
    UNKNOWN
-   # SuperSecret Test
-   SuperSecret(Hello, world!!!)
+   # Super Fancy Test
+   Super Fancy(important message)
    UNKNOWN
-   SuperSecret(_ŝ²ºÐ½_§ôŝ»ïú)
+   Super Fancy(*** ImPoRtAnT MeSsAgE ***)
    UNKNOWN
-   SuperSecret(Hello, world!!!)
+   Super Fancy(important message)
    UNKNOWN
-   # BasicSecret Test
-   Secret(Hello, world?)
+   # Basic Fancy Test
+   Basic Fancy(important message)
    UNKNOWN
-   Secret(Ifmmp-!xpsme@)
+   Basic Fancy(Important message)
    UNKNOWN
-   Secret(Hello, world?)
+   Basic Fancy(important message)
    UNKNOWN
    ```
 
@@ -218,77 +220,73 @@ of the object instead of `UNKNOWN`.
    being printed as `UNKNOWN`.
    
 1. We can now change the behavior of `getState` in any new or existing implementing class, as needed. As an
-   example, override the `getState` default method of the `Encryptable` interface in the `SuperSecret` class 
-   by adding the following code to `SuperSecret`:
+   example, override the `getState` default method of the `Styleable` interface in the `SuperFancy` class 
+   by adding the following code to `SuperFancy`:
 
    ```java
    @Override
-   public Encryptable.State getState() {
+   public Styleable.State getState() {
       return this.state;
    } // getState
    ```
 
-1. Notice that the signature of the `getState` method in `SuperSecret` matches the signature of the default
-   method in the `Encryptable` interface, except the `default` keyword is omitted. To have the compiler
+1. Notice that the signature of the `getState` method in `SuperFancy` matches the signature of the default
+   method in the `Styleable` interface, except the `default` keyword is omitted. To have the compiler
    verify that the signatures match, we added the `@Override` annotation. If we make a mistake when typing 
    the method signature, the compiler will let us know that the signatures do not match.
    
-1. Try it. Change the method name to `getStat` (instead of `getState`) in `SuperSecret`.  You will see
-   the following error message indicating that the method does not override a method of `Encryptable`:
+1. Try it. Change the method name to `getStat` (instead of `getState`) in `SuperFancy`.  You will see
+   the following error message indicating that the method does not override a method of `Styleable`:
    
    ```
-   src/cs1302/interfaces/impl/SuperSecret.java:61: error: method does not override or implement a method from a supertype
-       @Override
-       ^
+   src/cs1302/interfaces/impl/SuperFancy.java:37: error: method does not override or implement a method from a supertype
+   @Override
+   ^
    ```
 
-   If the annotation were omitted, the `SuperSecret` class would have compiled but would contain two separate
+   If the annotation were omitted, the `SuperFancy` class would have compiled but would contain two separate
    methods: `getStat` and `getState`.  Calling `getState` would return `UNKNOWN` and calling `getStat` would
    return the state of the calling object. In general, this is a difficult mistake to catch without compiler
    assistance. Therefore, the use of the `@Override` annotation, although not required, is always recommended 
    when your intent is to override.
    
-1. Change `getStat` back to `getState` and recompile your `SuperSecret` class. If done properly, the `SuperSecret`
+1. Change `getStat` back to `getState` and recompile your `SuperFancy` class. If done properly, the `SuperFancy`
    class should now compile.
 
-1. Rerun the `SecretDriver` class. Since we haven't made any modifications to this class since we last compiled it,
+1. Rerun the `StyleDriver` class. Since we haven't made any modifications to this class since we last compiled it,
    recompilation isn't necessary. Your output should look something like the output provided below. 
    
    ```
-   # Secret Test
-   Secret(Hello, world...)
+   # Fancy Test
+   Fancy(important message)
    UNKNOWN
-   Secret(©ÆÍÍÐØÐÓÍÅ)
+   Fancy(*** important message ***)
    UNKNOWN
-   Secret(Hello, world...)
+   Fancy(important message)
    UNKNOWN
-   # SuperSecret Test
-   SuperSecret(Hello, world!!!)
-   UNENCRYPTED
-   SuperSecret(_ŝ²ºÐ½_§ôŝ»ïú)
-   ENCRYPTED
-   SuperSecret(Hello, world!!!)
-   UNENCRYPTED
-   # BasicSecret Test
-   Secret(Hello, world?)
+   # Super Fancy Test
+   Super Fancy(important message)
+   UNSTYLED
+   Super Fancy(*** ImPoRtAnT MeSsAgE ***)
+   STYLED
+   Super Fancy(important message)
+   UNSTYLED
+   # Basic Fancy Test
+   Basic Fancy(important message)
    UNKNOWN
-   Secret(Ifmmp-!xpsme@)
+   Basic Fancy(Important message)
    UNKNOWN
-   Secret(Hello, world?)
+   Basic Fancy(important message)
    UNKNOWN
    ```
    
-   Notice the output related to `SuperSecret`.  Compare that to the output related to `Secret` and `BasicSecret`.
+   Notice the output related to `SuperFancy`.  Compare that to the output related to `Fancy` and `BasicFancy`.
    
 That's it!  You've completed the default methods tutorial.  Hopefully, you've recognized some of the pros and cons
 related to the different strategies for involving an interface. In some scenarios, it may be appropriate to add
 more abstact methods to an interface at the cost of modifying existing implementing classes. In other scenarios,
 it may be more appropriate (or even necessary) to add default methods at the cost of providing only a general 
 implementation to the existing implementing classes. Other scenarios may necessitate a mix of both approaches. 
-
-### References
-
-* [[1] Lewis, DePasquale, and Chase. _Java Foundations_. Fourth Edition.](https://www.pearson.com/us/higher-education/program/Lewis-Java-Foundations-Introduction-to-Program-Design-and-Data-Structures-4th-Edition/PGM76634.html)
 
 <hr/>
 
