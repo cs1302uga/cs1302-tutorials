@@ -43,6 +43,6 @@ public class BasicFancy implements Styleable {
         } else {
             content = message;
         } // if
-        return String.format("Fancy(%s)", content);
+        return String.format("Basic Fancy(%s)", content);
     } // toString
 } // Fancy
