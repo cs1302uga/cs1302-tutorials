@@ -20,7 +20,7 @@ In order to use Apache Maven on Nike, you will need to add it to your executable
 1. To do that, add the following lines to the end of your `~/.bash_profile` file on Nike:
 
    ```
-   export MAVEN_HOME=/home/grads/mec/maven
+   export MAVEN_HOME=/usr/local/maven/apache-maven-3.6.1
    export PATH=$MAVEN_HOME/bin:$PATH
    ```
 
@@ -42,8 +42,8 @@ In order to use Apache Maven on Nike, you will need to add it to your executable
    
    ```
    Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T14:41:47-04:00)
-   Maven home: /home/grads/mec/maven
-   Java version: 1.8.0_192, vendor: Oracle Corporation, runtime: /home/grads/mec/jdk1.8.0_192/jre
+   Maven home: /usr/local/maven/apache-maven-3.6.1
+   Java version: 1.8.0_192, vendor: Oracle Corporation, runtime: /some/path/to/jdk1.8.0_192/jre
    Default locale: en_US, platform encoding: UTF-8
    OS name: "linux", version: "2.6.32-754.11.1.el6.x86_64", arch: "amd64", family: "unix"
    ```
