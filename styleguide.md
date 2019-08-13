@@ -3,8 +3,10 @@
 
 # CS1302 Code Style Guide
 
-* Guidelines
-* How to Check
+* [Guidelines](#guidelines)
+* [How to Check](#how-to-check)
+  * [Setup Checkstyle]()
+  * [Run Checkstyle]()
 
 ## Guidelines
 
