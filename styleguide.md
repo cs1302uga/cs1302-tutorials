@@ -10,6 +10,20 @@
 
 ## Guidelines
 
+### FileTabCharacter
+
+No tab characters (`\t`) are allowed in the whitespace of the source code.
+This does not include tabs in string literals. For example, the following
+snippet is okay:
+
+```java
+String s = "word1\tword2";
+```
+
+**Rationale:** 
+Developers should not need to configure the tab width of their text editors 
+in order to be able to read source code. 
+
 ## How to Check
 
 ### Setup Checkstyle
