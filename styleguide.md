@@ -26,6 +26,14 @@ same file in different ways, depending on the tab width configured for the
 given editor. Developers should not need to configure the tab width of their 
 text editors in order to be able to read source code. 
 
+### LineLength
+
+
+
+### OuterTypeFilename
+
+
+
 ## How to Check
 
 ### Setup Checkstyle
