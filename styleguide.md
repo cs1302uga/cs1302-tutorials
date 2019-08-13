@@ -4,6 +4,7 @@
 # CS1302 Code Style Guide
 
 1. [Guidelines](#guidelines)
+1. [Recommended Emacs Configuration]()
 1. [How to Check](#how-to-check)
    1. [Setup Checkstyle](#setup-checkstyle)
    1. [Run Checkstyle](#run-checkstyle)
@@ -24,7 +25,7 @@ String s = "word1\tword2";
 Use of tabs instead of spaces may result in different text editors displaying
 same file in different ways, depending on the tab width configured for the
 given editor. Developers should not need to configure the tab width of their 
-text editors in order to be able to read source code. 
+text editors in order to be able to read source code.
 
 ### LineLength
 
@@ -33,6 +34,8 @@ text editors in order to be able to read source code.
 ### OuterTypeFilename
 
 
+
+## Recommended Emacs Configuration
 
 ## How to Check
 
