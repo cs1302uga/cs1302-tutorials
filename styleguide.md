@@ -3,7 +3,16 @@
 
 # CS1302 Code Style Guide
 
-## 
+* Guidelines
+* How to Check
+
+## Guidelines
+
+## How to Check
+
+### Setup Checkstyle
+
+### Run Checkstyle
 
 <hr/>
 
