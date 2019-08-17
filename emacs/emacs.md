@@ -6,6 +6,18 @@
 
 ## Table of Contents
 
+1. [Control and Meta](#control-and-meta)
+1. [Built-in Emacs Tutorial](#built-in-emacs-tutorial)
+1. [Open / Create File](#open--create-file)
+1. [Basic Commands](#basic-commands)
+   1. [Open, Save, and Exit](#open-save-and-exit)
+   1. [Cancel](#cancel)
+   1. [Navigation](#navigation)
+   1. [Delete](#delete)
+   1. [Undo](#undo)
+   1. [Selections and Copy / Paste](#selections-and-copy--paste)
+   1. [Splitting the Screen](#splitting-the-screen)
+
 ## Control and Meta
 
 Throughout this tutorial we will use `C` to refer to the control key (`CTRL`)
