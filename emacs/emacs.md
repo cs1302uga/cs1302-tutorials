@@ -19,6 +19,7 @@
    1. [Search and Replace](#search-and-replace)
    1. [Splitting the Screen](#splitting-the-screen)
 1. [Make Emacs Your Default Editor](#make-emacs-your-default-editor)
+!. [Customize Emacs](#customize-emacs)
 
 ## Control and Meta
 
