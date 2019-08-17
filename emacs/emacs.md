@@ -50,6 +50,13 @@ save it, usually using `C-x C-s`.
 | `C-x C-c` | Close/Exit Emacs                                                       |
 | `C-x C-f` | Open/Find file                                                         |
 | `C-x C-s` | Save current window / buffer                                           |
+
+### Cancel
+
+To cancel a partially typed command (e.g., when you mistype), use `C-g`. 
+
+| Binding   | Action                                                                 |
+|-----------|------------------------------------------------------------------------|
 | `C-g`     | Quit/cancel a partially typed command                                  |
 
 ### Navigation
@@ -73,6 +80,18 @@ the keyboard, the more productive you can be when programming.
 | `M-v`     | Move up one page                                                       |
 | `C-l`     | Scroll to make the current line appear in the center, bottom, then top |
 
+### Undo
+
+If you want to undo some recent changes, then use `C-_` where `_` is the underscore.
+On most system, this means holding the `CTRL`, `SHIFT`, and `-` keys at the same 
+time. Using `C-_` one undoes one batch of changes. If you hold it down, then it
+will keep undoing.
+
+| Binding   | Action                                                                 |
+|-----------|------------------------------------------------------------------------|
+| `C-x u`   | Undo one batch of changes--usually, one command worth                  |
+| `C-_`     | Undo one batch of changes--usually, one command worth                  |
+
 ### Selections and Copy / Paste
 
 In Emacs, the term _kill buffer_ refers to clipboard memory.
@@ -91,6 +110,11 @@ the selection into the kill buffer. To paste, navigate to where you want to past
 then yank the text from the kill buffer. 
 
 ## Splitting the Screen
+
+Emacs makes it easy to split your screen, enabling you to move, copy, paste, etc.
+between multiple files with ease. 
+
+
 
 <hr/>
 
