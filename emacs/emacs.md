@@ -125,12 +125,13 @@ about splitting the _current buffer_.
 | `C-x 2`   | Split buffer horizontally (i.e., one stacked on top the other)         |
 | `C-x 3`   | Split buffer vertically (i.e., side-by-side)                           |
 | `C-x o`   | Navigate to an(o)ther buffer                                           |
-
-### Other Useful Commands
-
-| Binding   | Action                                                                 |
-|-----------|------------------------------------------------------------------------|
 | `C-x C-b` | List available buffers                                                 |
+
+To open a file in another buffer, navigate to that buffer then use `C-x C-f` to
+find and open your desired file. If you previously openned the file, then it's
+likely still available. In that case, use `C-x C-b` to list the available buffers,
+navigate to the text for the file's name, then type `RET` to replace the current
+buffer area with the desired buffer.  
 
 <hr/>
 
