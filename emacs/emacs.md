@@ -228,6 +228,9 @@ Emacs can be heavily customized. If you look up or are provided with custom
 Emacs configurations, the usual place to put them is in your `~/.emacs` file.
 You can create it if it does not exist.
 
+Some suggested Emacs custom configurations can be found in the 
+[CS1302 Code Style Guide](https://github.com/cs1302uga/cs1302-styleguide).
+
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
