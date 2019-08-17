@@ -18,6 +18,11 @@ to use `OPT` as `M`.
 | `C` | Control | `CTRL`              |
 | `M` | Meta    | `ESC`, `ALT`, `OPT` |
 
+## Emacs Tutorial
+
+**Learn by doing.** The tutorial can be reached by launching Emacs using the 
+`emacs` command, then typing `C-h t`. That is, type `C-h`, then type `t`.
+
 ## Open / Create File
 
 To **open a file** called `src/cs1302/Test.java` in Emacs, you can execute the
@@ -36,6 +41,48 @@ the bottom of the screen. The new file does not actually exist until you
 save it, usually using `C-x C-s`.
 
 ## Basic Commands
+
+### Open, Save, and Exit
+
+| Binding   | Action                                                                 |
+|-----------|------------------------------------------------------------------------|
+| `C-x C-c` | Close/Exit Emacs                                                            |
+| `C-x C-f` | Open/Find file                                                         |
+| `C-x C-s` | Save current window / buffer                                           |
+| `C-g`     | Quit/cancel a partially typed command                                  |
+
+### Navigation
+
+| Binding   | Action                                                                 |
+|-----------|------------------------------------------------------------------------|
+| `C-b`     | Move back/left one character                                           |
+| `M-b`     | Move back/left one word                                                |
+| `C-f`     | Move forward one character                                             |
+| `M-f`     | Move forward one word                                                  |
+| `C-p`     | Move to previous line                                                  |
+| `C-n`     | Move to next line                                                      |
+| `C-v`     | Move down one page                                                     |
+| `C-a`     | Move to the beginning of the current line                              |
+| `C-e`     | Move to the end of the current line                                    |
+| `M-v`     | Move up one page                                                       |
+| `C-l`     | Scroll to make the current line appear in the center, bottom, then top |
+
+### Selections and Copy / Paste
+
+In Emacs, the term _kill buffer_ refers to clipboard memory.
+
+| Binding   | Action                                                                 |
+|-----------|------------------------------------------------------------------------|
+| `C-<SPC>` | Set the mark point (i.e., start a selection)                           |
+| `C-k`     | Kill / Cut the current line (goes into kill buffer)                    |
+| `C-w`     | Cut selection (goes into kill buffer)                                  |
+| `M-w`     | Copy selection (goes into kill buffer)                                 |
+| `C-y`     | Paste / Yank (from kill buffer)                                        |
+
+Use `C-<SPC>` to start your selection, then navigate to where you want the selection
+to end. Once your text is selected, use one of the other key bindings to cut or copy
+the selection into the kill buffer. To paste, navigate to where you want to paste, 
+then yank the text from the kill buffer. 
 
 ## Splitting the Screen
 
