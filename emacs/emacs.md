@@ -20,7 +20,7 @@ to use `OPT` as `M`.
 
 ## Open / Create File
 
-To open a file caled `src/cs1302/Test.java` in Emacs, you can execute the
+To open a file called `src/cs1302/Test.java` in Emacs, you can execute the
 following command:
 
 ```
