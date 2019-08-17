@@ -143,7 +143,7 @@ between multiple files with ease.
 
 ![Split Screen in Emacs](split.PNG)
 
-In Emacs, each window is called a buffer. When we talk about splitting, we talk
+In Emacs, each window is called a _buffer_. When we talk about splitting, we talk
 about splitting the _current buffer_. When multiple buffers are displayed,
 Emacs places the text cursor in the current buffer and usually highlights
 the area containing the buffer's name.
