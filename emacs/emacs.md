@@ -219,10 +219,14 @@ the default text editor is `vi` or `vim`. You can change this by setting the
 export EDITOR=emacs
 ```
 
-The changes won't take effect until either your next login or until run the
+The changes won't take effect until either your next login or until you run the
 `source` command on `~/.bash_profile`.
 
 ## Customize Emacs
+
+Emacs can be heavily customized. If you look up or are provided with custom
+Emacs configurations, the usual place to put them is in your `~/.emacs` file.
+You can create it if it does not exist.
 
 <hr/>
 
