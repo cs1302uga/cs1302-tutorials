@@ -17,6 +17,7 @@
    1. [Undo](#undo)
    1. [Selections and Copy / Paste](#selections-and-copy--paste)
    1. [Splitting the Screen](#splitting-the-screen)
+1. [Make Emacs Your Default Editor](#make-emacs-your-default-editor)
 
 ## Control and Meta
 
