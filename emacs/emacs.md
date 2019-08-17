@@ -31,6 +31,25 @@ to use `OPT` as `M`.
 | `C` | Control | `CTRL`              |
 | `M` | Meta    | `ESC`, `ALT`, `OPT` |
 
+Emacs commands are recognized by their _key bindings_, which is just a fancy
+way of saying keyboard shortcuts. To use Emacs commands effectively, you need
+to understand how to read their associated key bindings so that you can
+successfully make the appropriate keystrokes. In the table below, we'll use
+`KEY(key)` to denote that you should press `key` while holding `KEY` and `(key)`
+to denote that `key` should be pressed without any kind of modifier key.
+
+| Command        | Binding   | Alternative | Keystrokes     |
+|----------------|-----------|-------------|----------------|
+| Open/Find File | `C-x C-f` | `C-xf`      | `CTRL(x, f)`   |
+| Emacs tutorial | `C-h t`   |             | `CTRL(h), (t)` |
+
+If a binding has consecutive occurances of either the `C` or `M` modifier keys, 
+then there is no need to release the modifer key between those occurances. This 
+can be seen in the first example, where both of the following keystroke sequences
+result in `C-x C-f`:
+* `CTRL(x), CTRL(f)`
+* `CTRL(x, f)`
+
 ## Built-in Emacs Tutorial
 
 **Learn by doing.** Emacs comes with a built-in, interactive turorial. It can be 
@@ -58,7 +77,7 @@ save it, usually using `C-x C-s`.
 
 ### Open, Save, and Exit
 
-
+All of these commands start with a `C-x` prefix.
 
 | Binding   | Action                                                                 |
 |-----------|------------------------------------------------------------------------|
@@ -139,6 +158,8 @@ then yank the text from the kill buffer.
 | `C-w`     | Cut selection (goes into kill buffer)                                  |
 | `M-w`     | Copy selection (goes into kill buffer)                                 |
 | `C-y`     | Paste / Yank (from kill buffer)                                        |
+
+### Search and Replace
 
 ### Splitting the Screen
 
