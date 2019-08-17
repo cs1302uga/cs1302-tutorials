@@ -100,7 +100,7 @@ will keep undoing.
 
 | Binding   | Action                                                                 |
 |-----------|------------------------------------------------------------------------|
-| `C-x u`   | Undo one batch of changes--usually, one character worth                |
+| `C-x u`   | Undo one batch of changes--usually, one command worth                  |
 | `C-_`     | Undo one batch of changes--usually, one command worth                  |
 
 ### Selections and Copy / Paste
