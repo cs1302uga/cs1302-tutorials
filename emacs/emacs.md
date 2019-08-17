@@ -109,12 +109,28 @@ to end. Once your text is selected, use one of the other key bindings to cut or 
 the selection into the kill buffer. To paste, navigate to where you want to paste, 
 then yank the text from the kill buffer. 
 
-## Splitting the Screen
+### Splitting the Screen
 
 Emacs makes it easy to split your screen, enabling you to move, copy, paste, etc.
 between multiple files with ease. 
 
+![Split Screen in Emacs](split.PNG)
 
+In Emacs, each window is called a buffer. When we talk about splitting, we talk
+about splitting the _current buffer_. 
+
+| Binding   | Action                                                                 |
+|-----------|------------------------------------------------------------------------|
+| `C-x 1`   | Maximize current buffer                                                |
+| `C-x 2`   | Split buffer horizontally (i.e., one stacked on top the other)         |
+| `C-x 3`   | Split buffer vertically (i.e., side-by-side)                           |
+| `C-x o`   | Navigate to an(o)ther buffer                                           |
+
+### Other Useful Commands
+
+| Binding   | Action                                                                 |
+|-----------|------------------------------------------------------------------------|
+| `C-x C-b` | List available buffers                                                 |
 
 <hr/>
 
