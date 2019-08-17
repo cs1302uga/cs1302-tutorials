@@ -116,6 +116,7 @@ the keyboard, the more productive you can be when programming.
 | `C-v`     | Move down one page                                                     |
 | `M-v`     | Move up one page                                                       |
 | `C-l`     | Scroll to make the current line appear in the center, bottom, then top |
+| `M-g M-g` | Go to line (enter number at prompt, then press `RET`)                  |
 
 ### Delete
 
