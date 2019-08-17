@@ -80,6 +80,17 @@ the keyboard, the more productive you can be when programming.
 | `M-v`     | Move up one page                                                       |
 | `C-l`     | Scroll to make the current line appear in the center, bottom, then top |
 
+### Delete
+
+In Emacs, you can forward and backward delete single characters and forward 
+delete words.
+
+| Binding   | Action                                                                 |
+|-----------|------------------------------------------------------------------------|
+| `C-h`     | Backward delete a single character (similar to the backspace key)      |
+| `C-d`     | Forward delete a single character (similar to the delete key)          |
+| `M-d`     | Forward delete a word                                                  |
+
 ### Undo
 
 If you want to undo some recent changes, then use `C-_` where `_` is the underscore.
@@ -89,7 +100,7 @@ will keep undoing.
 
 | Binding   | Action                                                                 |
 |-----------|------------------------------------------------------------------------|
-| `C-x u`   | Undo one batch of changes--usually, one command worth                  |
+| `C-x u`   | Undo one batch of changes--usually, one character worth                |
 | `C-_`     | Undo one batch of changes--usually, one command worth                  |
 
 ### Selections and Copy / Paste
