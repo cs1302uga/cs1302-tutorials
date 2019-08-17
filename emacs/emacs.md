@@ -20,7 +20,7 @@ to use `OPT` as `M`.
 
 ## Open / Create File
 
-To open a file called `src/cs1302/Test.java` in Emacs, you can execute the
+To **open a file** called `src/cs1302/Test.java` in Emacs, you can execute the
 following command:
 
 ```
@@ -30,7 +30,7 @@ $ emacs src/cs1302/Test.java
 Alternatively, you can simply execute `emacs`, then use `C-x C-f` to find the
 file you're trying to open.
 
-To create a file, use one of the methods just desribed with your desired
+To **create a file**, use one of the methods just desribed with your desired
 filename. When you create a new file, Emacs will display `(New file)` at 
 the bottom of the screen. The new file does not actually exist until you
 save it, usually using `C-x C-s`.
