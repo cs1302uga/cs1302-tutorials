@@ -57,6 +57,8 @@ save it, usually using `C-x C-s`.
 
 ### Open, Save, and Exit
 
+
+
 | Binding   | Action                                                                 |
 |-----------|------------------------------------------------------------------------|
 | `C-x C-c` | Close/Exit Emacs                                                       |
@@ -164,6 +166,23 @@ navigate to the text for the file's name, then type `RET` to replace the current
 buffer area with the desired buffer.
 
 When you save using `C-x C-s`, only the current buffer is saved.
+
+## Make Emacs Your Default Editor
+
+Some Unix programs recognize that they do not need to reinvent the wheel when a use
+case is encountered where multi-line text entry is required. Instead of handling
+the text entry themselves, they invoke your default text editor. On most systems,
+the default text editor is `vi` or `vim`. You can change this by setting the 
+`EDITOR` environmental variable in your `~/.bash_profile` file. 
+
+```
+export EDITOR=emacs
+```
+
+The changes won't take effect until either your next login or until run the
+`source` command on `~/.bash_profile`.
+
+## Customize Emacs
 
 <hr/>
 
