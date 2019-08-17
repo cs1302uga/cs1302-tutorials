@@ -106,7 +106,7 @@ delete words.
 ### Undo
 
 If you want to undo some recent changes, then use `C-_` where `_` is the underscore.
-On most system, this means holding the `CTRL`, `SHIFT`, and `-` keys at the same 
+On most systems, this means holding the `CTRL`, `SHIFT`, and `-` keys at the same 
 time. Using `C-_` one undoes one batch of changes. If you hold it down, then it
 will keep undoing.
 
