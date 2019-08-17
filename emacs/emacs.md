@@ -47,12 +47,17 @@ save it, usually using `C-x C-s`.
 
 | Binding   | Action                                                                 |
 |-----------|------------------------------------------------------------------------|
-| `C-x C-c` | Close/Exit Emacs                                                            |
+| `C-x C-c` | Close/Exit Emacs                                                       |
 | `C-x C-f` | Open/Find file                                                         |
 | `C-x C-s` | Save current window / buffer                                           |
 | `C-g`     | Quit/cancel a partially typed command                                  |
 
 ### Navigation
+
+In Emacs, there are special key bindings for navigation that can (and should) be
+used instead of the standard arrow keys so that your hands rarely have a need to
+leave the main part of the keyboard. The more time you spend in the main area of
+the keyboard, the more productive you can be when programming. 
 
 | Binding   | Action                                                                 |
 |-----------|------------------------------------------------------------------------|
