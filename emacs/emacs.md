@@ -16,6 +16,7 @@
    1. [Delete](#delete)
    1. [Undo](#undo)
    1. [Selections and Copy / Paste](#selections-and-copy--paste)
+   1. [Search and Replace](#search-and-replace)
    1. [Splitting the Screen](#splitting-the-screen)
 1. [Make Emacs Your Default Editor](#make-emacs-your-default-editor)
 
@@ -160,6 +161,23 @@ then yank the text from the kill buffer.
 | `C-y`     | Paste / Yank (from kill buffer)                                        |
 
 ### Search and Replace
+
+To search for text, you can use the incremental search commands `C-s` and `C-r`,
+which differ only in their search direction. After pressing `C-s`, Emacs will
+display an `I-search:` prompt at the bottom of the screen. When prompted, type 
+the text you want to find, then press `RET`. If multiple occurances are found,
+then repeated calls to `C-s` will cycle through the occurances (`C-g` can be used
+to stop).
+
+| Binding   | Action                                                                 |
+|-----------|------------------------------------------------------------------------|
+| `C-s`     | Incremental search (forward direction)                                 |
+| `C-r`     | Incremental search (backward direction)                                |
+| `C-%`     | Query replace                                                          |
+
+On most systems, `C-%` means holding the `CTRL`, `SHIFT`, and `5` keys at the same 
+time. Using `C-%` is interactive. Pay careful attention to the prompts provided by
+Emacs as you use it. 
 
 ### Splitting the Screen
 
