@@ -74,9 +74,9 @@ the keyboard, the more productive you can be when programming.
 | `M-f`     | Move forward one word                                                  |
 | `C-p`     | Move to previous line                                                  |
 | `C-n`     | Move to next line                                                      |
-| `C-v`     | Move down one page                                                     |
 | `C-a`     | Move to the beginning of the current line                              |
 | `C-e`     | Move to the end of the current line                                    |
+| `C-v`     | Move down one page                                                     |
 | `M-v`     | Move up one page                                                       |
 | `C-l`     | Scroll to make the current line appear in the center, bottom, then top |
 
