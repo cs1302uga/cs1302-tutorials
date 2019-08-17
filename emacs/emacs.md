@@ -105,7 +105,16 @@ will keep undoing.
 
 ### Selections and Copy / Paste
 
-In Emacs, the term _kill buffer_ refers to clipboard memory.
+In Emacs, you can create or _mark_ selections and even perform operations like
+copy and paste. When referring to copying and pasting, the term _kill buffer_ refers
+to clipboard memory.
+
+![Selection in Emacs](select.PNG)
+
+Use `C-<SPC>` to start your selection, then navigate to where you want the selection
+to end. Once your text is selected, use one of the other key bindings to cut or copy
+the selection into the kill buffer. To paste, navigate to where you want to paste, 
+then yank the text from the kill buffer.
 
 | Binding   | Action                                                                 |
 |-----------|------------------------------------------------------------------------|
@@ -114,11 +123,6 @@ In Emacs, the term _kill buffer_ refers to clipboard memory.
 | `C-w`     | Cut selection (goes into kill buffer)                                  |
 | `M-w`     | Copy selection (goes into kill buffer)                                 |
 | `C-y`     | Paste / Yank (from kill buffer)                                        |
-
-Use `C-<SPC>` to start your selection, then navigate to where you want the selection
-to end. Once your text is selected, use one of the other key bindings to cut or copy
-the selection into the kill buffer. To paste, navigate to where you want to paste, 
-then yank the text from the kill buffer. 
 
 ### Splitting the Screen
 
