@@ -18,10 +18,11 @@ to use `OPT` as `M`.
 | `C` | Control | `CTRL`              |
 | `M` | Meta    | `ESC`, `ALT`, `OPT` |
 
-## Emacs Tutorial
+## Built-in Emacs Tutorial
 
-**Learn by doing.** The tutorial can be reached by launching Emacs using the 
-`emacs` command, then typing `C-h t`. That is, type `C-h`, then type `t`.
+**Learn by doing.** Emacs comes with a built-in, interactive turorial. It can be 
+reached by launching Emacs using the `emacs` command, then typing `C-h t`. 
+That is, type `C-h`, then type `t`.
 
 ## Open / Create File
 
