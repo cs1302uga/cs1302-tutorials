@@ -49,9 +49,9 @@ As seen above, the `pwd` command can be used to print out your present
 working directory. In this case, this directory is called `mary` and
 the _absolute path_ to `mary` is `/home/users/mary`. An abolsute path
 just tells us the sequence of directories that need to be traversed
-if we wanted to reach a file from the root of the filesystem. Here is
-an illustration of how the directories in the example might be
-organized:
+if we wanted to reach a file from the root of the filesystem. Any path
+that begins with `/` is an absolute path. Here is an illustration of 
+how the directories in the example might be organized:
 
 ```
 /
@@ -63,6 +63,8 @@ organized:
         └── susan
 ```
 
+If the present working directory is `mary`, then `users` is called
+the _parent directory_ and `bob` might be called a _sibling directory_.
 
 ## Useful Commands
 
