@@ -28,6 +28,25 @@ only one way to interact with a computer.
 
 ## Files and Directories
 
+When working in a shell, you are always working in some _directory_, which
+is just another word for folder. The directory that you are in is commonly
+referred to as your _current working directory_ or _present working directory_.
+In fact, the second term provides you a hint for a command that can be used
+to see where you are:
+
+```
+bash$ pwd
+/home/users/mary
+```
+
+As seen above, the `pwd` command can be used to print out your present
+working directory. In this case, this directory is called `mary` and
+the _absolute path_ to `mary` is `/home/users/mary`. An abolsute path
+just tells us the sequence of directories that need to be traversed
+if we wanted to reach a file from the root of the filesystem. 
+
+
+
 ## Useful Commands
 
 ## Input/Output Redirection and Pipes
