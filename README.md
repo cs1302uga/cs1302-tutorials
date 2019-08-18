@@ -2,7 +2,7 @@
 
 <hr/>
 
-[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/) [![DOI](https://zenodo.org/badge/164029921.svg)](https://zenodo.org/badge/latestdoi/164029921)
 
 <small>
 Copyright &copy; Michael E. Cotterell, Bradley J. Barnes, and the University of Georgia.
