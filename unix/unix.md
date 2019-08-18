@@ -2,6 +2,14 @@
 
 ![Status: Not Ready](https://img.shields.io/badge/Status-Not%20Ready-red.svg)
 
+## Files and Directories
+
+## Useful Commands
+
+## Input/Output Redirection and Pipes
+
+## Getting Help
+
 ## Manual Pages
 
 ### Understanding the Synopsis
