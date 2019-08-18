@@ -26,7 +26,7 @@ provided in operating systems like Windows, macOS, and even phones.
 However, only some realize that the windowing system they're used to is
 only one way to interact with a computer. 
 
-**NOTE:** Everyon'es shell prompt text might look a little different depending
+**NOTE:** Everyone's shell prompt text might look a little different depending
 on system type and user customizations. Therefore, we will use the convention 
 of denoting the prompt with a single `$`. Lines in this tutorial that begin with 
 a single `$`, therefore, are examples of commands that can be typed at a
