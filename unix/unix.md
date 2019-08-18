@@ -9,6 +9,12 @@
 When inspecting a manual page for a program, we're often concerned with what command-line
 options can be used to customize the behavior of the program. One of the first sections
 that will appear in a manual page is a `SYNOPSIS`, and it details this information.
+Here is an example for the `ls` command:
+
+```
+ls [OPTION]... [FILE]...
+```
+
 Here is the general form:
 
 ```
