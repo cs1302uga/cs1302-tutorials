@@ -20,6 +20,12 @@ example of what such a prompt might look like:
 bash$
 ```
 
+The shell is just another way to interact with computer. These days, all
+students are familiar with the point-and-click graphica windowing systems
+provided in operating systems like Windows, macOS, and even phones.
+However, only some realize that the windowing system they're used to is
+only one way to interact with a computer. 
+
 ## Files and Directories
 
 ## Useful Commands
