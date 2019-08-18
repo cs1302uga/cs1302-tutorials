@@ -15,14 +15,20 @@ Here is an example for the `ls` command:
 ls [OPTION]... [FILE]...
 ```
 
+This is enough information to infer that when a user executes the `ls` command, they 
+can include:
+* zero or more options (`OPTION`); and
+* zero or more files (`FILE`).
+Consider `[OPTION]...`, the square brackets (`[`, `]`) let us know that providing
+a value for `OPTION` is not required, and the `...` let us know that more than
+one `OPTION` can be provided.
+
 Here is the general form:
 
 ```
 utility_name [-a] [-b] [-c option_argument]
     [-d|-e] [-f[option_argument]] [operand...]
 ```
-
-
 
 More detailed information about how to interpret a synopsis can be found in
 [POSIX.1-2017 12.1 Utility Argument Syntax](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html#tag_12_01).
