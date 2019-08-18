@@ -2,6 +2,24 @@
 
 ![Status: Not Ready](https://img.shields.io/badge/Status-Not%20Ready-red.svg)
 
+## History
+
+Unix is a family of computer operating systems that derive from work performed
+in the 1970s at the Bell Labs research center by Ken Thompson, Dennis Ritchie, 
+and others. In this course, we use the term Unix to refer to systems that are
+Unix-like, i.e., their user interface and basic set of utilities are 
+reminiscent of a Unix system. 
+
+In Unix, the primary end-user, text-based interface to the system is a program 
+called the _shell_. This program can be usually be accessed via a 
+_terminal emulator_ if a graphical windowing system is available or directly
+otherwise. In the shell, you enter _commands_ at a _prompt_. Here is an
+example of what such a prompt might look like:
+
+```
+bash$
+```
+
 ## Files and Directories
 
 ## Useful Commands
