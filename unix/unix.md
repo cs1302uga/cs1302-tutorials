@@ -19,6 +19,7 @@ This is enough information to infer that when a user executes the `ls` command, 
 can include:
 * zero or more options (`OPTION`); and
 * zero or more files (`FILE`).
+
 Consider `[OPTION]...`, the square brackets (`[`, `]`) let us know that providing
 a value for `OPTION` is not required, and the `...` let us know that more than
 one `OPTION` can be provided.
