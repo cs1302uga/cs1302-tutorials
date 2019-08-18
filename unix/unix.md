@@ -2,6 +2,25 @@
 
 ![Status: Not Ready](https://img.shields.io/badge/Status-Not%20Ready-red.svg)
 
+## Manual Pages
+
+### Understanding the Synopsis
+
+When inspecting a manual page for a program, we're often concerned with what command-line
+options can be used to customize the behavior of the program. One of the first sections
+that will appear in a manual page is a `SYNOPSIS`, and it details this information.
+Here is the general form:
+
+```
+utility_name [-a] [-b] [-c option_argument]
+    [-d|-e] [-f[option_argument]] [operand...]
+```
+
+
+
+More detailed information about how to interpret a synopsis can be found in
+[POSIX.1-2017 12.1 Utility Argument Syntax](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html#tag_12_01).
+
 <hr/>
 
 ## References
