@@ -165,7 +165,24 @@ assumes you have logged into Nike.
    directory's absolute path to change to that location regardless
    of where you.   
    
-1. 
+1. Use `mkdir` to create a directory inside of `cs1302-unix` called `stuff`.
+   Change into it, determine its absolute path, and list its contents.
+
+1. At any point in time, you can use `cd` without any arguments to change
+   back into your home directory. Let's do that:
+   
+   ```
+   $ cd
+   ```
+   
+1. Now, let's navigate back into `stuff` using a single call to `cd`:
+
+   ```
+   $ cd cs1302-unix/stuff
+   ```
+   
+   Again, `cs1302-unix/stuff` is a relative path. Compare it to the
+   output of `pwd` to see the differences.
    
    
 ## Input/Output Redirection and Pipes
