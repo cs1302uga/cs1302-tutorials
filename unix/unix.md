@@ -66,8 +66,108 @@ how the directories in the example might be organized:
 If the present working directory is `mary`, then `users` is called
 the _parent directory_ and `bob` might be called a _sibling directory_.
 
-## Useful Commands
+## Tutorial
 
+The remainder of this document is presented in a tutorial style that
+assumes you have logged into Nike.
+
+### Useful Commands
+
+1. When you first login, you will want to see your **present working directory**,
+   i.e., where you are. To do this, use the `pwd` command:
+   
+   ```
+   $ pwd
+   ```
+   
+1. To **list the contents of the directory** you are currently in, you can
+   use the `ls` command:
+   
+   ```
+   $ ls
+   ```
+   
+1. To see more information about the files in your current directory, you
+   can enable the **long listing format** for `ls` using the `-l` option.
+   
+   ```
+   $ ls -l
+   ```
+   
+   Notice how the output is different. It should look similar to the
+   following but contain different files:
+   
+   ```
+   total 8
+   drwxr-xr-x 2 mec users 4096 Aug 19 09:26 Documents
+   -rw-r--r-- 1 mec users    6 Aug 19 09:26 README.txt
+   ```
+   
+   Consider the first file:
+   
+   * `drwxr-xr-x` denotes the mode for the file, including
+     its file type and permissions. If the first character
+     is a `d`, then the file is a directory. If it's a `-`,
+     then it's a regular file. We'll cover permissions in
+     another turorial.
+   
+   * `mec users` denotes the user and group associated with
+     the file. Think of the user as the owner of the file.
+     Think of the group as a set of users associated with
+     the file. In Unix, you can specify different permissions
+     for a file's user, group, and others.
+    
+   * `4096` for a directory denotes the metadata size
+     for a directory (and not the size of its contents). 
+     For regular files, this column denotes the number
+     of bytes contained in the file. 
+     
+   * `Aug 19 09:26` denotes the last time the file was
+     modified. 
+     
+   * `Documents` denotes the name of the file.
+
+1. To **create a new directory**, you can use the `mkdir` 
+   command:
+   
+   ```
+   $ mkdir cs1302-unix
+   ```
+   
+   If the command is successful, then it should not display
+   any output. **This is common for most utility commands.**
+   Use `ls` to confirm the directory was created. Also,
+   try to execute the same command again.
+   
+   ```
+   $ ls
+   cs1302-unix  Documents  README.txt
+   ```
+   
+   ```
+   $ mkdir cs1302-unix
+   mkdir: cannot create directory `cs1302-unix': File exists
+   ```
+   
+1. Let's navigate into different directories. To 
+   **change into a directory**, you can use the `cd` command:
+   
+   ```
+   $ cd cs1302-unix
+   ```
+   
+   In this scenario, `cs1302-unix` is a _relative path_ (as opposed
+   to an absolute path), i.e., it's relative to your present working
+   directory. 
+   
+   After changing into the directory, use `pwd` to see the
+   directory's absolute path. You can use `cd` followed by the
+   directory's absolute path to change to that location regardless
+   of where you.   
+   
+1. 
+   
+   
 ## Input/Output Redirection and Pipes
 
 ## Getting Help
