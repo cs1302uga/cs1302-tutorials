@@ -79,8 +79,8 @@ $ mkdir -p src/cs1302
 $ touch src/cs1302/Test.java
 ```
 
-Without changing directies, you can **open a file** specified by the path
-`src/cs1302/Test.java` in Emacs by executing the following command:
+Without changing directories, you can **open a file** specified by the relative 
+path `src/cs1302/Test.java` in Emacs by executing the following command:
 
 ```
 $ emacs src/cs1302/Test.java
