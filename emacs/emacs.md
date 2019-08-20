@@ -60,8 +60,18 @@ That is, type `C-h`, then type `t`.
 
 ## Open / Create File
 
-To **open a file** called `src/cs1302/Test.java` in Emacs, you can execute the
-following command:
+Let's assume that a file called `Test.java` already exists in some directory 
+under your present working directory, as seen in the figure below.
+
+```
+.
+└── src
+    └── cs1302
+        └── Test.java
+```
+
+Without changing directies, to **open a file** called `src/cs1302/Test.java` 
+in Emacs, you can execute the following command:
 
 ```
 $ emacs src/cs1302/Test.java
