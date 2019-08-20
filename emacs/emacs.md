@@ -70,8 +70,17 @@ under your present working directory, as seen in the figure below.
         └── Test.java
 ```
 
-Without changing directies, to **open a file** called `src/cs1302/Test.java` 
-in Emacs, you can execute the following command:
+To replicate this scenario with a blank `Test.java`, you might use the
+following commands to first create the subdirectories, then create
+a blank file:
+
+```
+$ mkdir -p src/cs1302
+$ touch src/cs1302/Test.java
+```
+
+Without changing directies, you can **open a file** specified by the path
+`src/cs1302/Test.java` in Emacs by executing the following command:
 
 ```
 $ emacs src/cs1302/Test.java
