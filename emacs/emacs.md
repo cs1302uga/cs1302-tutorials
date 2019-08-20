@@ -60,30 +60,29 @@ That is, type `C-h`, then type `t`.
 
 ## Open / Create File
 
-Let's assume that a file called `Test.java` already exists in some directory 
+Let's assume that a file called `NOTES.txt` already exists in some directory 
 under your present working directory, as seen in the figure below.
 
 ```
 .
-└── src
-    └── cs1302
-        └── Test.java
+└── cs1302
+    └── emacs
+        └── NOTES.txt
 ```
 
-To replicate this scenario with a blank `Test.java`, you might use the
-following commands to first create the subdirectories, then create
-a blank file:
+To replicate this scenario, you might use the following commands to first 
+create the subdirectories, then create a blank `NOTES.txt` file:
 
 ```
-$ mkdir -p src/cs1302
-$ touch src/cs1302/Test.java
+$ mkdir -p cs1302/emacs
+$ touch cs1302/emacs/NOTES.txt
 ```
 
 Without changing directories, you can **open a file** specified by the relative 
-path `src/cs1302/Test.java` in Emacs by executing the following command:
+path `cs1302/emacs/NOTES.txt` in Emacs by executing the following command:
 
 ```
-$ emacs src/cs1302/Test.java
+$ emacs cs1302/emacs/NOTES.txt
 ```
 
 Alternatively, you can simply execute `emacs`, then use `C-x C-f` to find the
