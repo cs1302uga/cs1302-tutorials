@@ -122,36 +122,38 @@ assumes you have logged into Nike.
    $ ls -l
    ```
    
-   Notice how the output is different. It 
+   Notice how the output is different from that of a simple call to `ls`. 
+   It should be similar to the following:
+   
    ```
    total 8
-   drwxr-xr-x 2 mec users 4096 Aug 19 09:26 Documents
-   -rw-r--r-- 1 mec users    6 Aug 19 09:26 README.txt
+   drwxr-xr-x 4 mec users 4096 Aug 21 16:25 notes
+   -rw-r--r-- 1 mec users    9 Aug 21 16:25 README.md
    ```
    
-   Consider the first file:
+   Let's break down this output:
    
-   * `drwxr-xr-x` denotes the mode for the file, including
-     its file type and permissions. If the first character
-     is a `d`, then the file is a directory. If it's a `-`,
-     then it's a regular file. We'll cover permissions in
-     another turorial.
+   | Type | Permissions | Link Count | User  | Group   | Size   | Timestamp      | Filename    |
+   |------|-------------|------------|-------|---------|--------|----------------|-------------|
+   | `d`  | `rwxr-xr-x` | `4`        | `mec` | `users` | `4096` | `Aug 21 16:25` | `notes`     |
+   | `-`  | `rw-r--r--` | `1`        | `mec` | `users` | `9`    | `Aug 21 16:25` | `README.md` |
    
-   * `mec users` denotes the user and group associated with
-     the file. Think of the user as the owner of the file.
-     Think of the group as a set of users associated with
-     the file. In Unix, you can specify different permissions
-     for a file's user, group, and others.
-    
-   * `4096` for a directory denotes the metadata size
-     for a directory (and not the size of its contents). 
-     For regular files, this column denotes the number
-     of bytes contained in the file. 
-     
-   * `Aug 19 09:26` denotes the last time the file was
-     modified. 
-     
-   * `Documents` denotes the name of the file.
+   We won't explicitly cover link count here, but here is information about each of 
+   the other parts:
+   
+   * __Type:__
+   
+   * __Permissions:__
+   
+   * __User:__
+   
+   * __Group:__
+   
+   * __Size:__
+   
+   * __Timestamp:__
+   
+   *
 
 1. To **create a new directory**, you can use the `mkdir` 
    command:
