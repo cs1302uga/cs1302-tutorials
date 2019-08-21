@@ -1,5 +1,7 @@
 # Java Packages Tutorial
 
+![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+
 ## Prerequisites
 
 This tutorial assumes that the reader has a knowledge of basic Unix commands and experience working with a command-line text editor (e.g. emacs, vi, etc.). To get the most out of this tutorial, you should follow along and take notes.
