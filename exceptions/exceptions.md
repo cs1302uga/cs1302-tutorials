@@ -1,6 +1,8 @@
 
 # Exceptions
 
+![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+
 ## Prerequisites
 
 This tutorial assumes that the reader has a knowledge of basic Unix commands and experience working 
