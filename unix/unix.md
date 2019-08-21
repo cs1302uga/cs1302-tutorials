@@ -141,18 +141,27 @@ assumes you have logged into Nike.
    We won't explicitly cover link count here, but here is information about each of 
    the other parts:
    
-   * __Type:__ 
+   * __Type:__ In Unix, directories contain files. Some of these are are _regular files_, which
+     are denoted with a `-` in this spot, while others are _directory files_, which are denoted
+     with a `d`. A regular file is what you would normally think of as a file 
+     (e.g., `mp3`, `zip`, `doc`, etc.), regardless of the file extension. Most Unix systems
+     support other types of files, but most users only directly interact with regular and
+     directory files on a regular basis.
    
    * __Permissions:__
    
-   * __User:__
+   * __User:__ User who own's the file. In your output, this should match your Nike username. 
+     Certain permissions only apply to the file's user.
    
-   * __Group:__
+   * __Group:__ Group associated with the file. In your output, this should be whatever group
+     you are a member of on the system (e.g., `ugrads`). Certain permissions only apply to users
+     in the file's group.
    
    * __Size:__ Size of the file, in bytes. If you want to see more friendly units (e.g., `MB`, `GB`, etc.),
      then use the `-h` option in addition to `-l` (or combine them as `-lh`).
    
-   * __Timestamp:__
+   * __Timestamp:__ Time when the file was last modified. If the file hasn't been modified since it was
+     created, then this denotes the creation time.
 
 1. To **create a new directory**, you can use the `mkdir` 
    command:
