@@ -145,10 +145,11 @@ assumes you have logged into Nike.
      are denoted with a `-` in this spot, while others are _directory files_, which are denoted
      with a `d`. A regular file is what you would normally think of as a file 
      (e.g., `mp3`, `zip`, `doc`, etc.), regardless of the file extension. Most Unix systems
-     support other types of files, but most users only directly interact with regular and
+     support other types of files, however, users only directly interact with regular and
      directory files on a regular basis.
    
-   * __Permissions:__
+   * __Permissions:__ Read, write, and execute permissions for user, group, and others. We'll
+     cover permissions in detail in a future tutorial.
    
    * __User:__ User who own's the file. In your output, this should match your Nike username. 
      Certain permissions only apply to the file's user.
