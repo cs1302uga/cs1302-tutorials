@@ -141,7 +141,7 @@ assumes you have logged into Nike.
    We won't explicitly cover link count here, but here is information about each of 
    the other parts:
    
-   * __Type:__
+   * __Type:__ 
    
    * __Permissions:__
    
@@ -149,11 +149,10 @@ assumes you have logged into Nike.
    
    * __Group:__
    
-   * __Size:__
+   * __Size:__ Size of the file, in bytes. If you want to see more friendly units (e.g., `MB`, `GB`, etc.),
+     then use the `-h` option in addition to `-l` (or combine them as `-lh`).
    
    * __Timestamp:__
-   
-   *
 
 1. To **create a new directory**, you can use the `mkdir` 
    command:
@@ -176,9 +175,7 @@ assumes you have logged into Nike.
    $ mkdir cs1302-unix
    mkdir: cannot create directory `cs1302-unix': File exists
    ```
-   
 
-   
 1. Use `mkdir` to create a directory inside of `cs1302-unix` called `stuff`.
    Change into it, determine its absolute path, and list its contents.
 
