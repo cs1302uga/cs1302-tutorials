@@ -87,6 +87,34 @@ assumes you have logged into Nike.
    $ ls
    ```
    
+
+   
+1. Now, use the following command to download and execute a shell script that 
+   retrieves some files used for this tutorial and places them into a subdirectory 
+   called `cs1302-unix`:
+
+   ```
+   $ curl -s -L https://git.io/fjbdg | bash
+   ```
+   
+   Use `ls` confirm the `cs1302-unix` directory was created.
+   
+1. Let's navigate around. To **change into a directory**, 
+   you can use the `cd` command:
+   
+   ```
+   $ cd cs1302-unix
+   ```
+   
+   In this scenario, `cs1302-unix` is a _relative path_ (as opposed
+   to an absolute path), i.e., it's relative to your present working
+   directory. 
+   
+   After changing into the directory, use `pwd` to see the
+   directory's absolute path. You can use `cd` followed by the
+   directory's absolute path to change to that location regardless
+   of where you.   
+
 1. To see more information about the files in your current directory, you
    can enable the **long listing format** for `ls` using the `-l` option.
    
@@ -94,9 +122,7 @@ assumes you have logged into Nike.
    $ ls -l
    ```
    
-   Notice how the output is different. It should look similar to the
-   following but contain different files:
-   
+   Notice how the output is different. It 
    ```
    total 8
    drwxr-xr-x 2 mec users 4096 Aug 19 09:26 Documents
@@ -149,21 +175,7 @@ assumes you have logged into Nike.
    mkdir: cannot create directory `cs1302-unix': File exists
    ```
    
-1. Let's navigate into different directories. To 
-   **change into a directory**, you can use the `cd` command:
-   
-   ```
-   $ cd cs1302-unix
-   ```
-   
-   In this scenario, `cs1302-unix` is a _relative path_ (as opposed
-   to an absolute path), i.e., it's relative to your present working
-   directory. 
-   
-   After changing into the directory, use `pwd` to see the
-   directory's absolute path. You can use `cd` followed by the
-   directory's absolute path to change to that location regardless
-   of where you.   
+
    
 1. Use `mkdir` to create a directory inside of `cs1302-unix` called `stuff`.
    Change into it, determine its absolute path, and list its contents.
