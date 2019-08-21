@@ -79,7 +79,10 @@ to proceed with execution without prompting the user for input. Let's try it!
    $ java -cp bin cs1302.cla.ArgTester --string "my \"awesome\" day"
    ```
    
-
+2. That's it! The rest is purely in the realm of code. We've shown you how command-line
+   arguments are passed into a Java program (i.e., via the `args` array). Now, experiment
+   by adding some command-line options to your own options.
+   
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
