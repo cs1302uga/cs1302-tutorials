@@ -1,6 +1,6 @@
 # Command-Line Arguments
 
-![Status: Not Ready](https://img.shields.io/badge/Status-Not%20Ready-red.svg)
+![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
 
 Many of the programs that you've interacted with on Unix supported extra options
 and/or required extra information when you entered their commands at the terminal
