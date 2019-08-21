@@ -42,9 +42,43 @@ to proceed with execution without prompting the user for input. Let's try it!
    arguments:
    ```
    
-   As you can see, no iterations of the for-loop executed. This is because 
+   As you can see, no iterations of the for-loop executed. This is expected.  
    
-1. As you can 
+1. Now try the following command:
+
+   ```
+   $ java -cp bin cs1302.cla.ArgTester one two three
+   ```
+   
+   What happened? It looks like the for-loop iterated. The array referred to by `args` is not
+   empty. That's right, we've actually used the `args` array for something! Here's the
+   expected output:
+   
+   ```
+   arguments:
+   arg0 = one
+   arg1 = two
+   arg2 = three
+   ```
+   
+   In Java, the `args` array of a standard `main` method is used to capture command-line
+   arguments and make them available to the program.
+   
+1. Now that we see how to access, the command-line arguments in our code, let's see how
+   different command-line arguments are parsed. Try the following commands:
+   
+   ```
+   $ java -cp bin cs1302.cla.ArgTester "one two" three
+   ```
+   
+   ```
+   $ java -cp bin cs1302.cla.ArgTester --help "some topic"
+   ```
+   
+   ```
+   $ java -cp bin cs1302.cla.ArgTester --string "my \"awesome\" day"
+   ```
+   
 
 <hr/>
 
