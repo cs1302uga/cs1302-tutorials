@@ -14,7 +14,7 @@ you should follow along and take notes.
 ## Table of Contents
 
 * [Definition](#definition)
-* [Avioiding Exceptions](#avoiding-exceptions)
+* [Avoiding Exceptions](#avoiding-exceptions)
 * [Handling Exceptions](#handling-exceptions)
 * [Checked vs. Unchecked Exceptions](#checked-vs-unchecked-exceptions)
 * [Identifying Checked vs. Unchecked Exceptions](#identifying-checked-vs-unchecked-exceptions)
