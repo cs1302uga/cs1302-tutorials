@@ -11,7 +11,7 @@ $ javac -d bin -cp bin src/cs1302/example/Hello.java
 ```
 
 The text that is entered immediately following `java`, in the exampe above, is
-passed into the program as __command-line arguments__. This allows the program
+passed into the program as __command-line arguments__. This allows the `java` program
 to proceed with execution without prompting the user for input. Let's try it!
 
 1. Create a directory for this tutorial called `cs1302-cla`, then change into it.
@@ -31,6 +31,10 @@ to proceed with execution without prompting the user for input. Let's try it!
    } // main
    ```
    
+1. Take a few minutes to carefully read through the code above. Try and understand what it's doing.
+   Note: Up until this point, you've always typed `String[] args` as a parameter to `main` but you've
+   never used it. That parameter is a reference to an array of command-line arguments.
+
 1. Compile the `ArgTester` class, specifying `bin` as the _default package for compiled code_.
 
 1. Run `cs1302.cla.ArgTester` as usual using the `java` command. Here is what the command looks
@@ -42,7 +46,8 @@ to proceed with execution without prompting the user for input. Let's try it!
    arguments:
    ```
    
-   As you can see, no iterations of the for-loop executed. This is expected.  
+   As you can see, no iterations of the for-loop executed. This is expected as the `args` array would
+   be empty in this scenario (there are no command-line arguments provided).  
    
 1. Now try the following command:
 
