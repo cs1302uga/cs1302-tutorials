@@ -165,7 +165,7 @@ assumes you have logged into Nike.
      created, then this denotes the creation time.
 
 1. To **list recursively**, i.e., list the contents of all directories under a particular path, 
-   you can use the `ls` with the `-R` option:
+   you can use the `ls` command with the `-R` option:
    
    ```
    $ ls -R notes
