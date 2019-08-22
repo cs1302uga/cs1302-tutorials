@@ -220,6 +220,60 @@ Let's try it by placing the `HelloWorld` class into the `cs1302.hello` package!
 5. Congratulations, you've successfully completed this tutorial! Please read the sections below for
    some important information regarding class path and `import` statements. 
 
+## Code Dependencies
+
+When Java code uses other Java code, that creates a dependency. Most of the programs that you've
+written have used code provided by Oracle under the various `java` subpackages. When you compile,
+those dependencies are automatically included on the class path. However, when your code depends 
+on code that's not included with Java (e.g., code that you or someone else has written), you need
+to let `javac` know where the _compiled_ version of that depedency is.
+
+1. Let's extend the code we just finished. Create a `cs1302.util.HelloUtility` class under `src`.
+   **Remember,** this implies a specific directory structure and package statement requirement 
+   with respect to `HelloUtility.java`.
+   
+1. In the `cs1302.util.HelloUtility` class, add the following method:
+
+   ```java
+   public static void excitingHello() {
+       System.out.println("HELLO!!!!");
+   } // excitingHello
+   ```
+   
+1. Save, then compile the `.java` file for the `cs1302.util.HelloUtility` class as usual, 
+   under `bin`.
+
+1. Modify the source code for your `cs1302.hello.HelloWorld` class to call the static method in
+   `cs1302.util.HelloUtility`. To do this, you may:
+   
+   1. Add an import statement between the `package` statement and class declation:
+   
+      ```java
+      import cs1302.util.HelloUtility;
+      ```
+   
+   1. Call the method in `main` using the simple class name:
+   
+      ```java
+      HelloUtility.excitingHello();
+      ```
+      
+   Completing these two steps create dependency. Now, the `cs1302.hello.HelloWorld` class
+   depends on the `cs1302.util.HelloUtility` class.
+      
+1. If you try to compile the source code for your `cs1302.hello.HelloWorld` class exactly as you 
+   did before, then it will not work. Try it! The error message can be a little confusing. Assuming 
+   you didn't make any spelling mistakes, the error output is just `javac` saying that it cannot 
+   find something. Since we know it actually exists, we can just tell `javac` where to find it 
+   using `-cp`. 
+   
+1. Remember that when your code depends on other code that you have written, you need to let 
+   `javac` know where the _compiled_ version of that depedency is. Since you compiled under `bin`,
+   that's where you should tell `javac` to look. Try to compile it again, but this time, be sure
+   to include the `-cp bin` option in addition to `-d bin` option.
+   
+1. It works! Run it as expected.
+
 ## Further Important Notes
 
 ### Setting the Class Path
