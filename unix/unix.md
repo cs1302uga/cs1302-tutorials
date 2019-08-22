@@ -187,8 +187,25 @@ assumes you have logged into Nike.
    notes/cs1730:
    ```
    
-   From this output, we can infer the following tree structure under the `notes`
-   directory:
+1. Alternatively, you can try the `find` command to find files in the directory 
+   hierarchy:
+   
+   ```
+   find notes
+   ```
+   
+   ```
+   notes
+   notes/cs1730
+   notes/cs1302
+   notes/cs1302/ce01
+   notes/cs1302/ce01/NOTES.md
+   notes/cs1302/ce00
+   notes/cs1302/ce00/NOTES.md
+   ```
+   
+1. From either of the previous two outputs, you can infer the following 
+   structure under the `notes` directory:
    
    ```
    notes
