@@ -12,6 +12,7 @@ if [ ! -d $DIR ]; then
   echo "# ce00 NOTES" > notes/cs1302/ce00/NOTES.md
   echo "# ce01 NOTES" > notes/cs1302/ce01/NOTES.md
   echo "# README" > README.md
+  echo "subdirectory $DIR successfully created"
 else
   >&2 echo "subdirectory $DIR already exists"
 fi  
