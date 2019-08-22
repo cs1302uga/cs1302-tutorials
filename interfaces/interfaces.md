@@ -251,6 +251,17 @@ Javadoc comments in the interface.
     refresher on this subject, then refer to the 
     [Java Packages Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/packages.md).
 
+### Common Functionality among Disparate Classes
+
+Here is a video that demonstrates how to use interfaces to write code involving disparate
+classes with common functionality that is clean, easier to read, and easier to modify:
+
+https://www.youtube.com/watch?v=kcBV6tlg44I
+
+<a href="https://www.youtube.com/watch?v=kcBV6tlg44I">
+<img src="https://img.youtube.com/vi/kcBV6tlg44I/0.jpg?20190821" alt="IMAGE ALT TEXT">
+</a>
+
 ### References
 
 * [[1] Oracle Java Tutorials: Interfaces](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html)
