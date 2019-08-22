@@ -1,8 +1,35 @@
-# Shell Scripts
+# Interpreter Scripts
 
 ![Status: Not Ready](https://img.shields.io/badge/Status-Not%20Ready-red.svg)
 
-## 
+## What is an Interpreter Script?
+
+An interpreter script is a regular text file that contains a sequence of commands
+that should be executed by some interpreter progrsm. Instread of launching the
+interpreter, typing out the commands (or launching it with input redirection), 
+we can, instead, place all of the commands in a script file. 
+
+An interpreter script needs to satisfy the following requirements:
+* Execute permission enabled (to whoever will use it); and 
+* First line is of the form:
+
+  ```
+  #! interpreter [optional-arg]
+  ```
+
+The interpreter must be a valid pathname for an executable program which is not 
+itself a script. When executed, then interpreter will be invoked with the following
+command-line arguments:
+
+```
+interpreter [optional-arg] filename arg...
+```
+
+The remaining text is executed is executed in the invoked interpreter.
+
+## Bash Script
+
+
    
 <hr/>
 
