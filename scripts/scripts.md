@@ -63,7 +63,7 @@ terminal shell. Let's create one!
    
 1. In `cs1302-script.sh`, add some lines containing commands that you 
    would normally type at the terminal shell. For example, you might 
-   include a call to `echo`:
+   include the following:
 
    ```
    echo "my bash script is running"
