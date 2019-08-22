@@ -87,8 +87,6 @@ assumes you have logged into Nike.
    $ ls
    ```
    
-
-   
 1. Now, use the following command to download and execute a shell script that 
    retrieves some files used for this tutorial and places them into a subdirectory 
    called `cs1302-unix`:
@@ -201,7 +199,6 @@ assumes you have logged into Nike.
    │       └── NOTES.md
    └── cs1730
    ```
-   
 
 1. `mkdir`
    
