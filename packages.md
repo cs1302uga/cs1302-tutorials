@@ -240,9 +240,10 @@ list of multiple paths:
 
 Each path can be a path to a directory or a `.jar` file (usually used for third party libraries).
 
-**NOTE:** The class path should always point to a default package for _compiled_ code. If you are
-compiling a `.java` file that depends on an already compiled class, then will need to specifiy the
-class path to the corresponding default package for that dependency when invoking `javac`.
+**VERY IMPORTANT NOTE:** The class path should always point to a default package for _compiled_ code. 
+If you are compiling a `.java` file that depends on an already compiled class, then you will need to 
+specifiy the class path to the corresponding default package for that dependency when 
+invoking `javac`.
 
 ### Import Statements
 
