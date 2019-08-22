@@ -191,8 +191,10 @@ assumes you have logged into Nike.
    hierarchy:
    
    ```
-   find notes
+   $ find notes
    ```
+   
+   You should see output similar to the following:
    
    ```
    notes
@@ -217,7 +219,10 @@ assumes you have logged into Nike.
    └── cs1730
    ```
 
-1. `mkdir`
+1. Use the `cd` command to navigate around these directories 
+
+
+   `mkdir`
    
    If the command is successful, then it should not display
    any output. **This is common for most utility commands.**
