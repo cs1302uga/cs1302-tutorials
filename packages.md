@@ -232,7 +232,7 @@ to let `javac` know where the _compiled_ version of that depedency is.
    **Remember,** this implies a specific directory structure and package statement requirement 
    with respect to `HelloUtility.java`.
    
-1. In the `cs1302.util.HelloUtility` class, add the following method:
+1. In the source code for `cs1302.util.HelloUtility` class, add the following method:
 
    ```java
    public static void excitingHello() {
