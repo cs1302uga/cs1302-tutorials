@@ -1,5 +1,7 @@
 # Interfaces Tutorial
 
+![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+
 This tutorial introduces the reader to Java interfaces and polymorphism.
 
 ### Prerequisites
@@ -253,8 +255,11 @@ Javadoc comments in the interface.
 
 ### Common Functionality among Disparate Classes
 
-Here is a video that demonstrates how to use interfaces to write code involving disparate
-classes with common functionality that is clean, easier to read, and easier to modify:
+Below is a video that demonstrates how to use interfaces to write code involving 
+disparate classes with common functionality that is clean, easier to read, and 
+easier to modify. Here, we use the term disparate to describe classes that are
+disimilar in _what_ they describe but still, perhaps, share some common 
+functionality.
 
 https://www.youtube.com/watch?v=kcBV6tlg44I
 
