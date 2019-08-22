@@ -16,6 +16,8 @@ An interpreter script needs to satisfy the following requirements:
   ```
   #! interpreter [optional-arg]
   ```
+  
+  For historical reasons, this first line is known as a _shebang_ due 
 
 The interpreter must be a valid pathname for an executable program which is not 
 itself a script. When executed, then interpreter will be invoked with the following
@@ -94,7 +96,18 @@ terminal shell. Let's create one!
 ### Display Commands in Bash Script Execution
 
 If you would like your bash script to display the commands that it
-executes, then use `set -x` as the first command in your script.
+executes, then add `-x` as an `[optional-arg]` in the shebang or
+add `set -x` as the first command in your script.
+
+```
+#!/bin/bash -x
+```
+   
+```
+#!/bin/bash
+  
+set -x
+```
 
 <hr/>
 
