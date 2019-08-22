@@ -164,12 +164,46 @@ assumes you have logged into Nike.
    * __Timestamp:__ Time when the file was last modified. If the file hasn't been modified since it was
      created, then this denotes the creation time.
 
-1. To **create a new directory**, you can use the `mkdir` 
-   command:
+1. To **list recursively**, i.e., list the contents of all directories under a particular path, 
+   you can use the `ls` with the `-R` option:
    
    ```
-   $ mkdir cs1302-unix
+   $ ls -R notes
    ```
+   
+   You should see output similar to the following:
+   
+   ```
+   notes:
+   cs1302  cs1730
+   
+   notes/cs1302:
+   ce00  ce01
+   
+   notes/cs1302/ce00:
+   NOTES.md
+   
+   notes/cs1302/ce01:
+   NOTES.md
+   
+   notes/cs1730:
+   ```
+   
+   From this output, we can infer the following tree structure under the `notes`
+   directory:
+   
+   ```
+   notes
+   ├── cs1302
+   │   ├── ce00
+   │   │   └── NOTES.md
+   │   └── ce01
+   │       └── NOTES.md
+   └── cs1730
+   ```
+   
+
+1. `mkdir`
    
    If the command is successful, then it should not display
    any output. **This is common for most utility commands.**
