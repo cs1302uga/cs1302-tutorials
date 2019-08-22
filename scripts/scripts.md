@@ -87,11 +87,14 @@ terminal shell. Let's create one!
    
    Since `.` is an alias for the current directory, the second example
    will only work if the script is in the current directory.
+   
+   **ASIDE:** Remove user execute permission, then attempt to execute
+   the script to see what happens.
  
 ### Display Commands in Bash Script Execution
 
 If you would like your bash script to display the commands that it
-executes, then use `set -x` as your first command.
+executes, then use `set -x` as the first command in your script.
 
 <hr/>
 
