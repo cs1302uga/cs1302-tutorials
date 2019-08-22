@@ -5,7 +5,7 @@
 ## What is an Interpreter Script?
 
 An interpreter script is a regular text file that contains a sequence of commands
-that should be executed by some interpreter progrsm. Instread of launching the
+that should be executed by some interpreter program. Instead of launching the
 interpreter, typing out the commands (or launching it with input redirection), 
 we can, instead, place all of the commands in a script file. 
 
