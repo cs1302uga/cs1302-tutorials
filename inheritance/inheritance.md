@@ -45,7 +45,9 @@ The starter code for the example in the video can be found [here](person/).
 
 ### The "is-a" Relationship
 
-###
+### Constructors
+
+### Method Overrides
 
 <hr/>
 
