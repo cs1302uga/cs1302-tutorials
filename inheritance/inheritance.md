@@ -34,7 +34,7 @@ would require that every object of the new class be bundled somehow with an obje
 original class in order to have all the data and methods available.
 
 In Java, inheritance actually combines the ideas in these two approaches without the
-need for any manual copy-paste of the source code. This is demonstrated in the following 
+need for any manual copy-paste of the source code. This is demonstrated in the following
 video example:
 
 VIDEO LINK HERE
@@ -48,6 +48,10 @@ The starter code for the example in the video can be found [here](person/).
 ### Constructors
 
 ### Method Overrides
+
+### References
+
+* [1] [Java Language Specification 4.3.2. The Class `Object`](https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.3.2)
 
 <hr/>
 
