@@ -34,8 +34,8 @@ would require that every object of the new class be bundled somehow with an obje
 original class in order to have all the data and methods available.
 
 In Java, inheritance actually combines the ideas in these two approaches without the
-need for the need for any manual copy-paste of the source code. This is demonstrated
-in the following video example:
+need for any manual copy-paste of the source code. This is demonstrated in the following 
+video example:
 
 VIDEO LINK HERE
 
