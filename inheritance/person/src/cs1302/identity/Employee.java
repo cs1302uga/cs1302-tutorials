@@ -74,4 +74,10 @@ public class Employee {
         return dateOfBirth.until(now).getYears();
     } // computeAge
 
+    @Override
+    public String toString() {
+        return String.format("Employee(id = %d, name = %s, dateOfBirth = %s, dateOfHire = %s)",
+                             id, name, dateOfBirth, dateOfHire);
+    } // toString
+
 } // Employee

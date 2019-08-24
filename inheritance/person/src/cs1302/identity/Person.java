@@ -50,4 +50,9 @@ public class Person {
         return dateOfBirth.until(now).getYears();
     } // computeAge
 
+    @Override
+    public String toString() {
+        return String.format("Person(name = %s, dateOfBirth = %s)", name, dateOfBirth);
+    } // toString
+
 } // Person
