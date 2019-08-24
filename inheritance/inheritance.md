@@ -55,7 +55,7 @@ public class Person {
 ```java
 import java.time.LocalDate;
 
-public class Person {
+public class Employee {
 
     private String name;
     private LocalDate dateOfBirth;
@@ -88,6 +88,37 @@ public class Person {
 
 } // Employee
 ```
+
+These two classes are almost the same, which resulted in a lot of repetition. This repetition
+is problematic because it results in more code that must be maintained. It's even worse if you
+identify a bug that needs to be fixed in both classes. Fortunately, we can remove most of this 
+repitition by using inheritance. We'll keep the `Person` class as-is, however, we'll rewrite
+the `Employee` class to make it simpler. To do this, we use the `extends` keyword in the class
+header:
+
+```java
+import java.time.LocalDate;
+
+public class Employee extends Person {
+
+    private LocalDate dateOfHire;
+    private long id;
+    
+    public Employee(long id, String name, LocalDate dateOfBirth, LocalDate dateOfHire) {
+        ...
+    } // Employee
+    
+    public long getId() {
+        ...
+    } // getId
+    
+    public String getDateOfHire() {
+        ...
+    } // getDateOfHire
+
+} // Employee
+```
+
 
 Now consider a new class called `Employee`.
 
