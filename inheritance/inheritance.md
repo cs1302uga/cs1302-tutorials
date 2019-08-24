@@ -119,6 +119,9 @@ public class Employee extends Person {
 } // Employee
 ```
 
+Conceptually, this results in the same `Employee` class as the first example with
+the exact same functionality but less code. One way to think of the `extends`
+keyword is as glorified copy-paste. 
 
 Now consider a new class called `Employee`.
 
