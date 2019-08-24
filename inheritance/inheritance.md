@@ -70,7 +70,7 @@ NOTE: Be sure to mention `super`.
 ### The `Object` Class
 
 According the Java Language Specification, the
-`java.lang.Object`](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html)
+[`java.lang.Object`](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html)
 class is the superclass for all other classes [1].
 
 ### Food for Thought
