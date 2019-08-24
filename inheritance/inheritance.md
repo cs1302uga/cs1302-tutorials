@@ -41,7 +41,7 @@ public class Person {
         ...
     } // getName
     
-    public String getDateOfBirth() {
+    public LocalDate getDateOfBirth() {
         ...
     } // getDateOfBirth
     
