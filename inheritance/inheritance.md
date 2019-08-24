@@ -37,6 +37,9 @@ In Java, inheritance actually combines the ideas in these two approaches without
 need for the need for any manual copy-paste of the source code. This is demonstrated
 in the following video example:
 
+VIDEO LINK HERE
+
+VIDEO IMAGE LINK HERE
 
 The starter code for the example in the video can be found [here](person/).
 
