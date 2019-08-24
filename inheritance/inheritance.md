@@ -71,7 +71,9 @@ NOTE: Be sure to mention `super`.
 
 According the Java Language Specification, the
 [`java.lang.Object`](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html)
-class is the superclass for all other classes [1].
+class is the superclass for all other classes [1]. If a class does not explicitly
+extend another class, then it implicitly extends `Object`. Therefore, `Object` is at 
+the top of all inheritance hierarchies in Java. 
 
 ### Food for Thought
 
