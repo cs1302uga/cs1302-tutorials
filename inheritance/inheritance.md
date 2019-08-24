@@ -6,128 +6,43 @@ This tutorial introduces the reader to Java inheritance and polymorphism via inh
 
 ### Prerequisites
 
-This tutorial assumes that the reader has a knowledge of basic Unix commands and experience working 
+This tutorial assumes that the reader has a knowledge of basic Unix commands and experience working
 with a command-line text editor (e.g. emacs, vi, etc.). The reader should be familiar with compiling
-and running Java code contained in packages and working with the Javadoc tool. 
+and running Java code contained in packages and working with the Javadoc tool.
 
 To get the most out of this tutorial, you should follow along and take notes.
 
 ## Course-Specific Learning Outcomes
 
-* 
+*
 
 ### Getting Started
 
 ### What is Inheritance?
 
-In its simplest terms, **inheritance** in Java is a way to create a new class based on an 
-existing class. Consider these relatively small classes, `Person` and `Employee`, that
-**do not** take advantage of inheritance (implementation details for each method are
-intentionally not included):
+In its simplest terms, **inheritance** in Java is a way to create a new class based on an
+existing class. Without inheritance, you would be forced to take one of two approaches:
 
-```java
-import java.time.LocalDate;
+1. create a new class that is a copy-paste of the original class with additional code,
+   as needed; or
 
-public class Person {
+1. create a new class that only contains the additional code.
 
-    private String name;
-    private LocalDate dateOfBirth;
-    
-    public Person(String name, LocalDate dateOfBirth) {
-        ...
-    } // Person
-    
-    public String getName() {
-        ...
-    } // getName
-    
-    public LocalDate getDateOfBirth() {
-        ...
-    } // getDateOfBirth
-    
-    public int computeAge() {
-        ...
-    } // computeAge
+The first approach results in a lot of duplicate code, thus increasing code maintenance
+and decreasing code reuse. The second approach is perhaps a little nicer, however, it
+would require that every object of the new class be bundled somehow with an object of
+original class in order to have all the data and methods available.
 
-} // Person
-```
+In Java, inheritance actually combines the ideas in these two approaches without the
+need for the need for any manual copy-paste of the source code. This is demonstrated
+in the following video example:
 
-```java
-import java.time.LocalDate;
 
-public class Employee {
-
-    private String name;
-    private LocalDate dateOfBirth;
-    private LocalDate dateOfHire;
-    private long id;
-    
-    public Employee(long id, String name, LocalDate dateOfBirth, LocalDate dateOfHire) {
-        ...
-    } // Employee
-    
-    public long getId() {
-        ...
-    } // getId
-    
-    public String getName() {
-        ...
-    } // getName
-    
-    public String getDateOfBirth() {
-        ...
-    } // getDateOfBirth
-    
-    public String getDateOfHire() {
-        ...
-    } // getDateOfHire
-    
-    public int computeAge() {
-        ...
-    } // computeAge
-
-} // Employee
-```
-
-These two classes are almost the same, which resulted in a lot of repetition. This repetition
-is problematic because it results in more code that must be maintained. It's even worse if you
-identify a bug that needs to be fixed in both classes. Fortunately, we can remove most of this 
-repitition by using inheritance. We'll keep the `Person` class as-is, however, we'll rewrite
-the `Employee` class to make it simpler. To do this, we use the `extends` keyword in the class
-header:
-
-```java
-import java.time.LocalDate;
-
-public class Employee extends Person {
-
-    private LocalDate dateOfHire;
-    private long id;
-    
-    public Employee(long id, String name, LocalDate dateOfBirth, LocalDate dateOfHire) {
-        ...
-    } // Employee
-    
-    public long getId() {
-        ...
-    } // getId
-    
-    public String getDateOfHire() {
-        ...
-    } // getDateOfHire
-
-} // Employee
-```
-
-Conceptually, this results in the same `Employee` class as the first example with
-the exact same functionality but less code. One way to think of the `extends`
-keyword is as glorified copy-paste. 
-
-Now consider a new class called `Employee`.
+The starter code for the example in the video can be found [here](person/).
 
 ### The "is-a" Relationship
 
-### 
+###
 
 <hr/>
 
