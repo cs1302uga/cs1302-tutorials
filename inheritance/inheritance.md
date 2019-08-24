@@ -37,17 +37,45 @@ In Java, inheritance actually combines the ideas in these two approaches without
 need for any manual copy-paste of the source code. This is demonstrated in the following
 video example:
 
+**VIDEO NOTES (TO BE REMOVED?):**
+
+1. Show starter code.
+1. Emphasize repetition; discuss other negatives.
+1. Modify `Exployee` so that it `extends Person`.
+1. Show that it's more concise.
+1. Show that the driver still works.
+
 VIDEO LINK HERE
 
 VIDEO IMAGE LINK HERE
 
 The starter code for the example in the video can be found [here](person/).
 
+### Terminology
+
+* **parent class**, **super class**, **base class** -
+
+* **child class**, **subclass** -
+
 ### The "is-a" Relationship
 
 ### Constructors
 
+NOTE: Be sure to mention `super`.
+
 ### Method Overrides
+
+NOTE: Be sure to mention `super`.
+
+### The `Object` Class
+
+According the Java Language Specification, the
+`java.lang.Object`](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html)
+class is the superclass for all other classes [1].
+
+### Food for Thought
+
+Discuss visibility here or in a separate tutorial?
 
 ### References
 
