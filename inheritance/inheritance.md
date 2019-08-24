@@ -22,8 +22,8 @@ To get the most out of this tutorial, you should follow along and take notes.
 
 In its simplest terms, **inheritance** in Java is a way to create a new class based on an 
 existing class. Consider these relatively small classes, `Person` and `Employee`, that
-**do not** take advantage of inheritance (implementation details for each method have
-intentionally been removed):
+**do not** take advantage of inheritance (implementation details for each method are
+intentionally not included):
 
 ```java
 import java.time.LocalDate;
