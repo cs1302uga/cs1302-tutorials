@@ -78,6 +78,14 @@ instance variables and methods, regardless of their declared visibility, from it
 These _members_ are accessible, depending on their visibility, within the child class in much
 the same way they would be accessible in the parent class.
 
+### The `Object` Class
+
+According the Java Language Specification, the
+[`java.lang.Object`](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html)
+class is the superclass for all other classes [1]. If a class does not explicitly
+extend another class, then it implicitly extends `Object`. Therefore, `Object` is at
+the top of all inheritance hierarchies in Java.
+
 ### Constructors
 
 Constructors are __not inherited in the usual sense__. That is, a parent constructor
@@ -178,14 +186,6 @@ downloaded at the beginning of this tutorial.
 <a href="https://www.youtube.com/watch?v=">
 <img src="https://img.youtube.com/vi/IDHERE/0.jpg?20190825" alt="IMAGE ALT TEXT">
 </a>
-
-### The `Object` Class
-
-According the Java Language Specification, the
-[`java.lang.Object`](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html)
-class is the superclass for all other classes [1]. If a class does not explicitly
-extend another class, then it implicitly extends `Object`. Therefore, `Object` is at
-the top of all inheritance hierarchies in Java.
 
 ### References
 
