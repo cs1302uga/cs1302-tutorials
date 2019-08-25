@@ -45,13 +45,15 @@ The starter code for the example in the video can be found [here](person/).
 <img src="https://img.youtube.com/vi/V5Y85rfMfPw/0.jpg?20190821" alt="IMAGE ALT TEXT">
 </a>
 
-### Terminology
+### Basic Terminology
 
-* **parent class**, **super class**, **base class** -
+Here are some terms that you should know related to inheritance in Java.
 
-* **child class**, **subclass** -
+* **parent class**, **super class**, **base class** - the original class you want to extend.
 
-* **class hierarchy** -
+* **child class**, **subclass** - the new class you want to create based on the parent class.
+
+* **class hierarchy** - a collection of classes related by inheritance.
 
 ### The "is-a" Relationship
 
