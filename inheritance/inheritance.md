@@ -101,6 +101,10 @@ in order to facilitate a separation of concerns: let the parent class code be re
 for setting up the inherited variables. Let's illustrate this with a small
 example:
 
+![Starter Code](res/Animal.png)
+
+To work through this example, perform the following steps:
+
 1. Change into the `animal` subdirectory of `cs1302-inheritance`.
 
 1. Create a `bin` directory.
