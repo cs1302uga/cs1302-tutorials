@@ -16,6 +16,7 @@ if [ ! -d $DIR ]; then
   git commit -m "added .gitignore"
   git add .
   git commit -m "added the rest of the tutorial material"
+  rm -Rf res/
   echo "subdirectory $DIR successfully created"
 else
   >&2 echo "subdirectory $DIR already exists"
