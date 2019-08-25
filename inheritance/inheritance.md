@@ -37,19 +37,13 @@ In Java, inheritance actually combines the ideas in these two approaches without
 need for any manual copy-paste of the source code. This is demonstrated in the following
 video example:
 
-**VIDEO NOTES (TO BE REMOVED?):**
-
-1. Show starter code.
-1. Emphasize repetition; discuss other negatives.
-1. Modify `Exployee` so that it `extends Person`.
-1. Show that it's more concise.
-1. Show that the driver still works.
-
-VIDEO LINK HERE
-
-VIDEO IMAGE LINK HERE
+https://www.youtube.com/watch?v=V5Y85rfMfPw
 
 The starter code for the example in the video can be found [here](person/).
+
+<a href="https://www.youtube.com/watch?v=V5Y85rfMfPw">
+<img src="https://img.youtube.com/vi/V5Y85rfMfPw/0.jpg?20190821" alt="IMAGE ALT TEXT">
+</a>
 
 ### Terminology
 
