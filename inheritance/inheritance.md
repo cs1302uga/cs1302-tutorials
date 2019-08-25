@@ -55,6 +55,8 @@ Here are some terms that you should know related to inheritance in Java.
 
 * **class hierarchy** - a collection of classes related by inheritance.
 
+### What is Inherited? 
+
 ### The "is-a" Relationship
 
 ### Constructors
