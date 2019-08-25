@@ -47,7 +47,8 @@ https://www.youtube.com/watch?v=V5Y85rfMfPw
 
 The starter code for the example in the video can be found [here](person/) and
 under the `person` subdirectory of the `cs1302-inheritance` directory you
-downloaded at the beginning of this tutorial.
+downloaded at the beginning of this tutorial. Here is a UML diagram for the
+starter code:
 
 ![Starter Code](res/Inheritance1.png)
 
@@ -58,6 +59,12 @@ Try to replicate what you saw in the video:
 1. Create a `bin` directory.
 
 1. Follow along with the video!
+
+After replicating the steps in the video, an inheritance relationship is
+established. The UML diagram below illustrates this new relationship
+(note the different arrow head types and number of items in the child class):
+
+![Updated Starter Code](res/Inheritance2.png)
 
 ### Basic Terminology
 
