@@ -57,11 +57,21 @@ video example:
 
 https://www.youtube.com/watch?v=V5Y85rfMfPw
 
-The starter code for the example in the video can be found [here](person/).
+The starter code for the example in the video can be found [here](person/) and
+under the `person` subdirectory of the `cs1302-inheritance` directory you
+downloaded at the beginning of this tutorial.
 
 <a href="https://www.youtube.com/watch?v=V5Y85rfMfPw">
 <img src="https://img.youtube.com/vi/V5Y85rfMfPw/0.jpg?20190821" alt="IMAGE ALT TEXT">
 </a>
+
+Try to replicate what you saw in the video!
+
+1. Change into the `person` subdirectory of `cs1302-inheritance`.
+
+2. Create a `bin` directory.
+
+1. Try t 
 
 ### Basic Terminology
 
