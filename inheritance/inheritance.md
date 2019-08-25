@@ -12,9 +12,10 @@ and running Java code contained in packages and working with the Javadoc tool.
 
 To get the most out of this tutorial, you should follow along and take notes.
 
-## Course-Specific Learning Outcomes
+### Course-Specific Learning Outcomes
 
-*
+* **LO2.e:** (Partial) Utilize existing generic methods, interfaces, and classes in a software solution.
+* **L04.c:** (Partial) Design, create and use inheritance relationships in a software solution.
 
 ### Getting Started
 
