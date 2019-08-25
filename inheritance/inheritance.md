@@ -177,14 +177,15 @@ the implementation of that method needs to be different in the child class. In J
 this can be accomplished with a **method override**. Here's a video that illustrates
 this:
 
-https://www.youtube.com/watch?v=
+https://www.youtube.com/watch?v=v5q1OCuCv8c
 
 The starter code for the example in the video can be found [here](person/) and
 under the `person` subdirectory of the `cs1302-inheritance` directory you
-downloaded at the beginning of this tutorial.
+downloaded at the beginning of this tutorial. If you did the first part of this
+tutorial, then you can follow along with this video.
 
-<a href="https://www.youtube.com/watch?v=">
-<img src="https://img.youtube.com/vi/IDHERE/0.jpg?20190825" alt="IMAGE ALT TEXT">
+<a href="https://www.youtube.com/watch?v=v5q1OCuCv8c">
+<img src="https://img.youtube.com/vi/v5q1OCuCv8c/0.jpg?20190825" alt="IMAGE ALT TEXT">
 </a>
 
 ### References
