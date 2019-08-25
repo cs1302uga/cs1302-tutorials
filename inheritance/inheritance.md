@@ -99,6 +99,19 @@ Constructors are __not inherited in the usual sense__. That is, a parent constru
 does not become a constructor in the child class when inheritance is involved. However, child
 constructors can invoke parent constructors via the `super` keyword.
 
+1. Change into the `animal` subdirectory of `cs1302-inheritance`.
+
+1. Create a `bin` directory.
+
+1. Follow along with the video!
+
+**IMPORTANT NOTE:** If a child constructor does not explicitly call a parent class 
+constructor via `super`, then Java will automatically add a call to `super()`, i.e., 
+it will attempt to invoke the parent's default constructor if it exists.
+**We always recommend explicitly calling a parent constructor**, even 
+if it's just `super()`, so that it's clear from reading the source code what
+the your intent is. 
+
 ### Method Overrides
 
 NOTE: Be sure to mention `super`.
