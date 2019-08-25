@@ -30,10 +30,10 @@ The steps in this tutorial assume that you are logged into the Nike server.
   
 1. Change into the `cs1302-inheritance` directory that was just created and look around. There should be
    multiple Java files contained within the directory structure. To see a listing of all of the 
-   files under the current directory, use the `find` command as follows:
+   files under the `person` and `animal` directories, use the `find` command as follows:
    
    ```
-   $ find .
+   $ find person animal
    ```
 
 ### What is Inheritance?
@@ -93,6 +93,8 @@ class.
 
 ### The "is-a" Relationship
 
+Talk about "is-a"...
+
 ### Constructors
 
 Constructors are __not inherited in the usual sense__. That is, a parent constructor
@@ -103,7 +105,65 @@ constructors can invoke parent constructors via the `super` keyword.
 
 1. Create a `bin` directory.
 
-1. Follow along with the video!
+1. Inspect the `.java` files under `src`. In particular, familiarize yourself with the code 
+   for the `Animal` and `Dog` classes.
+   
+1. Modify `Dog.java` so that the `Dog` constructor invokes the parent constructor, 
+   specifying `Canis` and `Lupus Familiaris` as the genus and species names, respectively.
+   This is similar to what was done in the first example video.
+   
+   **Because `You cannot do the following:**
+   
+   ```java
+   super.genus = "Canis";
+   super.species = "Lupus Familiaris"
+   ```
+   
+1. Compile the `cs1302.animal.Animal` and `cs1302.animal.Dog` classes, specifying `bin` 
+   as the default package for compiled code. Since there is a dependency between those 
+   two classes, remember to properly specifiy the class path, as needed, when you compile.
+   
+1. Modify the `main` method in the `cs1302.animal.Driver` class to create some `Dog`
+   objects, then print out information about them:
+   
+   ```java
+   Dog bulldog = new Dog("Bulldog");
+   System.out.println(bulldog.getGenus());
+   System.out.println(bulldog.getSpecies());
+   System.out.println(bulldog.getBreed());
+   System.out.println();
+   ```
+
+   **Also add code for the following breeds:** poodle, beagle, and pug. 
+
+1. Compile the `cs1302.animal.Driver` class, specifying `bin` as the default package 
+   for compiled code and setting the class path as needed.
+   
+1. Run the `cs1302.animal.Driver` class. You should see the following output:
+
+   ```
+   Canis
+   Lupus Familiaris
+   Bulldog
+   
+   Canis
+   Lupus Familiaris
+   Poodle
+   
+   Canis
+   Lupus Familiaris
+   Beagle
+   
+   Canis
+   Lupus Familiaris
+   Pug
+   ```
+   
+1. As you can see from the output, each `Dog` object does have a `genus` and `species`
+   (inherited from `Animal`) that is set by the `Dog` constructor using the parameter
+   values that you supplied. Furthermore, you can also see that each `Dog` object
+   has the getter methods that it inherited and that they return the values of the
+   inherited variables. 
 
 **IMPORTANT NOTE:** If a child constructor does not explicitly call a parent class 
 constructor via `super`, then Java will automatically add a call to `super()`, i.e., 
