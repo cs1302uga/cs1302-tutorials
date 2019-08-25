@@ -85,11 +85,19 @@ Here are some terms that you should know related to inheritance in Java.
 
 ### What is Inherited? 
 
+In Java, when one class extends another, the child class inherits almost everything from the
+parent class. Specifically, we are usually concerned with the face that child class inherits
+instance variables and methods from its parent. These _members_ are accessible, depending on
+their visibility, within the child class the same way they would be accessible in the parent
+class. 
+
 ### The "is-a" Relationship
 
 ### Constructors
 
-NOTE: Be sure to mention `super`.
+Constructors are __not inherited in the usual sense__. That is, a parent constructor
+does not become a constructor in the child class when inheritance is involved. However, child
+constructors can invoke parent constructors via the `super` keyword.
 
 ### Method Overrides
 
