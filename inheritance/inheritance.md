@@ -65,13 +65,13 @@ downloaded at the beginning of this tutorial.
 <img src="https://img.youtube.com/vi/V5Y85rfMfPw/0.jpg?20190821" alt="IMAGE ALT TEXT">
 </a>
 
-Try to replicate what you saw in the video!
+Try to replicate what you saw in the video:
 
 1. Change into the `person` subdirectory of `cs1302-inheritance`.
 
-2. Create a `bin` directory.
+1. Create a `bin` directory.
 
-1. Try t 
+1. Follow along with the video!
 
 ### Basic Terminology
 
