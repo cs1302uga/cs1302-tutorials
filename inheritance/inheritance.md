@@ -18,20 +18,20 @@ To get the most out of this tutorial, you should follow along and take notes.
 
 ### Getting Started
 
-The steps in this tutorial assume that you are logged into the Nike server. 
+The steps in this tutorial assume that you are logged into the Nike server.
 
-1. Use the following command to download and execute a shell script that retrieves 
-   the starter code for this tutorial and places it into a subdirectory 
+1. Use the following command to download and execute a shell script that retrieves
+   the starter code for this tutorial and places it into a subdirectory
    called `cs1302-interfaces`:
 
    ```
    $ curl -s -L https://git.io/fjAqO | bash
    ```
-  
+
 1. Change into the `cs1302-inheritance` directory that was just created and look around. There should be
-   multiple Java files contained within the directory structure. To see a listing of all of the 
+   multiple Java files contained within the directory structure. To see a listing of all of the
    files under the current directory, use the `find` command as follows:
-   
+
    ```
    $ find .
    ```
@@ -39,21 +39,8 @@ The steps in this tutorial assume that you are logged into the Nike server.
 ### What is Inheritance?
 
 In its simplest terms, **inheritance** in Java is a way to create a new class based on an
-existing class. Without inheritance, you would be forced to take one of two approaches:
-
-1. create a new class that is a copy-paste of the original class with additional code,
-   as needed; or
-
-1. create a new class that only contains the additional code.
-
-The first approach results in a lot of duplicate code, thus increasing code maintenance
-and decreasing code reuse. The second approach is perhaps a little nicer, however, it
-would require that every object of the new class be bundled somehow with an object of
-original class in order to have all the data and methods available.
-
-In Java, inheritance actually combines the ideas in these two approaches without the
-need for any manual copy-paste of the source code. This is demonstrated in the following
-video example:
+existing class without the need for any manual copy-paste of the source code.
+This is demonstrated in the following video example:
 
 https://www.youtube.com/watch?v=V5Y85rfMfPw
 
@@ -83,13 +70,13 @@ Here are some terms that you should know related to inheritance in Java.
 
 * **class hierarchy** - a collection of classes related by inheritance.
 
-### What is Inherited? 
+### What is Inherited?
 
 In Java, when one class extends another, the child class inherits almost everything from the
 parent class. Specifically, we are usually concerned with the fact that a child class inherits
 instance variables and methods from its parent. These _members_ are accessible, depending on
 their visibility, within the child class the same way they would be accessible in the parent
-class. 
+class.
 
 ### The "is-a" Relationship
 
@@ -108,8 +95,8 @@ NOTE: Be sure to mention `super`.
 According the Java Language Specification, the
 [`java.lang.Object`](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html)
 class is the superclass for all other classes [1]. If a class does not explicitly
-extend another class, then it implicitly extends `Object`. Therefore, `Object` is at 
-the top of all inheritance hierarchies in Java. 
+extend another class, then it implicitly extends `Object`. Therefore, `Object` is at
+the top of all inheritance hierarchies in Java.
 
 ### Abstract Classes
 
