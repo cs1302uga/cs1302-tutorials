@@ -86,7 +86,9 @@ Talk about "is-a"...
 
 Constructors are __not inherited in the usual sense__. That is, a parent constructor
 does not become a constructor in the child class when inheritance is involved. However, child
-constructors can invoke parent constructors via the `super` keyword.
+constructors can invoke parent constructors via the `super` keyword. Java allows this
+in order to facilitate a separation of concerns: let the parent class code be responsible 
+for setting up the inherited variables. 
 
 1. Change into the `animal` subdirectory of `cs1302-inheritance`.
 
