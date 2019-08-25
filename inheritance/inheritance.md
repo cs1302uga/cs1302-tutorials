@@ -86,7 +86,7 @@ Here are some terms that you should know related to inheritance in Java.
 ### What is Inherited? 
 
 In Java, when one class extends another, the child class inherits almost everything from the
-parent class. Specifically, we are usually concerned with the face that child class inherits
+parent class. Specifically, we are usually concerned with the fact that a child class inherits
 instance variables and methods from its parent. These _members_ are accessible, depending on
 their visibility, within the child class the same way they would be accessible in the parent
 class. 
