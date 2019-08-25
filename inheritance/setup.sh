@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TUTNAME="inheritancex"
+TUTNAME="inheritance"
 DIR="cs1302-$TUTNAME"
 if [ ! -d $DIR ]; then
   git clone --depth 1 --no-checkout https://github.com/cs1302uga/cs1302-tutorials.git $DIR
