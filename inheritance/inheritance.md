@@ -188,6 +188,27 @@ tutorial, then you can follow along with this video.
 <img src="https://img.youtube.com/vi/v5q1OCuCv8c/0.jpg?20190825" alt="IMAGE ALT TEXT">
 </a>
 
+Try to replicate what you saw in the video:
+
+1. Change into the `person` subdirectory of `cs1302-inheritance`.
+
+1. Follow along with the video!
+
+**IMPORTANT NOTE:** You may have noticed the `@Override` above each `toString()`
+method. This is an example of an **annotation**. In Java, annotations are used
+to provide extra information to the compiler. In this case, the `@Override` is
+an **optional** annotation that lets the compiler know your intent is to override.
+Try the following scenarios:
+
+1. Omit the `@Override`, then recompile.
+1. Omit the `@Override` and mispell the `toString` method name, then recompile.
+1. Include the `@Override` and mispell the `toString` method name, then recompile.
+
+Notice the error that occurs in the thirs situation that did not occur in the
+second. This is the primary purpose of the annotation. Although optional, it
+allowd you to tell the compiler that your intent is to override. If the compiler
+sees the `@Override` annotation, then it checks to make sure it's an override.
+
 ### References
 
 * [1] [Java Language Specification 4.3.2. The Class `Object`](https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.3.2)
