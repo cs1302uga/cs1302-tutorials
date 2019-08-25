@@ -51,6 +51,8 @@ The starter code for the example in the video can be found [here](person/).
 
 * **child class**, **subclass** -
 
+* **class hierarchy** -
+
 ### The "is-a" Relationship
 
 ### Constructors
@@ -68,6 +70,8 @@ According the Java Language Specification, the
 class is the superclass for all other classes [1]. If a class does not explicitly
 extend another class, then it implicitly extends `Object`. Therefore, `Object` is at 
 the top of all inheritance hierarchies in Java. 
+
+### Abstract Classes
 
 ### Food for Thought
 
