@@ -112,7 +112,7 @@ constructors can invoke parent constructors via the `super` keyword.
    specifying `Canis` and `Lupus Familiaris` as the genus and species names, respectively.
    This is similar to what was done in the first example video.
    
-   **Because `You cannot do the following:**
+   **Since `genus` and `species` are declared with `private` visibility, you cannot do the following:**
    
    ```java
    super.genus = "Canis";
