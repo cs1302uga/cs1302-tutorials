@@ -17,11 +17,13 @@ public class DoubleSum {
         input = new Scanner(System.in);
         System.out.println(loopInputSum());
     } // main
-    
+
     /**
      * Preemptively checking for invalid input. This is error-prone and it forces
      * the computer to duplicate the work as parseDouble() is validating the input
      * internally.
+     *
+     * @return the sum of the values
      */
     public static double loopInputSum() {
 
@@ -33,7 +35,7 @@ public class DoubleSum {
         System.out.println("Enter positive floating point numbers separated by a space");
         String userInput = input.nextLine();
 
-        do {            
+        do {
             // The inputParser gets its values from the userInput String - not the keyboard.
             inputParser = new Scanner(userInput);
             valid = true;
@@ -67,12 +69,19 @@ public class DoubleSum {
                 } // if
             } // while
         } while (!valid);
-        
+
         // All tokens were found to be valid
         return sum;
 
     } // doubleSum
 
+    /**
+     * Using exception handing to check for invalid input. This approach
+     * is cleaner and handles more input errors. Also, the computer doesn't
+     * have to duplicate work.
+     *
+     * @return the sum of the values
+     */
     public static double exceptionInputSum() {
 
         double sum = 0.0;
@@ -88,7 +97,7 @@ public class DoubleSum {
             inputParser = new Scanner(userInput);
 
             try {
-                while(inputParser.hasNext()) {
+                while (inputParser.hasNext()) {
                     String curToken = inputParser.next();
                     double curVal = Double.parseDouble(curToken);
                     sum += curVal;
@@ -99,12 +108,12 @@ public class DoubleSum {
                 valid = false;
                 sum = 0.0;
             } // try
-            
+
         } while (!valid);
 
         // Implement me with exception handling!
         return sum;
-        
+
     } // validate
 
 } // DoubleSum
