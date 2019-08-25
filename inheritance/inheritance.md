@@ -74,13 +74,9 @@ Here are some terms that you should know related to inheritance in Java.
 
 In Java, when one class extends another, the child class inherits almost everything from the
 parent class. Specifically, we are usually concerned with the fact that a child class inherits
-instance variables and methods from its parent. These _members_ are accessible, depending on
-their visibility, within the child class the same way they would be accessible in the parent
-class.
-
-### The "is-a" Relationship
-
-Talk about "is-a"...
+instance variables and methods, regardless of their declared visibility, from its parent. 
+These _members_ are accessible, depending on their visibility, within the child class in much
+the same way they would be accessible in the parent class.
 
 ### Constructors
 
@@ -88,7 +84,8 @@ Constructors are __not inherited in the usual sense__. That is, a parent constru
 does not become a constructor in the child class when inheritance is involved. However, child
 constructors can invoke parent constructors via the `super` keyword. Java allows this
 in order to facilitate a separation of concerns: let the parent class code be responsible 
-for setting up the inherited variables. 
+for setting up the inherited variables. Let's illustrate this with a small
+example:
 
 1. Change into the `animal` subdirectory of `cs1302-inheritance`.
 
@@ -98,8 +95,8 @@ for setting up the inherited variables.
    for the `Animal` and `Dog` classes.
 
 1. Modify `Dog.java` so that the `Dog` constructor invokes the parent constructor,
-   specifying `Canis` and `Lupus Familiaris` as the genus and species names, respectively.
-   This is similar to what was done in the first example video.
+   specifying `"Canis"` and `"Lupus Familiaris"` as the genus and species names, 
+   respectively. This is similar to what was done in the first example video.
 
    **Since `genus` and `species` are declared with `private` visibility, you cannot do the following:**
 
@@ -167,7 +164,20 @@ the your intent is.
 
 ### Method Overrides
 
-NOTE: Be sure to mention `super`.
+Consider a scenario where a child class inherits some method from its parent, however,
+the implementation of that method needs to be different in the child class. In Java,
+this can be accomplished with a **method override**. Here's a video that illustrates
+this:
+
+https://www.youtube.com/watch?v=
+
+The starter code for the example in the video can be found [here](person/) and
+under the `person` subdirectory of the `cs1302-inheritance` directory you
+downloaded at the beginning of this tutorial.
+
+<a href="https://www.youtube.com/watch?v=">
+<img src="https://img.youtube.com/vi/IDHERE/0.jpg?20190825" alt="IMAGE ALT TEXT">
+</a>
 
 ### The `Object` Class
 
@@ -176,12 +186,6 @@ According the Java Language Specification, the
 class is the superclass for all other classes [1]. If a class does not explicitly
 extend another class, then it implicitly extends `Object`. Therefore, `Object` is at
 the top of all inheritance hierarchies in Java.
-
-### Abstract Classes
-
-### Food for Thought
-
-Discuss visibility here or in a separate tutorial?
 
 ### References
 
