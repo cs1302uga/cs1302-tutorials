@@ -18,6 +18,24 @@ To get the most out of this tutorial, you should follow along and take notes.
 
 ### Getting Started
 
+The steps in this tutorial assume that you are logged into the Nike server. 
+
+1. Use the following command to download and execute a shell script that retrieves 
+   the starter code for this tutorial and places it into a subdirectory 
+   called `cs1302-interfaces`:
+
+   ```
+   $ curl -s -L https://git.io/fjAqO | bash
+   ```
+  
+1. Change into the `cs1302-inheritance` directory that was just created and look around. There should be
+   multiple Java files contained within the directory structure. To see a listing of all of the 
+   files under the current directory, use the `find` command as follows:
+   
+   ```
+   $ find .
+   ```
+
 ### What is Inheritance?
 
 In its simplest terms, **inheritance** in Java is a way to create a new class based on an
