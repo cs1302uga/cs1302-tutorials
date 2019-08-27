@@ -45,10 +45,9 @@ This is demonstrated in the following video example:
 
 https://www.youtube.com/watch?v=V5Y85rfMfPw
 
-The starter code for the example in the video can be found [here](person/) and
-under the `person` subdirectory of the `cs1302-inheritance` directory you
-downloaded at the beginning of this tutorial. Here is a UML diagram for the
-starter code:
+The starter code for the example in the video can be found under the `person` subdirectory 
+of the `cs1302-inheritance` directory you downloaded at the beginning of this tutorial and 
+also at this [link](person/). Here is a UML diagram for the starter code:
 
 ![Starter Code](res/Inheritance1.png)
 
@@ -80,17 +79,21 @@ Here are some terms that you should know related to inheritance in Java.
 
 In Java, when one class extends another, the child class inherits almost everything from the
 parent class. Specifically, we are usually concerned with the fact that a child class inherits
-instance variables and methods, regardless of their declared visibility, from its parent. 
+instance variables and methods, regardless of their declared visibility, from its parent.
 These _members_ are accessible, depending on their visibility, within the child class in much
-the same way they would be accessible in the parent class.
+the same way they would be accessible in the parent class. Even private instance variables are 
+inherited. However, we should recall that they cannot be directly accessed outside of the class
+in which they are declared.
 
 ### The `Object` Class
 
 According the Java Language Specification, the
 [`java.lang.Object`](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html)
-class is the superclass for all other classes [1]. If a class does not explicitly
-extend another class, then it implicitly extends `Object`. Therefore, `Object` is at
-the top of all inheritance hierarchies in Java.
+class is the superclass for all other classes [1]. Take a few moments to look through 
+the `Object` class documentation. Write down any methods you recognize and may have used in the past
+in your notes. Remember, all classes that you create automatically inherit those methods. That is, 
+if a class does not explicitly extend another class, then it implicitly extends `Object`. Therefore, 
+`Object` is at the top of all inheritance hierarchies in Java.
 
 ### Constructors
 
