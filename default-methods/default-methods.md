@@ -1,5 +1,7 @@
 # Default Methods Tutorial
 
+![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+
 This tutorial introduces the reader to default methods in Java, a powerful way to evolve an interface.
 
 ### Prerequisites
