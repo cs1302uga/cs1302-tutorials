@@ -4,7 +4,8 @@
 
 ## Introduction
 
-
+Java has four different visibilities, three of which are indicated with modifier
+keywords.
 
 | # | Member Declaration | `private` | _package private_ | `protected` | `public` |
 |---|--------------------|-----------|-------------------|-------------|----------|
