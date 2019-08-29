@@ -4,8 +4,30 @@
 
 ## Introduction
 
-Java has four different visibilities, three of which are indicated with modifier
-keywords.
+Java has four different visibilities for methods and instance variables, 
+three of which are indicated with modifier keywords:
+
+| Visibility Name | Modifier Keyword |
+|-----------------|------------------|
+| private         | `private`        |
+| package private |                  |
+| protected       | `protected`      |
+| public          | `public`         |
+
+Unlike in an interface, where the omission of a modifier keyowrd implies
+the method has public visibility, omitting a modifier keyword in a class 
+implies the method or instance variable has _package private_ visibility.
+
+## Why Visibilities?
+
+Visibilities exist so that you can control what code is visibile to other
+code. It may be desirable to only mak certain things in a class visible to
+the class itself, while it's perfectly okay to make other things visible
+to everything else. In particular, the two scenarios describe private and
+public visibility, respectively. However, Java has two additional visibilities
+to accomodate some of the scenarios that in-between.
+
+## Interpretation
 
 | # | Member Declaration | `private` | _package private_ | `protected` | `public` |
 |---|--------------------|-----------|-------------------|-------------|----------|
