@@ -6,12 +6,20 @@
 
 
 
-| Member Declaration | `private` | _package private_ | `protected` | `public` |
-|--------------------|-----------|-------------------|-------------|----------|
-| same class         | ✓         | ✓                 | ✓           | ✓        |
-| same package       |           | ✓                 | ✓           | ✓        |
-| parent class       |           |                   | ✓           | ✓        |
-| none of the above  |           |                   |             | ✓        |
+| # | Member Declaration | `private` | _package private_ | `protected` | `public` |
+|---|--------------------|-----------|-------------------|-------------|----------|
+| 1 | same class         | ✓         | ✓                 | ✓           | ✓        |
+| 2 | same package       |           | ✓                 | ✓           | ✓        |
+| 3 | parent class       |           |                   | ✓           | ✓        |
+| 4 | none of the above  |           |                   |             | ✓        |
+
+1.
+
+2.
+
+3.
+
+4.
 
 <hr/>
 
