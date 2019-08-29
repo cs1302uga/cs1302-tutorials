@@ -4,8 +4,9 @@
 
 ## Introduction
 
-Java has four different visibilities for methods and instance variables, 
-three of which are indicated with modifier keywords:
+Java has four different visibilities that can be assigned to methods 
+and instance variable decalarations, three of which are indicated 
+with modifier keywords:
 
 | Visibility Name | Modifier Keyword |
 |-----------------|------------------|
@@ -14,9 +15,17 @@ three of which are indicated with modifier keywords:
 | protected       | `protected`      |
 | public          | `public`         |
 
-Unlike in an interface, where the omission of a modifier keyowrd implies
-the method has public visibility, omitting a modifier keyword in a class 
-implies the method or instance variable has _package private_ visibility.
+Depending on where a declaration occurs, omitting a visibility modifier
+keyword means something different. 
+
+* In an an interface, the omission of a visibility modifier keyowrd 
+  implies the method has public visibility. In fact, the only visibility
+  that is allowed in an interface decalarion is public.
+  
+* In a class, the omission of a visibility modifier keyword implies 
+  the method or instance variable has _package private_ visibility.
+  All other visibilities are allowed, however, they must be explicitly
+  set using a visibility modifier keyword.
 
 ## Why Visibilities?
 
