@@ -117,7 +117,7 @@ example. **The fact that `other` refers to another object does not matter.**
 ## Package Private Notes
 
 <center>
-<img src="PackagePrivate.png" width="50%;">
+<img src="PackagePrivate.png">
 </center>
 
 <hr/>
