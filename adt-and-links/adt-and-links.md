@@ -21,6 +21,7 @@ limited to:
    * Adding an object to the list at a particular index.
    * Removing an object from the list at a particular index.
    * Clearing the list.
+   * Print the contents of the list.
 
 The exact method signatures and behaviors of these methods may differ across various List ADT definitions. In this tutorial,
 we will use the following definitions:
@@ -29,22 +30,77 @@ we will use the following definitions:
    * `String get(int index)` - retrieves the object (String in this case) at the specified index. This method throws
    an `IndexOutOfBoundsException` if the index is out of range `(index < 0 || index >= size())`
    * `boolean add(int index, String s)` - inserts the specified object (String in this case) at the specified index. The 
-   method shifts the object currently at that position (if any) 
-get
-String get(int index)
-Returns the string at the specified position in this list.
-Parameters:
-index - index of the string to return
-Returns:
-the string at the specified position in this list
-Throws:
-IndexOutOfBoundsException - if the index is out of range (index < 0 || index >= size())
-
-
-
+   method shifts the object currently at that position (if any) and any subsequent objects to the right (i.e. it adds one to
+   their indices).
+   * `String remove(int index)` - removes and returns the string at the specified position in the list. Shifts any subsequent
+   elements to the left (i.e. subtracts one from their indices).
+   * `void clear()` - Removes all of the objects from the list. The list will be empty after this call returns.
+   * `String makeString(String separator)` - Returns a string representation of this list with every string in the sequence
+   separated by the specified seprator string.
 
 Notice that the description and operations given above were independent of any underlying data structure or implementation.
 When thinking of an ADT, try to avoid worrying about those details.
+
+**List ADT Example**
+
+In the example below, we provide example List ADT method calls. For each method call, we provide an associated picture of how
+the List would look at a high level.
+
+1.
+   ```java
+   List myList = new List();
+   System.out.println("List Contents: " + myList.makeString(","));
+   ```
+   ```
+   List Contents:
+   ```
+   
+1.
+   ```java
+   myList.add(0, "Bread");
+   System.out.println("List Contents: " + myList.makeString(","));
+   ```
+   ```
+   List Contents: Bread
+   ```
+
+1.
+   ```java
+   myList.add(0, "Cheese");
+   System.out.println("List Contents: " + myList.makeString(","));
+   ```
+   ```
+   List Contents: Cheese, Bread
+   ```
+
+1.
+   ```java
+   myList.add(1, "Milk");
+   System.out.println("List Contents: " + myList.makeString(","));
+   ```
+   ```
+   List Contents: Cheese, Milk, Bread
+   ```
+   
+1.
+   
+   ```java
+   System.out.println("Removed: " + myList.remove(0));
+   System.out.println("List Contents: " + myList.makeString(","));
+   ```
+   ```
+   List Contents: Cheese, Milk, Bread
+   ```
+   
+1.
+   ```java
+   myList.clear();
+   System.out.println("List Contents: " + myList.makeString(","));
+   ```
+   ```
+   List Contents:
+   ```
+   
 
 ## Implementations of the List ADT
 
