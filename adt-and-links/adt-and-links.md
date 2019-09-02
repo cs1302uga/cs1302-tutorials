@@ -91,7 +91,17 @@ the List would look at a high level.
    ```
    
 1.
+   ```java
+   myList.add(3, "Ice Cream");
+   System.out.println("List Size: " + myList.size());
+   System.out.println("List Contents: " + myList.makeString(","));
+   ```
+   ```
+   List Size: 4
+   List Contents: Cheese, Milk, Bread, Ice Cream
+   ```
    
+1.   
    ```java
    System.out.println("Removed: " + myList.remove(0));
    System.out.println("List Size: " + myList.size());
@@ -99,10 +109,21 @@ the List would look at a high level.
    ```
    ```
    Removed: Cheese
-   List Size: 2
-   List Contents: Milk, Bread
+   List Size: 3
+   List Contents: Milk, Bread, Ice Cream
    ```
    
+1.
+   ```java
+   System.out.println("Item at index 0: " + myList.get(0));
+   System.out.println("List Size: " + myList.size());
+   System.out.println("List Contents: " + myList.makeString(","));
+   ```
+   ```
+   Item at index 0: Milk
+   List Size: 3
+   List Contents: Milk, Bread, Ice Cream
+   ```
 1.
    ```java
    myList.clear();
