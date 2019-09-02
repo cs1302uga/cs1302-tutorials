@@ -289,6 +289,11 @@ provided:
 | `YourGame`    | ✓        | `attribute` is declared in a parent class   | also inherits `attribute` |
 | `Tester`      | ✗        | `attribute` is not visible                  |      |
 
+There in one additinal perspectives that should be considered regarding this
+example: Objects of the classes `TypeOneGame`, `TypeTwoGame`, and `YourGame` game all
+have access to their own `attribute` variable **as well as** the `attribute`
+variables in each other.
+
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
