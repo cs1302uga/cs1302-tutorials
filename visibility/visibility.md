@@ -263,6 +263,13 @@ classes.
 
 ## Protected Visibility Notes
 
+In a Java class, instance variables and methods that are declared with _protected visibility_ 
+are only visible to lines of code that are either in the same package as the declaring class
+or in a subclass of the declaring class. It is similar to package private visibility except
+that it does allow lines of code in other packages to see the declared instance variable or
+method only if its a subclass of the declaring class. To illustrate these points, consider
+the following, non-exhaustive example:
+
 <center>
 <img src="Protected.png">
 </center>
