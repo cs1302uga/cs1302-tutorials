@@ -8,12 +8,12 @@ Java has four different visibilities that can be assigned to methods
 and instance variable decalarations, three of which are indicated 
 with modifier keywords:
 
-| Visibility Name | Modifier Keyword |
-|-----------------|------------------|
-| private         | `private`        |
-| package private |                  |
-| protected       | `protected`      |
-| public          | `public`         |
+| Visibility Name | Modifier Keyword | UML Symbol |
+|-----------------|------------------|------------|
+| private         | `private`        | `-`        |
+| package private |                  | `~`        |
+| protected       | `protected`      | `#`        |
+| public          | `public`         | `+`        |
 
 Depending on where a declaration occurs, omitting a visibility modifier
 keyword means something different. 
