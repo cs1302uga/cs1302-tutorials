@@ -127,12 +127,59 @@ Java's default methods feature for interfaces.
 When you declare something in a class without a vidibility modifier, it has package
 private visibility. Something that has package private visibility is only visible
 to lines of code within the same package. That is, a line of code can only see
-something that is package private if its declared somewhere in the same package. 
-To illustrate this, consider the UML diagram below:
+something that is package private if that something is declared somewhere in the 
+same package. To illustrate this, consider the UML diagram below:
 
 <center>
 <img src="PackagePrivate.png">
 </center>
+
+In the example above, we have three classes, each containing one or more static
+methods. The `Math` and `Statistics` classes are both in the same package, while
+the `MathTutorApp` class is in some other package. The associations in the
+diagram illustrate that both the `Statistics` class and the `MathTutorApp` use,
+in some way, the `Math` class.
+
+Most of the static methods in the diagram are declared with public visibility,
+however, the two-parameter overload for `Math.sqrt` is noted as having package
+private visibility. Within the `Math` class, the `sqrt` methods might look 
+something like this:
+
+```java
+/**
+ * Contains utility methods for mathematical operations.
+ */
+public class Math {
+
+    /**
+     * Returns the square root of {@code n} using Euler's method with
+     * the specified initial {@code estimate}. This method should
+     * only be used within the current package because we cannot
+     * guarantee the user will provide anything meaningful for the
+     * {@code estimate}.
+     *
+     * @param n         number to find the square root of
+     * @param estimate  initial estimate
+     * @return square root of {@code n}
+     */
+    static double sqrt(double n, double estimate) {
+        ...
+    } // sqrt
+    
+     /**
+     * Returns the square root of {@code n}.
+     *
+     * @param n  number to find the square root of
+     * @return square root of {@code n}
+     */
+    public static double sqrt(double n) {
+        ...
+    } // sqrt
+
+} // Math
+```
+
+
 
 <hr/>
 
