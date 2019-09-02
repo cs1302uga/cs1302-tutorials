@@ -114,6 +114,12 @@ of the same `Point2D` class. Since `other.x` and `other.y` are declared in the s
 class, those two lines of code can see `other.x` and `other.y` as presented in the
 example. **The fact that `other` refers to another object does not matter.**
 
+## Package Private Notes
+
+<center>
+<img src="PackagePrivate.png" width="50%;">
+</center>
+
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
