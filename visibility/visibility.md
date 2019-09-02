@@ -66,7 +66,7 @@ To illustrate this, consider the following UML diagram for a `Point2D` class whi
 is used to represent immutable `(x,y)` coordinates in a graph:
 
 <center>
-<img src="Point2D.png" width="50%;">
+<img src="Point2D.png">
 </center>
 
 One of the constructors of this class, the one that takes in a reference to some other
