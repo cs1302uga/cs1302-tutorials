@@ -49,36 +49,44 @@ the List would look at a high level.
 1.
    ```java
    List myList = new List();
+   System.out.println("List Size: " + myList.size());
    System.out.println("List Contents: " + myList.makeString(","));
    ```
    ```
+   List Size: 0
    List Contents:
    ```
    
 1.
    ```java
    myList.add(0, "Bread");
+   System.out.println("List Size: " + myList.size());
    System.out.println("List Contents: " + myList.makeString(","));
    ```
    ```
+   List Size: 1
    List Contents: Bread
    ```
 
 1.
    ```java
    myList.add(0, "Cheese");
+   System.out.println("List Size: " + myList.size());
    System.out.println("List Contents: " + myList.makeString(","));
    ```
    ```
+   List Size: 2
    List Contents: Cheese, Bread
    ```
 
 1.
    ```java
    myList.add(1, "Milk");
+   System.out.println("List Size: " + myList.size());
    System.out.println("List Contents: " + myList.makeString(","));
    ```
    ```
+   List Size: 3
    List Contents: Cheese, Milk, Bread
    ```
    
@@ -86,18 +94,23 @@ the List would look at a high level.
    
    ```java
    System.out.println("Removed: " + myList.remove(0));
+   System.out.println("List Size: " + myList.size());
    System.out.println("List Contents: " + myList.makeString(","));
    ```
    ```
-   List Contents: Cheese, Milk, Bread
+   Removed: Cheese
+   List Size: 2
+   List Contents: Milk, Bread
    ```
    
 1.
    ```java
    myList.clear();
+   System.out.println("List Size: " + myList.size());
    System.out.println("List Contents: " + myList.makeString(","));
    ```
    ```
+   List Size: 0
    List Contents:
    ```
    
