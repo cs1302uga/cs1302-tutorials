@@ -61,9 +61,12 @@ variable is declared:
 
 ## Private Visibility Notes
 
-**Visibility has nothing to do with objects.** Instead, it has to do with classes.
-To illustrate this, consider the following UML diagram for a `Point2D` class which 
-is used to represent immutable `(x,y)` coordinates in a graph:
+We leave out the usual private visibility examples in this section and instead
+focus on addressing the common misconception that objects have something to do
+with visibility. **Visibility has nothing to do with objects in Java.** 
+Instead, visibility has to do with classes. To illustrate this, consider the 
+following UML diagram for a `Point2D` class which is used to represent 
+immutable (i.e., non-modifiable) points described by `(x,y)` coordinates:
 
 <center>
 <img src="Point2D.png">
@@ -115,6 +118,17 @@ class, those two lines of code can see `other.x` and `other.y` as presented in t
 example. **The fact that `other` refers to another object does not matter.**
 
 ## Package Private Notes
+
+Some people refer to _package private_ visibility as the _default visibility_ for
+methods and instsnce variables of a Java class. However, **the term _default_ should
+be avoided when talking about visibility** so that the concept is not confused with
+Java's default methods feature for interfaces. 
+
+When you declare something in a class without a vidibility modifier, it has package
+private visibility. Something that has package private visibility is only visible
+to lines of code within the same package. That is, a line of code can only see
+something that is package private if its declared somewhere in the same package. 
+To illustrate this, consider the UML diagram below:
 
 <center>
 <img src="PackagePrivate.png">
