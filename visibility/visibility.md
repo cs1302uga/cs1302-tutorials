@@ -40,9 +40,19 @@ to accomodate some of the scenarios that in-between.
 
 To determine if a line of code can see a method or instance variable, you
 need to consider where that method or instance variable is relative to
-the line of code that's using it. In the table below, we summarize the 
-different scenarios that can occur based on where the method or instance
-variable is declared:
+the line of code that's using it. Consider the following snippet of Java 
+code that is contained in some method:
+
+```java
+int x = someObj.calculateValue();
+```
+
+In this snippet, the line of code is trying to access the `calculateValue`
+method. To determine if `calculateValue` is visible, you need to consider
+where it's declared relative to this line of code. 
+
+In the table below, we summarize the different scenarios that can occur 
+based on where the method or instance variable is declared:
 
 | # | Member Declaration | `private` | _package private_ | `protected` | `public` |
 |---|--------------------|-----------|-------------------|-------------|----------|
@@ -50,14 +60,6 @@ variable is declared:
 | 2 | same package       |           | ✓                 | ✓           | ✓        |
 | 3 | parent class       |           |                   | ✓           | ✓        |
 | 4 | none of the above  |           |                   |             | ✓        |
-
-1. 
-
-2.
-
-3.
-
-4.
 
 ## Private Visibility Notes
 
