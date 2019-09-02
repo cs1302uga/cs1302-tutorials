@@ -119,6 +119,15 @@ of the same `Point2D` class. Since `other.x` and `other.y` are declared in the s
 class, those two lines of code can see `other.x` and `other.y` as presented in the
 example. **The fact that `other` refers to another object does not matter.**
 
+**Regarding Inheritance of Private Members:** You may recall from the Inheritance-related
+readings that **child classes do inherit private instance variables and methods** from their 
+parent. However, since those variables are declared private in another class, the 
+inheriting class cannot see them directly. In scenarios like this, programmers often use
+inherited getter and setter methods declared with protected and public visibility to 
+indirectly access inherited private members. **Another common pattern** is to initialize
+some inherited private variables in a child constructor indirectly by explicitly using
+`super` to invoke a parent constructor.
+
 ## Package Private Notes
 
 Some people refer to _package private_ visibility as the _default visibility_ for
