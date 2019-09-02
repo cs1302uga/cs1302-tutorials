@@ -257,7 +257,7 @@ Hopefully this example illustrates that, just as with other visibilities,
 making a method or instance variable package private is a design choice.
 You should carefully consider whether access to something is suitable 
 only within its declared package versus making it available to all other
-classes in the entire world.
+classes.
 
 ## Protected Visibility Notes
 
