@@ -263,7 +263,9 @@ classes.
 
 ## Protected Visibility Notes
 
-
+<center>
+<img src="Protected.png">
+</center>
 
 <hr/>
 
