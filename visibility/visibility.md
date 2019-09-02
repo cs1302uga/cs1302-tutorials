@@ -267,12 +267,27 @@ In a Java class, instance variables and methods that are declared with _protecte
 are only visible to lines of code that are either in the same package as the declaring class
 or in a subclass of the declaring class. It is similar to package private visibility except
 that it does allow lines of code in other packages to see the declared instance variable or
-method only if its a subclass of the declaring class. To illustrate these points, consider
+method if the declaring class is a parent. To illustrate these points, consider
 the following, non-exhaustive example:
 
 <center>
 <img src="Protected.png">
 </center>
+
+To simplify the example, we consider whether otherwise valid lines of code in each
+class in the diagram can see the `attribute` variable in the `Game` class. In the
+table below, the "Visible?" column denotes whether or not the `attribute` variable
+is visible, assuming a proper reference to an object containing `attribute` is 
+provided:
+
+| Class         | Visible? | Comment                                     |
+|---------------|----------|---------------------------------------------|
+| `Game       ` | ✓        | `attribute` is declared in the same class   |
+| `TypeOneGame` | ✓        | `attribute` is declared in the same package |
+| `TypeTwoGame` | ✓        | `attribute` is declared in the same package |
+| `Utility`     | ✓        | `attribute` is declared in the same package |
+| `YourGame`    | ✓        | `attribute` is declared in a parent class   |
+| `Tester`      | ✗        | `attribute` is not visible                  |
 
 <hr/>
 
