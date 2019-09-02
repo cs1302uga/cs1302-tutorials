@@ -227,6 +227,9 @@ package some.other.package;
 
 import cs1302.util.Math;
 
+/**
+ * Driver class for Company XYZ's Math Tutor application.
+ */
 public class MathTutorApp {
 
     ...
