@@ -289,10 +289,38 @@ provided:
 | `YourGame`    | ✓        | `attribute` is declared in a parent class   | also inherits `attribute` |
 | `Tester`      | ✗        | `attribute` is not visible                  |      |
 
-There in one additinal perspectives that should be considered regarding this
-example: Objects of the classes `TypeOneGame`, `TypeTwoGame`, and `YourGame` game all
-have access to their own `attribute` variable **as well as** the `attribute`
-variables in each other.
+There are two additional points that should be considered regarding this
+example. The classes `TypeOneGame`, `TypeTwoGame`, and `YourGame` all have
+access to: 
+
+1. their own inherited `attribute` variable; **and** 
+1. `attribute` variables in objects of each other, assuming 
+   a proper reference to an object is given.
+   
+To illustrate the second point, consider the following lines of code,
+which you should assume, for the sake of this example, are located inside
+a method in `YourGame`:
+
+```java
+// inside some method in YourGame
+TypeOneGame tog = ...  // not-null; refers to a valid object
+int a = tog.attribute; // COMPILES; yes, this works 
+```
+
+Remember, **visibility has nothing to do with objects in Java.** 
+Instead, visibility has to do with classes. In the third line of
+code, `attribute` via `tog.attribute` is visible because:
+
+1. a proper reference to an object contain `attribute` is given (via `tog`); and
+1. relative to that line of code, `attribute` is delcared in a parent class.
+
+## Public Visibility
+
+## Closing Remarks
+
+You should carefully consider the different scenarios described in this reading
+and try to reproduce them in an actual Java programming environment to see what
+the Java compiler will and will not let you do. 
 
 <hr/>
 
