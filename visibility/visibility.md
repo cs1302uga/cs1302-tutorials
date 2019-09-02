@@ -142,8 +142,13 @@ in some way, the `Math` class.
 
 Most of the static methods in the diagram are declared with public visibility,
 however, the two-parameter overload for `Math.sqrt` is noted as having package
-private visibility. Within the `Math` class, the `sqrt` methods might look 
-something like this:
+private visibility. In this case, the programmer realized that the two-parameter
+`sqrt` method might be complicated for users, so they made a concious decision
+to limits its visibility to the package level. At the same time, they provided
+an easier to use `sqrt` method that is publicly visible. Within the `Math` class, 
+the two `sqrt` methods might look something like this (**do not neccesarily concern 
+yourself with Euler's method; instead keep in mind that the package private
+`sqrt` method is not suitable for public access**):
 
 ```java
 /**
@@ -178,6 +183,7 @@ public class Math {
 
 } // Math
 ```
+
 
 
 
