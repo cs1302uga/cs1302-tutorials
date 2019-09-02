@@ -7,7 +7,8 @@
 An Abstract Data Type (ADT) is a high-level (abstract) description of a data type which includes the operations (methods)
 available on the data type. The exact implementation details, including the underlying structure, are left to the programmer. 
 There are often many useful implementations for a given ADT. The decision of which implementation depends on which one would
-be more efficient for the application at hand.
+be more efficient for the application at hand. You can think of an ADT as an interface describing the operations that an
+implementing class must contain.
 
 ## The List ADT
 
@@ -31,6 +32,15 @@ arrays, we will start with a discussion of this approach.
 ## List ADT - Array Implementation
 
 ## List ADT - Linked List Implementation
+
+
+   ```
+                   /----------------\       /----------------\
+   example ------->| str -> "Hello" |   /-->| str -> "World" |
+                   | next ----------|--/    | next = null    |
+                   \----------------/       \----------------/
+   ```
+   
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
