@@ -209,7 +209,8 @@ public class Statistics {
      */
     public static double stddev(double[] values) {
         double varianceEst = variance(values);
-        double stdDevEst   = Math.sqrt(varianceEst, 0.25 * varianceEst); // two-parameter sqrt is visible
+        // next line compiles; the two-parameter Math.sqrt is visible from here
+        double stdDevEst   = Math.sqrt(varianceEst, 0.25 * varianceEst);
         return stdDevEst;
     } // stddev
     
@@ -235,8 +236,12 @@ public class MathTutorApp {
         ...
         
         double n = 1024.0;
-        double stdDev1 = Math.sqrt(n);         // okay; one-parameter Math.sqrt is public
-        double stdDev2 = Math.sqrt(n, -100.0); // won't compile; two-parameter Math.sqrt is package private
+        
+        // next line compiles; one-parameter Math.sqrt is visible from here
+        double stdDev1 = Math.sqrt(n);        
+        
+        // next line will NOT compile; two-parameter Math.sqrt is not visible from here
+        double stdDev2 = Math.sqrt(n, -100.0);
         
         ...
     
