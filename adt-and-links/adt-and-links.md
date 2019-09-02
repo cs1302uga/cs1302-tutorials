@@ -12,14 +12,36 @@ implementing class must contain.
 
 ## The List ADT
 
-A common ADT is the List ADT. You can think of a List as a collection of objects (not only strings). When working with a list,
-the programmer would want to perform certain operations, including, but not limited to:
+A common ADT is the List ADT. When thinking of a List as an abstract type, you can think of a List as an ordered collection 
+of objects. There are a number of important operations needed for a List. Some common list operations include, but are not
+limited to:
 
    * Creating a new list.
-   * Searching for an object in the list.
-   * Adding an object to the list.
-   * Removing an object from the list.
+   * Retrieving an object in the list at a particular index.
+   * Adding an object to the list at a particular index.
+   * Removing an object from the list at a particular index.
    * Clearing the list.
+
+The exact method signatures and behaviors of these methods may differ across various List ADT definitions. In this tutorial,
+we will use the following definitions:
+
+   * `List()` - creates a new List object with an initial size of zero.
+   * `String get(int index)` - retrieves the object (String in this case) at the specified index. This method throws
+   an `IndexOutOfBoundsException` if the index is out of range `(index < 0 || index >= size())`
+   * `boolean add(int index, String s)` - inserts the specified object (String in this case) at the specified index. The 
+   method shifts the object currently at that position (if any) 
+get
+String get(int index)
+Returns the string at the specified position in this list.
+Parameters:
+index - index of the string to return
+Returns:
+the string at the specified position in this list
+Throws:
+IndexOutOfBoundsException - if the index is out of range (index < 0 || index >= size())
+
+
+
 
 Notice that the description and operations given above were independent of any underlying data structure or implementation.
 When thinking of an ADT, try to avoid worrying about those details.
@@ -30,6 +52,7 @@ A common approach is to either implement the List ADT using an array or a linked
 arrays, we will start with a discussion of this approach.
 
 ## List ADT - Array Implementation
+
 
 ## List ADT - Linked List Implementation
 
