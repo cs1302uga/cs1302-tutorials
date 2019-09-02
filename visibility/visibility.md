@@ -62,12 +62,44 @@ variable is declared:
 ## Private Visibility Notes
 
 **Visibility has nothing to do with objects.** Instead, it has to do with classes.
-To illustrate this, consider the following `Point2D` class which is used to represent 
-immutable `(x,y)` coordinates in a graph:
+To illustrate this, consider the following UML diagram for a `Point2D` class which 
+is used to represent immutable `(x,y)` coordinates in a graph:
 
 <center>
 <img src="Point2D.png" width="50%;">
 </center>
+
+One of the constructors of this class, the one that takes in a reference to some other
+`Point2D` object, is intended to serve as a _copy constructor_. That is, when that
+particular constructor is invoked, the new object should be a deep copy of the object
+referred to by the `other` parameter. Here is the usual way this is implemented:
+
+```java
+/**
+ * Represents immutable {@code (x,y)} coordinates in a two-dimensional space.
+ */
+public class Point2D {
+
+    private double x; // x coordinate
+    private double y; // y coordinate
+
+    ...
+    
+    /**
+     * Constructs a new {@code Point2D} object that is copy of the object
+     * referred to by {@code other}.
+     *
+     * @param other  object to copy
+     */
+    public Point2D(Point2D other) {
+        this.x = other.x; // other.x is declared in the same class
+        this.y = other.y; // other.y is declared in the same class
+    } // Point2D
+    
+    ...
+
+} // Point2D
+```
 
 <hr/>
 
