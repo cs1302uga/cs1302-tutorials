@@ -101,6 +101,19 @@ public class Point2D {
 } // Point2D
 ```
 
+The lines of code that seem counterintuive to most students are the two lines
+inside of the copy constructor:
+
+```java
+this.x = other.x;
+this.y = other.y;
+```
+
+While `other.x` and `other.y` are declared as private, `other` refers to an object
+of the same `Point2D` class. Since `other.x` and `other.y` are declared in the same
+class, those two lines of code can see `other.x` and `other.y` as presented in the
+example. **The fact that `other` refers to another object does not matter.**
+
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
