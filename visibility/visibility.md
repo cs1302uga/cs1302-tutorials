@@ -59,7 +59,13 @@ variable is declared:
 
 4.
 
-## 
+## Private Visibility Notes
+
+**Visibility has nothing to do with objects.** Instead, it has to do with classes.
+To illustrate this, consider the following `Point2D` class which is used to represent 
+immutable `(x,y)` coordinates in a graph:
+
+<img src="Point2D.png" style="width: 50%;">
 
 <hr/>
 
