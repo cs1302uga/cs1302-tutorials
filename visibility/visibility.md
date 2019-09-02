@@ -328,6 +328,8 @@ code, `attribute` via `tog.attribute` is visible because:
 When you declare a method or instance variable with public visibility, you
 are explicitly stating that you are okay with that thing being accessed
 from anwhere, including in lines of code that you potentially do not write. 
+If that kind of access is innappropriate, then you should carefully consider
+one of the other visibilities. 
 
 ## Closing Remarks
 
