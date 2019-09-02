@@ -280,14 +280,14 @@ table below, the "Visible?" column denotes whether or not the `attribute` variab
 is visible, assuming a proper reference to an object containing `attribute` is 
 provided:
 
-| Class         | Visible? | Comment                                     |
-|---------------|----------|---------------------------------------------|
-| `Game       ` | ✓        | `attribute` is declared in the same class   |
-| `TypeOneGame` | ✓        | `attribute` is declared in the same package |
-| `TypeTwoGame` | ✓        | `attribute` is declared in the same package |
-| `Utility`     | ✓        | `attribute` is declared in the same package |
-| `YourGame`    | ✓        | `attribute` is declared in a parent class   |
-| `Tester`      | ✗        | `attribute` is not visible                  |
+| Class         | Visible? | Comment                                     | Note |
+|---------------|----------|---------------------------------------------|------|
+| `Game       ` | ✓        | `attribute` is declared in the same class   |      |
+| `TypeOneGame` | ✓        | `attribute` is declared in the same package | also inherits `attribute` |
+| `TypeTwoGame` | ✓        | `attribute` is declared in the same package | also inherits `attribute` |
+| `Utility`     | ✓        | `attribute` is declared in the same package |      |
+| `YourGame`    | ✓        | `attribute` is declared in a parent class   | also inherits `attribute` |
+| `Tester`      | ✗        | `attribute` is not visible                  |      |
 
 <hr/>
 
