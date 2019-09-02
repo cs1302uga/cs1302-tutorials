@@ -151,6 +151,8 @@ yourself with Euler's method; instead keep in mind that the package private
 `sqrt` method is not suitable for public access**):
 
 ```java
+package cs1302.util;
+
 /**
  * Contains utility methods for mathematical operations.
  */
@@ -161,7 +163,8 @@ public class Math {
      * the specified initial {@code estimate}. This method should
      * only be used within the current package because we cannot
      * guarantee the user will provide anything meaningful for the
-     * {@code estimate}.
+     * {@code estimate}. In general, this method is faster if a
+     * good {@code estimate} is supplied.
      *
      * @param n         number to find the square root of
      * @param estimate  initial estimate
@@ -184,8 +187,63 @@ public class Math {
 } // Math
 ```
 
+In this example, methods in the `Statistics` class can access both the one-parameter
+and two-parameter `Math.sqrt` method. Here is an example:
 
+```java
+package cs1302.util;
 
+/**
+ * Contains utility methods for statistical operations.
+ */
+public class Statistics {
+    
+    ...
+    
+    /**
+     * Returns the standard deviation of the supplied {@code values} based
+     * on their population variance.
+     *
+     * @param values  values to find the standard deviation of
+     * @return standard deviation of {@code values}
+     */
+    public static double stddev(double[] values) {
+        double varianceEst = variance(values);
+        double stdDevEst   = Math.sqrt(varianceEst, 0.25 * varianceEst); // two-parameter sqrt is visible
+        return stdDevEst;
+    } // stddev
+    
+} // Statistics
+```
+
+However, **methods in the `MathTutorApp` class can only access the one-parameter `Math.sqrt` method,**
+because relative to any lines in the `MathTutorApp` class, only the public `Math.sqrt` method visible.
+The two-parameter `Math.sqrt` method is not visible because it's declared in another package and has
+package private visibility. Consider the following code example:
+
+```java
+package some.other.package;
+
+import cs1302.util.Math;
+
+public class MathTutorApp {
+
+    ...
+    
+    public static void main(String[] args) {
+    
+        ...
+        
+        double n = 1024.0;
+        double stdDev1 = Math.sqrt(n);         // okay; one-parameter Math.sqrt is public
+        double stdDev2 = Math.sqrt(n, -100.0); // won't compile; two-parameter Math.sqrt is package private
+        
+        ...
+    
+    } // main
+
+} // MathTutorApp
+```
 
 <hr/>
 
