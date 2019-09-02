@@ -38,6 +38,12 @@ to accomodate some of the scenarios that in-between.
 
 ## Interpretation
 
+To determine if a line of code can see a method or instance variable, you
+need to consider where that method or instance variable is relative to
+the line of code that's using it. In the table below, we summarize the 
+different scenarios that can occur based on where the method or instance
+variable is declared:
+
 | # | Member Declaration | `private` | _package private_ | `protected` | `public` |
 |---|--------------------|-----------|-------------------|-------------|----------|
 | 1 | same class         | ✓         | ✓                 | ✓           | ✓        |
@@ -45,13 +51,15 @@ to accomodate some of the scenarios that in-between.
 | 3 | parent class       |           |                   | ✓           | ✓        |
 | 4 | none of the above  |           |                   |             | ✓        |
 
-1.
+1. 
 
 2.
 
 3.
 
 4.
+
+## 
 
 <hr/>
 
