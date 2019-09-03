@@ -138,12 +138,107 @@ the List would look at a high level.
 
 ## Implementations of the List ADT
 
-A common approach is to either implement the List ADT using an array or a linked list. Since you're familiar with
-arrays, we will start with a discussion of this approach.
+Now that we've seen how the List ADT is intended to function, we can focus on *how* to make it work. The List ADT is
+commonly implemented using either an array or a linked list. Since you're likely more familiar with arrays, we will 
+start with a discussion of this approach.
 
 ## List ADT - Array Implementation
 
+In this section, you will see the same set of instructions as above, however, they will now be accompanied by a diagram
+showing the internal structure of `myList` using one of many possible array-based implementations.
 
+1.
+   ```java
+   List myList = new List();
+   System.out.println("List Size: " + myList.size());
+   System.out.println("List Contents: " + myList.makeString(","));
+   ```
+   ```
+   List Size: 0
+   List Contents:
+   ```
+   
+   
+   
+1.
+   ```java
+   myList.add(0, "Bread");
+   System.out.println("List Size: " + myList.size());
+   System.out.println("List Contents: " + myList.makeString(","));
+   ```
+   ```
+   List Size: 1
+   List Contents: Bread
+   ```
+
+1.
+   ```java
+   myList.add(0, "Cheese");
+   System.out.println("List Size: " + myList.size());
+   System.out.println("List Contents: " + myList.makeString(","));
+   ```
+   ```
+   List Size: 2
+   List Contents: Cheese, Bread
+   ```
+
+1.
+   ```java
+   myList.add(1, "Milk");
+   System.out.println("List Size: " + myList.size());
+   System.out.println("List Contents: " + myList.makeString(","));
+   ```
+   ```
+   List Size: 3
+   List Contents: Cheese, Milk, Bread
+   ```
+   
+1.
+   ```java
+   myList.add(3, "Ice Cream");
+   System.out.println("List Size: " + myList.size());
+   System.out.println("List Contents: " + myList.makeString(","));
+   ```
+   ```
+   List Size: 4
+   List Contents: Cheese, Milk, Bread, Ice Cream
+   ```
+   
+1.   
+   ```java
+   System.out.println("Removed: " + myList.remove(0));
+   System.out.println("List Size: " + myList.size());
+   System.out.println("List Contents: " + myList.makeString(","));
+   ```
+   ```
+   Removed: Cheese
+   List Size: 3
+   List Contents: Milk, Bread, Ice Cream
+   ```
+   
+1.
+   ```java
+   System.out.println("Item at index 0: " + myList.get(0));
+   System.out.println("List Size: " + myList.size());
+   System.out.println("List Contents: " + myList.makeString(","));
+   ```
+   ```
+   Item at index 0: Milk
+   List Size: 3
+   List Contents: Milk, Bread, Ice Cream
+   ```
+1.
+   ```java
+   myList.clear();
+   System.out.println("List Size: " + myList.size());
+   System.out.println("List Contents: " + myList.makeString(","));
+   ```
+   ```
+   List Size: 0
+   List Contents:
+   ```
+
+## Linked Lists require Nodes
 ## List ADT - Linked List Implementation
 
 
