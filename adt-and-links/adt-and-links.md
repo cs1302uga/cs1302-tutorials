@@ -42,7 +42,7 @@ we will use the following definitions:
      the sequence separated by the specified seprator string.
 
 Notice that the description and operations given above were independent of any underlying data structure or implementation.
-When thinking of an ADT, try to avoid worrying about those details.
+When thinking of _using_ an ADT, try to avoid worrying about those details.
 
 **List ADT Example**
 
