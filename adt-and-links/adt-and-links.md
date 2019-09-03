@@ -31,7 +31,8 @@ while another vending machine implementation might use robotic arms to do the sa
 vending machine manufacturers are responsible for the inner workings of their implementations so long
 as the `vendItem` operation works as previously described. Take special care to notice that the ADT
 description did not only describe what should happen under normal circumstances. It described what
-should happen under exceptional circumstances as well.
+should happen under exceptional circumstances as well. It did so without ever saying _how_ any of that
+should be done.
 
 ## The List ADT
 
