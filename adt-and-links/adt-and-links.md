@@ -247,15 +247,112 @@ showing the internal structure of `myList` using one of many possible array-base
 
 
 ## Linked Lists require Nodes
+
+Explain the idea of a Node in this section.
+
 ## List ADT - Linked List Implementation
 
+In this section, you will see the same set of instructions as above, however, they will now be accompanied by a diagram
+showing the internal structure of `myList` using one of many possible linked list implementations.
 
+1.
+   ```java
+   List myList = new List();
+   System.out.println("List Size: " + myList.size());
+   System.out.println("List Contents: " + myList.makeString(","));
    ```
-                   /----------------\       /----------------\
-   example ------->| str -> "Hello" |   /-->| str -> "World" |
-                   | next ----------|--/    | next = null    |
-                   \----------------/       \----------------/
    ```
+   List Size: 0
+   List Contents:
+   ```
+   ![Initial List Creation](res/Linked1.jpg)
+   
+1.
+   ```java
+   myList.add(0, "Bread");
+   System.out.println("List Size: " + myList.size());
+   System.out.println("List Contents: " + myList.makeString(","));
+   ```
+   ```
+   List Size: 1
+   List Contents: Bread
+   ```
+   ![After First Add](res/Linked2.jpg)
+1.
+   ```java
+   myList.add(0, "Cheese");
+   System.out.println("List Size: " + myList.size());
+   System.out.println("List Contents: " + myList.makeString(","));
+   ```
+   ```
+   List Size: 2
+   List Contents: Cheese, Bread
+   ```
+   ![After Second Add](res/Linked3.jpg)
+   
+1.
+   ```java
+   myList.add(1, "Milk");
+   System.out.println("List Size: " + myList.size());
+   System.out.println("List Contents: " + myList.makeString(","));
+   ```
+   ```
+   List Size: 3
+   List Contents: Cheese, Milk, Bread
+   ```
+   ![After Third Add](res/Linked4.jpg)
+      
+1.
+   ```java
+   myList.add(3, "Ice Cream");
+   System.out.println("List Size: " + myList.size());
+   System.out.println("List Contents: " + myList.makeString(","));
+   ```
+   ```
+   List Size: 4
+   List Contents: Cheese, Milk, Bread, Ice Cream
+   ```
+   ![After Fourth Add](res/Linked5.jpg)
+
+   
+1.   
+   ```java
+   System.out.println("Removed: " + myList.remove(0));
+   System.out.println("List Size: " + myList.size());
+   System.out.println("List Contents: " + myList.makeString(","));
+   ```
+   ```
+   Removed: Cheese
+   List Size: 3
+   List Contents: Milk, Bread, Ice Cream
+   ```
+   ![After Remove](res/Linked6.jpg)
+
+1.
+   ```java
+   System.out.println("Item at index 0: " + myList.get(0));
+   System.out.println("List Size: " + myList.size());
+   System.out.println("List Contents: " + myList.makeString(","));
+   ```
+   ```
+   Item at index 0: Milk
+   List Size: 3
+   List Contents: Milk, Bread, Ice Cream
+   ```
+   ![After Remove](res/Linked6.jpg)
+
+1.
+   ```java
+   myList.clear();
+   System.out.println("List Size: " + myList.size());
+   System.out.println("List Contents: " + myList.makeString(","));
+   ```
+   ```
+   List Size: 0
+   List Contents:
+   ```
+   ![After Clear](res/Linked7.jpg)
+
    
 <hr/>
 
