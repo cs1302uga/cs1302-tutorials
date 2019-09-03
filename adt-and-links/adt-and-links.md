@@ -157,8 +157,7 @@ showing the internal structure of `myList` using one of many possible array-base
    List Size: 0
    List Contents:
    ```
-   
-   
+   ![Initial List Creation](res/Array1.jpg)
    
 1.
    ```java
@@ -170,7 +169,7 @@ showing the internal structure of `myList` using one of many possible array-base
    List Size: 1
    List Contents: Bread
    ```
-
+   ![After First Add](res/Array2.jpg)
 1.
    ```java
    myList.add(0, "Cheese");
@@ -181,7 +180,8 @@ showing the internal structure of `myList` using one of many possible array-base
    List Size: 2
    List Contents: Cheese, Bread
    ```
-
+   ![After Second Add](res/Array3.jpg)
+   
 1.
    ```java
    myList.add(1, "Milk");
@@ -192,7 +192,8 @@ showing the internal structure of `myList` using one of many possible array-base
    List Size: 3
    List Contents: Cheese, Milk, Bread
    ```
-   
+   ![After Third Add](res/Array4.jpg)
+      
 1.
    ```java
    myList.add(3, "Ice Cream");
@@ -203,6 +204,8 @@ showing the internal structure of `myList` using one of many possible array-base
    List Size: 4
    List Contents: Cheese, Milk, Bread, Ice Cream
    ```
+   ![After Fourth Add](res/Array5.jpg)
+
    
 1.   
    ```java
@@ -237,6 +240,8 @@ showing the internal structure of `myList` using one of many possible array-base
    List Size: 0
    List Contents:
    ```
+   ![Initial List Creation](res/Array1.jpg)
+
 
 ## Linked Lists require Nodes
 ## List ADT - Linked List Implementation
