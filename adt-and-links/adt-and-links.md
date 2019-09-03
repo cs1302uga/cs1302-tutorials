@@ -5,10 +5,11 @@
 ## Introduction
 
 An Abstract Data Type (ADT) is a high-level (abstract) description of a data type which includes the operations (methods)
-available on the data type. The exact implementation details, including the underlying structure, are left to the programmer. 
+available on the data type as well as what users of the data type should expect when using those operations. 
+The exact implementation details, including the underlying structure, are left to the programmer. 
 There are often many useful implementations for a given ADT. The decision of which implementation depends on which one would
-be more efficient for the application at hand. You can think of an ADT as an interface describing the operations that an
-implementing class must contain.
+be more efficient for the application at hand. You can think of an ADT as a well-commented interface describing 
+the operations that an implementing class must contain.
 
 ## The List ADT
 
@@ -27,16 +28,18 @@ The exact method signatures and behaviors of these methods may differ across var
 we will use the following definitions:
 
    * `List()` - creates a new List object with an initial size of zero.
-   * `String get(int index)` - retrieves the object (String in this case) at the specified index. This method throws
-   an `IndexOutOfBoundsException` if the index is out of range `(index < 0 || index >= size())`
-   * `boolean add(int index, String s)` - inserts the specified object (String in this case) at the specified index. The 
-   method shifts the object currently at that position (if any) and any subsequent objects to the right (i.e. it adds one to
-   their indices).
-   * `String remove(int index)` - removes and returns the string at the specified position in the list. Shifts any subsequent
-   elements to the left (i.e. subtracts one from their indices).
-   * `void clear()` - Removes all of the objects from the list. The list will be empty after this call returns.
-   * `String makeString(String separator)` - Returns a string representation of this list with every string in the sequence
-   separated by the specified seprator string.
+   * `String get(int index)` - retrieves the object (String in this case) at the specified index. 
+     This method throws an `IndexOutOfBoundsException` if the index is out of range 
+     `(index < 0 || index >= size())`
+   * `boolean add(int index, String s)` - inserts the specified object (String in this case) at the specified index. 
+     The method shifts the object currently at that position (if any) and any subsequent objects to the right 
+     (i.e. it adds one to  their indices).
+   * `String remove(int index)` - removes and returns the string at the specified position in the list. 
+     Shifts any subsequent elements to the left (i.e. subtracts one from their indices).
+   * `void clear()` - Removes all of the objects from the list. 
+     The list will be empty after this call returns.
+   * `String makeString(String separator)` - Returns a string representation of this list with every string in
+     the sequence separated by the specified seprator string.
 
 Notice that the description and operations given above were independent of any underlying data structure or implementation.
 When thinking of an ADT, try to avoid worrying about those details.
