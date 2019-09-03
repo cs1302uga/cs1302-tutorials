@@ -218,7 +218,8 @@ showing the internal structure of `myList` using one of many possible array-base
    List Size: 3
    List Contents: Milk, Bread, Ice Cream
    ```
-   
+   ![After Remove](res/Array6.jpg)
+
 1.
    ```java
    System.out.println("Item at index 0: " + myList.get(0));
@@ -230,6 +231,8 @@ showing the internal structure of `myList` using one of many possible array-base
    List Size: 3
    List Contents: Milk, Bread, Ice Cream
    ```
+   ![After Remove](res/Array6.jpg)
+
 1.
    ```java
    myList.clear();
@@ -240,7 +243,7 @@ showing the internal structure of `myList` using one of many possible array-base
    List Size: 0
    List Contents:
    ```
-   ![Initial List Creation](res/Array1.jpg)
+   ![After Clear](res/Array7.jpg)
 
 
 ## Linked Lists require Nodes
