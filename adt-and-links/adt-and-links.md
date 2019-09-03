@@ -11,35 +11,55 @@ There are often many useful implementations for a given ADT. The decision of whi
 be more efficient for the application at hand. You can think of an ADT as a well-commented interface describing 
 the operations that an implementing class must contain.
 
+**Consider a vending machine description as a physical analagy for an ADT.** From the outside perspective, 
+users of a vending machine are only concerned with whether or not a machine _can_ vend. They do necessarily 
+care _how_ a machine vends. An operation for a vending machine might be described by the following method:
+
+* `void vendItem(double payment, int item) throws UnavailableItemException, InsufficientPaymentException`
+  * Users should be able to call a method called `vendItem`, specifying a payment amount and item number.
+    If valid and proper input is supplied, then the vending machine should vend the item to the user.
+  * If the item is unavailable, then the method throws an `UnavailableItemException` which causes the
+    vending machine's display to update accordingly.
+  * Likewise, if an insufficient amount for the specified item is supplied, then the method throws
+    an `InsufficientPaymentException` which also causes the vending machine's display to update accordingly.
+    
+In this analagy, we have a VendingMachine ADT with one operation called `vendItem`. Not only should
+any vending machine implementation have a `vendItem` operation, but it should operate, from the user's
+perspective, as described in the ADT description. **What does the ADT not describe?** It doesn't describe 
+how the actual vending occurs. One vending machine implementation might use conveyer belts to vend an item,
+while another vending machine implementation might use robotic arms to do the same. That is, different
+vending machine manufacturers are responsible for the inner workings of their implementations so long
+as the `vendItem` operation works as previously described.
+
 ## The List ADT
 
 A common ADT is the List ADT. When thinking of a List as an abstract type, you can think of a List as an ordered collection 
 of objects. There are a number of important operations needed for a List. Some common list operations include, but are not
 limited to:
 
-   * Creating a new list.
-   * Retrieving an object in the list at a particular index.
-   * Adding an object to the list at a particular index.
-   * Removing an object from the list at a particular index.
-   * Clearing the list.
-   * Print the contents of the list.
+* Creating a new list.
+* Retrieving an object in the list at a particular index.
+* Adding an object to the list at a particular index.
+* Removing an object from the list at a particular index.
+* Clearing the list.
+* Print the contents of the list.
 
 The exact method signatures and behaviors of these methods may differ across various List ADT definitions. In this tutorial,
 we will use the following definitions:
 
-   * `List()` - creates a new List object with an initial size of zero.
-   * `String get(int index)` - retrieves the object (String in this case) at the specified index. 
-     This method throws an `IndexOutOfBoundsException` if the index is out of range 
-     `(index < 0 || index >= size())`
-   * `boolean add(int index, String s)` - inserts the specified object (String in this case) at the specified index. 
-     The method shifts the object currently at that position (if any) and any subsequent objects to the right 
-     (i.e. it adds one to  their indices).
-   * `String remove(int index)` - removes and returns the string at the specified position in the list. 
-     Shifts any subsequent elements to the left (i.e. subtracts one from their indices).
-   * `void clear()` - Removes all of the objects from the list. 
-     The list will be empty after this call returns.
-   * `String makeString(String separator)` - Returns a string representation of this list with every string in
-     the sequence separated by the specified seprator string.
+* `List()` - creates a new List object with an initial size of zero.
+* `String get(int index)` - retrieves the object (String in this case) at the specified index. 
+  This method throws an `IndexOutOfBoundsException` if the index is out of range 
+  `(index < 0 || index >= size())`
+* `boolean add(int index, String s)` - inserts the specified object (String in this case) at the specified index. 
+  The method shifts the object currently at that position (if any) and any subsequent objects to the right 
+  (i.e. it adds one to  their indices).
+* `String remove(int index)` - removes and returns the string at the specified position in the list. 
+  Shifts any subsequent elements to the left (i.e. subtracts one from their indices).
+* `void clear()` - Removes all of the objects from the list. 
+  The list will be empty after this call returns.
+* `String makeString(String separator)` - Returns a string representation of this list with every string in
+  the sequence separated by the specified seprator string.
 
 Notice that the description and operations given above were independent of any underlying data structure or implementation.
 When thinking of _using_ an ADT, try to avoid worrying about those details.
