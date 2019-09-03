@@ -29,7 +29,9 @@ perspective, as described in the ADT description. **What does the ADT not descri
 how the actual vending occurs. One vending machine implementation might use conveyer belts to vend an item,
 while another vending machine implementation might use robotic arms to do the same. That is, different
 vending machine manufacturers are responsible for the inner workings of their implementations so long
-as the `vendItem` operation works as previously described.
+as the `vendItem` operation works as previously described. Take special care to notice that the ADT
+description did not only describe what should happen under normal circumstances. It described what
+should happen under exceptional circumstances as well.
 
 ## The List ADT
 
