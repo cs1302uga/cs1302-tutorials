@@ -164,14 +164,21 @@ the List would look at a high level.
 
 ## Implementations of the List ADT
 
-Now that we've seen how the List ADT is intended to function, we can focus on *how* to make it work. The List ADT is
-commonly implemented using either an array or a linked list. Since you're likely more familiar with arrays, we will 
-start with a discussion of this approach.
+Now that we've seen how the List ADT is intended to function, we can focus on *how* to make it work. As you will see,
+there are pros and cons to each implementation. The List ADT is commonly implemented using either an array or a linked list. 
+Since you're likely more familiar with arrays, we will start with a discussion of this approach.
 
 ## List ADT - Array Implementation
 
-In this section, you will see the same set of instructions as above, however, they will now be accompanied by a diagram
-showing the internal structure of `myList` using one of many possible array-based implementations.
+The main benefit of an array-based List implementation is extremely fast access to List elements. This is due to the fact
+that arrays are laid out in a contiguous block of primary memory. The main drawback of an array-based approach is that
+an array's size is fixed. Therefore, if you want to increase the size of an array, you are forced to create a new array of a 
+larger size and then copy over the elements of the old array to the new, larger array. As you can imagine, this requires
+a lot of work for the computer and we would like to minimize the number of times that arrays are resized.
+
+Let's take a look at how an array-based implementation would look internally for some of our List ADT methods. In the 
+examples below, we show the same code as above along with each example also having an associated image demonstrating the
+internal state of the array-based List object named `myList`.
 
 1.
    ```java
@@ -278,8 +285,15 @@ Explain the idea of a Node in this section.
 
 ## List ADT - Linked List Implementation
 
-In this section, you will see the same set of instructions as above, however, they will now be accompanied by a diagram
-showing the internal structure of `myList` using one of many possible linked list implementations.
+The main benefit of an linked list implementation is the fact that these structures can easily increase size by adding a 
+new, dynamically allocated node object. The main drawback of an is that elements are harder to access. Each access requires
+the program to traverse from the head of the list to the desired index. Compare this to arrays where the program can 
+jump directly to the requested index. As you can imagine, traversing the links is especially costly if we need to access
+an element that is located toward the end of a long linked list.
+
+Let's take a look at how an linked list implementation would look internally for some of our List ADT methods. In the 
+examples below, we show the same code as above along with each example also having an associated image demonstrating the
+internal state of the linked list based object named `myList`.
 
 1.
    ```java
