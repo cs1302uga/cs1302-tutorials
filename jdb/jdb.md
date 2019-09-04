@@ -4,7 +4,20 @@
 
 ## Introduction
 
+The **Java Debugger** (JDB) is a simple command-line debugger for Java classes. 
+The `jdb` command and its options start JDB.
 
+## Getting Started
+
+## Running JDB
+
+## Breakpoints
+
+## Stepping
+
+## Inspecting
+
+## Concluding Remarks
 
 <hr/>
 
