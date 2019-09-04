@@ -194,12 +194,14 @@ object, `myList`, using both an array and a linked list as the internal data str
    
    <table>
    <tr>
-   <td><img width="800" src="res/Array2.png"></td>
-   <td>Array notes...</td>
+   <td><img width="1500" src="res/Array2.png"></td>
+   <td>In the array list implementation, the item is stored in first position within the array.</td>
    </tr>
    <tr>
-   <td><img width="500"  src="res/Linked2.png"></td>
-   <td>Linked list notes...</td>
+   <td><img width="1500"  src="res/Linked2.png"></td>
+   <td>
+    In the linked list implementation, a node object is created that contains the item, then
+    head is assigned a reference to that node.</td>
    </tr>
    </table>
    
