@@ -180,7 +180,9 @@ object, `myList`, using both an array and a linked list as the internal data str
    </tr>
    </table>
    
-1. **Add element into index position 0.**
+1. **Add element into index position 0.** Adding an item to index `0` conceptually adds the item
+   to the beginning of the list. If this `add` operation is successful, then we expect the 
+   list size to increase to `1`.
 
    ```java
    myList.add(0, "Bread");
@@ -195,7 +197,9 @@ object, `myList`, using both an array and a linked list as the internal data str
    <table>
    <tr>
    <td><img width="1500" src="res/Array2.png"></td>
-   <td>In the array list implementation, the item is stored in first position within the array.</td>
+   <td>
+    In the array list implementation, the item is stored at index position `0` within the array.
+    </td>
    </tr>
    <tr>
    <td><img width="1500"  src="res/Linked2.png"></td>
@@ -205,7 +209,10 @@ object, `myList`, using both an array and a linked list as the internal data str
    </tr>
    </table>
    
-1. **Add element into index position 0.**
+1. **Add another element into index position 0.** Remember, if the `add` method shifts the object 
+   currently at that position (in this case, `"Bread"`) and any subsequent objects to the right 
+   (i.e. it adds one to  their indices). Therefore, if this `add` operation is successful, then
+   we expect `"Bread"` to shift to index position `1` and the list size to increase to `2`.
 
    ```java
    myList.add(0, "Cheese");
@@ -219,12 +226,12 @@ object, `myList`, using both an array and a linked list as the internal data str
    
    <table>
    <tr>
-   <td><img width="500" src="res/Array3.png"></td>
    <td>Array notes...</td>
+   <td><img width="1500" src="res/Array3.png"></td>
    </tr>
    <tr>
-   <td><img width="500"  src="res/Linked3.png"></td>
    <td>Linked list notes...</td>
+   <td><img width="1500"  src="res/Linked3.png"></td>
    </tr>
    </table>
    
