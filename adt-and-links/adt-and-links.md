@@ -138,7 +138,7 @@ The `next` instance variable is a reference (or link) to the next node in the li
 Would generate a linked list with two `Node` objects where the `next` reference to the first `Node` is connected to the 
 second `Node` object. You might visualize something like this:
 
-   ![Two Connected Nodes](res/Notes.png)
+   ![Two Connected Nodes](res/Nodes.png)
 
 The main benefit of an linked list implementation is the fact that these structures can easily increase size by adding a 
 new, dynamically allocated node object. The main drawback of an is that elements are harder to access. Each access requires
