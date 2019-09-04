@@ -36,6 +36,20 @@ JDB supports setting breakpoints, stepping, and value inspection.
    $ javac -g -d bin src/cs1302/jdb/Person.java
    $ javac -g -d bin -cp bin src/cs1302/jdb/Driver.java
    ```
+   
+1. **Run the code.**
+
+   ```
+   $ java -cp bin cs1302.jdb.Driver
+   ```
+   ```
+   mean = 3.333333
+   Person(name = Brad) and Person(name = Mike) present this tutorial.
+   ```
+   
+   The mean should be the average of `{ 5, 5, 5 }`, which is `5`, but it's not!
+   **It looks like there is a bug!**
+   Let's use the debugger to figure out what's wrong.
 
 ## Running JDB
 
