@@ -121,6 +121,7 @@ can be seen below:
 
    ```java
    public class Node {
+   
       private String value;
       private Node next;
       
@@ -169,11 +170,13 @@ object, `myList`, using both an array and a linked list as the internal data str
    <table>
    <tr>
    <td><img width="500" src="res/Array1.png"></td>
-   <td>Array notes...</td>
+   <td>
+    In the array list implementation, a non-zero length array is created upon the initial construction of the list for potential future storage by the list.
+   </td>
    </tr>
    <tr>
    <td><img width="500"  src="res/Linked1.png"></td>
-   <td>Linked list notes...</td>
+   <td>In the linked list implementation, no head node is created upon the initial construction of the list.</td>
    </tr>
    </table>
    
