@@ -113,7 +113,11 @@ To illustrate the differences, consider the following three `Shape` classes:
 
 ![Abstract Comparison](abstract.png)
 
-
+In the diagram, the first class on the left is not abstract and the other two
+are. While the italics in the middle class indicate that its abstract, it
+can be easily confused as a non-abstract class if viewed quickly. For this
+reason, we suggest you italicize and use a stereotype to indicate that a
+class is abstract just as is done with the third class in the diagram. 
 
 
 <hr/>
