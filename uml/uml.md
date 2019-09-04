@@ -121,7 +121,9 @@ class is abstract just as is done with the third class in the diagram.
 
 ### Associations
 
-
+| Association       | Description |
+|-------------------|-------------|
+| ![uses](uses.png) | `ClassA` uses `ClassB` |
 
 <hr/>
 
