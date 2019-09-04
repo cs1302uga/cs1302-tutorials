@@ -113,7 +113,57 @@ JDB supports setting breakpoints, stepping, and value inspection.
    
    main[1]
    ```
+   
+   As you can see, JDB ran the program until it hit the breakpoint in
+   `main`, which in this example was on line 37. When JDB breaks on a line,
+   it does so before executing the line. Therefore, in this example,
+   the next line of code to be executed is line 37.
+   
+1. **List the lines near the current line.** JDB already showed us what's
+   on line 37. Type the following to see the lines around line 37:
+   
+   ```
+   ] list
+   ```
+   
+   You should see the following:
+   
+   ```
+   33        } // computeMean
+   34
+   35        public static void main(String[] args) {
+   36
+   37 =>         double[] myNums = new double[] { 5.0, 5.0, 5.0 };
+   38            double mean = computeMean(myNums);
+   39            System.out.printf("mean = %f\n", mean);
+   40
+   41            Person brad = new Person("Brad");
+   42            Person mike = new Person("Mike");
+   main[1]
+   ```
 
+   Notice that JDB pointed to line 37 in the output, which is the next
+   line of code that should execute.
+   
+1. **Execute the next line of code.** 
+
+   ```
+   ] next
+   ```
+   
+   You should see the following:
+   
+   ```
+   >
+   Step completed: "thread=main", cs1302.jdb.Driver.main(), line=38 bci=22
+   38            double mean = computeMean(myNums);
+   
+   main[1]
+   ```
+   
+   JDB successfully executed 37. After that, the next line to be executed
+   is line 38, as seen in the output.
+   
 ## JDB Quick Reference
 
 ```
