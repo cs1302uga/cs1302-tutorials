@@ -74,7 +74,6 @@ the List would look at a high level. It is worth highlighting again that we can 
 details of the underlying implementation. We recommend tracing through the code to see if you can get the same output
 shown below.
 
-1.
    ```java
    List myList = new List();
    myList.add(0, "Bread");
@@ -85,6 +84,7 @@ shown below.
    System.out.println("List Size: " + myList.size());
    System.out.println("List Contents: " + myList.makeString(","));
    ```
+Program Output:
    ```
    Removed: Cheese
    List Size: 3
@@ -93,9 +93,14 @@ shown below.
    
 ## Implementations of the List ADT
 
-Now that we've seen how the List ADT is intended to function, we can focus on *how* to make it work. As you will see,
-there are pros and cons to each implementation. The List ADT is commonly implemented using either an array or a linked list. 
-Since you're likely more familiar with arrays, we will start with a discussion of this approach.
+Now that we've seen how the List ADT is intended to function, we can focus on *how* to make it work. The List ADT is commonly 
+implemented using either an array or a linked list. In general, different implementations have various pros and cons. Some of 
+the pros and cons of the array-based approach and the linked approach are listed below:
+
+|        | Array Approach    | Linked List Approach |
+|--------|-------------------|----------------------|
+| Pros   |                   |                      |
+| Cons   |                   |                      |
 
 ## List ADT - Array Implementation
 
@@ -108,105 +113,6 @@ a lot of work for the computer and we would like to minimize the number of times
 Let's take a look at how an array-based implementation would look internally for some of our List ADT methods. In the 
 examples below, we show the same code as above along with each example also having an associated image demonstrating the
 internal state of the array-based List object named `myList`.
-
-1.
-   ```java
-   List myList = new List();
-   System.out.println("List Size: " + myList.size());
-   System.out.println("List Contents: " + myList.makeString(","));
-   ```
-   ```
-   List Size: 0
-   List Contents:
-   ```
-   ![Initial List Creation](res/Array1.jpg)
-   
-1.
-   ```java
-   myList.add(0, "Bread");
-   System.out.println("List Size: " + myList.size());
-   System.out.println("List Contents: " + myList.makeString(","));
-   ```
-   ```
-   List Size: 1
-   List Contents: Bread
-   ```
-   ![After First Add](res/Array2.jpg)
-1.
-   ```java
-   myList.add(0, "Cheese");
-   System.out.println("List Size: " + myList.size());
-   System.out.println("List Contents: " + myList.makeString(","));
-   ```
-   ```
-   List Size: 2
-   List Contents: Cheese, Bread
-   ```
-   ![After Second Add](res/Array3.jpg)
-   
-1.
-   ```java
-   myList.add(1, "Milk");
-   System.out.println("List Size: " + myList.size());
-   System.out.println("List Contents: " + myList.makeString(","));
-   ```
-   ```
-   List Size: 3
-   List Contents: Cheese, Milk, Bread
-   ```
-   ![After Third Add](res/Array4.jpg)
-      
-1.
-   ```java
-   myList.add(3, "Ice Cream");
-   System.out.println("List Size: " + myList.size());
-   System.out.println("List Contents: " + myList.makeString(","));
-   ```
-   ```
-   List Size: 4
-   List Contents: Cheese, Milk, Bread, Ice Cream
-   ```
-   ![After Fourth Add](res/Array5.jpg)
-
-   
-1.   
-   ```java
-   System.out.println("Removed: " + myList.remove(0));
-   System.out.println("List Size: " + myList.size());
-   System.out.println("List Contents: " + myList.makeString(","));
-   ```
-   ```
-   Removed: Cheese
-   List Size: 3
-   List Contents: Milk, Bread, Ice Cream
-   ```
-   ![After Remove](res/Array6.jpg)
-
-1.
-   ```java
-   System.out.println("Item at index 0: " + myList.get(0));
-   System.out.println("List Size: " + myList.size());
-   System.out.println("List Contents: " + myList.makeString(","));
-   ```
-   ```
-   Item at index 0: Milk
-   List Size: 3
-   List Contents: Milk, Bread, Ice Cream
-   ```
-   ![After Remove](res/Array6.jpg)
-
-1.
-   ```java
-   myList.clear();
-   System.out.println("List Size: " + myList.size());
-   System.out.println("List Contents: " + myList.makeString(","));
-   ```
-   ```
-   List Size: 0
-   List Contents:
-   ```
-   ![After Clear](res/Array7.jpg)
-
 
 ## Linked Lists require Nodes
 
