@@ -226,11 +226,14 @@ object, `myList`, using both an array and a linked list as the internal data str
    
    <table>
    <tr>
-   <td>Array notes...</td>
+   <td>In the array list implementation, the current contents of the array were shifted to the right,
+    as needed, and the item is stored at index position `0` within the array.</td>
    <td><img width="1500" src="res/Array3.png"></td>
    </tr>
    <tr>
-   <td>Linked list notes...</td>
+   <td>In the linked list implementation, a new node is created that contains the item, then
+    the newly created node's `next` variable and the list head are updated accordingly.
+    This is a tricky operation.</td>
    <td><img width="1500"  src="res/Linked3.png"></td>
    </tr>
    </table>
