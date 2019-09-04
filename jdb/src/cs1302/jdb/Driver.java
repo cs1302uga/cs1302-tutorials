@@ -33,9 +33,15 @@ public class Driver {
     } // computeMean
     
     public static void main(String[] args) {    
+        
         double[] myNums = new double[] { 5.0, 5.0, 5.0 };
         double mean = computeMean(myNums);
         System.out.printf("mean = %f\n", mean);
+        
+        Person brad = new Person("Brad");
+        Person mike = new Person("Mike");
+        System.out.printf("%s and %s present this tutorial.\n", brad, mike);
+        
     } // main
 
 } // Driver
