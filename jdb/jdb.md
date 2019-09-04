@@ -28,6 +28,14 @@ $ jdb [options] [classname] [arguments]
 
 ## Breakpoints
 
+```
+> stop at <class>:<line_number>
+```
+
+```
+> stop in <class>.<method_name>
+```
+
 ## Stepping
 
 ## Inspecting
