@@ -98,16 +98,6 @@ implemented using either an array or a linked list. Each approach has benefits a
 
 ### List ADT - Array Implementation
 
-In general, different implementations have various pros and cons. Some of 
-the pros and cons of the array-based approach and the linked approach are listed below:
-
-|        | Array Approach    | Linked List Approach |
-|--------|-------------------|----------------------|
-| Pros   |                   |                      |
-| Cons   |                   |                      |
-
-
-
 The main benefit of an array-based List implementation is extremely fast access to List elements. This is due to the fact
 that arrays are laid out in a contiguous block of primary memory. The main drawback of an array-based approach is that
 an array's size is fixed. Therefore, if you want to increase the size of an array, you are forced to create a new array of a 
@@ -324,6 +314,15 @@ internal state of the linked list based object named `myList`.
    
 <hr/>
 
+## Conclusion
+
+In general, different implementations have various pros and cons. Some of 
+the pros and cons of the array-based approach and the linked approach are listed below:
+
+|        | Array Approach    | Linked List Approach |
+|--------|-------------------|----------------------|
+| Pros   |                   |                      |
+| Cons   |                   |                      |
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 <small>
