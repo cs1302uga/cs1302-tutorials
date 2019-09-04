@@ -22,7 +22,42 @@ The diagram consists of a rectangle broken up verticall into three sections:
    then the simple name is used here instead.
    
 1. **Variables.** In UML, the variables of a class are called _attributes_. In
-   this example, there are two private instance variables 
+   this example, there are two private instance variables and one private
+   static variable.
+   
+1. **Methods.** In UML, the methods of a class are called _operations_. In this
+   example, there is one public constructor, two public instance methods, and
+   one public static method. 
+   
+The diagram above is enough to generate the following `Person.java` file:
+
+```java
+package cs1302.example;
+
+public class Person {
+
+    private String name;
+    private int age;
+    private static int personCounter;
+    
+    public Person(String name, int age) {
+        ...
+    } // Person
+    
+    public String getName() {
+        ...
+    } // getName
+    
+    public int getAge() {
+        ...
+    } // getAge
+
+    public static int getPersonCounter() {
+        ...
+    } // getPersonCounter
+    
+} // Person
+```
 
 <hr/>
 
