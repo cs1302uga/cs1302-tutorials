@@ -404,7 +404,13 @@ internal state of the linked list based object named `myList`.
    List Size: 0
    List Contents:
    ```
-   ![After Clear](res/Linked1.png)
+   
+   <table>
+   <tr>
+   <td><img src="res/Array7.jpg"></td>
+   <td><img src="res/Linked1.png"></td>
+   </tr>
+   </table>
    
 <hr/>
 
