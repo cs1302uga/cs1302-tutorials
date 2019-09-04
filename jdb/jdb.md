@@ -10,6 +10,26 @@ JDB supports setting breakpoints, stepping, and value inspection.
 
 ## Getting Started
 
+1. Login to your Nike account.
+
+1. Use the following command to download and execute a shell script that retrieves 
+   the starter code for this tutorial and places it into a subdirectory 
+   called `cs1302-jdb`:
+
+   ```
+   $ curl -s -L UPDATE-THIS-LINK | bash
+   ```
+   
+1. Change into the `cs1302-jdb` directory that was just created and look around. There should be
+   multiple Java files contained within the directory structure. To see a listing of all of the 
+   files under the `src` subdirectory, use the `find` command as follows:
+   
+   ```
+   $ find src
+   ```
+   
+1. 
+
 ## Running JDB
 
 Here is the synopsis for the `jdb` command:
