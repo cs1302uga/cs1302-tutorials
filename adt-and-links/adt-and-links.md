@@ -408,7 +408,11 @@ internal state of the linked list based object named `myList`.
    <table>
    <tr>
    <td><img src="res/Array7.jpg"></td>
+   <td>Array notes...</td>
+   </tr>
+   <tr>
    <td><img src="res/Linked1.png"></td>
+   <td>Linked list notes...</td>
    </tr>
    </table>
    
