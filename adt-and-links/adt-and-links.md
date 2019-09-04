@@ -56,7 +56,7 @@ we will use the following definitions:
 
 | Method / Operation Name and Parameters | Description |
 |---------------------------------------|-------------|
-| `List()`                              | Creates a new List object with an initial size of zero. |
+| `List()`                              | Creates a new `List` object with an initial list size of zero. |
 | `String get(int index)`               | Retrieves the object (String in this case) at the specified index. This method throws an `IndexOutOfBoundsException` if the index is out of range `(index < 0 || index >= size())` |
 | `boolean add(int index, String s)`    | Inserts the specified object (String in this case) at the specified index. The method shifts the object currently at that position (if any) and any subsequent objects to the right (i.e. it adds one to  their indices). |
 | `String remove(int index)`            | Removes and returns the string at the specified position in the list. Shifts any subsequent elements to the left (i.e. subtracts one from their indices). |
