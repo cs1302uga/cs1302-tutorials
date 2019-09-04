@@ -54,7 +54,7 @@ limited to:
 The exact method signatures and behaviors of these methods may differ across various List ADT definitions. In this tutorial,
 we will use the following definitions:
 
-| Method                                | Description |
+| Method / Operation Name and Parameters | Description |
 |---------------------------------------|-------------|
 | `List()`                              | Creates a new List object with an initial size of zero. |
 | `String get(int index)`               | Retrieves the object (String in this case) at the specified index. This method throws an `IndexOutOfBoundsException` if the index is out of range `(index < 0 || index >= size())` |
