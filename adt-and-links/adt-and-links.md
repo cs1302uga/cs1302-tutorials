@@ -194,7 +194,7 @@ object, `myList`, using both an array and a linked list as the internal data str
    
    <table>
    <tr>
-   <td><img width="500" src="res/Array2.png"></td>
+   <td><img width="800" src="res/Array2.png"></td>
    <td>Array notes...</td>
    </tr>
    <tr>
