@@ -164,7 +164,7 @@ JDB supports setting breakpoints, stepping, and value inspection.
    JDB successfully executed 37. After that, the next line to be executed
    is line 38, as seen in the output.
    
-1. **Inspect the array.** On line 37, an array variable was declared and
+1. **Inspect a variable.** On line 37, an array variable was declared and
    initialized to refer to an array object containing three elements.
    Let's inspect the variable two different ways. 
    
@@ -183,9 +183,10 @@ JDB supports setting breakpoints, stepping, and value inspection.
    
       As the output suggests, the variable contains a reference to an array object
       of length 3. While this is useful, we probably want to see what's inside
-      the array. 
+      the array. Try `print myNums[0]` to print the value stored in the first
+      array position.
       
-   1. To dump, i.e., display the contents of an object referred to by
+   1. To dump, i.e., display the contents of an entire object referred to by
       a reference variable, you can use the `dump` command. Type the following:
    
       ```
@@ -200,6 +201,10 @@ JDB supports setting breakpoints, stepping, and value inspection.
       }
       main[1]
       ```
+      
+      This works for all objects, not just arrays.
+      
+1. **Step into the method being called on the next line of code.**
    
 ## JDB Quick Reference
 
