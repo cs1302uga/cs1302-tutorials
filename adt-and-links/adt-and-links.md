@@ -23,7 +23,7 @@ care _how_ a machine vends. An operation for a vending machine might be describe
   * Likewise, if an insufficient amount for the specified item is supplied, then the method throws
     an `InsufficientPaymentException` which also causes the vending machine's display to update accordingly.
     
-In this analagy, we have a VendingMachine ADT with one operation called `vendItem`. Not only should
+In this analogy, we have a VendingMachine ADT with one operation called `vendItem`. Not only should
 any vending machine implementation have a `vendItem` operation, but it should operate, from the user's
 perspective, as described in the ADT description. **What does the ADT not describe?** It doesn't describe 
 how the actual vending occurs. One vending machine implementation might use conveyer belts to vend an item,
