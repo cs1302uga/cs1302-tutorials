@@ -69,66 +69,18 @@ When thinking of _using_ an ADT, try to avoid worrying about those details.
 
 **List ADT Example**
 
-In the example below, we provide example List ADT method calls. For each method call, we provide an associated picture of how
-the List would look at a high level.
+In the example below, we provide a few List ADT method calls. For each method call, we provide an associated picture of how
+the List would look at a high level. It is worth highlighting again that we can understand this code without knowing any
+details of the underlying implementation. We recommend tracing through the code to see if you can get the same output
+shown below.
 
 1.
    ```java
    List myList = new List();
-   System.out.println("List Size: " + myList.size());
-   System.out.println("List Contents: " + myList.makeString(","));
-   ```
-   ```
-   List Size: 0
-   List Contents:
-   ```
-   
-1.
-   ```java
    myList.add(0, "Bread");
-   System.out.println("List Size: " + myList.size());
-   System.out.println("List Contents: " + myList.makeString(","));
-   ```
-   ```
-   List Size: 1
-   List Contents: Bread
-   ```
-
-1.
-   ```java
    myList.add(0, "Cheese");
-   System.out.println("List Size: " + myList.size());
-   System.out.println("List Contents: " + myList.makeString(","));
-   ```
-   ```
-   List Size: 2
-   List Contents: Cheese, Bread
-   ```
-
-1.
-   ```java
    myList.add(1, "Milk");
-   System.out.println("List Size: " + myList.size());
-   System.out.println("List Contents: " + myList.makeString(","));
-   ```
-   ```
-   List Size: 3
-   List Contents: Cheese, Milk, Bread
-   ```
-   
-1.
-   ```java
    myList.add(3, "Ice Cream");
-   System.out.println("List Size: " + myList.size());
-   System.out.println("List Contents: " + myList.makeString(","));
-   ```
-   ```
-   List Size: 4
-   List Contents: Cheese, Milk, Bread, Ice Cream
-   ```
-   
-1.   
-   ```java
    System.out.println("Removed: " + myList.remove(0));
    System.out.println("List Size: " + myList.size());
    System.out.println("List Contents: " + myList.makeString(","));
@@ -139,29 +91,6 @@ the List would look at a high level.
    List Contents: Milk, Bread, Ice Cream
    ```
    
-1.
-   ```java
-   System.out.println("Item at index 0: " + myList.get(0));
-   System.out.println("List Size: " + myList.size());
-   System.out.println("List Contents: " + myList.makeString(","));
-   ```
-   ```
-   Item at index 0: Milk
-   List Size: 3
-   List Contents: Milk, Bread, Ice Cream
-   ```
-1.
-   ```java
-   myList.clear();
-   System.out.println("List Size: " + myList.size());
-   System.out.println("List Contents: " + myList.makeString(","));
-   ```
-   ```
-   List Size: 0
-   List Contents:
-   ```
-   
-
 ## Implementations of the List ADT
 
 Now that we've seen how the List ADT is intended to function, we can focus on *how* to make it work. As you will see,
