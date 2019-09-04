@@ -72,7 +72,7 @@ UML supports the standard four visibilities:
 
 For an in-depth discussion of visibilities, see the [Visibility Reading](/visibility/visibility.md).
 
-### Atributes and Parameters
+### Atributes and Parameters (Variables)
 
 In UML, attributes and parameters are written in the following format:
 
@@ -80,7 +80,7 @@ In UML, attributes and parameters are written in the following format:
 visibility name : type
 ```
 
-### Operations
+### Operations (Methods)
 
 In UML, operations are written in the following format:
 
@@ -88,14 +88,17 @@ In UML, operations are written in the following format:
 visibility [<<stereotype>>] methodName(param1: type, param2: type): returnType
 ```
 
-A _stereotype_ is optional and is used to convey additional information. For
-example, you might use the following stereotypes with an operation:
+### Stereotypes
 
-| Stereotype     | Description          |
-|----------------|----------------------|
-| `<<new>>`      | Denotes constructor. |
-| `<<abstract>>` | Denotes abstract.    |
-| `<<override>>` | Denotes override.    |
+A _stereotype_ is optional and is used to convey additional information. For
+example, you might use the following stereotypes in different situations:
+
+| Stereotype      | Description          |
+|-----------------|----------------------|
+| `<<new>>`       | Denotes constructor. |
+| `<<abstract>>`  | Denotes abstract.    |
+| `<<override>>`  | Denotes override.    |
+| `<<interface>>` | Denotes interface.   |
 
 ### Abstract Classes and Operations
 
