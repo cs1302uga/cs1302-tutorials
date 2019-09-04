@@ -374,14 +374,25 @@ The main benefit of an linked list implementation is the fact that these structu
 new, dynamically allocated node object. The images below demonstrate how this might be accomplished if the instruction
 `myList.add(2, "F")` is executed.
 
+1. The method starts off by creating a `Node` object referenced by `newNode` containing the `String` to be added. Also,
+   in this step, a temporary reference, `temp`, refers to the first node in the List.
+   
    ![First Add Image](res/Add1.png)
 
+1. We move `temp` to the next node in the list. Now, `temp` is located at index 1. We avoid modifying `head` as to not 
+   change the list itself. If we were to lose the `head` reference, we would lose access to the first node in the list.
+   
    ![Second Add Image](res/Add2.png)
+
+1. We move `temp` to the next node in the list. Now, `temp` is located at index 2, which is our desired destination. This
+   is the location where `newNode` will be inserted.
    
    ![Third Add Image](res/Add3.png)
-      
+  
+1.
    ![Fourth Add Image](res/Add4.png)
-         
+   
+1.
    ![Fifth Add Image](res/Add5.png)
 
 
