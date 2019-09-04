@@ -339,7 +339,20 @@ object, `myList`, using both an array and a linked list as the internal data str
    </tr>
    </table>
 
-## Conclusion
+## Linked List Operations
+
+The benefits and drawbacks of each apprach are summarized in the table below:
+
+   |        | Array Approach          | Linked List Approach      |
+   |--------|-------------------------|---------------------------|
+   | Pros   | Fast Access to Elements | Easy to Add new Nodes     |
+   | Cons   | Expensive to Resize     | Slower access to elements |
+
+In this section, we will briefly discuss the `get(int index)` and `add(int index, String s)` operations with a linked list
+implementation.
+
+### Linked List Get Operation
+
 
 Again, The main benefit of an linked list implementation is the fact that these structures can easily increase size by adding a 
 new, dynamically allocated node object. The main drawback of a linked list implementation is that elements are harder to access.
@@ -351,11 +364,6 @@ an element that is located toward the end of a long linked list.
 
 In general, different implementations have various pros and cons. Some of 
 the pros and cons of the array-based approach and the linked approach are listed below:
-
-|        | Array Approach    | Linked List Approach |
-|--------|-------------------|----------------------|
-| Pros   |                   |                      |
-| Cons   |                   |                      |
 
 <hr/>
 
