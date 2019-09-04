@@ -94,7 +94,11 @@ Program Output:
 ## Implementations of the List ADT
 
 Now that we've seen how the List ADT is intended to function, we can focus on *how* to make it work. The List ADT is commonly 
-implemented using either an array or a linked list. In general, different implementations have various pros and cons. Some of 
+implemented using either an array or a linked list. Each approach has benefits and drawbacks. 
+
+### List ADT - Array Implementation
+
+In general, different implementations have various pros and cons. Some of 
 the pros and cons of the array-based approach and the linked approach are listed below:
 
 |        | Array Approach    | Linked List Approach |
@@ -102,7 +106,7 @@ the pros and cons of the array-based approach and the linked approach are listed
 | Pros   |                   |                      |
 | Cons   |                   |                      |
 
-## List ADT - Array Implementation
+
 
 The main benefit of an array-based List implementation is extremely fast access to List elements. This is due to the fact
 that arrays are laid out in a contiguous block of primary memory. The main drawback of an array-based approach is that
