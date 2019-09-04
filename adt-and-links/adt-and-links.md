@@ -339,7 +339,7 @@ object, `myList`, using both an array and a linked list as the internal data str
    </tr>
    </table>
 
-## Linked List Operations
+## Operation Details
 
 The benefits and drawbacks of each apprach are summarized in the table below:
 
@@ -353,10 +353,19 @@ implementation.
 
 ### Linked List Get Operation
 
+The main drawback of a linked list implementation is that elements are slower to access. Each access requires the program 
+to traverse from the head of the list to the desired index. The images below demonstrate how this might be accomplished.
+
+1. A reference to the first node in the list is created. That 
+
+![First Get Image](res/Get1.png)
+
+![Second Get Image](res/Get2.png)
+
+![Third Get Image](res/Get3.png)
 
 Again, The main benefit of an linked list implementation is the fact that these structures can easily increase size by adding a 
-new, dynamically allocated node object. The main drawback of a linked list implementation is that elements are harder to access.
-Each access requires the program to traverse from the head of the list to the desired index. 
+new, dynamically allocated node object. 
 
 Compare this to arrays where the program can 
 jump directly to the requested index. As you can imagine, traversing the links is especially costly if we need to access
