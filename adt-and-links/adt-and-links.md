@@ -393,6 +393,18 @@ internal state of the linked list based object named `myList`.
    ```
    ![After Clear](res/Linked1.png)
 
+<hr/>
+
+1. ```java
+   myList.clear();
+   System.out.println("List Size: " + myList.size());
+   System.out.println("List Contents: " + myList.makeString(","));
+   ```
+   ```
+   List Size: 0
+   List Contents:
+   ```
+   ![After Clear](res/Linked1.png)
    
 <hr/>
 
