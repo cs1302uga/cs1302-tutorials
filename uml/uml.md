@@ -80,7 +80,6 @@ In UML, attributes and parameters are written in the following format:
 visibility name : type
 ```
 
-
 ### Operations
 
 In UML, operations are written in the following format:
@@ -88,6 +87,24 @@ In UML, operations are written in the following format:
 ```
 visibility [<<stereotype>>] methodName(param1: type, param2: type): returnType
 ```
+
+A _stereotype_ is optional and is used to convey additional information. For
+example, you might use the following stereotypes with an operation:
+
+| Stereotype     | Description          |
+|----------------|----------------------|
+| `<<new>>`      | Denotes constructor. |
+| `<<abstract>>` | Denotes abstract.    |
+| `<<override>>` | Denotes override.    |
+
+### Abstract Classes and Operations
+
+The usual way to denote that a class or operation is abstract is to italicize the
+name of class or operation. Sometimes this is impractical in situations where it's
+difficult to discern the difference between the normal lettering of a font and
+its italicized version. In such casses, the names might also be prefixed with
+an `<<abstract>>` stereotype in order to better communicate the intention to the
+viewer of the diagram.
 
 <hr/>
 
