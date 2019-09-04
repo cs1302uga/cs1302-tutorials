@@ -305,7 +305,7 @@ internal state of the linked list based object named `myList`.
    List Size: 0
    List Contents:
    ```
-   ![Initial List Creation](res/Linked1.jpg)
+   ![Initial List Creation](res/Linked1.png)
    
 1.
    ```java
@@ -391,7 +391,7 @@ internal state of the linked list based object named `myList`.
    List Size: 0
    List Contents:
    ```
-   ![After Clear](res/Linked1.jpg)
+   ![After Clear](res/Linked1.png)
 
    
 <hr/>
