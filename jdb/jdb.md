@@ -39,19 +39,19 @@ JDB supports setting breakpoints, stepping, and value inspection.
 
 ## Running JDB
 
-Here is the synopsis for the `jdb` command:
+1. To run JDB on code compiled with `-g`, you need to know three pieces of information:
 
-```
-$ jdb [options] [classname] [arguments]
-```
-
-* `options` - command-line options.
-* `classname` - fully qualified name of the main class to debug.
-* `arguments` - arguments passed to the `main` method of the class.
-
-### Example
-
-
+   1. `sourcepath`, i.e., the location of the default package for source code (in our case, `src`);
+   1. `classpath`, i.e., the location of the default package for compiled code (in our case, `bin`); and
+   1. `classname`, i.e., the fully qualified name of the class containing your `main` method (in our case, `cs1302.jdb.Driver`).
+   
+   With this information, you can run JDB, for example:
+   
+   ```
+   $ jdb -sourcepath src -classpath bin cs1302.jdb.Driver
+   ```
+   
+   **If your program takes command-line arguments, then you can write them after the `classname` as usual.**
 
 ## Breakpoints
 
