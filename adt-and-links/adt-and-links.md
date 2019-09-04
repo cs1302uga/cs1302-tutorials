@@ -395,7 +395,9 @@ internal state of the linked list based object named `myList`.
 
 <hr/>
 
-1. ```java
+1. Say something here....
+
+   ```java
    myList.clear();
    System.out.println("List Size: " + myList.size());
    System.out.println("List Contents: " + myList.makeString(","));
