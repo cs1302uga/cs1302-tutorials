@@ -19,9 +19,23 @@ public class Driver {
         return sum;
     } // computeSum
     
-    public static void main(String[] args) {
+    /**
+     * Computes and returns the mean or average of the elements in {@code nums}.
+     *
+     * @param nums  numbers to average
+     * @return mean of {@code nums}
+     */
+    public static double computeMean(double[] nums) {
+        int count = nums.length;
+        double sum = computeSum(nums);
+        double mean = sum / count;
+        return mean;
+    } // computeMean
     
-    
+    public static void main(String[] args) {    
+        double[] myNums = new double[] { 5.0, 5.0, 5.0 };
+        double mean = computeMean(myNums);
+        System.out.printf("mean = %f\n", mean);
     } // main
 
 } // Driver
