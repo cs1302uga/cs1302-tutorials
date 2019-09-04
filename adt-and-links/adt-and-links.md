@@ -295,6 +295,8 @@ Let's take a look at how an linked list implementation would look internally for
 examples below, we show the same code as above along with each example also having an associated image demonstrating the
 internal state of the linked list based object named `myList`.
 
+## List ADT - Examples with Both Implementations
+
 1. **Construct a new list.**
 
    ```java
