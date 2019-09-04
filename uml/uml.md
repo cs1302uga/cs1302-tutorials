@@ -126,11 +126,14 @@ how they are associated. In UML, this is done with association arrows.
 While UML supports many different kinds of association arrows, the following
 are the arguably the most common:
 
-| Association                   | Description                            |
-|-------------------------------|----------------------------------------|
-| ![uses](uses.png)             | `ClassA` uses `ClassB`                 |
-| ![extends](extends.png)       | `Child` extends `Parent`               |
-| ![implements](implements.png) | `SomeClass` implements `SomeInterface` |
+| Association                   | Description                               | Usage                                  |
+|-------------------------------|-------------------------------------------|----------------------------------------|
+| ![uses](uses.png)             | Solid line; open arrowhead.               | `ClassA` uses `ClassB`                 |
+| ![extends](extends.png)       | Solid line; unfilled triangle arrowhead.  | `Child` extends `Parent`               |
+| ![implements](implements.png) | Dashed line; unfilled triangle arrowhead. | `SomeClass` implements `SomeInterface` |
+
+**It may seem nit picky,** but each of these arrows is visually different
+with respect to its line and its arrowhead!
 
 <hr/>
 
