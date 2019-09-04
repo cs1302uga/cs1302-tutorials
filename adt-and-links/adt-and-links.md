@@ -98,21 +98,47 @@ implemented using either an array or a linked list. Each approach has benefits a
 
 ### List ADT - Array Implementation
 
+The List ADT could be implemented using an array of the type of object stored in the list. We use an array of `String`
+references in our examples but this same structure could apply to any datatype. We also keep a variable, `size`, which 
+represents the number of items on the list. The `size` variable would be optional but it simplifies the implementation
+of many of the List ADT operations and would be recommended.
+
 The main benefit of an array-based List implementation is extremely fast access to List elements. This is due to the fact
 that arrays are laid out in a contiguous block of primary memory. The main drawback of an array-based approach is that
 an array's size is fixed. Therefore, if you want to increase the size of an array, you are forced to create a new array of a 
-larger size and then copy over the elements of the old array to the new, larger array. As you can imagine, this requires
-a lot of work for the computer and we would like to minimize the number of times that arrays are resized.
-
-Let's take a look at how an array-based implementation would look internally for some of our List ADT methods. In the 
-examples below, we show the same code as above along with each example also having an associated image demonstrating the
-internal state of the array-based List object named `myList`.
-
-## Linked Lists require Nodes
-
-Explain the idea of a Node in this section.
+larger size and then copy over the elements of the old array to the new, larger array. As you can imagine, creating an array
+and copying all elements requires a lot of work.
 
 ## List ADT - Linked List Implementation
+
+A linked list is a sequence of objects where one object in the list references the next object in the list. The objects are
+not laid out in contiguous memory and, therefore, access time is slower than an array-based implementation. However, new
+objects can easily be added to the list without having to create a copy of the entire List.
+
+The objects in a linked list are commonly referred to as **nodes**. Each node contains a value and a reference to the next
+node in the list. A Java implementation of a node class that contains `String` objects might look like the following:
+
+   ```java
+   public class Node {
+      private String value;
+      private Node next;
+      
+      // constructors, getters and setters omitted for brevity
+      
+   } // Node
+   ```
+   
+The `next` instance variable is a reference (or link) to the next node in the linked list. Executing the code
+
+   ```java
+   Node n = new Node("Hello");
+   n.setNext(new Node("World"));
+   ```
+   
+Would generate a linked list with two `Node` objects where the `next` reference to the first `Node` is connected to the 
+second `Node` object. You might visualize something like this:
+
+   ![Two Connected Nodes](res/Notes.png)
 
 The main benefit of an linked list implementation is the fact that these structures can easily increase size by adding a 
 new, dynamically allocated node object. The main drawback of an is that elements are harder to access. Each access requires
@@ -120,11 +146,11 @@ the program to traverse from the head of the list to the desired index. Compare 
 jump directly to the requested index. As you can imagine, traversing the links is especially costly if we need to access
 an element that is located toward the end of a long linked list.
 
-Let's take a look at how an linked list implementation would look internally for some of our List ADT methods. In the 
-examples below, we show the same code as above along with each example also having an associated image demonstrating the
-internal state of the linked list based object named `myList`.
-
 ## List ADT - Examples with Both Implementations
+
+Let's take a look at how the array and linked list implementations would look internally for some of our List ADT methods. 
+In the examples below, we show a few lines of Java code along with images demonstrating the internal state of the List 
+object, `myList`, using both an array and a linked list as the internal data structure.
 
 1. **Construct a new list.**
 
