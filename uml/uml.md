@@ -119,6 +119,9 @@ can be easily confused as a non-abstract class if viewed quickly. For this
 reason, we suggest you italicize and use a stereotype to indicate that a
 class is abstract just as is done with the third class in the diagram. 
 
+### Associations
+
+
 
 <hr/>
 
