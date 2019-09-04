@@ -352,7 +352,7 @@ internal state of the linked list based object named `myList`.
    List Size: 4
    List Contents: Cheese, Milk, Bread, Ice Cream
    ```
-   ![After Fourth Add](res/Linked5.jpg)
+   ![After Fourth Add](res/Linked5.png)
 
    
 1.   
@@ -366,7 +366,7 @@ internal state of the linked list based object named `myList`.
    List Size: 3
    List Contents: Milk, Bread, Ice Cream
    ```
-   ![After Remove](res/Linked6.jpg)
+   ![After Remove](res/Linked6.png)
 
 1.
    ```java
@@ -379,7 +379,7 @@ internal state of the linked list based object named `myList`.
    List Size: 3
    List Contents: Milk, Bread, Ice Cream
    ```
-   ![After Remove](res/Linked6.jpg)
+   ![After Remove](res/Linked6.png)
 
 1.
    ```java
@@ -391,7 +391,7 @@ internal state of the linked list based object named `myList`.
    List Size: 0
    List Contents:
    ```
-   ![After Clear](res/Linked7.jpg)
+   ![After Clear](res/Linked1.jpg)
 
    
 <hr/>
