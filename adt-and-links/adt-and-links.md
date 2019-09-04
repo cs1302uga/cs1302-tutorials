@@ -232,8 +232,7 @@ object, `myList`, using both an array and a linked list as the internal data str
    </tr>
    <tr>
    <td>In the linked list implementation, a new node is created that contains the item, then
-    the newly created node's `next` variable and the list head are updated accordingly.
-    This is a tricky operation.</td>
+    the newly created node's `next` variable and the list head are updated accordingly.</td>
    <td><img width="1500"  src="res/Linked3.png"></td>
    </tr>
    </table>
