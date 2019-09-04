@@ -311,7 +311,7 @@ internal state of the linked list based object named `myList`.
    
    <table>
    <tr>
-   <td><img width="500" src="res/Array1.jpg"></td>
+   <td><img width="500" src="res/Array1.png"></td>
    <td>Array notes...</td>
    </tr>
    <tr>
@@ -334,7 +334,7 @@ internal state of the linked list based object named `myList`.
    
    <table>
    <tr>
-   <td><img width="500" src="res/Array2.jpg"></td>
+   <td><img width="500" src="res/Array2.png"></td>
    <td>Array notes...</td>
    </tr>
    <tr>
@@ -357,7 +357,7 @@ internal state of the linked list based object named `myList`.
    
    <table>
    <tr>
-   <td><img width="500" src="res/Array3.jpg"></td>
+   <td><img width="500" src="res/Array3.png"></td>
    <td>Array notes...</td>
    </tr>
    <tr>
@@ -380,7 +380,7 @@ internal state of the linked list based object named `myList`.
    
    <table>
    <tr>
-   <td><img width="500" src="res/Array4.jpg"></td>
+   <td><img width="500" src="res/Array4.png"></td>
    <td>Array notes...</td>
    </tr>
    <tr>
@@ -403,7 +403,7 @@ internal state of the linked list based object named `myList`.
    
    <table>
    <tr>
-   <td><img width="500" src="res/Array5.jpg"></td>
+   <td><img width="500" src="res/Array5.png"></td>
    <td>Array notes...</td>
    </tr>
    <tr>
@@ -427,7 +427,7 @@ internal state of the linked list based object named `myList`.
    
    <table>
    <tr>
-   <td><img width="500" src="res/Array6.jpg"></td>
+   <td><img width="500" src="res/Array6.png"></td>
    <td>Array notes...</td>
    </tr>
    <tr>
@@ -451,7 +451,7 @@ internal state of the linked list based object named `myList`.
    
    <table>
    <tr>
-   <td><img width="500" src="res/Array6.jpg"></td>
+   <td><img width="500" src="res/Array6.png"></td>
    <td>Array notes...</td>
    </tr>
    <tr>
@@ -474,7 +474,7 @@ internal state of the linked list based object named `myList`.
    
    <table>
    <tr>
-   <td><img width="500" src="res/Array7.jpg"></td>
+   <td><img width="500" src="res/Array7.png"></td>
    <td>Array notes...</td>
    </tr>
    <tr>
