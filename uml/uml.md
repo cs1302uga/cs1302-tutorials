@@ -9,6 +9,12 @@ using the Unified Modeling Language (UML). While UML has many different
 types of diagrams, this reading focusses only on UML class diagrams,
 which are used to visualize classes and their associations.
 
+### Basic Class Diagram
+
+Consider the following UML class diagram:
+
+![cs1302.example.Person Class](cs1302.example.Person.png)
+
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
