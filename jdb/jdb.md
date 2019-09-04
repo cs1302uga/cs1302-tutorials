@@ -168,7 +168,7 @@ JDB supports setting breakpoints, stepping, and value inspection.
    initialized to refer to an array object containing three elements.
    Let's inspect the variable two different ways. 
    
-   1. First, type the following:
+   1. To print the value stored in the variable, type the following:
    
       ```
       ] print myNums
