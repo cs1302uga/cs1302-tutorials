@@ -28,7 +28,14 @@ JDB supports setting breakpoints, stepping, and value inspection.
    $ find src
    ```
    
-1. 
+1. **In order to use the debugger, all code must be compiled with the `-g` command-line option.** 
+   Compile each of the source code files under `src` to `bin`, specifying `-g` in addition and `-d bin`
+   (and `-cp bin` when needed).
+   
+   ```
+   $ javac -g -d bin src/cs1302/jdb/Person.java
+   $ javac -g -d bin -cp bin src/cs1302/jdb/Driver.java
+   ```
 
 ## Running JDB
 
