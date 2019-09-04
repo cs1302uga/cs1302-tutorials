@@ -11,6 +11,20 @@ The `jdb` command and its options start JDB.
 
 ## Running JDB
 
+Here is the synopsis for the `jdb` command:
+
+```
+$ jdb [options] [classname] [arguments]
+```
+
+* `options` - command-line options.
+* `classname` - fully qualified name of the main class to debug.
+* `arguments` - arguments passed to the `main` method of the class.
+
+### Example
+
+
+
 ## Breakpoints
 
 ## Stepping
