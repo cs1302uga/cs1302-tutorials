@@ -317,7 +317,7 @@ internal state of the linked list based object named `myList`.
    List Size: 1
    List Contents: Bread
    ```
-   ![After First Add](res/Linked2.jpg)
+   ![After First Add](res/Linked2.png)
 1.
    ```java
    myList.add(0, "Cheese");
@@ -328,7 +328,7 @@ internal state of the linked list based object named `myList`.
    List Size: 2
    List Contents: Cheese, Bread
    ```
-   ![After Second Add](res/Linked3.jpg)
+   ![After Second Add](res/Linked3.png)
    
 1.
    ```java
@@ -340,7 +340,7 @@ internal state of the linked list based object named `myList`.
    List Size: 3
    List Contents: Cheese, Milk, Bread
    ```
-   ![After Third Add](res/Linked4.jpg)
+   ![After Third Add](res/Linked4.png)
       
 1.
    ```java
