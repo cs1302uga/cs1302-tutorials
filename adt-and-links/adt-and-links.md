@@ -237,7 +237,8 @@ object, `myList`, using both an array and a linked list as the internal data str
    </tr>
    </table>
    
-1. **Add element into index position 1.**
+1. **Add element into index position 1.** Just like with the previous operation, some items in the 
+   the list will conceptually shift to the right. 
 
    ```java
    myList.add(1, "Milk");
@@ -251,12 +252,15 @@ object, `myList`, using both an array and a linked list as the internal data str
    
    <table>
    <tr>
-   <td><img width="500" src="res/Array4.png"></td>
-   <td>Array notes...</td>
+   <td>In the array list implementation, only the elements in indices `1` and greater are shifted
+    to the right before the item is stored at index position `1` within the array.</td>
+   <td><img width="1500" src="res/Array4.png"></td>
    </tr>
    <tr>
-   <td><img width="500"  src="res/Linked4.png"></td>
-   <td>Linked list notes...</td>
+   <td>In the array list implementation, a new node is created that contains the item, then
+    the `next` variable of both the newly created node and the node referred to by `head`
+    are updated accordingly.</td>
+   <td><img width="1500"  src="res/Linked4.png"></td>
    </tr>
    </table>
       
