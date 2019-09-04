@@ -385,16 +385,21 @@ new, dynamically allocated node object. The images below demonstrate how this mi
    ![Second Add Image](res/Add2.png)
 
 1. We move `temp` to the next node in the list. Now, `temp` is located at index 2, which is our desired destination. This
-   is the location where `newNode` will be inserted.
+   is the location where `newNode` will be inserted. In this step, we set the `next` reference of `newNode` to the `next`
+   value of `temp`.
    
    ![Third Add Image](res/Add3.png)
   
-1.
+1. In this step, the `next` field of the object referenced by `temp` is set to `newNode`.
+
    ![Fourth Add Image](res/Add4.png)
    
-1.
+1. This image represents the same structure as the previous image just redrawn without any local variables with the nodes
+   lined up cleanly.
+   
    ![Fifth Add Image](res/Add5.png)
 
+**Sumarize how this is better than array add when size has to increase**
 
 ## Conclusion
 
