@@ -107,7 +107,14 @@ name of class or operation. Sometimes this is impractical in situations where it
 difficult to discern the difference between the normal lettering of a font and
 its italicized version. In such casses, the names might also be prefixed with
 an `<<abstract>>` stereotype in order to better communicate the intention to the
-viewer of the diagram.
+viewer of the diagram. 
+
+To illustrate the differences, consider the following three `Shape` classes:
+
+![Abstract Comparison](abstract.png)
+
+
+
 
 <hr/>
 
