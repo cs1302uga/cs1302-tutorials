@@ -341,39 +341,61 @@ object, `myList`, using both an array and a linked list as the internal data str
 
 ## Operation Details
 
-The benefits and drawbacks of each apprach are summarized in the table below:
-
-   |        | Array Approach          | Linked List Approach      |
-   |--------|-------------------------|---------------------------|
-   | Pros   | Fast Access to Elements | Easy to Add new Nodes     |
-   | Cons   | Expensive to Resize     | Slower access to elements |
-
-In this section, we will briefly discuss the `get(int index)` and `add(int index, String s)` operations with a linked list
+In this section, we will take a closer look at the `get(int index)` and `add(int index, String s)` operations with a linked list
 implementation.
 
 ### Linked List Get Operation
 
 The main drawback of a linked list implementation is that elements are slower to access. Each access requires the program 
-to traverse from the head of the list to the desired index. The images below demonstrate how this might be accomplished.
+to traverse from the head of the list to the desired index. The images below demonstrate how this might be accomplished if
+the instruction `myList.get(2)` is executed.
 
-1. A reference to the first node in the list is created. That 
+1. A reference, `temp`, is assigned to the `head` of the list (index 0). 
 
-![First Get Image](res/Get1.png)
+   ![First Get Image](res/Get1.png)
 
-![Second Get Image](res/Get2.png)
+1. We move `temp` to the next node in the list. Now, `temp` is located at index 1. We avoid modifying `head` as to not 
+   change the list itself. If we were to lose the `head` reference, we would lose access to the first node in the list.
+   
+   ![Second Get Image](res/Get2.png)
 
-![Third Get Image](res/Get3.png)
+1. We move `temp` to the next node in the list. Now, `temp` is located at index 2, which is our desired destination. At 
+   this point, we can return `value` from the `Node` object referenced by `temp` as that is the value we want.
+   
+   ![Third Get Image](res/Get3.png)
 
-Again, The main benefit of an linked list implementation is the fact that these structures can easily increase size by adding a 
-new, dynamically allocated node object. 
+Compare this method to arrays where we would simply return `array[2]`. With an array implementation, the program can 
+directly access the requrested index (one of the benefits of arrays). Traversing the links in a linked list implementation
+is more costly. Especially when the desired element is located toward the end of a long linked list.
 
-Compare this to arrays where the program can 
-jump directly to the requested index. As you can imagine, traversing the links is especially costly if we need to access
-an element that is located toward the end of a long linked list.
+### Linked List Add Operation
 
-In general, different implementations have various pros and cons. Some of 
-the pros and cons of the array-based approach and the linked approach are listed below:
+The main benefit of an linked list implementation is the fact that these structures can easily increase size by adding a 
+new, dynamically allocated node object. The images below demonstrate how this might be accomplished if the instruction
+`myList.add(2, "F")` is executed.
 
+   ![First Add Image](res/Add1.png)
+
+   ![Second Add Image](res/Add2.png)
+   
+   ![Third Add Image](res/Add3.png)
+      
+   ![Fourth Add Image](res/Add4.png)
+         
+   ![Fifth Add Image](res/Add5.png)
+
+
+## Conclusion
+
+The chosen implementation of an interface can have a large impact on the program in which it is used. Selecting the 
+appropriate implementation is an important decision. In this tutorial, we discussed a linked list vs array implementation
+for the List ADT. The benefits and drawbacks of each apprach are summarized in the table below:
+
+   |        | Array Approach          | Linked List Approach      |
+   |--------|-------------------------|---------------------------|
+   | Pros   | Fast Access to Elements | Easy to Add new Nodes     |
+   | Cons   | Expensive to Resize     | Slower access to elements |
+   
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
