@@ -121,9 +121,16 @@ class is abstract just as is done with the third class in the diagram.
 
 ### Associations
 
-| Association       | Description |
-|-------------------|-------------|
-| ![uses](uses.png) | `ClassA` uses `ClassB` |
+When you have more than one class in a diagram, you often want to express
+how they are associated. In UML, this is done with association arrows.
+While UML supports many different kinds of association arrows, the following
+are the arguably the most common:
+
+| Association                   | Description                            |
+|-------------------------------|----------------------------------------|
+| ![uses](uses.png)             | `ClassA` uses `ClassB`                 |
+| ![extends](extends.png)       | `Child` extends `Parent`               |
+| ![implements](implements.png) | `SomeClass` implements `SomeInterface` |
 
 <hr/>
 
