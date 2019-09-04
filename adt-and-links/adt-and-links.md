@@ -384,8 +384,8 @@ new, dynamically allocated node object. The images below demonstrate how this mi
    
    ![Second Add Image](res/Add2.png)
 
-1. We move `temp` to the next node in the list. Now, `temp` is located at index 2, which is our desired destination. This
-   is the location where `newNode` will be inserted. In this step, we set the `next` reference of `newNode` to the `next`
+1. Now that `temp` is located at the index directly preceding where we want to add, we can start modifying the references
+   to correctly add `newNode` to our list. In this step, we set the `next` reference of `newNode` to the `next`
    value of `temp`.
    
    ![Third Add Image](res/Add3.png)
