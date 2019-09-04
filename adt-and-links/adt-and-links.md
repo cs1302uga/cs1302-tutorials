@@ -54,14 +54,14 @@ limited to:
 The exact method signatures and behaviors of these methods may differ across various List ADT definitions. In this tutorial,
 we will use the following definitions:
 
-| Method / Operation Name and Parameters | Description |
-|---------------------------------------|-------------|
-| `List()`                              | Creates a new `List` object with an initial list size of zero. |
-| `String get(int index)`               | Retrieves the object (String in this case) at the specified index. This method throws an `IndexOutOfBoundsException` if the index is out of range `(index < 0 || index >= size())` |
-| `boolean add(int index, String s)`    | Inserts the specified object (String in this case) at the specified index. The method shifts the object currently at that position (if any) and any subsequent objects to the right (i.e. it adds one to  their indices). |
-| `String remove(int index)`            | Removes and returns the string at the specified position in the list. Shifts any subsequent elements to the left (i.e. subtracts one from their indices). |
-| `void clear()`                        | Removes all of the objects from the list. The list will be empty after this call returns. |
-| `String makeString(String separator)` | Returns a string representation of this list with every string in the sequence separated by the specified seprator string. |
+| Return Type | Method / Operation Name and Parameters | Description |
+|-------------|----------------------------------------|-------------|
+| N/A         | `List()`                       | Creates a new `List` object with an initial list size of zero. |
+| `String`    | `get(int index)`               | Retrieves the object (String in this case) at the specified index. This method throws an `IndexOutOfBoundsException` if the index is out of range `(index < 0 || index >= size())` |
+| `boolean`   | `add(int index, String s)`     | Inserts the specified object (String in this case) at the specified index. The method shifts the object currently at that position (if any) and any subsequent objects to the right (i.e. it adds one to  their indices). |
+| `String`    | `remove(int index)`            | Removes and returns the string at the specified position in the list. Shifts any subsequent elements to the left (i.e. subtracts one from their indices). |
+| `void`      | `clear()`                      | Removes all of the objects from the list. The list will be empty after this call returns. |
+| `String`    | `makeString(String separator)` | Returns a string representation of this list with every string in the sequence separated by the specified seprator string. |
 
 Notice that the description and operations given above were independent of any underlying data structure or implementation.
 When thinking of _using_ an ADT, try to avoid worrying about those details.
