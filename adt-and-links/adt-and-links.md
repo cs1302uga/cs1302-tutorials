@@ -172,11 +172,11 @@ object, `myList`, using both an array and a linked list as the internal data str
    <td>
     In the array list implementation, a non-zero length array is created upon the initial construction of the list for potential future storage by the list.
    </td>
-   <td><img width="1000" src="res/Array1.png"></td>    
+   <td><img width="1500" src="res/Array1.png"></td>    
    </tr>
    <tr>
    <td>In the linked list implementation, no head node is created upon the initial construction of the list.</td>
-   <td><img width="1000"  src="res/Linked1.png"></td>    
+   <td><img width="1500"  src="res/Linked1.png"></td>    
    </tr>
    </table>
    
