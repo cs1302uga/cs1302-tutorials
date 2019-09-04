@@ -15,6 +15,15 @@ Consider the following UML class diagram:
 
 ![cs1302.example.Person Class](cs1302.example.Person.png)
 
+The diagram consists of a rectangle broken up verticall into three sections:
+
+1. **Class name.** In this case, the fully qualified name of the class is given.
+   Sometimes, if multiple classes are given and assumed to be in the same package,
+   then the simple name is used here instead.
+   
+1. **Variables.** In UML, the variables of a class are called _attributes_. In
+   this example, there are two private instance variables 
+
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
