@@ -295,7 +295,8 @@ Let's take a look at how an linked list implementation would look internally for
 examples below, we show the same code as above along with each example also having an associated image demonstrating the
 internal state of the linked list based object named `myList`.
 
-1.
+1. **Construct a new list.**
+
    ```java
    List myList = new List();
    System.out.println("List Size: " + myList.size());
@@ -305,9 +306,20 @@ internal state of the linked list based object named `myList`.
    List Size: 0
    List Contents:
    ```
-   ![Initial List Creation](res/Linked1.png)
    
-1.
+   <table>
+   <tr>
+   <td><img width="500" src="res/Array1.jpg"></td>
+   <td>Array notes...</td>
+   </tr>
+   <tr>
+   <td><img width="500"  src="res/Linked1.png"></td>
+   <td>Linked list notes...</td>
+   </tr>
+   </table>
+   
+1. **Add element into index position 0.**
+
    ```java
    myList.add(0, "Bread");
    System.out.println("List Size: " + myList.size());
@@ -317,8 +329,20 @@ internal state of the linked list based object named `myList`.
    List Size: 1
    List Contents: Bread
    ```
-   ![After First Add](res/Linked2.png)
-1.
+   
+   <table>
+   <tr>
+   <td><img width="500" src="res/Array2.jpg"></td>
+   <td>Array notes...</td>
+   </tr>
+   <tr>
+   <td><img width="500"  src="res/Linked2.png"></td>
+   <td>Linked list notes...</td>
+   </tr>
+   </table>
+   
+1. **Add element into index position 0.**
+
    ```java
    myList.add(0, "Cheese");
    System.out.println("List Size: " + myList.size());
@@ -328,9 +352,20 @@ internal state of the linked list based object named `myList`.
    List Size: 2
    List Contents: Cheese, Bread
    ```
-   ![After Second Add](res/Linked3.png)
    
-1.
+   <table>
+   <tr>
+   <td><img width="500" src="res/Array3.jpg"></td>
+   <td>Array notes...</td>
+   </tr>
+   <tr>
+   <td><img width="500"  src="res/Linked3.png"></td>
+   <td>Linked list notes...</td>
+   </tr>
+   </table>
+   
+1. **Add element into index position 1.**
+
    ```java
    myList.add(1, "Milk");
    System.out.println("List Size: " + myList.size());
@@ -340,9 +375,20 @@ internal state of the linked list based object named `myList`.
    List Size: 3
    List Contents: Cheese, Milk, Bread
    ```
-   ![After Third Add](res/Linked4.png)
+   
+   <table>
+   <tr>
+   <td><img width="500" src="res/Array4.jpg"></td>
+   <td>Array notes...</td>
+   </tr>
+   <tr>
+   <td><img width="500"  src="res/Linked4.png"></td>
+   <td>Linked list notes...</td>
+   </tr>
+   </table>
       
-1.
+1. **Add element into index position 3.**
+
    ```java
    myList.add(3, "Ice Cream");
    System.out.println("List Size: " + myList.size());
@@ -352,10 +398,20 @@ internal state of the linked list based object named `myList`.
    List Size: 4
    List Contents: Cheese, Milk, Bread, Ice Cream
    ```
-   ![After Fourth Add](res/Linked5.png)
-
    
-1.   
+   <table>
+   <tr>
+   <td><img width="500" src="res/Array5.jpg"></td>
+   <td>Array notes...</td>
+   </tr>
+   <tr>
+   <td><img width="500"  src="res/Linked5.png"></td>
+   <td>Linked list notes...</td>
+   </tr>
+   </table>
+
+1. **Remove first element.**  
+   
    ```java
    System.out.println("Removed: " + myList.remove(0));
    System.out.println("List Size: " + myList.size());
@@ -366,9 +422,20 @@ internal state of the linked list based object named `myList`.
    List Size: 3
    List Contents: Milk, Bread, Ice Cream
    ```
-   ![After Remove](res/Linked6.png)
+   
+   <table>
+   <tr>
+   <td><img width="500" src="res/Array6.jpg"></td>
+   <td>Array notes...</td>
+   </tr>
+   <tr>
+   <td><img width="500"  src="res/Linked6.png"></td>
+   <td>Linked list notes...</td>
+   </tr>
+   </table>
 
-1.
+1. **Get first element.** 
+
    ```java
    System.out.println("Item at index 0: " + myList.get(0));
    System.out.println("List Size: " + myList.size());
@@ -379,23 +446,19 @@ internal state of the linked list based object named `myList`.
    List Size: 3
    List Contents: Milk, Bread, Ice Cream
    ```
-   ![After Remove](res/Linked6.png)
+   
+   <table>
+   <tr>
+   <td><img width="500" src="res/Array6.jpg"></td>
+   <td>Array notes...</td>
+   </tr>
+   <tr>
+   <td><img width="500"  src="res/Linked6.png"></td>
+   <td>Linked list notes...</td>
+   </tr>
+   </table>
 
-1.
-   ```java
-   myList.clear();
-   System.out.println("List Size: " + myList.size());
-   System.out.println("List Contents: " + myList.makeString(","));
-   ```
-   ```
-   List Size: 0
-   List Contents:
-   ```
-   ![After Clear](res/Linked1.png)
-
-<hr/>
-
-1. Say something here....
+1. **Clear.** Say something here....
 
    ```java
    myList.clear();
