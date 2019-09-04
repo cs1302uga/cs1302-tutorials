@@ -67,7 +67,54 @@ JDB supports setting breakpoints, stepping, and value inspection.
    
    **If your program takes command-line arguments, then you can write them after the `classname` as usual.**
 
-## Breakpoints
+   If JDB starts correctly, then you should see the following:
+   
+   ```
+   Initializing jdb ...
+   >
+   ```
+   
+   Just as with the Bash shell examples where `$` denotes the shell prompt, here a `>`
+   or `]` will be used to denote the JDB prompt.
+
+1. **Set a breakpoint at the beginning of the `main` method.** To do this, we don't need
+   to explicitly know the line number. We just need to know the class that contains
+   the `main` method. Type the following:
+   
+   ```
+   > stop in cs1302.jdb.Driver.main
+   ```
+   
+   You should see the following output:
+   
+   ```
+   Deferring breakpoint cs1302.jdb.Driver.main.
+   It will be set after the class is loaded.
+   ```
+   
+1. **Run the program in JDB.** Now that a breakpoint is set, run the program by
+   typing the following:
+   
+   ```
+   > run
+   ```
+   
+   You should see the following output:
+   
+   ```
+   run cs1302.jdb.Driver
+   Set uncaught java.lang.Throwable
+   Set deferred uncaught java.lang.Throwable
+   >
+   VM Started: Set deferred breakpoint cs1302.jdb.Driver.main
+   
+   Breakpoint hit: "thread=main", cs1302.jdb.Driver.main(), line=37 bci=0
+   37            double[] myNums = new double[] { 5.0, 5.0, 5.0 };
+   
+   main[1]
+   ```
+
+## JDB Quick Reference
 
 ```
 > stop at <class>:<line_number>
