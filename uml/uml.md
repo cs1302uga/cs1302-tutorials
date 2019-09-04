@@ -59,6 +59,36 @@ public class Person {
 } // Person
 ```
 
+### Visibilities
+
+UML supports the standard four visibilities:
+
+| Visibility Name | Modifier Keyword | UML Symbol |
+|-----------------|------------------|------------|
+| private         | `private`        | `-`        |
+| package private |                  | `~`        |
+| protected       | `protected`      | `#`        |
+| public          | `public`         | `+`        |
+
+For an in-depth discussion of visibilities, see the [Visibility Reading](/visibility/visibility.uml).
+
+### Atributes and Parameters
+
+In UML, attributes and parameters are written in the following format:
+
+```
+visibility name : type
+```
+
+
+### Operations
+
+In UML, operations are written in the following format:
+
+```
+visibility [<<stereotype>>] methodName(param1: type, param2: type): returnType
+```
+
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
