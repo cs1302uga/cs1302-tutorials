@@ -110,8 +110,6 @@ JDB supports setting breakpoints, stepping, and value inspection.
    
    Breakpoint hit: "thread=main", cs1302.jdb.Driver.main(), line=37 bci=0
    37            double[] myNums = new double[] { 5.0, 5.0, 5.0 };
-   
-   main[1]
    ```
    
    As you can see, JDB ran the program until it hit the breakpoint in
@@ -139,7 +137,6 @@ JDB supports setting breakpoints, stepping, and value inspection.
    40
    41            Person brad = new Person("Brad");
    42            Person mike = new Person("Mike");
-   main[1]
    ```
 
    Notice that JDB pointed to line 37 in the output, which is the next
@@ -157,8 +154,6 @@ JDB supports setting breakpoints, stepping, and value inspection.
    >
    Step completed: "thread=main", cs1302.jdb.Driver.main(), line=38 bci=22
    38            double mean = computeMean(myNums);
-   
-   main[1]
    ```
    
    JDB successfully executed 37. After that, the next line to be executed
@@ -178,7 +173,6 @@ JDB supports setting breakpoints, stepping, and value inspection.
    
       ```
        myNums = instance of double[3] (id=399)
-      main[1]
       ```
    
       As the output suggests, the variable contains a reference to an array object
@@ -199,7 +193,6 @@ JDB supports setting breakpoints, stepping, and value inspection.
        myNums = {
       5.0, 5.0, 5.0
       }
-      main[1]
       ```
       
       This works for all objects, not just arrays.
