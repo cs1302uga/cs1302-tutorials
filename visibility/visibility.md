@@ -20,7 +20,7 @@ keyword means something different.
 
 * In an an interface, the omission of a visibility modifier keyowrd 
   implies the method has public visibility. In fact, the only visibility
-  that is allowed in an interface decalarion is public.
+  that is allowed in an interface declarion is public.
   
 * In a class, the omission of a visibility modifier keyword implies 
   the method or instance variable has _package private_ visibility.
@@ -30,11 +30,11 @@ keyword means something different.
 ## Why Visibilities?
 
 Visibilities exist so that you can control what code is visibile to other
-code. It may be desirable to only mak certain things in a class visible to
+code. It may be desirable to only make certain things in a class visible to
 the class itself, while it's perfectly okay to make other things visible
 to everything else. In particular, the two scenarios describe private and
 public visibility, respectively. However, Java has two additional visibilities
-to accomodate some of the scenarios that in-between.
+to accomodate some of the scenarios that fall in-between.
 
 ## Interpretation
 
