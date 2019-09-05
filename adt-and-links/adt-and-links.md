@@ -357,13 +357,13 @@ object, `myList`, using both an array and a linked list as the internal data str
    
    <table>
    <tr>
-   <td><img width="500" src="res/Array7.png"></td>
    <td>In the array list implementation, the `size` is updated to `0`. It's up to the implementer whether or not
     the contents of the array are modified, since the user of the list does not interact with them directly.</td>
    </tr>
+   <td><img width="1500" src="res/Array7.png"></td>
    <tr>
-   <td><img width="500"  src="res/Linked1.png"></td>
    <td>In the linked list implementatino, the `size` is updated to `0` and the `head` is set to `null`.</td>
+   <td><img width="1500"  src="res/Linked1.png"></td>
    </tr>
    </table>
 
