@@ -343,7 +343,7 @@ object, `myList`, using both an array and a linked list as the internal data str
    </tr>
    </table>
 
-1. **Clear.** Say something here....
+1. **Clear.** After a list is cleared, it conceptually has no items.
 
    ```java
    myList.clear();
@@ -358,11 +358,12 @@ object, `myList`, using both an array and a linked list as the internal data str
    <table>
    <tr>
    <td><img width="500" src="res/Array7.png"></td>
-   <td>Array notes...</td>
+   <td>In the array list implementation, the `size` is updated to `0`. It's up to the implementer whether or not
+    the contents of the array are modified, since the user of the list does not interact with them directly.</td>
    </tr>
    <tr>
    <td><img width="500"  src="res/Linked1.png"></td>
-   <td>Linked list notes...</td>
+   <td>In the linked list implementatino, the `size` is updated to `0` and the `head` is set to `null`.</td>
    </tr>
    </table>
 
