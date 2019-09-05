@@ -427,7 +427,11 @@ new, dynamically allocated node object. The images below demonstrate how this mi
    
    ![Fifth Add Image](res/Add5.png)
 
-**Sumarize how this is better than array add when size has to increase**
+**Compare the above steps to the array list add operation.**
+When there is space in the array for the new item, the linked list is much slower, comparatively. 
+However, if there is not enough space in the array for the new item, then the linked list
+add operation is usually much faster! This is because it avoids the creation of a new array object
+and the loop required to transfer the contents from the old array to the new one.
 
 ## Conclusion
 
