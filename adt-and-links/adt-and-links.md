@@ -259,7 +259,7 @@ state of the List object, `myList`, using both an array and a linked list as the
    <td><img width="1500" src="res/Array4.png"></td>
    </tr>
    <tr>
-   <td>In the array list implementation, a new node is created that contains the item, then
+   <td>In the linked list implementation, a new node is created that contains the item, then
     the `next` variable of both the newly created node and the node referred to by `head`
     are updated accordingly.</td>
    <td><img width="1500"  src="res/Linked4.png"></td>
