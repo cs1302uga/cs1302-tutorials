@@ -205,7 +205,7 @@ object, `myList`, using both an array and a linked list as the internal data str
    <td><img width="1500"  src="res/Linked2.png"></td>
    <td>
     In the linked list implementation, a node object is created that contains the item, then
-    head is assigned a reference to that node.</td>
+    `head` is assigned a reference to that node.</td>
    </tr>
    </table>
    
@@ -305,11 +305,13 @@ object, `myList`, using both an array and a linked list as the internal data str
    
    <table>
    <tr>
-   <td>Array notes...</td>    
+   <td>In the array list implementation, the contents of the array at index position `1` and 
+    greater were shifted to the left by one position.</td>
    <td><img width="1500" src="res/Array6.png"></td>
    </tr>
    <tr>
-   <td>Linked list notes...</td>
+   <td>In the linked list implementation, `head` is simply assigned a reference to the node that
+    was previously referred to by the `next` variable in the first node.</td>
    <td><img width="1500"  src="res/Linked6.png"></td>
    </tr>
    </table>
