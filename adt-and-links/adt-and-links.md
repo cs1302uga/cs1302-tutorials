@@ -7,9 +7,9 @@
 An **Abstract Data Type** (ADT) is a high-level (abstract) description of a data type which includes the operations (methods)
 available on the data type as well as what users of the data type should expect when using those operations. 
 The exact implementation details, including the underlying structure, are left to the programmer. 
-There are often many useful implementations for a given ADT. The decision of which implementation depends on which one would
-be more efficient for the application at hand. You can think of an ADT as a well-commented interface describing 
-the operations that an implementing class must contain.
+There are often many useful implementations for a given ADT. The decision of which implementation to usedepends on 
+which one would be more efficient for the application at hand. You can think of an ADT as a well-commented interface 
+describing the operations that an implementing class must contain.
 
 ### An Analagy
 
