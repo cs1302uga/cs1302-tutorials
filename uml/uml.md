@@ -15,7 +15,7 @@ Consider the following UML class diagram:
 
 ![cs1302.example.Person Class](cs1302.example.Person.png)
 
-The diagram consists of a rectangle broken up verticall into three sections:
+The diagram consists of a rectangle broken up vertically into three sections:
 
 1. **Class name.** In this case, the fully qualified name of the class is given.
    Sometimes, if multiple classes are given and assumed to be in the same package,
@@ -29,7 +29,8 @@ The diagram consists of a rectangle broken up verticall into three sections:
    example, there is one public constructor, two public instance methods, and
    one public static method. 
    
-The diagram above is enough to generate the following `Person.java` file:
+The diagram above gives enough information for a programmer (or a program) to generate the following 
+`Person.java` file:
 
 ```java
 package cs1302.example;
@@ -124,7 +125,7 @@ class is abstract just as is done with the third class in the diagram.
 When you have more than one class in a diagram, you often want to express
 how they are associated. In UML, this is done with association arrows.
 While UML supports many different kinds of association arrows, the following
-are the arguably the most common:
+are arguably the most common:
 
 | Association                   | Description                               | Usage                                  |
 |-------------------------------|-------------------------------------------|----------------------------------------|
