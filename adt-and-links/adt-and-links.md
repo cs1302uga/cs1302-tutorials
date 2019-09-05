@@ -68,10 +68,10 @@ When thinking of _using_ an ADT, try to avoid worrying about those details.
 
 **List ADT Example**
 
-In the example below, we provide a few List ADT method calls. For each method call, we provide an associated picture of how
-the List would look at a high level. It is worth highlighting again that we can understand this code without knowing any
-details of the underlying implementation. We recommend tracing through the code to see if you can get the same output
-shown below.
+In the example below, we provide a few List ADT method calls. It is worth highlighting again that we can understand 
+this code without knowing any details of the underlying implementation. We recommend tracing through the code to see 
+if you can get the same output shown below. Since we don't know what a List is at this point, you can represent the
+`myList` using any structure you want.
 
    ```java
    List myList = new List();
@@ -93,30 +93,31 @@ Program Output:
 ## Implementations of the List ADT
 
 Now that we've seen how the List ADT is intended to function, we can focus on *how* to make it work. The List ADT is commonly 
-implemented using either an array or a linked list. Each approach has benefits and drawbacks. 
+implemented using either an array or a linked list. Each approach has benefits and drawbacks discussed below. 
 
 ### List ADT - Array Implementation
 
-The List ADT could be implemented using an array of the type of object stored in the list. We use an array of `String`
+The List ADT can be implemented using an array of the type of object stored in the list. We use an array of `String`
 references in our examples but this same structure could apply to any datatype. We also keep a variable, `size`, which 
-represents the number of items on the list. The `size` variable would be optional but it simplifies the implementation
-of many of the List ADT operations and would be recommended.
+represents the number of items on the list. The `size` variable is optional but recommended as it simplifies the 
+implementation of many of the List ADT operations.
 
 The main benefit of an array-based List implementation is extremely fast access to List elements. This is due to the fact
 that arrays are laid out in a contiguous block of primary memory. The main drawback of an array-based approach is that
-an array's size is fixed. Therefore, if you want to increase the size of an array, you are forced to create a new array of a 
-larger size and then copy over the elements of the old array to the new, larger array. As you can imagine, creating an array
-and copying all elements requires a lot of work.
+an array's size is fixed. Therefore, if you want to increase the size of an array, you are forced to create a new array of 
+the larger size and subsequently copy over the elements of the old array to the new, larger array. As you can imagine, 
+creating an array and copying all elements is an expensive operation for the CPU to perform. Especially when the array 
+size is large.
 
 ### List ADT - Linked List Implementation
 
 A linked list is a sequence of objects where one object in the list references the next object in the list. The objects are
 not laid out in contiguous memory and, therefore, access time is slower than an array-based implementation. We will see 
-exactly why this is true later in the tutorial. The main benefit of linked lists is that new objects can be added to the list 
+exactly why this is true later in the reading. The main benefit of linked lists is that new objects can be added to the list 
 without having to create a copy of the entire List.
 
 The objects in a linked list are commonly referred to as **nodes**. Each node contains the value to be stored along with a 
-reference to the next node in the list. An abreviated Java implementation of a node class that contains `String` references
+reference to the next node in the list. An abbreviated Java implementation of a `Node` class containing a `String` reference
 can be seen below:
 
    ```java
