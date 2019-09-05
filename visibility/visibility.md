@@ -131,11 +131,11 @@ some inherited private variables in a child constructor indirectly by explicitly
 ## Package Private Notes
 
 Some people refer to _package private_ visibility as the _default visibility_ for
-methods and instsnce variables of a Java class. However, **the term _default_ should
+methods and instance variables of a Java class. However, **the term _default_ should
 be avoided when talking about visibility** so that the concept is not confused with
 Java's default methods feature for interfaces. 
 
-When you declare something in a class without a vidibility modifier, it has package
+When you declare something in a class without a visibility modifier, it has package
 private visibility. Something that has package private visibility is only visible
 to lines of code within the same package. That is, a line of code can only see
 something that is package private if that something is declared somewhere in the 
