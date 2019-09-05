@@ -70,7 +70,7 @@ UML supports the standard four visibilities:
 | protected       | `protected`      | `#`        |
 | public          | `public`         | `+`        |
 
-For an in-depth discussion of visibilities, see the [Visibility Reading](/visibility/visibility.md).
+For an in-depth discussion on visibilities, see the [Visibility Reading](/visibility/visibility.md).
 
 ### Atributes and Parameters (Variables)
 
