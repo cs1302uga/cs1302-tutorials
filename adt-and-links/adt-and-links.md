@@ -11,9 +11,9 @@ There are often many useful implementations for a given ADT. The decision of whi
 which one would be more efficient for the application at hand. You can think of an ADT as a well-commented interface 
 describing the operations that an implementing class must contain.
 
-### An Analagy
+### An Analogy
 
-**Consider a vending machine description as a physical analagy for an ADT.** From the outside perspective, 
+**Consider a vending machine description as a physical analogy for an ADT.** From the outside perspective, 
 users of a vending machine are only concerned with whether or not a machine _can_ vend. They do necessarily 
 care _how_ a machine vends. An operation for a vending machine might be described by the following method:
 
