@@ -316,7 +316,8 @@ object, `myList`, using both an array and a linked list as the internal data str
    </tr>
    </table>
 
-1. **Get first element.** 
+1. **Get first element.** After all the changes to the list, we expect `"Milk"` to be the
+   first item in the list.
 
    ```java
    System.out.println("Item at index 0: " + myList.get(0));
@@ -331,12 +332,14 @@ object, `myList`, using both an array and a linked list as the internal data str
    
    <table>
    <tr>
-   <td><img width="500" src="res/Array6.png"></td>
-   <td>Array notes...</td>
+   <td><img width="1500" src="res/Array6.png"></td>
+   <td>In the array list implementation, no changes are needed internally to accomodate this operation. 
+    That location in the array can be accessed directly.</td>
    </tr>
    <tr>
-   <td><img width="500"  src="res/Linked6.png"></td>
-   <td>Linked list notes...</td>
+   <td><img width="1500"  src="res/Linked6.png"></td>
+   <td>In the linked list implementation, no changes are needed internally to accomodate this operation. 
+    That location cannot be accessed directly; it must be reached starting with the node referred to by `head`.</td>
    </tr>
    </table>
 
