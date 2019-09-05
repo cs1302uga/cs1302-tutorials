@@ -11,7 +11,7 @@ There are often many useful implementations for a given ADT. The decision of whi
 be more efficient for the application at hand. You can think of an ADT as a well-commented interface describing 
 the operations that an implementing class must contain.
 
-### Analagy
+### An Analagy
 
 **Consider a vending machine description as a physical analagy for an ADT.** From the outside perspective, 
 users of a vending machine are only concerned with whether or not a machine _can_ vend. They do necessarily 
@@ -264,7 +264,8 @@ object, `myList`, using both an array and a linked list as the internal data str
    </tr>
    </table>
       
-1. **Add element into index position 3.**
+1. **Add element into index position 3.** In this example, this conceptually places the iteme
+   at the end of the list. 
 
    ```java
    myList.add(3, "Ice Cream");
@@ -278,16 +279,18 @@ object, `myList`, using both an array and a linked list as the internal data str
    
    <table>
    <tr>
-   <td><img width="500" src="res/Array5.png"></td>
-   <td>Array notes...</td>
+   <td><img width="1500" src="res/Array5.png"></td>
+   <td>In the array list implementation, the internal array capacity needed to be increased before the item could be stored at index position `3` within the array.</td>
    </tr>
    <tr>
-   <td><img width="500"  src="res/Linked5.png"></td>
-   <td>Linked list notes...</td>
+   <td><img width="1500"  src="res/Linked5.png"></td>
+   <td>In the linked list implementation, a new node is created that contains the item, then
+    the `next` variable of the node in list position `2` is updated accordingly.</td>
    </tr>
    </table>
 
-1. **Remove first element.**  
+1. **Remove first element.** Remember, the `remove` operation will shift any subsequent elements
+   in the list to the left (i.e. subtracts one from their indices). 
    
    ```java
    System.out.println("Removed: " + myList.remove(0));
@@ -302,12 +305,12 @@ object, `myList`, using both an array and a linked list as the internal data str
    
    <table>
    <tr>
-   <td><img width="500" src="res/Array6.png"></td>
-   <td>Array notes...</td>
+   <td>Array notes...</td>    
+   <td><img width="1500" src="res/Array6.png"></td>
    </tr>
    <tr>
-   <td><img width="500"  src="res/Linked6.png"></td>
    <td>Linked list notes...</td>
+   <td><img width="1500"  src="res/Linked6.png"></td>
    </tr>
    </table>
 
