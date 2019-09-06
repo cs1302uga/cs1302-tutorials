@@ -89,6 +89,8 @@ In UML, operations are written in the following format:
 visibility [<<stereotype>>] methodName(param1: type, param2: type): returnType
 ```
 
+Static methods are underlined.
+
 ### Stereotypes
 
 A _stereotype_ is optional and is used to convey additional information. For
