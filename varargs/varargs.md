@@ -11,7 +11,7 @@ array:
 ```java
 package cs1302.util
 
-import for java.io.PrintStream
+import java.io.PrintStream
 
 /**
  * Helper utility class.
