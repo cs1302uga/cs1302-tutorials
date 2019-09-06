@@ -20,7 +20,6 @@ public class Helper {
 
     /**
      * Calls {@code out.println(arg)} for each {@code arg} in {@code args}.
-     *
      * @param out   desired output stream
      * @param args  arguments to print
      */
