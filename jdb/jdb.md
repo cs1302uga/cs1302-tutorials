@@ -196,8 +196,55 @@ JDB supports setting breakpoints, stepping, and value inspection.
       ```
       
       This works for all objects, not just arrays.
-      
+
+1. **Use `list` again to list the lines near the current line.**
+   
+   ```
+   34
+   35        public static void main(String[] args) {
+   36
+   37            double[] myNums = new double[] { 5.0, 5.0, 5.0 };
+   38 =>         double mean = computeMean(myNums);
+   39            System.out.printf("mean = %f\n", mean);
+   40
+   41            Person brad = new Person("Brad");
+   42            Person mike = new Person("Mike");
+   43            System.out.printf("%s and %s present this tutorial.\n", brad, mike);
+   ```
+   
+   As you can see, the next line of code (i.e., line 38) contains a method call.
+   If you were to use the `next` command again, then JDB would execute the
+   entire method call and proceed to line 39.
+   
 1. **Step into the method being called on the next line of code.**
+   Instead of using `next`, type the following to step into the method call
+   on the next line:
+   
+   ```
+   ] step
+   ```
+   
+   You should see the following:
+   
+   ```
+   Step completed: "thread=main", cs1302.jdb.Driver.computeMean(), line=29 bci=0
+   29            int count = nums.length;
+   ```
+   
+   If you use `list` again, you would also see the following:
+   
+   ```
+   25         * @param nums  numbers to average
+   26         * @return mean of {@code nums}
+   27         */
+   28        public static double computeMean(double[] nums) {
+   29 =>         int count = nums.length;
+   30            double sum = computeSum(nums);
+   31            double mean = sum / count;
+   32            return mean;
+   33        } // computeMean
+   ```
+   
    
 ## JDB Quick Reference
 
