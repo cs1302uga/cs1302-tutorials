@@ -35,15 +35,21 @@ public class Helper {
 ```
 // elsewhere
 Helper.printlns(System.out, new String[] { "a", "b", "c" });
+Helper.printlns(System.out, new String[] { "d", "e" });
+Helper.printlns(System.out, new String[] { "f" });
+Helper.printlns(System.out, new String[] { "g", "h", "i", "j", "k" });
 ```
 
 ## Getting Started
 
-**GOAL**
+**GOAL (without overloads)**
 
 ```java
 // elsewhere
 Helper.printlns(System.out, "a", "b", "c");
+Helper.printlns(System.out, "d", "e");
+Helper.printlns(System.out, "f");
+Helper.printlns(System.out, "g", "h", "i", "j", "k");
 ```
 
 <hr/>
