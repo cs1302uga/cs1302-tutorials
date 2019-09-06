@@ -39,6 +39,12 @@ Helper.printlns(System.out, new String[] { "a", "b", "c" });
 
 ## Getting Started
 
+**GOAL**
+
+```java
+// elsewhere
+Helper.printlns(System.out, "a", "b", "c");
+```
 
 <hr/>
 
