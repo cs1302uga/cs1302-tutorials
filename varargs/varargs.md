@@ -1,9 +1,26 @@
-# Variable Arguments Tutorial
+# Variable Arguments (Varargs) Tutorial
 
 ![Status: Not Ready](https://img.shields.io/badge/Status-Not%20Ready-red.svg)
 
 ## Introduction
 
+In Java, varargs enable us to write methods that accept a variable number
+of arguments of the same type. Consider the usual way to do this using an
+array:
+
+```java
+// assume import for java.io.PrintStream
+public static void printlns(PrintStream out, String[] args) {
+    for (String arg : args) {
+        out.println(arg);
+    } // for
+} // printlns
+```
+
+```
+// elsewhere
+printlns(out, new String[] { "a", "b", "c" });
+```
 
 ## Getting Started
 
