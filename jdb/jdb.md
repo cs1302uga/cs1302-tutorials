@@ -245,6 +245,55 @@ JDB supports setting breakpoints, stepping, and value inspection.
    33        } // computeMean
    ```
    
+1. **Set a breakpoint on line 32.** Use the following command to set
+   a breakpoint on line 32:
+   
+   ```
+   ] stop in cs1302.jdb.Driver:32
+   ```
+   
+   You should see the following:
+   
+   ```
+   Set breakpoint cs1302.jdb.Driver:32
+   ```
+   
+1. **Use `cont` to continue execution untill the next breakpoint is reached.** 
+   Type the following:
+   
+   ```
+   ] cont
+   ```
+   
+   You should see the following:
+   
+   ```
+   Breakpoint hit: "thread=main", cs1302.jdb.Driver.computeMean(), line=32 bci=14
+   32            return mean;
+   ```
+   
+   As you can see, the breakpoint was at the beginning of the line. This means
+   that when the breakpoint is hit (i.e., reached), that line of code is the
+   next to execute. To put it another way, that line is not executed when
+   the breakpoint is hit.
+   
+1. **Use `locals` to list all the local variables in the current method declared so far.**
+   To see the method arguments and local variables, type the following:
+   
+   ```
+   ] locals
+   ```
+   
+   You should see the following:
+   
+   ```
+   Method arguments:
+   nums = instance of double[3] (id=399)
+   Local variables:
+   count = 3
+   sum = 10.0
+   mean = 3.3333333333333335
+   ```
    
 ## JDB Quick Reference
 
