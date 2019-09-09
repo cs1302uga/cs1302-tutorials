@@ -1,4 +1,4 @@
-# Variable Arguments (Varargs) Tutorial
+# Variable Arguments (Varargs) Reading
 
 ![Status: Not Ready](https://img.shields.io/badge/Status-Not%20Ready-red.svg)
 
@@ -32,6 +32,8 @@ public class Helper {
 } // Helper
 ```
 
+Then, elsewhere, you might call the new `printlns` method:
+
 ```
 // elsewhere
 Helper.printlns(System.out, new String[] { "a", "b", "c" });
@@ -40,17 +42,47 @@ Helper.printlns(System.out, new String[] { "f" });
 Helper.printlns(System.out, new String[] { "g", "h", "i", "j", "k" });
 ```
 
-## Getting Started
-
-**GOAL (without overloads)**
+However, the code snippet above is a little tedious because it requires
+the creation and use of any array. **The following will not work, but
+it would be nice _if we could make it work_:**
 
 ```java
 // elsewhere
 Helper.printlns(System.out, "a", "b", "c");
 Helper.printlns(System.out, "d", "e");
 Helper.printlns(System.out, "f");
-Helper.printlns(System.out, "g", "h", "i", "j", "k");
+Helper.printlns(System.out, new String[] { "g", "h", "i", "j", "k" });
 ```
+
+To facilitate this, your first instinct might be to create a set
+of method _overloads_ for the `printlns` method. That's a good thought,
+however, it would also be tedious. How many parameters will the
+method need? Is it three? Two? One? We don't really know ahead of time. 
+This is where a **varags declaration** comes into play:
+
+```java
+/**
+ * Calls {@code out.println(arg)} for each {@code arg} in {@code args}.
+ * @param out   desired output stream
+ * @param args  arguments to print
+ */
+public static void printlns(PrintStream out, String... args) {
+    for (String arg : args) {
+        out.println(arg);
+    } // for
+} // printlns
+```
+
+Changing `String[] args` to `String... args` accomplishes two things:
+
+1. the `printlns` method can now be called with zero or more trailing
+   `String` parameters; and
+   
+1. the `printlns` method can _still_ be called with a `String[]` parameter.
+
+**Try it!**
+
+
 
 <hr/>
 
