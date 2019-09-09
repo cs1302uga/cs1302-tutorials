@@ -6,33 +6,25 @@
 
 In Java, varargs enable us to write methods that accept a variable number
 of arguments of the same type. Consider the usual way to do this using an
-array:
+array. Here is an example of a `printlns` method in a class called `Helper`
+that prints out each element of an array on its own line 
+(full code [here](src/cs1302/util/Helper.java)):
 
 ```java
-package cs1302.util
-
-import java.io.PrintStream
-
 /**
- * Helper utility class.
+ * Calls {@code out.println(arg)} for each {@code arg} in {@code args}.
+ * @param out   desired output stream
+ * @param args  arguments to print
  */
-public class Helper {
-
-    /**
-     * Calls {@code out.println(arg)} for each {@code arg} in {@code args}.
-     * @param out   desired output stream
-     * @param args  arguments to print
-     */
-    public static void printlns(PrintStream out, String[] args) {
-        for (String arg : args) {
-            out.println(arg);
-        } // for
-    } // printlns
-    
-} // Helper
+public static void printlns(PrintStream out, String[] args) {
+    for (String arg : args) {
+        out.println(arg);
+    } // for
+} // printlns
 ```
 
-Then, elsewhere, you might call the new `printlns` method:
+Then, [elsewhere](src/cs1302/util/Driver.java), you might call 
+the `printlns` method like this:
 
 ```
 // elsewhere
