@@ -43,8 +43,8 @@ Helper.printlns(System.out, new String[] { "g", "h", "i", "j", "k" });
 ```
 
 However, the code snippet above is a little tedious because it requires
-the creation and use of any array. **The following will not work, but
-it would be nice _if we could make it work_:**
+the creation and use of any array. **The following will not work as-is, 
+but it would be nice _if we could make it work_:**
 
 ```java
 // elsewhere
@@ -80,9 +80,14 @@ Changing `String[] args` to `String... args` accomplishes two things:
    
 1. the `printlns` method can _still_ be called with a `String[]` parameter.
 
-**Try it!**
+**Try it!** The lines of code that would not work earlier should all work
+with the varargs declation for `args`.
 
+## Technical Details
 
+1. A method may only contain a single `varargs` declaration.
+
+1. If a method contains a varargs declaration, then it must be at the end.
 
 <hr/>
 
