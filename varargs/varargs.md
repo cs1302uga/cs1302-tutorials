@@ -72,8 +72,10 @@ Changing `String[] args` to `String... args` accomplishes two things:
    
 1. the `printlns` method can _still_ be called with a `String[]` parameter.
 
-**Try it!** The lines of code that would not work earlier should all work
-with the varargs declation for `args`.
+**Try it!** Modify the supplied [`Helper`](src/cs1302/util/Helper) class to
+make its `printlns` method accept a variable number of trailing `String`
+arguments. The lines of code that would not work earlier should all work
+after you've changed the `args` parameter to have a varargs declaration.
 
 ## Technical Details
 
