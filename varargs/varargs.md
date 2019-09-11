@@ -72,10 +72,13 @@ Changing `String[] args` to `String... args` accomplishes two things:
    
 1. the `printlns` method can _still_ be called with a `String[]` parameter.
 
-**Try it!** Modify the supplied [`Helper`](src/cs1302/util/Helper) class to
+**Try it!** Modify the supplied [`Helper`](src/cs1302/util/Helper.java) class to
 make its `printlns` method accept a variable number of trailing `String`
 arguments. The lines of code that would not work earlier should all work
 after you've changed the `args` parameter to have a varargs declaration.
+You may also find it helpful test various inputs to the `printlns`
+method using the associated [`Driver`](src/cs1302/util/Driver.java)
+class.
 
 ## Technical Details
 
