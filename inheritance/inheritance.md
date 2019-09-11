@@ -115,7 +115,7 @@ To work through this example, perform the following steps:
 1. Inspect the `.java` files under `src`. In particular, familiarize yourself with the code
    for the `Animal` and `Dog` classes.
 
-1. Modify `Dog.java` so that the `Dog` constructor invokes the parent constructor,
+1. Modify `Dog.java` so that the `Dog` constructor invokes the parent constructor via `super`,
    specifying `"Canis"` and `"Lupus Familiaris"` as the genus and species names, 
    respectively. This is similar to what was done in the first example video.
 
