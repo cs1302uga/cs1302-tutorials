@@ -135,7 +135,7 @@ this tutorial.
    username:
 
    ```
-   http://cs.uga.edu/~user/cs1302-javadoc-doc/
+   http://cobweb.cs.uga.edu/~user/cs1302-javadoc-doc/
    ```
 
    Congratulations! If you followed the steps correctly, then you should see the API
