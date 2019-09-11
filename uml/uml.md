@@ -81,6 +81,8 @@ In UML, attributes and parameters are written in the following format:
 visibility name : type
 ```
 
+Static variables are underlined.
+
 ### Operations (Methods)
 
 In UML, operations are written in the following format:
@@ -102,6 +104,7 @@ example, you might use the following stereotypes in different situations:
 | `<<abstract>>`  | Denotes abstract.    |
 | `<<override>>`  | Denotes override.    |
 | `<<interface>>` | Denotes interface.   |
+| `<<final>>`     | Denotes final.       |
 
 ### Abstract Classes and Operations
 
