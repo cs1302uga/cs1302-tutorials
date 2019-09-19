@@ -8,13 +8,13 @@ Using
 
 ## Video Example
 
-In this video example, we identify some segments of code that are nearly
-identical except for the fact they operate on different datatypes, then we
-refactor the code into a datatype-independent method using generics.
+In this video example, we create a generic shipping container class that can hold objects of any type. 
+Also, we point out some of the important benefits of generics.
 
 https://youtu.be/m539u1hGP7E
 
 <a href="https://www.youtube.com/watch?v=m539u1hGP7E">
+<img src="https://img.youtube.com/vi/m539u1hGP7E/0.jpg?201909191514" alt="Generic Method Example">
 </a>
 
 ## Continued Reading
@@ -22,9 +22,11 @@ https://youtu.be/m539u1hGP7E
 Now that you're familiar with some of the basic concepts relate to generic
 methods in Java, you need to read the official Oracle reading:
 
-* [The Java™ Tutorials: Generic Methods](https://docs.oracle.com/javase/tutorial/java/generics/methods.html)
+* [The Java™ Tutorials: Why Use Generics?](https://docs.oracle.com/javase/tutorial/java/generics/why.html)
+* [The Java™ Tutorials: Generic Types](https://docs.oracle.com/javase/tutorial/java/generics/types.html)
+* [The Java™ Tutorials: Raw Types](https://docs.oracle.com/javase/tutorial/java/generics/rawTypes.html)
 
-If you have any questions related to the Generic Methods reading provided by
+If you have any questions related to the Generic Classes reading provided by
 Oracle, then feel free to ask them on the course Piazza.
 
 <hr/>
