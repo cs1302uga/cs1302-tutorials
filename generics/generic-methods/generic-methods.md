@@ -4,6 +4,20 @@
 
 ## Introduction
 
+## Example
+
+Here is a video that demonstrates how to handle exceptions instead of avoid
+
+In this video example, we identify some segments of code that are nearly
+identical except for the fact they operate on different datatypes, then we
+refactor the code into a datatype-independent method using generics.
+
+https://youtu.be/WYalfO0WXRE
+
+<a href="https://www.youtube.com/watch?v=WYalfO0WXRE">
+<img src="https://img.youtube.com/vi/WYalfO0WXRE/0.jpg?20190726" alt="Generic Method Example">
+</a>
+
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
