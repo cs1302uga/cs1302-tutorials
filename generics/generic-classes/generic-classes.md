@@ -1,8 +1,31 @@
-# Generic Classses Tutorial
+# Generic Classes Tutorial
 
 ![Status: Not Ready](https://img.shields.io/badge/Status-Not%20Ready-red.svg)
 
 ## Introduction
+
+Using
+
+## Video Example
+
+In this video example, we identify some segments of code that are nearly
+identical except for the fact they operate on different datatypes, then we
+refactor the code into a datatype-independent method using generics.
+
+https://youtu.be/m539u1hGP7E
+
+<a href="https://www.youtube.com/watch?v=m539u1hGP7E">
+</a>
+
+## Continued Reading
+
+Now that you're familiar with some of the basic concepts relate to generic
+methods in Java, you need to read the official Oracle reading:
+
+* [The Java™ Tutorials: Generic Methods](https://docs.oracle.com/javase/tutorial/java/generics/methods.html)
+
+If you have any questions related to the Generic Methods reading provided by
+Oracle, then feel free to ask them on the course Piazza.
 
 <hr/>
 
