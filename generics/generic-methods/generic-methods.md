@@ -18,7 +18,7 @@ https://youtu.be/WYalfO0WXRE
 <img src="https://img.youtube.com/vi/WYalfO0WXRE/0.jpg?201909191514" alt="Generic Method Example">
 </a>
 
-## Continued Reading
+## Required Additional Reading
 
 Now that you're familiar with some of the basic concepts relate to generic
 methods in Java, you need to read the official Oracle reading:
