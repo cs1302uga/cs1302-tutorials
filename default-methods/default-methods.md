@@ -121,7 +121,7 @@ directly in the interface.
 denoted with the `default` keyword, that provides a default implementation of the method to classes that
 implement the interface. An implementing class can override a defualt method, if desired; this is similar
 to regular method overriding in inheritance (discussed in a later reading), except the original implementation
-of a default method is originally declared in an interface and not in a class. 
+of a default method is declared in an interface and not in a class. 
 
 Since the method is defined at the interface level, the implementation should be general in the sense 
 that it is not specific to any implementing class. In this case, we have three states: `STYLED`, `UNSTYLED`,
