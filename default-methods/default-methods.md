@@ -114,10 +114,12 @@ they would all need to go through their entire codebase and update it to work wi
 Given that we only have three classes that implement `Styleable` and access to the source code, we _could_ 
 go through them one at a time and add the `getState` method to each. However, this is not always feasible 
 (remember the Oracle example where there are millions of implementing classes). A nice alternative is to 
-use a *Default Method* which allows the programmer to provide a default implementation for the method. Since 
-the method is defined at the interface level, the implementation should be general in the sense that it is
-not specific to any implementing class. In this case, we have three states: `STYLED`, `UNSTYLED`, and
-`UNKNOWN`. At the interface level, using `UNKNOWN` is the most appropriate since we can't say whether a 
+use a *Default Method* which allows the programmer to provide a default implementation for the method
+directly in the interface. 
+
+Since the method is defined at the interface level, the implementation should be general in the sense 
+that it is not specific to any implementing class. In this case, we have three states: `STYLED`, `UNSTYLED`,
+and `UNKNOWN`. At the interface level, using `UNKNOWN` is the most appropriate since we can't say whether a 
 particular object is styled or unstyled at this level.
 
 1. As an example, modify the `Styleable` interface by replacing the current `getState` abstract 
