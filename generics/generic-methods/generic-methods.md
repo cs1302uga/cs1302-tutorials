@@ -4,9 +4,9 @@
 
 ## Introduction
 
-## Example
+Using
 
-Here is a video that demonstrates how to handle exceptions instead of avoid
+## Video Example
 
 In this video example, we identify some segments of code that are nearly
 identical except for the fact they operate on different datatypes, then we
@@ -17,6 +17,16 @@ https://youtu.be/WYalfO0WXRE
 <a href="https://www.youtube.com/watch?v=WYalfO0WXRE">
 <img src="https://img.youtube.com/vi/WYalfO0WXRE/0.jpg?201909191514" alt="Generic Method Example">
 </a>
+
+## Continued Reading
+
+Now that you're familiar with some of the basic concepts relate to generic
+methods in Java, you need to read the official Oracle reading:
+
+* [The Java™ Tutorials: Generic Methods](https://docs.oracle.com/javase/tutorial/java/generics/methods.html)
+
+If you have any questions related to the Generic Methods reading provided by
+Oracle, then feel free to ask them on the course Piazza.
 
 <hr/>
 
