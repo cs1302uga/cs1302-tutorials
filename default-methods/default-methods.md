@@ -117,6 +117,11 @@ go through them one at a time and add the `getState` method to each. However, th
 use a *Default Method* which allows the programmer to provide a default implementation for the method
 directly in the interface. 
 
+**DEFINITION (Default Method):** Specifically, a _default method_ is a non-abstract method in an interface, 
+denoted with the `default` keyword, that provides a default implementation of the method to classes that
+implement the interface. An implementing class can override a defualt method, if desired; this is similar
+to regular method overriding in inheritance, except a default method comes from an interface and not a class. 
+
 Since the method is defined at the interface level, the implementation should be general in the sense 
 that it is not specific to any implementing class. In this case, we have three states: `STYLED`, `UNSTYLED`,
 and `UNKNOWN`. At the interface level, using `UNKNOWN` is the most appropriate since we can't say whether a 
