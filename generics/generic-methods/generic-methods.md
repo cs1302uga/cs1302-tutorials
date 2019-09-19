@@ -15,7 +15,7 @@ refactor the code into a datatype-independent method using generics.
 https://youtu.be/WYalfO0WXRE
 
 <a href="https://www.youtube.com/watch?v=WYalfO0WXRE">
-<img src="https://img.youtube.com/vi/WYalfO0WXRE/0.jpg?20190726" alt="Generic Method Example">
+<img src="https://img.youtube.com/vi/WYalfO0WXRE/0.jpg?201909191514" alt="Generic Method Example">
 </a>
 
 <hr/>
