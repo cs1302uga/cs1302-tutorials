@@ -98,8 +98,9 @@ terminal shell. Let's create one!
  
  1. That's it! You now know know the basics of Bash scripts. There is a lot
     more than can be done, but we reccommend that you look those things
-    up when you need them. For further reading, the official "BASH Programming"
-    book by Mike G can be found [here](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html).
+    up when you need them. For further reading, the nicely written and free
+    _BASH Programming_ book by Mike G can be found 
+    [here](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html).
  
 ### Display Commands in Bash Script Execution
 
