@@ -28,6 +28,31 @@ https://youtu.be/B6fCVtWHXXI
 <img src="https://img.youtube.com/vi/B6fCVtWHXXI/0.jpg?201909191514" alt="Generic Method Example">
 </a>
 
+## Generic Method Signatures
+
+Here is the general layout for a generic method in Java:
+
+```
+[visibility] [static] <PlaceholderType> ReturnType methodName([params])
+```
+
+* `<PlaceholderType>` denotes the reference types that are replaced when
+  the method is invoked. 
+  
+  * Enclosed in angle brackets: `<`, `>`.
+  
+  * Multiple placeholders are allowed. In that scenario, the types
+    should be comma-separated, e.g., `<T, U>`.
+   
+  * The placeholder type can, but is not required to be, the return
+    type of the method.
+    
+  * The placeholder type can, but is not required to be, the type
+    for any of the method's parameters.
+    
+  * The placeholder type can, but is not required to be, the type
+    for any of the method's local variables.
+
 ## Required Additional Reading
 
 Now that you're familiar with some of the basic concepts relate to generic
