@@ -12,10 +12,10 @@ In this video example, we identify some segments of code that are nearly
 identical except for the fact they operate on different datatypes, then we
 refactor the code into a datatype-independent method using generics.
 
-https://youtu.be/WYalfO0WXRE
+https://youtu.be/B6fCVtWHXXI
 
-<a href="https://www.youtube.com/watch?v=WYalfO0WXRE">
-<img src="https://img.youtube.com/vi/WYalfO0WXRE/0.jpg?201909191514" alt="Generic Method Example">
+<a href="https://youtu.be/B6fCVtWHXXI">
+<img src="https://img.youtube.com/vi/B6fCVtWHXXI/0.jpg?201909191514" alt="Generic Method Example">
 </a>
 
 ## Required Additional Reading
