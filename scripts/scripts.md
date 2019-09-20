@@ -94,6 +94,13 @@ terminal shell. Let's create one!
    **ASIDE:** Remove user execute permission, attempt to execute
    the script, then see what happens.
  
+ 1. Notice the output. It executed both commands!
+ 
+ 1. That's it! You now know know the basics of Bash scripts. There is a lot
+    more than can be done, but we reccommend that you look those things
+    up when you need them. For further reading, the official "BASH Programming"
+    book by Mike G can be found [here](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html).
+ 
 ### Display Commands in Bash Script Execution
 
 If you would like your bash script to display the commands that it
