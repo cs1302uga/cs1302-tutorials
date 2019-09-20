@@ -93,7 +93,8 @@ Here are some examples:
   something like this:
   ```java
   SomeClass<Integer> sc = new SomeClass<Integer>();
-  String str = sc.<String>foo(12, "help");
+  String str1 = sc.<String>foo(12, "help");
+  String str2 = sc.foo(12, "help"); // T = String
   ```
 
 ## Required Additional Reading
