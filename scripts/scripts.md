@@ -110,6 +110,24 @@ add `set -x` as the first command in your script.
 set -x
 ```
 
+### Stop on Error in Bash Script Execution
+
+If you would like your bash script to stop executing the commands if one
+of them terminates with an error, then add `-e` as an `[optional-arg]` 
+in the shebang or add `set -e` as the first command in your script.
+
+```
+#!/bin/bash -e
+```
+   
+```
+#!/bin/bash
+  
+set -e
+```
+
+**You can combine `-e` and `-x` as `-ex`.**
+
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
