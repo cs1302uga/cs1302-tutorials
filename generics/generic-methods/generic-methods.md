@@ -40,18 +40,56 @@ Here is the general layout for a generic method in Java:
   the method is invoked. 
   
   * Enclosed in angle brackets: `<`, `>`.
-  
   * Multiple placeholders are allowed. In that scenario, the types
-    should be comma-separated, e.g., `<T, U>`.
-   
+    should be comma-separated, e.g., `<T, U>`.   
   * The placeholder type can, but is not required to be, the return
-    type of the method.
-    
+    type of the method.    
   * The placeholder type can, but is not required to be, the type
-    for any of the method's parameters.
-    
+    for any of the method's parameters.     
   * The placeholder type can, but is not required to be, the type
     for any of the method's local variables.
+    
+Here are some examples:
+
+* Example with generic return-type only: 
+  ```java
+  public static <T> T foo(int a, int b)
+  ```
+  
+* Example with generic parameter:
+  ```java
+  public static <T> int foo(String a, T b)
+  ```
+  
+* Example with generic return-type and generic parameter:
+  ```java
+  public static <T> T foo(int a, T b)
+  ```
+  
+* Example of a non-static generic method:
+  ```java
+  public <T> T foo(int a, T b)
+  ```
+  
+* Here is a non-static generic method in a generic class:
+  ```java
+  public class SomeClass<T> {
+  
+      public <R> T foo(T a, R b) {
+          ...
+      } // foo
+  
+  } // someClass
+  ```
+  This is likely the most complicated combination of generic classes and generic
+  methods you would see. In the example above, the class has its own placeholder
+  type `T`, which can be used throughout the class in any non-static method. The
+  `foo` method is non-static and has its own placeholder type `R`. You might see
+  something like this:
+  ```java
+  SomeClass<Integer> sc = new SomeClass<Integer>();
+  String str = sc.<String>foo(12, "help");
+  ```
 
 ## Required Additional Reading
 
