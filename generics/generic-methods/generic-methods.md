@@ -28,7 +28,8 @@ https://youtu.be/B6fCVtWHXXI
 <img src="https://img.youtube.com/vi/B6fCVtWHXXI/0.jpg?201909191514" alt="Generic Method Example">
 </a>
 
-**Code from the Video:**
+
+### Code from the Video
 
 * `Driver.java`
 
