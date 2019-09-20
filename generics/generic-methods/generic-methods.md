@@ -2,9 +2,19 @@
 
 ![Status: Not Ready](https://img.shields.io/badge/Status-Not%20Ready-red.svg)
 
-## Introduction
+This tutorial introduces the reader to generic methods in Java.
 
-Using
+### Prerequisites
+
+This tutorial assumes that the reader has a knowledge of basic Unix commands and experience working
+with a command-line text editor (e.g. emacs, vi, etc.). The reader should be familiar with compiling
+and running Java code contained in packages.
+
+To get the most out of this tutorial, you should follow along and take notes.
+
+### Course-Specific Learning Outcomes
+
+* **LO2.d:** (Partial) Implement new generic methods, interfaces, and classes in a software solution.
 
 ## Video Example
 
