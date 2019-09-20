@@ -18,7 +18,7 @@ An interpreter script needs to satisfy the following requirements:
   ```
   
   Historically, his first line is known as a _shebang_ since it starts with
-  the number sign followed by an exlamation mark.
+  the number sign followed by an exclamation mark.
 
 The interpreter must be a valid pathname for an executable program which is not 
 itself a script. When executed, then interpreter will be invoked with the following
