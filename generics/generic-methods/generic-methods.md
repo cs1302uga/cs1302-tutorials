@@ -9,8 +9,8 @@ Using
 ## Video Example
 
 In this video example, we identify some segments of code that are nearly
-identical except for the fact they operate on different datatypes, then we
-refactor the code into a datatype-independent method using generics.
+identical except for the fact that they operate on different datatypes, then 
+we refactor the code into a datatype-independent method using generics.
 
 https://youtu.be/B6fCVtWHXXI
 
