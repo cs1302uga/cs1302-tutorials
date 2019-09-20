@@ -31,7 +31,7 @@ https://youtu.be/B6fCVtWHXXI
 
 ### Code from the Video
 
-* Stater Code: [`Driver.1.java`](src/cs1302/generics/Driver.1.java) (filename will need to be changed)
+* Starter Code: [`Driver.1.java`](src/cs1302/generics/Driver.1.java) (filename will need to be changed)
 * Final Code: [`Driver.java`](src/cs1302/generics/Driver.java)
 
 ## Generic Method Signatures
