@@ -31,7 +31,7 @@ https://youtu.be/B6fCVtWHXXI
 
 ### Code from the Video
 
-* `Driver.java`
+* [`Driver.java`](src/cs1302/Driver.java)
 
 ## Generic Method Signatures
 
