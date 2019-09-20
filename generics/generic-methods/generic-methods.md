@@ -2,7 +2,7 @@
 
 ![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
 
-This tutorial introduces the reader to generic methods in Java.
+This reading introduces the reader to generic methods in Java.
 
 ### Prerequisites
 
