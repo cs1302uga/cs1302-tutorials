@@ -1,6 +1,6 @@
-# Generic Methods Tutorial
+# Generic Methods Reading
 
-![Status: Not Ready](https://img.shields.io/badge/Status-Not%20Ready-red.svg)
+![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
 
 This tutorial introduces the reader to generic methods in Java.
 
@@ -10,7 +10,7 @@ This tutorial assumes that the reader has a knowledge of basic Unix commands and
 with a command-line text editor (e.g. emacs, vi, etc.). The reader should be familiar with compiling
 and running Java code contained in packages.
 
-To get the most out of this tutorial, you should follow along and take notes.
+To get the most out of this reading, you should follow along and take notes.
 
 ### Course-Specific Learning Outcomes
 
