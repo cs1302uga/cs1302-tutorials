@@ -6,21 +6,25 @@
 
 ## Generic Interfaces
 
-Consider the [`java.lang.Comparable`](https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html)
-interface. This is formally known as `Comparable<T>`, even though its FQN is `java.lang.Comparable`.
-The interface documentation goes into a lot of detail (as it should), but this interface is responsible
-for defining the semantics of the [`compareTo`](https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html#compareTo-T-)
-method. The entire interface, sans documentation, is as follows:
+1. Consider the [`java.lang.Comparable`](https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html)
+   interface. This is formally known as `Comparable<T>`, even though its FQN is `java.lang.Comparable`.
+   The interface documentation goes into a lot of detail (as it should), but this interface is responsible
+   for defining the semantics of the 
+   [`compareTo`](https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html#compareTo-T-)
+   method. The entire interface, sans documentation, is as follows:
 
-```java
-package java.lang;
+   ```java
+   package java.lang;
+   
+   public interface Comparable<T> {
 
-public interface Comparable<T> {
+       public compareTo(T o);
 
-    public compareTo(T o);
+   } // Comparable<T>
+   ```
+   
+1. 
 
-} // Comparable<T>
-```
 
 
 
