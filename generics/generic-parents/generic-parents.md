@@ -40,7 +40,11 @@
      
    * Sure enough, when we look at `String` class's 
      [`compareTo`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#compareTo-java.lang.String-) 
-     method, we see that `T` has been replaced with `String` as expected. 
+     method, we see that `T` has been replaced with `String` as expected. Furthermore,
+     we see a note that says:
+     
+     > `Specified by:`
+     > `compareTo in interface Comparable<String>`
      
 
 
