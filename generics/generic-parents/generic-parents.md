@@ -22,12 +22,23 @@
    
    public interface Comparable<T> {
 
-       public compareTo(T o);
+       public int compareTo(T o);
 
    } // Comparable<T>
    ```
    
-1. 
+1. Now let's look at the [`java.lang.String`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)
+   class, which is known to implement the `Comparable` interface. 
+   
+   * The class declaration for the `String` class is:
+     ```java
+     public final class String implements Serializable, Comparable<String>, CharSequence
+     ```
+     As we can see, it implements `Comparable<String>`.
+   * Sure enough, when we look at `String` class's 
+     [`compareTo`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#compareTo-java.lang.String-) 
+     method, we see that `T` has been replaced with `String` as expected. 
+     
 
 
 
