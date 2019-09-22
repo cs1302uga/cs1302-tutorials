@@ -10,10 +10,13 @@ unit generally means method. The JUnit framework provides the following:
 
 * A set of static methods and annotations that make writing unit tests easier. Instead of
   rewriting conditionals for passing or failing a test, implementing a counter for passed
-  versus failed test cases, and setting up complicated control flow scenarios to test for
+  versus failed test cases, or setting up complicated control flow scenarios to test for
   exceptions, the JUnit framework already provides these things.
   
-* A driver program to discover and run the unit tests. 
+* A driver program to discover and run the unit tests.
+
+In this tutorial, you'll learn some of the basics of setting up and running JUnit-based
+unit tests.
 
 ## Getting Started
 
