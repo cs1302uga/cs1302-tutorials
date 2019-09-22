@@ -18,6 +18,10 @@ unit generally means method. The JUnit framework provides the following:
 In this tutorial, you'll learn some of the basics of setting up and running JUnit-based
 unit tests.
 
+## Dependencies
+
+
+
 ## Getting Started
 
 1. Login to your Nike account.
@@ -38,9 +42,14 @@ unit tests.
    $ find src
    ```
    
-1. 
+1. To write and run JUnit 5 tests without a tool like Maven (we'll cover that later), you 
+   will usually need to use `junit-platform-console-standalone`, a program provided by 
+   JUnit that includes all of the JUnit dependencies. If you inspect the `lib` directory, then
+   you'll notice that we've included this file for you. 
 
-
+   ```
+   $ find lib
+   ```
 
 <hr/>
 
