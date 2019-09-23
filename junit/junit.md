@@ -148,8 +148,9 @@ unit tests.
    * The `@Test` annotation 
      from [`org.junit.jupiter.api.Test`](https://junit.org/junit5/docs/current/api/org/junit/jupiter/api/Test.html)
      is used to denote that a method is a test method. JUnit looks for these methods.
-     Other annotations are included in the [`org.junit.jupiter.api`] package for
-     different testing use cases.
+     Other annotations are included in the 
+     [`org.junit.jupiter.api`](https://junit.org/junit5/docs/current/api/org/junit/jupiter/api/package-summary.html) 
+     package for different testing use cases.
      
    * The `assertEquals` method
      from [`org.junit.jupiter.api.Assertions`](https://junit.org/junit5/docs/current/api/org/junit/jupiter/api/Assertions.html)
