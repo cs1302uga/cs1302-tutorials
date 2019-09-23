@@ -139,6 +139,17 @@ unit tests.
    } // CounterTest 
    ```
 
+1. Compile the `CounterTest` class, specifying `bin` as the default package for compiled
+   code. Since this class relies on your already-compiled `Counter` class and some
+   JUnit dependencies, you need to include both `bin` and 
+   `junit-platform-console-standalone-1.5.2.jar` on the classpath. Try the following:
+   
+   ```
+   $ javac -cp bin:lib/junit-platform-console-standalone-1.5.2.jar \
+     -d bin \
+     src/cs1302/junit/Counter.java
+   ```
+   
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
