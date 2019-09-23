@@ -222,7 +222,7 @@ unit tests.
    JUNIT_JAR=lib/junit-platform-console-standalone-1.5.2.jar
    rm -rf bin/*
    javac -d bin src/cs1302/junit/Counter.java
-   javac -d bin -cp bin:$JUNIT_JAR test/cs1302/junit/Counter.java
+   javac -d bin -cp bin:$JUNIT_JAR test/cs1302/junit/CounterTest.java
    ./ConsoleLauncher -cp bin --scan-classpath
    ```
    
