@@ -212,6 +212,14 @@ unit tests.
    $ ./ConsoleLauncher -cp bin --scan-classpath
    ```
    
+## Adding More Unit Tests
+
+1. TBD
+
+## Test Class Inheritance
+
+1. TBD
+
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
