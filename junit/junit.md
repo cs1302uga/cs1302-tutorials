@@ -212,6 +212,33 @@ unit tests.
    $ ./ConsoleLauncher -cp bin --scan-classpath
    ```
    
+1. Since we'll frequently want to recompile and test our code, let's create a script
+   so that we don't have to manually type out the commands. Create a regular text
+   file called `test.sh` with the following contents:
+   
+   ```bash
+   #!/bin/bash -ex
+   
+   JUNIT_JAR=lib/junit-platform-console-standalone-1.5.2.jar
+   rm -rf bin/*
+   javac -d bin src/cs1302/junit/Counter.java
+   javac -d bin -cp bin:$JUNIT_JAR test/cs1302/junit/Counter.java
+   ./ConsoleLauncher -cp bin --scan-classpath
+   ```
+   
+   After saving the `test.sh` file, you'll need to give it user execute permission.
+   
+   ```
+   $ chmod u+x test.sh
+   ```
+   
+   Now test the script:
+   
+   ```
+   $ ./test.sh
+   ```
+   
+   
 ## Adding More Unit Tests
 
 1. TBD
