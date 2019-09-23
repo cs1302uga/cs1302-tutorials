@@ -83,7 +83,7 @@ unit tests.
         */
        public Counter(long initValue) {
            if (initValue < 0) {
-               throw new IllegalArgumentException("initValue cannot be negative: " + initValue);
+               throw new IllegalArgumentException("initValue cannot be negative");
            } // if
            value = initValue
        } // Counter
@@ -94,7 +94,7 @@ unit tests.
         */
        public void increment() {
            if (value == Long.MAX_VALUE) {
-               throw new IllegalStateException("cannot increment counter with max value");
+               throw new IllegalStateException("cannot increment maxed counter");
            } // if
            value += 1;
        } // increment
