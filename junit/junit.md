@@ -133,12 +133,25 @@ unit tests.
        @Test
        void getValue1() {
            final Counter counter = new Counter();
-           assertEquals(0L, counter.getValue(), "new counter should have getValue() return 0");
+           assertEquals(0L, counter.getValue(), "new counter should have value 0");
        } // getValue1
        
    } // CounterTest 
    ```
-
+   
+   Here are some important notes:
+   
+   * The `@Test` annotation 
+     from [`org.junit.jupiter.api.Test`](https://junit.org/junit5/docs/current/api/org/junit/jupiter/api/Test.html)
+     is used to denote that a method is a test method. JUnit looks for these methods.
+     Other annotations are included in the [`org.junit.jupiter.api`] package for
+     different testing use cases.
+     
+   * The `assertEquals` method
+     from [`org.junit.jupiter.api.Assertions`](https://junit.org/junit5/docs/current/api/org/junit/jupiter/api/Assertions.html)
+     is used to test that an equality should hold. The `Assertions` class contains many 
+     conventient static methods that you might use when testing your code.
+     
 1. Compile the `CounterTest` class, specifying `bin` as the default package for compiled
    code. Since this class relies on your already-compiled `Counter` class and some
    JUnit dependencies, you need to include both `bin` and 
@@ -147,7 +160,43 @@ unit tests.
    ```
    $ javac -cp bin:lib/junit-platform-console-standalone-1.5.2.jar \
      -d bin \
-     src/cs1302/junit/Counter.java
+     test/cs1302/junit/Counter.java
+   ```
+   
+1. Now let's run the test class. When using `ConsoleLauncher`, you do not need to
+   manually include `junit-platform-console-standalone-1.5.2.jar` on the classpath
+   (it's included automatically). Try this:
+
+   ```
+   $ ./ConsoleLauncher -cp bin -c cs1302.junit.CounterTest
+   ```
+   
+   Here is the output you should expect:
+   
+   ```
+   + java -jar lib/junit-platform-console-standalone-1.5.2.jar -cp bin -c cs1302.junit.CounterTest
+
+   Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+   
+   ╷
+   ├─ JUnit Jupiter ✔
+   │  └─ CounterTest ✔
+   │     └─ getValue1() ✔
+   └─ JUnit Vintage ✔
+
+   Test run finished after 102 ms
+   [         3 containers found      ]
+   [         0 containers skipped    ]
+   [         3 containers started    ]
+   [         0 containers aborted    ]
+   [         3 containers successful ]
+   [         0 containers failed     ]
+   [         1 tests found           ]
+   [         0 tests skipped         ]
+   [         1 tests started         ]
+   [         0 tests aborted         ]
+   [         1 tests successful      ]
+   [         0 tests failed          ]
    ```
    
 <hr/>
