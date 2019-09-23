@@ -84,7 +84,7 @@ unit tests.
            if (initValue < 0) {
                throw new IllegalArgumentException("initValue cannot be negative");
            } // if
-           value = initValue
+           value = initValue;
        } // Counter
        
        /**
