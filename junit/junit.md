@@ -122,7 +122,7 @@ unit tests.
    _same package_ as `Counter` under a _different default package_**. Please use the 
    following code:
    
-   ```
+   ```java
    package cs1302.junit;
    
    import static org.junit.jupiter.api.Assertions.assertEquals;
