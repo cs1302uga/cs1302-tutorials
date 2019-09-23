@@ -13,14 +13,11 @@ unit generally means method. The JUnit framework provides the following:
   versus failed test cases, or setting up complicated control flow scenarios to test for
   exceptions, the JUnit framework already provides these things.
   
-* A driver program to discover and run the unit tests.
+* A driver program to discover and run the unit tests. This helps ensure that tests
+  are run in a consistent manner with consistent output.
 
 In this tutorial, you'll learn some of the basics of setting up and running JUnit-based
 unit tests.
-
-## Dependencies
-
-
 
 ## Getting Started
 
@@ -31,15 +28,21 @@ unit tests.
    called `cs1302-jdb`:
 
    ```
-   $ curl -s -L UPDATE-THIS-LINK | bash
+   $ curl -s -L https://git.io/Jes9m | bash
    ```
    
-1. Change into the `cs1302-junit` directory that was just created and look around. There should be
-   multiple Java files contained within the directory structure. To see a listing of all of the 
-   files under the `src` subdirectory, use the `find` command as follows:
+1. Change into the `cs1302-junit` directory that was just created and look around. You should
+   see the following:
    
    ```
-   $ find src
+   .
+   ├── bin
+   ├── ConsoleLauncher
+   ├── doc
+   ├── lib
+   │   └── junit-platform-console-standalone-1.5.2.jar
+   ├── src
+   └── test
    ```
    
 1. To write and run JUnit 5 tests without a tool like Maven (we'll cover that later), you 
