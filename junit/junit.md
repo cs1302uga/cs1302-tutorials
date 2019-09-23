@@ -155,7 +155,8 @@ unit tests.
 1. Compile the `CounterTest` class, specifying `bin` as the default package for compiled
    code. Since this class relies on your already-compiled `Counter` class and some
    JUnit dependencies, you need to include both `bin` and 
-   `junit-platform-console-standalone-1.5.2.jar` on the classpath. Try the following:
+   `junit-platform-console-standalone-1.5.2.jar` on the classpath. 
+   Try the following (see the note below if you have trouble):
    
    ```
    $ javac -cp bin:lib/junit-platform-console-standalone-1.5.2.jar \
@@ -163,9 +164,14 @@ unit tests.
      test/cs1302/junit/Counter.java
    ```
    
+   **NOTE:** The `\` at the end of each line in the previous command allows us to write
+   a single command in the shell prompt using multiple lines. This can be convenient when
+   typing out long commands. When typing the command, you should end a line with a single
+   space followed by`\`, then immediately press the `RET` key. 
+   
 1. Now let's run the test class. When using `ConsoleLauncher`, you do not need to
    manually include `junit-platform-console-standalone-1.5.2.jar` on the classpath
-   (it's included automatically). Try this:
+   (it's included automatically). You specify the class using `-c`:
 
    ```
    $ ./ConsoleLauncher -cp bin -c cs1302.junit.CounterTest
@@ -197,6 +203,13 @@ unit tests.
    [         0 tests aborted         ]
    [         1 tests successful      ]
    [         0 tests failed          ]
+   ```
+   
+1. You can also tell `ConsoleLauncher` to run all classes that it can find on the
+   classpath containing test method by specifying the `--scan-classpath` option:
+
+   ```
+   $ ./ConsoleLauncher -cp bin --scan-classpath
    ```
    
 <hr/>
