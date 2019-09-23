@@ -53,7 +53,62 @@ unit tests.
    $ ./ConsoleLauncher --help
    ```
    
-1. 
+1. Now, let's create a class that we can test. Create a class called `Counter` in
+   `src/cs1302/junit/Counter.java` with a fully-qualified name of `cs1302.junit.Counter`.
+   Use the following code:
+   
+   ```java
+   package cs1302.junit;
+   
+   /**
+    *
+    */
+   public class Counter {
+   
+       private long value;
+       
+       /**
+        * Constructs a new {@code Counter} object with an initial value of {@code 0}.
+        */
+       public Counter() {
+           value = 0;
+       } // Counter
+       
+       /**
+        * Constructs a new {@code Counter} object with an initial value
+        * specified by {@code initValue}.
+        *
+        * @param initValue  initial value
+        * @throws IllegalArgumentException  when {@code initValue < 0}
+        */
+       public Counter(long initValue) {
+           if (initValue < 0) {
+               throw new IllegalArgumentException("initValue cannot be negative: " + initValue);
+           } // if
+           value = initValue
+       } // Counter
+       
+       /**
+        * Increment the counter value by {@code 1}.
+        * @throws IllegalStateException  when {@code getValue == Long.MAX_VALUE}
+        */
+       public void increment() {
+           if (value == Long.MAX_VALUE) {
+               throw new IllegalStateException("cannot increment counter with max value");
+           } // if
+           value += 1;
+       } // increment
+       
+       /**
+        * Returns the current value of the counter.
+        * @return current value of the counter
+        */
+       public long getValue() {
+           return value;
+       } // getValue
+   
+   } // Counter
+   ```
 
 <hr/>
 
