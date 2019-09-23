@@ -61,7 +61,7 @@ unit tests.
    package cs1302.junit;
    
    /**
-    *
+    * A simple counter.
     */
    public class Counter {
    
@@ -107,6 +107,36 @@ unit tests.
        } // getValue
    
    } // Counter
+   ```
+   
+1. Compile the `Counter` class, specifying `bin` as the default package for compiled
+   code:
+   
+   ```
+   $ javac -d bin src/cs1302/junit/Counter.java
+   ```
+   
+1. Now, let's create a class with some JUnit-based unit tests. Create a class called 
+   `CounterTest` in `test/cs1302/junit/CounterTest.java` with a fully-qualified name of 
+   `cs1302.junit.CounterTEst`. While not always the case, **this test class is in the
+   _same package_ as `Counter` under a _different default package_**. Please use the 
+   following code:
+   
+   ```
+   package cs1302.junit;
+   
+   import static org.junit.jupiter.api.Assertions.assertEquals;
+   import org.junit.jupiter.api.Test;
+
+   class CounterTest {
+   
+       @Test
+       void getValue1() {
+           final Counter counter = new Counter();
+           assertEquals(0L, counter.getValue(), "new counter should have getValue() return 0");
+       } // getValue1
+       
+   } // CounterTest 
    ```
 
 <hr/>
