@@ -25,7 +25,7 @@ unit tests.
 
 1. Use the following command to download and execute a shell script that retrieves 
    the starter code for this tutorial and places it into a subdirectory 
-   called `cs1302-jdb`:
+   called `cs1302-junit`:
 
    ```
    $ curl -s -L https://git.io/Jes9m | bash
@@ -45,14 +45,15 @@ unit tests.
    └── test
    ```
    
-1. To write and run JUnit 5 tests without a tool like Maven (we'll cover that later), you 
-   will usually need to use `junit-platform-console-standalone`, a program provided by 
-   JUnit that includes all of the JUnit dependencies. If you inspect the `lib` directory, then
-   you'll notice that we've included this file for you. 
-
+1. To write and run JUnit 5 tests from the command-line you will need `ConsoleLauncher` and
+   `junit-platform-console-standalone-1.5.2.jar` (version may differ). Try to use the
+   `ConsoleLauncher` program:
+   
    ```
-   $ find lib
+   $ ./ConsoleLauncher --help
    ```
+   
+1. 
 
 <hr/>
 
