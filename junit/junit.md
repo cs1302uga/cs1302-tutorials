@@ -161,7 +161,7 @@ unit tests.
    ```
    $ javac -cp bin:lib/junit-platform-console-standalone-1.5.2.jar \
      -d bin \
-     test/cs1302/junit/Counter.java
+     test/cs1302/junit/CounterTest.java
    ```
    
    **NOTE:** The `\` at the end of each line in the previous command allows us to write
