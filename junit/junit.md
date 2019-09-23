@@ -53,6 +53,10 @@ unit tests.
    $ ./ConsoleLauncher --help
    ```
    
+   **NOTE:** If you look inside the `ConsoleLauncher` file (e.g., using `cat` or `emacs`),
+   you will notice that it's just a Bash script that executes the 
+   `junit-platform-console-standalone-1.5.2.jar` file.
+   
 1. Now, let's create a class that we can test. Create a class called `Counter` in
    `src/cs1302/junit/Counter.java` with a fully-qualified name of `cs1302.junit.Counter`.
    Use the following code:
@@ -238,10 +242,11 @@ unit tests.
    $ ./test.sh
    ```
    
-   
 ## Adding More Unit Tests
 
-1. TBD
+1. Let's write a unit test for the overloaded constructor. According the Javadoc
+   comment, the overloaded constructor is expected to throw an
+   `IllegalArgumentException` when `initValue < 0`. 
 
 ## Test Class Inheritance
 
