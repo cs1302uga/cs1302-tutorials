@@ -12,10 +12,10 @@ if [ ! -d $DIR ]; then
   mkdir -p src bin doc test lib
   cd lib
   echo "Downloading $JUNIT_JAR"
-  curl -O $JUNIT_URL
+  curl -s -O $JUNIT_URL
   cd ..
   echo "Downloading ConsoleLauncher"
-  curl -O https://raw.githubusercontent.com/cs1302uga/cs1302-tutorials/master/junit/ConsoleLauncher
+  curl -s -O https://raw.githubusercontent.com/cs1302uga/cs1302-tutorials/master/junit/ConsoleLauncher
   chmod u+x ConsoleLauncher
   echo "subdirectory $DIR successfully created"
   echo "- JUnit $JUNIT_VER dependencies are in $DIR/lib/$JUNIT_JAR"
