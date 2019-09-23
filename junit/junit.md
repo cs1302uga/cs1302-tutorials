@@ -77,7 +77,6 @@ unit tests.
        /**
         * Constructs a new {@code Counter} object with an initial value
         * specified by {@code initValue}.
-        *
         * @param initValue  initial value
         * @throws IllegalArgumentException  when {@code initValue < 0}
         */
