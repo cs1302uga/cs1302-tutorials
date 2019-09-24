@@ -248,10 +248,14 @@ unit tests.
    
 ## Adding More Unit Tests
 
+### Display Names for Tests
+
+### Parameterized Test
+
 1. Let's write a unit test for the overloaded constructor. According the Javadoc
    comment, the overloaded constructor is expected to throw an
    `IllegalArgumentException` when `initValue < 0`. Add the following `import`
-   statements to `CounterTest,java`:
+   statements to `CounterTest,java` if they are not already there:
    
    ```java
    import static org.junit.jupiter.api.Assertions.assertThrows;
