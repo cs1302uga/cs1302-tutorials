@@ -4,11 +4,13 @@
 
 ## Introduction
 
-[JUnit](https://junit.org/junit5/) is programmer-friendly _unit testing framework_ for Java.
-A **unit test** is some code that attempts to test another unit of code. In Java, the word 
-unit generally means method. The JUnit framework provides the following:
+[JUnit](https://junit.org/junit5/) is programmer-friendly _unit testing framework_ and
+_integration testing framework_ for Java. A **unit test** is some code that attempts to 
+test another, single unit of code. An **integration test** is some code that attempts to
+test different units work together. In Java, the word unit generally means method. 
+The JUnit framework provides the following:
 
-* A set of static methods and annotations that make writing unit tests easier. Instead of
+* A set of static methods and annotations that make writing tests easier. Instead of
   rewriting conditionals for passing or failing a test, implementing a counter for passed
   versus failed test cases, or setting up complicated control flow scenarios to test for
   exceptions, the JUnit framework already provides these things.
@@ -93,7 +95,7 @@ unit tests.
        
        /**
         * Increment the counter value by {@code 1}.
-        * @throws IllegalStateException  when {@code getValue == Long.MAX_VALUE}
+        * @throws IllegalStateException  when {@code getValue() == Long.MAX_VALUE}
         */
        public void increment() {
            if (value == Long.MAX_VALUE) {
@@ -247,6 +249,37 @@ unit tests.
    ```
    
 ## Adding More Unit Tests
+
+### Testing a Method
+
+1. Let's test the `increment` method. Add the following test method to your `CounterTest` class:
+
+   ```java
+   @Test
+   void increment1() {
+       final Counter counter = new Counter();
+       counter.increment();
+       assertEquals(1L, counter.getValue());
+   } // increment1
+   ```
+   
+1. Compile and run the unit tests using the `./test.sh` script you created in the
+   first part of this tutorial. As written, the method should pass the test. 
+   
+1. Now, let's write a test to make sure that the `IllegalStateException` is
+   correctly thrown when the counter's internal value equals `Long.MAX_VALUE`.
+   Add the following test method to your `CounterTest` class:
+   
+   ```java
+   @Test
+   void increment2() {
+       final Counter counter = new Counter(Long.MAX_VALUE);
+       assertThrows(IllegalStateException, () -> counter.increment());
+   } // increment2
+   ```
+   
+1. Compile and run the unit tests using the `./test.sh` script you created in the
+   first part of this tutorial. As written, the method should pass the test. 
 
 ### Display Names for Tests
 
