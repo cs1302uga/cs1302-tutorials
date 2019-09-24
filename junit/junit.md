@@ -157,6 +157,9 @@ unit tests.
      is used to test that an equality should hold. The `Assertions` class contains many 
      conventient static methods that you might use when testing your code.
      
+   * The convention used by the official JUnit documentation is to make
+     the test methods have package private visibility.
+     
 1. Compile the `CounterTest` class, specifying `bin` as the default package for compiled
    code. Since this class relies on your already-compiled `Counter` class and some
    JUnit dependencies, you need to include both `bin` and 
@@ -247,7 +250,26 @@ unit tests.
 
 1. Let's write a unit test for the overloaded constructor. According the Javadoc
    comment, the overloaded constructor is expected to throw an
-   `IllegalArgumentException` when `initValue < 0`. 
+   `IllegalArgumentException` when `initValue < 0`. Add the following `import`
+   statements to `CounterTest,java`:
+   
+   ```java
+   import static org.junit.jupiter.api.Assertions.assertThrows;
+   import org.junit.jupiter.api.DisplayName;
+   import org.junit.jupiter.params.ParameterizedTest;
+   import org.junit.jupiter.params.provider.ValueSource;
+   ```
+   
+   Now ass the following test method to your `CounterTest` class:
+   
+   ```java
+   @DisplayName("A negative initValue value is not supported.")
+   @ParameterizedTest(name = "For example, letting initValue = {0} is not supported.")
+   @ValueSource(longs = { -1, -4 })
+   void constructor1(long initValue) {
+       assertThrows(IllegalArgumentException.class, () -> new Counter(initValue));
+   } // constructor1
+   ```
 
 ## Test Class Inheritance
 
