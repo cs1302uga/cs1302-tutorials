@@ -352,10 +352,7 @@ unit tests.
    │     ├─ A negative initValue value is not supported. ✔
    │     │  ├─ For example, letting initValue = -1 is not supported. ✔
    │     │  └─ For example, letting initValue = -4 is not supported. ✔
-   │     ├─ getValue1() ✔
-   │     ├─ increment1() ✔
-   │     └─ increment2() ✔
-   └─ JUnit Vintage ✔
+   ...
    ```
 
 ## Test Class Inheritance
