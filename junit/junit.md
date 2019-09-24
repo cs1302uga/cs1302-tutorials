@@ -158,6 +158,9 @@ unit tests.
      from [`org.junit.jupiter.api.Assertions`](https://junit.org/junit5/docs/current/api/org/junit/jupiter/api/Assertions.html)
      is used to test that an equality should hold. The `Assertions` class contains many 
      conventient static methods that you might use when testing your code.
+     We used a `static import` so that we could write `assertEquals` instead of
+     `Assertsions.assertEquals`. For more information on static imports, 
+     please see [this page](https://docs.oracle.com/javase/8/docs/technotes/guides/language/static-import.html).
      
    * The convention used by the official JUnit documentation is to make
      the test methods have package private visibility.
