@@ -247,7 +247,33 @@ unit tests.
    ```
    $ ./test.sh
    ```
+
+## Jupiter API
+
+JUnit 5's API is known as Jupiter. When you write a JUnit test, you'll be using annotations
+and methods from the Jupiter API.
+
+1. Look at the documentation for the
+   [`org.junit.jupiter.api`](https://junit.org/junit5/docs/current/api/org/junit/jupiter/api/package-summary.html)
+   package. **Save a bookmark to that link!** You may need to refer to it when writing tests.
+
+1. Look at the documentation for the 
+   [`org.junit.jupiter.api.Assertions`](https://junit.org/junit5/docs/current/api/org/junit/jupiter/api/Assertions.html)
+   class. **It has a lot of methods!** Nobody remembers them all (that's not a challenge; it's a matter
+   of practicality). You should consult the documentation for an `assert` method in order to test that
+   some condition holds. Here are some of the popular ones:
    
+   | Name           | Example |
+   |----------------|---------|
+   | `assertTrue`   | `assertTrue(array.length > 0, "array length should be > 0");`       |
+   | `assertFalse`  | `assertFalse(array.length == 0, "array length should not be 0");`   |
+   | `assertEquals` | `assertEquals("Emily", person.getName());`                          |
+   | `assertThrows` | `assertThrows(IllegalArgumentException.class, () -> list.add(""));` |
+   
+   **This is not an exhaustive list!** Remember to consult the documentation as needed. One thing
+   that you should notice is that each `assert` method includes an overload with a `String` parameter
+   that can be used to denote an associated message.
+
 ## Adding More Unit Tests
 
 ### Testing a Method
