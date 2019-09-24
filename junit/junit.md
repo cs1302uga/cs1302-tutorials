@@ -281,6 +281,15 @@ unit tests.
 1. Compile and run the unit tests using the `./test.sh` script you created in the
    first part of this tutorial. As written, the method should pass the test. 
 
+### Failing Tests
+
+1. Take any of the tests we've written so far and change them so that they should
+   fail.
+   
+1. Compile and run the unit tests using the `./test.sh` script you created in the
+   first part of this tutorial. If you did the previous step correctly, then you
+   should see one or more `✘` in the output, indicating that a test failed.  
+
 ### Display Names for Tests
 
 ### Parameterized Test
@@ -315,10 +324,12 @@ unit tests.
    ╷
    ├─ JUnit Jupiter ✔
    │  └─ CounterTest ✔
-   │     ├─ A negative initValue value is not supported when calling the the constructor. ✔
+   │     ├─ A negative initValue value is not supported. ✔
    │     │  ├─ For example, letting initValue = -1 is not supported. ✔
    │     │  └─ For example, letting initValue = -4 is not supported. ✔
-   │     └─ getValue1() ✔
+   │     ├─ getValue1() ✔
+   │     ├─ increment1() ✔
+   │     └─ increment2() ✔
    └─ JUnit Vintage ✔
    ```
 
