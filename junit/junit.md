@@ -292,6 +292,31 @@ unit tests.
 
 ### Display Names for Tests
 
+1. By default, JUnit will use the name of your test method as the actual test name
+   in the reported output. To have JUnit use a more descriptive name, you can use
+   the `@DisplayName` annotation 
+   from [`org.junit.jupiter.api.DisplayName`](https://junit.org/junit5/docs/current/api/org/junit/jupiter/api/DisplayName.html).
+   To try this, add an import statement for `org.junit.jupiter.api.DisplayName`, then 
+   update the `increment2` method that we added earlier in this tutorial
+   to the following:
+   
+   ```java
+   @DisplayName("Incrementing a maxed out counter throws an IllegalStateException.")
+   @Test
+   void increment2() {
+       final Counter counter = new Counter(Long.MAX_VALUE);
+       assertThrows(IllegalStateException, () -> counter.increment());
+   } // increment2
+   ```
+   
+1. Compile and run the unit tests using the `./test.sh` script you created in the
+   first part of this tutorial. You should see the following in your output
+   instead of the method name:
+   
+   ```
+   Incrementing a maxed out counter throws an IllegalStateException. ✔
+   ```
+
 ### Parameterized Test
 
 1. Let's write a unit test for the overloaded constructor. According the Javadoc
