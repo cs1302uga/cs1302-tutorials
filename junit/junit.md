@@ -260,7 +260,7 @@ unit tests.
    import org.junit.jupiter.params.provider.ValueSource;
    ```
    
-   Now ass the following test method to your `CounterTest` class:
+   Now add the following test method to your `CounterTest` class:
    
    ```java
    @DisplayName("A negative initValue value is not supported.")
@@ -269,6 +269,20 @@ unit tests.
    void constructor1(long initValue) {
        assertThrows(IllegalArgumentException.class, () -> new Counter(initValue));
    } // constructor1
+   ```
+   
+1. Compile and run the unit tests using the `./test.sh` script you created in the
+   first part of this tutorial. You should see the following in your output:
+   
+   ```
+   ╷
+   ├─ JUnit Jupiter ✔
+   │  └─ CounterTest ✔
+   │     ├─ A negative initValue value is not supported. ✔
+   │     │  ├─ For example, letting initValue = -1 is not supported. ✔
+   │     │  └─ For example, letting initValue = -4 is not supported. ✔
+   │     └─ getValue1() ✔
+   └─ JUnit Vintage ✔
    ```
 
 ## Test Class Inheritance
