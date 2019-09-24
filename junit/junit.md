@@ -7,7 +7,7 @@
 [JUnit](https://junit.org/junit5/) is programmer-friendly _unit testing framework_ and
 _integration testing framework_ for Java. A **unit test** is some code that attempts to 
 test another, single unit of code. An **integration test** is some code that attempts to
-test different units work together. In Java, the word unit generally means method. 
+test that different units work together. In Java, the word unit generally means method. 
 The JUnit framework provides the following:
 
 * A set of static methods and annotations that make writing tests easier. Instead of
