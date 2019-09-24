@@ -263,7 +263,7 @@ unit tests.
    Now add the following test method to your `CounterTest` class:
    
    ```java
-   @DisplayName("A negative initValue value is not supported.")
+   @DisplayName("A negative initValue value is not supported when calling the the constructor.")
    @ParameterizedTest(name = "For example, letting initValue = {0} is not supported.")
    @ValueSource(longs = { -1, -4 })
    void constructor1(long initValue) {
@@ -278,7 +278,7 @@ unit tests.
    ╷
    ├─ JUnit Jupiter ✔
    │  └─ CounterTest ✔
-   │     ├─ A negative initValue value is not supported. ✔
+   │     ├─ A negative initValue value is not supported when calling the the constructor. ✔
    │     │  ├─ For example, letting initValue = -1 is not supported. ✔
    │     │  └─ For example, letting initValue = -4 is not supported. ✔
    │     └─ getValue1() ✔
