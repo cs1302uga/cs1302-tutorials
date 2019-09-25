@@ -206,6 +206,24 @@ returned a reference value with type `Object`. That value was typecasted into
 a reference value with type `String`. Finally, that `String` reference was
 assigned to `b`. **Tricky stuff!**
 
+**Be careful with typecasts!** We can use them to make code compile that shouldn't.
+Consider the following example, using the same `doSomething` method from the previous
+examples:
+
+```java
+public static void doSomethingElse() {
+    Object a = doSomething();            // OK
+    Scanner b = (Scanner) doSomething(); // OK at compile-time
+}
+```
+
+The above example compiles! Why? Well, we told the compiler that the returned
+reference value should be converted to a reference value with type `Scanner`
+using a typecast. Assigning a `Scanner` reference to a `Scanner` variable is
+okay. However, we know this will probably cause an issue because the object
+being referred to actually has type `String`. Although this compiles, if you
+were to run the code, you would get a `ClassCastException` since a `Scanner`
+variable cannot actually refer to a `String` object. 
 
 <hr/>
 
