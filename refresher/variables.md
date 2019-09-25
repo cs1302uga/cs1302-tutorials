@@ -189,7 +189,22 @@ public static void doSomethingElse() {
 
 Even though _we_ know the reference returned by `doSomething` refers to an object of
 type `String`, the reference itself was returned as type `Object` and an `Object`
-reference cannot be assigned to a `String` variable.
+reference cannot be assigned to a `String` variable. **That being said,** we can
+use a typecast to force the compiler to convert the `Object` reference into a
+`String` reference, making the assignment compatible:
+
+```java
+public static void doSomethingElse() {
+    Object a = doSomething();          // OK
+    String b = (String) doSomething(); // OK
+}
+```
+
+At no point in this example did we change the type of the object being referred to.
+We did, however, change the type of the reference. The call to `doSomething()`
+returned a reference value with type `Object`. That value was typecasted into
+a reference value with type `String`. Finally, that `String` reference was
+assigned to `b`. **Tricky stuff!**
 
 
 <hr/>
