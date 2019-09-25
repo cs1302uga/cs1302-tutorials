@@ -227,8 +227,9 @@ reference value should be converted to a reference value with type `Scanner`
 using a typecast. Assigning a `Scanner` reference to a `Scanner` variable is
 okay. However, we know this will probably cause an issue because the object
 being referred to actually has type `String`. Although this compiles, if you
-were to run the code, you would get a `ClassCastException` since a `Scanner`
-variable cannot actually refer to a `String` object. 
+were to run the code, you would get a 
+[`ClassCastException`](https://docs.oracle.com/javase/8/docs/api/java/lang/ClassCastException.html)
+since a `Scanner` variable cannot actually refer to a `String` object. 
 
 <hr/>
 
