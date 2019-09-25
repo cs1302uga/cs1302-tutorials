@@ -33,8 +33,8 @@ According to
 In Java, the reference types ([§4.3](https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.3)) 
 are class types, interface types, and array types.
 
-An **_object_** is just a collection of variables that are defined by a class. It is not uncommon to
-descibe Java objects as dynamically constructed instances of a class. When an object is constructed,
+An **_object_** is really just a collection of variables that are defined by a class. It is not uncommon 
+to descibe Java objects as dynamically constructed instances of a class. When an object is constructed,
 its collection of variables is stored contiguously in some location in memory, which we usually call
 the object's **_reference_**. This is important because, in Java, the possible values of a reference type 
 are references to compatible objects (or `null`). For example, consider the following initialization:
@@ -47,14 +47,55 @@ The variable `s` has `Scanner` as its type and `null` as its value. In Java, `nu
 that can always be assigned or cast to any reference type, and it is used to denote that no object
 is being referred to. Therefore, we might say that `s` does not currently refer to any object. 
 
+**Under the Hood:** Let `s_location` denote the memory location that stores `s`'s value. The 
+following diagram illustrates that a value `null` is stored at this memory location:
+
+```
+s_location: [ null ]  
+```
+
+It is more common to diagram this using the variable name:
+
+```
+s [ null ]
+```
+
 Now consider the following initialization:
 
 ```java
 Scanner s = new Scanner(System.in);
 ```
 
-There is a lot happening on that line. First, the variable `s` is declared with `Scanner` as its
-type, then a `Scanner` object is constructed, 
+There is a lot happening on that line: i) the variable `s` is declared with `Scanner` as its
+type; ii) a `Scanner` object is constructed; then iii) the object's reference is assigned to
+`s`. Since the value of `s` is now a reference to some `Scanner` object, we might say that
+`s` refers to some `Scanner` object. 
+
+**Under the Hood:** Let `s_location` denote the memory location that stores `s`'s value and
+`object_reference` denote the memory location of the constructed `Scanner` object. The 
+following diagram illustrates that values are stored at these two memory locations:
+
+```
+      s_location: [ object_reference ]  
+             ...
+object_reference: [ scanner object contents ... ]
+```
+
+It is more common to diagram this using the variable name and an arrow to the object (since
+we may not know or care what the actual value stored in `s_location` is):
+
+```
+s [ -----]-------◆[ scanner object contents ... ]
+```
+
+Similarly:
+
+```
+  +--+     +----------------+
+s | -|----◆|                |
+  +--+     |                |
+           +----------------+
+```
 
 <hr/>
 
