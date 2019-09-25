@@ -30,17 +30,31 @@ According to
 
 ## Reference Types
 
-In Java, an **_object_** is just a collection of variables that are defined by a class. It is common to
+In Java, the reference types ([§4.3](https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.3)) 
+are class types, interface types, and array types.
+
+An **_object_** is just a collection of variables that are defined by a class. It is not uncommon to
 descibe Java objects as dynamically constructed instances of a class. When an object is constructed,
 its collection of variables is stored contiguously in some location in memory, which we usually call
-the object's address. This is important because, in Java, the possible values of a reference type 
-are references to compatible objects (or `null`). For example, consider the following:
+the object's **_reference_**. This is important because, in Java, the possible values of a reference type 
+are references to compatible objects (or `null`). For example, consider the following initialization:
 
 ```java
 Scanner s = null;
 ```
 
+The variable `s` has `Scanner` as its type and `null` as its value. In Java, `null` is a reference 
+that can always be assigned or cast to any reference type, and it is used to denote that no object
+is being referred to. Therefore, we might say that `s` does not currently refer to any object. 
 
+Now consider the following initialization:
+
+```java
+Scanner s = new Scanner(System.in);
+```
+
+There is a lot happening on that line. First, the variable `s` is declared with `Scanner` as its
+type, then a `Scanner` object is constructed, 
 
 <hr/>
 
