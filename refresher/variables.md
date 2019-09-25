@@ -26,6 +26,22 @@ According to
 > primitive values ([§4.2](https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.2)) and 
 > reference values ([§4.3](https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.3)).
 
+## Primitive Types
+
+## Reference Types
+
+In Java, an **_object_** is just a collection of variables that are defined by a class. It is common to
+descibe Java objects as dynamically constructed instances of a class. When an object is constructed,
+its collection of variables is stored contiguously in some location in memory, which we usually call
+the object's address. This is important because, in Java, the possible values of a reference type 
+are references to compatible objects (or `null`). For example, consider the following:
+
+```java
+Scanner s = null;
+```
+
+
+
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
