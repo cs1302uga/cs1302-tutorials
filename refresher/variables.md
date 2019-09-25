@@ -37,7 +37,11 @@ An **_object_** is really just a collection of variables that are defined by a c
 to descibe Java objects as dynamically constructed instances of a class. When an object is constructed,
 its collection of variables is stored contiguously in some location in memory, which we usually call
 the object's **_reference_**. This is important because, in Java, the possible values of a reference type 
-are references to compatible objects (or `null`). For example, consider the following initialization:
+are references to compatible objects (or `null`). 
+
+### Example 1: Refer to No Object
+
+Consider the following initialization:
 
 ```java
 Scanner s = null;
@@ -67,6 +71,8 @@ Similarly:
 s | null |
   +------+
 ```
+
+### Example 2: Refer to an Object
 
 Now consider the following initialization:
 
@@ -104,6 +110,39 @@ s | -|----◆|                |
   +--+     |                |
            +----------------+
 ```
+
+**Important:** When a method is called using `s`, the object that `s` refers to is known as
+the **_calling object_**. Non-static methods called using `s` are said to operate on the 
+calling object. Since the reference in the value of `s` can change over time, the calling 
+object can also change. 
+
+### Example 3: Many to One
+
+Now consider the following initializations:
+
+```java
+Scanner s = new Scanner(System.in);
+Scanner t = s;
+```
+
+The first line is the same as in Example 2. On the second line: i) the variable `t` is declared 
+with `Scanner` as its type; ii) the value of `s` is retrieved by the computer; then iii) the 
+value is assigned to `t`. Since the value of `t` is now  the same as the value of `s`, 
+we might say that `s` and `t` both refer to the same `Scanner` object.
+
+```
+  +--+     +----------------+
+s | -|----◆|                |
+  +--+     |                |
+           +----------------+
+             ◆
+  +--+       |
+t | -|-------+
+  +--+
+```
+
+This is an interesting scenario becuase the calling object for `s` and the calling object for `t`
+are now the same object! 
 
 <hr/>
 
