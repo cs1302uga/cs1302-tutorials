@@ -230,6 +230,8 @@ being referred to actually has type `String`. Although this compiles, if you
 were to run the code, you would get a 
 [`ClassCastException`](https://docs.oracle.com/javase/8/docs/api/java/lang/ClassCastException.html)
 since a `Scanner` variable cannot actually refer to a `String` object. 
+This exception is thrown to indicate that the code has attempted to cast an 
+object to a reference type of which it is not compatible with.
 
 <hr/>
 
