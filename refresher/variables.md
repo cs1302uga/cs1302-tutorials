@@ -26,7 +26,7 @@ According to
 > primitive values ([§4.2](https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.2)) and 
 > reference values ([§4.3](https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.3)).
 
-## Reference Types
+## Reference Types Overview
 
 In Java, the reference types ([§4.3](https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.3)) 
 are class types, interface types, and array types.
@@ -129,6 +129,18 @@ t | -|-------+
 
 This is an interesting scenario becuase the calling object for `s` and the calling object for `t`
 are now the same object! 
+
+## Reference Types, Assignment Values, and Return Values
+
+Consider the following reference type variable declaration:
+
+```
+SomeType varName;
+```
+
+The values that can be assigned to `varName` are `null` and any reference to an object whose
+type is compatible with `SomeType`. In Java, types are compatible if they are the same or
+if the variable type is a superclass or interface of the object type. 
 
 <hr/>
 
