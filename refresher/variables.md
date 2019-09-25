@@ -151,6 +151,27 @@ Object obj = new String("cool");       // compatible superclass
 Comparable<String> = str;              // compatible interface
 ```
 
+### Return Value Example
+
+When a method uses a reference type as its return type, then any compatible reference
+can be returned by that method. The simplest illustration of this concept is a
+method that has a return type of `Object`:
+
+```java
+public static Object doSomething() {
+    ...
+    return x; // where x is some reference variable
+}
+```
+
+In this example, the variable `x` either has `null` as its value or a reference
+to some object. In either case, since `Object` is always a compatible superclass,
+the value of `x` can be returned. **However, you should treat this as if you are
+assigning `x` to a variable of type `Object` via the `return` statement.** That is,
+the reference value being returned will now be treated as a reference of type
+`Object`, regardless of the type of object actually being referred to.  
+
+
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
