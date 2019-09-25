@@ -4,6 +4,17 @@
 
 ## Introduction
 
+In computer programming, a **_variable_** is just an alias for a location in memory. Instead of
+requiring programmers to remember explicit memory addresses, we let them use variables as a 
+matter of convenience. Some languages (e.g., C and C++) also allow programmers to deal directly
+with memory adresses. Every declared variable has the following:
+
+* a **_value_**, the actual data stored in some memory location;
+* a **_type_**, an attribute that tells the computer how to interpret the value and how much space
+  is needed to store the value; and
+* a **_name_**, an attribute that tells the computer the word that we want to use to refer to the
+  associated data. 
+
 According to
 [Chapter 4 of the _Java Language Specification_](https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.10.1),
 
