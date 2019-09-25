@@ -61,12 +61,6 @@ s_location: [ null ]
 It is more common to diagram this using the variable name:
 
 ```
-s [ null ]
-```
-
-Similarly:
-
-```
   +------+
 s | null |
   +------+
@@ -97,12 +91,6 @@ object_reference: [ scanner object contents ... ]
 
 It is more common to diagram this using the variable name and an arrow to the object (since
 we may not know or care what the actual value stored in `s_location` is):
-
-```
-s [ -----]-------◆[ scanner object contents ... ]
-```
-
-Similarly:
 
 ```
   +--+     +----------------+
