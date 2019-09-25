@@ -187,6 +187,10 @@ public static void doSomethingElse() {
 }
 ```
 
+Even though _we_ know the reference returned by `doSomething` refers to an object of
+type `String`, the reference itself was returned as type `Object` and an `Object`
+reference cannot be assigned to a `String` variable.
+
 
 <hr/>
 
