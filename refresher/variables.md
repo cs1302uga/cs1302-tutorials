@@ -171,6 +171,22 @@ assigning `x` to a variable of type `Object` via the `return` statement.** That 
 the reference value being returned will now be treated as a reference of type
 `Object`, regardless of the type of object actually being referred to.  
 
+To illustrate this, consider the following:
+
+```java
+public static Object doSomething() {
+    String x = new Str("cool");
+    return x;
+}
+```
+
+```java
+public static void doSomethingElse() {
+    Object a = doSomething(); // OK
+    String b = doSomething(); // NOT OK; incompatible types
+}
+```
+
 
 <hr/>
 
