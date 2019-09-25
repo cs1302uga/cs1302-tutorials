@@ -60,6 +60,14 @@ It is more common to diagram this using the variable name:
 s [ null ]
 ```
 
+Similarly:
+
+```
+  +------+
+s | null |
+  +------+
+```
+
 Now consider the following initialization:
 
 ```java
