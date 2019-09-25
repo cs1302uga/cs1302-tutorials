@@ -66,7 +66,7 @@ s | null |
   +------+
 ```
 
-### Example 2: Refer to an Object
+### Example 2: Refer to Some Object
 
 Now consider the following initialization:
 
@@ -104,7 +104,7 @@ the **_calling object_**. Non-static methods called using `s` are said to operat
 calling object. Since the reference in the value of `s` can change over time, the calling 
 object can also change. 
 
-### Example 3: Many to One
+### Example 3: Many Variables Refer to One Object
 
 Now consider the following initializations:
 
