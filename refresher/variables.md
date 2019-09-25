@@ -140,7 +140,16 @@ SomeType varName;
 
 The values that can be assigned to `varName` are `null` and any reference to an object whose
 type is compatible with `SomeType`. In Java, types are compatible if they are the same or
-if the variable type is a superclass or interface of the object type. 
+if the variable type is a superclass or interface of the object's reference type. 
+
+### Common Examples
+
+```java
+Scanner scan = new Scanner(System.in); // same types
+String str = "Hello";                  // same types
+Object obj = new String("cool");       // compatible superclass
+Comparable<String> = str;              // compatible interface
+```
 
 <hr/>
 
