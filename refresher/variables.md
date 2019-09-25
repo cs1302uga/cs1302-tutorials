@@ -1,4 +1,4 @@
-# Refresher: Variables
+# Refresher: Reference Variables
 
 ![Status: Not Ready](https://img.shields.io/badge/Status-Not%20Ready-red.svg)
 
@@ -25,8 +25,6 @@ According to
 > returned by methods, and operated on: 
 > primitive values ([§4.2](https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.2)) and 
 > reference values ([§4.3](https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.3)).
-
-## Primitive Types
 
 ## Reference Types
 
