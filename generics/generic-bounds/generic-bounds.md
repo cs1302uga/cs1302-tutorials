@@ -83,7 +83,7 @@ not defined in `Object`, however, we can call it in the example using `o` becaus
 we've restricted `T` using an upper bound to those reference types that have 
 a `compareTo` method.
 
-**Why did we use extends? Isn't `Comparable` an interface?** Yes. However, when
+**Why did we use `extends`? Isn't `Comparable` an interface?** Yes. However, when
 declaring an upper bound the keyword `extends` is used regardless of whether the 
 bound is a parent class or an interface.
 
