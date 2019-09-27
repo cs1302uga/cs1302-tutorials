@@ -112,12 +112,7 @@ In this example, `T` can be replaced with something like
 [`CharBuffer`](https://docs.oracle.com/javase/8/docs/api/java/nio/CharBuffer.html)
 since `CharBuffer` is compatible with both `Comparable<CharBuffer>` and `Appendable`.
 
-## Lower Bounds
-
-If and upper bound lets a generic parameter get replaced with a reference type that
-is at or below the bound in a hierarchy, then a lower bound does the opposite. 
-A **_lower bound_** bound restricts a generic type parameter to reference types
-that are at or _above_ the bound in a hierarchy. Consider the following hierarchy:
+### Use Case
 
 ```
 TODO replace with UML
@@ -140,6 +135,24 @@ TODO replace with UML
 +---------+
 | Circle  |
 +---------+
+```
+
+```java
+/**
+ * Finds the first ocurrence of some equal object. More formally, this methods returns a
+ * reference to the first element {@code elem} in the array specified by {@code array} 
+ * such that {@code o.equals(elem)} or {@code null} if no such item is found.
+ *
+ * @param <T>    element type
+ * @param array  array to search
+ * @param o      object to find
+ * @return first ocurrence of some equal object or {@code null}
+ */
+public static <A, T extends A> T findFirst(A[] array, T o) {
+    ...
+    if (o.equals(elem)) {
+    ...
+} // findFirst
 ```
 
 <hr/>
