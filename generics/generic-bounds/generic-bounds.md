@@ -112,7 +112,7 @@ In this example, `T` can be replaced with something like
 [`CharBuffer`](https://docs.oracle.com/javase/8/docs/api/java/nio/CharBuffer.html)
 since `CharBuffer` is compatible with both `Comparable<CharBuffer>` and `Appendable`.
 
-### Use Case
+### Extending the First Example
 
 ```
 TODO replace with UML
