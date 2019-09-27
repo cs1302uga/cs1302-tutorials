@@ -4,7 +4,7 @@
 
 ## Introduction
 
-## Upper Bound
+## Upper Bounds
 
 Consider the generic type parameter `<T>` in the following generic method, which
 has some of its body omitted to help us focus on the important parts: 
@@ -111,6 +111,37 @@ Here is an example with multiple upper bounds:
 In this example, `T` can be replaced with something like 
 [`CharBuffer`](https://docs.oracle.com/javase/8/docs/api/java/nio/CharBuffer.html)
 since `CharBuffer` is compatible with both `Comparable<CharBuffer>` and `Appendable`.
+
+## Lower Bounds
+
+If and upper bound lets a generic parameter get replaced with a reference type that
+is at or below the bound in a hierarchy, then a lower bound does the opposite. 
+A **_lower bound_** bound restricts a generic type parameter to reference types
+that are at or _above_ the bound in a hierarchy. Consider the following hierarchy:
+
+```
+TODO replace with UML
+
++---------+
+| Object  |
++---------+
+     △
+     |
++---------+
+| Shape   |
++---------+
+     △
+     |
++---------+
+| Ellipse |
++---------+
+     △
+     |
++---------+
+| Circle  |
++---------+
+```
+
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
