@@ -231,7 +231,7 @@ were to run the code, you would get a
 [`ClassCastException`](https://docs.oracle.com/javase/8/docs/api/java/lang/ClassCastException.html)
 since a `Scanner` variable cannot actually refer to a `String` object. 
 This exception is thrown to indicate that the code has attempted to cast an 
-object reference to an incompativle reference type.
+object reference to an incompatible reference type.
 
 <hr/>
 
