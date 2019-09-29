@@ -28,16 +28,26 @@
    } // findMatchingArea
    ```
 
-1. For each of the code snippets below, write the type that `T` is replaced with under
-   each method call. Also, indicate whether the call is valid.
-   
-   1. **Snippet Example:**
+## Type Inference
+
+When a type argument is not explicitly provided in a call to a generic method, the JVM will
+assign a type that is common to both actual parameters to the method. It will try to find an
+exact match and, if it can't, find a common parent.
+
+For example, consider the following code snippet:
    
       ```java
       Shape shape = new Ellipse(4.5, 2);
       Ellipse[] ellipses = circles;
       Shape s = findMatchingArea(ellipses, shape);
       ```
+      
+Here, the array is of type `Circle[]`, the reference to the array is of type `Ellipse[]`. This is valid
+since arrays are [covariant](https://dzone.com/articles/covariance-and-contravariance).
+
+1. For each of the code snippets below, write the type that `T` is replaced with under
+   each method call. Also, indicate whether the call is valid.
+
    1. **Snippet 1:**
    
       ```java
