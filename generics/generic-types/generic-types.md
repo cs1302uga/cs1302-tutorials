@@ -54,17 +54,48 @@ generic type parameter `T` is replaced by `Shape` making `Shape` the return type
    each method call. Explain your answer. Also, indicate whether the call is valid.
 
    1. **Snippet 1:**
+     
+   ```java
+   Rectangle r = new Rectangle(4.5, 2);
+   Shape s = findMatchingArea(rectangles, r);
+   ```
+
+   1. **Snippet 1:**
+   
+   ```java
+   Rectangle r = new Square(4.5);
+   Square s = findMatchingArea(rectangles, r);
+   ```
+   
+   1. **Snippet 1:**
+
+   ```java
+   Rectangle r = new Square(4.5, 2);
+   Shape s = findMatchingArea(circles, r);
+   ```
+
+   1. **Snippet 1:**
+
+   ```java
+   Rectangle r = new Square(4.5, 2);
+   Shape s = Driver.<Circle>findMatchingArea(circles, r);
+   ```
+
+   1. **Snippet 1:**
+
+   ```java
+   Shape s = new Shape(4.5, 2);
+   Shape result = Driver.findMatchingArea(shapes, s);
+   ```
+
+
+1. **Equivalence Example:**
       ```java
       Rectangle a = findMatchingArea(rectangles, new Square(2.0));
       Square b    = findMatchingArea(rectangles, new Square(2.0));
       Shape c     = findMatchingArea(rectangles, new Square(2.0));
       ```
    
-   1. **Snippet 1:**
-   
-   1. **Snippet 1:**
-   
-   1. **Snippet 1:**
    
 
 1. In the `main` method, write a few lines of code to test your method.
