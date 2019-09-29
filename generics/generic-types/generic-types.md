@@ -4,6 +4,8 @@
 
 ## Introduction
 
+Download the starter code for this exercise.
+
 ## Generic Types
 
 1. In `Driver.java` implement the following generic method:
