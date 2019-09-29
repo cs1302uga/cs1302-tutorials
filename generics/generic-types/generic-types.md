@@ -43,10 +43,13 @@ For example, consider the following code snippet:
       ```
       
 Here, the array is of type `Circle[]`, the reference to the array is of type `Ellipse[]`. This is valid
-since arrays are [covariant](https://dzone.com/articles/covariance-and-contravariance).
+since arrays are [covariant](https://dzone.com/articles/covariance-and-contravariance). The `shape` reference
+is of type `Shape` and references an `Eliipse` object. When `findMatchingArea` is called, the actual parameters
+do not have a common type (`Ellipse[]` and `Shape`) but they have a common parent, `Shape`. Therefore, the
+generic type parameter `T` is replaced by `Shape` making `Shape` the return type.
 
 1. For each of the code snippets below, write the type that `T` is replaced with under
-   each method call. Also, indicate whether the call is valid.
+   each method call. Explain your answer. Also, indicate whether the call is valid.
 
    1. **Snippet 1:**
    
