@@ -9,8 +9,8 @@ public class Driver {
 
     public static void main(String[] args) {
 
-        // SOME AREAS FOR TESTING
-
+        // SOME ARRAYS FOR TESTING
+        
         Shape[] shapes = new Shape[] {
             new Circle(2.0),
             new Ellipse(3.2, 2.8),
