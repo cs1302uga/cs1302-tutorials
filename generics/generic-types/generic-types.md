@@ -27,9 +27,17 @@
        ...
    } // findMatchingArea
    ```
+
+1. For each of the code snippets below, write the type that `T` is replaced with under
+   each method call. Also, indicate whether the call is valid.
    
    1. **Snippet Example:**
    
+      ```java
+      Shape shape = new Ellipse(4.5, 2);
+      Ellipse[] ellipses = circles;
+      Shape s = findMatchingArea(ellipses, shape);
+      ```
    1. **Snippet 1:**
    
       ```java
