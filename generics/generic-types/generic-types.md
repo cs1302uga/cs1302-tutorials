@@ -66,15 +66,12 @@
 1. Now that everything on this branch compiles, ensure that all changes 
    in the current branch have been staged and committed. 
 
-**CHECKPOINT**
+<hr/>
 
-1. The combination of options for the `git adog` command that you created earlier
-   was popularized by a StackOverflow user named [Patoshi パトシ](https://stackoverflow.com/users/1642231/patoshi-パトシ)
-   in their [reply to another user's post](https://stackoverflow.com/a/35075021).  
-   
-   ![ADOG](https://i.stack.imgur.com/ElVkf.jpg)
-   
-1. The StackOverflow user [fracz](https://stackoverflow.com/users/878514/fracz) suggested the `adog` alias
-   that you setup earlier in their reply to Patoshi's reply.
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
 
-**NOT A CHECKPOINT**
+<small>
+Copyright &copy; Michael E. Cotterell, Brad Barnes, and the University of Georgia.
+This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a> to students and the public.
+The content and opinions expressed on this Web page do not necessarily reflect the views of nor are they endorsed by the University of Georgia or the University System of Georgia.
+</small>
