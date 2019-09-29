@@ -36,11 +36,11 @@ exact match and, if it can't, find a common parent.
 
 For example, consider the following code snippet:
    
-      ```java
-      Shape shape = new Ellipse(4.5, 2);
-      Ellipse[] ellipses = circles;
-      Shape s = findMatchingArea(ellipses, shape);
-      ```
+```java
+Shape shape = new Ellipse(4.5, 2);
+Ellipse[] ellipses = circles;
+Shape s = findMatchingArea(ellipses, shape);
+```
       
 Here, the array is of type `Circle[]`, the reference to the array is of type `Ellipse[]`. This is valid
 since arrays are [covariant](https://dzone.com/articles/covariance-and-contravariance). The `shape` reference
@@ -52,7 +52,6 @@ generic type parameter `T` is replaced by `Shape` making `Shape` the return type
    each method call. Explain your answer. Also, indicate whether the call is valid.
 
    1. **Snippet 1:**
-   
       ```java
       Rectangle a = findMatchingArea(rectangles, new Square(2.0));
       Square b    = findMatchingArea(rectangles, new Square(2.0));
