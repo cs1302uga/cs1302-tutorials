@@ -12,7 +12,7 @@
    /**
     * Given a reference to an array specified by {@code array} and a reference
     * specified by {@code val}, finds the first object {@code o} in {@code array} 
-    * such that {@code Math.abs(val.area() - o.area()) < delta}, then returns its
+    * such that {@code Math.abs(val.getArea() - o.getArea()) < delta}, then returns its
     * reference; returns {@code null} if no match is found. 
     *
     * @param <T>    element type
