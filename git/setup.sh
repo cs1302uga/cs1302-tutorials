@@ -19,7 +19,12 @@ if [ ! -d $DIR ]; then
   git checkout -b sherlock
   echo "SHERLOCK HOLMES" >> sherlock.txt
   echo "" >> sherlock.txt
-  git commit -m "started writing sherlock holmes"
+  git commit -am "started writing sherlock holmes"
+  git checkout master
+  echo "started some writing" >> notes.md
+  git add notes.md
+  git commit -m "added some notes"
+  git checkout sherlock
   wget -q https://www.gutenberg.org/cache/epub/1661/pg1661.txt
   split -d -l 100 pg1661.txt
   rm -f pg1661.txt
