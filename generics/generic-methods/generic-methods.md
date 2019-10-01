@@ -92,10 +92,11 @@ Here are some examples:
   type `T`, which can be used throughout the class in any non-static method. The
   `foo` method is non-static and has its own placeholder type `R`. You might see
   something like this:
+  
   ```java
-  SomeClass<Integer> sc = new SomeClass<Integer>();
-  String str1 = sc.<String>foo(12, "help");
-  String str2 = sc.foo(12, "help"); // T = String
+     SomeClass<Integer> sc = new SomeClass<Integer>();
+     Integer int1 = sc.<String>foo(12, "help");
+     Integer int2 = sc.foo(12, "help"); // R = String
   ```
 
 ## Required Additional Reading
