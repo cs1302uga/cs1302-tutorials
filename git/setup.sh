@@ -1,7 +1,5 @@
 #!/bin/bash
 
-BOLD=$(tput bold)
-NORMAL=$(tput sgr0)
 TUTNAME="git"
 DIR="cs1302-$TUTNAME"
 if [ ! -d $DIR ]; then
@@ -19,5 +17,5 @@ if [ ! -d $DIR ]; then
   git status
   echo "subdirectory $DIR successfully created"
 else
-  >&2 echo "${BOLD}subdirectory $DIR already exists${NORMAL}"
+  >&2 echo "subdirectory $DIR already exists"
 fi  
