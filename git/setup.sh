@@ -8,13 +8,12 @@ if [ ! -d $DIR ]; then
   git checkout master -- $TUTNAME
   rm -f $TUTNAME/setup.sh
   mv $TUTNAME/* ./
-  mv $TUTNAME/.gitignore ./
   rm -rf $TUTNAME
   rm -rf .git
   set -x
   git init
-  git add .gitignore
-  git commit -m "initial commit with .gitignore"
+  git add .
+  git commit -m "initial commit with starter files"
   set +x
   echo "subdirectory $DIR successfully created"
 else
