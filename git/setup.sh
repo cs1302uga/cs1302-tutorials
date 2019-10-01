@@ -11,9 +11,11 @@ if [ ! -d $DIR ]; then
   mv $TUTNAME/.gitignore ./
   rm -rf $TUTNAME
   rm -rf .git
+  set -x
   git init
   git add .gitignore
   git commit -m "initial commit with .gitignore"
+  set +x
   echo "subdirectory $DIR successfully created"
 else
   >&2 echo "subdirectory $DIR already exists"
