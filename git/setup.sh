@@ -10,12 +10,28 @@ if [ ! -d $DIR ]; then
   mv $TUTNAME/* ./
   rm -rf $TUTNAME
   rm -rf .git
-  set -x
   git init
   git add .
   git commit -m "initial commit with starter files"
-  set +x
+  touch sherlock.txt
+  git add sherlock.txt
+  git commit -m "empty sherlock story"
+  git checkout -b sherlock
+  echo "SHERLOCK HOLMES" >> sherlock.txt
+  echo "" >> sherlock.txt
+  git commit -m "started writing sherlock holmes"
+  wget -q https://www.gutenberg.org/cache/epub/1661/pg1661.txt
+  split -d -l 100 pg1661.txt
+  rm -f pg1661.txt
+  for FILE in x*; do
+    cat $FILE >> sherlock.txt
+    git commit -am "added sherlock part $FILE"
+  done
+  rm -f x*
+  git checkout master
+  git merge sherlock
   echo "subdirectory $DIR successfully created"
+  git log --all --decorate --oneline --graph
 else
   >&2 echo "subdirectory $DIR already exists"
 fi  
