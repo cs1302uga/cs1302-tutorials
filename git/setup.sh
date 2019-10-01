@@ -35,8 +35,8 @@ if [ ! -d $DIR ]; then
   rm -f x*
   git checkout master
   git merge sherlock
+  git log --all --decorate --oneline --graph  
   echo "subdirectory $DIR successfully created"
-  git log --all --decorate --oneline --graph
 else
   >&2 echo "subdirectory $DIR already exists"
 fi  
