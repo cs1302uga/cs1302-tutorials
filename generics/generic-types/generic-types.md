@@ -76,12 +76,13 @@ Ellipse[] ellipses = circles;
 Shape s = findMatchingArea(ellipses, shape);
 ```
       
-Here, the array is of type `Circle[]`, the reference to the array is of type `Ellipse[]`. This is valid
-since arrays are [covariant](https://dzone.com/articles/covariance-and-contravariance). The `shape` reference
-is of type `Shape` and references an `Eliipse` object. When `findMatchingArea` is called, the actual parameters
-do not have a common type (`Ellipse[]` and `Shape`) but they have a common parent that is within the bound. In this
-example, that common parent is `Shape`. Therefore, the generic type parameter `T` is replaced by `Shape` 
-making `Shape` the return type.
+Here, the array is of type `Circle[]`, the reference to the array is of type `Ellipse[]`. 
+This is valid since arrays are [covariant](https://dzone.com/articles/covariance-and-contravariance). 
+The `shape` reference is of type `Shape` and refers to an `Ellipse` object. 
+When `findMatchingArea` is called, the actual parameters do not have a common 
+type (`Ellipse[]` and `Shape`) but they have a common parent that is within the bound. 
+In this example, that common parent is `Shape`. Therefore, the generic type parameter `T`
+is replaced by `Shape` for both of the formal parameters and the return type.
 
 1. For each of the code snippets below, write the type that `T` is replaced with under
    each method call. Explain your answer. Also, indicate whether the call is valid.
