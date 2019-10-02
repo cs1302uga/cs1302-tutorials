@@ -1,6 +1,6 @@
 # Generic Types Reading
 
-![Status: Not Ready](https://img.shields.io/badge/Status-Not%20Ready-red.svg)
+![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
 
 ### Prerequisites
 
