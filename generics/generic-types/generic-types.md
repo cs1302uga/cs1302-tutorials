@@ -1,4 +1,4 @@
-# Generic Types Reading
+# Generic Types Tutorial
 
 ![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
 
