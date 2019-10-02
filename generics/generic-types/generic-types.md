@@ -2,9 +2,39 @@
 
 ![Status: Not Ready](https://img.shields.io/badge/Status-Not%20Ready-red.svg)
 
-## Introduction
+### Prerequisites
 
-Download the starter code for this exercise.
+This tutorial assumes that the reader has a knowledge of basic Unix commands and experience working
+with a command-line text editor (e.g. emacs, vi, etc.). The reader should be familiar with compiling
+and running Java code contained in packages.
+
+To get the most out of this tutorial, you should follow along and take notes.
+
+### Course-Specific Learning Outcomes
+
+* **LO2.d:** (Partial) Implement new generic methods, interfaces, and classes in a software solution.
+
+### Getting Started
+
+The steps in this tutorial assume that you are logged into the Nike server.
+
+1. Use the following command to download and execute a shell script that retrieves
+   the starter code for this tutorial and places it into a subdirectory
+   called `cs1302-generic-classes`:
+
+   ```
+   $ curl -s -L https://git.io/JecL5 | bash
+   ```
+
+1. Change into the `cs1302-generic-classes` directory that was just created and look around. 
+   There should be multiple Java files contained within the directory structure. To see a listing 
+   of all of the source code files, use the `find` command as follows:
+
+   ```
+   $ find src
+   ```
+
+1. Use the starter code to follow along with the exercise below.
 
 ## Generic Types
 
