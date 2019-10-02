@@ -129,25 +129,13 @@ making `Shape` the return type.
       ```
 
 1. Now, let's keep the method call the same but change the type of the reference we are storing the return value in.
+   Which of the following are valid? Explain.
 
    ```java
    Rectangle a = findMatchingArea(rectangles, new Square(2.0));
    Square b    = findMatchingArea(rectangles, new Square(2.0));
    Shape c     = findMatchingArea(rectangles, new Square(2.0));
    ```
-
-1. In the `main` method, write a few lines of code to test your method.
-   In your notes, write how you know it is properly working. Try an example
-   where you think the types of the actual parameters will work and one where
-   you expect it not to work.
-
-1. **Compile all of the code, then run it.** If you run into any issues,
-   then revisit either your `fill` implementation or the test code you
-   included in your `main` method. **Be sure that everything compiles
-   and runs as expected before continuing.**
-   
-1. Now that everything on this branch compiles, ensure that all changes 
-   in the current branch have been staged and committed. 
 
 <hr/>
 
