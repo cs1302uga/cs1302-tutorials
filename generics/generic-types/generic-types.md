@@ -20,7 +20,7 @@ The steps in this tutorial assume that you are logged into the Nike server.
 
 1. Use the following command to download and execute a shell script that retrieves
    the starter code for this tutorial and places it into a subdirectory
-   called `cs1302-generic-classes`:
+   called `cs1302-generic-types`:
 
    ```
    $ curl -s -L https://git.io/JecL5 | bash
