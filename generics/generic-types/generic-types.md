@@ -63,8 +63,10 @@ The steps in this tutorial assume that you are logged into the Nike server.
 ## Type Inference
 
 When a type argument is not explicitly provided in a call to a generic method, the JVM will
-assign a type that is common to both actual parameters to the method. It will try to find an
-exact match and, if it can't, find a common parent.
+assign a type that is common to all actual parameters of the parameterized type. If an exact
+type match cannot be found, a common parent will be used. Since `findMatchingArea` is bounded
+above by `Shape`, the common parent cannot be above `Shape` in the inheritance heirarchy. In 
+other words, `Object` cannot be used in this scenario.
 
 For example, consider the following code snippet:
    
@@ -77,56 +79,62 @@ Shape s = findMatchingArea(ellipses, shape);
 Here, the array is of type `Circle[]`, the reference to the array is of type `Ellipse[]`. This is valid
 since arrays are [covariant](https://dzone.com/articles/covariance-and-contravariance). The `shape` reference
 is of type `Shape` and references an `Eliipse` object. When `findMatchingArea` is called, the actual parameters
-do not have a common type (`Ellipse[]` and `Shape`) but they have a common parent, `Shape`. Therefore, the
-generic type parameter `T` is replaced by `Shape` making `Shape` the return type.
+do not have a common type (`Ellipse[]` and `Shape`) but they have a common parent that is within the bound. In this
+example, that common parent is `Shape`. Therefore, the generic type parameter `T` is replaced by `Shape` 
+making `Shape` the return type.
 
 1. For each of the code snippets below, write the type that `T` is replaced with under
    each method call. Explain your answer. Also, indicate whether the call is valid.
 
    1. **Snippet 1:**
      
-   ```java
-   Rectangle r = new Rectangle(4.5, 2);
-   Shape s = findMatchingArea(rectangles, r);
-   ```
-
-   1. **Snippet 1:**
-   
-   ```java
-   Rectangle r = new Square(4.5);
-   Square s = findMatchingArea(rectangles, r);
-   ```
-   
-   1. **Snippet 1:**
-
-   ```java
-   Rectangle r = new Square(4.5, 2);
-   Shape s = findMatchingArea(circles, r);
-   ```
-
-   1. **Snippet 1:**
-
-   ```java
-   Rectangle r = new Square(4.5, 2);
-   Shape s = Driver.<Circle>findMatchingArea(circles, r);
-   ```
-
-   1. **Snippet 1:**
-
-   ```java
-   Shape s = new Shape(4.5, 2);
-   Shape result = Driver.findMatchingArea(shapes, s);
-   ```
-
-
-1. **Equivalence Example:**
       ```java
-      Rectangle a = findMatchingArea(rectangles, new Square(2.0));
-      Square b    = findMatchingArea(rectangles, new Square(2.0));
-      Shape c     = findMatchingArea(rectangles, new Square(2.0));
+      Rectangle r = new Rectangle(4.5, 2);
+      Shape s     = findMatchingArea(rectangles, r);
+      ```
+
+   1. **Snippet 2:**
+   
+      ```java
+      Rectangle r = new Square(4.5);
+      Square s    = findMatchingArea(rectangles, r);
       ```
    
-   
+   1. **Snippet 3:**
+
+      ```java
+      Rectangle r = new Square(4.5, 2);
+      Shape s     = findMatchingArea(circles, r);
+      ```
+
+   1. **Snippet 4:**
+
+      ```java
+      Rectangle r = new Square(4.5, 2);
+      Shape s     = Driver.<Circle>findMatchingArea(circles, r);
+      ```
+
+   1. **Snippet 5:**
+
+      ```java
+      Shape s      = new Shape(4.5, 2);
+      Shape result = Driver.findMatchingArea(shapes, s);
+      ```
+
+   1. **Snippet 6:**
+
+      ```java
+      Shape s      = new Shape(4.5, 2);
+      Shape result = Driver.findMatchingArea(shapes, 2.5);
+      ```
+
+1. Now, let's keep the method call the same but change the type of the reference we are storing the return value in.
+
+   ```java
+   Rectangle a = findMatchingArea(rectangles, new Square(2.0));
+   Square b    = findMatchingArea(rectangles, new Square(2.0));
+   Shape c     = findMatchingArea(rectangles, new Square(2.0));
+   ```
 
 1. In the `main` method, write a few lines of code to test your method.
    In your notes, write how you know it is properly working. Try an example
