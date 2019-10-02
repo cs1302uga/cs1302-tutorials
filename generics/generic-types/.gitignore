@@ -1,0 +1,7 @@
+bin/
+doc/
+*.class
+hs_err_pid*
+*~
+\#*\#
+core.*
