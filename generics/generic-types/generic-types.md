@@ -73,7 +73,7 @@ For example, consider the following code snippet:
 ```java
 Shape shape = new Ellipse(4.5, 2);
 Ellipse[] ellipses = circles;
-Shape s = findMatchingArea(ellipses, shape);
+Shape s = findMatchingArea(ellipses, shape, 0.001);
 ```
       
 Here, the array is of type `Circle[]`, the reference to the array is of type `Ellipse[]`. 
@@ -91,51 +91,51 @@ is replaced by `Shape` for both of the formal parameters and the return type.
      
       ```java
       Rectangle r = new Rectangle(4.5, 2);
-      Shape s     = findMatchingArea(rectangles, r);
+      Shape s     = findMatchingArea(rectangles, r, 0.001);
       ```
 
    1. **Snippet 2:**
    
       ```java
       Rectangle r = new Square(4.5);
-      Square s    = findMatchingArea(rectangles, r);
+      Square s    = findMatchingArea(rectangles, r, 0.001);
       ```
    
    1. **Snippet 3:**
 
       ```java
       Rectangle r = new Square(4.5, 2);
-      Shape s     = findMatchingArea(circles, r);
+      Shape s     = findMatchingArea(circles, r, 0.001);
       ```
 
    1. **Snippet 4:**
 
       ```java
       Rectangle r = new Square(4.5, 2);
-      Shape s     = Driver.<Circle>findMatchingArea(circles, r);
+      Shape s     = Driver.<Circle>findMatchingArea(circles, r, 0.001);
       ```
 
    1. **Snippet 5:**
 
       ```java
       Shape s      = new Shape(4.5, 2);
-      Shape result = Driver.findMatchingArea(shapes, s);
+      Shape result = Driver.findMatchingArea(shapes, s, 0.001);
       ```
 
    1. **Snippet 6:**
 
       ```java
       Shape s      = new Shape(4.5, 2);
-      Shape result = Driver.findMatchingArea(shapes, 2.5);
+      Shape result = Driver.findMatchingArea(shapes, 2.5, 0.001);
       ```
 
 1. Now, let's keep the method call the same but change the type of the reference we are storing the return value in.
    Which of the following are valid? Explain.
 
    ```java
-   Rectangle a = findMatchingArea(rectangles, new Square(2.0));
-   Square b    = findMatchingArea(rectangles, new Square(2.0));
-   Shape c     = findMatchingArea(rectangles, new Square(2.0));
+   Rectangle a = findMatchingArea(rectangles, new Square(2.0), 0.001);
+   Square b    = findMatchingArea(rectangles, new Square(2.0), 0.001);
+   Shape c     = findMatchingArea(rectangles, new Square(2.0), 0.001);
    ```
 
 <hr/>
