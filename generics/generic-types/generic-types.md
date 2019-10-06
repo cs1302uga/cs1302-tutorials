@@ -104,14 +104,14 @@ is replaced by `Shape` for both of the formal parameters and the return type.
    1. **Snippet 3:**
 
       ```java
-      Rectangle r = new Square(4.5, 2);
+      Rectangle r = new Square(4.5);
       Shape s     = findMatchingArea(circles, r, 0.001);
       ```
 
    1. **Snippet 4:**
 
       ```java
-      Rectangle r = new Square(4.5, 2);
+      Rectangle r = new Square(4.5);
       Shape s     = Driver.<Circle>findMatchingArea(circles, r, 0.001);
       ```
 
@@ -125,7 +125,7 @@ is replaced by `Shape` for both of the formal parameters and the return type.
    1. **Snippet 6:**
 
       ```java
-      Shape s      = new Shape(4.5, 2);
+      Shape s      = new Rectangle(4.5, 2);
       Shape result = Driver.findMatchingArea(shapes, 2.5, 0.001);
       ```
 
