@@ -1,5 +1,7 @@
 # JavaFX Starter Tutorial
 
+![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+
 JavaFX is a library for creating and delivering applications with graphical user interfaces (GUIs)
 in Java. In this tutorial, we will use JavaFX 8 as it comes with Java 8. The API documentation for
 the many packages included ith JavaFX can be found 
