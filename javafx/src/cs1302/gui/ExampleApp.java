@@ -11,6 +11,7 @@ import javafx.scene.text.Text;
  */
 public class ExampleApp extends Application {
 
+    /** {@inheritDoc} */
     @Override
     public void start(Stage stage) {
 
