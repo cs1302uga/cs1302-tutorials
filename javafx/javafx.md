@@ -40,8 +40,7 @@ the many packages included ith JavaFX can be found
    
    **If you do not see the exact same output presented above,** then please ensure that
    you have followed the instructions provided at the beginning of the semester for
-   [MacOS users](https://github.com/cs1302uga/cs1302-exercises/blob/master/misc/MacOS.md) or
-   [Windows 10 users](https://github.com/cs1302uga/cs1302-exercises/blob/master/misc/Windows10.md).
+   [How to Connect to Nike & First Steps](https://github.com/cs1302uga/cs1302-exercises/blob/master/misc/NikeSetup.md).
 
 1. Use the following command to download and execute a shell script that retrieves 
    the starter code for this tutorial and places it into a subdirectory 
