@@ -64,7 +64,7 @@ the many packages included ith JavaFX can be found
    need to create the `bin` directory.
    
 1. Attempt to run the `cs1302.gui.ExampleDriver` class in the usual manner. If successful, then
-   one of two things should happen:
+   one of three things should happen:
    
    1. A small, but blank, GUI app will appear on your screen. This may appear in another
       desktop or minimized if your computer utilizes multiple windows. However, the following 
@@ -89,12 +89,17 @@ the many packages included ith JavaFX can be found
         Serial number of failed request:  23
         Current serial number in output stream:  24
       ```
+      
+   1. A small, but blank, GUI app will appear on your screen. This may appear in another
+      desktop or minimized if your computer utilizes multiple windows.
 
-1. The error message that displays is related to the JavaFX graphics renderer. By default, it
-   attempts to perform hardware-accelerated rendering. However, we need to enable to software-based
-   rendering in order for it to work nicely with X-forwarding. Close out of the small GUI app. **Now, rerun 
-   the driver but add `-Dprism.order=sw` in addition to the usual options when executing the related `java`
-   command.**
+1. If you receive an error message in the terminal, then this error message is related to the 
+   JavaFX graphics renderer. By default, it attempts to perform hardware-accelerated rendering. 
+   However, we need to enable to software-based rendering in order for it to work nicely with X-forwarding. 
+   Close out of the small GUI app. 
+   
+   Regardless of whether you got an error, **rerun the driver but add `-Dprism.order=sw` in addition to 
+   the usual options when executing the related `java` command** to enable the software-based renderer.
    
 1. If the small GUI app containing a nice message appears with no renderer errors, then you are okay to proceed!
    **Note**: You may have to wait a few seconds to see the message.
