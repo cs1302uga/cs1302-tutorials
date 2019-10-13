@@ -104,12 +104,13 @@ the many packages included ith JavaFX can be found
 1. If the small GUI app containing a nice message appears with no renderer errors, then you are okay to proceed!
    **Note**: You may have to wait a few seconds to see the message.
 
-   1. If you are running MacOS and get an exception message related to DIS, then
+   1. If you are running MacOS and get an exception message related to `DISPLAY` the first
+      or second time that you attempt to run the program, then
       please ensure that you have followed the
       instructions provided at the beginning of the semester for
       [MacOS users](https://github.com/cs1302uga/cs1302-exercises/blob/master/misc/MacOS.md). 
       In particular, you really do need to restart your Mac after installing XQuartz
-      via Homebrew. 
+      via Homebrew.
 
 ## High-Level Walkthrough 
 
