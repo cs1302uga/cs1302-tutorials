@@ -5,6 +5,12 @@ in Java. In this tutorial, we will use JavaFX 8 as it comes with Java 8. The API
 the many packages included ith JavaFX can be found 
 [here](https://docs.oracle.com/javase/8/javafx/api/toc.htm).
 
+## Course-Specific Learning Outcomes
+* **LO2.a:** Identify redundancy in a set of classes and interfaces, then refactor
+using inheritance and polymorphism to emphasize code reuse.
+* **LO2.e:** (Partial) Utilize existing generic methods, interfaces, and classes in a software solution.
+* **LO7.a:** (Partial) Design and implement a graphical user interface in a software project.
+
 ## Getting Started
 
 1. First, you need to ensure that your terminal emulator supports X-forwarding. This allows
