@@ -72,7 +72,8 @@ using inheritance and polymorphism to emphasize code reuse.
    </table>
 
 1. The default size for the image in the ImageView container is 500x500. Do a quick google search for
-   "500x500 images" and load one or two of the images to make sure the app is functioning properly.
+   "500x500 images" and load one or two of the images to make sure the app is functioning properly. **Note:**
+   the `Image` class only supports the BMP, GIF, JPEG, and PNG filetypes.
 
 1. Congratulations on compiling and running a good looking app!
    
@@ -160,12 +161,14 @@ using inheritance and polymorphism to emphasize code reuse.
       visibility if you wish to do so.
 
    1. Your class should have instance variables for the other
-      nodes in the sub-graph. For example, you will need
+      nodes in the sub-graph (make sure to import all required classes). 
+      For example, you will need
       an instance variable called `urlLayer` of type `HBox`
       as well as instance variables for the remaining nodes.
       For the most part, these can be cut and paste from the
      `ImageApp` class. Any instance variables that you move
-      into the `ImageLoader` class can be removed from `ImageApp`.
+      into the `ImageLoader` class can be removed from `ImageApp`. You can
+      also remove any imports that are no longer needed in `ImageApp`.
 	  
    1. In `ImageLoader`, add a default constructor that explicitly
       calls `super()`. After the call to `super`, the constructor
@@ -186,17 +189,28 @@ using inheritance and polymorphism to emphasize code reuse.
          this.getChildren().addAll(urlLayer, imgView);
       } // ImageLoader
 	  ```
+   1. If you haven't done so already, remove the code to create the subgraph
+      (`HBox`, `ImageView`, `TextField`, and `Button`) from the `start` method 
+      of `ImageApp`. All of that code will be run when we create a new `ImageLoader`
+      object.
+      
    1. Move the `loadImage` method from `ImageApp` to `ImageLoader`.
       Don't forget to set the handler on your `ImageLoader`'s button.
       
    1. You've probably noticed that `ImageApp` has significantly decreased
       in size.  We moved a lot of that code over into our custom component!
-      Now, instantiate two objects of type `ImgLoader` within the `start`
+      Now, instantiate two objects of type `ImageLoader` within the `start`
       method of `ImageApp`.
       
-   1. Add the two `ImgLoader` objects to the `HBox` object of `ImageApp`. Set
+   1. Instantiate an `HBox` object within the `start` method of `ImageApp`. This
+      will serve as the container for our `ImageLoader` objects. Set
       the `spacing` property of the `HBox` to 10 by passing 10 into the `HBox`
-      constructor.
+      constructor. Now, Add the two `ImgLoader` objects to the `HBox` object of `ImageApp`.
+      
+   1. Make sure you pass the reference to your newly created `HBox` object into the
+      `Scene` constructor within the `start` method of `ImageApp`. Previously, the 
+      root of our scene graph was a `VBox`. Now it's an `HBox` that contains two
+      `ImageLoader` objects.
       
    1. Compile and run your new app and load up a few 500x500 images.  You 
       should see something like the image below:
