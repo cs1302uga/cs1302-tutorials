@@ -15,19 +15,18 @@ public class ExampleApp extends Application {
     @Override
     public void start(Stage stage) {
 
-	Text hello = new Text("Hello World!!!");
+        Text hello = new Text("Hello World!!!");
 
-	HBox root = new HBox();
-	root.getChildren().add(hello);
+        HBox root = new HBox();
+        root.getChildren().add(hello);
 
-	Scene scene = new Scene(root);
+        Scene scene = new Scene(root);
 
-	stage.setScene(scene);
-	stage.sizeToScene();
-	stage.setTitle("ExampleApp!");
-	stage.show();
-	
+        stage.setScene(scene);
+        stage.sizeToScene();
+        stage.setTitle("ExampleApp!");
+        stage.show();
+
     } // start
 
 } // ExampleApp
-
