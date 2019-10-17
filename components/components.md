@@ -8,7 +8,6 @@ the many packages included ith JavaFX can be found
 ## Course-Specific Learning Outcomes
 * **LO2.a:** Identify redundancy in a set of classes and interfaces, then refactor
 using inheritance and polymorphism to emphasize code reuse.
-* **LO2.e:** (Partial) Utilize existing generic methods, interfaces, and classes in a software solution.
 * **LO7.a:** (Partial) Design and implement a graphical user interface in a software project.
 
 ## Getting Started
