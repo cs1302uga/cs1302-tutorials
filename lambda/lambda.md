@@ -13,17 +13,11 @@ methods of [`Object`](https://docs.oracle.com/javase/8/docs/api/java/lang/Object
 Here is an example of a functional interface:
 ```java
 @FunctionalInterface
-public interface MathFunction {
+public interface TodoReplaceName {
 
     public double apply(double x);
 
-} // MathFunction
-```
-
-```java
-MathFunction f = x -> x * x + 1;
-double y = f.apply(2.0);
-System.out.println(y);   // 5.0 
+} // TodoReplaceName
 ```
 
 ## Layout of a Lambda
