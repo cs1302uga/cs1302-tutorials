@@ -20,6 +20,12 @@ public interface MathFunction {
 } // MathFunction
 ```
 
+```java
+MathFunction f = x -> x * x + 1;
+double y = f.apply(2.0);
+System.out.println(y);   // 5.0 
+```
+
 ## Layout of a Lambda
 
 ## Method References
