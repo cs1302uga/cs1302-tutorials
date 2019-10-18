@@ -5,7 +5,10 @@
 ## Introduction
 
 In Java, a __*lambda expression*__ is a special syntax for creating an object that implements
-a [functional interface](https://docs.oracle.com/javase/specs/jls/se8/html/jls-9.html#jls-9.8). 
+a [functional interface](https://docs.oracle.com/javase/specs/jls/se8/html/jls-9.html#jls-9.8).
+More precisely, a lambda expression allows a programmer to simultaneously define and instantiate
+a nameless class that implements an interface that has just one abstract method (aside from the 
+methods of [`Object`](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html)).
 
 ## Layout of a Lambda
 
