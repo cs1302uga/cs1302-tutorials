@@ -1,5 +1,7 @@
 # JavaFX Custom Component Tutorial
 
+![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+
 JavaFX is a library for creating and delivering applications with graphical user interfaces (GUIs)
 in Java. In this tutorial, we will use JavaFX 8 as it comes with Java 8. The API documentation for
 the many packages included ith JavaFX can be found 
@@ -224,8 +226,8 @@ using inheritance and polymorphism to emphasize code reuse.
 <hr/>
 
 **Feedback?** 
-If you have any feedback or suggestions for this reading or tutorial, then please
-use [this link](https://docs.google.com/forms/d/e/1FAIpQLSfBgZM_-G-9nKmX7F83k0Tgp1OlqBnrkt6vsxlIqLypc_keUQ/viewform?usp=pp_url&entry.1081181680=cs1302-components&entry.1901270436=https://github.com/cs1302uga/cs1302-tutorials/blob/master/components/components.md)
+If you have any feedback or suggestions for this reading or tutorial, then please use 
+[this link](https://docs.google.com/forms/d/e/1FAIpQLSfBgZM_-G-9nKmX7F83k0Tgp1OlqBnrkt6vsxlIqLypc_keUQ/viewform?usp=pp_url&entry.1081181680=cs1302-components&entry.1901270436=https://github.com/cs1302uga/cs1302-tutorials/blob/master/components/components.md)
 to reach the feedback form.
 
 <hr/>
