@@ -336,6 +336,15 @@ such as `java.lang.String` and `java.lang.System` by their simple names without 
 
 <hr/>
 
+**Feedback?** 
+Please help us make this better!
+If you have any feedback or suggestions for this reading or tutorial, then use 
+the link below to reach the feedback form.
+
+[![Submit Feedback](https://img.shields.io/badge/-Submit&nbsp;Feedback-red.svg?style=for-the-badge)](https://docs.google.com/forms/d/e/1FAIpQLSfBgZM_-G-9nKmX7F83k0Tgp1OlqBnrkt6vsxlIqLypc_keUQ/viewform?usp=pp_url&entry.1081181680=cs1302-packages&entry.1901270436=https://github.com/cs1302uga/cs1302-tutorials/blob/master/packages.md)
+
+<hr/>
+
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 <small>
