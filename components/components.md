@@ -220,7 +220,13 @@ using inheritance and polymorphism to emphasize code reuse.
       of other custom components you could build by extending existing JavaFX
       components. We will explore more uses of the `ImageLoader` component in 
       class.
-      
+
+<hr/>
+
+If you have any feedback or suggestions for this reading or tutorial, then please
+use [this link](https://docs.google.com/forms/d/e/1FAIpQLSfBgZM_-G-9nKmX7F83k0Tgp1OlqBnrkt6vsxlIqLypc_keUQ/viewform?usp=pp_url&entry.1081181680=cs1302-components&entry.1901270436=https://github.com/cs1302uga/cs1302-tutorials/blob/master/components/components.md)
+to reach the feedback form.
+
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
