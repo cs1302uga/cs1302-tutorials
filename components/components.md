@@ -228,8 +228,9 @@ using inheritance and polymorphism to emphasize code reuse.
 **Feedback?** 
 Please help us make this better!
 If you have any feedback or suggestions for this reading or tutorial, then use 
-[this link](https://docs.google.com/forms/d/e/1FAIpQLSfBgZM_-G-9nKmX7F83k0Tgp1OlqBnrkt6vsxlIqLypc_keUQ/viewform?usp=pp_url&entry.1081181680=cs1302-components&entry.1901270436=https://github.com/cs1302uga/cs1302-tutorials/blob/master/components/components.md)
-to reach the feedback form.
+the link below to reach the feedback form.
+
+[![Submit Feedbacl](https://img.shields.io/badge/-Submit Feedback-red?style=for-the-badge)](https://docs.google.com/forms/d/e/1FAIpQLSfBgZM_-G-9nKmX7F83k0Tgp1OlqBnrkt6vsxlIqLypc_keUQ/viewform?usp=pp_url&entry.1081181680=cs1302-components&entry.1901270436=https://github.com/cs1302uga/cs1302-tutorials/blob/master/components/components.md)
 
 <hr/>
 
