@@ -285,9 +285,11 @@ register an event handler for one of the events the button might generate.
 <hr/>
 
 **Feedback?** 
-If you have any feedback or suggestions for this reading or tutorial, then please use 
-[this link](https://docs.google.com/forms/d/e/1FAIpQLSfBgZM_-G-9nKmX7F83k0Tgp1OlqBnrkt6vsxlIqLypc_keUQ/viewform?usp=pp_url&entry.1081181680=cs1302-javafx&entry.1901270436=https://github.com/cs1302uga/cs1302-tutorials/blob/master/javafx/javafx.md)
-to reach the feedback form.
+Please help us make this better!
+If you have any feedback or suggestions for this reading or tutorial, then use 
+the link below to reach the feedback form.
+
+[![Submit Feedback](https://img.shields.io/badge/-Submit&nbsp;Feedback-red.svg?style=for-the-badge)](https://docs.google.com/forms/d/e/1FAIpQLSfBgZM_-G-9nKmX7F83k0Tgp1OlqBnrkt6vsxlIqLypc_keUQ/viewform?usp=pp_url&entry.1081181680=cs1302-javafx&entry.1901270436=https://github.com/cs1302uga/cs1302-tutorials/blob/master/javafx/javafx.md)
 
 <hr/>
 
