@@ -149,15 +149,16 @@ using inheritance and polymorphism to emphasize code reuse.
           |--
    ```
    
-   Note that root of this sub-graph is a `VBox`. With this in mind, 
+   Note that the root of this sub-graph is a `VBox`. With this in mind, 
    create a class called `ImageLoader` in the `cs1302.gui` package
-   that extends the `VBox` class. As this class extends `VBox`,
+   that extends the `VBox` class (additional details are provided
+   below; please read them carefully). As this class extends `VBox`,
    it "is-a" `VBox` and inherits all of the members of `VBox`
    (although only `public` and `protected` members will be directly
    visible).
 
    1. The class should contain the `static` constants from
-      the `ImageApp` class. The can be cut and paste directly
+      the `ImageApp` class. They can be cut and paste directly
       from that class, perhaps changing them to `protected`
       visibility if you wish to do so.
 
