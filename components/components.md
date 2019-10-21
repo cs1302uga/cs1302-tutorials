@@ -179,7 +179,7 @@ using inheritance and polymorphism to emphasize code reuse.
       `ImageLoader` extends `VBox`, it is-a `VBox`. Therefore, you
       can call any `VBox` methods using `this` as the calling object.
       Use this knowledge to add your newly created nodes to the
-      sub-graph rooted at `this` similarly to how they are 
+      sub-graph rooted at `this` similar to how they are 
       added to the `VBox` node in the `ImageApp` class. 
       Your code will likely look something like this:
 	  
@@ -219,7 +219,7 @@ using inheritance and polymorphism to emphasize code reuse.
       
       <img src="https://github.com/cs1302uga/cs1302-tutorials/raw/master/components/TwoPaneScreenShot.png?raw=true" width=300>
       
-   1. Imagine all the ways you could use your new, custom component. Also, think
+   1. Imagine all the ways you could use your new, custom component! Also, think
       of other custom components you could build by extending existing JavaFX
       components. We will explore more uses of the `ImageLoader` component in 
       class.
