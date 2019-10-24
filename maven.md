@@ -1,5 +1,7 @@
 # Maven Tutorial
 
+![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+
 ## Maven
 
 This tutorial is designed to help you learn about how to setup and work with Java-based 
