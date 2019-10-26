@@ -70,7 +70,10 @@ mode later in this tutorial once you are more familiar with the tool.
    | `-DarchetypeVersion`    | Archetype Version | The archetype / template version to use. At the time of this writing, the latest version of the `maven-archetype-quickstart` archetype is `1.4`. |
    
 1. With those terms in mind, let's create a project directory for this turorial called `cs1302-mvn` 
-   with a primary package called `cs1302.mvn` using following command:
+   with a primary package called `cs1302.mvn` using following command (be careful to type the command 
+   exactly as given). You can press <Enter> after each `\` to contine the command on the next line. This
+   is equivalent to typing it all on one line but many people prefer to break a long command up on separate
+   lines:
    
    ```
    $ mvn -B archetype:generate \
