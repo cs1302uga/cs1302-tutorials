@@ -112,13 +112,16 @@ mode later in this tutorial once you are more familiar with the tool.
    ````
    
    You probably notice that created some starter code for you! Here, the
-   `src/main/java` subdirectory is the defualt package location for source code.
+   `src/main/java` subdirectory is the default package location for source code.
+   This is a small change from previous exercises and tutorials where the default package 
+   for source code was `src`. A simple driver class with a fully qualified name of 
+   `cs1302.mvn.App` was created for you in `src/main/java/cs1302/mvn/App.java`. Remember, 
+   the name of the default package for source code is not included in the fully qualified name.
+   
    The `src/test/java` directory is the default package location for unit tests,
-   a topic that will be covered at a later point in time. A simple driver class
-   with a fully qualified name of `cs1302.mvn.App` was created for you in
-   `src/main/java/cs1302/mvn/App.java`. The last file that you see above, `pom.xml`,
-   contains the configuration settings / metadata for the Project Object Model (POM), 
-   which is what Maven uses to do its magic.
+   a topic that will be covered at a later point in time. The last file that you see 
+   above, `pom.xml`, contains the configuration settings / metadata for the Project 
+   Object Model (POM), which is what Maven uses to do its magic.
    
 1. In the future, you might try omitting the `-B` (batch mode) and subsequent options
    to use Maven's interactive mode. Instead of specifiying some of the project properies
