@@ -43,9 +43,9 @@ In order to use Apache Maven on Nike, you will need to add it to your executable
    It should print out your installed version of Maven, for example:
    
    ```
-   Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T14:41:47-04:00)
+   Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-04T15:00:29-04:00)
    Maven home: /usr/local/maven/apache-maven-3.6.1
-   Java version: 1.8.0_192, vendor: Oracle Corporation, runtime: /some/path/to/jdk1.8.0_192/jre
+   Java version: 1.8.0_192, vendor: Oracle Corporation, runtime: /usr/local/alt-java/jdk1.8.0_192/jre
    Default locale: en_US, platform encoding: UTF-8
    OS name: "linux", version: "2.6.32-754.11.1.el6.x86_64", arch: "amd64", family: "unix"
    ```
