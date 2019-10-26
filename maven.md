@@ -356,7 +356,7 @@ using Maven.
 	 
    However, if your project has a runtime dependency, i.e., a library that is required during
    runtime, then the `exec:java` phase will automatically ensure that it is on the class path
-   when the driver class is executed! This is especially conventient when there are multiple
+   when the driver class is executed! This is especially convenient when there are multiple
    such dependencies.
    
 ## References
