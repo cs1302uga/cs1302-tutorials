@@ -313,6 +313,21 @@ using Maven.
    under your `~/public_html` directory to host the site on Nike just as
    you did for API documentation websites created using the Javadoc tool
    in the past.
+   
+   The generated site is stored in `target/site`. You might use something
+   like the following command to create a symbolic link named `project-site`
+   (adjust as needed) under your `~/public_html` directory:
+   
+   ```
+   $ ln -s $(pwd)/target/site ~/public_html/project-site
+   ```
+   
+   **Doesn't work!?** If Maven complains about missing classes, then you may need 
+   to update the `mvn-site-plugin` to a newer version than the default. 
+   The dependency information that should be included / updated in your `pom.xml` file 
+   can be found 
+   [here](https://maven.apache.org/plugins/maven-site-plugin/dependency-info.html).
+   **Remember to backup your POM before making edits!**
 
 1. In some of the examples above, we walked you through how to run a driver
    class after compiling for packaging the project. There is also a way
