@@ -192,6 +192,8 @@ using Maven.
    To execute a phase using Maven, simply type the phase name after the `mvn` command.
    Pay careful attention to the output of each command as it usually provides lots of
    useful information about what worked or didn't work related to that command.
+   **The _first time_ you execute a phase after creating / updating the POM, Maven
+   may need to download some files;** this is normal behavior. 
    
 1. Let's try compiling the code:
 
@@ -327,7 +329,7 @@ using Maven.
    The dependency information that should be included / updated in your `pom.xml` file 
    can be found 
    [here](https://maven.apache.org/plugins/maven-site-plugin/dependency-info.html).
-   **Remember to backup your POM before making edits!**
+   **Remember to backup your POM (i.e., make a backup copy) before making edits!**
 
 1. In some of the examples above, we walked you through how to run a driver
    class after compiling for packaging the project. There is also a way
