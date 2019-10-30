@@ -1,9 +1,11 @@
 # CSCI 1302 Recursion Tutorial
 
+![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+
 ## Introduction
 
 This tutorial is designed to help you learn about and understand recursion, a powerful
-programming technique in which a method can call itself in orer to fulfill its purpose.
+programming technique in which a method can call itself in order to fulfill its purpose.
 
 A **recursive definition** is one which uses the word or concept being defined in the
 definition itself.
@@ -31,8 +33,9 @@ A `LIST` is a:
    * number `#`
    * or a number comma LIST `#, LIST`
 
-That is, a `LIST` can be a `#` or a `#, LIST`. 
-Here, the concept of a `LIST` is used to define itself!
+That is, a `LIST` can be a `#` or a `#, LIST`. Here, the concept of a `LIST` is used to define itself!
+In this example, `#` is the base case as it is the non-recursive part of the definition. In other words, it
+is the part of the definition that does not use `LIST`.
 
 We can demonstrate that `88, 42, 37` is a `LIST` using the inductively defined recursive data definition by
 following the definition one step at a time until we reach the base case.
@@ -115,7 +118,10 @@ see an error that looks something like the following:
 
 Each call to `recurse` (called infinitely) sets up a new execution environment (*stack frame*), 
 with new parameters and local variables. Each stack frame takes up memory in a special region called the
-stack. When the stack fills up due to too many method calls, you get a `StackOverflowError`.
+stack. When a method returns, the memory taken up in the stack is freed up for other stack frames to use.
+In the situation above, `recurse` never returns. In fact, it keeps calling itself and each call adds
+another stack frame causing the stack to eventually fill up (overflow). When the stack fills up due to 
+too many (unreturned) method calls, you get a `StackOverflowError`.
 
 **ASIDE:** You may have noticed that `StackOverflowError` is reported as an exception but it does not have
 `Exception` in its name. Indeed, it is reported the same as exceptions because it is a sub-class
