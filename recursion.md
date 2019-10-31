@@ -151,7 +151,7 @@ likely write a for-loop and create a method that looks something like:
 
    ```java
    public static void countFrom(int value) {
-      for(int i = value; i >= 0; i++) {
+      for(int i = value; i >= 0; i--) {
          System.out.println(i);
       } // for
    } // countFrom
