@@ -78,14 +78,20 @@ mode later in this tutorial once you are more familiar with the tool.
    ```
    $ mvn -B archetype:generate \
      -DartifactId=cs1302-mvn \
-	 -DgroupId=cs1302.mvn \
-	 -DarchetypeArtifactId=maven-archetype-quickstart \
-	 -DarchetypeVersion=1.4
+     -DgroupId=cs1302.mvn \
+     -DarchetypeArtifactId=maven-archetype-quickstart \
+     -DarchetypeVersion=1.4
    ```
    
    If you omit the `-DarchetypeVersion`, then the oldest version is automatically used.
    If you omit the `-DarchetypeArtifactId`, then most Maven installations default to
    `maven-archetype-quickstart` for the archetype.
+   
+   Here is the command on a single line:
+   
+   ```
+   $ mvn -B archetype:generate -DartifactId=cs1302-mvn -DgroupId=cs1302.mvn -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4
+   ```
    
 1. Look inside the directory that Maven just created:
 
