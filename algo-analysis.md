@@ -58,10 +58,11 @@ These are the operations that we're intested in.
 * In searching and sorting, the key processing step is usually the number of
   comparisons done.
 
-Sometimes, we might focus on other operations. It depends on the problem. In general,
-this set usually comprises of operations that expensive (i.e., take a long time or
-require a lot of memory) as they will dominate less expensive operations in their 
-impact towards the overall complexity of the algorithm. 
+Sometimes, we might focus on other operations. The key processing step ultimately
+depends on the problem in question. In general, this set usually comprises of operations 
+that are expensive (i.e., take a long time or require a lot of memory) as they will 
+dominate less expensive operations in their impact towards the overall complexity of 
+the algorithm. 
 
 ## Time Complexity Analysis
 
@@ -69,7 +70,7 @@ First, let's focus on **time complexity analysis**. Supose you have a set of
 algorithms that all solve the same problem. In order to analyze each of them, 
 we first need to do the following:
     
-1. Define the problem size = `n`; then
+1. Define the problem size (`n`); then
 
 2. Define the set of key processing steps.
 
@@ -395,8 +396,8 @@ exclusively on the fourth step.
      ```java    
      void printA(int[] a) {
          for(int i = 0; i < a.length; i++) { // --------------------\
-             for(int j = i; j < n; j++) { // -----------------\     |
-                 System.out.print(a[i] + " ");  // -------> 1 | ≤ n | n
+             for(int j = 0; j < i; j++) { // -----------------\     |
+                 System.out.print(a[i] + " ");  // -------> 1 | < n | n
              } // for  // ------------------------------------/     |
              System.out.println(); // ------------------------> 1   |
          } // for --------------------------------------------------/
@@ -404,33 +405,26 @@ exclusively on the fourth step.
      ```
      
      This was the tricky part. The inner for-loop may have as many as
-     `n` iterations, however, this number changes based on what iteration
+     `n - 1` iterations, however, this number changes based on what iteration
      of the outer-most loop the code is in. We don't want to mark the loop
      as having the minumum number since that would undercount, however, it's
      okay in this scenarion to mark it with the maximum number (technically
-     an overcount) so long as we indicate it's `≤` that number. Just as before, 
+     an overcount) so long as we indicate it's `<` that number. Just as before, 
      you can simply multiply across and add up the results, this time accounting
-     for the presence of `≤` instead of an `=`:
+     for the presence of `<` instead of an `=`:
      
      ```java    
      void printA(int[] a) {
          for(int i = 0; i < a.length; i++) { // --------------------\
-             for(int j = i; j < n; j++) { // -----------------\     |
-                 System.out.print(a[i] + " ");  // -------> 1 | ≤ n | n ⇒ T(n) ≤ 1 * n * n
+             for(int j = 0; j < i; j++) { // -----------------\     |
+                 System.out.print(a[i] + " ");  // -------> 1 | < n | n ⇒ T(n) < 1 * n * n
              } // for  // ------------------------------------/     |
              System.out.println(); // ------------------------> 1   |           +     1 * n
          } // for --------------------------------------------------/
      } // printA
      ```
      
-     Therefore, `T(n) ≤ n^2 + n` for this particular `printA` method!
-   
-     **Note:** You could pick either the min or max in scenarios similar to
-     the one encountered above, so long as you consistently make the same
-     choice in all such scenarios for a particular analysis. That is, either
-     always choose the min or always choose the max. For our purposes, we want 
-     to find an uppper-bound for `T(n)`, so choosing the max is perfectly fine.
-
+     Therefore, `T(n) < n^2 + n` for this particular `printA` method!
 
 1. **Example 5 [Even Trickier]**:
 
@@ -490,7 +484,7 @@ exclusively on the fourth step.
      ```java 
      void printUntil(int[] a, int i) {
          for(int j = 0; j < i; j++) { // -------------------\
-             System.out.print(a[i] + " "); // ----------> 1 | ≤i ⇒ U(n, i) ≤ 1 * i
+             System.out.print(a[i] + " "); // ----------> 1 | ≤i ⇒ U(n, i) < 1 * i
          } // for // ---------------------------------------/
      } // printUntil
      ```
@@ -501,14 +495,14 @@ exclusively on the fourth step.
      ```java
      void printA(int[] a) {
          for(int i = 0; i < a.length; i++) { // -------------------\
-             printUntil(a, i);     // -------------------> ≤ 1 * i | n 
+             printUntil(a, i);     // -------------------> < 1 * i | n 
              System.out.println(); // -------------------> 1       |
          } // for // ----------------------------------------------/
      } // printA
      ```
      
      We want out final derivation to be in terms of `n`. Within the observed loop, we see
-     that `printUntil(a, i)` will execute `≤ 1 * i` print-like statements. We further
+     that `printUntil(a, i)` will execute `< 1 * i` print-like statements. We further
      observe that the largest value that `i` can be inside its enclosed loop is `n`.
      Therefore, we simply the expression in order to provide a reasonable upper bound with
      respect to `n`, then complete the derivation:
@@ -516,13 +510,13 @@ exclusively on the fourth step.
      ```java
      void printA(int[] a) {
          for(int i = 0; i < a.length; i++) { // -------------------\
-             printUntil(a, i);     // -------------------> ≤ 1 * n | n ⇒ T(n) ≤ 1 * n * n
+             printUntil(a, i);     // -------------------> < 1 * n | n ⇒ T(n) < 1 * n * n
              System.out.println(); // -------------------> 1       |           +     1 * n
          } // for // ----------------------------------------------/
      } // printA
      ```
      
-     Therefore, `T(n) ≤ n^2 + n` for this particular `printA` method! This should not be
+     Therefore, `T(n) < n^2 + n` for this particular `printA` method! This should not be
      surprising as this is the same algorithm from **Example 4** decomposed into two
      separate methods.
      
@@ -560,7 +554,7 @@ exclusively on the fourth step.
      ```java    
      void printS(String s) {
          for(int i = s.length() - 1; i > 0; i = i / 3) { // --\
-             System.out.println(s.charAt(i)); // ---------> 1 | ≤ n ⇒ T(n) ≤ 1 * n
+             System.out.println(s.charAt(i)); // ---------> 1 | < n ⇒ T(n) < 1 * n
          } // for // -----------------------------------------/
      } // printS
      ```
