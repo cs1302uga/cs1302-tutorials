@@ -1,5 +1,7 @@
 # CSCI 1302 Algorithm Analysis Tutorial
 
+![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+
 ## Introduction
 
 In computer science, there often exist multiple algorithms that a programmer can choose to
