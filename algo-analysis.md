@@ -772,7 +772,7 @@ exclusively on the fourth step.
    **Considerations:**
 
    * As usual, let's define the problem size as the array length. 
-     Therefore, let `n = a.length`.
+     Therefore, let `n = s.length()`.
 
    * Let's also define the unit of measurement as bytes.
 
@@ -793,7 +793,7 @@ exclusively on the fourth step.
      
      | Variable | Description                       |
      |----------|-----------------------------------|
-     | `a`      | `8`-byte local reference variable |
+     | `s`      | `8`-byte local reference variable |
 
      This provides us with something like this:
      
