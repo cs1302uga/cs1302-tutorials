@@ -486,7 +486,7 @@ exclusively on the fourth step.
      ```java 
      void printUntil(int[] a, int i) {
          for(int j = 0; j < i; j++) { // -------------------\
-             System.out.print(a[i] + " "); // ----------> 1 | ≤i ⇒ U(n, i) < 1 * i
+             System.out.print(a[i] + " "); // ----------> 1 | =i ⇒ U(n, i) = 1 * i
          } // for // ---------------------------------------/
      } // printUntil
      ```
@@ -497,14 +497,14 @@ exclusively on the fourth step.
      ```java
      void printA(int[] a) {
          for(int i = 0; i < a.length; i++) { // -------------------\
-             printUntil(a, i);     // -------------------> < 1 * i | n 
+             printUntil(a, i);     // -------------------> = 1 * i | n 
              System.out.println(); // -------------------> 1       |
          } // for // ----------------------------------------------/
      } // printA
      ```
      
      We want out final derivation to be in terms of `n`. Within the observed loop, we see
-     that `printUntil(a, i)` will execute `< 1 * i` print-like statements. We further
+     that `printUntil(a, i)` will execute `1 * i` print-like statements. We further
      observe that the largest value that `i` can be inside its enclosed loop is `n`.
      Therefore, we simply the expression in order to provide a reasonable upper bound with
      respect to `n`, then complete the derivation:
