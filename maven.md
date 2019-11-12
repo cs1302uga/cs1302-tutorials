@@ -194,6 +194,7 @@ using Maven.
    | `test`      | Execute unit tests, if available, using the project's unit testing framework. |
    | `exec:java` | Execute the class specified by `-Dexec.mainClass` with dependencies added to the class path. |
    | `archetype:generate` | Generate a project directory based on an archetype. |
+   | `javadoc:javadoc` | Generate API documentation only. |
    
    To execute a phase using Maven, simply type the phase name after the `mvn` command.
    Pay careful attention to the output of each command as it usually provides lots of
