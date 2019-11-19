@@ -7,7 +7,7 @@
 Unix is a family of computer operating systems that derive from work performed
 in the 1970s at the Bell Labs research center by Ken Thompson, Dennis Ritchie, 
 and others. In this course, we use the term Unix to refer to systems that are
-Unix-like, i.e., their user interface and basic set of utilities are 
+Unix-like; i.e., their user interface and basic set of utilities are 
 reminiscent of a Unix system. 
 
 In Unix, the primary end-user, text-based interface to the system is a program 
