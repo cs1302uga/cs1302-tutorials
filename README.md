@@ -4,9 +4,11 @@
 
 ## Publication History
 
-* [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2652509.svg)](https://doi.org/10.5281/zenodo.2652509) All Versions
-* [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3579498.svg)](https://doi.org/10.5281/zenodo.3579498) `v2019fa` -- Fall 2019
-* [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2652510.svg)](https://doi.org/10.5281/zenodo.2652510) `v2019sp` -- Spring 2019
+| DOI | Tag | Date | Description |
+|-----|-----|------|-------------|
+| [10.5281/zenodo.2652509](https://doi.org/10.5281/zenodo.2652509) | NA        | NA           | All Versions |
+| [10.5281/zenodo.3579498](https://doi.org/10.5281/zenodo.3579498) | `v2019fa` | Dec 16, 2019 | Fall 2019    |
+| [10.5281/zenodo.2652510](https://doi.org/10.5281/zenodo.2652510) | `v2019sp` | Apr 26, 2019 | Spring 2019  |
 
 <hr/>
 
