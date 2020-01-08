@@ -21,21 +21,21 @@ On Nike, try the following:
 
 1. Create a new, empty regular file called `newfile` using the following command:
 
-```
-$ touch newfile
-```
+   ```
+   $ touch newfile
+   ```
 
 2. Now, use `ls` to display some of the file's status information:
 
-```
-$ ls -l newfile
-```
+   ```
+   $ ls -l newfile
+   ```
 
 3. To see more detailed status information, use the `stat` command:
 
-```
-$ stat newfile
-```
+   ```
+   $ stat newfile
+   ```
 
 ## Octal Mode
 
