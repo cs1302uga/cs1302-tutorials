@@ -1,5 +1,7 @@
 # Octal Mode
 
+![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
+
 ## Prerequisites
 
 * Unix Tutorial Five: http://www.ee.surrey.ac.uk/Teaching/Unix/unix5.html
