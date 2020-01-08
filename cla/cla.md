@@ -1,6 +1,6 @@
 # Command-Line Arguments
 
-![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
 
 Many of the programs that you've interacted with on Unix supported extra options
 and/or required extra information when you entered their commands at the terminal
