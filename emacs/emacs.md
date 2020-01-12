@@ -88,7 +88,8 @@ $ emacs cs1302/emacs/NOTES.txt
 Alternatively, you can simply execute `emacs`, then use `C-x C-f` to find the
 file you're trying to open.
 
-To **create a file**, use one of the methods just desribed with your desired
+To **create a file**, it is not necessary to first use the `touch` command. Instead,
+you can use one of the methods just desribed with your desired
 filename. When you create a new file, Emacs will display `(New file)` at 
 the bottom of the screen. The new file does not actually exist until you
 save it, usually using `C-x C-s`.
@@ -220,7 +221,7 @@ the area containing the buffer's name.
 | `C-x C-b` | List available buffers                                                 |
 
 To open a file in another buffer, navigate to that buffer then use `C-x C-f` to
-find and open your desired file. If you previously openned the file, then it's
+find and open your desired file. If you previously opened the file, then it's
 likely still available. In that case, use `C-x C-b` to list the available buffers,
 navigate to the text for the file's name, then type `RET` to replace the current
 buffer area with the desired buffer.
