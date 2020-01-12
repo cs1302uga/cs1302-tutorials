@@ -193,10 +193,10 @@ to stop).
 |-----------|------------------------------------------------------------------------|
 | `C-s`     | Incremental search (forward direction)                                 |
 | `C-r`     | Incremental search (backward direction)                                |
-| `C-%`     | Query replace                                                          |
+| `M-%`     | Query replace                                                          |
 
-On most systems, `C-%` means holding the `CTRL`, `SHIFT`, and `5` keys at the same 
-time. Using `C-%` is interactive. Pay careful attention to the prompts provided by
+On most systems, `M-%` means holding the `META`, `SHIFT`, and `5` keys at the same 
+time. Using `M-%` is interactive. Pay careful attention to the prompts provided by
 Emacs as you use it. 
 
 ### Splitting the Screen
