@@ -77,13 +77,13 @@ Let's try it!
    } // HelloWorld
    ```
     
-2. Change directly into the default package directory and compile the program using `javac`:
+2. Change directly into the default package directory (`src`) and compile the program using `javac`:
    
    ```
    $ javac HelloWorld.java
    ```
       
-3. List the contents of the directory to verify that `HelloWorld.class` was created.
+3. List the contents of the directory with `ls` to verify that `HelloWorld.class` was created.
    
 4. Run the program using `java`:
    
@@ -96,10 +96,11 @@ Let's try it!
       
 5. When executing the `java` command, Java assumes that the current working directory is the
    location of the default package. If that is not the case, then you must specify it using a
-   command line option called `-cp` for _class path_. As its name suggests, the class path is
+   command line option called `-cp` for _class path_. As its name suggests, the **class path** is
    the path to the default package for classes. 
       
-   Change directly to the `cs1302-packages` directory and try to execute the following:
+   Change back into the `cs1302-packages` directory and try to execute your program with the 
+   following command:
       
    ```
    $ java HelloWorld
@@ -130,37 +131,40 @@ Let's try it!
    compiled class's associated default package, assuming proper file permissions. 
       
 6. You may have noticed in the previous step that the `.java` file and `.class` file
-   for the `HelloWorld` class are in the same directory. Let's keep things clean and
-   separate our source code from the compiled code (`.class` files). 
+   for the `HelloWorld` class are in the same directory. Let's keep our directories clean and
+   separate our source code (`.java` files) from the compiled code (`.class` files). 
       
-   First, delete the `HelloWorld.class` file:
+   First, delete the `HelloWorld.class` file from the `src` directory:
       
    ```
    $ rm src/HelloWorld.class
    ```
       
-   Now, compile the program, using `javac` with the `-d` option to specify a destination:
+   Verify that your present working directory is still `cs1302-packages` then compile your 
+   program using `javac` with the `-d` option to specify a destination for the compiled code:
       
    ```
    $ javac -d bin src/HelloWorld.java
    ```
       
    Now, if you list the contents of the `bin` directory, you will see that it contains
-   `HelloWorld.class`.
+   `HelloWorld.class`. Listing the `src` directory contents will show only `HelloWorld.java`. 
+   Now our project is more organized!
       
-   Try running the program again, specifying the new class path using `-cp`:
+   Try running the program again, specifying the new class path (`bin`) using `-cp`:
       
    ```
    $ java -cp bin HelloWorld
    ```
       
-   **PROTIP:** Remember, the default package should really only be used direcly
-   for convenience when developing small or temporary applications or when just beginning development 
-   [[2]](https://docs.oracle.com/javase/specs/jls/se8/html/jls-7.html).
+   **PROTIP:** Remember, source code should really only be placed directly in the default 
+   package (`src`) for convenience when developing small or temporary applications or when 
+   just beginning development [[2]](https://docs.oracle.com/javase/specs/jls/se8/html/jls-7.html).
    While types in the default package can access types in other packages, the reverse is not true.
    That is, types in named packages cannot access types in the defualt package.
       
-7. Let's clean up! Delete the `HelloWorld.class` file that you created.
+7. Let's clean up! Delete the `HelloWorld.class` file that you created in the `bin` folder. Remember to
+   use tab completion so you don't have to type long filenames!
 
 ## Named Package
 
@@ -210,15 +214,12 @@ Let's try it by placing the `HelloWorld` class into the `cs1302.hello` package!
       
    In this example, `cs1302.hello.HelloWorld` is known as the **fully qualified name** of the
    `HelloWorld` class in the `cs1302.hello` package. You have seen fully qualified names before--they
-   are often used with `import` statements to make classes in other packages available using their
-   simple class name. In this case, the `HelloWorld` part of `cs1302.hello.HelloWorld` is known as 
-   the **name** or **simple name** of the class.
+   are often used with `import` statements (remember `java.util.Scanner`?). When you import a class, you
+   can use the simple class name in that file instead of having to type the fully qualified name each time.
+   In this case, `HelloWorld` is known as the **name** or **simple name** of the class.
    
    **PROTIP:** Although packages correspond to directories, a fully qualified name uses `.` (dot) 
    for the name separator and not a slash.
- 
-5. Congratulations, you've successfully completed this tutorial! Please read the sections below for
-   some important information regarding class path and `import` statements. 
 
 ## Code Dependencies
 
@@ -230,9 +231,11 @@ to let `javac` know where the _compiled_ version of that depedency is.
 
 1. Let's extend the code we just finished. Create a `cs1302.util.HelloUtility` class under `src`.
    **Remember,** this implies a specific directory structure and package statement requirement 
-   with respect to `HelloUtility.java`.
+   with respect to `HelloUtility.java`. You will need to add the `util` directory in the proper
+   place in your current directory hierarchy.
    
-1. In the source code for `cs1302.util.HelloUtility` class, add the following method:
+1. Write the code to declare the `cs1302.util.HelloUtility` class making sure to include the proper 
+   package statement at the top. Then, within the class declaration, add the following method:
 
    ```java
    public static void excitingHello() {
@@ -241,7 +244,8 @@ to let `javac` know where the _compiled_ version of that depedency is.
    ```
    
 1. Save, then compile the `.java` file for the `cs1302.util.HelloUtility` class as usual, 
-   under `bin`.
+   using `bin` as the destination for the compiled code. Once it compiles, make sure the `util`
+   directory was created within `bin` and that the `HelloUtility.class` is in `util`.
 
 1. Modify the source code for your `cs1302.hello.HelloWorld` class to call the static method in
    `cs1302.util.HelloUtility`. To do this, you may:
@@ -258,21 +262,35 @@ to let `javac` know where the _compiled_ version of that depedency is.
       HelloUtility.excitingHello();
       ```
       
-   Completing these two steps create dependency. Now, the `cs1302.hello.HelloWorld` class
-   depends on the `cs1302.util.HelloUtility` class.
+   Completing these two steps create a dependency. Now, the `cs1302.hello.HelloWorld` class
+   **depends** on the `cs1302.util.HelloUtility` class because it uses a method defined within that
+   class.
       
 1. If you try to compile the source code for your `cs1302.hello.HelloWorld` class exactly as you 
-   did before, then it will not work. Try it! The error message can be a little confusing. Assuming 
-   you didn't make any spelling mistakes, the error output is just `javac` saying that it cannot 
-   find something. Since we know it actually exists, we can just tell `javac` where to find it 
-   using `-cp`. 
+   did before, then it will not work because the compiler cannot find `cs1302.util.HelloUtility` 
+   class on which `cs1302.hello.HelloWorld` depends. Try it! The error message should look like:
+   
+   ```
+   src/cs1302/hello/HelloWorld.java:3: error: package cs1302.util does not exist
+   import cs1302.util.HelloUtility;
+                  ^
+   src/cs1302/hello/HelloWorld.java:8: error: cannot find symbol
+        HelloUtility.excitingHello();
+        ^
+   symbol:   variable HelloUtility
+   location: class HelloWorld
+   ```
+   
+   The error output is just `javac` saying that it cannot find something. In this case, it cannot
+   find `cs1302.util.HelloUtility` as it is not in the same package as `cs1302.hello.HelloWorld`. 
+   Since we know it actually exists, we can just tell `javac` where to find it using `-cp`. 
    
 1. Remember that when your code depends on other code that you have written, you need to let 
    `javac` know where the _compiled_ version of that depedency is. Since you compiled under `bin`,
    that's where you should tell `javac` to look. Try to compile it again, but this time, be sure
    to include the `-cp bin` option in addition to `-d bin` option.
    
-1. It works! Run it as expected.
+1. It works! The program should now run as expected.
 
 ## Further Important Notes
 
