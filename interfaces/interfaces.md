@@ -1,6 +1,6 @@
 # Interfaces Tutorial
 
-![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
 
 This tutorial introduces the reader to Java interfaces and polymorphism.
 
@@ -31,17 +31,17 @@ The steps in this tutorial assume that you are logged into the Nike server.
    ```
   
 1. Change into the `cs1302-interfaces` directory that was just created and look around. There should be
-   multiple Java files contained within the directory structure. To see a listing of all of the 
-   files under the current directory, use the `find` command as follows:
+   multiple Java files contained in the `src` directory. To see a listing of all of the 
+   files in `src`, use the `find` command as follows:
    
    ```
-   $ find .
+   $ find src
    ```
    
    Execute the `cat` command on each `.java` file that was listed to view the contents. You will 
    notice that some of 
    them contain interfaces instead of classes. They can be identified by looking for the `interface` 
-   keyword instead ofthe `class` keyword in the overall type declaration specified near the top of 
+   keyword instead of the `class` keyword in the overall type declaration specified near the top of 
    the file. We say "type" declaration because a `.java` file can be used to declare any kind of 
    reference type in Java, including classes, interfaces, and class-based enumerations. A 
    **reference type** in Java is any type that can serve as the type for a variable that refers to 
