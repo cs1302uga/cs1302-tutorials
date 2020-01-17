@@ -51,7 +51,7 @@ The steps in this tutorial assume that you are logged into the Nike server.
 ### What is an Interface?
 
 In its simplest form, a Java **interface** is a reference type composed of abstract methods and 
-constants. An **abstract method** is a non-static method without an implementation. Constants
+constants. An **abstract method** is a non-static method without an implementation (body). Constants
 are variables (static or not) that are declared using the `final` keyword. As of Java 8, the
 technical definition for an *interface* allows it to contain only the following:
 abstract methods, constants, static methods, nested types, and default implementation
@@ -143,12 +143,12 @@ Javadoc comments in the interface.
    public visibility. Therefore, the implementation of such a method in an implementing class will
    need to include the `public` visibility modifier.
    
-1. Compare the Javadoc comments in the source code for the interface with the comments written in the
-   source code for the implementing `Fancy` class. In some cases, new comments are provided. In others,
-   it appears as though Javadoc comments are omitted. In the latter case, this is actually not true. 
-   View the API documentation website for both the `Styleable` interface and the `Fancy` class--bring
-   them up side-by-side, if possible. All of the methods in `Fancy` are documented, even `style()`
-   and `unstyle()` which have no Javadoc comments in the source code!
+1. Compare the Javadoc comments in the source code for the `Styleable` interface with the comments 
+   written in the source code for the implementing `Fancy` class. In some cases, new comments are 
+   provided. In others, it appears as though Javadoc comments are omitted. In the latter case, this 
+   is actually not true. View the API documentation website for both the `Styleable` interface and 
+   the `Fancy` class--bringthem up side-by-side, if possible. All of the methods in `Fancy` are 
+   documented, even `style()` and `unstyle()` which have no Javadoc comments in the source code!
    
    This happens because the Javadoc tool has the ability to inherit comments from an interface when omitted
    or when explicitly requested in the implementing class's Javadoc comment using the `{@inheritDoc}` tag. 
@@ -208,7 +208,7 @@ Javadoc comments in the interface.
    to assign object references to variables with interface types leads to a powerful programming
    technique known as **polymorphism**. Polymorphism is a fancy word (might be fun to style it in
    a super fancy way!), derived from the Greek words _poly_ and _morphus_, which roughly translates 
-   to _many bodies_. Polymorphism leverages  our ability to have a variable appear to take on many 
+   to _many bodies_. Polymorphism leverages our ability to have a variable appear to take on many 
    forms (or bodies) depending on the object it refers to. 
    
    Consider the following code snippet:
@@ -239,9 +239,9 @@ Javadoc comments in the interface.
     You should inspect both methods in the source code closely. What should they do? 
     What do they do? 
     
-    To answer the second question, compile and run the code provided
-    with this tutorial. Since there are multiple dependencies, the order of compilation
-    matters:
+    Write what you expect the output to be from an execution of `StyleDriver`. Then, 
+    compile and run the code provided with this tutorial. Since there are multiple 
+    dependencies, the order of compilation matters:
     
     1. `src/cs1302/interfaces/contract/Styleable.java`
     1. `src/cs1302/interfaces/impl/Fancy.java`
