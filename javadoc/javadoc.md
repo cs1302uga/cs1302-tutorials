@@ -159,7 +159,7 @@ this tutorial.
    the same name as the class and is lacking a return type.
    
 1. Take note of any Javadoc tags in the constructor comments that weren't present in the comments for
-   the class.  Our constructor takes in a parameter which is described using the `@param` tag.  
+   the class. Our constructor takes in a parameter which is described using the `@param` tag.  
    Immediately after the `@param` tag is the name of the parameter followed by a description. The 
    `@throws` tag works similarly for any exceptions that are propagated by the method.
    
@@ -199,7 +199,8 @@ this tutorial.
    
    Since our use of `ln` created a symbolc link to the `doc` directory, we can now
    regenerate the API documentation website in `doc` and have those changes be automatically
-   reflected in `~/public_html/cs1302-javadoc-doc`. 
+   reflected in `~/public_html/cs1302-javadoc-doc`. Also, from an organizational standpoint, 
+   it makes sense to have the documentation contained within the main project directory.
 
 ### References
 
