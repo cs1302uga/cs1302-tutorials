@@ -37,7 +37,7 @@ public class Fancy implements Styleable {
      */
     public String toString() {
         String content;
-        if(styled) {
+        if (styled) {
             content = "*** " + message + " ***";
         } else {
             content = message;

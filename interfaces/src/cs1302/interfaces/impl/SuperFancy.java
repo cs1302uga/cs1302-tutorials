@@ -4,7 +4,7 @@ import cs1302.interfaces.contract.Styleable;
 
 /**
  * This class representes a <i>super fancy</i> message.
- * 
+ *
  */
 public class SuperFancy implements Styleable {
 
@@ -39,7 +39,7 @@ public class SuperFancy implements Styleable {
         return "A styled SuperFancy object contains characters that alternate" +
             " between upper and lowercase.";
     } // getAbout
-    
+
     /**
      * Returns a {@code String} representation of this {@code SuperFancy}
      * object, consistent with {@link cs1302.interfaces.contract.Styleable}.
@@ -47,10 +47,10 @@ public class SuperFancy implements Styleable {
      */
     public String toString() {
         String content = "";
-        if(styled) {
+        if (styled) {
             // Alternate upper and lower case for each letter
-            for(int i = 0; i < message.length(); i++) {
-                if(i % 2 == 0) {
+            for (int i = 0; i < message.length(); i++) {
+                if (i % 2 == 0) {
                     content += Character.toUpperCase(message.charAt(i));
                 } else {
                     content += Character.toLowerCase(message.charAt(i));

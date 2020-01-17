@@ -4,14 +4,14 @@ import cs1302.interfaces.contract.Styleable;
 import cs1302.interfaces.impl.Fancy;
 import cs1302.interfaces.impl.SuperFancy;
 
-/** 
+/**
  * This class contains some test code for the {@link Styleable}
  * interface and some of its implementing classes.
  */
 public class StyleDriver {
 
     /**
-     * Runs a {@code style()} and {@code unstyle()} test on the 
+     * Runs a {@code style()} and {@code unstyle()} test on the
      * given {@link Styleable} object.
      * @param testName the name of the test
      * @param s        the given {@link Styleable}
@@ -38,8 +38,6 @@ public class StyleDriver {
 
         message = new SuperFancy("Hello, world...");
         test("Super Fancy", message);
-	
     } // main
 
 } // SecretDriver
-
