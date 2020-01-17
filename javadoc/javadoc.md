@@ -1,6 +1,6 @@
 # Javadoc and API Documentation
 
-![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
 
 ## Prerequisites
 
@@ -26,8 +26,8 @@ Such documentation
 is usually referred to as **API documentation**, and it should be written to provide enough detail 
 so that others can use the code being documented without seeing the implementation of the code itself.
 In other words, API documentation usually describes *what* a piece of code does and not *how* it
-does what it does (i.e., unless absolutely needed to explain the "what"). Most students should
-be familar with the API documentation for the 
+does what it does (i.e., unless absolutely needed to explain the "what"). As an example, most students 
+are familar with the API documentation for the 
 [`String`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html) and
 [`Scanner`](https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html) classes
 provided by Java.
@@ -62,14 +62,14 @@ The steps in this tutorial assume that you are logged into the Nike server.
    ```
   
 1. Change into the `cs1302-javadoc` directory that was just created and look around. There should be
-   multiple Java files contained within the directory structure. To see a listing of all of the 
+   a Java file contained within the directory structure. To see a listing of all of the 
    files under the current directory, use the `find` command as follows:
    
    ```
    $ find .
    ```
    
-   Inspect each `.java` file that was listed. You will notice that some of them contain special
+   Inspect the `.java` file that was listed. You will notice that some of the code contains special
    multiline comments that begin with `/**` instead of `/*`. These are known as Javadoc comments,
    and they are used to provide API documentation in Java. Some comments have been purposefully 
    omitted so that you can write them yourself later in this tutorial. For more information on
