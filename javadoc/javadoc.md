@@ -83,9 +83,9 @@ The Javadoc tool (`javadoc`) parses the Javadoc comments in a set of Java source
 produces a corresponding set of HTML pages describing classes, interfaces, constructors, 
 methods, and fields. This effectively creates a website for the API documentation.
 
-1. Make sure you are in `cs1302-javadoc`. Use the command presented below to generate the API 
-   documentation website for the code contained in this tutorial and place it in the `doc`
-   subdirectory. 
+1. Make sure you are in `cs1302-javadoc`. Use the command presented below to 
+   **generate the API documentation website** for the code contained in this 
+   tutorial and place it in the `doc` subdirectory. 
 
    ```
    $ javadoc -d doc -sourcepath src -subpackages cs1302
@@ -110,7 +110,7 @@ this tutorial.
    on many systems) is to support user websites, which will be illustrated in the following steps. 
    You are fully responsible for anything that you host through your Nike website.
 
-1. Use `ln`, as described below, to create a symbolic link (shortcut) in your `public_html` 
+1. Use `ln`, as described below, to **create a symbolic link** (shortcut) in your `public_html` 
    directory to the `doc` subdirectory containing the API documentation website that you 
    created in a previous step. The exact command is presented below--it assumes you are currently 
    in the `cs1302-javadoc` directory. 
@@ -185,6 +185,12 @@ this tutorial.
    refreshing the page in your web browser. Go look!
    
 ### FAQ
+
+1. __How do I update the documentation website?__
+
+   To update the documentation website, rerun the same `javadoc` command you used to
+   originally generate the website. You should _not_ need to recreate the symbolic
+   link.
 
 1. __Why not tell `javadoc` to generate the API documentation website directly in__ 
    __`~/public_html/cs1302-javadoc-doc` instead of `doc`?__
