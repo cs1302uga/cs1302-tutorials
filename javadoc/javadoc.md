@@ -200,7 +200,7 @@ this tutorial.
    it helps keep the `javadoc` command nice and short and to provide an example of
    a symbolic link. 
    
-2. __Why not use `cp` or `mv` to copy or move (respectively) the generated API documentation__
+1. __Why not use `cp` or `mv` to copy or move (respectively) the generated API documentation__
    __website directly to `~/public_html/cs1302-javadoc-doc` instead using `ln`?__
    
    Since our use of `ln` created a symbolc link to the `doc` directory, we can now
