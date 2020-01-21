@@ -186,7 +186,7 @@ this tutorial.
    
 ### FAQ
 
-1. __What is the difference between `throw`, `throws`, and `@throws`?
+1. __What is the difference between `throw`, `throws`, and `@throws`?__
 
    * The `throw` keyword is used in a block of code to 
      [explicitly throw an exception](https://github.com/cs1302uga/cs1302-tutorials/blob/master/exceptions/exceptions.md#explicitly-throwing-exceptions--exception-propagation).
