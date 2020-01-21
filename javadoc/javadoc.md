@@ -186,6 +186,24 @@ this tutorial.
    
 ### FAQ
 
+1. __What is the difference between `throw`, `throws`, and `@throws`?
+
+   * The `throw` keyword is used in a block of code to 
+     [explicitly throw an exception](https://github.com/cs1302uga/cs1302-tutorials/blob/master/exceptions/exceptions.md#explicitly-throwing-exceptions--exception-propagation).
+     This is desirable when you want your method to throw an exception under
+     some predefined conditions. If the exception object being thrown using `throw`
+     is a [checked exception](https://github.com/cs1302uga/cs1302-tutorials/blob/master/exceptions/exceptions.md#checked-vs-unchecked-exceptions),
+     then you might also need to include `throws` in the method signature.
+     
+   * The `throws` keyword is used in a method or constructor signature to list the checked exceptions
+     that the method is allowed to [propogate](https://github.com/cs1302uga/cs1302-tutorials/blob/master/exceptions/exceptions.md#explicitly-throwing-exceptions--exception-propagation).
+     
+   * The `@throws` tag is a Javadoc tag that is used in the Javadoc comment associated with a method 
+     (or constructor) to document that it can throw an exception under certain circumstances.
+     The rule of thumb is this: **if your method throws an exception (checked or unchecked) that a 
+     user of your method should handle, then you should document that exception using `@throws`
+     in the associated Javadoc comment.**
+
 1. __How do I update the documentation website?__
 
    To update the documentation website, rerun the same `javadoc` command you used to
