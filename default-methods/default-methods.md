@@ -63,7 +63,9 @@ programmers around the world. This decision would have a direct impact on all of
 they would all need to go through their entire codebase and update it to work with the new interface.
 
 1. To see the impact of such a change on a **much** smaller scale, go to the source code for the 
-   `Styleable` interface and uncomment the `getState` method along with the `State` enumeration.
+   `Styleable` interface and uncomment the `getState` method along with the `State` enumeration. Now, you
+   have modified the interface. This will require any implementing class to add a `getState` method in
+   order to compile.
 
 1. Recompile only the `Styleable` interface using `bin` as the default directory for compiled code. If 
    you uncommented the code correctly in the previous step, there should be no compile-time errors.
@@ -119,7 +121,7 @@ directly in the interface.
 
 **DEFINITION (Default Method):** Specifically, a _default method_ is a non-abstract method in an interface, 
 denoted with the `default` keyword, that provides a default implementation of the method to classes that
-implement the interface. An implementing class can override a defualt method, if desired; this is similar
+implement the interface. An implementing class can override a default method, if desired; this is similar
 to regular method overriding in inheritance (discussed in a later reading), except the original implementation
 of a default method is declared in an interface and not in a class. 
 
