@@ -63,8 +63,8 @@ programmers around the world. This decision would have a direct impact on all of
 they would all need to go through their entire codebase and update it to work with the new interface.
 
 1. To see the impact of such a change on a **much** smaller scale, go to the source code for the 
-   `Styleable` interface and uncomment the `getState` method along with the `State` enumeration. Now, you
-   have modified the interface. This will require any implementing class to add a `getState` method in
+   `Styleable` interface and uncomment the `getState` method. Now, you have modified the interface by
+   adding a method. This will require any implementing class to add a `getState` method in
    order to compile.
 
 1. Recompile only the `Styleable` interface using `bin` as the default directory for compiled code. If 
