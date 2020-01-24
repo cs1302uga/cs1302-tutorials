@@ -21,8 +21,11 @@ public interface Styleable {
      */
     /*
     enum State {
+        /** Indicates that this object is currently styled */
         STYLED,
+        /** Indicates that this object is currently unstyled */
         UNSTYLED,
+        /** The value is not set. This serves as a default value */
         UNKNOWN
     };*/
     
