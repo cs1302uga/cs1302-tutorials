@@ -27,7 +27,7 @@ public interface Styleable {
         UNSTYLED,
         /** The value is not set. This serves as a default value. */
         UNKNOWN
-    };
+    }
     
     /**
      * Styles the object. This method has no effect if the 
