@@ -153,7 +153,7 @@ return type.
 Scanner scan = new Scanner(System.in); // same types
 String str = "Hello";                  // same types
 Object obj = new String("cool");       // compatible superclass
-Comparable<String> cmp = str;          // compatible interface
+Drivable drv = new Car(120.0);         // compatible interface
 ```
 
 ### Return Value Example
