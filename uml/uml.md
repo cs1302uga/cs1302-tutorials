@@ -1,6 +1,6 @@
 # UML Class Diagrams
 
-![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
 
 ## Introduction
 
@@ -23,11 +23,11 @@ The diagram consists of a rectangle broken up vertically into three sections:
    
 1. **Variables.** In UML, the variables of a class are called _attributes_. In
    this example, there are two private instance variables and one private
-   static variable.
+   static variable. The static variable is underlined.
    
 1. **Methods.** In UML, the methods of a class are called _operations_. In this
    example, there is one public constructor, two public instance methods, and
-   one public static method. 
+   one public static method. The static method is underlined.
    
 The diagram above gives enough information for a programmer (or a program) to generate the following 
 `Person.java` file:
@@ -81,8 +81,6 @@ In UML, attributes and parameters are written in the following format:
 visibility name : type
 ```
 
-Static variables are underlined.
-
 ### Operations (Methods)
 
 In UML, operations are written in the following format:
@@ -90,8 +88,6 @@ In UML, operations are written in the following format:
 ```
 visibility [<<stereotype>>] methodName(param1: type, param2: type): returnType
 ```
-
-Static methods are underlined.
 
 ### Stereotypes
 
