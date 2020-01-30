@@ -1,6 +1,6 @@
 # Refresher: Reference Variables
 
-![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
 
 ## Introduction
 
@@ -127,7 +127,7 @@ t | -|-------+
   +--+
 ```
 
-This is an interesting scenario becuase the calling object for `s` and the calling object for `t`
+This is an interesting scenario because the calling object for `s` and the calling object for `t`
 are now the same object! 
 
 ## Reference Types, Assignment Values, and Return Values
@@ -165,7 +165,7 @@ method that has a return type of `Object`:
 ```java
 public static Object doSomething() {
     ...
-    return x; // where x is some reference variable
+    return x; // where x is some reference variable of any type (String, Scanner, etc.)
 }
 ```
 
@@ -180,7 +180,7 @@ To illustrate this, consider the following:
 
 ```java
 public static Object doSomething() {
-    String x = new Str("cool");
+    String x = "cool";
     return x;
 }
 ```
