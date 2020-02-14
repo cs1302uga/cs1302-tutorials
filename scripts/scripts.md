@@ -49,11 +49,11 @@ terminal shell. Let's create one!
    command, replacing `/path/to/bash` with the output of `which`:
    
    ```
-   $ stat /path/t/bash
+   $ stat /path/to/bash
    ```
    
 1. Create a regular text file called `cs1302-script.sh` and setup the first
-   line so that it conforms the beforementioned requirements for an
+   line so that it conforms to the beforementioned requirements for an
    interpreter script. Replace `interpreter` with the output of `which`,
    and exclude an optional arguments for now. It should look this:
 
@@ -62,12 +62,22 @@ terminal shell. Let's create one!
    ```
    
 1. In `cs1302-script.sh`, add some lines containing commands that you 
-   would normally type at the terminal shell. For example, you might 
-   include the following:
+   would normally type at the terminal shell. Any terminal commands will work!
+   
+   For example, you might include the following:
 
    ```
    echo "my bash script is running"
    ls -alh
+   ```
+   
+   or, if you have a class with a FQN of `cs1302.test.Mystuff`, you could script
+   the compilation and execution of this class by putting the terminal commands
+   in a script:
+   
+   ```
+   javac -d bin src/cs1302/test/MyStuff.java
+   java -cp bin cs1302.MyStuff
    ```
    
 1. From the terminal shell itself, use the `chmod` command to enable
@@ -97,7 +107,7 @@ terminal shell. Let's create one!
  1. Notice the output. It executed both commands!
  
  1. That's it! You now know know the basics of Bash scripts. There is a lot
-    more than can be done, but we reccommend that you look those things
+    more than can be done, but we recommend that you look those things
     up when you need them. For further reading, the nicely written and free
     _BASH Programming_ book by Mike G can be found 
     [here](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html).
