@@ -72,8 +72,8 @@ terminal shell. Let's create one!
    ```
    
    or, if you have a class with a FQN of `cs1302.test.Mystuff`, you could script
-   the compilation and execution of this class by putting the terminal commands
-   in a script:
+   the compilation and execution of this class by putting the following terminal commands
+   in a script (assuming your present working directory is the top-level project directory):
    
    ```
    javac -d bin src/cs1302/test/MyStuff.java
