@@ -1,10 +1,10 @@
 # JavaFX Starter Tutorial
 
-![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
 
 JavaFX is a library for creating and delivering applications with graphical user interfaces (GUIs)
 in Java. In this tutorial, we will use JavaFX 8 as it comes with Java 8. The API documentation for
-the many packages included ith JavaFX can be found 
+the many packages included with JavaFX can be found 
 [here](https://docs.oracle.com/javase/8/javafx/api/toc.htm).
 
 ## Getting Started
@@ -24,7 +24,7 @@ the many packages included ith JavaFX can be found
    [MacOS users](https://github.com/cs1302uga/cs1302-exercises/blob/master/misc/MacOS.md) or
    [Windows 10 users](https://github.com/cs1302uga/cs1302-exercises/blob/master/misc/Windows10.md).
    
-   Also, the `-X` and `-Y` options can be used individually with orwithout each other. 
+   Also, the `-X` and `-Y` options can be used individually with or without each other. 
    See the manual page for `ssh` for more information about the differences between
    these two options.
    
@@ -67,6 +67,9 @@ the many packages included ith JavaFX can be found
    one of three things should happen:
    
    1. A small, but blank, GUI app will appear on your screen. This may appear in another
+      desktop or minimized if your computer utilizes multiple windows.
+   
+   1. A small, but blank, GUI app will appear on your screen. This may appear in another
       desktop or minimized if your computer utilizes multiple windows. However, the following 
       error message will appear in the terminal:
       
@@ -89,9 +92,6 @@ the many packages included ith JavaFX can be found
         Serial number of failed request:  23
         Current serial number in output stream:  24
       ```
-      
-   1. A small, but blank, GUI app will appear on your screen. This may appear in another
-      desktop or minimized if your computer utilizes multiple windows.
 
    **If you receive an error message in the terminal,** then this error message is related to the 
    JavaFX graphics renderer. By default, it attempts to perform hardware-accelerated rendering. 
@@ -236,7 +236,7 @@ register an event handler for one of the events the button might generate.
    * Move your mouse over the button. You should notice that the styling of the button changes automatically
      as your mouse cursor enters and leaves the visual area of the button (the change is very subtle. look closely). 
      Click on the button. Similarly, the styling of the button will change. As you interact with the button, 
-     you are actually causing the button to generate events! These events have default ebent handlers that cause the 
+     you are actually causing the button to generate events! These events have default event handlers that cause the 
      button's style to change.
      
 1. When a user clicks on a button, that causes the button to generate an
@@ -255,7 +255,7 @@ register an event handler for one of the events the button might generate.
    lambda expression. Let's create a handler that prints a message to standard output
    whenever the user clicks on the button.
    
-   1. Let's implement the `EventHandler<ActionEvent>` using a lambda expresison. To do this, consult the API documentation
+   1. Let's implement the `EventHandler<ActionEvent>` using a lambda expression. To do this, consult the API documentation
       for the interface and inspect its abstract `handle` method. The lambda expression will represent that method. 
       Import the relevant types, then add the following line directly below the line where you created the button:
       ```java
