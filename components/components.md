@@ -135,7 +135,8 @@ using inheritance and polymorphism to emphasize code reuse.
    ```
    
 1. Now consider the sub-graph for the `ImageLoader` component that we
-   will create:
+   will create. We want to avoid repeating this work by replacing this redundant
+   part of the original scene graph with a single `ImageLoader` component:
 
    ```
           |--
@@ -168,7 +169,7 @@ using inheritance and polymorphism to emphasize code reuse.
       an instance variable called `urlLayer` of type `HBox`
       as well as instance variables for the remaining nodes.
       For the most part, these can be cut and paste from the
-     `ImageApp` class. Any instance variables that you move
+      `ImageApp` class. Any instance variables that you move
       into the `ImageLoader` class can be removed from `ImageApp`. You can
       also remove any imports that are no longer needed in `ImageApp`.
 	  
