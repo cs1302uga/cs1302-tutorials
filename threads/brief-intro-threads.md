@@ -23,6 +23,50 @@ https://youtu.be/zCeo15G3nvI
 <img src="https://img.youtube.com/vi/zCeo15G3nvI/0.jpg?20190726" alt="IMAGE ALT TEXT">
 </a>
 
+## Example Starter Code
+
+```java
+package cs1302.threads;
+
+/**
+ * Driver for thread example.
+ */
+public class ThreadDriver {
+
+    public static void main(String[] args) {
+        loop("###");
+        loop("---");
+        System.err.println("main thread is done.");
+    } // main
+
+    /**
+     * Executes an infinite loop.
+     * @param name loop name
+     */
+    public static void loop(String loopName) {
+        int x = 0;
+        while (true) {
+            System.err.printf("%s-%d\n", loopName, x);
+            x += 1;
+        } // while
+    } // loop
+
+    /**
+     * Creates and immediately starts a new daemon thread that executes
+     * {@code target.run()}. This method, which may be called from any thread,
+     * will return immediately its the caller.
+     * @param target the object whose {@code run} method is invoked when this
+     *               thread is started
+     */
+    public static void runNow(Runnable target) {
+        Thread t = new Thread(target);
+        t.setDaemon(true);
+        t.start();
+    } // runNow
+
+} // ThreadDriver
+```
+
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
