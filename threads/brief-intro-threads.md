@@ -4,7 +4,8 @@
 
 ## Prerequisites
 
-This tutorial assumes that the reader has a knowledge of basic Unix commands and experience working with a command-line text editor (e.g. emacs, vi, etc.). To get the most out of this tutorial, you should follow along and take notes.
+This tutorial assumes that the reader has a knowledge of basic Unix commands and experience working with a command-line text editor (e.g. emacs, vi, etc.). Readers should also be familiar with compiling and running Java programs from the command-line. 
+To get the most out of this tutorial, you should follow along and take notes.
 
 ## Course-Specific Learning Outcomes
 
@@ -19,7 +20,11 @@ In this video, we introduce the concept of a thread and provide some code exampl
 can be used to make your program execute two pieces of code at the same time. Many of the definitions presented 
 in this video are simplified in order to make them more approachable for beginners.
 
+https://youtu.be/zCeo15G3nvI
 
+<a href="https://www.youtube.com/watch?v=j-GNWvLNLjs">
+<img src="https://img.youtube.com/vi/zCeo15G3nvI/0.jpg?20190726" alt="IMAGE ALT TEXT">
+</a>
 
 <hr/>
 
