@@ -19,8 +19,8 @@ in this video are simplified in order to make them more approachable for beginne
 
 https://youtu.be/zCeo15G3nvI
 
-<a href="https://www.youtube.com/watch?v=j-GNWvLNLjs">
-<img src="https://img.youtube.com/vi/j-GNWvLNLjs/0.jpg?20190726" alt="IMAGE ALT TEXT">
+<a href="https://www.youtube.com/watch?v=zCeo15G3nvI">
+<img src="https://img.youtube.com/vi/zCeo15G3nvI/0.jpg?20190726" alt="IMAGE ALT TEXT">
 </a>
 
 ## JavaFX Application Thread
