@@ -11,7 +11,7 @@ To get the most out of this tutorial, you should follow along and take notes.
 
 * **LO7.a:** Design and implement a graphical user interface in a software project.
 
-## Video
+## Introduction Video
 
 In this video, we introduce the concept of a thread and provide some code examples to illustrate how threads 
 can be used to make your program execute two pieces of code at the same time. Many of the definitions presented 
@@ -20,10 +20,24 @@ in this video are simplified in order to make them more approachable for beginne
 https://youtu.be/zCeo15G3nvI
 
 <a href="https://www.youtube.com/watch?v=j-GNWvLNLjs">
-<img src="https://img.youtube.com/vi/zCeo15G3nvI/0.jpg?20190726" alt="IMAGE ALT TEXT">
+<img src="https://img.youtube.com/vi/j-GNWvLNLjs/0.jpg?20190726" alt="IMAGE ALT TEXT">
+</a>
+
+## JavaFX Application Thread
+
+In this video, we briefly discuss the JavaFX Application Cycle and the JavaFX Application Thread 
+and how their design might impact your code for event handlers and programmatic changes to 
+the scene graph.
+
+https://youtu.be/zCeo15G3nvI
+
+<a href="https://www.youtube.com/watch?v=9qCUqzYGGpo">
+<img src="https://img.youtube.com/vi/9qCUqzYGGpo/0.jpg?20190726" alt="IMAGE ALT TEXT">
 </a>
 
 ## Example Starter Code
+
+Here is the example code for the first video:
 
 ```java
 package cs1302.threads;
