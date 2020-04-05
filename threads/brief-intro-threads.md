@@ -29,7 +29,7 @@ In this video, we briefly discuss the JavaFX Application Cycle and the JavaFX Ap
 and how their design might impact your code for event handlers and programmatic changes to 
 the scene graph.
 
-https://youtu.be/zCeo15G3nvI
+https://youtu.be/9qCUqzYGGpo
 
 <a href="https://www.youtube.com/watch?v=9qCUqzYGGpo">
 <img src="https://img.youtube.com/vi/9qCUqzYGGpo/0.jpg?20190726" alt="IMAGE ALT TEXT">
