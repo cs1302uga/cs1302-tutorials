@@ -1,6 +1,6 @@
 # Maven Tutorial
 
-![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
 
 ## Maven
 
@@ -117,7 +117,7 @@ mode later in this tutorial once you are more familiar with the tool.
    cs1302-mvn/pom.xml
    ````
    
-   You probably notice that created some starter code for you! Here, the
+   You probably notice that it created some starter code for you! Here, the
    `src/main/java` subdirectory is the default package location for source code.
    This is a small change from previous exercises and tutorials where the default package 
    for source code was `src`. A simple driver class with a fully qualified name of 
