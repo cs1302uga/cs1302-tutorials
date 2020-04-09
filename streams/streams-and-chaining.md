@@ -1,4 +1,4 @@
-# Streams and Chaining
+# Java Streams and Chaining
 
 ![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
 
@@ -11,7 +11,7 @@ To get the most out of this tutorial, you should follow along and take notes.
 
 ## Course-Specific Learning Outcomes
 
-## Streams and Chaining Video
+## Java Streams and Chaining Video
 
 In this video, we demonstrate how to use Java Streams and method chaining to
 rapidly produce solutions without writing any loop code ourselves.
