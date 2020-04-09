@@ -20,6 +20,13 @@ public interface TodoReplaceName {
 } // TodoReplaceName
 ```
 
+### Interactive example
+Cube composer is a game inspired by functional programming. It will explain how functions such as map and filter are used with lambda expressions. Link to game:
+```
+https://david-peter.de/cube-composer/
+```
+
+
 ## Layout of a Lambda
 
 ## Method References
