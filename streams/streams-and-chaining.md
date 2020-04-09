@@ -16,10 +16,10 @@ To get the most out of this tutorial, you should follow along and take notes.
 In this video, we demonstrate how to use Java Streams and method chaining to
 rapidly produce solutions without writing any loop code ourselves.
 
-https://youtu.be/zCeo15G3nvI
+https://youtu.be/CWYQ-OqDe74
 
 <a href="https://www.youtube.com/watch?v=zCeo15G3nvI">
-<img src="https://img.youtube.com/vi/zCeo15G3nvI/0.jpg?20190726" alt="IMAGE ALT TEXT">
+<img src="https://img.youtube.com/vi/CWYQ-OqDe74/0.jpg?20190726" alt="IMAGE ALT TEXT">
 </a>
 
 ## Example Starter Code
