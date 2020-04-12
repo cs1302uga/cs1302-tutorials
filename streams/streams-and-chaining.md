@@ -18,7 +18,7 @@ rapidly produce solutions without writing any loop code ourselves.
 
 https://youtu.be/CWYQ-OqDe74
 
-<a href="https://www.youtube.com/watch?v=zCeo15G3nvI">
+<a href="https://youtu.be/CWYQ-OqDe74">
 <img src="https://img.youtube.com/vi/CWYQ-OqDe74/0.jpg?20190727" alt="IMAGE ALT TEXT">
 </a>
 
