@@ -125,7 +125,7 @@ the many packages included with JavaFX can be found
    
    * The `try-catch` statement is included to ensure that if any exceptions propogate up to `main` method, then
      the user is presented with a nicer message than the usual stack trace. We also do this because one such
-     exception relates to a timeout issue with the X-forwaring -- in this case, we want to inform the user that
+     exception relates to a timeout issue with the X-forwarding -- in this case, we want to inform the user that
      they can logout, then log back in to resolve the problem.
      
 1. The [`launch`](https://docs.oracle.com/javase/8/javafx/api/javafx/application/Application.html#launch-java.lang.Class-java.lang.String...-)
