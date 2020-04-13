@@ -151,12 +151,24 @@ likely write a for-loop and create a method that looks something like:
 
    ```java
    public static void countFrom(int value) {
-      for(int i = value; i >= 0; i--) {
+      for(int i = value; i > 0; i--) {
          System.out.println(i);
       } // for
    } // countFrom
    ```
-    
+
+Here is a trace of the code above:
+
+   ```
+   countFrom(5):
+   i = 5: print(5) then i--
+   i = 4: print(4) then i--
+   i = 3: print(3) then i--
+   i = 2: print(2) then i--
+   i = 1: print(1) then i--
+   i = 0: loop condition no longer met
+   ```
+
 You might also see a recursive solution to this problem! Can you identify the recursive cases (sub-problems)
 and base cases? **Take a second to think about it before reading ahead**
 
@@ -183,7 +195,7 @@ each call to `countFrom` works on a smaller version of the original problem (a s
    public static void countFrom(int num) {
    
        // Base Case
-       if(num < 0) {
+       if (num == 0) {
            return;
        } // if
 
@@ -214,7 +226,7 @@ the following structure:
    countFrom(3): countFrom(2) then print(3)
    countFrom(2): countFrom(1) then print(2)
    countFrom(1): countFrom(0) then print(1)
-   countFrom(0): return
+   countFrom(0): simply return
    ```
    
 To better understand how this works, consider the recursion tree below:
@@ -232,7 +244,7 @@ To better understand how this works, consider the recursion tree below:
         /          \
     countFrom(0)  print(1)
          |
-        return
+       return
    ```
    
 **NOTE**: The recursion tree traverses down the left-hand side of the tree first. For example,
@@ -250,7 +262,7 @@ Here is a similar recursion tree for `countFrom(3)`:
         /          \
     countFrom(0)  print(1)
          |
-        return
+       return
    ```
 
 The recursion tree may give you the impression that all sub-problems are being evaluated
