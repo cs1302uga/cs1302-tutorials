@@ -29,10 +29,12 @@ private key -- the Git program will do this with GitHub so long as the key pair 
 
 1. Login to Nike.
 
-1. Execute the command below, replacing `your_email@uga.edu` with your `@uga.edu` email address.
-   Do **NOT** change any values when prompted -- simply press return until the command is finished
-   executing.
-
+1. **Before you type the following command,** please note that it will prompt you to answer
+   questions. Do **NOT** change any values when prompted -- simply press return until the command is finished
+   executing. **Simply press return when asked for a password.** 
+   With that in mind, please execute the command below, replacing `your_email@uga.edu` 
+   with your `@uga.edu` email address.
+   
    ```
    $ ssh-keygen -t rsa -b 4096 -C "your_email@uga.edu"
    ```
