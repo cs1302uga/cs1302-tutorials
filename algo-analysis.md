@@ -430,8 +430,8 @@ exclusively on the fourth step.
 
 1. **Example 5 [Even Trickier]**:
 
-   Here is a slightly modified version of the previous example, now decomposed
-   into two separate methods:
+   Below is a slightly modified version of the previous example, now decomposed
+   into two separate methods.
 
    ```java 
    void printUntil(int[] a, int i) {
@@ -451,6 +451,8 @@ exclusively on the fourth step.
    ```
    
    Here, we will focus our analysis on the algorithm described by `printA`.
+   Since this example has the same code as the previous example, albeit split
+   between two methods, our analysis should result in the same timing function.  
    
    **Questions:**
 
@@ -463,43 +465,63 @@ exclusively on the fourth step.
    **Towards a Sample Solution:**
    
    * What is the problem size? 
-     In this example, the problem size is the array length. 
-     Therefore, let `n = a.length`.
+     In this example, we actually have two problem sizes!
      
-   * What is `T(n)` if the set of key processing steps only includes print-like statements?
+     * The problem size for `printA` is the array length because
+       increasing or decreasing that length impacts how long the
+       method takes to execute. Therefore, let `n = a.length` when
+       discussing this method.
+       
+     * The problem size for `printUntil` is its parameter `i`. Although
+       we are passing the array into the method, the array's length
+       does not impact how long this method takes to execute; however,
+       it's parameter `i` does. Therefore, let `n = i` when discussing
+       this method.
+   
+   * First, let's analyze `printUntil` to derive its timing function. So that
+     we don't confuse the function we derive for this method with the one we'll
+     derive for `printA`, let `U(n)` denote for this method where `n = i`.
+     What is `U(n)` if the set of key processing steps only includes print-like statements?
+     To answer this question, let's diagram the code the way we did in the previous
+     examples:
+   
+     ```java 
+     void printUntil(int[] a, int i) {
+         for(int j = 0; j < i; j++) { // -------------------\
+             System.out.print(a[i] + " "); // ----------> 1 | = i ⇒ U(n) = 1 * i
+         } // for // ---------------------------------------/             = 1 * n
+     } // printUntil                                                      = n
+     ```
+   
+   * As we can see, `U(n) = n` print-like statements for `printUntil` where `n = i`.
+   
+   * Now that we have derived the timing function for our helper method, let's analyze
+     the `printA` method. What is `T(n)` if the set of key processing steps only includes print-like statements?
      To answer this question, let's diagram the code the way we did in the previous
      examples:
      
      ```java
      void printA(int[] a) {
-         for(int i = 0; i < a.length; i++) { // -------------------\
-             printUntil(a, i);     // -------------------> U(n, i) | n 
-             System.out.println(); // -------------------> 1       |
-         } // for // ----------------------------------------------/
+         for(int i = 0; i < a.length; i++) { // ----------------\
+             printUntil(a, i);     // -------------------> U(i) | n 
+             System.out.println(); // -------------------> 1    |
+         } // for // -------------------------------------------/
      } // printA
      ```
      
-     Before we continue, we note that `U(n, i)` here is a function that we made up to denote
-     the number of print-like statements in an execution of `printUntil` with respect to the
-     problem size. Therefore, in order to find `T(n)`, we must first find `U(n, i)`:
+     Before we continue, we note that `U(i)` here is the `U(n)` function that we previously derived for
+     `printUntil` called to explicitly supply `i` as its `n` value. This is called **function composition**.  
+     Since `printA` utilizes `printUntil`, it stands to reason that `T(n)` needs to utilize `U(n)`:
      
-     ```java 
-     void printUntil(int[] a, int i) {
-         for(int j = 0; j < i; j++) { // -------------------\
-             System.out.print(a[i] + " "); // ----------> 1 | =i ⇒ U(n, i) = 1 * i
-         } // for // ---------------------------------------/
-     } // printUntil
-     ```
-     
-     To complete this tricky derivation, we now use mathematical function composition
-     to replace `U(n, i)`:
+   * To complete this tricky derivation, we now use the result of the function composition
+     to replace `U(n)` with its result:
      
      ```java
      void printA(int[] a) {
-         for(int i = 0; i < a.length; i++) { // -------------------\
-             printUntil(a, i);     // -------------------> = 1 * i | n 
-             System.out.println(); // -------------------> 1       |
-         } // for // ----------------------------------------------/
+         for(int i = 0; i < a.length; i++) { // ---------------\
+             printUntil(a, i);     // -------------------> i   | n 
+             System.out.println(); // -------------------> 1   |
+         } // for // ------------------------------------------/
      } // printA
      ```
      
@@ -511,10 +533,10 @@ exclusively on the fourth step.
      
      ```java
      void printA(int[] a) {
-         for(int i = 0; i < a.length; i++) { // -------------------\
-             printUntil(a, i);     // -------------------> < 1 * n | n ⇒ T(n) < 1 * n * n
-             System.out.println(); // -------------------> 1       |           +     1 * n
-         } // for // ----------------------------------------------/
+         for(int i = 0; i < a.length; i++) { // ---------------\
+             printUntil(a, i);     // -------------------> < n | n ⇒ T(n) < n * n
+             System.out.println(); // -------------------> 1   |           + 1 * n
+         } // for // ------------------------------------------/
      } // printA
      ```
      
