@@ -428,7 +428,7 @@ exclusively on the fourth step.
      
      Therefore, `T(n) < n^2 + n` for this particular `printA` method!
 
-1. **Example 5 [Even Trickier]**:
+1. **<a id="composition"/>Example 5 [Even Trickier]**:
 
    Below is a slightly modified version of the previous example, now decomposed
    into two separate methods.
