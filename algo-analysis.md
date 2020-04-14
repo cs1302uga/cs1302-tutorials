@@ -465,7 +465,7 @@ exclusively on the fourth step.
    **Towards a Sample Solution:**
    
    * What is the problem size? 
-     In this example, we actually have two problem sizes!
+     In this example, **we actually have two problem sizes!**
      
      * The problem size for `printA` is the array length because
        increasing or decreasing that length impacts how long the
@@ -478,6 +478,9 @@ exclusively on the fourth step.
        it's parameter `i` does. Therefore, let `n = i` when discussing
        this method.
    
+   * Before we continue, please remember that `n` (the problem size) means
+     something different depending on the method that we're analyzing.
+   
    * First, let's analyze `printUntil` to derive its timing function. So that
      we don't confuse the function we derive for this method with the one we'll
      derive for `printA`, let `U(n)` denote for this method where `n = i`.
@@ -488,22 +491,26 @@ exclusively on the fourth step.
      ```java 
      void printUntil(int[] a, int i) {
          for(int j = 0; j < i; j++) { // -------------------\
-             System.out.print(a[i] + " "); // ----------> 1 | = i ⇒ U(n) = 1 * i
-         } // for // ---------------------------------------/             = 1 * n
+             System.out.print(a[i] + " "); // ----------> 1 | = i ⇒ U(n) = 1 * i 
+         } // for // ---------------------------------------/             = 1 * n [since n = i]
      } // printUntil                                                      = n
      ```
    
    * As we can see, `U(n) = n` print-like statements for `printUntil` where `n = i`.
+     Remember that the problem size `n` for `printUntil` is different than the problem
+     size for `printA`. 
    
    * Now that we have derived the timing function for our helper method, let's analyze
      the `printA` method. What is `T(n)` if the set of key processing steps only includes print-like statements?
+     Remember that the problem size `n` for `printA` is different than the problem
+     size for `printUntil`.
      To answer this question, let's diagram the code the way we did in the previous
      examples:
      
      ```java
      void printA(int[] a) {
          for(int i = 0; i < a.length; i++) { // ----------------\
-             printUntil(a, i);     // -------------------> U(i) | n 
+             printUntil(a, i);     // -------------------> U(i) | n [where n = a.length]
              System.out.println(); // -------------------> 1    |
          } // for // -------------------------------------------/
      } // printA
@@ -519,7 +526,7 @@ exclusively on the fourth step.
      ```java
      void printA(int[] a) {
          for(int i = 0; i < a.length; i++) { // ---------------\
-             printUntil(a, i);     // -------------------> i   | n 
+             printUntil(a, i);     // -------------------> i   | n [since U(i) = i]
              System.out.println(); // -------------------> 1   |
          } // for // ------------------------------------------/
      } // printA
