@@ -10,7 +10,7 @@ online repository.
 
 ## Setting up an Account
 
-As students, you receive **free access** to [GitHub Pro](https://github.com/pricing) while you a student.
+As students, you receive **free access** to [GitHub Pro](https://github.com/pricing) while you are a student.
 To set up your account:
 
 1. [Click Here](https://education.github.com/pack/join)
