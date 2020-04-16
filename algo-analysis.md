@@ -1,6 +1,6 @@
 # CSCI 1302 Algorithm Analysis Tutorial
 
-![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
 
 ## Introduction
 
@@ -9,7 +9,7 @@ use or implement to solve a problem. For example, to sort an array of directly c
 values such as integers, there are some famous algorithms such as bubble sort and merge 
 sort (see [President Obama on Bubble Sort](https://youtu.be/k4RRi_ntQc8?t=34)).
 In scenarios such as these where multiple algorithms are available, it's important
-to understand the trade-offs between the different choice. One way to help us do this
+to understand the trade-offs between the different choices. One way to help us do this
 is to characterize an algorithm's performance with respect to some criteria. If you're
 able to characterize the performance of bubble sort and merge sort, for example, then
 you might discover that one is better than the other for your particular use case. 
@@ -28,7 +28,7 @@ We will focus on:
 Algorithm analysis can be performed relative to the amount of memory a program uses
 (**space complexity**) or the amount of CPU time required to complete the work
 (**time complexity**). The amount of CPU time is usually a more interesting issue and
-will be the focus of this reading. There is usually trade-off between these two
+will be the focus of this reading. There is usually a trade-off between these two
 complexities. 
 
 ## Defining Problem Size
@@ -45,12 +45,12 @@ For every algorithm we want to analyze, we need to define the **size of the prob
   be sorted.
   
 * When downloading images from iTunes, the problem size is the number of images
-  to be downloaded.
+  to be downloaded (or the total number of bytes).
 
 ## Processing Steps
 
 Algorithms (or more generally functions or methods) have many operations/steps that
-occur if you look closely. For the purposes of analysis, instead of focusing on 
+occur if you look closely. For the purpose of analysis, instead of focusing on 
 everything, we usually only focus on a set of **key processing steps**. 
 These are the operations that we're intested in.
 
@@ -68,7 +68,7 @@ the algorithm.
 
 ## Time Complexity Analysis
 
-First, let's focus on **time complexity analysis**. Supose you have a set of
+First, let's focus on **time complexity analysis**. Suppose you have a set of
 algorithms that all solve the same problem. In order to analyze each of them, 
 we first need to do the following:
     
@@ -112,13 +112,17 @@ exclusively on the fourth step.
    * What is the problem size?
 
    * What is `T(n)` if the set of key processing steps only includes print-like statements?
+     **Note:** We choose print statements as our key processing step because they take significantly longer
+     to execute when compared to the other operations in this method (addition, assignment, array access, etc.).
 
    *Think about the answers to the previous two questions before reading ahead*
 
    **Towards a Sample Solution:**
    
    * What is the problem size? 
-     In this example, the problem size is the array length. 
+     In this example, the problem size is the array length. We know this because the number of operations
+     that will execute is determined by the length of the array. If we increase the size of `a`, that directly
+     impacts the number of print statements that will execute.
      Therefore, let `n = a.length`.
      
    * What is `T(n)` if the set of key processing steps only includes print-like statements?
@@ -192,7 +196,8 @@ exclusively on the fourth step.
      } // printA
      ```
      
-     Therefore, `T(n) = n` for this `printA` method. 
+     Therefore, `T(n) = n` for this `printA` method. You might read this as "The number of
+     print statements this method performs is equal to the length of the array".
 
 1. **Example 2**:
 
@@ -501,7 +506,8 @@ exclusively on the fourth step.
      size for `printA`. 
    
    * Now that we have derived the timing function for our helper method, let's analyze
-     the `printA` method. What is `T(n)` if the set of key processing steps only includes print-like statements?
+     the `printA` method. What is `T(n)` if the set of key processing steps only includes 
+     print-like statements?
      Remember that the problem size `n` for `printA` is different than the problem
      size for `printUntil`.
      To answer this question, let's diagram the code the way we did in the previous
@@ -535,7 +541,7 @@ exclusively on the fourth step.
      We want out final derivation to be in terms of `n`. Within the observed loop, we see
      that `printUntil(a, i)` will execute `1 * i` print-like statements. We further
      observe that the largest value that `i` can be inside its enclosed loop is `n`.
-     Therefore, we simply the expression in order to provide a reasonable upper bound with
+     Therefore, we simplify the expression in order to provide a reasonable upper bound with
      respect to `n`, then complete the derivation:
      
      ```java
@@ -707,7 +713,7 @@ exclusively on the fourth step.
      
 ## Space Complexity Analysis
 
-Now, let's briefly focus on **space complexity analysis**. Supose you have a set of
+Now, let's briefly focus on **space complexity analysis**. Suppose you have a set of
 algorithms that all solve the same problem. In order to analyze each of them, 
 we first need to do the following:
     
