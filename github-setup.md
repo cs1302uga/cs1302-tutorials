@@ -89,7 +89,7 @@ private key -- the Git program will do this with GitHub so long as the key pair 
    1. Change into the `cs1302-testRepo` directory.
    1. Create an initial `README` file using `echo "# cs1302-testRepo" >> README.md`.
    1. Add your `README` file to the repository using `git add README.md`.
-   1. Commit your changes using `git commit -am "first commit".
+   1. Commit your changes using `git commit -am "first commit"`.
    1. Push your changes to GitHub using `git push origin master`
    1. Refresh your GitHub page to see the changes to the repository. Your repository should
       look similar to the below image. Note the number of commits (1 so far) to this
