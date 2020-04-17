@@ -768,15 +768,11 @@ exclusively on the fourth step.
      itself takes and use that as a starting amount for `S(n)`:
      
      ```
-     S(n) = (n * 1) + ?
-     ```
-     
-     ```
-     S(n) = n + ?
+     S(n) = (2 * n) + ?
      ```
      
      This starting value is derived from the fact that a `char` in Java is
-     one byte. Additionally, each of the local variables for the method take
+     two bytes. Additionally, each of the local variables for the method take
      up a spot in the method's call stack frame:
      
      | Variable | Description                       |
@@ -787,7 +783,7 @@ exclusively on the fourth step.
      Therefore, we get the following spacing function:
      
      ```
-     S(n) = n + 12
+     S(n) = 2 * n + 12
      ```
      
 1. **Recursive Example**
@@ -819,11 +815,11 @@ exclusively on the fourth step.
      itself takes and use that as a starting amount for `S(n)`:
      
      ```
-     S(n) = n + ?
+     S(n) = 2 * n + ?
      ```
      
      This starting value is derived from the fact that a `char` in Java is
-     1 byte. Additionally, each of the local variables for the method take
+     2 bytes. Additionally, each of the local variables for the method take
      up a spot in the method's call stack frame:
      
      | Variable | Description                       |
@@ -833,14 +829,14 @@ exclusively on the fourth step.
      This provides us with something like this:
      
      ```
-     S(n) = n + 8 + ?
+     S(n) = 2 * n + 8 + ?
      ```     
      
      However, we're not done! In order to complete it's work, the recursive
      `printR` method calls itself on a slightly smaller `printS` method:
      
      ```
-     S(n) = n + 8 + S(n - 1)
+     S(n) = 2 * n + 8 + S(n - 1)
      S(0) = 8
      ```
      
@@ -850,14 +846,14 @@ exclusively on the fourth step.
      solution:
      
      ```
-     S(n) = 0.5 * (n + 1)(n + 16)
+     S(n) = (n + 1)(n + 8)
      ```
      
      This can simplified to the following if we're concerned with identifying
      an upper bound:
      
      ```
-     S(n) ≤ n^2 + 17n + 16
+     S(n) ≤ n^2 + 9n + 8
      ```
     
  ## Closing Remarks
