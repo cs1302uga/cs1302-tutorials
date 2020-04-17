@@ -82,6 +82,12 @@ public static void main(String[] args) {
 } // main
 ```
 
+Let's take a deep dive into the `pow2` used in this modified example. 
+This variable has type `KeepItReal` and it currently refers to some object
+(it has to; it's a reference variable that is not `null`). When we call 
+`pow2.apply(n)`, we're calling `apply(n)` on that that object. I hope
+you ran the code for that example, because it works! 
+
 ## Layout of a Lambda
 
 ## Method References
