@@ -12,7 +12,6 @@ methods of [`Object`](https://docs.oracle.com/javase/8/docs/api/java/lang/Object
 
 Here is an example of a functional interface:
 ```java
-@FunctionalInterface
 public interface KeepItReal {
 
     public double apply(double x);
@@ -145,7 +144,7 @@ steps when trying to implement functional interfaces using lambda expressions:
        return x * x;
    }; 
    ```
-   That's a valid lambda!
+   That's a valid lambda expression!
 
 ## Layout of a Lambda
 
