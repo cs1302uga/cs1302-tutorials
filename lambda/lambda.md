@@ -13,11 +13,34 @@ methods of [`Object`](https://docs.oracle.com/javase/8/docs/api/java/lang/Object
 Here is an example of a functional interface:
 ```java
 @FunctionalInterface
-public interface TodoReplaceName {
+public interface KeepItReal {
 
     public double apply(double x);
 
-} // TodoReplaceName
+} // KeepItReal
+```
+
+### Usual Way to Implement
+
+The usual way to implement an interface like `KeepItReal` is to write a regular class in its
+own `.java` file. Here are two different regular classes that implement the interface:
+```java
+public class SquareIt implements KeepItReal {
+
+    public double apply(double x) {
+        return x * x;
+    } // apply
+    
+} // SquareIt
+```
+```java
+public class CubeIt implements KeepItReal {
+
+    public double apply(double x) {
+        return x * x * c;
+    } // apply
+    
+} // CubeIt
 ```
 
 ## Layout of a Lambda
