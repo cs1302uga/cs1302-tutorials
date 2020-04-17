@@ -20,7 +20,7 @@ public interface KeepItReal {
 } // KeepItReal
 ```
 
-### Usual Way to Implement
+### Using a Regular Class
 
 The usual way to implement an interface like `KeepItReal` is to write a regular class in its
 own `.java` file. Here are two different regular classes that implement the interface:
@@ -65,7 +65,7 @@ Now, let's take a deep dive into `pow2`. This variable has type `KeepItReal` and
 currently refers to a `SquareIt` object. When we call `pow2.apply(n)`, we're calling
 `apply(n)` on that `SquareIt` object. Something similar is happening with `pow3`.
 
-### Usual Way to Implement
+### Using a Simple Lambda
 
 With the previous example in mind, let's omit `SquareIt.java` and `CubeIt.java` entirely.
 The code below does almost the same using **lamdbda expressions**
@@ -86,11 +86,32 @@ public static void main(String[] args) {
 } // main
 ```
 
-Let's take a deep dive into the `pow2` used in this modified example. 
+Consider the `pow2` variable used in this modified example. 
 This variable has type `KeepItReal` and it currently refers to some object
 (it has to; it's a reference variable that is not `null`). When we call 
-`pow2.apply(n)`, we're calling `apply(n)` on that that object. I hope
-you ran the code for that example, because it works! 
+`pow2.apply(n)`, we're calling `apply(n)` on that that object. 
+
+Here is a closer look at the `pow2` variable and the expression we're
+using to assign a value to it:
+
+```java
+KeepItReal pow2 = (double x) -> {
+    return x * x;
+};
+```
+
+As usual, everything between the first `=` in this snippet and the last `;` 
+is evaluated, then its value is assigned to `pow2`. Again, `pow2` is a
+reference variable, so the value returned by this expression must be a
+reference to some object. Objects are made from classes, so you might
+have some questions:
+* What is the class name for this object? **It has no name!** 
+* Where is the class defined? **It's defined by the expression itself!**
+* what do we know about this class? **It implements the functional interface!**
+* What methods does it have? Besides the methods inherited from the `Object`, **it only has one method!**
+* What is the name of the one method? **It's named by the interface!**
+* What does the one method do when called? **It executes the body of the lambda expression!**
+
 
 ## Layout of a Lambda
 
