@@ -64,8 +64,12 @@ public static void main(String[] args) {
 Now, let's take a deep dive into `pow2`. This variable has type `KeepItReal` and it
 currently refers to a `SquareIt` object. When we call `pow2.apply(n)`, we're calling
 `apply(n)` on that `SquareIt` object. Something similar is happening with `pow3`.
-With that in mind, the code below does exactly the same using **lamdbda expressions**
-without the need to create separate `.java` files:
+
+### Usual Way to Implement
+
+With the previous example in mind, let's omit `SquareIt.java` and `CubeIt.java` entirely.
+The code below does almost the same using **lamdbda expressions**
+without the need to create those separate `.java` files:
 
 ```java
 // in any class
