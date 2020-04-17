@@ -112,6 +112,40 @@ have some questions:
 * What is the name of the one method? **It's named by the interface!**
 * What does the one method do when called? **It executes the body of the lambda expression!**
 
+We call the lambda expression in the example a simple lambda expression
+because it looks almost identical to the method we defined in the `squareIt` class.
+With this in mind, we usually suggest that beginners take the following
+steps when trying to implement functional interfaces using lambda expressions:
+
+1. **Identify the functional interface that is involved.**
+   ```java
+   KeepItReal pow2; 
+   ```
+   In this example, we see that the variable `pow2` has the functional interface 
+   `KeepItReal` as its type.
+   
+2. **Identify the one method.**
+   The one method for `KeepItReal` is called `apply`. You can scroll up to see
+   its signature.
+   
+3. **Prentend to write the method.**
+   Really, just pretend to write it after the `=` operator:
+   ```java
+   KeepItReal pow2 = apply(double x) {
+       return x * x;
+   }; 
+   ```   
+   Of course, **this will not compile**, but it's really close to a lambda.
+
+4. **Remove the method name and add an arrow to make it a simple lambda expression.**
+   When you add the arrow, you write the arrow (`->`), place it between the parameter
+   list and the openning curly brace:
+   ```java
+   KeepItReal pow2 = (double x) -> {
+       return x * x;
+   }; 
+   ```
+   That's a valid lambda!
 
 ## Layout of a Lambda
 
