@@ -24,6 +24,7 @@ public interface KeepItReal {
 
 The usual way to implement an interface like `KeepItReal` is to write a regular class in its
 own `.java` file. Here are two different regular classes that implement the interface:
+
 ```java
 public class SquareIt implements KeepItReal {
 
@@ -33,6 +34,7 @@ public class SquareIt implements KeepItReal {
     
 } // SquareIt
 ```
+
 ```java
 public class CubeIt implements KeepItReal {
 
@@ -42,10 +44,12 @@ public class CubeIt implements KeepItReal {
     
 } // CubeIt
 ```
+
 The apply method inside each of these classes is not `static` (it cannot be because
 it's abstract in the parent interface), so we need to create objects of each class
 in order to call `apply`. As usual, we will assign the object reference to the
 interface type:
+
 ```java
 // in any class
 public static void main(String[] args) {
@@ -56,6 +60,23 @@ public static void main(String[] args) {
     System.out.println(pow3.apply(n)); // 1000
 } // main
 ```
+
+Now, let's take a deep dive into `pow2`. This variable has type `KeepItReal` and it
+currently refers to a `SquareIt` object. When we call `pow2.apply(n)`, we're calling
+`apply(n)` on that `SquareIt` object. Something similar is happening with `pow3`.
+With that in mind, here is the corresponding code written using lamdbda expressions:
+
+```java
+// in any class
+public static void main(String[] args) {
+    KeepItReal pow2 = new SquareIt();
+    KeepItReal pow3 = new CubeIt();
+    double n = 10;
+    System.out.println(pow2.apply(n)); // 100
+    System.out.println(pow3.apply(n)); // 1000
+} // main
+```
+
 ## Layout of a Lambda
 
 ## Method References
