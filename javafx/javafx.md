@@ -71,7 +71,7 @@ the many packages included with JavaFX can be found
    
    1. A small, but blank, GUI app will appear on your screen. This may appear in another
       desktop or minimized if your computer utilizes multiple windows. However, the following 
-      error message will appear in the terminal:
+      <a name="fbConfigs1">error message</a> will appear in the terminal:
       
       ```
       libGL error: No matching fbConfigs or visuals found
@@ -79,7 +79,7 @@ the many packages included with JavaFX can be found
       Prism-ES2 Error : GL_VERSION (major.minor) = 1.4
       ```
       
-   1. A scary error message similar to the following will appear and no GUI app will appear 
+   1. A scary <a name="fbConfigs2">error message</a> similar to the following will appear and no GUI app will appear 
       on your screen (don't panic):
       
       ```
