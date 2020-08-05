@@ -20,14 +20,14 @@ To set up your account:
 
 ## Setting up SSH Keys
 
-Before you can push and pull to private repositories hosted on GitHub from your Nike account, you
-will need to create an SSH public/private key pair on Nike. This will allow you to give a public
+Before you can push and pull to private repositories hosted on GitHub from your Odin account, you
+will need to create an SSH public/private key pair on Odin. This will allow you to give a public
 key to GitHub (think of it as a padlock) that GitHub can use to authenticate your requests in
 addition to or in lieu of your GitHub username and password. It's sufficient to think of this 
 key-based authentication process as you unlocking the public key (i.e., the padlock) using your
 private key -- the Git program will do this with GitHub so long as the key pair is setup correctly. 
 
-1. Login to Nike.
+1. Login to Odin.
 
 1. **Before you type the following command,** please note that it will prompt you to answer
    questions. Do **NOT** change any values when prompted -- simply press return until the command is finished
@@ -57,8 +57,8 @@ private key -- the Git program will do this with GitHub so long as the key pair 
 1. Click **New SSH key or Add SSH key**.
 
 1. In the "Title" field, add a descriptive label for the new key. 
-   For example, if you're adding a key for your Nike account, then you might call this 
-   key "Nike".
+   For example, if you're adding a key for your Odin account, then you might call this 
+   key "Odin".
    
 1. Paste your key into the "Key" field. This should be the copied output from your prior
    call to `cat`.
@@ -80,9 +80,9 @@ private key -- the Git program will do this with GitHub so long as the key pair 
 1. Once you've clicked the "Create Repository" button, your repository is created
    but still needs to be setup. GitHub should be showing a website which gives you
    a few options on how to setup your repository. Instead of following those instructions
-   directly, we will setup our repository from Nike using the following commands:
+   directly, we will setup our repository from Odin using the following commands:
    
-   1. Clone your repository on nike using `git clone git@github.com:username/cs1302-testRepo.git`
+   1. Clone your repository on Odin using `git clone git@github.com:username/cs1302-testRepo.git`
       replacing `username` with your GitHub username. You may get a message saying
       you've cloned an empty repository. That's okay! You should now have a folder
       called `cs1302-testRepo`.
@@ -99,14 +99,14 @@ private key -- the Git program will do this with GitHub so long as the key pair 
 ![Test Repo](https://github.com/cs1302uga/cs1302-tutorials/raw/master/img/testRepo.png)
 
 
-1. Now that your repository is set up, let's get some more pracice. On Nike, do the following:
+1. Now that your repository is set up, let's get some more pracice. On Odin, do the following:
    1. Open your `README.md` file.
    1. Type a few additional sentences.
    1. Commit your changes locally.
    1. Push your changes to GitHub.
    1. Refresh the GitHub page to make sure your changes have been added to the online repository.
-   1. Delete the entire `cs1302-testRepo` folder from Nike.
-   1. Wait. Delete my entire project from Nike?!? Yep, do it.
+   1. Delete the entire `cs1302-testRepo` folder from Odin.
+   1. Wait. Delete my entire project from Odin?!? Yep, do it.
    1. Execute the `git clone` command from above. And it's back!
    1. Note: you could clone from any machine that has `git` installed. You've all been cloning
       cs1302 GitHub repositories all semester.
