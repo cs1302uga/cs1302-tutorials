@@ -1,6 +1,6 @@
 # Refresher: Reference Variables
 
-![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
+![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
 
 ## Introduction
 
@@ -49,14 +49,19 @@ The variable `s` has `Scanner` as its type and `null` as its value. In Java, `nu
 that can always be assigned or cast to any reference type, and it is used to denote that no object
 is being referred to. Therefore, we might say that `s` does not currently refer to any object. 
 
-**Under the Hood:** Let `s_location` denote the memory location that stores `s`'s value. The 
-following diagram illustrates that a value `null` is stored at this memory location:
+**Under the Hood:** Remember,`s` is an alias for some location in the computer's primary memory (RAM). Since
+we don't know exactly where `s` will be located when the program runs, we will use an arbitrary number to
+denote this location. Here, we will use the value `800` (we could've chosen any arbitrary value). The mapping
+of `s` to a memory location all happens under the hood and requires no explicit actions by the programmer.
+The way this looks internally can be seen below. In the diagram, we use `800` instead of `s` since that's what
+really happens in the computer. Since we assigned `null` to `s`, the value at location `800` is `null`.
 
 ```
-s_location: [ null ]  
+800: [ null ]  
 ```
 
-It is more common to diagram this using the variable name:
+Since using the variable name is more readable and doesn't require us to choose an arbitrary address, it is 
+more common to diagram this using the variable name:
 
 ```
   +------+
@@ -77,18 +82,21 @@ type; ii) a `Scanner` object is constructed; then iii) the object's reference is
 `s`. Since the value of `s` is now a reference to some `Scanner` object, we might say that
 `s` refers to some `Scanner` object. 
 
-**Under the Hood:** Let `s_location` denote the memory location that stores `s`'s value and
-`object_reference` denote the memory location of the constructed `Scanner` object. The 
-following diagram illustrates that values are stored at these two memory locations:
+**Under the Hood:** Let `800` again denote the memory location that stores `s`'s value and
+`12048` denote the memory location of the constructed `Scanner` object. Again, these values
+are arbitrary. The diagram below demonstrates the values that are stored at these two memory 
+locations. Pay close attention to fact that `800` (or `s`) does not store the `Scanner` object's
+contents. Instead, `s` is the address where the `Scanner` object resides in memory. Understanding
+this idea is the key to understanding how reference variables work in Java.
 
 ```
-      s_location: [ object_reference ]  
+  800: [ 12048 ]  
              ...
-object_reference: [ scanner object contents ... ]
+12048: [ scanner object contents ... ]
 ```
 
 It is more common to diagram this using the variable name and an arrow to the object (since
-we may not know or care what the actual value stored in `s_location` is):
+we may not know or care what the actual value of the memory address of `s`):
 
 ```
   +--+     +----------------+
@@ -97,10 +105,10 @@ s | -|----◆|                |
            +----------------+
 ```
 
-**Important:** When a method is called using `s`, the object that `s` refers to is known as
-the **_calling object_**. Non-static methods called using `s` are said to operate on the 
-calling object. Since the reference in the value of `s` can change over time, the calling 
-object can also change. 
+**Important:** When a method is called using `s` (for example, `s.nextLine()`), the object 
+that `s` refers to is known as the **_calling object_**. Non-static methods called using 
+`s` are said to operate on the calling object. Since the reference in the value of `s` can 
+change over time, the calling object can also change. 
 
 ### Example 3: Many Variables Refer to One Object
 
@@ -110,6 +118,13 @@ Now consider the following initializations:
 Scanner s = new Scanner(System.in);
 Scanner t = s;
 ```
+
+Before moving on, take a moment to draw a diagram on a sheet of paper that shows how this looks
+under the hood. You can come up with any arbitrary memory addresses that you wish.
+
+Your drawing should look very similar to the previous example with an extra variable for `t` that
+contains the same value as the variable `s`. We provide the more common version of this diagram
+below.
 
 The first line is the same as in Example 2. On the second line: i) the variable `t` is declared 
 with `Scanner` as its type; ii) the value of `s` is retrieved by the computer; then iii) the 
