@@ -29,6 +29,8 @@ code (and any other text documents) without having to leave our terminal environ
 to use other text editors that are available in the Unix environment, we will focus on Emacs in this course.
 If you're interested in learning more about Emacs, check out the [Wikipedia Page](https://en.wikipedia.org/wiki/Emacs).
 
+In this tutorial, we will teach you the basics of the Emacs text editor.
+
 ## Control and Meta
 
 Throughout this tutorial we will use `C` to refer to the control key (`CTRL`)
