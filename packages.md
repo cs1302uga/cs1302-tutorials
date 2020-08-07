@@ -27,7 +27,7 @@ The two primary benefits of packages are:
   Packages and additional visibility modifiers enable programmers to declare things as visible only within a package.
 
 In this tutorial, you will create multiple classes, group them into a package, then compile and run them.
-The expectation is that you will follow along with this tutorial in a terminal emulator on Nike or some Unix machine.
+The expectation is that you will follow along with this tutorial in a terminal emulator on Odin or some Unix machine.
 You should ask questions on Piazza if you are unable to proceed or if some aspect of the tutorial is particularly confusing. 
 
 ## Setting up for a Package
