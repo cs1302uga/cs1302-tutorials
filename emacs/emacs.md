@@ -6,6 +6,7 @@
 
 ## Table of Contents
 
+1. [Introduction](#introduction)
 1. [Control and Meta](#control-and-meta)
 1. [Built-in Emacs Tutorial](#built-in-emacs-tutorial)
 1. [Open / Create File](#open--create-file)
@@ -20,6 +21,13 @@
    1. [Splitting the Screen](#splitting-the-screen)
 1. [Make Emacs Your Default Editor](#make-emacs-your-default-editor)
 1. [Customize Emacs](#customize-emacs)
+
+## Introduction
+
+Emacs is a powerful text-editor that runs in the terminal. Emacs allows us to read and write source
+code (and any other text documents) without having to leave our terminal environment. While you are welcome
+to use other text editors that are available in the Unix environment, we will focus on Emacs in this course.
+If you're interested in learning more about Emacs, check out the [Wikipedia Page](https://en.wikipedia.org/wiki/Emacs).
 
 ## Control and Meta
 
@@ -46,7 +54,7 @@ to denote that `key` should be pressed without any kind of modifier key.
 | Open/Find File | `C-x C-f` | `C-xf`      | `CTRL(x, f)`   |
 | Emacs tutorial | `C-h t`   |             | `CTRL(h), (t)` |
 
-If a binding has consecutive occurances of either the `C` or `M` modifier keys, 
+If a binding has consecutive occurences of either the `C` or `M` modifier keys, 
 then there is no need to release the modifer key between those occurances. This 
 can be seen in the first example, where both of the following keystroke sequences
 result in `C-x C-f`:
@@ -57,12 +65,12 @@ result in `C-x C-f`:
 
 **Learn by doing.** Emacs comes with a built-in, interactive turorial. It can be 
 reached by launching Emacs using the `emacs` command, then typing `C-h t`. 
-That is, type `C-h`, then type `t`.
+That is, type `C-h`, then release `CTRL` and type `t`.
 
 ## Open / Create File
 
-Let's assume that a file called `NOTES.txt` already exists in some directory 
-under your present working directory, as seen in the figure below.
+Take a moment to create the directory structure below on Odin. Remember, the `.` represents
+your present working directory so you don't need to explicitly create that folder.
 
 ```
 .
@@ -71,8 +79,9 @@ under your present working directory, as seen in the figure below.
         └── NOTES.txt
 ```
 
-To replicate this scenario, you might use the following commands to first 
-create the subdirectories, then create a blank `NOTES.txt` file:
+To replicate this scenario, you may have used the following commands to  
+create the subdirectories and a blank `NOTES.txt` file. It is fine to use other commands
+to complete the task. However, take a moment to make sure you understand these:
 
 ```
 $ mkdir -p cs1302/emacs
@@ -90,7 +99,7 @@ Alternatively, you can simply execute `emacs`, then use `C-x C-f` to find the
 file you're trying to open.
 
 To **create a file**, it is not necessary to first use the `touch` command. Instead,
-you can use one of the methods just desribed with your desired
+you can use one of the methods just described with your desired
 filename. When you create a new file, Emacs will display `(New file)` at 
 the bottom of the screen. The new file does not actually exist until you
 save it, usually using `C-x C-s`.
@@ -121,7 +130,13 @@ In Emacs, there are special key bindings for navigation that can (and should) be
 used instead of the standard arrow keys so that your hands rarely have a need to
 leave the main part of the keyboard. If this sounds intimidating, then try not to
 worry; the arrow keys still work. The more time you spend in the main area of
-the keyboard, the more productive you can be when programming. 
+the keyboard, the more productive you can be when programming.
+
+To test the navigation bindings, open the `NOTES.txt` file you created earlier. Then,
+type a few sentences about yourself in the file. Make sure your text spans multiple lines.
+Then, using the bindings below, navigate around the text file **without moving your hands from
+the home row of the keyboard**. Keep practicing and, over time, you'll be amazed at how
+productive you become!
 
 | Binding   | Action                                                                 |
 |-----------|------------------------------------------------------------------------|
@@ -172,9 +187,9 @@ to clipboard memory.
 ![Selection in Emacs](select.PNG)
 
 Use `C-<SPC>` to start your selection, then navigate to where you want the selection
-to end. Once your text is selected, use one of the other key bindings to cut or copy
-the selection into the kill buffer. To paste, navigate to where you want to paste, 
-then yank the text from the kill buffer.
+to end (navigation bindings can be used here). Once your text is selected, use one of 
+the other key bindings to cut or copy the selection into the kill buffer. To paste, 
+navigate to where you want to paste, then yank the text from the kill buffer.
 
 | Binding   | Action                                                                 |
 |-----------|------------------------------------------------------------------------|
