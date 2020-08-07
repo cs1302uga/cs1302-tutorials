@@ -1,6 +1,6 @@
 # Emacs Tutorial
 
-![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
+![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
 
 ![Emacs Welcome Screen](welcome.PNG)
 
@@ -26,7 +26,8 @@
 Throughout this tutorial we will use `C` to refer to the control key (`CTRL`)
 and `M` to refer to the meta key. On most systems, `ALT` or `ESC`
 correspond to `M`. On macOS, the Terminal application can be configured
-to use `OPT` as `M`.
+to use `OPT` (`option`) as `M`. If you are using macOS and you haven't setup
+`OPT` to work as meta, the instructions are found [here](https://github.com/cs1302uga/cs1302-exercises/blob/master/misc/MacOS.md#install-homebrew).
 
 | Key | Name    | Usually             |
 |-----|---------|---------------------|
