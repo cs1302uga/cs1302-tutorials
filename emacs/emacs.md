@@ -137,8 +137,8 @@ the keyboard, the more productive you can be when programming.
 To test the navigation bindings, open the `NOTES.txt` file you created earlier. Then,
 type a few sentences about yourself in the file. Make sure your text spans multiple lines.
 Then, using the bindings below, navigate around the text file **without moving your hands from
-the home row of the keyboard**. Keep practicing and, over time, you'll be amazed at how
-productive you become!
+the home row of the keyboard**. It's normal to feel a little awkward at first. However, keep 
+practicing and, over time, you'll be amazed at how productive you become!
 
 | Binding   | Action                                                                 |
 |-----------|------------------------------------------------------------------------|
