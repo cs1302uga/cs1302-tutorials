@@ -1,10 +1,12 @@
 # Java Packages Tutorial
 
-![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
+![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
 
 ## Prerequisites
 
-This tutorial assumes that the reader has a knowledge of basic Unix commands and experience working with a command-line text editor (e.g. emacs, vi, etc.). To get the most out of this tutorial, you should follow along and take notes.
+This tutorial assumes that the reader has a knowledge of basic Unix commands and experience working with a command-line 
+text editor (e.g. emacs, vi, etc.). To get the most out of this tutorial, you should **follow along, take notes, execute any given commands,
+run any code examples, repeat as necessary**. Simply reading (or skimming) is not sufficient for learning this material.
 
 ## Course-Specific Learning Outcomes
 
@@ -66,7 +68,7 @@ temporary applications or when just beginning development
 Let's try it! 
    
 1. Using Emacs, create a basic "Hello, World!" program in a driver class
-   called `HelloWorld` in the default package directory (`src`).
+   called `HelloWorld` in the default package directory for source code (the `src` directory).
    For example, the contents of the `HelloWorld.java` file might be:
       
    ```java
@@ -117,7 +119,7 @@ Let's try it!
    could not be found or loaded. 
   
    Now try running the program again, specifying the location of the default package where our compiled code resides.  
-   Since we compiled the class into the 'src' directory, 'src' is the default package for our compiled code (for now).  
+   Since we compiled the class into the `src` directory, `src` is the default package for our compiled code (for now).  
    Execute the following command to specify the class path:
       
    ```
@@ -146,7 +148,14 @@ Let's try it!
    ```
    $ javac -d bin src/HelloWorld.java
    ```
-      
+   
+   When you're first starting out in a Unix environment, you might feel lost at times. Remember, 
+   it's always important to know your present working directory (pwd) as that is the location where 
+   the commands you enter will be ran. In the command above, our pwd is `cs1302-packages`. Since the
+   `HelloWorld.java` file is not in that directory, we had to specify the relative path `src/HelloWorld.java`
+   to tell the compiler how to find that file relative to the pwd. We're telling the compiler "first, go into the
+   `src` directory and then you'll see the file `HelloWorld.java`".
+   
    Now, if you list the contents of the `bin` directory, you will see that it contains
    `HelloWorld.class`. Listing the `src` directory contents will show only `HelloWorld.java`. 
    Now our project is more organized!
@@ -156,15 +165,32 @@ Let's try it!
    ```
    $ java -cp bin HelloWorld
    ```
-      
+
+7. We will use the Unix `find` command often in this course to see all files in a directory and its 
+   subdirectories. Go ahead and execute `find` from within the `cs1302-packages` directory. If you've
+   followed the steps correctly up until now, you will see the following output:
+   
+   ```
+   .
+   ./bin
+   ./bin/HelloWorld.class
+   ./src
+   ./src/cs1302
+   ./src/cs1302/hello
+   ./src/HelloWorld.java
+   ```
+   
+   The output of the `find` command shows that we sucessfully separated the source code (`src`) from 
+   the compiled code (`bin`).
+   
    **PROTIP:** Remember, source code should really only be placed directly in the default 
-   package (`src`) for convenience when developing small or temporary applications or when 
+   package directory (`src`) for convenience when developing small or temporary applications or when 
    just beginning development [[2]](https://docs.oracle.com/javase/specs/jls/se8/html/jls-7.html).
    While types in the default package can access types in other packages, the reverse is not true.
-   That is, types in named packages cannot access types in the defualt package.
+   That is, types in named packages cannot access types in the default package.
       
-7. Let's clean up! Delete the `HelloWorld.class` file that you created in the `bin` folder. Remember to
-   use tab completion so you don't have to type long filenames!
+8. Let's clean up! Delete the `HelloWorld.class` file that you created in the `bin` folder. Remember to
+   use [tab completion](https://en.wikipedia.org/wiki/Command-line_completion) so you don't have to type long filenames!
 
 ## Named Package
 
