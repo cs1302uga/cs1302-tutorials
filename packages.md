@@ -222,14 +222,14 @@ Let's try it by placing the `HelloWorld` class into the `cs1302.hello` package!
    In Java, a package statement, if included, must be the first line of code in
    the file (i.e., excluding comments and white space).
       
-4. Compile the program:
+4. Compile the program (don't forget tab completion - you don't want to type the whole command):
    
    ```
    $ javac -d bin src/cs1302/hello/HelloWorld.java
    ```
       
-   Note that the `HelloWorld.class` file was created under `bin/cs1302/hello`. The compiler automatically created
-   the necessary package directories for our compiled code under `bin`.
+5. Execute the `find` command. Note that the `HelloWorld.class` file was created under `bin/cs1302/hello`.
+   The compiler automatically created the necessary package directories for our compiled code under `bin`!
       
 5. Try to run the program using `javac` specify the classpath using `-cp` and include the
    fully qualified name of the class containing the `main` method:
@@ -256,12 +256,13 @@ on code that's not included with Java (e.g., code that you or someone else has w
 to let `javac` know where the _compiled_ version of that depedency is.
 
 1. Let's extend the code we just finished. Create a `cs1302.util.HelloUtility` class under `src`.
-   **Remember,** this implies a specific directory structure and package statement requirement 
-   with respect to `HelloUtility.java`. You will need to add the `util` directory in the proper
+   **Remember,** the fully qualified name implies a specific directory structure and package statement 
+   requirement with respect to `HelloUtility.java`. You will need to add the `util` directory in the proper
    place in your current directory hierarchy.
    
 1. Write the code to declare the `cs1302.util.HelloUtility` class making sure to include the proper 
-   package statement at the top. Then, within the class declaration, add the following method:
+   class declaration and package statement at the top. Then, within the class declaration, add the 
+   following method:
 
    ```java
    public static void excitingHello() {
@@ -270,10 +271,26 @@ to let `javac` know where the _compiled_ version of that depedency is.
    ```
    
 1. Save, then compile the `.java` file for the `cs1302.util.HelloUtility` class as usual, 
-   using `bin` as the destination for the compiled code. Once it compiles, make sure the `util`
-   directory was created within `bin` and that the `HelloUtility.class` is in `util`.
+   using `bin` as the destination for the compiled code. Once it compiles, make sure that the 
+   output from `find` matches the output below:
+   
+   ```
+   .
+   ./bin
+   ./bin/cs1302
+   ./bin/cs1302/hello
+   ./bin/cs1302/hello/HelloWorld.class
+   ./bin/cs1302/util
+   ./bin/cs1302/util/HelloUtility.class
+   ./src
+   ./src/cs1302
+   ./src/cs1302/hello
+   ./src/cs1302/hello/HelloWorld.java
+   ./src/cs1302/util
+   ./src/cs1302/util/HelloUtility.java
+   ```
 
-1. Modify the source code for your `cs1302.hello.HelloWorld` class to call the static method in
+1. Now, modify the source code for your `cs1302.hello.HelloWorld` class to call the static method in
    `cs1302.util.HelloUtility`. To do this, you may:
    
    1. Add an import statement between the `package` statement and class declation:
@@ -288,7 +305,7 @@ to let `javac` know where the _compiled_ version of that depedency is.
       HelloUtility.excitingHello();
       ```
       
-   Completing these two steps create a dependency. Now, the `cs1302.hello.HelloWorld` class
+   Completing these two steps create a **dependency**. Now, the `cs1302.hello.HelloWorld` class
    **depends** on the `cs1302.util.HelloUtility` class because it uses a method defined within that
    class.
       
@@ -299,7 +316,7 @@ to let `javac` know where the _compiled_ version of that depedency is.
    ```
    src/cs1302/hello/HelloWorld.java:3: error: package cs1302.util does not exist
    import cs1302.util.HelloUtility;
-                  ^
+                     ^
    src/cs1302/hello/HelloWorld.java:8: error: cannot find symbol
         HelloUtility.excitingHello();
         ^
@@ -311,12 +328,10 @@ to let `javac` know where the _compiled_ version of that depedency is.
    find `cs1302.util.HelloUtility` as it is not in the same package as `cs1302.hello.HelloWorld`. 
    Since we know it actually exists, we can just tell `javac` where to find it using `-cp`. 
    
-1. Remember that when your code depends on other code that you have written, you need to let 
+   Remember that when your code depends on other code that you have written, you need to let 
    `javac` know where the _compiled_ version of that depedency is. Since you compiled under `bin`,
    that's where you should tell `javac` to look. Try to compile it again, but this time, be sure
-   to include the `-cp bin` option in addition to `-d bin` option.
-   
-1. It works! The program should now run as expected.
+   to include the `-cp bin` option in addition to `-d bin` option. The program should now run as expected.
 
 ## Further Important Notes
 
