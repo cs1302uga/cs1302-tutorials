@@ -1,10 +1,10 @@
 # Octal Mode
 
-![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
+![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
 
 ## Prerequisites
 
-* Unix Tutorial Five: http://www.ee.surrey.ac.uk/Teaching/Unix/unix5.html
+* [Unix Tutorial Five](http://www.ee.surrey.ac.uk/Teaching/Unix/unix5.html)
 
 ## Course-Specific Learning Outcomes
 
@@ -17,7 +17,7 @@ In Unix, both regular files and directory files have associated metadata that is
 independent of a file's contents. This metadata is commonly referred to as the _status information_ 
 for the file and is accessible in a couple different ways. 
 
-On Nike, try the following:
+On Odin, try the following:
 
 1. Create a new, empty regular file called `newfile` using the following command:
 
@@ -90,14 +90,14 @@ permissions. In the case of a file with octal mode `644`, the file has the follo
 | Group | `4`   | `100`  | `r--`    |
 | Other | `4`   | `100`  | `r--`    |
 
-Try the following on Nike:
+Try the following on Odin:
 
 1. Create regular files and directory files varying modes using combinations of 
    `touch`, `mkdir`, and `chmod`. The `chmod` command accepts both symbolic and octal
    notations for the mode. Try using one notation and determine the other by hand!
    
    Remember, if you get stuck, then you can see both mode notations at the same time 
-   by using `stat` on Nike. 
+   by using `stat` on Odin. 
 
 <hr/>
 
