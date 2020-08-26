@@ -1,7 +1,7 @@
 
 # Exceptions
 
-![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
+![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
 
 ## Prerequisites
 
@@ -142,7 +142,7 @@ Checked exceptions must be explicitly caught or propagated by the programmer,
 whereas unchecked exception may or may not be handled by the programmer.  
 Let's look at an example.
 
-1. On Nike, create the class `exceptions.Unchecked` containing the following code:
+1. On Odin, create the class `exceptions.Unchecked` containing the following code:
 
    ```java
    package exceptions;
@@ -170,7 +170,7 @@ Let's look at an example.
    [`NullPointerException`](https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html),
    [`NumberFormatException`](https://docs.oracle.com/javase/8/docs/api/java/lang/NumberFormatException.html), etc.
 
-1. On Nike, create the class `exceptions.Checked` containing the following code:
+1. On Odin, create the class `exceptions.Checked` containing the following code:
 
    ```java
    package exceptions;
