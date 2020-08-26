@@ -1,6 +1,6 @@
 # Command-Line Arguments
 
-![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
+![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
 
 Many of the programs that you've interacted with on Unix supported extra options
 and/or required extra information when you entered their commands at the terminal
@@ -10,9 +10,10 @@ shell. For example, consider the following `javac` command:
 $ javac -d bin -cp bin src/cs1302/example/Hello.java
 ```
 
-The text that is entered immediately following `java`, in the exampe above, is
+The text that is entered immediately following `javac`, in the exampe above, is
 passed into the program as __command-line arguments__. This allows the `java` program
-to proceed with execution without prompting the user for input. Let's try it!
+to proceed with execution without prompting the user for input. We can have our Java
+programs take in command-line arguments as well. Let's try it!
 
 1. Create a directory for this tutorial called `cs1302-cla`, then change into it.
 
@@ -69,7 +70,7 @@ to proceed with execution without prompting the user for input. Let's try it!
    In Java, the `args` array of a standard `main` method is used to capture command-line
    arguments and make them available to the program.
    
-1. Now that we see how to access, the command-line arguments in our code, let's see how
+1. Now that we see how to access the command-line arguments in our code, let's see how
    different command-line arguments are parsed. Try the following commands:
    
    ```
@@ -86,7 +87,7 @@ to proceed with execution without prompting the user for input. Let's try it!
    
 2. That's it! The rest is purely in the realm of code. We've shown you how command-line
    arguments are passed into a Java program (i.e., via the `args` array). Now, experiment
-   by adding some command-line options to your own options.
+   by adding some command-line options of your own.
    
    
 <hr/>
