@@ -81,7 +81,7 @@ if ((s != null) && (s.length() > 1)) {
 In general, in order to avoid an exception object, you need to understand the 
 conditions in which that exception object is thrown, then write code that
 correctly identifies if those conditions are met prior to the line of code
-that throws the exception object. Although it is relatively easy to ammend code
+that throws the exception object. Although it is relatively easy to amend code
 to avoid `NullPointerException` objects as they arise when attempting to 
 invoke members of an object using a reference variable that contains the 
 value `null`, the same statement cannot be said about exception objects that 
@@ -99,7 +99,7 @@ With this syntax, you place code that can throw an exception into the
 `try` block, then place code for how you want to deal with the exception
 in the `catch` block. These two go together, which is why we often 
 refer to it as a try-catch block. During execution, each line in a `try` block
-is executed until an exception object is throw. When the exception is thrown, 
+is executed until an exception object is thrown. When the exception is thrown, 
 the JVM redirects the flow of control into an appropriate associated
 `catch` block. After the `catch` block is executed, flow of control is
 redirected to immediately after the entire try-catch construct. 
@@ -127,7 +127,8 @@ two ways:
    that we wrote (and, therefore, can customize) and using code
    that does not necessarily cause the program to abruptly terminate.
 
-Here is a video that demonstrates how to handle exceptions instead of avoid them:
+Here is a video with a more complicated example demonstrating the benefits of handling 
+exceptions instead of trying to avoid them:
 
 https://www.youtube.com/watch?v=TETdh48t4YM
 
@@ -139,7 +140,7 @@ https://www.youtube.com/watch?v=TETdh48t4YM
 
 In Java, exceptions are either _checked_ or _unchecked_. 
 Checked exceptions must be explicitly caught or propagated by the programmer,
-whereas unchecked exception may or may not be handled by the programmer.  
+whereas unchecked exceptions may or may not be handled by the programmer.  
 Let's look at an example.
 
 1. On Odin, create the class `exceptions.Unchecked` containing the following code:
