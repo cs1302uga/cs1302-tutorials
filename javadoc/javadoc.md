@@ -97,6 +97,10 @@ methods, and fields. This effectively creates a website for the API documentatio
    * `-subpackages` -- specifies the packages for which documentation should be generated. 
 
    Be sure to verify that files were generated and placed in the `doc` directory before continuing.
+   Take a few moments to consider each of the options above. Think about why the `javadoc` command
+   may have needed all of these options and what exactly they mean. Carefully considering each
+   command you write will give you a better understanding of what it does. If you have questions
+   about any part of it, don't hesitate to ask!
 
 ### Hosting the API Documentation Website
 
@@ -119,11 +123,12 @@ this tutorial.
    $ ln -s $(pwd)/doc ~/public_html/cs1302-javadoc-doc
    ```
    
-   In the command above, the abolute path to our link's target (in this case, `doc`) must be provided. 
+   **Note:** The `ln` command requires the **abolute path** to our link's target (in this case, `doc`). 
    Since our intended target is in the current directory, we know that its absolute path
    is the same as the absolute path of the current directory followed by `/` followed by
    the name of our target. We could manually figure out the desired path with the help of `pwd` 
-   or we can use `$(pwd)`, as seen above, to fill in the output of `pwd` instead. 
+   or we can use `$(pwd)`, as seen above, to fill in the output of `pwd` instead. You could also
+   type out the entire absolute path but that would be tedious and error-prone.
    
    In this scenario, the symbolic link is called `cs1302-javadoc-doc`. You can see it if you
    change into your `public_html` directory and perform an `ls -l`. The entry for 
@@ -135,7 +140,7 @@ this tutorial.
    username:
 
    ```
-   http://cobweb.cs.uga.edu/~user/cs1302-javadoc-doc/
+   https://webwork.cs.uga.edu/~user/cs1302-javadoc-doc/
    ```
 
    Congratulations! If you followed the steps correctly, then you should see the API
@@ -174,7 +179,7 @@ this tutorial.
 1. Before adding comments to `Circle.java`, take a moment to look at the Method Detail section of the
    website. Compare a documented method (`getRadius` or `getPerimeter`) to an undocumented method.
 
-1. In `Circle.java`, add Javadoc comments for each undocumented method.  In each of your comments, 
+1. In `Circle.java`, add Javadoc comments for each undocumented method. In each of your comments, 
    include a sentence that describes the method, along with tags that document, as needed, the parameters, 
    return type, and propagated exceptions. Use the `@code` tag where appropriate in your description.
    
@@ -216,7 +221,7 @@ this tutorial.
    That is definitely an option, assuming the `~/public_html/cs1302-javadoc-doc` directory
    already exists. We chose the symbolic link approach in the tutorial because
    it helps keep the `javadoc` command nice and short and to provide an example of
-   a symbolic link. 
+   a symbolic link.
    
 1. __Why not use `cp` or `mv` to copy or move (respectively) the generated API documentation__
    __website directly to `~/public_html/cs1302-javadoc-doc` instead using `ln`?__
