@@ -47,11 +47,11 @@ Toward the end of the comment, you see that the parameters and the return value 
 documented using two `@param` tags and a `@return` tag.
 
 In this tutorial, you will see Javadoc comments in action, write your own, and learn how 
-to generate and host the corresponding API documentation website on Nike.
+to generate and host the corresponding API documentation website on Odin.
 
 ### Getting Started
 
-The steps in this tutorial assume that you are logged into the Nike server. 
+The steps in this tutorial assume that you are logged into the Odin server. 
 
 1. Use the following command to download and execute a shell script that retrieves 
    the starter code for this tutorial and places it into a subdirectory 
@@ -101,14 +101,14 @@ methods, and fields. This effectively creates a website for the API documentatio
 ### Hosting the API Documentation Website
 
 Generating the API documentation is great, but seeing it is even better. You can use the steps
-provided below to host the generated website using your Nike account. Alternative approaches 
+provided below to host the generated website using your Odin account. Alternative approaches 
 to the explicit instructions provided below are explored in the FAQ section towards the end of 
 this tutorial. 
 
 1. Ensure that you have a `public_html` directory in your home directory. If the `~/public_html` 
-   directory does not exist, then you should create it. The purpose of this directory on Nike (and
+   directory does not exist, then you should create it. The purpose of this directory on Odin (and
    on many systems) is to support user websites, which will be illustrated in the following steps. 
-   You are fully responsible for anything that you host through your Nike website.
+   You are fully responsible for anything that you host through your Odin website.
 
 1. Use `ln`, as described below, to **create a symbolic link** (shortcut) in your `public_html` 
    directory to the `doc` subdirectory containing the API documentation website that you 
@@ -131,7 +131,7 @@ this tutorial.
    two different ways: i) an `l` is prefixed in the mode instead of `-` or `d`; and ii) the
    filename lists an arrow pointing to the link target. 
 
-1. Navigate to the following URL in your web browser, replacing `user` with your Nike
+1. Navigate to the following URL in your web browser, replacing `user` with your Odin
    username:
 
    ```
