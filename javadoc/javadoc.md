@@ -1,6 +1,6 @@
 # Javadoc and API Documentation
 
-![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
+![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
 
 ## Prerequisites
 
@@ -28,8 +28,8 @@ so that others can use the code being documented without seeing the implementati
 In other words, API documentation usually describes *what* a piece of code does and not *how* it
 does what it does (i.e., unless absolutely needed to explain the "what"). As an example, most students 
 are familar with the API documentation for the 
-[`String`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html) and
-[`Scanner`](https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html) classes
+[`String`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html) and
+[`Scanner`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html) classes
 provided by Java.
 
 By convention, API documentation for Java code is written directly in the source code in special
