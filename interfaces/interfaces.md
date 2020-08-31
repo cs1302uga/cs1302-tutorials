@@ -1,6 +1,6 @@
 # Interfaces Tutorial
 
-![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
+![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
 
 This tutorial introduces the reader to Java interfaces and polymorphism.
 
@@ -20,7 +20,7 @@ To get the most out of this tutorial, you should follow along and take notes.
 
 ### Getting Started
 
-The steps in this tutorial assume that you are logged into the Nike server. 
+The steps in this tutorial assume that you are logged into the Odin server. 
 
 1. Use the following command to download and execute a shell script that retrieves 
    the starter code for this tutorial and places it into a subdirectory 
@@ -56,7 +56,8 @@ are variables (static or not) that are declared using the `final` keyword. As of
 technical definition for an *interface* allows it to contain only the following:
 abstract methods, constants, static methods, nested types, and default implementation
 methods [[2]](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html).
-Nested types and default methods will not be covered in this tutorial. 
+Nested types and default methods will not be covered in this tutorial. Java 9 added support
+for private methods within an interface.
 
 Interfaces are used to specify that a type *can do* a set of things specified by its
 abstract methods and constants. An interface serves as a contract for the classes that 
@@ -199,7 +200,7 @@ Javadoc comments in the interface.
    
    **NOTE:** The only other methods available via a reference variable with an interface type
    are the methods listed in the 
-   [`java.lang.Object`](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html)
+   [`java.lang.Object`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html)
    class, which are common to all objects in Java. We will come back to the `Object` class
    in a future tutorial or reading, but it includes methods like `equals` and `toString`. 
    
