@@ -22,10 +22,18 @@ public class SuperFancy implements Styleable {
         styled = false;
     } // SuperFancy
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public void style() {
         styled = true;
     } // style
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public void unstyle() {
         styled = false;
     } // unstyle
