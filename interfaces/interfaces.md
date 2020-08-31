@@ -74,7 +74,7 @@ Javadoc comments in the interface.
    called `cs1302.interfaces.contract.Styleable` has an implied position within the package
    directories of your source code and should be placed in a `Styleable.java` file.
    The first big syntax difference between a class and an interface is illustrated in
-   [`Styleable.java:21`](src/cs1302/interfaces/contract/Styleable.java#L21):
+   [`Styleable.java`](src/cs1302/interfaces/contract/Styleable.java):
    
    ```java
    public interface Styleable {
@@ -84,7 +84,7 @@ Javadoc comments in the interface.
    
 
 1. The second big syntax difference involves the inclusion of abstract methods, illustrated
-   by the `style()` method in [`Styleable.java:27`](src/cs1302/interfaces/contract/Styleable.java#L27).
+   by the `style()` method in [`Styleable.java`](src/cs1302/interfaces/contract/Styleable.java).
    
    ```java
    public void style();
@@ -114,7 +114,7 @@ Javadoc comments in the interface.
 ### Implementing an Interface
 
 1. In Java, a class can implement an interface using the `implements` keyword, e.g., as seen 
-   in [`Fancy.java:15`](src/cs1302/interfaces/impl/Fancy.java#L15):
+   in [`Fancy.java`](src/cs1302/interfaces/impl/Fancy.java):
 
    ```java
    public class Fancy implements Styleable {
@@ -130,7 +130,7 @@ Javadoc comments in the interface.
    `cs1302.interfaces.impl.Fancy` class, you will see the abstract methods from `Styleable` 
    implemented. Notice that the implementatons contain method bodies (instead of their signatures
    ending with a semicolon). A specific example can be seen with the `unstyle()` method 
-   in [`Fancy.java:29`](src/cs1302/interfaces/impl/Fancy.java#L29):
+   in [`Fancy.java`](src/cs1302/interfaces/impl/Fancy.java):
    
    ```java
    public void unstyle() {
@@ -179,7 +179,7 @@ Javadoc comments in the interface.
 1. When an object is referred to via a reference variable with an interface type, the only methods
    than can be called using that variable are the ones declared in the interface, regardless of whether
    the object's class declared other methods. For example, even though the
-   `getAbout()` method is declared in the [`SuperFancy.java:38`](src/cs1302/interfaces/impl/SuperFancy.java#L38)
+   `getAbout()` method is declared in the [`SuperFancy.java`](src/cs1302/interfaces/impl/SuperFancy.java)
    class and therefore _is_ part of a `SuperFancy` object, it would not be available via an
    `Styleable` variable. The following two code snippets illustrate this difference:
    
