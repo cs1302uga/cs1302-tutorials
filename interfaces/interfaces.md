@@ -140,7 +140,7 @@ Javadoc comments in the interface.
    implementation. The other aspects of the method signature are the same.
    
    **NOTE:** As mentioned earlier, it is syntactically correct for an abstract method in an interface
-   to omit the `public` keyword. Remember, in this context, the method is still assumed to be have
+   to omit the `public` keyword. Remember, in this context, the method is still assumed to have
    public visibility. Therefore, the implementation of such a method in an implementing class will
    need to include the `public` visibility modifier.
    
@@ -155,6 +155,10 @@ Javadoc comments in the interface.
    or when explicitly requested in the implementing class's Javadoc comment using the `{@inheritDoc}` tag. 
    Pay close attention to the difference between these two scenarios, both in the source code and in the
    generated API documentation website.
+   
+   **Note:** The `Fancy` class will not pass `checkstyle` unless you add a Javadoc comment to the method
+   containing `{@inheritDoc}`. You may need to do this if you need a method to pass `checkstyle` when it
+   inherits its comments from an interface or parent class (covered later in the course).
 
 ### Using an Interface
 
