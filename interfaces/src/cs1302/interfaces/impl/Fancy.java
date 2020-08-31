@@ -22,17 +22,11 @@ public class Fancy implements Styleable {
         styled = false;
     } // Fancy
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void style() {
         styled = true;
     } // style
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void unstyle() {
         styled = false;
