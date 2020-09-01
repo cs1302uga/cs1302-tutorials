@@ -1,6 +1,6 @@
 # Default Methods Tutorial
 
-![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
+![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
 
 This tutorial introduces the reader to default methods in Java, a powerful way to evolve an interface.
 
@@ -20,7 +20,7 @@ and take notes.
 * **LO4.b:** Utilize interface-based polymorphism in a software solution.
 ### Getting Started
 
-The steps in this tutorial assume that you are logged into the Nike server. 
+The steps in this tutorial assume that you are logged into the Odin server. 
 
 1. Use the following command to download and execute a shell script that retrieves 
    the starter code for this tutorial and places it into a subdirectory 
@@ -49,13 +49,13 @@ The steps in this tutorial assume that you are logged into the Nike server.
 1. Generate, host, and view the API documentation website for the starter code provided with this tutorial.
    Use `cs1302-default-methods-doc` as the name of the symbolic link.
 
-1. Look through the documentation website you just created. You might notice that the page for the 
-   `Styleable` interface lists all known implementing classes just below the interface name near
+1. Look through the documentation website you just created. Pay attendtion to the page for the 
+   `Styleable` interface - notice how it lists all known implementing classes just below the interface name near
    the top of the page. 
    
 ### Modifying an Interface
 
-Since a conrete (i.e., instantiable) class that implements an interface **must** implement all methods 
+Since a concrete (i.e., instantiable) class that implements an interface **must** implement all methods 
 of the interface, any change to an interface has a direct impact on all implementing classes. Therefore,
 the decision to modify an interface should not be taken lightly. Especially if there are dependencies
 on the interface. Imagine if Oracle decided to add a few methods to an interface used by millions of 
@@ -63,14 +63,15 @@ programmers around the world. This decision would have a direct impact on all of
 they would all need to go through their entire codebase and update it to work with the new interface.
 
 1. To see the impact of such a change on a **much** smaller scale, go to the source code for the 
-   `Styleable` interface and uncomment the `getState` method. Now, you have modified the interface by
-   adding a method. This will require any implementing class to add a `getState` method in
-   order to compile.
+   `Styleable` interface and uncomment the `getState` method. By uncommenting this method from within
+   the interface, you have modified the interface. Now, any class that implements `Styleable` **must**
+   have an implemented method called `getState` in order to compile. You likely noticed that this change
+   will affect three implementing classes when you looked over the Javadoc comments.
 
 1. Recompile only the `Styleable` interface using `bin` as the default directory for compiled code. If 
    you uncommented the code correctly in the previous step, there should be no compile-time errors.
 
-1. Compile `BasicFancy.java`, `Fancy.java`, and `SuperFancy.java`.
+1. Compile `BasicFancy.java`, `Fancy.java`, and `SuperFancy.java` using the shortcut command below.
 
    **Aside Compilation Shortcut:**
    From the `cs1302-default-methods` directory, you can compile `BasicFancy.java`,
@@ -123,9 +124,11 @@ directly in the interface.
 denoted with the `default` keyword, that provides a default implementation of the method to classes that
 implement the interface. An implementing class can override a default method, if desired; this is similar
 to regular method overriding in inheritance (discussed in a later reading), except the original implementation
-of a default method is declared in an interface and not in a class. 
+of a default method is declared in an interface and not in a class. In other words, default methods allow 
+implementing classes to compile even if they don't override the default method. The decision is left up to
+the developer of the implementing class.
 
-Since the method is defined at the interface level, the implementation should be general in the sense 
+Since default methods are defined at the interface level, the implementation should be general in the sense 
 that it is not specific to any implementing class. In this case, we have three states: `STYLED`, `UNSTYLED`,
 and `UNKNOWN`. At the interface level, using `UNKNOWN` is the most appropriate since we can't say whether a 
 particular object is styled or unstyled at this level.
