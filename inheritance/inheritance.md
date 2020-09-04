@@ -118,11 +118,17 @@ To work through this example, perform the following steps:
 1. Inspect the `.java` files under `src`. In particular, familiarize yourself with the code
    for the `Animal` and `Dog` classes.
 
-1. Modify `Dog.java` so that the `Dog` constructor invokes the parent constructor via `super`,
-   specifying `"Canis"` and `"Lupus Familiaris"` as the genus and species names, 
-   respectively. This is similar to what was done in the first example video.
+1. Modify `Dog.java` so that the `Dog` constructor invokes the parent constructor via `super`. Note that
+   the parent constructor (in the `Animal` class) takes two parameters: `genus` and `species`. Since we are
+   invoking the `Animal` constructor on a type of animal where we know the exact genus and species, we can
+   provide the literal values to the parent constructor.
+   
+   Go ahead and call the `Animal` constructor from within the `Dog` constructor using `"Canis"` and
+   `"Lupus Familiaris"` as the genus and species, respectively. This will setup the `genus` and `species`
+   variable within any `Dog` objects that are created - similar to what was done in the first example video.
 
-   **Since `genus` and `species` are declared with `private` visibility, you cannot do the following:**
+   **Note: Since `genus` and `species` are declared with `private` visibility, you cannot do the following in
+   the `Dog` constructor since you do not have direct access to those variables:**
 
    ```java
    super.genus = "Canis";
@@ -184,7 +190,7 @@ constructor via `super`, then Java will automatically add a call to `super()`, i
 it will attempt to invoke the parent's default constructor if it exists.
 **We always recommend explicitly calling a parent constructor**, even
 if it's just `super()`, so that it's clear from reading the source code what
-the your intent is.
+your intent is.
 
 ### Method Overrides
 
@@ -222,8 +228,9 @@ Try the following scenarios:
 
 Notice the error that occurs in the thirs situation that did not occur in the
 second. This is the primary purpose of the annotation. Although optional, it
-allowd you to tell the compiler that your intent is to override. If the compiler
-sees the `@Override` annotation, then it checks to make sure it's an override.
+allowed you to tell the compiler that your intent is to override. If the compiler
+sees the `@Override` annotation, then it checks to make sure it's an override - and
+it can let you know if you made a mistake!
 
 ### References
 
