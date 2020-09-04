@@ -41,23 +41,27 @@ The steps in this tutorial assume that you are logged into the Odin server.
 
 In its simplest terms, **inheritance** in Java is a way to create a new class based on an
 existing class without the need for any manual copy-paste of the source code.
-This is demonstrated in the following video example:
+This is demonstrated in the video example below.
 
-https://www.youtube.com/watch?v=V5Y85rfMfPw
+Try follow along with the video:
+
+   1. Change into the `person` subdirectory of `cs1302-inheritance`.
+
+   1. Create a `bin` directory.
+
+   1. Follow along with the video!
+
+   https://www.youtube.com/watch?v=V5Y85rfMfPw
+
+   <a href="https://www.youtube.com/watch?v=V5Y85rfMfPw">
+   <img src="http://i3.ytimg.com/vi/V5Y85rfMfPw/hqdefault.jpg" alt="IMAGE ALT TEXT">
+   </a>
 
 The starter code for the example in the video can be found under the `person` subdirectory 
 of the `cs1302-inheritance` directory you downloaded at the beginning of this tutorial and 
 also at this [link](person/). Here is a UML diagram for the starter code:
 
 ![Starter Code](res/Inheritance1.png)
-
-Try to replicate what you saw in the video:
-
-1. Change into the `person` subdirectory of `cs1302-inheritance`.
-
-1. Create a `bin` directory.
-
-1. Follow along with the video!
 
 After replicating the steps in the video, an inheritance relationship is
 established. The UML diagram below illustrates this new relationship
