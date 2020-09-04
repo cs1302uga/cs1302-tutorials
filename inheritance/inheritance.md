@@ -63,7 +63,8 @@ Here is a UML diagram for the starter code:
 
 After replicating the steps in the video, an inheritance relationship is
 established. The UML diagram below illustrates this new relationship
-(note the different arrow head types and number of items in the child class):
+(note the different arrow head types and compare the size of the `Employee` class in this diagram
+with the diagram above):
 
 ![Updated Starter Code](res/Inheritance2.png)
 
