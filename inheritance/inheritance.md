@@ -1,6 +1,6 @@
 # Inheritance
 
-![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
+![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
 
 This tutorial introduces the reader to Java inheritance and polymorphism via inheritance.
 
@@ -19,7 +19,7 @@ To get the most out of this tutorial, you should follow along and take notes.
 
 ### Getting Started
 
-The steps in this tutorial assume that you are logged into the Nike server.
+The steps in this tutorial assume that you are logged into the Odin server.
 
 1. Use the following command to download and execute a shell script that retrieves
    the starter code for this tutorial and places it into a subdirectory
@@ -88,7 +88,7 @@ in which they are declared.
 ### The `Object` Class
 
 According the Java Language Specification, the
-[`java.lang.Object`](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html)
+[`java.lang.Object`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html)
 class is the superclass for all other classes [1]. Take a few moments to look through 
 the `Object` class documentation. Write down any methods you recognize and may have used in the past
 in your notes. Remember, all classes that you create automatically inherit those methods. That is, 
@@ -224,7 +224,7 @@ sees the `@Override` annotation, then it checks to make sure it's an override.
 
 ### References
 
-* [1] [Java Language Specification 4.3.2. The Class `Object`](https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.3.2)
+* [1] [Java Language Specification 4.3.2. The Class `Object`](https://docs.oracle.com/javase/specs/jls/se11/html/jls-4.html#jls-4.3.2)
 
 <hr/>
 
