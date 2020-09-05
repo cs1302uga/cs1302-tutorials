@@ -1,6 +1,6 @@
 # UML Class Diagrams
 
-![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
+![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
 
 ## Introduction
 
@@ -22,12 +22,14 @@ The diagram consists of a rectangle broken up vertically into three sections:
    then the simple name is used here instead.
    
 1. **Variables.** In UML, the variables of a class are called _attributes_. In
-   this example, there are two private instance variables and one private
-   static variable. The static variable is underlined.
+   this example, there are two private instance variables (indicated with a `-`) 
+   and one private static variable. In UML, attributes and methods are shown
+   to be public with a `+` symbol to the left of the name. Static variables are underlined.
    
 1. **Methods.** In UML, the methods of a class are called _operations_. In this
-   example, there is one public constructor, two public instance methods, and
-   one public static method. The static method is underlined.
+   example, there is one public constructor, two public (indicated by `+`) instance 
+   methods, and one public static method. In UML, attributes and methods are shown
+   to be public with a `+` symbol to the left of the name. Static methods are underlined.
    
 The diagram above gives enough information for a programmer (or a program) to generate the following 
 `Person.java` file:
