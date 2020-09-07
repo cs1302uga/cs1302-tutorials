@@ -1,11 +1,11 @@
 # Visibility Reading
 
-![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
+![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
 
 ## Introduction
 
 Java has four different visibilities that can be assigned to methods 
-and instance variable decalarations, three of which are indicated 
+and instance variable declarations, three of which are indicated 
 with modifier keywords:
 
 | Visibility Name | Modifier Keyword | UML Symbol |
@@ -18,9 +18,8 @@ with modifier keywords:
 Depending on where a declaration occurs, omitting a visibility modifier
 keyword means something different. 
 
-* In an an interface, the omission of a visibility modifier keyowrd 
-  implies the method has public visibility. In fact, the only visibility
-  that is allowed in an interface declarion is public.
+* In an an interface, the omission of a visibility modifier keyword 
+  implies the method has public visibility.
   
 * In a class, the omission of a visibility modifier keyword implies 
   the method or instance variable has _package private_ visibility.
@@ -34,7 +33,7 @@ code. It may be desirable to only make certain things in a class visible to
 the class itself, while it's perfectly okay to make other things visible
 to everything else. In particular, the two scenarios describe private and
 public visibility, respectively. However, Java has two additional visibilities
-to accomodate some of the scenarios that fall in-between.
+to accommodate some of the scenarios that fall in-between.
 
 ## Interpretation
 
@@ -321,7 +320,8 @@ Instead, visibility has to do with classes. In the third line of
 code, `attribute` via `tog.attribute` is visible because:
 
 1. a proper reference to an object contain `attribute` is given (via `tog`); and
-1. relative to that line of code, `attribute` is delcared in a parent class.
+1. relative to that line of code, `attribute` is delcared in a parent class of
+   the `YourGame` class which is where these lines are located.
 
 ## Public Visibility
 
