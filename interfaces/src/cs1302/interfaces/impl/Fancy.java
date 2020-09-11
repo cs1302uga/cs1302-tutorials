@@ -3,7 +3,7 @@ package cs1302.interfaces.impl;
 import cs1302.interfaces.contract.Styleable;
 
 /**
- * This class representes a <i>fancy</i> message.
+ * This class represents a <i>fancy</i> message.
  *
  */
 public class Fancy implements Styleable {
