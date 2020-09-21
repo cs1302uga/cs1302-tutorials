@@ -1,6 +1,6 @@
 # Generic Classes Tutorial
 
-![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
+![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
 
 This tutorial introduces the reader to generic classes in Java by creating a new generic class
 and emphasizing some of the benefits of using generics.
@@ -19,7 +19,7 @@ To get the most out of this tutorial, you should follow along and take notes.
 
 ### Getting Started
 
-The steps in this tutorial assume that you are logged into the Nike server.
+The steps in this tutorial assume that you are logged into the Odin server.
 
 1. Use the following command to download and execute a shell script that retrieves
    the starter code for this tutorial and places it into a subdirectory
