@@ -85,10 +85,10 @@ In this example, that common parent is `Shape`. Therefore, the generic type para
 is replaced by `Shape` for both of the formal parameters and the return type.
 
 1. For each of the code snippets below, write the type that `T` is replaced with under
-   each method call. Explain your answer. Also, indicate whether the call is valid. You can
-   assume that each of the arrays being passed into the method have been created and populated
-   and that they contain references of the type suggested by their name. For example, `rectangles`
-   is an array of `Rectangle` references.
+   each method call. Explain your answer. Also, indicate whether the call is valid. In the sample code
+   provided, each of the arrays being passed into the method have been created and populated
+   and they contain references of the type suggested by their name. For example, `rectangles`
+   is an array of four `Rectangle` references.
 
    1. **Snippet 1:**
      
