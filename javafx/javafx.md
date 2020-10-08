@@ -3,20 +3,20 @@
 ![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
 
 JavaFX is a library for creating and delivering applications with graphical user interfaces (GUIs)
-in Java. In this tutorial, we will use JavaFX 8 as it comes with Java 8. The API documentation for
+in Java. In this tutorial, we will use JavaFX 11 along with Java 11. The API documentation for
 the many packages included with JavaFX can be found 
-[here](https://docs.oracle.com/javase/8/javafx/api/toc.htm).
+[here](https://openjfx.io/javadoc/11/).
 
 ## Getting Started
 
 1. First, you need to ensure that your terminal emulator supports X-forwarding. This allows
    the GUI parts of your application to be forwarded to your local computer in addition to
    the terminal output. To check this, work through the rest of this section of the
-   tutorial. First, login to Nike using the `ssh` command along with the `-XY` option.
-   As always, be sure to replace `username` with your Nike username.
+   tutorial. First, login to Odin using the `ssh` command along with the `-XY` option.
+   As always, be sure to replace `username` with your Odin username.
    
    ```
-   $ ssh -XY username@nike.cs.uga.edu
+   $ ssh -XY username@odin.cs.uga.edu
    ```
    
    If you encounter problems in this step, then please ensure that you have followed the
@@ -35,14 +35,14 @@ the many packages included with JavaFX can be found
    ```
    
    ```
-   java version "1.8.0_192"
-   Java(TM) SE Runtime Environment (build 1.8.0_192-b12)
-   Java HotSpot(TM) 64-Bit Server VM (build 25.192-b12, mixed mode)
+   java version "11.0.8" 2020-07-14 LTS
+   Java(TM) SE Runtime Environment 18.9 (build 11.0.8+10-LTS)
+   Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.8+10-LTS, mixed mode)
    ```
    
    **If you do not see the exact same output presented above,** then please ensure that
    you have followed the instructions provided at the beginning of the semester for
-   [How to Connect to Nike & First Steps](https://github.com/cs1302uga/cs1302-exercises/blob/master/misc/NikeSetup.md).
+   [How to Connect to Odin & First Steps](https://github.com/cs1302uga/cs1302-exercises/blob/master/misc/OdinSetup.md).
 
 1. Use the following command to download and execute a shell script that retrieves 
    the starter code for this tutorial and places it into a subdirectory 
@@ -60,26 +60,47 @@ the many packages included with JavaFX can be found
    $ find src
    ```
    
-1. Compile the source code, specifying `bin` as the default package for compiled code. You may
-   need to create the `bin` directory.
+1. Compile the source code using the command below:
+
+   ```
+   javac -d bin -p $JAVAFX_HOME/lib --add-modules javafx.controls src/cs1302/gui/*.java
+   ```
    
-1. Attempt to run the `cs1302.gui.ExampleDriver` class in the usual manner. If successful, then
-   one of three things should happen:
+   There are a few new command-line arguments to `javac` that you haven't seen before:
    
-   1. A small, but blank, GUI app will appear on your screen. This may appear in another
+      * `-p $JAVAFX_HOME/lib`: tells the java compiler where to find the JavaFX library files (.class files)
+        on Odin.
+	
+      * `--add-modules javafx.controls`: JavaFX is organized into 7 different modules. This option
+        tells `javac` which modules to include. A list of the modules in JavaFX 11 can be found 
+	[here](https://openjfx.io/javadoc/11/).
+
+1. Run the compiled code using the command below:
+
+   ```
+   java -cp bin -p $JAVAFX_HOME/lib --add-modules javafx.controls cs1302.gui.ExampleDriver
+   ```
+   
+   Notice the use of the `-p` and `add-modules` command line arguments as in the previous step. 
+   
+1. If the previous command was successful, then one of the following things should happen:
+   
+   1. A small GUI app containing the text "Hello, World" will appear on your screen. This may appear in another
       desktop or minimized if your computer utilizes multiple windows.
    
-   1. A small, but blank, GUI app will appear on your screen. This may appear in another
+   1. A small GUI app containing the text "Hello, World" will appear on your screen. This may appear in another
       desktop or minimized if your computer utilizes multiple windows. However, the following 
       <a name="fbConfigs1">error message</a> will appear in the terminal:
       
       ```
       libGL error: No matching fbConfigs or visuals found
       libGL error: failed to load driver: swrast
-      Prism-ES2 Error : GL_VERSION (major.minor) = 1.4
+      Error in glXCreateNewContext, remote GLX is likely disabled
       ```
       
-   1. A scary <a name="fbConfigs2">error message</a> similar to the following will appear and no GUI app will appear 
+   1. **IS THIS ONE POSSIBLE WITH JAVAFX 11?**
+   
+      A scary <a name="fbConfigs2">error message</a> similar to the following will appear and no GUI app will appear 
       on your screen (don't panic):
       
       ```
@@ -99,9 +120,11 @@ the many packages included with JavaFX can be found
    Close out of the small GUI app. 
    
 1. Regardless of whether you got an error, **rerun the driver but add `-Dprism.order=sw` in addition to 
-   the usual options when executing the related `java` command** to enable the software-based renderer.
+   the usual options when executing the related `java` command** to enable the software-based renderer. You may
+   still receive a slightly shorter error message but your application will run smoother (less lag) with this 
+   option set.
    
-1. If the small GUI app containing a nice message appears with no renderer errors, then you are okay to proceed!
+1. If the small GUI app containing a nice message appears with or without a small error message, then you are okay to proceed!
    **Note**: You may have to wait a few seconds to see the message.
 
    1. If you are running MacOS and get an exception message related to `DISPLAY` the first
@@ -115,7 +138,7 @@ the many packages included with JavaFX can be found
 ## High-Level Walkthrough 
 
 1. In JavaFX, applications (or apps) are created by creating a class that extends the
-   [`javafx.application.Application`](https://docs.oracle.com/javase/8/javafx/api/javafx/application/Application.html)
+   [`javafx.application.Application`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/application/Application.html)
    class and overriding the `start` method. In the starter code, inspect the class declaration inside of `ExampleApp.java`.
    We will explain the inside of the `start` method shortly.
    
@@ -128,21 +151,21 @@ the many packages included with JavaFX can be found
      exception relates to a timeout issue with the X-forwarding -- in this case, we want to inform the user that
      they can logout, then log back in to resolve the problem.
      
-1. The [`launch`](https://docs.oracle.com/javase/8/javafx/api/javafx/application/Application.html#launch-java.lang.Class-java.lang.String...-)
+1. The [`launch`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/application/Application.html#launch(java.lang.Class,java.lang.String...))
    launches the app by initiating the JavaFX application life-cycle, a sequence of steps that occur over the life
    of the launched application. The JavaFX runtime does the following, in order, whenever an application is launched:
 
    1. Constructs an instance of the specified `Application` subclass;
-   1. Calls the app's [`init`](https://docs.oracle.com/javase/8/javafx/api/javafx/application/Application.html#init--)
+   1. Calls the app's [`init`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/application/Application.html#init())
       method, which the programmer may have overidden;
-   1. Creates a `Stage` object and calls the app's [`start`](https://docs.oracle.com/javase/8/javafx/api/javafx/application/Application.html#start-javafx.stage.Stage-)
+   1. Creates a `Stage` object and calls the app's [`start`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/application/Application.html#start(javafx.stage.Stage))
       method with a reference to that `Stage` object;
    1. Waits for the app to finish, which happens when either of the following occur:
       
-      * the app calls [`Platform.exit`](https://docs.oracle.com/javase/8/javafx/api/javafx/application/Platform.html#exit--)
+      * the app calls [`Platform.exit`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/application/Platform.html#exit())
       * the last window has been closed and the `implicitExit` attribute on `Platform` is true -- this is the default.
     
-   1. Calls the app's [`stop`](https://docs.oracle.com/javase/8/javafx/api/javafx/application/Application.html#stop--) 
+   1. Calls the app's [`stop`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/application/Application.html#stop()) 
       method, which the programmer may have overidden;
 
 ## Mid-Level Walkthrough 
@@ -161,13 +184,13 @@ the many packages included with JavaFX can be found
       
    1. By default, a stage is not visible. You must initialize it with a reference to a `Scene` object 
       before making it visible. You should refer to the API documentation for the 
-      [`Stage`](https://docs.oracle.com/javase/8/javafx/api/javafx/stage/Stage.html) class about
+      [`Stage`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/stage/Stage.html) class about
       different properties a stage can have, including decorations and modality options.
    
    1. What is a `Scene` object? In JavaFX, a scene is the container for all content in a scene graph. The term
       "scene graph" is just a fancy term for a structured hierarchy of the nodes / components contained in a
       particular scene. We use the term "node" because all such objects have an upper bound of 
-      [`javafx.scene.Node`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/Node.html).
+      [`javafx.scene.Node`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/Node.html).
    
       * There can only be one `Scene` on a `Stage` at a time, and a `Scene` can only be on one `Stage` at a time. 
       * You may swap scenes on a `Stage` at any time so long as the call to `setScene` is made on the 
@@ -183,8 +206,8 @@ the many packages included with JavaFX can be found
           |
       hello: Text
       ```
-      The "root" of this scene graph is an object of the [`HBox`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/layout/HBox.html)
-      container class. This object has one child, an object of the [`Text`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/text/Text.html) 
+      The "root" of this scene graph is an object of the [`HBox`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/layout/HBox.html)
+      container class. This object has one child, an object of the [`Text`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/text/Text.html) 
       class. 
 
 1. Before you continue, you should note what each line in the `start` method of `ExampleApp.java` is doing by
@@ -203,18 +226,18 @@ the many packages included with JavaFX can be found
       hello: Text
       ```
       The "root" of the containment hierarchy is an object of the 
-      [`Stage`](https://docs.oracle.com/javase/8/javafx/api/javafx/stage/Stage.html)
+      [`Stage`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/stage/Stage.html)
       container class. The `stage` object contains the 
-      [`Scene`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/Scene.html).
+      [`Scene`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/Scene.html).
    
 ## Events and Event Handlers
 
-In JavaFX, nodes can generate [`Event`](https://docs.oracle.com/javase/8/javafx/api/javafx/event/Event.html)
+In JavaFX, nodes can generate [`Event`](https://openjfx.io/javadoc/11/javafx.base/javafx/event/Event.html)
 objects. This can happen automatically or in response to user input. Each event has a corresponding event handler,
 i.e., a method that is registered to handle the event when its generated. Let's add a button to `ExampleApp`, then
 register an event handler for one of the events the button might generate.
 
-1. In `ExampleApp.java`, import the [`Button`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/Button.html),
+1. In `ExampleApp.java`, import the [`Button`](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/Button.html),
    then add the following line immediately after the line that creates the `Text` object:
    ```java
    Button button = new Button("Click me!");
@@ -240,7 +263,7 @@ register an event handler for one of the events the button might generate.
      button's style to change.
      
 1. When a user clicks on a button, that causes the button to generate an
-   [`ActionEvent`](https://docs.oracle.com/javase/8/javafx/api/javafx/event/ActionEvent.html) object.
+   [`ActionEvent`](https://openjfx.io/javadoc/11/javafx.base/javafx/event/ActionEvent.html) object.
    You can register an event handler for this event by calling the `setOnAction` method. Here is the
    signature of the `setOnAction` method:
    ```java
@@ -248,7 +271,7 @@ register an event handler for one of the events the button might generate.
    ```
 
 1. As you can see, to call the `setOnAction` method, we will need to supply a reference to an `EventHandler<ActionEvent>`
-   object. It turns out that [`EventHandler<T>`](https://docs.oracle.com/javase/8/javafx/api/javafx/event/EventHandler.html)
+   object. It turns out that [`EventHandler<T>`](https://openjfx.io/javadoc/11/javafx.base/javafx/event/EventHandler.html)
    is an interface. This gives us many options. It also turns out that this interface is a functional interface,
    which means that we can use a lambda expression. We point out that `EventHandler<T>` is an interface before 
    to remind you that you can always implement the interface the interface in the usual way instead of using a
