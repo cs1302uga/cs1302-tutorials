@@ -5,7 +5,9 @@
 JavaFX is a library for creating and delivering applications with graphical user interfaces (GUIs)
 in Java. In this tutorial, we will use JavaFX 11 along with Java 11. The API documentation for
 the many packages included with JavaFX can be found 
-[here](https://openjfx.io/javadoc/11/).
+[here](https://openjfx.io/javadoc/11/). You can use the search feature on the API website to find
+a particular class or use the [JavaFX 11 Bookmarks](https://github.com/cs1302uga/cs1302-tutorials/blob/master/javafx/javafx-bookmarks.md)
+page for direct links to commonly used classes.
 
 ## Getting Started
 
@@ -302,8 +304,8 @@ register an event handler for one of the events the button might generate.
 
 ## References
 
-* [JavaFX 8 Bookmarks and Notes](http://cobweb.cs.uga.edu/~mec/cs1302/gui/)
-* [JavaFX 8 API Documentation](https://docs.oracle.com/javase/8/javafx/api/overview-summary.html)
+* [JavaFX 11 Bookmarks](https://github.com/cs1302uga/cs1302-tutorials/blob/master/javafx/javafx-bookmarks.md)
+* [JavaFX 11 API Documentation](https://openjfx.io/javadoc/11/)
 
 <hr/>
 
