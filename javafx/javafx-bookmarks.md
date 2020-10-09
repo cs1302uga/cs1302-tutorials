@@ -27,6 +27,16 @@
    
 ## RE: Layout Panes
 
+   * [javafx.scene.layout](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/layout/package-summary.html) - (package)
+   * [javafx.scene.layout.Pane](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/layout/Pane.html) - (class) Base class for layout panes. 
+     By itself, Pane is similar to javafx.scene.Group, except that it is resizable.
+   * [javafx.scene.layout.HBox](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/layout/HBox.html) - (class) Lays out its children in a single horizontal row.
+   * [javafx.scene.layout.VBox](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/layout/VBox.html) - (class) Lays out its children in a single vertical column.
+   * [javafx.scene.layout.BorderPane](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/layout/BorderPane.html) - (class) Lays out children in top, left, 
+     right, bottom, and center positions.
+   * [javafx.geometry.Insets](https://openjfx.io/javadoc/11/javafx.graphics/javafx/geometry/Insets.html) - (class) Used to describe a set of inside offsets 
+     for the 4 side of a rectangular area. Often used with the setPadding method.
+   
 ## RE: Controls
 
 ## RE: Event Handling
