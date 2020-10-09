@@ -19,7 +19,11 @@
    
 ## RE: Scene Graph
    
-   * 
+   * [javafx.scene](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/package-summary.html) - (package) Provides 
+     the core set of classes for the JavaFX Scene Graph API.
+   * [javafx.scene.Scene](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/Scene.html) - (class) The container for all content in a scene graph.
+   * [javafx.scene.Node](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/Node.html) - (class) Base class for scene graph nodes (e.g., components, etc.).
+   * [javafx.scene.Group](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/Group.html) - (class) Light-weight, non-resizable container used for absolute positioning.
    
 ## RE: Layout Panes
 
