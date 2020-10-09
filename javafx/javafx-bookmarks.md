@@ -39,14 +39,41 @@
    
 ## RE: Controls
 
+   * [javafx.scene.control] - (package)
+   * [javafx.scene.control.Control] - (class) Base class for all user interface controls.
+   * [javafx.scene.control.Button] - (class) A simple button control.
+   * [javafx.scene.control.Label] - (class) Label is a non-editable text control.
+   * [javafx.scene.text.Text] - (class) An editable text node (i.e., a label that can modified programatically).
+   * [javafx.scene.control.TextField] - (class) Text input component.
+   
 ## RE: Event Handling
 
+   * javafx.event - (package) Provides basic framework for FX events, their delivery and handling.
+   * javafx.event.Event - (class) Base class for FX events.
+   * javafx.event.ActionEvent - (class) An Event representing some type of action.
+   * javafx.event.EventHandler<T extends Event> - (interface) Handler for events of a specific class / type.
+  
 ## RE: Menus
+
+   * javafx.scene.control.MenuBar - (class) A MenuBar control traditionally is placed at the very top of the user interface, and embedded within it are Menu objects.
+   * javafx.scene.control.Menu - (class) A popup menu of actionable items which is displayed to the user only upon request.
+   * javafx.scene.control.MenuItem - (class) MenuItem is intended to be used in conjunction with Menu to provide options to users.
 
 ## RE: Images
 
-## RE: Styling and CSS
+   * javafx.scene.image - (package) Provides the set of classes for loading and displaying images.
+   * javafx.scene.image.Image - (class) Represents image data. It does not display the image itself.
+   * javafx.scene.image.ImageView - (class) Represents a Node used to display an image loaded with the Image class.
+   * java.awt.image.BufferedImage - (class) (awt/swing) Describes an image with an accessible buffer of image data.
+   * javafx.embed.swing.SwingFXUtils - (class) Provides utility methods for converting data types between Swing BufferedImage and JavaFX Image formats.
+   * javax.imageio.ImageIO.write - (method) (awt/swing) Can be used to write/save a BufferedImage to a file.
 
+## RE: Styling and CSS
+   
+   * setStyle(String) - (method) Sets CSS style associated with a specific Node.
+   * [JavaFX CSS Reference Guide](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/doc-files/cssref.html)
+   * [Styling UI Controls with CSS](https://docs.oracle.com/javase/8/javafx/user-interface-tutorial/apply-css.htm)
+   
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
