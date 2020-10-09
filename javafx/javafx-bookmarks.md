@@ -39,12 +39,12 @@
    
 ## RE: Controls
 
-   * [javafx.scene.control] - (package)
-   * [javafx.scene.control.Control] - (class) Base class for all user interface controls.
-   * [javafx.scene.control.Button] - (class) A simple button control.
-   * [javafx.scene.control.Label] - (class) Label is a non-editable text control.
-   * [javafx.scene.text.Text] - (class) An editable text node (i.e., a label that can modified programatically).
-   * [javafx.scene.control.TextField] - (class) Text input component.
+   * [javafx.scene.control](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/package-summary.html) - (package)
+   * [javafx.scene.control.Control](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/Control.html) - (class) Base class for all user interface controls.
+   * [javafx.scene.control.Button](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/Button.html) - (class) A simple button control.
+   * [javafx.scene.control.Label](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/Label.html) - (class) Label is a non-editable text control.
+   * [javafx.scene.text.Text](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/text/Text.html) - (class) An editable text node.
+   * [javafx.scene.control.TextField](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/TextField.html) - (class) Text input component.
    
 ## RE: Event Handling
 
@@ -70,7 +70,8 @@
 
 ## RE: Styling and CSS
    
-   * setStyle(String) - (method) Sets CSS style associated with a specific Node.
+   * [setStyle(String)](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/Node.html#setStyle(java.lang.String)) - (method) Sets 
+     CSS style associated with a specific Node.
    * [JavaFX CSS Reference Guide](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/doc-files/cssref.html)
    * [Styling UI Controls with CSS](https://docs.oracle.com/javase/8/javafx/user-interface-tutorial/apply-css.htm)
    
