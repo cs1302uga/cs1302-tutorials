@@ -48,25 +48,29 @@
    
 ## RE: Event Handling
 
-   * javafx.event - (package) Provides basic framework for FX events, their delivery and handling.
-   * javafx.event.Event - (class) Base class for FX events.
-   * javafx.event.ActionEvent - (class) An Event representing some type of action.
-   * javafx.event.EventHandler<T extends Event> - (interface) Handler for events of a specific class / type.
+   * [javafx.event](https://openjfx.io/javadoc/11/javafx.base/javafx/event/package-summary.html) - (package) Provides basic framework for FX events, their delivery and handling.
+   * [javafx.event.Event](https://openjfx.io/javadoc/11/javafx.base/javafx/event/Event.html) - (class) Base class for FX events.
+   * [javafx.event.ActionEvent](https://openjfx.io/javadoc/11/javafx.base/javafx/event/ActionEvent.html) - (class) An Event representing some type of action.
+   * [javafx.event.EventHandler<T extends Event>](https://openjfx.io/javadoc/11/javafx.base/javafx/event/EventHandler.html) - (interface) Handler 
+     for events of a specific class / type.
   
 ## RE: Menus
 
-   * javafx.scene.control.MenuBar - (class) A MenuBar control traditionally is placed at the very top of the user interface, and embedded within it are Menu objects.
-   * javafx.scene.control.Menu - (class) A popup menu of actionable items which is displayed to the user only upon request.
-   * javafx.scene.control.MenuItem - (class) MenuItem is intended to be used in conjunction with Menu to provide options to users.
+   * [javafx.scene.control.MenuBar](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/MenuBar.html) - (class) A MenuBar control 
+     traditionally is placed at the very top of the user interface, and embedded within it are Menu objects.
+   * [javafx.scene.control.Menu](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/Menu.html) - (class) A popup menu of actionable 
+     items which is displayed to the user only upon request.
+   * [javafx.scene.control.MenuItem](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/MenuItem.html) - (class) MenuItem 
+     is intended to be used in conjunction with Menu to provide options to users.
 
 ## RE: Images
 
-   * javafx.scene.image - (package) Provides the set of classes for loading and displaying images.
-   * javafx.scene.image.Image - (class) Represents image data. It does not display the image itself.
-   * javafx.scene.image.ImageView - (class) Represents a Node used to display an image loaded with the Image class.
-   * java.awt.image.BufferedImage - (class) (awt/swing) Describes an image with an accessible buffer of image data.
-   * javafx.embed.swing.SwingFXUtils - (class) Provides utility methods for converting data types between Swing BufferedImage and JavaFX Image formats.
-   * javax.imageio.ImageIO.write - (method) (awt/swing) Can be used to write/save a BufferedImage to a file.
+   * [javafx.scene.image](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/image/package-summary.html) - (package) Provides the 
+     set of classes for loading and displaying images.
+   * [javafx.scene.image.Image](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/image/Image.html) - (class) Represents image 
+     data. It does not display the image itself.
+   * [javafx.scene.image.ImageView](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/image/ImageView.html) - (class) Represents 
+     a Node used to display an image loaded with the Image class.
 
 ## RE: Styling and CSS
    
