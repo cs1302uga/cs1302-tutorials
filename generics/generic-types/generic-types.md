@@ -26,7 +26,7 @@ The steps in this tutorial assume that you are logged into the Odin server.
    $ curl -s -L https://git.io/JecL5 | bash
    ```
 
-1. Change into the `cs1302-generic-classes` directory that was just created and look around. 
+1. Change into the `cs1302-generic-types` directory that was just created and look around. 
    There should be multiple Java files contained within the directory structure. To see a listing 
    of all of the source code files, use the `find` command as follows:
 
