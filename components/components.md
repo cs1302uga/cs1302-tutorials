@@ -1,11 +1,11 @@
 # JavaFX Custom Component Tutorial
 
-![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
+![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
 
 JavaFX is a library for creating and delivering applications with graphical user interfaces (GUIs)
-in Java. In this tutorial, we will use JavaFX 8 as it comes with Java 8. The API documentation for
+in Java. In this tutorial, we will use JavaFX 11. The API documentation for
 the many packages included ith JavaFX can be found 
-[here](https://docs.oracle.com/javase/8/javafx/api/toc.htm).
+[here](https://openjfx.io/javadoc/11/).
 
 ## Course-Specific Learning Outcomes
 * **LO2.a:** Identify redundancy in a set of classes and interfaces, then refactor
@@ -17,11 +17,11 @@ using inheritance and polymorphism to emphasize code reuse.
 1. First, you need to ensure that your terminal emulator supports X-forwarding. This allows
    the GUI parts of your application to be forwarded to your local computer in addition to
    the terminal output. To check this, work through the rest of this section of the
-   tutorial. First, login to Nike using the `ssh` command along with the `-XY` option.
-   As always, be sure to replace `username` with your Nike username.
+   tutorial. First, login to Odin using the `ssh` command along with the `-XY` option.
+   As always, be sure to replace `username` with your Odin username.
    
    ```
-   $ ssh -XY username@nike.cs.uga.edu
+   $ ssh -XY username@odin.cs.uga.edu
    ```
    
    If you encounter problems in this step, then please ensure that you have followed the
@@ -72,9 +72,9 @@ using inheritance and polymorphism to emphasize code reuse.
    </tr>
    </table>
 
-1. The default size for the image in the ImageView container is 500x500. Do a quick google search for
-   "500x500 images" and load one or two of the images to make sure the app is functioning properly. **Note:**
-   the `Image` class only supports the BMP, GIF, JPEG, and PNG filetypes.
+1. The default size for the image in the ImageView container is 500x500 (Even though the image says 300x300). 
+   Do a quick google search for "500x500 images" and load one or two of the images to make sure the app is 
+   functioning properly. **Note:** the `Image` class only supports the BMP, GIF, JPEG, and PNG filetypes.
 
 1. Congratulations on compiling and running a good looking app!
    
@@ -192,6 +192,7 @@ using inheritance and polymorphism to emphasize code reuse.
          this.getChildren().addAll(urlLayer, imgView);
       } // ImageLoader
 	  ```
+	  
    1. If you haven't done so already, remove the code to create the subgraph
       (`HBox`, `ImageView`, `TextField`, and `Button`) from the `start` method 
       of `ImageApp`. All of that code will be run when we create a new `ImageLoader`
