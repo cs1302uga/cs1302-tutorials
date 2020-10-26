@@ -79,7 +79,7 @@ public class ImageApp extends Application {
         scene = new Scene(vbox);
 
         // Set up the stage and set it to be visible
-        stage.setResizable(false);
+        // stage.setResizable(false);
         stage.setScene(scene);
         stage.setTitle("1302 Image Viewer!");
         stage.sizeToScene();
