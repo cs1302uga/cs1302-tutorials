@@ -49,7 +49,9 @@ using inheritance and polymorphism to emphasize code reuse.
    $ find src
    ```
    
-1. Compile and run the provided code without any errors or warnings. If you completed the previous steps 
+1. Compile and run the provided code without any errors or warnings. If you need a reminder of the compile commands, review
+   the relevant parts of the [JavaFX Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/javafx/javafx.md). 
+   We recommend creating a compile script so you don't have to retype these commands. If you completed the previous steps 
    correctly, your app should look similar to the screenshot below. You may also find it helpful to review
    the scene graph for this app (also seen below).
    
