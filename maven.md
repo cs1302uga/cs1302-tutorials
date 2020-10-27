@@ -17,23 +17,22 @@ usually figure out the rest -- even with dependencies!
 
 ## Install Maven on Odin
 
-Maven should already be installed and setup on Odin.
-   
-1. To confirm that Apache Maven is installed correctly, type the following command:
+Maven should already be installed and setup on Odin. To confirm that Apache Maven is installed 
+correctly, type the following command:
 
-   ```
-   $ mvn --version
-   ```
+```
+$ mvn --version
+```
    
-   It should print out your installed version of Maven, for example:
-   
-   ```
-   Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
-   Maven home: /usr/local/mepcott/cs1302/apache-maven
-   Java version: 11.0.8, vendor: Oracle Corporation, runtime: /usr/local/mepcott/jdk/jdk-11.0.8
-   Default locale: en_US, platform encoding: UTF-8
-   OS name: "linux", version: "3.10.0-1160.el7.x86_64", arch: "amd64", family: "unix"
-   ```
+It should print out your installed version of Maven, for example:
+ 
+```
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+Maven home: /usr/local/mepcott/cs1302/apache-maven
+Java version: 11.0.8, vendor: Oracle Corporation, runtime: /usr/local/mepcott/jdk/jdk-11.0.8
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "3.10.0-1160.el7.x86_64", arch: "amd64", family: "unix"
+```
    
 ## Creating a Project
 
@@ -123,23 +122,23 @@ mode later in this tutorial once you are more familiar with the tool.
 By default, the `maven-archetype-quickstart` archetype (version `1.4`) is configured
 to use Java 7 (`1.7`)! We can remedy this by updating the project's `pom.xml` file.
 
-1. Change into the `cs1302-mvn` driectory, then change the values of the
-   `maven.compiler.source` and `maven.compiler.target` to `1.8`. It should look
+1. Change into the `cs1302-mvn` directory, then change the values of the
+   `maven.compiler.source` and `maven.compiler.target` to `11` for Java 11. It should look
    similar to the following:
    
    ```xml
    <properties>
      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-     <maven.compiler.source>1.8</maven.compiler.source>
-     <maven.compiler.target>1.8</maven.compiler.target>
+     <maven.compiler.source>11</maven.compiler.source>
+     <maven.compiler.target>11</maven.compiler.target>
    </properties>
    ```
    
-   That's it! After making that change, your project is now setup to use Java 8.
+   That's it! After making that change, your project is now setup to use Java 11.
 
 1. You can also add / update project dependencies. In the past, you may have done this
    by manually including a JAR file on your class path. With Maven, we can add the 
-   describe the dependency in the POM and Maven will download and add it to the 
+   dependency in the POM and Maven will download the necessary JAR file and add it to the 
    class path for us! For example, the `pom.xml` file in your `cs1302-mvn` project already
    contains the following dependencies:
    
@@ -158,7 +157,34 @@ to use Java 7 (`1.7`)! We can remedy this by updating the project's `pom.xml` fi
    To add more dependecies, you would simply add an additional `<dependency></dependency>` tag
    with appropriate values before the closing `</dependencies>` tag. Many libraries are packages
    for Maven. You can try searching for some on [Maven Central](https://search.maven.org/).
+   
+1. When using Maven with your JavaFX projects, you would need to add the JavaFX 11 dependency to your
+   `pom.xml` file. Adding this dependency to the existing `junit` dependency would look like this:
+   
+   ```xml
+   <dependencies>
+      <dependency>
+         <groupId>junit</groupId>
+         <artifactId>junit</artifactId>
+         <version>4.11</version>
+         <scope>test</scope>
+      </dependency>
+      <dependency>
+         <groupId>org.openjfx</groupId>
+         <artifactId>javafx-controls</artifactId>
+         <version>11</version>
+      </dependency>
+   </dependencies>
+   ```
 
+1. Assuming you added some JavaFX code to the default `App.java` file that was created when you initialized
+   your Maven project, you could run the application using the following command 
+   (described in more detail in the next section):
+   
+   ```
+   mvn exec:java -Dprism.order=sw -Dexec.mainClass="cs1302.mvn.App"
+   ```
+   
 ## Using Maven
 
 If you haven't already done so, change into the `cs1302-mvn` directory that you created earlier
