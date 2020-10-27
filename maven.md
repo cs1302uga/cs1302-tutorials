@@ -176,14 +176,6 @@ to use Java 7 (`1.7`)! We can remedy this by updating the project's `pom.xml` fi
       </dependency>
    </dependencies>
    ```
-
-1. Assuming you added some JavaFX code to the default `App.java` file that was created when you initialized
-   your Maven project, you could run the application using the following command 
-   (described in more detail in the next section):
-   
-   ```
-   mvn exec:java -Dprism.order=sw -Dexec.mainClass="cs1302.mvn.App"
-   ```
    
 ## Using Maven
 
@@ -393,6 +385,13 @@ using Maven.
    runtime, then the `exec:java` phase will automatically ensure that it is on the class path
    when the driver class is executed! This is especially convenient when there are multiple
    such dependencies.
+   
+   If you added some JavaFX code to your application (assume your file is called `App.java`),
+   you could run the application using the following command to add the `-Dprism.order=sw` option:
+   
+   ```
+   mvn exec:java -Dprism.order=sw -Dexec.mainClass="cs1302.mvn.App"
+   ```
    
 ## References
 
