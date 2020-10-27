@@ -1,11 +1,12 @@
 # Maven Tutorial
 
-![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
+![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
 
 ## Maven
 
 This tutorial is designed to help you learn about how to setup and work with Java-based 
-Maven projects. According to its authors, the [Apache Maven](https://maven.apache.org/)
+Maven projects. While shell scripting is useful in a wide variety of situations, Maven is a more
+powerful option for compiling your Java projects. According to its authors, the [Apache Maven](https://maven.apache.org/)
 tool, named after a [Yiddish word](https://en.wikipedia.org/wiki/Maven) meaning 
 _accumulator of knowledge_, is a software project management and comprehension tool. 
 It is one of many "build tools" available for the Java language. A **build tool** is 
@@ -14,25 +15,9 @@ packaging code. So long as your source code adheres to a proper package structur
 (i.e., proper package directory structure and `package` statements), then Maven can
 usually figure out the rest -- even with dependencies!
 
-## Install Maven on Nike
+## Install Maven on Odin
 
-In order to use Apache Maven on Nike, you will need to add it to your executable 
-[`PATH` environmental variable](http://www.linfo.org/path_env_var.html). 
-
-1. To do that, add the following lines to the end of your `~/.bash_profile` file on Nike:
-
-   ```
-   export MAVEN_HOME=/usr/local/maven/apache-maven-3.6.1
-   export PATH=$MAVEN_HOME/bin:$PATH
-   ```
-
-1. After making the change in the previous step, you can either logout / login or 
-   `source` your `~/.bash_profile` for the changes to take effect. If done correctly, these 
-   changes should take effect every time you login to Nike. 
-   
-   ```
-   $ source ~/.bash_profile
-   ```
+Maven should already be installed and setup on Odin.
    
 1. To confirm that Apache Maven is installed correctly, type the following command:
 
@@ -43,11 +28,11 @@ In order to use Apache Maven on Nike, you will need to add it to your executable
    It should print out your installed version of Maven, for example:
    
    ```
-   Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-04T15:00:29-04:00)
-   Maven home: /usr/local/maven/apache-maven-3.6.1
-   Java version: 1.8.0_192, vendor: Oracle Corporation, runtime: /usr/local/alt-java/jdk1.8.0_192/jre
+   Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+   Maven home: /usr/local/mepcott/cs1302/apache-maven
+   Java version: 11.0.8, vendor: Oracle Corporation, runtime: /usr/local/mepcott/jdk/jdk-11.0.8
    Default locale: en_US, platform encoding: UTF-8
-   OS name: "linux", version: "2.6.32-754.11.1.el6.x86_64", arch: "amd64", family: "unix"
+   OS name: "linux", version: "3.10.0-1160.el7.x86_64", arch: "amd64", family: "unix"
    ```
    
 ## Creating a Project
@@ -319,7 +304,7 @@ using Maven.
    
 1. Try using the `site` phase. The output will show you where the files
    for the website are created. You can copy or symlink these to a location
-   under your `~/public_html` directory to host the site on Nike just as
+   under your `~/public_html` directory to host the site on Odin just as
    you did for API documentation websites created using the Javadoc tool
    in the past.
    
