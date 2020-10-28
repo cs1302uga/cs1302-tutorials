@@ -146,6 +146,154 @@ steps when trying to implement functional interfaces using lambda expressions:
    ```
    That's a valid lambda expression!
 
+## Another Example (Copied from Mike's Fall 2020 Piazza Post)
+
+<hr>
+
+### Implement using a Regular Class
+
+##### 1. Override the Method in a New Class
+
+Assuming you have a non-empty `GenList<String>`, you might write the following class (in its own `.java` file) that implements `Comparator<String>` (adding a package statement, imports, and javadoc comments, as needed):
+```java
+public class StringComparator implements Comparator<String> {
+
+    @Override
+    public int compare(String s1, String s2) {
+        return s1.compareTo(s2);
+    } // compare
+
+} // StringComparator
+```
+
+##### 2. Create the Object 
+
+Once you have that, try the following:
+```java
+Comparator<String> cmp = new StringComparator();
+```
+
+##### 3. Use the Object
+
+Assuming you `GenList<String>` variable is called `sl` (inferred from your post), you can call the `min(Comparator<String>)` method:
+```java
+String min = sl.min(cmp);
+```
+
+##### 4. What it Does
+
+As described earlier, the `min` method, internally, will call `c.compare(String, String)` as loops over the elements of the list. In this particular case, it will be the `compare(String, String)` in the **object created by `new StringComparator()`**, which is now referred to by `cmp`.
+
+<hr>
+
+### Implement using a Lambda Expression
+
+Instead of creating the object using `new StringComparator()`, let's use a lambda expression. The lambda expression is just a short way for you to create the object, just like what we did above, by focussing only on the method definition. Until you're more comfortable, I usually recommend the following approach:
+
+##### 1. Write the Method In-Place
+
+Replace the object instantiation (i.e., `new StringComparator()`) with the method we wrote in the `StringComparator` class. **This won't compile,** but it's a good way to get started. Don't forget the semicolon at the end in the following example, since we're only replacing `new StringComparator()`.
+```java
+Comparator<String> cmp = public int compare(String s1, String s2) {
+    return s1.compareTo(s2);
+};
+```
+
+##### 2. Create the Object using a Lambda Expression
+
+To change this into a lambda, add an arrow between the parameter list and body, then remove the following (if present): visibility modifier, return type, and method name. Java can figure those things out the same way that we figured them out when we wrote the `StringComparator` class... Java figures it out because we're assigning it to a `Comparator<String>` and that information is described by the abstract method in that interface. **The following result is a valid lambda and should be directly usable.** We'll make it shorter later.
+```java
+Comparator<String> cmp = (String s1, String s2) -> {
+    return s1.compareTo(s2);
+};
+```
+
+Notice that we didn't provide any argument values; i.e., we're not calling the method being described. That happens later when the created object is used. **To be clear, the lambda expression is doing the same thing as parts (1) and (2) in the first example (Implement using a Regular Class).**
+
+##### 3. Use the Object
+
+Assuming you `GenList<String>` variable is called `sl` (inferred from your post), you can call the `min(Comparator<String>)` method:
+```java
+String min = sl.min(cmp);
+```
+
+##### 4. What it Does
+
+As described earlier, the `min` method, internally, will call `c.compare(String, String)` as loops over the elements of the list. In this particular case, it will be the `compare(String, String)` in the **object created by the lambda expression**, which is now referred to by `cmp`.
+
+##### 5. Making the Lambda Shorter
+
+* Java can figure out the method parameter types based on the signature of the abstract method in the target interface (just like it can figure out the return type). Therefore, the following is also an assignment statement involving a valid lambda expression:
+```java
+Comparator<String> cmp = (s1, s2) -> {
+    return s1.compareTo(s2);
+};
+```
+* If the body of the lambda contains only a single statement, then the curly braces can be omitted and the statement can be place immediately after the arrow (removing the `return` keyword, if present). If the method that the lambda represents (in this case, the `compare` metho) is supposed to return a value (in this case, an `int` value), then Java will use the evaluation of the single statement after the arrow as the return value when the method is later called on the resulting object (i.e., later, when `cmp.compare(String, String)` is called). Therefore, the following is also an assignment statement involving a valid lambda expression:
+```java
+Comparator<String> cmp = (s1, s2) -> s1.compareTo(s2);
+```
+
+<hr>
+
+### Implement using a Method Reference
+
+At the end of the lambda expression example, we had a short lambda expression that simply calls another method (i.e., `s1.compareTo(s2)`) in its body. To get to the point, there is already another method that does what we want. Instead of writing a lambda expression that calls this method, let's refer to it using a method reference so that Java makes the lambda expression for us. 
+
+##### 1. Determine the Type Layout
+
+Since we're going to assign the method reference to a variable of type `Comparator<String>`, we need to understand the type layout of its abstract method. The signature for `compare` (omitting variables names) is:
+```java
+int compare(String, String)
+```
+This can be rewritten in a pseudo-lambda form that I call a (type) layout:
+```java
+(String, String) -> int
+```
+
+##### 2. Create the Object using a Method Reference 
+
+Our goal is to refer to the `compareTo` method in the `String` class. Since that method is not a constructor or a static method, any call to this particular `compareTo` method will require a `String` object to call the method on (i.e., we need something like a `String s` so that we can call `s.compareTo(String)`). We can refer to this **instance method** two difference ways:
+
+1. **Provide a `String` reference ourself.** Suppose we have a single `String s` and we want to create a `Comparator<String>` that always uses that single `String` and some arbitrary `String`. In this case, the following method reference can be used: `s::compareTo`. However, the layout for this method reference is `(String) -> int` since only one string is arbitrary. It's a valid method reference, but it's not compatible with `Comparator<String>`, which has the layout of `(String, String) -> int`. This is probably more clear when you consider the equivalent lambda expression: `(str) -> s.compareTo(s, str)`. Also, what is the `s` we assumed we had? Who knows; it doesn't apply in this situation. By the way, this kind of method reference was called a "[r]eference to an instance method of a particular object" in the reading. To summarize:
+```java
+// (String, String) -> int
+Comparator<String> cmp = s::compareTo; // won't work; incompatible
+//                          (String) -> int
+```
+
+2. **Let Java automatically add a `String` parameter to provide a `String` reference.** To do this, we use the class name as the context for the method reference (i.e., the part before the `::`). The resulting method reference is `String::compareTo`. At first glance, this may look closer to a static call, but remember: i) a method reference doesn't call the method, it just refers to it; and ii) Java can tell the method is not static. As mentioned earlier, this `compareTo` method will require a `String` object to call the method on when it's used later. We didn't provide one when writing the method reference, so Java will add one for us! This is probably more clear when you consider the equivalent lambda expression: `(str1, str2) -> s.compareTo(str1, str2)`. The layout for this method reference is `(String, String) -> int` (the same as it's equivalent lambda expression). This is compatible! It will work! By the way, this kind of method reference was called a "[r]eference to an instance method of an arbitrary object of a particular type" in the reading. To summarize:
+```java
+// (String, String) -> int
+Comparator<String> cmp = String::compareTo; // will work; compatible
+//                          (String, String) -> int
+```
+
+Now that we know which kind of method reference to use, let's create the object using it:
+
+```java
+Comparator<String> cmp = String::compareTo;
+```
+
+Notice again that we didn't provide any argument values; i.e., we're not calling the method being described. That happens later when the created object is used. **To be clear, the method reference is doing the same thing as parts (1) and (2) in the first example (Implement using a Regular Class).** 
+
+> Where are the method parameters? 
+
+They're over in the `String` class where the method we're referring to is defined.
+
+##### 3. Use the Object
+
+Assuming you `GenList<String>` variable is called `sl` (inferred from your post), you can call the `min(Comparator<String>)` method:
+```java
+String min = sl.min(cmp);
+```
+
+##### 4. What it Does
+
+As described earlier, the `min` method, internally, will call `c.compare(String, String)` as loops over the elements of the list. In this particular case, it will be the `compare(String, String)` in the **object created by the method reference**, which is now referred to by `cmp`.
+
+<hr>
+
 ## Layout of a Lambda
 
 ## Method References
