@@ -1,6 +1,6 @@
 # CSCI 1302 Recursion Tutorial
 
-![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
+![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
 
 ## Introduction
 
@@ -91,7 +91,7 @@ path.
    * The biggest difference is that an infinite recursion is guaranteed to cause a
      stack overflow error.
 
-Let's try some code!  Compile and run the following on `nike`:
+Let's try some code!  Compile and run the following on Odin:
 
    ```java
    public class InfRecursion {
