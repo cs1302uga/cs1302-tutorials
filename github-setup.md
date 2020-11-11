@@ -1,6 +1,6 @@
 # Setting up your own GitHub Account
 
-![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
+![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
 
 In this tutorial, we will walk you through creating your own GitHub account, creating a private repository 
 (so your code won't be publicly visible on the web), and cloning and pushing content to your private, 
@@ -14,7 +14,7 @@ As students, you receive **free access** to [GitHub Pro](https://github.com/pric
 To set up your account:
 
 1. [Click Here](https://education.github.com/pack/join)
-1. Click on "Yes, I'm a Student"
+1. Click on "Get your Pack".
 1. Fill out the form and submit for review
 1. Wait on email confirmation from GitHub. Hopefully, this will take less than a day.
 
