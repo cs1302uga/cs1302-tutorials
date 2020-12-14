@@ -79,7 +79,7 @@
    * [JavaFX CSS Reference Guide](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/doc-files/cssref.html)
    * [Styling UI Controls with CSS](https://docs.oracle.com/javase/8/javafx/user-interface-tutorial/apply-css.htm)
    
-#### How to include a CSS file
+### Including a CSS file
 
 Let's assume you have a CSS file located at `resources/theme-uga.css` where `resources` is in your top-level project
 directory -- for a Maven-based project, this means that `resources` is directly inside the same directory as the 
