@@ -107,8 +107,8 @@ Rectangle {
 }
 ```
 
-**NOTE:** The base stylesheet that JavaFX automatically loads is called `modena.css`, and
-it's contents can be seen
+**NOTE:** The base stylesheet that JavaFX automatically loads is called `modena.css`;
+you can view it's contents 
 [here](https://github.com/openjdk/jfx/blob/22d4343fe8563c2931910b98e8f18c6fd4a48f05/modules/javafx.controls/src/main/resources/com/sun/javafx/scene/control/skin/modena/modena.css).
 
 ## RE: Timelines
