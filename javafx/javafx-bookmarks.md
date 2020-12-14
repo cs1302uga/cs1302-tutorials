@@ -106,6 +106,47 @@ Rectangle {
     -fx-fill: -uga-lake-herrick;
 }
 ```
+
+## RE: Timelines
+
+   * [`Timeline`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/animation/Timeline.html) 
+   * [`KeyFrame`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/animation/KeyFrame.html) 
+
+### Brief Timeline Explanation
+
+A `Timeline` object can be used to execute blocks of code sequentially at specific times and, 
+if configured to do so, repeat the execution of that sequence one or more times (or indefinitely). 
+It has [three states](https://openjfx.io/javadoc/11/javafx.graphics/javafx/animation/Animation.Status.html):
+`RUNNING`, `PAUSED`, and `STOPPED`; and it also has a list of `KeyFrame` objects, each of which has
+an associated *duration* specified by its `time` property. 
+
+When a `Timeline` object is running (e.g., after calling its `play()` method), it generates
+`ActionEvent` objects for each `KeyFrame`; the generation of these events triggers the sequential 
+execution of any associated event handlers on the JavaFX Application Thread (JFXAT).
+
+A `KeyFrame` may have a user-defined event handler or a *key value* (or both). 
+It's common to see code in the wild that changes the value of a 
+[JavaFX property](https://openjfx.io/javadoc/11/javafx.base/javafx/beans/property/package-summary.html)
+object based on the key values associated with key frames in a `Timeline`.
+
+### Timeline Example
+
+Here is an example that prints the current time (using 
+[`LocalTime`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html)) to 
+standard output every two (2) seconds (specified using
+[`Duration`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html), 
+indefinitely:
+
+```java
+EventHandler<ActionEvent> handler = event -> System.out.println(LocalTime.now());
+KeyFrame keyFrame = new KeyFrame(Duration.seconds(2), handler);
+Timeline timeline = new Timeline();
+timeline.setCycleCount(Timeline.INDEFINITE);
+timeline.getKeyFrames().add(keyFrame);
+timeline.play(); // 
+```
+The `Timeline` object also hase a `pause` method to pause the execution of the timeline.
+Remember, JavaFX event handlers are executed on the JavaFX Application Thread (JFXAT).
    
 <hr/>
 
