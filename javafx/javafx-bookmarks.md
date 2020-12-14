@@ -118,7 +118,7 @@ you can view it's contents
 
 ### Brief Timeline Explanation
 
-A `Timeline` object can be used to execute blocks of code sequentially at specific times and, 
+A `Timeline` object can be used to execute blocks of code or change values (or both) sequentially at specific times and, 
 if configured to do so, repeat the execution of that sequence one or more times (or indefinitely). 
 It has [three states](https://openjfx.io/javadoc/11/javafx.graphics/javafx/animation/Animation.Status.html):
 `RUNNING`, `PAUSED`, and `STOPPED`; and it also has a list of `KeyFrame` objects, each of which has
