@@ -143,7 +143,7 @@ KeyFrame keyFrame = new KeyFrame(Duration.seconds(2), handler);
 Timeline timeline = new Timeline();
 timeline.setCycleCount(Timeline.INDEFINITE);
 timeline.getKeyFrames().add(keyFrame);
-timeline.play(); // 
+timeline.play(); // change to RUNNING
 ```
 The `Timeline` object also hase a `pause` method to pause the execution of the timeline.
 Remember, JavaFX event handlers are executed on the JavaFX Application Thread (JFXAT).
