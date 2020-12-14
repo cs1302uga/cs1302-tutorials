@@ -79,6 +79,34 @@
    * [JavaFX CSS Reference Guide](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/doc-files/cssref.html)
    * [Styling UI Controls with CSS](https://docs.oracle.com/javase/8/javafx/user-interface-tutorial/apply-css.htm)
    
+#### How to include a CSS file
+
+Let's assume you have a CSS file located at `resources/theme-uga.css` where `resources` is in your top-level project
+directory -- for a Maven-based project, this means that `resources` is directly inside the same directory as the 
+project's `pom.xml` file. Under that assumption, you can add `theme-uga.css` to a scene using the following:
+
+```java
+scene.getStylesheets().add("file:resources/theme-uga.css");
+```
+
+The next example shows what `theme-uga.css` might look like. It declares some reusable color variables in the `.root`
+declaration, then it declares that all rendered `Rectangle` objects should have their fill color set to 
+[Lake Herrick blue](https://brand.uga.edu/visual-style/#color).
+
+```
+.root {
+    -uga-arch-black: #000000;
+    -uga-bulldog-red: #ba0c2f;
+    -uga-chapel-bell-white: #ffffff;
+    -uga-glory-glory: #e4002b;
+    -uga-lake-herrick: #00a3ad;
+}
+
+Rectangle {
+    -fx-fill: -uga-lake-herrick;
+}
+```
+   
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
