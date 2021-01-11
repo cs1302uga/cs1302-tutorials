@@ -232,13 +232,13 @@ Let's try it by placing the `HelloWorld` class into the `cs1302.hello` package!
    The compiler automatically created the necessary package directories for our compiled code under `bin`!
       
 5. Try to run the program using `javac` specify the classpath using `-cp` and include the
-   fully qualified name of the class containing the `main` method:
+   fully qualified name (explained below) of the class containing the `main` method:
    
    ```
    $ java -cp bin cs1302.hello.HelloWorld
    ```
       
-   In this example, `cs1302.hello.HelloWorld` is known as the **fully qualified name** of the
+   <a id="fqn"/>In this example, `cs1302.hello.HelloWorld` is known as the **fully qualified name** of the
    `HelloWorld` class in the `cs1302.hello` package. You have seen fully qualified names before--they
    are often used with `import` statements (remember `java.util.Scanner`?). When you import a class, you
    can use the simple class name in that file instead of having to type the fully qualified name each time.
