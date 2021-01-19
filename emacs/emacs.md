@@ -29,6 +29,15 @@ code (and any other text documents) without having to leave our terminal environ
 to use other text editors that are available in the Unix environment, we will focus on Emacs in this course.
 If you're interested in learning more about Emacs, check out the [Wikipedia Page](https://en.wikipedia.org/wiki/Emacs).
 
+**Why do we use Emacs in CSCI 1302?** Here is Dr. Cotterell's usual response to that question:
+
+> Emacs works in the terminal, therefore working with it will build and strengthen your skills in a 
+> Unix-like environment; With respect to Java, it allows you to focus on really learning the syntax
+> of the language, which means you won't have to rely on the editor to write a program (e.g., we want
+> to avoid, "I can only write Java in editor X"). Furthermore, if you go back to using a more advanced
+> editor, then you'll be able to make informed decisions regarding suggestions the editor provides 
+> instead of accepting them as, "must do."
+
 In this tutorial, we will teach you the basics of the Emacs text editor.
 
 ## Control and Meta
