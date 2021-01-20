@@ -181,8 +181,9 @@ Let's try it!
    ```
    
    The output of the `find` command shows that we sucessfully separated the source code (`src`) from 
-   the compiled code (`bin`).
-   
+   the compiled code (`bin`). If you see any tilda (~) files, those are just backup copies of older versions 
+   of your files. You can ignore those.
+
    **PROTIP:** Remember, source code should really only be placed directly in the default 
    package directory (`src`) for convenience when developing small or temporary applications or when 
    just beginning development [[2]](https://docs.oracle.com/javase/specs/jls/se8/html/jls-7.html).
@@ -273,6 +274,9 @@ to let `javac` know where the _compiled_ version of that depedency is.
 1. Save, then compile the `.java` file for the `cs1302.util.HelloUtility` class as usual, 
    using `bin` as the destination for the compiled code. Once it compiles, make sure that the 
    output from `find` matches the output below:
+   
+   **Note:**  If you see any tilda (~) files, those are just backup copies of older versions 
+   of your files. You can ignore those.
    
    ```
    .
