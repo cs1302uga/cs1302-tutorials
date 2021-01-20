@@ -173,7 +173,7 @@ delete words.
 
 | Binding   | Action                                                                 |
 |-----------|------------------------------------------------------------------------|
-| `C-h`     | Backward delete a single character (similar to the backspace key)      |
+| `<DEL>`   | Backward delete a single character (here `<DEL>` refers to the backspace key) |
 | `C-d`     | Forward delete a single character (similar to the delete key)          |
 | `M-d`     | Forward delete a word                                                  |
 
