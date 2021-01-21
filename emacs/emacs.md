@@ -78,8 +78,8 @@ result in `C-x C-f`:
 reached by launching Emacs using the `emacs` command, then following the instructions
 on the Emacs welcome screen. With some terminal emulators, the shortcut used to 
 start the tutorial is `C-h t` (i.e., type `C-h`, then release `CTRL` and type `t`),
-while it may be `<f1> t` (i.e., press `<f1>`, then release `<f1>` and type `t`). 
-The key combination that you need for the shortcut should appear next to
+while it may be `<f1> t` (i.e., press `<f1>`, then release `<f1>` and type `t`)
+for others. The key combination that you need for the shortcut should appear next to
 "Emacs tutorial" on the welcome screen.
 
 ## Open / Create File
