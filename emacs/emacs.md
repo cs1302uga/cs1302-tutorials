@@ -75,8 +75,12 @@ result in `C-x C-f`:
 ## Built-in Emacs Tutorial
 
 **Learn by doing.** Emacs comes with a built-in, interactive turorial. It can be 
-reached by launching Emacs using the `emacs` command, then typing `C-h t`. 
-That is, type `C-h`, then release `CTRL` and type `t`.
+reached by launching Emacs using the `emacs` command, then following the instructions
+on the Emacs welcome screen. With some terminal emulators, the shortcut used to 
+start the tutorial is `C-h t` (i.e., type `C-h`, then release `CTRL` and type `t`),
+while it may be `<f1> t` (i.e., press `<f1>`, then release `<f1>` and type `t`). 
+The key combination that you need for the shortcut should appear next to
+"Emacs tutorial" on the welcome screen.
 
 ## Open / Create File
 
