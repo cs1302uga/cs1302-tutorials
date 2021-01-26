@@ -24,7 +24,7 @@ programs take in command-line arguments as well. Let's try it!
 
    ```java
    public static void main(String [] args) {
-       System.out.println("arguments:")
+       System.out.println("arguments:");
        for (int i = 0; i < args.length; i++) {
            String arg = args[i];
            System.out.printf("arg%d = %s\n", i, arg);
