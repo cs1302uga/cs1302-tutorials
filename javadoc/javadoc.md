@@ -123,7 +123,7 @@ this tutorial.
    $ ln -s $(pwd)/doc ~/public_html/cs1302-javadoc-doc
    ```
    
-   **Note:** The `ln` command requires the **abolute path** to our link's target (in this case, `doc`). 
+   **Note:** The `ln` command requires the **absolute path** to our link's target (in this case, `doc`). 
    Since our intended target is in the current directory, we know that its absolute path
    is the same as the absolute path of the current directory followed by `/` followed by
    the name of our target. We could manually figure out the desired path with the help of `pwd` 
