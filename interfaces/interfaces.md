@@ -109,7 +109,10 @@ Javadoc comments in the interface.
 
 1. Generate, host, and view the API documentation website for the starter code provided with this tutorial.
    Find the `Styleable` interface on the website and compare the documentation provided there with what
-   you see in the Javadoc comments included in `Styleable.java`. 
+   you see in the Javadoc comments included in `Styleable.java`. If you don't remember how to do this,
+   then please refer back to your notes for the 
+   [Javadoc and API Documentation](https://github.com/cs1302uga/cs1302-tutorials/blob/master/javadoc/javadoc.md)
+   tutorial.
 
 ### Implementing an Interface
 
