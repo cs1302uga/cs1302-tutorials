@@ -53,8 +53,14 @@ Consider the output to the following command:
 $ stat newfile
 ```
    
-Observe the four digit number listed near the symbolic mode, listed by "Access". It is likely
-`0644`. Each bit in the binary representation of this number represents a permission bit in the mode.
+Observe the four digit number listed near the symbolic mode, listed by the first line containing
+"Access". It is likely `0644`. The line you you are looking for will look like this:
+
+```
+Access: (0644/-rw-r--r--)  Uid: (1575035314/  bjb211)   Gid: (1575000513/    myid)
+``
+
+Each bit in the binary representation of this number represents a permission bit in the mode.
 Technically, there are twelve permission bits, however, we only cover the first nine as they are
 the most commonly used. For `0644`, the first nine bits, starting from the right, would leave us 
 with the number `644` with a binary representation of `110100100`. 
