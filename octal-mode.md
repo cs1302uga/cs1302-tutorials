@@ -58,7 +58,7 @@ Observe the four digit number listed near the symbolic mode, listed by the first
 
 ```
 Access: (0644/-rw-r--r--)  Uid: (1575035314/  bjb211)   Gid: (1575000513/    myid)
-``
+```
 
 Each bit in the binary representation of this number represents a permission bit in the mode.
 Technically, there are twelve permission bits, however, we only cover the first nine as they are
