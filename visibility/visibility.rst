@@ -1,14 +1,20 @@
 .. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet
    :alt: Approved for: Spring 2021
    
-.. license information
-
+.. copyright and license information
+.. |copy| unicode:: U+000A9 .. COPYRIGHT SIGN
+.. |copyright| replace:: Copyright |copy| Michael E. Cotterell, Bradley J. Barnes, and the University of Georgia.
 .. |license| replace:: CC BY-NC-ND 4.0
 .. _license: http://creativecommons.org/licenses/by-nc-nd/4.0/
 .. |license_image| image:: https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg
-   
-.. external links
+ 
+.. standard footer
+.. footer:: |copyright| This work is licensed under a |license|_ license to students 
+   and the public. The content and opinions expressed on this Web page do not necessarily 
+   reflect the views of nor are they endorsed by the University of Georgia or the University 
+   System of Georgia.
 
+.. external links
 .. |uml_tutorial| replace:: UML Class Diagrams
 .. _uml_tutorial: https://github.com/cs1302uga/cs1302-tutorials/blob/master/uml/uml.md
 
@@ -396,10 +402,3 @@ one of the other visibilities.
 You should carefully consider the different scenarios described in this reading
 and try to reproduce them in an actual Java programming environment to see what
 the Java compiler will and will not let you do. 
-
-.. footer:: 
-
-   Copyright &copy; Michael E. Cotterell, Bradley J. Barnes, and the University of Georgia.
-   This work is licensed under a |license|_ license to students and the public. The content 
-   and opinions expressed on this Web page do not necessarily reflect the views of nor are 
-   they endorsed by the University of Georgia or the University System of Georgia.
