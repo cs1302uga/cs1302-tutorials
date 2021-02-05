@@ -74,8 +74,10 @@ Private Visibility
 
 TODO
 
-.. image:: private_1.svg
-   :alt: UML class diagram of ``Person.java``
+.. |image_private_1| image:: private_1.svg
+                     :alt: UML class diagram of ``Person.java``
+                     
+|image_private_1|
 
 Package Private Visibility
 **************************
