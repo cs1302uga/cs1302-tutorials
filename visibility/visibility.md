@@ -15,16 +15,19 @@ with modifier keywords:
 | protected       | `protected`      | `#`        |
 | public          | `public`         | `+`        |
 
-Depending on where a declaration occurs, omitting a visibility modifier
-keyword means something different. 
+Based on the table above, _package private_ visibility does not have its
+own modifier; however, that does not always mean that the omission
+of a visibility modifier denotes always means _package private_ visibility.
+Instead, it merely means that you will never write `package private` 
+(or something similar) to indicate that something has that visibility. 
 
-* In an an interface, the omission of a visibility modifier keyword 
-  implies the method has public visibility.
+* Inside an an interface, all abstract and static methods are implicitly public;
+  that is, if you omit the `public` modifier, then it will still be public.
   
-* In a class, the omission of a visibility modifier keyword implies 
-  the method or instance variable has _package private_ visibility.
-  All other visibilities are allowed, however, they must be explicitly
-  set using a visibility modifier keyword.
+* Inside a class, anything that does not include a visibility modifier
+  is package private. All four visibilities are allowed; however, if want 
+  something in a class to not be package private, then you must explicitly
+  include a visibility modifier.
 
 ## Why Visibilities?
 
