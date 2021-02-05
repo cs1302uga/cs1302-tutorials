@@ -77,11 +77,14 @@ TODO
 .. |image_private_1| image:: private_1.svg
                      :alt: UML class diagram of ``Person.java``
 
-+-------------------+------------+-----------+
-| UML Diagram       | Header 2   | Header 3  |
-+===================+============+===========+
-| |image_private_1| | column 2   | column 3  |
-+-------------------+------------+-----------+
++-------------------+---------------------------+
+| UML Diagram       | Code Snippets             |
++===================+===========================+
+| |image_private_1| | .. code-block:: java      |
+|                   |                           |
+|                   |    public Person() {      |
+|                   |                           |
++-------------------+---------------------------+
 
 Package Private Visibility
 **************************
