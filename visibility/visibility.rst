@@ -2,13 +2,13 @@
    :alt: Approved for: Spring 2021
    
 .. license information
+
 .. |license| replace:: CC BY-NC-ND 4.0
 .. _license: http://creativecommons.org/licenses/by-nc-nd/4.0/
 .. |license_image| image:: https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg
-                   :alt: License: CC BY-NC-ND 4.0
-                   :target: _license
    
 .. external links
+
 .. |uml_tutorial| replace:: UML Class Diagrams
 .. _uml_tutorial: https://github.com/cs1302uga/cs1302-tutorials/blob/master/uml/uml.md
 
@@ -398,10 +398,6 @@ and try to reproduce them in an actual Java programming environment to see what
 the Java compiler will and will not let you do. 
 
 .. footer:: 
-
-   |license_image|
-
-   ----
 
    Copyright &copy; Michael E. Cotterell, Bradley J. Barnes, and the University of Georgia.
    This work is licensed under a |license|_ license to students and the public. The content 
