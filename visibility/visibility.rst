@@ -1,15 +1,14 @@
 .. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet
    :alt: Approved for: Spring 2021
    
-.. header:: |approval_notice|
-
 .. external links
 .. |uml_tutorial| replace:: UML Class Diagrams
 .. _uml_tutorial: https://github.com/cs1302uga/cs1302-tutorials/blob/master/uml/uml.md
 
-
 Visibility Reading
 ##################
+   
+|approval_notice|
 
 Introduction
 ************
