@@ -20,12 +20,14 @@ The table below shows all four visibility options that are available in Java,
 three of which have an associated **visibility modifier** that we can
 type into our code:
 
-| Visibility Name | Modifier Keyword | UML Symbol |
-|-----------------|------------------|------------|
-| private         | `private`        | `-`        |
-| package private |                  | `~`        |
-| protected       | `protected`      | `#`        |
-| public          | `public`         | `+`        |
+===============  ================  ==========
+Visibility Name  Modifier Keyword  UML Symbol
+===============  ================  ==========
+private          ``private``       ``-``   
+package private  ..                ``~``
+protected        ``protected``     ``#``
+public           ``public``        ``+``
+===============  ================  ==========
 
 In this tutorial, we cover each available visibility option with a few examples, 
 often illustrated using a combination of [UML diagrams](/uml/uml.md) and code 
