@@ -17,9 +17,9 @@ with modifier keywords:
 
 Based on the table above, _package private_ visibility does not have its
 own modifier; however, that does not always mean that the omission
-of a visibility modifier denotes always means _package private_ visibility.
+of a visibility modifier cause something to be package private.
 Instead, it merely means that you will never write `package private` 
-(or something similar) to indicate that something has that visibility. 
+(or anything really) to indicate that something has that visibility. 
 
 * Inside an an interface, all abstract and static methods are implicitly public;
   that is, if you omit the `public` modifier, then it will still be public.
