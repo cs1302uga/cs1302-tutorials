@@ -1,3 +1,6 @@
+.. |uml_tutorial| replace:: UML Class Diagrams
+.. _uml_tutorial: https://github.com/cs1302uga/cs1302-tutorials/blob/master/uml/uml.md
+
 Visibility Reading
 ------------------
 
@@ -30,7 +33,7 @@ public           ``public``        ``+``
 ===============  ================  ==========
 
 In this tutorial, we cover each available visibility option with a few examples, 
-often illustrated using a combination of [UML diagrams](/uml/uml.md) and code 
+often illustrated using a combination of :ref:`UML diagrams <uml_tutorial>` and code 
 snippets. The order in which the visibilities is covered is deliberate, starting
 with visibility that makes something visible from the least number of places
 and ending with the visibility that makes something visible from all places.
