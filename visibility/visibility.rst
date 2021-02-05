@@ -34,10 +34,22 @@ public           ``public``        ``+``
 
 In this tutorial, we cover each available visibility option with a few examples, 
 often illustrated using a combination of `UML diagrams <uml_tutorial>`__ and code 
-snippets. The order in which the visibilities is covered is deliberate, starting
-with visibility that makes something visible from the least number of places
-and ending with the visibility that makes something visible from all places.
-The two visibilities in the middle are somewhere between.
+snippets. The order in which the visibilities are covered is deliberate; we start
+with the option that makes something visible from the least number of locations,
+then work through the rest in the order of increasing visibility. 
+
+While you are likely already familiar private and public visibility, please do not 
+assume that you already understand how it works. Over the years, we have
+found that many students have a somewhat flawed conceptual model for how
+private visibility works that is actually more complicated that what it
+actually is. Regardless of your experiece, you should work through each 
+visibility example in this tutorial until you are able to:
+
+1. correctly determine the visibility outcome and justification; and
+2. write your own code that illustrates a similar visibility scenario.
+
+We encourage you to make Piazza posts about your examples, ask questions,
+and help others to understand the important details of visibility. 
 
 ## Private Visibility
 
