@@ -9,7 +9,9 @@
 .. |license_image| image:: https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg
  
 .. standard footer
-.. footer:: |copyright| This work is licensed under a |license|_ license to students 
+.. footer:: |license_image|
+
+   |copyright| This work is licensed under a |license|_ license to students 
    and the public. The content and opinions expressed on this Web page do not necessarily 
    reflect the views of nor are they endorsed by the University of Georgia or the University 
    System of Georgia.
