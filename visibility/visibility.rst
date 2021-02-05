@@ -1,13 +1,18 @@
+.. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet
+   :alt: Approved for: Spring 2021
+   
+.. header:: |approval_notice|
+
+.. external links
 .. |uml_tutorial| replace:: UML Class Diagrams
 .. _uml_tutorial: https://github.com/cs1302uga/cs1302-tutorials/blob/master/uml/uml.md
 
-Visibility Reading
-------------------
 
-.. image:: https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet
+Visibility Reading
+##################
 
 Introduction
-++++++++++++
+************
 
 Java has four different **visibility** options that can be used in the 
 declaration of class members (i.e., methods, variables, and constants). 
@@ -51,23 +56,31 @@ visibility example in this tutorial until you are able to:
 We encourage you to make Piazza posts about your examples, ask questions,
 and help others to understand the important details of visibility. 
 
-## Private Visibility
+Private Visibility
+******************
 
 TODO
 
-## Package Private Visibility
+.. image:: private_1.svg
+   :alt: UML class diagram of ``Person.java``
+
+Package Private Visibility
+**************************
 
 TODO
 
-## Protected Visibility
+Protected Visibility
+********************
 
 TODO
 
-## Public Visibility
+Public Visibility
+*****************
 
 TODO
 
-## Scenario Summaries
+Summary of Visibilities
+***********************
 
 In the table below, we summarize all of the different visibility scenarios 
 that are possible for a single member of a class (e.g., a variable, constant,
@@ -92,7 +105,9 @@ Here is another table with the exact same information.
 | 3 | package private | ✓          | ✓            |             |           |
 | 4 | private         | ✓          |              |             |           |
 
-## Important Notes (Do Not Skip)
+
+Important Notes (Do Not Skip)
+*****************************
 
 
 ## Private Visibility
