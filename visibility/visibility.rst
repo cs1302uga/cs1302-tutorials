@@ -13,15 +13,21 @@ Visibility Reading
 Introduction
 ************
 
-Java has four different **visibility** options that can be used in the 
-declaration of class members (i.e., methods, variables, and constants). 
-When you indicate that something has a particular **visibility** in your code,
-whether it's by using a **visibility modifer** or by omitting one, you are  
-communicating to the compiler what other portions of the code base are allowed
-to access that thing. Here, "access" simply means "use from elsewhere in the code."
-Since this **access control** is described by visibility, we use 
-"visible from" in this tutorial to mean that something "can be accessed from" 
-or "can be used from" based on its visibility. 
+.. |jls11_access_control| replace:: JLS 11 Section 6.6
+.. _jls11_access_control: https://docs.oracle.com/javase/specs/jls/se11/html/jls-6.html#jls-6.6
+
+Java has four different **visibility** options for **access control** 
+that can be used in the declaration of class members (i.e., methods, variables, and constants). 
+When you indicate that a class member has a particular **visibility** in your code,
+you communicate to the compiler the set of places in the code that are allowed
+to access that thing. According to |jls11_access_control|_, the developers of Java 
+incorporated visibility into the language, "to prevent the users of a package or class 
+from depending on unnecessary details of the implementation of that package or class."
+
+In the context of visibility, the term "access" simply means to "use from elsewhere 
+in the code." With that in mind, throughout this tutorial we will use "visible from" 
+to mean that something "can be accessed from" or "can be used from" based on its 
+visibility. 
 
 The table below shows all four visibility options that are available in Java, 
 three of which have an associated **visibility modifier** that we can
@@ -399,6 +405,11 @@ one of the other visibilities.
 You should carefully consider the different scenarios described in this reading
 and try to reproduce them in an actual Java programming environment to see what
 the Java compiler will and will not let you do. 
+
+## Glossary
+
+visibility
+
 
 .. copyright and license information
 .. |copy| unicode:: U+000A9 .. COPYRIGHT SIGN
