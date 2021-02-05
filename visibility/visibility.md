@@ -63,7 +63,11 @@ based on where the method or instance variable is declared:
 | 3 | parent class       |           |                   | ✓           | ✓        |
 | 4 | none of the above  |           |                   |             | ✓        |
 
-## Private Visibility Notes
+## Private Visibility
+
+<center>
+  <img src="private_1.svg" alt="UML class diagram of Person.java">
+</center>
 
 We leave out the usual private visibility examples in this section and instead
 focus on addressing the common misconception that objects have something to do
