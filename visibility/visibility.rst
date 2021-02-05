@@ -6,6 +6,7 @@
 .. |license| replace:: CC BY-NC-ND 4.0
 .. _license: http://creativecommons.org/licenses/by-nc-nd/4.0/
 .. |license_image| image:: https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg
+                   :target: http://creativecommons.org/licenses/by-nc-nd/4.0/
 .. standard footer
 .. footer:: |license_image|
 
