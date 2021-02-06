@@ -70,8 +70,9 @@ used in a member's declaration for it to be treated as private. In UML, the
 ``-`` symbol is used just before a member's identifier to illustrate
 that it's private.
 
-.. [1] :members: The members of a class are its constructors, methods, variables,
-       pand constants; they can be static or non-static (instance) members.
+.. [1] :members:
+           The members of a class are its constructors, methods, variables,
+           pand constants; they can be static or non-static (instance) members.
 
 Example 1
 =========
