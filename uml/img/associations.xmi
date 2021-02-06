@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.0" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+	<xmi:Documentation exporter="StarUML" exporterVersion="2.0"/>
+	<uml:Model xmi:id="AAAAAAF3eNE9tgv3weI=" xmi:type="uml:Model" name="RootModel">
+		<packagedElement xmi:id="AAAAAAFF+qBWK6M3Z8Y=" name="Model" visibility="public" xmi:type="uml:Model">
+			<packagedElement xmi:id="AAAAAAF3eMFTmf9cLQY=" name="directed_association" visibility="public" xmi:type="uml:Model">
+				<packagedElement xmi:id="AAAAAAF3eMDEGv8vRiI=" name="ClassA" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+					<ownedMember xmi:id="AAAAAAF3eMKdMQA9VRY=" visibility="public" xmi:type="uml:Association" isDerived="false">
+						<ownedEnd xmi:id="AAAAAAF3eMKdMgA+TMM=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false" type="AAAAAAF3eMDEGv8vRiI=">
+							<xmi:Extension extender="StarUML">
+								<stereotype value=""/>
+							</xmi:Extension>
+						</ownedEnd>
+						<ownedEnd xmi:id="AAAAAAF3eMKdMgA/hZI=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false" type="AAAAAAF3eMGuAP9j4Z4=">
+							<xmi:Extension extender="StarUML">
+								<stereotype value=""/>
+							</xmi:Extension>
+						</ownedEnd>
+						<memberEnd xmi:idref="AAAAAAF3eMKdMgA+TMM="/>
+						<memberEnd xmi:idref="AAAAAAF3eMKdMgA/hZI="/>
+					</ownedMember>
+				</packagedElement>
+				<packagedElement xmi:id="AAAAAAF3eMGuAP9j4Z4=" name="ClassB" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false"/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAF3eMNLhAHIeSo=" name="generalization" visibility="public" xmi:type="uml:Model">
+				<packagedElement xmi:id="AAAAAAF3eMOviQHvilo=" name="Child" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+					<generalization xmi:id="AAAAAAF3eMWpDAN9KQo=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAF3eMOviQHvilo=" general="AAAAAAF3eMO9hwIBGIY="/>
+				</packagedElement>
+				<packagedElement xmi:id="AAAAAAF3eMO9hwIBGIY=" name="Parent" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false"/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAF3eMdveQV7Exo=" name="realization" visibility="public" xmi:type="uml:Model">
+				<packagedElement xmi:id="AAAAAAF3eMeqDAWc9n8=" name="SomeClass" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+					<interfaceRealization xmi:id="AAAAAAF3eMnpVwhi524=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAF3eMeqDAWc9n8=" contract="AAAAAAF3eMlBYgeTQkU="/>
+				</packagedElement>
+				<packagedElement xmi:id="AAAAAAF3eMlBYgeTQkU=" name="SomeInterface" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Interface"/>
+			</packagedElement>
+		</packagedElement>
+	</uml:Model>
+</xmi:XMI>
