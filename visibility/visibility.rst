@@ -243,15 +243,20 @@ TODO
 
 .. code-block:: java
 
-   // inside OtherClass.java
-   public void updateAges(Person[] persons) {
-       for (int i = 0; i < persons.length; i++) {
-           int newAge = persons[i].getAge() + 1;
-           if (checkAge(newAge)) { // <---- LINE1 ✗
-               persons[i].setAge(newAge);
-           } // if
-       } // for
-   } // updateAges
+   // inside Utility.java
+   package cs1302.models;
+
+   class Utility {
+       // ... rest omitted
+
+.. code-block:: java
+
+   // inside Utility.java
+   package cs1302.store;
+
+   import cs1302.models.Utility; // <---- LINE1
+
+   // ... rest omitted
 
 Protected Visibility
 ********************
