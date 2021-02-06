@@ -144,7 +144,28 @@ with respect to its line and its arrowhead!
 Before you continue reading, it's important to note that you do not need a special program to work with UML.
 It's quite possible (and encouraged) that you practice drawing UML digrams by hand either on paper or in
 your note-taking software. The purpose of a UML class diagram is to help visualize multiple classes and
-their relationships. ; oftentimes, students to use
+their relationships. Over the years, we've seen many students skip directly to using UML software and
+get frustrated. Since these programs have a learning curve, students spend too much time trying to 
+figure out, for example, how to mark something as protected in the program when they could have simply
+written `#` had they done it by hand. Don't get us wrong, these tools are great, and if you want to learn
+them, then you should. Just try to make sure it doesn't impact your productivity, especially near a
+deadline.
+
+Below is a list of popular UML software programs. **You are not required to have access to one for
+this course.** While many of these programs do require a paid license, you are encouraged to seek 
+out a free community edition or a free/reduced-price student license before making any purchases.
+If you find a tool that's not in the list, then please share it on Piazza!
+
+* [Astah UML](https://astah.net/products/astah-uml/)
+* [Diagrams.net](https://www.diagrams.net/)
+* [StarUML](https://staruml.io/)
+* [Umbrello](https://umbrello.kde.org/)
+* [UML Designer](http://www.umldesigner.org/)
+* [Visual Paradigm](https://www.visual-paradigm.com/)
+
+You may be surprised by how much a regular license costs for some of the programs above. In practice,
+if you need a program like this for your job, then it's not uncommon for your company to
+pay for the license just as many companies do for programs like Microsoft Word, Adobe Photoshop, etc.
 
 <hr/>
 
