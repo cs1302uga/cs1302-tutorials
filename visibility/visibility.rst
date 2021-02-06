@@ -46,7 +46,7 @@ public           ``public``        ``+``       ✓               ✓
 .. [2] A **member-level declaration** is any declaration of a class member. The
        members of a class are its constructors, methods, variables, constants,
        etc., and includes both static or non-static (instance); however, they
-       never include Local-level declarations [3]_.
+       never include Local-level declarations.
 
 .. [3] A **local-level declaration** is any variable declaration that is local, in
        scope, to a particular method. The local variables of a method include
