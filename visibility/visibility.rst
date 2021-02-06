@@ -106,7 +106,7 @@ This is a classic example that many students are familiar with.
 To get started, let's consider the UML diagram below and the code snippet that
 follows it.
 
-.. image:: private_1.svg
+.. image:: img/private_1.svg
    :alt: Example 1
 
 .. code-block:: java
@@ -137,7 +137,7 @@ from depending on unnecessary details of the implementation of that package or c
 To illustrate this idea, let's consider the UML diagram below and the code snippet
 that follows it.
 
-.. image:: private_2.svg
+.. image:: img/private_2.svg
    :alt: Example 2
 
 .. code-block:: java
@@ -184,7 +184,7 @@ private visibility. Their idea of private is more restrivtice or
 less visible than it actually is. To illustrate,  let's consider the UML
 diagram below and the code snippet that follows it.
 
-.. image:: private_1.svg
+.. image:: img/private_1.svg
    :alt: Example 1
 
 .. code-block:: java
