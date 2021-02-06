@@ -82,7 +82,7 @@ Example 1
 |                   |                                                                       |
 +                   +-----------------------------------------------------------------------+
 |                   | On the line labelled ``HERE``, the code attempts to access            |
-|                   | ``this.age``, an instance variable delcared within the same class.    |
+|                   | ``this.age``, an instance variable declared within the same class.    |
 |                   | Although that variable is private, it's visible from this line        |
 |                   | because private members are always visible from within the same       |
 |                   | class.                                                                |
@@ -100,21 +100,22 @@ Example 2
 +===================+=======================================================================+
 | |image_private_2| | .. code-block:: java                                                  |
 |                   |                                                                       |
-|                   |    // inside Person.java                                              |
-|                   |    public void setAge(int age) {                                      |
-|                   |        if (!checkAge(age)) {                                          |
-|                   |            throw new IllegalArgumentException("invalid age");         |
-|                   |        } else {                                                       |
-|                   |            this.age = age; // <---- HERE                              |
-|                   |        } // if                                                        |
-|                   |    } // setAge                                                        |
+|                   |    // inside OtherClass.java                                          |
+|                   |    public void updateAges(Person[] persons) {                         |
+|                   |        for (int i = 0; i < persons.length; i++) {                     |
+|                   |            int newAge = persons[i].getAge() + 1;                      |
+|                   |            if (checkAge(newAge)) { // <---- HERE                      |
+|                   |                persons[i].setAge(newAge);                             |
+|                   |            } // if                                                    |
+|                   |        } // for                                                       |
+|                   |    } // updateAges                                                    |
 |                   |                                                                       |
 +                   +-----------------------------------------------------------------------+
-|                   | On the line labelled ``HERE``, the code attempts to access            |
-|                   | ``this.age``, an instance variable delcared within the same class.    |
-|                   | Although that variable is private, it's visible from this line        |
-|                   | because private members are always visible from within the same       |
-|                   | class.                                                                |
+|                   | On the line labelled ``HERE``, the code attempts to access the        |
+|                   | ``checkAge`` method, an instance method delcared within another       |
+|                   | class. Since that method is private, it's not visible from this line  |
+|                   | because private members are only visible from within the class where  |
+|                   | they are declared.                                                    |
 +-------------------+-----------------------------------------------------------------------+
 
 
