@@ -366,6 +366,37 @@ let's consider the UML diagram below and the two code snippets that follow it.
        factory.denyChange("increase quantity"); // <------- LINE6
    } // main
 
+For this example, we'll take some some liberties while discussing what
+will and will not work; for example, whenever we discuss a labelled
+line of code (e.g., ``LINE1``), we'll make a good faith assumption that all other
+labelled lines of code will work, even if we find out later that they don't.
+If you want to test these scenarios yourself, you'll need to remove
+or comment out the other labelled lines when trying to understand
+the line your testing.
+
+LINE  Member                In                          From                              Visible?
+====  ====================  ==========================  ================================  ========
+1     ``requestChange``     ``cs1302.factory.Factory``  ``cs1302.factory.FactoryDriver``  |Y|
+f     ``approveChange``     ``cs1302.factory.Factory``  ``cs1302.factory.FactoryDriver``  |Y|
+3     ``denyChange``        ``cs1302.factory.Factory``  ``cs1302.factory.FactoryDriver``  |Y|
+
+   On the line labelled ``LINE1``, the author omitted a visibility modifier
+in their top-level declaration of the ``Utility`` class. As discussed earlier,
+this causes the class to default to package private visibility. On ``LINE2``,
+which exists in ``Driver.java`` in a different package [5]_, an attempt is made to
+import the ``Utility`` class. Since that class is package private, it's not
+visible from this line because things that are package private are only visible
+from within the same package. If you try to compile ``Driver.java``, then
+you get the following error::
+
+    Driver.java: Utility is not public in cs1302.models; cannot be accessed from outside package
+
+The error above is exactly what the author of ``Utility`` class wanted to happen. They
+intended for ``Utility`` itself to only be used by code residing within the
+``cs1302.models`` package. To make the method not visible from outside the package,
+they omitted a visibility modifier in the top-level class declaration. Had they
+declared it public, for example, then the example would have compiled.
+
 Protected Visibility
 ********************
 
