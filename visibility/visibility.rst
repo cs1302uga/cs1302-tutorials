@@ -359,7 +359,7 @@ let's consider the UML diagram below and the two code snippets that follow it.
 
    // inside FactoryDriver.java (cs1302.factory package)
    public static void main(String[] args) {
-       Factory factory = // not null
+       Factory factory = new Factory();
        factory.requestChange("decrease price"); // <------- LINE1
        factory.approveChange("decrease price"); // <------- LINE2
        factory.denyChange("decrease price"); // <---------- LINE3
@@ -369,15 +369,15 @@ let's consider the UML diagram below and the two code snippets that follow it.
 
    // inside Driver.java (cs1302.store package)
    public static void main(String[] args) {
-       Factory factory = // not null
+       Factory factory = new Factory();
        factory.requestChange("increase quantity"); // <---- LINE4
        factory.approveChange("increase quantity"); // <---- LINE5
        factory.denyChange("increase quantity"); // <------- LINE6
    } // main
 
 The lines labelled ``LINE1``, ``LINE2``, and ``LINE3`` each attempt
-to access a different member of the ``Factory`` class from within
-the same package. The table below summarizes the scenario for each line.
+to access a different member of the ``Factory`` class **from the same package**.
+The table below summarizes the scenario for each line.
 Class names in the ``In`` and ``From`` columns have been omitted since they're not
 relevant for this particular example.
 
@@ -389,11 +389,9 @@ LINE  Member                Declared         In                          From   
 3     ``denyChange``        package private  ``cs1302.factory``  ``cs1302.factory``  |Y|
 ====  ====================  ===============  ==================  ==================  ========
 
-The lines labelled ``LINE1``, ``LINE2``, and ``LINE3`` each attempt
-to access a different member of the ``Factory`` class from within
-the same package. The table below summarizes the scenario for each line.
-Class names in the ``In`` and ``From`` columns have been omitted since they're not
-relevant for this particular example.
+Likewise, the lines labelled ``LINE4``, ``LINE5``, and ``LINE6`` each attempt
+to access a different member of the ``Factory`` class **from a different package**.
+The table below summarizes the scenario for each line.
 
 ====  ====================  ===============  ==================  ==================  ========
 LINE  Member                Declared         In                          From        Visible?
@@ -403,22 +401,15 @@ LINE  Member                Declared         In                          From   
 6     ``denyChange``        package private  ``cs1302.factory``  ``cs1302.store``    |N|
 ====  ====================  ===============  ==================  ==================  ========
 
-On the line labelled ``LINE1``, the author omitted a visibility modifier
-in their top-level declaration of the ``Utility`` class. As discussed earlier,
-this causes the class to default to package private visibility. On ``LINE2``,
-which exists in ``Driver.java`` in a different package [5]_, an attempt is made to
-import the ``Utility`` class. Since that class is package private, it's not
-visible from this line because things that are package private are only visible
-from within the same package. If you try to compile ``Driver.java``, then
-you get the following error::
+If you try to compile ``Driver.java`` as written, then you get the following error::
 
-    Driver.java: Utility is not public in cs1302.models; cannot be accessed from outside package
+    Driver.java: error: approveChange(String) is not public in Factory; cannot be accessed from outside package
 
-The error above is exactly what the author of ``Utility`` class wanted to happen. They
-intended for ``Utility`` itself to only be used by code residing within the
-``cs1302.models`` package. To make the method not visible from outside the package,
-they omitted a visibility modifier in the top-level class declaration. Had they
-declared it public, for example, then the example would have compiled.
+Through careful use of visibility, the author of the ``Factory`` class was able to
+achieve the access control described near the beginning of this example. That is,
+code within the ``cs1302.factory`` package can request, approve, and deny contract-related requests,
+while code in other packages can only request changes. It's a beautiful, simple setup,
+but it did require the author to understand package private visibility.
 
 Protected Visibility
 ********************
