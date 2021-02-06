@@ -183,7 +183,7 @@ Example 3
 
 We mentioned earlier that some students have a flawed conceptual model for
 private visibility. Their idea of private is more restrivtice or
-less visible than it actually is. To illustrate,  let's consider the UML
+less visible than it actually is. To illustrate, let's consider the UML
 diagram below and the code snippet for a copy constructor [4]_ that follows it.
 
 .. image:: img/private_1.svg
@@ -195,10 +195,10 @@ diagram below and the code snippet for a copy constructor [4]_ that follows it.
        setName(other.name); // <---- LINE1
        setAge(other.age); // <---- LINE2
    } // setAge
-
+p
 On the lines labelled ``LINE1`` and ``LINE2``, the code attempts to access
 the private instance members ``name`` and ``age`` of the ``Person`` object
-referred by ``other``. When asked, many students will say that this will
+referred by ``other``. When asked, many students will say thpat this will
 not compile and are shocked when they see that it does. To be clear, **it
 does compile**. Although ``other.name`` and ``other.age`` are private, they're
 visible from ``LINE1`` and ``LINE2`` because they're declared in same
@@ -259,7 +259,8 @@ package private  |Y|         |Y|
 Example 4
 =========
 
-TODO
+Here is our first example involving a top-level declaration. To get started,
+let's consider the UML diagram below and the two code snippets that follows it.
 
 .. image:: img/package_private_1.svg
 
@@ -279,6 +280,26 @@ TODO
    import cs1302.models.Utility; // <---- LINE2
 
    // ... rest omitted
+
+On the line labelled ``LINE1``, the author omitted a visibility modifier
+in their top-level declaration of the ``Utility`` class. As discussed earlier,
+this causes the class to default to package private visibility. On ``LINE2``,
+which exists in ``Driver.java`` in a separate package [5]_, an attempt is made to
+import the ``Utility`` class. Since that class is package private, it's not
+visible from this line because things that are package private are only visible
+from within the same package. If you try to compile ``Driver.java``, then
+you get the following error::
+
+    Driver.java: Utility is not public in cs1302.models; cannot be accessed from outside package
+
+The error above is exactly what the author of ``Utility`` class wanted to happen. They
+intended for ``Utility`` itself to only be used by code residing within the
+``cs1302.models`` package. To make the method not visible from outside the package,
+they omitted a visibility modifier in the top-level class declaration. Had they
+declared it public, for example, then the example would have compiled.
+
+.. [5] In Java, two files are said to b in separate packages whenever
+       their package statements are not identical.
 
 Protected Visibility
 ********************
