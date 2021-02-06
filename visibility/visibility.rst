@@ -63,12 +63,10 @@ Example 1
 =========
 
 This is the classic, simple example that most students are familiar with.
+Consider the UML diagram below and the code snippet that follows it.
 
-.. figure:: private_1.svg
-   :scale: 50%
+.. image:: private_1.svg
    :alt: Example 1
-
-   Caption text...
 
 .. code-block:: java
 
@@ -95,52 +93,47 @@ Example 2
 According to |jls11_access_control|_, the developers of Java
 incorporated visibility into the language "to prevent the users of a package or class
 from depending on unnecessary details of the implementation of that package or class."
-This example illustrates that idea quite well.
+To illustrate this idea, let's consider the UML diagram below and the code snippet
+xthat follows it.
 
-.. |image_private_2| image:: private_2.svg
-                     :width: 1600
-                     :alt: UML class diagram of ``Person.java`` and another class
+.. image:: private_2.svg
+   :alt: Example 2
 
-+-------------------+-----------------------------------------------------------------------+
-| UML Diagram       | Code Snippet(s)                                                       |
-+===================+=======================================================================+
-| |image_private_2| | .. code-block:: java                                                  |
-|                   |                                                                       |
-|                   |    // inside OtherClass.java                                          |
-|                   |    public void updateAges(Person[] persons) {                         |
-|                   |        for (int i = 0; i < persons.length; i++) {                     |
-|                   |            int newAge = persons[i].getAge() + 1;                      |
-|                   |            if (checkAge(newAge)) { // <---- HERE                      |
-|                   |                persons[i].setAge(newAge);                             |
-|                   |            } // if                                                    |
-|                   |        } // for                                                       |
-|                   |    } // updateAges                                                    |
-|                   |                                                                       |
-+                   +-----------------------------------------------------------------------+
-|                   | On the line labelled ``HERE``, the code attempts to access the        |
-|                   | ``checkAge`` method, an instance method delcared within another       |
-|                   | class. Since that method is private, it's not visible from this line  |
-|                   | because private members are only visible from within the class where  |
-|                   | they are declared. If you try to compile ``OtherClass.java``, then    |
-|                   | you get the following error::                                         |
-|                   |                                                                       |
-|                   |     OtherClass.java: error: checkAge() has private access in Person   |
-|                   |                                                                       |
-+-------------------+-----------------------------------------------------------------------+
+.. code-block:: java
 
-The error in this example is exactly what the author of ``Person`` wanted to happen. They
+   // inside OtherClass.java
+   public void updateAges(Person[] persons) {
+       for (int i = 0; i < persons.length; i++) {
+           int newAge = persons[i].getAge() + 1;
+           if (checkAge(newAge)) { // <---- HERE
+               persons[i].setAge(newAge);
+           } // if
+       } // for
+   } // updateAges
+
+On the line labelled ``HERE``, the code attempts to access the
+``checkAge`` method, an instance method delcared within another
+class. Since that method is private, it's not visible from this line
+because private members are only visible from within the class where
+they are declared. If you try to compile ``OtherClass.java``, then
+you get the following error::
+
+    OtherClass.java: error: checkAge() has private access in Person
+
+The error above is exactly what the author of ``Person`` wanted to happen. They
 intended for ``checkAge`` to only be used by other methods within the ``Person`` class.
 To make the method not visible from outside the class, they declared it private. Had they
 declared it public, for example, then the example would have compiled; however, the call
 to ``checkAge`` would add unnecessary redundancy since it's called again inside the call
-to ``setAge`` on the next line (see Example 1). We're not sure how the author of
-``OtherClass`` knew about the ``checkAge`` method, but the error message lets them know
-that it's not for them to use. Had they referred to the Javadoc/API documentation for the
-``Person`` class, it's unlikely that the private method would even be visible there (private
-members are not included in the `javadoc` output by default). If it's not for others and
-it's not listed, then that's less stuff that others need to understand before they're able
-to use your code in theirs.
+to ``setAge`` on the next line (see Example 1).
 
+We're not sure how the author of ``OtherClass`` knew about the ``checkAge`` method, but
+the error message lets them know that it's not for them to use. Had they referred to the
+Javadoc/API documentation for the ``Person`` class, it's unlikely that the private method
+would have been included (private members are not included in the `javadoc` output by default).
+If it's private, then it's not for others, and if it's not even listed in the documentation,
+then that's less stuff that other programmers need to understand before they're able
+to use your code.
 
 Package Private Visibility
 **************************
