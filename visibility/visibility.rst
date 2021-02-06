@@ -374,11 +374,13 @@ If you want to test these scenarios yourself, you'll need to remove
 or comment out the other labelled lines when trying to understand
 the line your testing.
 
+====  ====================  ==========================  ================================  ========
 LINE  Member                In                          From                              Visible?
 ====  ====================  ==========================  ================================  ========
 1     ``requestChange``     ``cs1302.factory.Factory``  ``cs1302.factory.FactoryDriver``  |Y|
 f     ``approveChange``     ``cs1302.factory.Factory``  ``cs1302.factory.FactoryDriver``  |Y|
 3     ``denyChange``        ``cs1302.factory.Factory``  ``cs1302.factory.FactoryDriver``  |Y|
+====  ====================  ==========================  ================================  ========
 
    On the line labelled ``LINE1``, the author omitted a visibility modifier
 in their top-level declaration of the ``Utility`` class. As discussed earlier,
