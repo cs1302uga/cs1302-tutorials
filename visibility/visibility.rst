@@ -15,9 +15,9 @@ Visibility Reading
 Introduction
 ************
 
-Java has four different **visibility** options for **access control**
-that can be used in the declaration of class members (i.e., methods, variables, and constants).
-When you indicate that a class member has a particular **visibility** in your code,
+Java has four different **visibility** options that can be used to facilitate
+**access control**, i.e., to control access to certain things that we declare.
+When you declare that something has a particular **visibility** in your code,
 you communicate to the compiler the set of places in the code that are allowed
 to access that thing. The term "access" simply means to "use from elsewhere
 in the code." With that in mind, throughout this tutorial we will use "visible from"
@@ -59,11 +59,16 @@ and help others to understand the important details of visibility.
 Private Visibility
 ******************
 
-Members of a class with private visibility are more simply referred to as
-being private (since visibility is implied). Private members are considered
-the least visible; they are only visible from lines of code that are written
-within the same class. The ``private`` modifer and the ``-`` symbol are used
-in Java and UML, respectively, to denote that a member is private.
+Instead of saying that something has private visibility, we usually
+just say that it's private. In Java, top=level declarations (e.g., classes
+and interfaces) are not allowed to be private. However, any member of a
+class (i.e., variables, constants, and methods), including static members,
+are allowed to be private. Private members are considered the least visible;
+they are only visible from lines of code that are written within the same class,
+and they are not visible from any other location. In Java, the ``private`` modifer
+keyword must be used in a member's declaration for it to be treated as private.
+In UML, the ``-`` symbol is used just before a member's identifier to illustrate
+that it's private.
 
 Example 1
 =========
