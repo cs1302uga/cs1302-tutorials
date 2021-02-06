@@ -100,7 +100,7 @@ This example illustrates that idea quite well.
                      :width: 800px
                      :alt: UML class diagram of ``Person.java`` and another class
 
-.. table:: Example 1
+.. table:: Example 2
    :widths: 33 66
 
    +-------------------+-----------------------------------------------------------------------+
