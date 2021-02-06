@@ -184,7 +184,7 @@ Example 3
 We mentioned earlier that some students have a flawed conceptual model for
 private visibility. Their idea of private is more restrivtice or
 less visible than it actually is. To illustrate,  let's consider the UML
-diagram below and the code snippet that follows it.
+diagram below and the code snippet for a copy constructor [4]_ that follows it.
 
 .. image:: img/private_1.svg
 
@@ -196,8 +196,30 @@ diagram below and the code snippet that follows it.
        setAge(other.age); // <---- LINE2
    } // setAge
 
-On the line labelled ``LINE1``, the code attempts to access
+On the lines labelled ``LINE1`` and ``LINE2``, the code attempts to access
+the private instance members ``name`` and ``age`` of the ``Person`` object
+referred by ``other``. When asked, many students will say that this will
+not compile and are shocked when they see that it does. To be clear, **it
+does compile**. Although ``other.name`` and ``other.age`` are private, they're
+visible from ``LINE1`` and ``LINE2`` because they're declared in same
+class as ``LINE1`` and ``LINE2`` and **private members are always
+visible from within the same class.**
 
+While a reference to an object does allow us to find members of the object
+via ``.memberName`` (for some ``memberName``), our ability to access the
+member from the current location (line of code) depends only on where the
+member is declared and its visibility. In general, **visibility itself has
+nothing to do with objects**, so you can make similar arguments for
+situations involving, for example, things that have protected visibility
+(covered in the next section).
+
+.. [4] A **copy constructor** for a class called ``A`` is the constructor
+       ``A(A other)``; if a class has a copy constructor, then calling it
+       with a reference to some existing object of the class as its parameter
+       should result in the newly constructed object being a copy. The result
+       is not always guaranteed to be a deep copy, so you should always check
+       the constructor documentation and class documentation for more
+       information before you make any assumptions.
 
 Package Private Visibility
 **************************
