@@ -20,7 +20,7 @@ Java has four different **visibility** options that can be used to facilitate
 When you declare that something has a particular **visibility** in your code,
 you communicate to the compiler the set of locations that are allowed to access
 that thing. The term "access" simply means to "use from elsewhere in the code."
-With that in mind, throughout this tutorial we will use say that various things
+With that in mind, throughout this tutorial we will often say that various things
 are "visible from" some location; this wording just means that the thing
 "can be accessed from" or "can be used from" that location based on its
 visibility.
