@@ -204,8 +204,9 @@ referred by ``other``. When asked, many students will say thpat this will
 not compile and are shocked when they see that it does. To be clear, **it
 does compile**. Although ``other.name`` and ``other.age`` are private, they're
 visible from ``LINE1`` and ``LINE2`` because they're declared in same
-class as ``LINE1`` and ``LINE2`` and **private members are always
-visible from within the same class.**
+class as ``LINE1`` and ``LINE2``. Remember:
+
+    **private members are always visible from within the same class.**
 
 While a reference to an object does allow us to find members of the object
 via ``.memberName`` (for some ``memberName``), our ability to access the
