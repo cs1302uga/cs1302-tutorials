@@ -411,6 +411,11 @@ code within the ``cs1302.factory`` package can request, approve, and deny contra
 while code in other packages can only request changes. It's a beautiful, simple setup,
 but it did require the author to understand package private visibility.
 
+In the error message that was recently discussed, the wording "is not public in"
+may lead you to believe that only public members are visible from another
+package; **that's not the case**. We'll provide an example in the next section
+on protected visibility that illustrates this.
+
 Protected Visibility
 ********************
 
