@@ -375,19 +375,32 @@ let's consider the UML diagram below and the two code snippets that follow it.
        factory.denyChange("increase quantity"); // <------- LINE6
    } // main
 
-
 The lines labelled ``LINE1``, ``LINE2``, and ``LINE3`` each attempt
-to access a different member of the ``Factory`` class. The table
-below summarizes the scenario for each line. Class names in the
-``In`` and ``From`` columns have been omitted since they're not
+to access a different member of the ``Factory`` class from within
+the same package. The table below summarizes the scenario for each line.
+Class names in the ``In`` and ``From`` columns have been omitted since they're not
 relevant for this particular example.
 
 ====  ====================  ===============  ==================  ==================  ========
 LINE  Member                Declared         In                          From        Visible?
 ====  ====================  ===============  ==================  ==================  ========
 1     ``requestChange``     public           ``cs1302.factory``  ``cs1302.factory``  |Y|
-f     ``approveChange``     package private  ``cs1302.factory``  ``cs1302.factory``  |Y|
+2     ``approveChange``     package private  ``cs1302.factory``  ``cs1302.factory``  |Y|
 3     ``denyChange``        package private  ``cs1302.factory``  ``cs1302.factory``  |Y|
+====  ====================  ===============  ==================  ==================  ========
+
+The lines labelled ``LINE1``, ``LINE2``, and ``LINE3`` each attempt
+to access a different member of the ``Factory`` class from within
+the same package. The table below summarizes the scenario for each line.
+Class names in the ``In`` and ``From`` columns have been omitted since they're not
+relevant for this particular example.
+
+====  ====================  ===============  ==================  ==================  ========
+LINE  Member                Declared         In                          From        Visible?
+====  ====================  ===============  ==================  ==================  ========
+4     ``requestChange``     public           ``cs1302.factory``  ``cs1302.store``    |Y|
+5     ``approveChange``     package private  ``cs1302.factory``  ``cs1302.store``    |N|
+6     ``denyChange``        package private  ``cs1302.factory``  ``cs1302.store``    |N|
 ====  ====================  ===============  ==================  ==================  ========
 
 On the line labelled ``LINE1``, the author omitted a visibility modifier
