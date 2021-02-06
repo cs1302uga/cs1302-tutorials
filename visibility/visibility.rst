@@ -7,7 +7,7 @@
 
 Visibility Reading
 ##################
-   
+
 |approval_notice|
 
 Introduction
@@ -16,50 +16,50 @@ Introduction
 .. |jls11_access_control| replace:: JLS 11 Section 6.6
 .. _jls11_access_control: https://docs.oracle.com/javase/specs/jls/se11/html/jls-6.html#jls-6.6
 
-Java has four different **visibility** options for **access control** 
-that can be used in the declaration of class members (i.e., methods, variables, and constants). 
+Java has four different **visibility** options for **access control**
+that can be used in the declaration of class members (i.e., methods, variables, and constants).
 When you indicate that a class member has a particular **visibility** in your code,
 you communicate to the compiler the set of places in the code that are allowed
-to access that thing. According to |jls11_access_control|_, the developers of Java 
-incorporated visibility into the language, "to prevent the users of a package or class 
+to access that thing. According to |jls11_access_control|_, the developers of Java
+incorporated visibility into the language, "to prevent the users of a package or class
 from depending on unnecessary details of the implementation of that package or class."
 
-In the context of visibility, the term "access" simply means to "use from elsewhere 
-in the code." With that in mind, throughout this tutorial we will use "visible from" 
-to mean that something "can be accessed from" or "can be used from" based on its 
-visibility. 
+In the context of visibility, the term "access" simply means to "use from elsewhere
+in the code." With that in mind, throughout this tutorial we will use "visible from"
+to mean that something "can be accessed from" or "can be used from" based on its
+visibility.
 
-The table below shows all four visibility options that are available in Java, 
+The table below shows all four visibility options that are available in Java,
 three of which have an associated **visibility modifier** that we can
 type into our code:
 
 ===============  ================  ==========
 Visibility Name  Modifier Keyword  UML Symbol
 ===============  ================  ==========
-private          ``private``       ``-``   
+private          ``private``       ``-``
 package private  ..                ``~``
 protected        ``protected``     ``#``
 public           ``public``        ``+``
 ===============  ================  ==========
 
-In this tutorial, we cover each available visibility option with a few examples, 
-often illustrated using a combination of `UML diagrams <uml_tutorial>`__ and code 
+In this tutorial, we cover each available visibility option with a few examples,
+often illustrated using a combination of `UML diagrams <uml_tutorial>`__ and code
 snippets. The order in which the visibilities are covered is deliberate; we start
 with the option that makes something visible from the least number of locations,
-then work through the rest in the order of increasing visibility. 
+then work through the rest in the order of increasing visibility.
 
-While you are likely already familiar private and public visibility, please do not 
+While you are likely already familiar private and public visibility, please do not
 assume that you already understand how it works. Over the years, we have
 found that many students have a somewhat flawed conceptual model for how
 private visibility works that is actually more complicated that what it
-actually is. Regardless of your experiece, you should work through each 
+actually is. Regardless of your experiece, you should work through each
 visibility example in this tutorial until you are able to:
 
 1. correctly determine the visibility outcome and justification; and
 2. write your own code that illustrates a similar visibility scenario.
 
 We encourage you to make Piazza posts about your examples, ask questions,
-and help others to understand the important details of visibility. 
+and help others to understand the important details of visibility.
 
 Private Visibility
 ******************
@@ -69,15 +69,19 @@ TODO
 .. |image_private_1| image:: private_1.svg
                      :alt: UML class diagram of ``Person.java``
 
-.. |person_constructor| replace:: code-block:: java
-
-   public Person(String name, int age) {
-
-+-------------------+------------------------------------------+
-| UML Diagram       | Code Snippets                            |
-+===================+==========================================+
-| |image_private_1| | |person_constructor|                     |
-+-------------------+------------------------------------------+
++-------------------+-----------------------------------------------------------------------+
+| UML Diagram       | Code Snippet(s)                                                       |
++===================+=======================================================================+
+| |image_private_1| | .. code-block:: java                                                  |
+|                   |                                                                       |
+|                   |    public void setName(String name) {                                 |
+|                   |        if (name == null) {                                            |
+|                   |            throw new IllegalArgumentException("name cannot be null"); |
+|                   |        } else {                                                       |
+|                   |            this.name = name;                                          |
+|                   |        } // if                                                        |
+|                   |    } // setName                                                       |
++-------------------+-----------------------------------------------------------------------+
 
 Package Private Visibility
 **************************
@@ -97,7 +101,7 @@ TODO
 Summary of Visibilities
 ***********************
 
-In the table below, we summarize all of the different visibility scenarios 
+In the table below, we summarize all of the different visibility scenarios
 that are possible for a single member of a class (e.g., a variable, constant,
 or method). To read the table, you should start by picking the column that
 describes the member's visibility, then pick the row that describes where
@@ -111,7 +115,7 @@ table, then a member with that visibility is visible from that location.
 | 3 | Child Class   |         |                 | ✓         | ✓      |
 | 4 | Elsewhere     |         |                 |           | ✓      |
 
-Here is another table with the exact same information. 
+Here is another table with the exact same information.
 
 | # | Visibility      | Same Class | Same Package | Child Class | Elsewhere |
 |---|-----------------|------------|--------------|-------------|-----------|
@@ -133,9 +137,9 @@ Important Notes (Do Not Skip)
 
 We leave out the usual private visibility examples in this section and instead
 focus on addressing the common misconception that objects have something to do
-with visibility. **Visibility has nothing to do with objects in Java.** 
-Instead, visibility has to do with classes. To illustrate this, consider the 
-following UML diagram for a `Point2D` class which is used to represent 
+with visibility. **Visibility has nothing to do with objects in Java.**
+Instead, visibility has to do with classes. To illustrate this, consider the
+following UML diagram for a `Point2D` class which is used to represent
 immutable (i.e., non-modifiable) points described by `(x,y)` coordinates:
 
 <center>
@@ -157,7 +161,7 @@ public class Point2D {
     private double y; // y coordinate
 
     ...
-    
+
     /**
      * Constructs a new {@code Point2D} object that is copy of the object
      * referred to by {@code other}.
@@ -168,7 +172,7 @@ public class Point2D {
         this.x = other.x; // other.x is declared in the same class
         this.y = other.y; // other.y is declared in the same class
     } // Point2D
-    
+
     ...
 
 } // Point2D
@@ -188,10 +192,10 @@ class, those two lines of code can see `other.x` and `other.y` as presented in t
 example. **The fact that `other` refers to another object does not matter.**
 
 **Regarding Inheritance of Private Members:** You may recall from the Inheritance-related
-readings that **child classes do inherit private instance variables and methods** from their 
-parent. However, since those variables are declared private in another class, the 
+readings that **child classes do inherit private instance variables and methods** from their
+parent. However, since those variables are declared private in another class, the
 inheriting class cannot see them directly. In scenarios like this, programmers often use
-inherited getter and setter methods declared with protected and public visibility to 
+inherited getter and setter methods declared with protected and public visibility to
 indirectly access inherited private members. **Another common pattern** is to initialize
 some inherited private variables in a child constructor indirectly by explicitly using
 `super` to invoke a parent constructor.
@@ -201,12 +205,12 @@ some inherited private variables in a child constructor indirectly by explicitly
 Some people refer to _package private_ visibility as the _default visibility_ for
 methods and instance variables of a Java class. However, **the term _default_ should
 be avoided when talking about visibility** so that the concept is not confused with
-Java's default methods feature for interfaces. 
+Java's default methods feature for interfaces.
 
 When you declare something in a class without a visibility modifier, it has package
 private visibility. Something that has package private visibility is only visible
 to lines of code within the same package. That is, a line of code can only see
-something that is package private if that something is declared somewhere in the 
+something that is package private if that something is declared somewhere in the
 same package. To illustrate this, consider the UML diagram below:
 
 <center>
@@ -224,8 +228,8 @@ however, the two-parameter overload for `Math.sqrt` is noted as having package
 private visibility. In this case, the programmer realized that the two-parameter
 `sqrt` method might be complicated for users, so they made a concious decision
 to limits its visibility to the package level. At the same time, they provided
-an easier to use `sqrt` method that is publicly visible. Within the `Math` class, 
-the two `sqrt` methods might look something like this (**do not neccesarily concern 
+an easier to use `sqrt` method that is publicly visible. Within the `Math` class,
+the two `sqrt` methods might look something like this (**do not neccesarily concern
 yourself with Euler's method; instead keep in mind that the package private
 `sqrt` method is not suitable for public access**):
 
@@ -252,7 +256,7 @@ public class Math {
     static double sqrt(double n, double estimate) {
         ...
     } // sqrt
-    
+
      /**
      * Returns the square root of {@code n}.
      *
@@ -276,9 +280,9 @@ package cs1302.util;
  * Contains utility methods for statistical operations.
  */
 public class Statistics {
-    
+
     ...
-    
+
     /**
      * Returns the standard deviation of the supplied {@code values} based
      * on their population variance.
@@ -292,7 +296,7 @@ public class Statistics {
         double stdDevEst   = Math.sqrt(varianceEst, 0.25 * varianceEst);
         return stdDevEst;
     } // stddev
-    
+
 } // Statistics
 ```
 
@@ -312,35 +316,35 @@ import cs1302.util.Math;
 public class MathTutorApp {
 
     ...
-    
+
     public static void main(String[] args) {
-    
+
         ...
-        
+
         double n = 1024.0;
-        
+
         // next line compiles; one-parameter Math.sqrt is visible from here
-        double stdDev1 = Math.sqrt(n);        
-        
+        double stdDev1 = Math.sqrt(n);
+
         // next line will NOT compile; two-parameter Math.sqrt is not visible from here
         double stdDev2 = Math.sqrt(n, -100.0);
-        
+
         ...
-    
+
     } // main
 
 } // MathTutorApp
 ```
 
-Hopefully this example illustrates that, just as with other visibilities, 
+Hopefully this example illustrates that, just as with other visibilities,
 making a method or instance variable package private is a design choice.
-You should carefully consider whether access to something is suitable 
+You should carefully consider whether access to something is suitable
 only within its declared package versus making it available to all other
 classes.
 
 ## Protected Visibility Notes
 
-In a Java class, instance variables and methods that are declared with _protected visibility_ 
+In a Java class, instance variables and methods that are declared with _protected visibility_
 are only visible to lines of code that are either in the same package as the declaring class
 or in a subclass of the declaring class. It is similar to package private visibility except
 that it does allow lines of code in other packages to see the declared instance variable or
@@ -354,7 +358,7 @@ the following, non-exhaustive example:
 To simplify the example, we consider whether otherwise valid lines of code in each
 class in the diagram can see the `attribute` variable in the `Game` class. In the
 table below, the "Visible?" column denotes whether or not the `attribute` variable
-is visible, assuming a proper reference to an object containing `attribute` is 
+is visible, assuming a proper reference to an object containing `attribute` is
 provided:
 
 | Class         | Visible? | Comment                                     | Note |
@@ -368,12 +372,12 @@ provided:
 
 There are two additional points that should be considered regarding this
 example. The classes `TypeOneGame`, `TypeTwoGame`, and `YourGame` all have
-access to: 
+access to:
 
-1. their own inherited `attribute` variable; **and** 
-1. `attribute` variables in objects of each other, assuming 
+1. their own inherited `attribute` variable; **and**
+1. `attribute` variables in objects of each other, assuming
    a proper reference to an object is given.
-   
+
 To illustrate the second point, consider the following lines of code,
 which you should assume, for the sake of this example, are located inside
 a method in `YourGame`:
@@ -381,10 +385,10 @@ a method in `YourGame`:
 ```java
 // inside some method in YourGame
 TypeOneGame tog = ...  // not-null; refers to a valid object
-int a = tog.attribute; // COMPILES; yes, this works 
+int a = tog.attribute; // COMPILES; yes, this works
 ```
 
-Remember, **visibility has nothing to do with objects in Java.** 
+Remember, **visibility has nothing to do with objects in Java.**
 Instead, visibility has to do with classes. In the third line of
 code, `attribute` via `tog.attribute` is visible because:
 
@@ -396,15 +400,15 @@ code, `attribute` via `tog.attribute` is visible because:
 
 When you declare a method or instance variable with public visibility, you
 are explicitly stating that you are okay with that thing being accessed
-from anwhere, including in lines of code that you potentially do not write. 
+from anwhere, including in lines of code that you potentially do not write.
 If that kind of access is inappropriate, then you should carefully consider
-one of the other visibilities. 
+one of the other visibilities.
 
 ## Closing Remarks
 
 You should carefully consider the different scenarios described in this reading
 and try to reproduce them in an actual Java programming environment to see what
-the Java compiler will and will not let you do. 
+the Java compiler will and will not let you do.
 
 ## Glossary
 
@@ -421,8 +425,7 @@ visibility
 .. standard footer
 .. footer:: |license_image|
 
-   |copyright| This work is licensed under a |license|_ license to students 
-   and the public. The content and opinions expressed on this Web page do not necessarily 
-   reflect the views of nor are they endorsed by the University of Georgia or the University 
+   |copyright| This work is licensed under a |license|_ license to students
+   and the public. The content and opinions expressed on this Web page do not necessarily
+   reflect the views of nor are they endorsed by the University of Georgia or the University
    System of Georgia.
-   
