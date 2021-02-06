@@ -284,7 +284,7 @@ let's consider the UML diagram below and the two code snippets that follows it.
 On the line labelled ``LINE1``, the author omitted a visibility modifier
 in their top-level declaration of the ``Utility`` class. As discussed earlier,
 this causes the class to default to package private visibility. On ``LINE2``,
-which exists in ``Driver.java`` in a separate package [5]_, an attempt is made to
+which exists in ``Driver.java`` in a different package [5]_, an attempt is made to
 import the ``Utility`` class. Since that class is package private, it's not
 visible from this line because things that are package private are only visible
 from within the same package. If you try to compile ``Driver.java``, then
@@ -298,8 +298,23 @@ intended for ``Utility`` itself to only be used by code residing within the
 they omitted a visibility modifier in the top-level class declaration. Had they
 declared it public, for example, then the example would have compiled.
 
-.. [5] In Java, two files are said to b in separate packages whenever
-       their package statements are not identical.
+As an aside, the UML diagram for this example also includes a private
+constructor [6]_! You can read about it in the footnote.
+
+.. [5] In Java, two files are said to be in **different packages** whenever
+       their package statements are not identical. Don't let the directory
+       structure for some packages confuse you into believing something that's
+       not true. For example, although the directory for package
+       ``cs1302.foo.bar`` might be inside the directory for package ``cs1302.foo``,
+       they're both considered by the compiler to be in different packages.
+
+.. [6] A **private constructor** may seen counterintuitive -- after all, constructors
+       are used to make objects of a class, and constructor calls often
+       occur in other classes. There are, however, some valid use cases:
+
+       :Prevent Object Creation: TODO
+
+       :Restrict Object Creation: TODO
 
 Protected Visibility
 ********************
