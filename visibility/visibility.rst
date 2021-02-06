@@ -182,7 +182,7 @@ Example 3
 We mentioned earlier that some students have a flawed conceptual model for
 private visibility. Their idea of private is more restrivtice or
 less visible than it actually is. To illustrate,  let's consider the UML
-diagram below and the code snippet
+diagram below and the code snippet that follows it.
 
 .. image:: private_1.svg
    :alt: Example 1
