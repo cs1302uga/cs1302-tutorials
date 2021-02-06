@@ -18,10 +18,11 @@ Introduction
 Java has four different **visibility** options that can be used to facilitate
 **access control**, i.e., to control access to certain things that we declare.
 When you declare that something has a particular **visibility** in your code,
-you communicate to the compiler the set of places in the code that are allowed
-to access that thing. The term "access" simply means to "use from elsewhere
-in the code." With that in mind, throughout this tutorial we will use "visible from"
-to mean that something "can be accessed from" or "can be used from" based on its
+you communicate to the compiler the set of locations that are allowed to access
+that thing. The term "access" simply means to "use from elsewhere in the code."
+With that in mind, throughout this tutorial we will use say that various things
+are "visible from" some location; this wording just means that the thing
+"can be accessed from" or "can be used from" that location based on its
 visibility.
 
 The table below shows all four visibility options that are available in Java,
