@@ -65,7 +65,7 @@ Example 1
 This is the classic, simple example that most students are familiar with.
 
 .. |image_private_1| image:: private_1.svg
-                     :width: 1200
+                     :width: 1600
                      :alt: UML class diagram of ``Person.java``
 
 +-------------------+-----------------------------------------------------------------------+
@@ -102,7 +102,7 @@ from depending on unnecessary details of the implementation of that package or c
 This example illustrates that idea quite well.
 
 .. |image_private_2| image:: private_2.svg
-                     :width: 1200
+                     :width: 1600
                      :alt: UML class diagram of ``Person.java`` and another class
 
 +-------------------+-----------------------------------------------------------------------+
