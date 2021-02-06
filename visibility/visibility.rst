@@ -120,9 +120,8 @@ This example illustrates that idea quite well.
 |                   | ``checkAge`` method, an instance method delcared within another       |
 |                   | class. Since that method is private, it's not visible from this line  |
 |                   | because private members are only visible from within the class where  |
-|                   | they are declared.                                                    |
-+                   +-----------------------------------------------------------------------+
-|                   | ::                                                                    |
+|                   | they are declared. If you try to compile ``OtherClass.java``, then    |
+|                   | you get the following error::                                         |
 |                   |                                                                       |
 |                   |     OtherClass.java: error: checkAge() has private access in Person   |
 |                   |                                                                       |
