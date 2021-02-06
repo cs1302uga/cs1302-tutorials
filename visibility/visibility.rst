@@ -74,7 +74,7 @@ TODO
 +===================+=======================================================================+
 | |image_private_1| | .. code-block:: java                                                  |
 |                   |                                                                       |
-|                   |    // inside Person.java                                                                   |
+|                   |    // inside Person.java                                              |
 |                   |    public void setName(String name) {                                 |
 |                   |        if (name == null) {                                            |
 |                   |            throw new IllegalArgumentException("name cannot be null"); |
