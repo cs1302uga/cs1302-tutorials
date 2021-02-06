@@ -62,13 +62,16 @@ Private Visibility
 Instead of saying that something has private visibility, we usually
 just say that it's private. In Java, top-level declarations (e.g., classes
 and interfaces) are not allowed to be private. However, any member-level
-declaration (see :term:`members <member>`), including those that are static,
-are allowed to be private. Private members are considered the least visible;
-they are only visible from lines of code that are written within the same class,
-and they are not visible from any other location. In Java, the ``private`` modifer
-keyword must be used in a member's declaration for it to be treated as private.
-In UML, the ``-`` symbol is used just before a member's identifier to illustrate
+declaration [1]_, including those that are static, are allowed to be private
+in Java. Private members are considered the least visible; they are only visible
+from lines of code that are written within the same class, and they are not
+visible from any other location. In Java, the ``private`` modifer keyword must be
+used in a member's declaration for it to be treated as private. In UML, the
+``-`` symbol is used just before a member's identifier to illustrate
 that it's private.
+
+.. [1] The members of a class are its constructors, methods, variables,
+       and constants; they can be static or non-static (instance) members.
 
 Example 1
 =========
