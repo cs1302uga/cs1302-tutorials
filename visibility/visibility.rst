@@ -209,9 +209,9 @@ table, then a member with that visibility is visible from that location.
 | # | Visible From  | private | package private | protected | public |
 |---|---------------|---------|-----------------|-----------|--------|
 | 1 | Same Class    | |Y|     | |Y|             | |Y|       | |Y|    |
-| 2 | Same Package  |         | |Y|             | |Y|       | |Y|    |
-| 3 | Child Class   |         |                 | |Y|       | |Y|    |
-| 4 | Elsewhere     |         |                 |           | |Y|    |
+| 2 | Same Package  | ..      | |Y|             | |Y|       | |Y|    |
+| 3 | Child Class   | ..      | ..              | |Y|       | |Y|    |
+| 4 | Elsewhere     | ..      | ..              | ..        | |Y|    |
 
 Here is another table with the exact same information.
 
