@@ -382,13 +382,13 @@ below summarizes the scenario for each line. Class names in the
 ``In`` and ``From`` columns have been omitted since they're not
 relevant for this particular example.
 
-====  ====================  ===============  ==================  =======================  ========
-LINE  Member                Declared         In                          From             Visible?
-====  ====================  ===============  ==================  =======================  ========
+====  ====================  ===============  ==================  ==================  ========
+LINE  Member                Declared         In                          From        Visible?
+====  ====================  ===============  ==================  ==================  ========
 1     ``requestChange``     public           ``cs1302.factory``  ``cs1302.factory``  |Y|
 f     ``approveChange``     package private  ``cs1302.factory``  ``cs1302.factory``  |Y|
 3     ``denyChange``        package private  ``cs1302.factory``  ``cs1302.factory``  |Y|
-====  ====================  ===============  ==================  =======================  ========
+====  ====================  ===============  ==================  ==================  ========
 
 On the line labelled ``LINE1``, the author omitted a visibility modifier
 in their top-level declaration of the ``Utility`` class. As discussed earlier,
