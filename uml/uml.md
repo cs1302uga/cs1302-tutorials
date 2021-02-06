@@ -5,7 +5,7 @@
 ## Introduction
 
 In object-oriented programming, it's not uncommon to visualize classes
-and their relationships using the Unified Modeling Language (UML). 
+and their relationships using the Unified Modeling Language (UML).
 While UML has many different types of diagrams, this reading focusses only
 on UML class diagrams.
 
@@ -13,25 +13,25 @@ on UML class diagrams.
 
 Consider the following UML class diagram:
 
-![cs1302.example.Person Class](cs1302.example.Person.png)
+![cs1302.example.Person Class](img/cs1302.example.Person.png)
 
 The diagram consists of a rectangle broken up vertically into three sections:
 
 1. **Class name.** In this case, the fully qualified name of the class is given.
    Sometimes, if multiple classes are given and assumed to be in the same package,
    then the simple name is used here instead.
-   
+
 1. **Variables.** In UML, the variables of a class are called _attributes_. In
-   this example, there are two private instance variables (indicated with a `-`) 
+   this example, there are two private instance variables (indicated with a `-`)
    and one private static variable. In UML, attributes and methods are shown
    to be public with a `+` symbol to the left of the name. Static variables are underlined.
-   
+
 1. **Methods.** In UML, the methods of a class are called _operations_. In this
-   example, there is one public constructor, two public (indicated by `+`) instance 
+   example, there is one public constructor, two public (indicated by `+`) instance
    methods, and one public static method. In UML, attributes and methods are shown
    to be public with a `+` symbol to the left of the name. Static methods are underlined.
-   
-The diagram above gives enough information for a programmer (or a program) to generate the following 
+
+The diagram above gives enough information for a programmer (or a program) to generate the following
 `Person.java` file:
 
 ```java
@@ -42,15 +42,15 @@ public class Person {
     private String name;
     private int age;
     private static int personCounter;
-    
+
     public Person(String name, int age) {
         ...
     } // Person
-    
+
     public String getName() {
         ...
     } // getName
-    
+
     public int getAge() {
         ...
     } // getAge
@@ -58,7 +58,7 @@ public class Person {
     public static int getPersonCounter() {
         ...
     } // getPersonCounter
-    
+
 } // Person
 ```
 
@@ -111,17 +111,17 @@ name of class or operation. Sometimes this is impractical in situations where it
 difficult to discern the difference between the normal lettering of a font and
 its italicized version. In such casses, the names might also be prefixed with
 an `<<abstract>>` stereotype in order to better communicate the intention to the
-viewer of the diagram. 
+viewer of the diagram.
 
 To illustrate the differences, consider the following three `Shape` classes:
 
-![Abstract Comparison](abstract.png)
+![Abstract Comparison](img/abstract.png)
 
 In the diagram, the first class on the left is not abstract and the other two
 are. While the italics in the middle class indicate that its abstract, it
 can be easily confused as a non-abstract class if viewed quickly. For this
 reason, we suggest you italicize and use a stereotype to indicate that a
-class is abstract just as is done with the third class in the diagram. 
+class is abstract just as is done with the third class in the diagram.
 
 ### Associations
 
@@ -130,11 +130,11 @@ how they are associated. In UML, this is done with association arrows.
 While UML supports many different kinds of association arrows, the following
 are arguably the most common:
 
-| Association                   | Description                               | Usage                                  |
-|-------------------------------|-------------------------------------------|----------------------------------------|
-| ![uses](uses.png)             | Solid line; open arrowhead.               | `ClassA` uses `ClassB`                 |
-| ![extends](extends.png)       | Solid line; unfilled triangle arrowhead.  | `Child` extends `Parent`               |
-| ![implements](implements.png) | Dashed line; unfilled triangle arrowhead. | `SomeClass` implements `SomeInterface` |
+| Association                       | Description                               | Usage                                  |
+|-----------------------------------|-------------------------------------------|----------------------------------------|
+| ![uses](img/uses.svg)             | Solid line; open arrowhead.               | `ClassA` uses `ClassB`                 |
+| ![extends](img/extends.svg)       | Solid line; unfilled triangle arrowhead.  | `Child` extends `Parent`               |
+| ![implements](img/implements.svg) | Dashed line; unfilled triangle arrowhead. | `SomeClass` implements `SomeInterface` |
 
 **It may seem nit picky,** but each of these arrows is visually different
 with respect to its line and its arrowhead!
@@ -145,14 +145,14 @@ Before you continue reading, it's important to note that you do not need a speci
 It's quite possible (and encouraged) that you practice drawing UML digrams by hand either on paper or in
 your note-taking software. The purpose of a UML class diagram is to help visualize multiple classes and
 their relationships. Over the years, we've seen many students skip directly to using UML software and
-get frustrated. Since these programs have a learning curve, students spend too much time trying to 
+get frustrated. Since these programs have a learning curve, students spend too much time trying to
 figure out, for example, how to mark something as protected in the program when they could have simply
 written `#` had they done it by hand. Don't get us wrong, these tools are great, and if you want to learn
 them, then you should. Just try to make sure it doesn't impact your productivity, especially near a
 deadline.
 
 Below is a list of popular UML software programs. **You are not required to have access to one for
-this course.** While many of these programs do require a paid license, you are encouraged to seek 
+this course.** While many of these programs do require a paid license, you are encouraged to seek
 out a free community edition or a free/reduced-price student license before making any purchases.
 If you find a tool that's not in the list, then please share it on Piazza!
 
