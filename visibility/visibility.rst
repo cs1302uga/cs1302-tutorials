@@ -64,8 +64,11 @@ Example 1
 
 This is the classic, simple example that most students are familiar with.
 
-.. image:: private_1.svg
-   :alt: UML class diagram of ``Person.java``
+.. figure:: private_1.svg
+   :scale: 50%
+   :alt: Example 1
+
+   Caption text...
 
 .. code-block:: java
 
