@@ -72,18 +72,20 @@ TODO
 +-------------------+-----------------------------------------------------------------------+
 | UML Diagram       | Code Snippet(s)                                                       |
 +===================+=======================================================================+
-| |image_private_1| | .. code-block:: java                                                  |
+| |image_private_1| | ``Person.java:``                                                      |
+|                   |                                                                       |
+|                   | .. code-block:: java                                                  |
 |                   |                                                                       |
 |                   |    public void setName(String name) {                                 |
 |                   |        if (name == null) {                                            |
 |                   |            throw new IllegalArgumentException("name cannot be null"); |
 |                   |        } else {                                                       |
-|                   |            this.name = name;                                          |
+|                   |            this.name = name; // <---- HERE                            |
 |                   |        } // if                                                        |
 |                   |    } // setName                                                       |
 |                   |                                                                       |
 +                   +-----------------------------------------------------------------------+
-|                   | TODO                                                                  |
+|                   | In                                                                    |
 +-------------------+-----------------------------------------------------------------------+
 
 Package Private Visibility
