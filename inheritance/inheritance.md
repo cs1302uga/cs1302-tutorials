@@ -84,7 +84,7 @@ In Java, when one class extends another, the child class inherits almost everyth
 parent class. Specifically, we are usually concerned with the fact that a child class inherits
 instance variables and methods, regardless of their declared visibility, from its parent.
 These _members_ are accessible, depending on their visibility, within the child class in much
-the same way they would be accessible in the parent class. Even private instance variables are 
+the same way they would be accessible in the parent class. Even private instance variables are
 inherited. However, we should recall that they cannot be directly accessed outside of the class
 in which they are declared.
 
@@ -92,10 +92,10 @@ in which they are declared.
 
 According the Java Language Specification, the
 [`java.lang.Object`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html)
-class is the superclass for all other classes [1]. Take a few moments to look through 
+class is the superclass for all other classes [1]. Take a few moments to look through
 the `Object` class documentation. Write down any methods you recognize and may have used in the past
-in your notes. Remember, all classes that you create automatically inherit those methods. That is, 
-if a class does not explicitly extend another class, then it implicitly extends `Object`. Therefore, 
+in your notes. Remember, all classes that you create automatically inherit those methods. That is,
+if a class does not explicitly extend another class, then it implicitly extends `Object`. Therefore,
 `Object` is at the top of all inheritance hierarchies in Java.
 
 ### Constructors
@@ -103,9 +103,21 @@ if a class does not explicitly extend another class, then it implicitly extends 
 Constructors are __not inherited in the usual sense__. That is, a parent constructor
 does not become a constructor in the child class when inheritance is involved. However, child
 constructors can invoke parent constructors via the `super` keyword. Java allows this
-in order to facilitate a separation of concerns: let the parent class code be responsible 
-for setting up the inherited variables. Let's illustrate this with a small
-example:
+in order to facilitate a separation of concerns: let the parent class code be responsible
+for setting up the inherited variables. We'll illustrate this with a small in just a moment,
+but first take case to read the following note:
+
+> It's tempting to imagine that Java moves back and forth from child to parent whenever
+> `super` is used; however, thinking of it like that is error prone and often confusing.
+> Instead, embrace the "copy-paste" ideology that's espoused in our videos and apply
+> that thinking here. Although the parent constructor is not included as a separate
+> constructor in the child class, it's convenient to think of it as being pasted into
+> child class along with other inherited members. Instead of moving back and forth
+> from child to parent, you simply move from constructor to constructor in the child
+> class; eliminating the back and forth makes it easier to reason out what's happening
+> when instance variables are involved.
+
+Now let's work through the example:
 
 ![Starter Code](res/Animal.png)
 
@@ -122,7 +134,7 @@ To work through this example, perform the following steps:
    the parent constructor (in the `Animal` class) takes two parameters: `genus` and `species`. Since we are
    invoking the `Animal` constructor on a type of animal where we know the exact genus and species, we can
    provide the literal values to the parent constructor.
-   
+
    Go ahead and call the `Animal` constructor from within the `Dog` constructor using `"Canis"` and
    `"Lupus Familiaris"` as the genus and species, respectively. This will setup the `genus` and `species`
    variable within any `Dog` objects that are created - similar to what was done in the first example video.
