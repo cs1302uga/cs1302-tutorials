@@ -99,7 +99,9 @@ private          |Y|
   illustrate that it's private.
 * The ``javadoc`` program does not include private declarations in a
   documentation website by default; however, they can be included  by
-  adding the ``-private`` command-line argument.
+  adding the ``-private`` command-line argument (that option will
+  also include anything that is more visible than private -- so
+  everything).
 
 Example 1
 =========
@@ -222,19 +224,18 @@ package private  |Y|         |Y|
 * In Java, **there is no modifier keyword for package private visibility**. For
   top-level declarations and member-level declarations within a class, the omission
   of a visibility modifier will cause the compiler to treat the declared
-  thing as package private. **However,** this behavior
-
-  * any top-level declaration without a visibility modifier is package private; and
-  * any member-level declaration within a class
-    p
-
-* In UML, the ``-`` symbol is used just before a member's identifier to
-  illustrate that it's private.
-* The ``javadoc`` program does not include private declarations in a
-  documentation website by default; however, they can be included  by
-  adding the ``-private`` command-line argument.
-
-TODO
+  thing as package private. This is behavior is different for member-level declarations
+  within an interface, where the omission of a visibility modifier defaults
+  a declaration's visibility to public.
+* In UML, the ``~`` symbol is used just before a member's identifier to
+  illustrate that it's private. Some UML programs may not support displaying
+  the visibility for top-level declarations; in those cases, a quick hack
+  is to include the ``~`` as part of the name.
+* The ``javadoc`` program does not include package private declarations in a
+  documentation website by default; however, they can be included by
+  adding the ``-package`` command-line argument (that option will
+  also include anything that is more visible than package private -- so
+  everything except private).
 
 Protected Visibility
 ********************
