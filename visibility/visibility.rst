@@ -6,6 +6,8 @@
 .. _uml_tutorial: https://github.com/cs1302uga/cs1302-tutorials/blob/master/uml/uml.md
 .. |jls11_access_control| replace:: JLS 11 Section 6.6
 .. _jls11_access_control: https://docs.oracle.com/javase/specs/jls/se11/html/jls-6.html#jls-6.6
+.. |wikipedia_singleton| replace:: Singleton pattern
+.. _wikipedia_singleton: https://en.wikipedia.org/wiki/Singleton_pattern
 
 .. image:: img/in-progress.svg
 
@@ -312,9 +314,19 @@ constructor [6]_! You can read about it in the footnote.
        are used to make objects of a class, and constructor calls often
        occur in other classes. There are, however, some valid use cases:
 
-       :Prevent Object Creation: TODO
+       * **Prevent Object Creation:** If your class only contains static methods
+         and constants and it doesn't make sense to turn it into an interface,
+         then you might explicitly declare one do-nothing constructor that is
+         private and has no parameters. This will prevent the compiler from
+         automatically creating its own default constructor, and it will prevent
+         users of your class from creating objets that aren't needed.
 
-       :Restrict Object Creation: TODO
+       * **Restrict Object Creation:** It may be desirable to utilize a private
+         constructor along with a static method of some other visibility in
+         a carefully setup way to restrict the total number of objects of a
+         particular class that can be created. We won't go into the details
+         here, the |wikipedia_singleton|_ is example of this idea that
+         restricts to total number of objects to be no greater than one.
 
 Protected Visibility
 ********************
