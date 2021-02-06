@@ -351,9 +351,9 @@ let's consider the UML diagram below and the two code snippets that follow it.
    // inside FactoryDriver.java (cs1302.factory package)
    public static void main(String[] args) {
        Factory factory = // not null
-       factory.requestChangek("decrease price");
-       factory.approveChange("decrease price");
-       factory.denyChange("decrease price");
+       factory.requestChange("decrease price"); // <------- LINE1
+       factory.approveChange("decrease price"); // <------- LINE2
+       factory.denyChange("decrease price"); // <---------- LINE3
    } // main
 
 .. code-block:: java
@@ -361,9 +361,9 @@ let's consider the UML diagram below and the two code snippets that follow it.
    // inside Driver.java (cs1302.store package)
    public static void main(String[] args) {
        Factory factory = // not null
-       factory.requestChange("increase quantity");
-       factory.approveChange("increase quantity");
-       factory.denyChange("increase quantity");
+       factory.requestChange("increase quantity"); // <---- LINE4
+       factory.approveChange("increase quantity"); // <---- LINE5
+       factory.denyChange("increase quantity"); // <------- LINE6
    } // main
 
 Protected Visibility
