@@ -5,9 +5,9 @@
 ## Introduction
 
 In object-oriented programming, it's not uncommon to visualize classes
-using the Unified Modeling Language (UML). While UML has many different
-types of diagrams, this reading focusses only on UML class diagrams,
-which are used to visualize classes and their associations.
+and their relationships using the Unified Modeling Language (UML). 
+While UML has many different types of diagrams, this reading focusses only
+on UML class diagrams.
 
 ### Basic Class Diagram
 
@@ -73,7 +73,7 @@ UML supports the standard four visibilities:
 | protected       | `protected`      | `#`        |
 | public          | `public`         | `+`        |
 
-For an in-depth discussion on visibilities, see the [Visibility Reading](/visibility/visibility.md).
+For an in-depth discussion on visibilities, see the [Visibility Reading](/visibility/).
 
 ### Atributes and Parameters (Variables)
 
@@ -138,6 +138,13 @@ are arguably the most common:
 
 **It may seem nit picky,** but each of these arrows is visually different
 with respect to its line and its arrowhead!
+
+## UML Software and Tools
+
+Before you continue reading, it's important to note that you do not need a special program to work with UML.
+It's quite possible (and encouraged) that you practice drawing UML digrams by hand either on paper or in
+your note-taking software. The purpose of a UML class diagram is to help visualize multiple classes and
+their relationships. ; oftentimes, students to use
 
 <hr/>
 
