@@ -64,34 +64,27 @@ Example 1
 
 This is the classic, simple example that most students are familiar with.
 
-.. |image_private_1| image:: private_1.svg
-                     :class: col-md-4
-                     :alt: UML class diagram of ``Person.java``
+.. image:: private_1.svg
+   :alt: UML class diagram of ``Person.java``
 
-+-------------------+-----------------------------------------------------------------------+
-| UML Diagram       | Code Snippet(s)                                                       |
-+===================+=======================================================================+
-| |image_private_1| | .. code-block:: java                                                  |
-|                   |                                                                       |
-|                   |    // inside Person.java                                              |
-|                   |    public void setAge(int age) {                                      |
-|                   |        if (!checkAge(age)) { // <---- LINE1                           |
-|                   |            throw new IllegalArgumentException("invalid age");         |
-|                   |        } else {                                                       |
-|                   |            this.age = age; // <---- LINE2                             |
-|                   |        } // if                                                        |
-|                   |    } // setAge                                                        |
-|                   |                                                                       |
-+                   +-----------------------------------------------------------------------+
-|                   | On the line labelled ``LINE1``, the code attempts to access           |
-|                   | ``checkAge``, an instance method of the current object (i.e., it's    |
-|                   | the same as ``this.checkAge``) declared within the same class.        |
-|                   | Although that method is private, it's visible from ``LINE1``          |
-|                   | because private members are always visible from within the same       |
-|                   | class. A similar argument can be made for the code on ``LINE2``,      |
-|                   | which attempts to access the private intance variable ``age``.        |
-+-------------------+-----------------------------------------------------------------------+
+.. code-block:: java
 
+   // inside Person.java
+   public void setAge(int age) {
+       if (!checkAge(age)) { // <---- LINE1
+           throw new IllegalArgumentException("invalid age");
+       } else {
+           this.age = age; // <---- LINE2
+       } // if
+   } // setAge
+
+On the line labelled ``LINE1``, the code attempts to access
+``checkAge``, an instance method of the current object (i.e., it's
+the same as ``this.checkAge``) declared within the same class.
+Although that method is private, it's visible from ``LINE1``
+because private members are always visible from within the same
+class. A similar argument can be made for the code on ``LINE2``,
+which attempts to access the private intance variable ``age``.
 
 Example 2
 =========
