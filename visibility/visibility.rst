@@ -378,15 +378,17 @@ let's consider the UML diagram below and the two code snippets that follow it.
 
 The lines labelled ``LINE1``, ``LINE2``, and ``LINE3`` each attempt
 to access a different member of the ``Factory`` class. The table
-below summarizes the scenario for each line.
+below summarizes the scenario for each line. Class names in the
+``In`` and ``From`` columns have been omitted since they're not
+relevant for this particular example.
 
-====  ====================  ===============  ==========================  ================================  ========
-LINE  Member                Declared         In                          From                              Visible?
-====  ====================  ===============  ==========================  ================================  ========
-1     ``requestChange``     public           ``cs1302.factory.Factory``  ``cs1302.factory.FactoryDriver``  |Y|
-f     ``approveChange``     package private  ``cs1302.factory.Factory``  ``cs1302.factory.FactoryDriver``  |Y|
-3     ``denyChange``        package private  ``cs1302.factory.Factory``  ``cs1302.factory.FactoryDriver``  |Y|
-====  ====================  ===============  ==========================  ================================  ========
+====  ====================  ===============  ==================  =======================  ========
+LINE  Member                Declared         In                          From             Visible?
+====  ====================  ===============  ==================  =======================  ========
+1     ``requestChange``     public           ``cs1302.factory``  ``cs1302.factory``  |Y|
+f     ``approveChange``     package private  ``cs1302.factory``  ``cs1302.factory``  |Y|
+3     ``denyChange``        package private  ``cs1302.factory``  ``cs1302.factory``  |Y|
+====  ====================  ===============  ==================  =======================  ========
 
 On the line labelled ``LINE1``, the author omitted a visibility modifier
 in their top-level declaration of the ``Utility`` class. As discussed earlier,
