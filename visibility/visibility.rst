@@ -344,7 +344,7 @@ should not allow for the store to approve or deny changes in this scenario.
 To see how we can utilize package private visibility to accomplish this,
 let's consider the UML diagram below and the two code snippets that follow it.
 
-.. image:: img/package_private_1.svg
+.. image:: img/package_private_2.svg
 
 .. code-block:: java
 
