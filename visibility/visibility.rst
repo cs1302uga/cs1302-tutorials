@@ -4,6 +4,8 @@
 .. external links
 .. |uml_tutorial| replace:: UML Class Diagrams
 .. _uml_tutorial: https://github.com/cs1302uga/cs1302-tutorials/blob/master/uml/uml.md
+.. |jls11_access_control| replace:: JLS 11 Section 6.6
+.. _jls11_access_control: https://docs.oracle.com/javase/specs/jls/se11/html/jls-6.html#jls-6.6
 
 Visibility Reading
 ##################
@@ -13,18 +15,11 @@ Visibility Reading
 Introduction
 ************
 
-.. |jls11_access_control| replace:: JLS 11 Section 6.6
-.. _jls11_access_control: https://docs.oracle.com/javase/specs/jls/se11/html/jls-6.html#jls-6.6
-
 Java has four different **visibility** options for **access control**
 that can be used in the declaration of class members (i.e., methods, variables, and constants).
 When you indicate that a class member has a particular **visibility** in your code,
 you communicate to the compiler the set of places in the code that are allowed
-to access that thing. According to |jls11_access_control|_, the developers of Java
-incorporated visibility into the language, "to prevent the users of a package or class
-from depending on unnecessary details of the implementation of that package or class."
-
-In the context of visibility, the term "access" simply means to "use from elsewhere
+to access that thing. The term "access" simply means to "use from elsewhere
 in the code." With that in mind, throughout this tutorial we will use "visible from"
 to mean that something "can be accessed from" or "can be used from" based on its
 visibility.
@@ -77,21 +72,56 @@ Example 1
 | |image_private_1| | .. code-block:: java                                                  |
 |                   |                                                                       |
 |                   |    // inside Person.java                                              |
-|                   |    public void setName(String name) {                                 |
-|                   |        if (name == null) {                                            |
-|                   |            throw new IllegalArgumentException("name cannot be null"); |
+|                   |    public void setAge(int age) {                                      |
+|                   |        if (!checkAge(age)) {                                          |
+|                   |            throw new IllegalArgumentException("invalid age");         |
 |                   |        } else {                                                       |
-|                   |            this.name = name; // <---- HERE                            |
+|                   |            this.age = age; // <---- HERE                              |
 |                   |        } // if                                                        |
-|                   |    } // setName                                                       |
+|                   |    } // setAge                                                        |
 |                   |                                                                       |
 +                   +-----------------------------------------------------------------------+
 |                   | On the line labelled ``HERE``, the code attempts to access            |
-|                   | ``this.name``, an instance variable delcared within the same class.   |
+|                   | ``this.age``, an instance variable delcared within the same class.    |
 |                   | Although that variable is private, it's visible from this line        |
 |                   | because private members are always visible from within the same       |
 |                   | class.                                                                |
 +-------------------+-----------------------------------------------------------------------+
+
+Example 2
+=========
+
+.. |image_private_2| image:: private_2.svg
+                     :width: 800
+                     :alt: UML class diagram of ``Person.java`` and another class
+
++-------------------+-----------------------------------------------------------------------+
+| UML Diagram       | Code Snippet(s)                                                       |
++===================+=======================================================================+
+| |image_private_2| | .. code-block:: java                                                  |
+|                   |                                                                       |
+|                   |    // inside Person.java                                              |
+|                   |    public void setAge(int age) {                                      |
+|                   |        if (!checkAge(age)) {                                          |
+|                   |            throw new IllegalArgumentException("invalid age");         |
+|                   |        } else {                                                       |
+|                   |            this.age = age; // <---- HERE                              |
+|                   |        } // if                                                        |
+|                   |    } // setAge                                                        |
+|                   |                                                                       |
++                   +-----------------------------------------------------------------------+
+|                   | On the line labelled ``HERE``, the code attempts to access            |
+|                   | ``this.age``, an instance variable delcared within the same class.    |
+|                   | Although that variable is private, it's visible from this line        |
+|                   | because private members are always visible from within the same       |
+|                   | class.                                                                |
++-------------------+-----------------------------------------------------------------------+
+
+
+
+According to |jls11_access_control|_, the developers of Java
+incorporated visibility into the language, "to prevent the users of a package or class
+from depending on unnecessary details of the implementation of that package or class."
 
 Package Private Visibility
 **************************
