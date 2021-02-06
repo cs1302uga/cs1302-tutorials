@@ -67,7 +67,7 @@ Private Visibility
 TODO
 
 .. |image_private_1| image:: private_1.svg
-                     :width: 400
+                     :width: 100%
                      :alt: UML class diagram of ``Person.java``
 
 +-------------------+-----------------------------------------------------------------------+
