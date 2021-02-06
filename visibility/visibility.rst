@@ -101,7 +101,7 @@ This example illustrates that idea quite well.
                      :alt: UML class diagram of ``Person.java`` and another class
 
 .. table:: Example 2
-   :widths: 33 66
+   :widths: 1 2
 
    +-------------------+-----------------------------------------------------------------------+
    | UML Diagram       | Code Snippet(s)                                                       |
