@@ -76,8 +76,9 @@ that it's private.
 Example 1
 =========
 
-This is the classic, simple example that most students are familiar with.
-Consider the UML diagram below and the code snippet that follows it.
+This is a classic example that many students are familiar with.
+To get started, let's consider the UML diagram below and the code snippet that
+follows it.
 
 .. image:: private_1.svg
    :alt: Example 1
