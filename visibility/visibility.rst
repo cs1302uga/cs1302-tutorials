@@ -46,10 +46,10 @@ public           ``public``        ``+``       |Y|             |Y|
        Some things that can be declared at the top-level include classes and
        interfaces.
 
-.. [2] A **member-level declaration** is any declaration of a class member. The
-       members of a class are its constructors, methods, variables, constants,
-       etc., and includes both static or non-static (instance); however, they
-       never include Local-level declarations.
+.. [2] A **member-level declaration** is any declaration of a class or interface member.
+       Members can include, where applicable, the constructors, methods, variables, constants,
+       etc. (both static or non-static/instance) of the class or interface; however, the
+       never includes Local-level declarations.
 
 .. [3] A **local-level declaration** is any variable declaration that is local, in
        scope, to a particular method. The local variables of a method include
@@ -78,7 +78,7 @@ and help others to understand the important details of visibility.p
 Private Visibility
 ******************
 
-Instead of saying that something has private visibility, we usually
+Instead of saying that something has **private** visibility, we usually
 just say that it's private. In Java, top-level and local-level
 declarations are not allowed to be private; however, any member-level declaration
 is allowed. Private members are considered the least visible;
@@ -202,6 +202,37 @@ On the line labelled ``LINE1``, the code attempts to access
 
 Package Private Visibility
 **************************
+
+Instead of saying that something has **package private** visibility, we usually
+just say that it's package private. In Java, local-level
+declarations are not allowed to be private; however, any top-level and member-level
+declarations are allowed. Things that are package private are slightly more
+visible than things that are private; they are only visible from lines of code
+that are written within the same package. They are not visible from outside the
+package in which they are declared.
+
+===============  ==========  ============  ===========  =========
+Visibility       Visible From
+---------------  ------------------------------------------------
+Name             Same Class  Same Package  Child Class  Elsewhere
+===============  ==========  ============  ===========  =========
+package private  |Y|         |Y|
+===============  ==========  ============  ===========  =========
+
+* In Java, **there is no modifier keyword for package private visibility**. For
+  top-level declarations and member-level declarations within a class, the omission
+  of a visibility modifier will cause the compiler to treat the declared
+  thing as package private. **However,** this behavior
+
+  * any top-level declaration without a visibility modifier is package private; and
+  * any member-level declaration within a class
+    p
+
+* In UML, the ``-`` symbol is used just before a member's identifier to
+  illustrate that it's private.
+* The ``javadoc`` program does not include private declarations in a
+  documentation website by default; however, they can be included  by
+  adding the ``-private`` command-line argument.
 
 TODO
 
