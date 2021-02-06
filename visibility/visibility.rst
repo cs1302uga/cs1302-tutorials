@@ -197,7 +197,7 @@ diagram below and the code snippet for a copy constructor [4]_ that follows it.
        setName(other.name); // <---- LINE1
        setAge(other.age); // <---- LINE2
    } // setAge
-p
+
 On the lines labelled ``LINE1`` and ``LINE2``, the code attempts to access
 the private instance members ``name`` and ``age`` of the ``Person`` object
 referred by ``other``. When asked, many students will say thpat this will
@@ -251,7 +251,10 @@ package private  |Y|         |Y|
 * In UML, the ``~`` symbol is used just before a member's identifier to
   illustrate that it's private. Some UML programs may not support displaying
   the visibility for top-level declarations; in those cases, a quick hack
-  is to include the ``~`` as part of the name.
+  is to include the ``~`` as part of the name. Although omitting a visibility
+  modifier in Java code may default to package private, the same is not true
+  for UML class diagrams; they default to public visibility (covered in a
+  later section).
 * The ``javadoc`` program does not include package private declarations in a
   documentation website by default; however, they can be included by
   adding the ``-package`` command-line argument (that option will
