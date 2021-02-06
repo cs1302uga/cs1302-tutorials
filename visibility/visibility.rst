@@ -26,16 +26,32 @@ visibility.
 
 The table below shows all four visibility options that are available in Java,
 three of which have an associated **visibility modifier** that we can
-type into our code:
+include in various declarations throughout our code. The set of potential
+visibility options for a declaration may also depends on its level and
+other factors.
 
-===============  ================  ==========
-Visibility Name  Modifier Keyword  UML Symbol
-===============  ================  ==========
-private          ``private``       ``-``
-package private  ..                ``~``
-protected        ``protected``     ``#``
-public           ``public``        ``+``
-===============  ================  ==========
+===============  ================  ==========  ==============  =================  ================
+Visibility Name  Modifier Keyword  UML Symbol  Top-Level [1]_  Member-Level [2]_  Local-Level [3]_
+===============  ================  ==========  ==============  =================  ================
+private          ``private``       ``-``                       ✓
+package private  ..                ``~``       ✓               ✓
+protected        ``protected``     ``#``                       ✓
+public           ``public``        ``+``       ✓               ✓
+===============  ================  ==========  ==============  =================  ================
+
+.. [1] A **top-level declaration** is the outermost declaration in a ``.java`` file.
+       Some things that can be declared at the top-level include classes and
+       interfaces.
+
+.. [2] A **member-level declaration** is any declaration of a class member. The
+       members of a class are its constructors, methods, variables, constants,
+       etc., and includes both static or non-static (instance); however, they
+       never include Local-level declarations [3]_.
+
+.. [3] A **local-level declaration** is any variable declaration that is local, in
+       scope, to a particular method. The local variables of a method include
+       its parameter and any variables declared within the body of the
+       method.
 
 In this tutorial, we cover each available visibility option with a few examples,
 often illustrated using a combination of `UML diagrams <uml_tutorial>`__ and code
@@ -54,24 +70,27 @@ visibility example in this tutorial until you are able to:
 2. write your own code that illustrates a similar visibility scenario.
 
 We encourage you to make Piazza posts about your examples, ask questions,
-and help others to understand the important details of visibility.
+and help others to understand the important details of visibility.p
 
 Private Visibility
 ******************
 
 Instead of saying that something has private visibility, we usually
-just say that it's private. In Java, top-level declarations (e.g., classes
-and interfaces) are not allowed to be private. However, any member-level
-declaration [1]_, including those that are static, are allowed to be private
-in Java. Private members are considered the least visible; they are only visible
-from lines of code that are written within the same class, and they are not
-visible from any other location. In Java, the ``private`` modifer keyword must be
-used in a member's declaration for it to be treated as private. In UML, the
-``-`` symbol is used just before a member's identifier to illustrate
-that it's private.
+just say that it's private. In Java, top-level [1]_ and local-level [3]_
+declarations not allowed to be private; however, any member-level declaration [2]_
+is allowed to be private. Private members are considered the least visible;
+they are only visible from lines of code that are written within the same class,
+and they are not visible from any other location.
 
-.. [1] The **members** of a class are its constructors, methods, variables,
-       and constants. Members can be static or non-static (instance).
+* In Java, the ``private`` modifier must be included in a declararion for
+  it to be treated as private by the compiler.
+* In UML, the ``-`` symbol is used just before a member's identifier to
+  illustrate that it's private.
+* The ``javadoc`` program does not include private declarations in a
+  documentation website by default; however, they can be included (along
+  with all applicable declarations that are more visible than private) by
+  including ``-private`` as a command-line argument to the ``javadoc``
+  command.
 
 Example 1
 =========
@@ -140,7 +159,7 @@ intended for ``checkAge`` to only be used by other methods within the ``Person``
 To make the method not visible from outside the class, they declared it private. Had they
 declared it public, for example, then the example would have compiled; however, the call
 to ``checkAge`` would add unnecessary redundancy since it's called again inside the call
-to ``setAge`` on the next line (see the previous example).
+to ``setAge`` on the next line (see the previous example for the inside of ``setAge``).
 
 We're not sure how the author of ``OtherClass`` knew about the ``checkAge`` method, but
 the error message lets them know that it's not for them to use. Had they referred to the
