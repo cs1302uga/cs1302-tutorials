@@ -135,7 +135,7 @@ According to |jls11_access_control|_, the developers of Java
 incorporated visibility into the language "to prevent the users of a package or class
 from depending on unnecessary details of the implementation of that package or class."
 To illustrate this idea, let's consider the UML diagram below and the code snippet
-xthat follows it.
+that follows it.
 
 .. image:: private_2.svg
    :alt: Example 2
@@ -179,6 +179,23 @@ to use your code.
 Example 3
 =========
 
+We mentioned earlier that some students have a flawed conceptual model for
+private visibility. Their idea of private is more restrivtice or
+less visible than it actually is. To illustrate,  let's consider the UML
+diagram below and the code snippet
+
+.. image:: private_1.svg
+   :alt: Example 1
+
+.. code-block:: java
+
+   // inside Person.java
+   public Person(Person other) {
+       setName(other.name); // <---- LINE1
+       setAge(other.age); // <---- LINE2
+   } // setAge
+
+On the line labelled ``LINE1``, the code attempts to access
 
 
 Package Private Visibility
