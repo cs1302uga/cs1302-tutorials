@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1012" height="50" viewBox="0 0 1012 50">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-size: 30px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        font-family: Seravek;
+      }
+
+      .cls-2 {
+        text-anchor: end;
+      }
+
+      .cls-3 {
+        font-size: 14px;
+        text-anchor: middle;
+      }
+    </style>
+  </defs>
+  <image width="1012" height="50" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAA/QAAAAyCAYAAADyfJBWAAABaUlEQVR4nO3ZMQ2AUBAFwQ9BGLLAAZIocQYFwQObzCh4yVWbm/bzvgcAAACQMjsXAAAA9Czf4m11PQAAAPi743oH+tADAABAkKAHAACAIEEPAAAAQYIeAAAAggQ9AAAABAl6AAAACBL0AAAAECToAQAAIEjQAwAAQJCgBwAAgCBBDwAAAEGCHgAAAIIEPQAAAAQJegAAAAgS9AAAABAk6AEAACBI0AMAAECQoAcAAIAgQQ8AAABBgh4AAACCBD0AAAAECXoAAAAIEvQAAAAQJOgBAAAgSNADAABAkKAHAACAIEEPAAAAQYIeAAAAggQ9AAAABAl6AAAACBL0AAAAECToAQAAIEjQAwAAQJCgBwAAgCBBDwAAAEGCHgAAAIIEPQAAAAQJegAAAAgS9AAAABAk6AEAACBI0AMAAECQoAcAAIAgQQ8AAABBgh4AAACCBD0AAAAELd/k43I+AAAAqPChBwAAgJoxxgPosgbfC0whyQAAAABJRU5ErkJggg=="/>
+  <text id="WORK_IN_PROGRESS" data-name="WORK IN PROGRESS" class="cls-1" x="14.162" y="35.119">WORK IN PROGRESS</text>
+  <text id="WORK_IN_PROGRESS-2" data-name="WORK IN PROGRESS" class="cls-2" x="994.162" y="35.119"><tspan x="994.162">WORK IN PROGRESS</tspan></text>
+  <text id="That_draft_that_appears_on_this_page_is_not_yet_ready_for_viewi" data-name="That draft that appears on this page is not yet ready for viewi" class="cls-3" x="503.517" y="28.821"><tspan x="503.517">That draft that appears on this page is not yet ready for viewing.</tspan></text>
+</svg>

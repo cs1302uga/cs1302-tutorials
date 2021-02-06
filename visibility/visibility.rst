@@ -7,6 +7,8 @@
 .. |jls11_access_control| replace:: JLS 11 Section 6.6
 .. _jls11_access_control: https://docs.oracle.com/javase/specs/jls/se11/html/jls-6.html#jls-6.6
 
+.. image:: img/in-progress.svg
+
 Visibility Reading
 ##################
 
