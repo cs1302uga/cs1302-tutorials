@@ -67,7 +67,7 @@ Private Visibility
 Example 1
 =========
 
-.. |image_private_1| image:: private_1.svg
+.. |image_private_1| image:: private_1.svg?|timestamp|
                      :width: 800
                      :alt: UML class diagram of ``Person.java``
 
@@ -425,6 +425,8 @@ the Java compiler will and will not let you do.
 visibility
 
 
+.. date and time information
+.. |timestamp| date:: %s
 .. copyright and license information
 .. |copy| unicode:: U+000A9 .. COPYRIGHT SIGN
 .. |copyright| replace:: Copyright |copy| Michael E. Cotterell, Bradley J. Barnes, and the University of Georgia.
