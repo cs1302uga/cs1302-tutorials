@@ -64,7 +64,8 @@ and help others to understand the important details of visibility.
 Private Visibility
 ******************
 
-TODO
+Example 1
+=========
 
 .. |image_private_1| image:: private_1.svg
                      :width: 800
