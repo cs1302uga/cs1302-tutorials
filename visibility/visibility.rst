@@ -124,7 +124,7 @@ This example illustrates that idea quite well.
 +                   +-----------------------------------------------------------------------+
 |                   | ::                                                                    |
 |                   |                                                                       |
-|                   |     [...] error: checkAge() has private access in Person              |
+|                   |     OtherClass.java: error: checkAge() has private access in Person   |
 |                   |                                                                       |
 +-------------------+-----------------------------------------------------------------------+
 
