@@ -112,7 +112,7 @@ but first take case to read the following note:
 > Instead, embrace the "copy-paste" ideology that's espoused in our videos and apply
 > that thinking here. Although the parent constructor is not included as a separate
 > constructor in the child class, it's convenient to think of it as being pasted into
-> child class along with other inherited members. Instead of moving back and forth
+> the child class along with other inherited members. Instead of moving back and forth
 > from child to parent, you simply move from constructor to constructor in the child
 > class; eliminating the back and forth makes it easier to reason out what's happening
 > when instance variables are involved.
