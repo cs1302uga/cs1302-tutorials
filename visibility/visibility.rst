@@ -84,7 +84,9 @@ they are only visible from lines of code that are written within the same class,
 and they are not visible from any other location.
 
 ===============  ==========  ============  ===========  =========
-Visibility       Same Class  Same Package  Child Class  Elsewhere
+Visibility       Visible From
+---------------  ------------------------------------------------
+Name             Same Class  Same Package  Child Class  Elsewhere
 ===============  ==========  ============  ===========  =========
 private          ✅           ❌            ❌           ❌
 ===============  ==========  ============  ===========  =========
