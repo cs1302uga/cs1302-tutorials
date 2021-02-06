@@ -88,7 +88,7 @@ Visibility       Visible From
 ---------------  ------------------------------------------------
 Name             Same Class  Same Package  Child Class  Elsewhere
 ===============  ==========  ============  ===========  =========
-private          ✅           ❌            ❌           ❌
+private          |Y|
 ===============  ==========  ============  ===========  =========
 
 * In Java, the ``private`` modifier must be included in a member's declararion for
