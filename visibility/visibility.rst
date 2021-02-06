@@ -265,7 +265,7 @@ Example 4
 =========
 
 Here is our first example involving a top-level declaration. To get started,
-let's consider the UML diagram below and the two code snippets that follows it.
+let's consider the UML diagram below and the two code snippets that follow it.
 
 .. image:: img/package_private_1.svg
 
@@ -330,6 +330,41 @@ constructor [6]_! You can read about it in the footnote.
          particular class that can be created. We won't go into the details
          here, the |wikipedia_singleton|_ is example of this idea that
          restricts to total number of objects to be no greater than one.
+
+Example 5
+=========
+
+In this example, we'll see how package private visibility can be used at
+the member-level for access control. Suppose a factory has a contract with a store to
+produce some product so that the store can sell it. Throughout the year, the store
+may need to request changes to its contract based on sales, buyer interest,
+etc. The driver program on the factory's side should be able to access methods to request,
+approve, and deny contract-related changes; however, the overall class design
+should not allow for the store to approve or deny changes in this scenario.
+To see how we can utilize package private visibility to accomplish this,
+let's consider the UML diagram below and the two code snippets that follow it.
+
+.. image:: img/package_private_1.svg
+
+.. code-block:: java
+
+   // inside FactoryDriver.java (cs1302.factory package)
+   public static void main(String[] args) {
+       Factory factory = // not null
+       factory.requestChangek("decrease price");
+       factory.approveChange("decrease price");
+       factory.denyChange("decrease price");
+   } // main
+
+.. code-block:: java
+
+   // inside Driver.java (cs1302.store package)
+   public static void main(String[] args) {
+       Factory factory = // not null
+       factory.requestChange("increase quantity");
+       factory.approveChange("increase quantity");
+       factory.denyChange("increase quantity");
+   } // main
 
 Protected Visibility
 ********************
