@@ -63,7 +63,7 @@ Example 1
 =========
 
 .. |image_private_1| image:: private_1.svg
-                     :width: 800
+                     :width: 1200
                      :alt: UML class diagram of ``Person.java``
 
 +-------------------+-----------------------------------------------------------------------+
@@ -97,7 +97,7 @@ from depending on unnecessary details of the implementation of that package or c
 This example illustrates that idea quite well.
 
 .. |image_private_2| image:: private_2.svg
-                     :width: 400
+                     :width: 1200
                      :alt: UML class diagram of ``Person.java`` and another class
 
 +-------------------+-----------------------------------------------------------------------+
@@ -127,7 +127,18 @@ This example illustrates that idea quite well.
 |                   |                                                                       |
 +-------------------+-----------------------------------------------------------------------+
 
-
+The error in this example is exactly what the author of ``Person`` wanted to happen. They
+intended for ``checkAge`` to only be used by other methods within the ``Person`` class.
+To make the method not visible from outside the class, they declared it private. Had they
+declared it public, for example, then the example would have compiled; however, the call
+to ``checkAge`` would add unnecessary redundancy since it's called again inside the call
+to ``setAge`` on the next line (see Example 1). We're not sure how the author of
+``OtherClass`` knew about the ``checkAge`` method, but the error message lets them know
+that it's not for them to use. Had they referred to the Javadoc/API documentation for the
+``Person`` class, it's unlikely that the private method would even be visible there (private
+members are not included in the `javadoc` output by default). If it's not for others and
+it's not listed, then that's less stuff that others need to understand before they're able
+to use your code in theirs.
 
 
 Package Private Visibility
