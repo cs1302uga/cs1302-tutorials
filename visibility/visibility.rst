@@ -218,10 +218,10 @@ Here is another table with the exact same information.
 =  ===============  ==========  ============  ===========  =========
 #  Visibility       Same Class  Same Package  Child Class  Elsewhere
 =  ===============  ==========  ============  ===========  =========
-1  public           ✓           ✓             ✓            ✓
-2  protected        ✓           ✓             ✓
-3  package private  ✓           ✓
-4  private          ✓
+1  public           |Y|         |Y|           |Y|          |Y|
+2  protected        |Y|         |Y|           |Y|
+3  package private  |Y|         |Y|
+4  private          |Y|
 =  ===============  ==========  ============  ===========  =========
 
 Important Notes (Do Not Skip)
