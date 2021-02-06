@@ -72,10 +72,10 @@ Consider the UML diagram below and the code snippet that follows it.
 
    // inside Person.java
    public void setAge(int age) {
-       if (!checkAge(age)) { // <---- LINE1
+       if (!checkAge(age)) { // <---- LINE1 ✓
            throw new IllegalArgumentException("invalid age");
        } else {
-           this.age = age; // <---- LINE2
+           this.age = age; // <---- LINE2 ✓
        } // if
    } // setAge
 
@@ -105,13 +105,13 @@ xthat follows it.
    public void updateAges(Person[] persons) {
        for (int i = 0; i < persons.length; i++) {
            int newAge = persons[i].getAge() + 1;
-           if (checkAge(newAge)) { // <---- HERE
+           if (checkAge(newAge)) { // <---- LINE1 ✗
                persons[i].setAge(newAge);
            } // if
        } // for
    } // updateAges
 
-On the line labelled ``HERE``, the code attempts to access the
+On the line labelled ``LINE1``, the code attempts to access the
 ``checkAge`` method, an instance method delcared within another
 class. Since that method is private, it's not visible from this line
 because private members are only visible from within the class where
