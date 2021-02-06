@@ -69,23 +69,23 @@ TODO
 .. |image_private_1| image:: private_1.svg
                      :alt: UML class diagram of ``Person.java``
 
-+-------------------+---------------------------------------------------------------------------+
-| UML Diagram       | Code Snippet(s)                                                           |
-+===================+===========================================================================+
-| |image_private_1| | Person.java:                                                              |
-|                   |     .. code-block:: java                                                  |
-|                   |                                                                           |
-|                   |        public void setName(String name) {                                 |
-|                   |            if (name == null) {                                            |
-|                   |                throw new IllegalArgumentException("name cannot be null"); |
-|                   |            } else {                                                       |
-|                   |                this.name = name; // <---- HERE                            |
-|                   |            } // if                                                        |
-|                   |        } // setName                                                       |
-|                   |                                                                           |
-+                   +---------------------------------------------------------------------------+
-|                   | In                                                                        |
-+-------------------+---------------------------------------------------------------------------+
++-------------------+-----------------------------------------------------------------------+
+| UML Diagram       | Code Snippet(s)                                                       |
++===================+=======================================================================+
+| |image_private_1| | .. code-block:: java                                                  |
+|                   |                                                                       |
+|                   |    // inside Person.java                                                                   |
+|                   |    public void setName(String name) {                                 |
+|                   |        if (name == null) {                                            |
+|                   |            throw new IllegalArgumentException("name cannot be null"); |
+|                   |        } else {                                                       |
+|                   |            this.name = name; // <---- HERE                            |
+|                   |        } // if                                                        |
+|                   |    } // setName                                                       |
+|                   |                                                                       |
++                   +-----------------------------------------------------------------------+
+|                   | In                                                                    |
++-------------------+-----------------------------------------------------------------------+
 
 Package Private Visibility
 **************************
