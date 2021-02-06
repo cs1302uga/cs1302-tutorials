@@ -319,7 +319,7 @@ constructor [6]_! You can read about it in the footnote.
          then you might explicitly declare one do-nothing constructor that is
          private and has no parameters. This will prevent the compiler from
          automatically creating its own default constructor, and it will prevent
-         users of your class from creating objets that aren't needed.
+         users of your class from creating objects that aren't needed.
 
        * **Restrict Object Creation:** It may be desirable to utilize a private
          constructor along with a static method of some other visibility in
