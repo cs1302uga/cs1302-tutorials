@@ -73,7 +73,6 @@ TODO
 | UML Diagram       | Code Snippet(s)                                                       |
 +===================+=======================================================================+
 | |image_private_1| | .. code-block:: java                                                  |
-|                   |    :linenos:                                                          |
 |                   |                                                                       |
 |                   |    public void setName(String name) {                                 |
 |                   |        if (name == null) {                                            |
