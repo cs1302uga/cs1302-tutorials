@@ -84,7 +84,11 @@ TODO
 |                   |    } // setName                                                       |
 |                   |                                                                       |
 +                   +-----------------------------------------------------------------------+
-|                   | In                                                                    |
+|                   | On the line labelled ``HERE``, the code attempts to access            |
+|                   | ``this.name``, an instance variable delcared within the same class.   |
+|                   | Although that variable is private, it's visible from this line        |
+|                   | because private members are always visible from within the same       |
+|                   | class.                                                                |
 +-------------------+-----------------------------------------------------------------------+
 
 Package Private Visibility
