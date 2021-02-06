@@ -127,7 +127,7 @@ intended for ``checkAge`` to only be used by other methods within the ``Person``
 To make the method not visible from outside the class, they declared it private. Had they
 declared it public, for example, then the example would have compiled; however, the call
 to ``checkAge`` would add unnecessary redundancy since it's called again inside the call
-to ``setAge`` on the next line (see |example_1|_).
+to ``setAge`` on the next line (see :ref:`example_1`).
 
 We're not sure how the author of ``OtherClass`` knew about the ``checkAge`` method, but
 the error message lets them know that it's not for them to use. Had they referred to the
