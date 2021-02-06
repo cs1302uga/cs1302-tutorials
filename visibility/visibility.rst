@@ -246,15 +246,15 @@ TODO
    // inside Utility.java
    package cs1302.models;
 
-   class Utility {
+   class Utility { // <---- LINE1
        // ... rest omitted
 
 .. code-block:: java
 
-   // inside Utility.java
+   // inside Driver.java
    package cs1302.store;
 
-   import cs1302.models.Utility; // <---- LINE1
+   import cs1302.models.Utility; // <---- LINE2
 
    // ... rest omitted
 
