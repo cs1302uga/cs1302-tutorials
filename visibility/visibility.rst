@@ -39,8 +39,6 @@ protected        ``protected``     ``#``                       ✓
 public           ``public``        ``+``       ✓               ✓
 ===============  ================  ==========  ==============  =================  ================
 
-.. rubric:: Notes
-
 .. [1] A **top-level declaration** is the outermost declaration in a ``.java`` file.
        Some things that can be declared at the top-level include classes and
        interfaces.
