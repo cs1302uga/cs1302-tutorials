@@ -514,7 +514,7 @@ the Java compiler will and will not let you do.
 visibility
 
 .. util
-.. |Y| unicode:: U+2714 .. HEAVY CHECK MARK
+.. |Y| unicode:: U+2713 .. CHECK MARK
 
 .. copyright and license information
 .. |copy| unicode:: U+000A9 .. COPYRIGHT SIGN
