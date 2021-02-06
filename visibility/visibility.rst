@@ -336,9 +336,9 @@ Example 5
 
 In this example, we'll see how package private visibility can be used at
 the member-level for access control. Suppose a factory has a contract with a store to
-produce some product so that the store can sell it. Throughout the year, the store
-may need to request changes to its contract based on sales, buyer interest,
-etc. The driver program on the factory's side should be able to access methods to request,
+produce some product. Throughout the year, the store mfay need to request
+changes to its contract based on sales, buyer interest, etc. The driver
+program on the factory's side should be able to access methods to request,
 approve, and deny contract-related changes; however, the overall class design
 should not allow for the store to approve or deny changes in this scenario.
 To see how we can utilize package private visibility to accomplish this,
