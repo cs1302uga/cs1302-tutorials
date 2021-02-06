@@ -59,6 +59,12 @@ and help others to understand the important details of visibility.
 Private Visibility
 ******************
 
+Members of a class with private visibility are more simply referred to as
+being private (since visibility is implied). Private members are considered
+the least visible; they are only visible from lines of code that are written
+within the same class. The ``private`` modifer and the ``-`` symbol are used
+in Java and UML, respectively, to denote that a member is private.
+
 Example 1
 =========
 
@@ -134,6 +140,11 @@ would have been included (private members are not included in the `javadoc` outp
 If it's private, then it's not for others, and if it's not even listed in the documentation,
 then that's less stuff that other programmers need to understand before they're able
 to use your code.
+
+Example 3
+=========
+
+
 
 Package Private Visibility
 **************************
