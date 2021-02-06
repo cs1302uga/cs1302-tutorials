@@ -34,10 +34,10 @@ other factors.
 ===============  ================  ==========  ==============  =================  ================
 Visibility Name  Modifier Keyword  UML Symbol  Top-Level [1]_  Member-Level [2]_  Local-Level [3]_
 ===============  ================  ==========  ==============  =================  ================
-private          ``private``       ``-``                       ✓
-package private  ..                ``~``       ✓               ✓
-protected        ``protected``     ``#``                       ✓
-public           ``public``        ``+``       ✓               ✓
+private          ``private``       ``-``                       |Y|
+package private  ..                ``~``       |Y|             |Y|
+protected        ``protected``     ``#``                       |Y|
+public           ``public``        ``+``       |Y|             |Y|
 ===============  ================  ==========  ==============  =================  ================
 
 .. [1] A **top-level declaration** is the outermost declaration in a ``.java`` file.
