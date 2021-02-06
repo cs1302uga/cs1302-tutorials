@@ -86,7 +86,7 @@ and they are not visible from any other location.
 ===============  ==========  ============  ===========  =========
 Visibility       Same Class  Same Package  Child Class  Elsewhere
 ===============  ==========  ============  ===========  =========
-private          ✓
+private          ✅
 ===============  ==========  ============  ===========  =========
 
 * In Java, the ``private`` modifier must be included in a member's declararion for
