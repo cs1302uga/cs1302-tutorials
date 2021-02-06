@@ -64,6 +64,14 @@ snippets. The order in which the visibilities are covered is deliberate; we star
 with the option that makes something visible from the least number of locations,
 then work through the rest in the order of increasing visibility.
 
+We will take some liberties when discussing examples involving multiple
+labelled lines (e.g., ``LINE1``) of code; for example, whenever we consider
+whether or not a line will work, we will make a good faith assumption that
+all other labelled lines of code will also work, even if we find out later
+that they don't. If you want to work through such examples yourself (i.e.,
+write the code), you may need to comment out or remove some labelled lines of
+code whenever you focus your attention a single, labelled line.
+
 While you are likely already familiar private and public visibility, please do not
 assume that you already understand how it works. Over the years, we have
 found that many students have a somewhat flawed conceptual model for how
@@ -367,23 +375,20 @@ let's consider the UML diagram below and the two code snippets that follow it.
        factory.denyChange("increase quantity"); // <------- LINE6
    } // main
 
-For this example, we'll take some some liberties while discussing what
-will and will not work; for example, whenever we discuss a labelled
-line of code (e.g., ``LINE1``), we'll make a good faith assumption that all other
-labelled lines of code will work, even if we find out later that they don't.
-If you want to test these scenarios yourself, you'll need to remove
-or comment out the other labelled lines when trying to understand
-the line your testing.
 
-====  ====================  ==========================  ================================  ========
-LINE  Member                In                          From                              Visible?
-====  ====================  ==========================  ================================  ========
-1     ``requestChange``     ``cs1302.factory.Factory``  ``cs1302.factory.FactoryDriver``  |Y|
-f     ``approveChange``     ``cs1302.factory.Factory``  ``cs1302.factory.FactoryDriver``  |Y|
-3     ``denyChange``        ``cs1302.factory.Factory``  ``cs1302.factory.FactoryDriver``  |Y|
-====  ====================  ==========================  ================================  ========
+The lines labelled ``LINE1``, ``LINE2``, and ``LINE3`` each attempt
+to access a different member of the ``Factory`` class. The table
+below summarizes the scenario for each line.
 
-   On the line labelled ``LINE1``, the author omitted a visibility modifier
+====  ====================  ===============  ==========================  ================================  ========
+LINE  Member                Declared         In                          From                              Visible?
+====  ====================  ===============  ==========================  ================================  ========
+1     ``requestChange``     public           ``cs1302.factory.Factory``  ``cs1302.factory.FactoryDriver``  |Y|
+f     ``approveChange``     package private  ``cs1302.factory.Factory``  ``cs1302.factory.FactoryDriver``  |Y|
+3     ``denyChange``        package private  ``cs1302.factory.Factory``  ``cs1302.factory.FactoryDriver``  |Y|
+====  ====================  ===============  ==========================  ================================  ========
+
+On the line labelled ``LINE1``, the author omitted a visibility modifier
 in their top-level declaration of the ``Utility`` class. As discussed earlier,
 this causes the class to default to package private visibility. On ``LINE2``,
 which exists in ``Driver.java`` in a different package [5]_, an attempt is made to
@@ -728,7 +733,8 @@ the Java compiler will and will not let you do.
 visibility
 
 .. util
-.. |Y| unicode:: U+2713 .. CHECK MARK
+.. |Y| unicode:: U+2713
+.. |N| unicode:: U+2717
 
 .. copyright and license information
 .. |copy| unicode:: U+000A9 .. COPYRIGHT SIGN
