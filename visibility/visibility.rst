@@ -111,7 +111,6 @@ To get started, let's consider the UML diagram below and the code snippet that
 follows it.
 
 .. image:: img/private_1.svg
-   :alt: Example 1
 
 .. code-block:: java
 
@@ -142,7 +141,6 @@ To illustrate this idea, let's consider the UML diagram below and the code snipp
 that follows it.
 
 .. image:: img/private_2.svg
-   :alt: Example 2
 
 .. code-block:: java
 
@@ -189,7 +187,6 @@ less visible than it actually is. To illustrate,  let's consider the UML
 diagram below and the code snippet that follows it.
 
 .. image:: img/private_1.svg
-   :alt: Example 1
 
 .. code-block:: java
 
@@ -236,6 +233,25 @@ package private  |Y|         |Y|
   adding the ``-package`` command-line argument (that option will
   also include anything that is more visible than package private -- so
   everything except private).
+
+Example 4
+=========
+
+TODO
+
+.. image:: img/package_private_1.svg
+
+.. code-block:: java
+
+   // inside OtherClass.java
+   public void updateAges(Person[] persons) {
+       for (int i = 0; i < persons.length; i++) {
+           int newAge = persons[i].getAge() + 1;
+           if (checkAge(newAge)) { // <---- LINE1 ✗
+               persons[i].setAge(newAge);
+           } // if
+       } // for
+   } // updateAges
 
 Protected Visibility
 ********************
