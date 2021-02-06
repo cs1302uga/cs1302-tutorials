@@ -83,13 +83,11 @@ is allowed. Private members are considered the least visible;
 they are only visible from lines of code that are written within the same class,
 and they are not visible from any other location.
 
-.. centered::
-
-   ===============  ==========  ============  ===========  =========
-   Visibility       Same Class  Same Package  Child Class  Elsewhere
-   ===============  ==========  ============  ===========  =========
-   private          ✔
-   ===============  ==========  ============  ===========  =========
+===============  ==========  ============  ===========  =========
+Visibility       Same Class  Same Package  Child Class  Elsewhere
+===============  ==========  ============  ===========  =========
+private          ✔
+===============  ==========  ============  ===========  =========
 
 * In Java, the ``private`` modifier must be included in a member's declararion for
   it to be considered private by the compiler.
