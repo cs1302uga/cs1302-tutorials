@@ -76,9 +76,9 @@ Private Visibility
 ******************
 
 Instead of saying that something has private visibility, we usually
-just say that it's private. In Java, top-level [1]_ and local-level [3]_
-declarations not allowed to be private; however, any member-level declaration [2]_
-is allowed to be private. Private members are considered the least visible;
+just say that it's private. In Java, top-level and local-level
+declarations are not allowed to be private; however, any member-level declaration
+is allowed. Private members are considered the least visible;
 they are only visible from lines of code that are written within the same class,
 and they are not visible from any other location.
 
