@@ -97,7 +97,7 @@ from depending on unnecessary details of the implementation of that package or c
 This example illustrates that idea quite well.
 
 .. |image_private_2| image:: private_2.svg
-                     :width: 800
+                     :width: 800px
                      :alt: UML class diagram of ``Person.java`` and another class
 
 +-------------------+-----------------------------------------------------------------------+
