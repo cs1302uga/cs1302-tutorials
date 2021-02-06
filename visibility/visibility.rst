@@ -91,6 +91,11 @@ Example 1
 Example 2
 =========
 
+According to |jls11_access_control|_, the developers of Java
+incorporated visibility into the language "to prevent the users of a package or class
+from depending on unnecessary details of the implementation of that package or class."
+This example illustrates that idea quite well.
+
 .. |image_private_2| image:: private_2.svg
                      :width: 800
                      :alt: UML class diagram of ``Person.java`` and another class
@@ -116,13 +121,15 @@ Example 2
 |                   | class. Since that method is private, it's not visible from this line  |
 |                   | because private members are only visible from within the class where  |
 |                   | they are declared.                                                    |
++                   +-----------------------------------------------------------------------+
+|                   | ::                                                                    |
+|                   |                                                                       |
+|                   |     [...] error: checkAge() has private access in Person              |
+|                   |                                                                       |
 +-------------------+-----------------------------------------------------------------------+
 
 
 
-According to |jls11_access_control|_, the developers of Java
-incorporated visibility into the language, "to prevent the users of a package or class
-from depending on unnecessary details of the implementation of that package or class."
 
 Package Private Visibility
 **************************
