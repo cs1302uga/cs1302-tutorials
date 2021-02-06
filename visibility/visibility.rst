@@ -65,7 +65,7 @@ Example 1
 This is the classic, simple example that most students are familiar with.
 
 .. |image_private_1| image:: private_1.svg
-                     :width: 1600
+                     :height: 175
                      :alt: UML class diagram of ``Person.java``
 
 +-------------------+-----------------------------------------------------------------------+
