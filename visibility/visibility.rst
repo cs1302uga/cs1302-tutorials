@@ -208,10 +208,10 @@ table, then a member with that visibility is visible from that location.
 
 | # | Visible From  | private | package private | protected | public |
 |---|---------------|---------|-----------------|-----------|--------|
-| 1 | Same Class    | ✓       | ✓               | ✓         | ✓      |
-| 2 | Same Package  |         | ✓               | ✓         | ✓      |
-| 3 | Child Class   |         |                 | ✓         | ✓      |
-| 4 | Elsewhere     |         |                 |           | ✓      |
+| 1 | Same Class    | |Y|     | |Y|             | |Y|       | |Y|    |
+| 2 | Same Package  |         | |Y|             | |Y|       | |Y|    |
+| 3 | Child Class   |         |                 | |Y|       | |Y|    |
+| 4 | Elsewhere     |         |                 |           | |Y|    |
 
 Here is another table with the exact same information.
 
@@ -513,6 +513,8 @@ the Java compiler will and will not let you do.
 
 visibility
 
+.. util
+.. |Y| unicode:: U+2714 .. HEAVY CHECK MARK
 
 .. copyright and license information
 .. |copy| unicode:: U+000A9 .. COPYRIGHT SIGN
