@@ -75,7 +75,7 @@ This is the classic, simple example that most students are familiar with.
 |                   |                                                                       |
 |                   |    // inside Person.java                                              |
 |                   |    public void setAge(int age) {                                      |
-|                   |        if (!checkAge(age)) {  <---- LINE1                             |
+|                   |        if (!checkAge(age)) { // <---- LINE1                           |
 |                   |            throw new IllegalArgumentException("invalid age");         |
 |                   |        } else {                                                       |
 |                   |            this.age = age; // <---- LINE2                             |
