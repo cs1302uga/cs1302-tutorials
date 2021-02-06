@@ -83,15 +83,13 @@ is allowed. Private members are considered the least visible;
 they are only visible from lines of code that are written within the same class,
 and they are not visible from any other location.
 
-* In Java, the ``private`` modifier must be included in a declararion for
-  it to be treated as private by the compiler.
+* In Java, the ``private`` modifier must be included in a member's declararion for
+  it to be considered private by the compiler.
 * In UML, the ``-`` symbol is used just before a member's identifier to
   illustrate that it's private.
 * The ``javadoc`` program does not include private declarations in a
-  documentation website by default; however, they can be included (along
-  with all applicable declarations that are more visible than private) by
-  including ``-private`` as a command-line argument to the ``javadoc``
-  command.
+  documentation website by default; however, they can be included  by
+  adding the ``-private`` command-line argument.
 
 Example 1
 =========
@@ -209,13 +207,14 @@ table, then a member with that visibility is visible from that location.
 
 Here is another table with the exact same information.
 
-| # | Visibility      | Same Class | Same Package | Child Class | Elsewhere |
-|---|-----------------|------------|--------------|-------------|-----------|
-| 1 | public          | ✓          | ✓            | ✓           | ✓         |
-| 2 | protected       | ✓          | ✓            | ✓           |           |
-| 3 | package private | ✓          | ✓            |             |           |
-| 4 | private         | ✓          |              |             |           |
-
+=  ===============  ==========  ============  ===========  =========
+#  Visibility       Same Class  Same Package  Child Class  Elsewhere
+=  ===============  ==========  ============  ===========  =========
+1  public           ✓           ✓             ✓            ✓
+2  protected        ✓           ✓             ✓
+3  package private  ✓           ✓
+4  private          ✓
+=  ===============  ==========  ============  ===========  =========
 
 Important Notes (Do Not Skip)
 *****************************
