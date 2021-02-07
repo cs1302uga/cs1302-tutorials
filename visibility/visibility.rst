@@ -523,7 +523,7 @@ to parse, but the general rule of thumb is this:
     the visibility that's used by the compiler is determined by type of the
     variable ``var``, itself, and not the type of the object that ``var``
     refers to. Java's dynamic binding [7]_ will still bind the call to the
-    overload that's closest to object's type (e.g., to allow for polymorphism).
+    override that's closest to object's type (e.g., to allow for polymorphism).
 
 Perhaps that's a little dense. You may find it easier to remember this:
 
@@ -532,8 +532,9 @@ Perhaps that's a little dense. You may find it easier to remember this:
 
 .. [7] The term **binding** usually refers to the association between a
        method call and a particular method body. Java uses **dynamic binding**,
-       which means that binding that occurs at runtime; it does this to
-       facilitate polymorphism.
+       which means that its binding occurs at runtime. This choice was
+       made by the designers of the language to facilitate its polymorphism
+       and method override features.
 
 Non-Visible Inherited Members
 =============================
