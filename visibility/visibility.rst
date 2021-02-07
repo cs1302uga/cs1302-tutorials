@@ -468,7 +468,9 @@ table, then a member with that visibility is visible from that location.
 Here is another table with the exact same information.
 
 =  ===============  ==========  ============  ===========  =========
-#  Visibility       Same Class  Same Package  Child Class  Elsewhere
+   Visibility       Visible From
+-  ---------------  ------------------------------------------------
+#  Name             Same Class  Same Package  Child Class  Elsewhere
 =  ===============  ==========  ============  ===========  =========
 1  public           |Y|         |Y|           |Y|          |Y|
 2  protected        |Y|         |Y|           |Y|
