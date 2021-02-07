@@ -629,69 +629,7 @@ the parent constructor initializes it's own declared instance variables.
 This is considered **a common pattern** that exemplifies *separation of concerns* and
 *encapsulation* as each class is responsible for its own variables.
 
-Important Notes (Do Not Skip)
-*****************************
-
-.. image:: img/Protected.png
-
-To simplify the example, we consider whether otherwise valid lines of code in each
-class in the diagram can see the `attribute` variable in the `Game` class. In the
-table below, the "Visible?" column denotes whether or not the `attribute` variable
-is visible, assuming a proper reference to an object containing `attribute` is
-provided:
-
-| Class         | Visible? | Comment                                     | Note |
-|---------------|----------|---------------------------------------------|------|
-| `Game       ` | ✓        | `attribute` is declared in the same class   |      |
-| `TypeOneGame` | ✓        | `attribute` is declared in the same package | also inherits `attribute` |
-| `TypeTwoGame` | ✓        | `attribute` is declared in the same package | also inherits `attribute` |
-| `Utility`     | ✓        | `attribute` is declared in the same package |      |
-| `YourGame`    | ✓        | `attribute` is declared in a parent class   | also inherits `attribute` |
-| `Tester`      | ✗        | `attribute` is not visible                  |      |
-
-There are two additional points that should be considered regarding this
-example. The classes `TypeOneGame`, `TypeTwoGame`, and `YourGame` all have
-access to:
-
-1. their own inherited `attribute` variable; **and**
-1. `attribute` variables in objects of each other, assuming
-   a proper reference to an object is given.
-
-To illustrate the second point, consider the following lines of code,
-which you should assume, for the sake of this example, are located inside
-a method in `YourGame`:
-
-```java
-// inside some method in YourGame
-TypeOneGame tog = ...  // not-null; refers to a valid object
-int a = tog.attribute; // COMPILES; yes, this works
-```
-
-Remember, **visibility has nothing to do with objects in Java.**
-Instead, visibility has to do with classes. In the third line of
-code, `attribute` via `tog.attribute` is visible because:
-
-1. a proper reference to an object contain `attribute` is given (via `tog`); and
-1. relative to that line of code, `attribute` is delcared in a parent class of
-   the `YourGame` class which is where these lines are located.
-
-## Public Visibility
-
-When you declare a method or instance variable with public visibility, you
-are explicitly stating that you are okay with that thing being accessed
-from anwhere, including in lines of code that you potentially do not write.
-If that kind of access is inappropriate, then you should carefully consider
-one of the other visibilities.
-
-## Closing Remarks
-
-You should carefully consider the different scenarios described in this reading
-and try to reproduce them in an actual Java programming environment to see what
-the Java compiler will and will not let you do.
-
-## Glossary
-
-visibility
+.. #############################################################################
 
 .. util
 .. |Y| unicode:: U+2713
