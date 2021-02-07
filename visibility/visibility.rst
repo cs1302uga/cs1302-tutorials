@@ -208,7 +208,7 @@ a copy constructor [4]_ that follows it.
 
 On the lines labelled ``LINE1`` and ``LINE2``, the code attempts to access
 the private instance members ``name`` and ``age`` of the ``Person`` object
-referred by ``other``. Before we continue, ask yourself whether or not
+referred to by ``other``. Before we continue, ask yourself whether or not
 this will work.
 
 When asked, many students will say that this will not compile, then
@@ -420,7 +420,7 @@ Protected Visibility
 
 Instead of saying that something has **protected** visibility, we usually
 just say that it's protected. In Java, only member-level declarations
-are allowed be protected. Protected members are slightly more visible
+are allowed to be protected. Protected members are slightly more visible
 than things that are package private; they are **only visible from
 lines of code in the same package or a child class (regardless of its
 package)**.
