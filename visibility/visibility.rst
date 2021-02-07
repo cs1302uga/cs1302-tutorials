@@ -203,7 +203,7 @@ a copy constructor [4]_ that follows it.
    // inside Person.java
    public Person(Person other) {
        setName(other.name); // <---- LINE1
-       setAge(other.age); // <---- LINE2
+       setAge(other.age); // <------ LINE2
    } // setAge
 
 On the lines labelled ``LINE1`` and ``LINE2``, the code attempts to access
@@ -213,7 +213,18 @@ this will work.
 
 When asked, many students will say that this will not compile, then
 they are shocked and amazed when they see that it does. That's right,
-**it does compile**. Although ``other.name`` and ``other.age`` are private,
+**it does compile**.
+
+====  ========  ========   ==========  =========  ===========  ========
+..    Member                           Accessed                ..
+----  -------------------------------  ----------------------  --------
+LINE  Name      Declared   In          From       Same Class?  Visible?
+====  ========  ========   ==========  =========  ===========  ========
+1     ``name``  private   ``Person``  ``Person``  |Y|          |Y|
+2     ``age``   private   ``Person``  ``Person``  |Y|          |Y|
+====  ========  ========   ==========  =========  ===========  ========
+
+Although ``other.name`` and ``other.age`` are private,
 they're visible from ``LINE1`` and ``LINE2`` because those lines are in
 the same class as the declarations.
 
