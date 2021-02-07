@@ -468,77 +468,15 @@ private          |Y|
 Important Notes (Do Not Skip)
 *****************************
 
-
-## Private Visibility
-
-<center>
-  <img src="private_1.svg" alt="UML class diagram of Person.java">
-</center>
-
-We leave out the usual private visibility examples in this section and instead
-focus on addressing the common misconception that objects have something to do
-with visibility. **Visibility has nothing to do with objects in Java.**
-Instead, visibility has to do with classes. To illustrate this, consider the
-following UML diagram for a `Point2D` class which is used to represent
-immutable (i.e., non-modifiable) points described by `(x,y)` coordinates:
-
-<center>
-<img src="Point2D.png">
-</center>
-
-One of the constructors of this class, the one that takes in a reference to some other
-`Point2D` object, is intended to serve as a _copy constructor_. That is, when that
-particular constructor is invoked, the new object should be a deep copy of the object
-referred to by the `other` parameter. Here is the usual way this is implemented:
-
-```java
-/**
- * Represents immutable {@code (x,y)} coordinates in a two-dimensional space.
- */
-public class Point2D {
-
-    private double x; // x coordinate
-    private double y; // y coordinate
-
-    ...
-
-    /**
-     * Constructs a new {@code Point2D} object that is copy of the object
-     * referred to by {@code other}.
-     *
-     * @param other  object to copy
-     */
-    public Point2D(Point2D other) {
-        this.x = other.x; // other.x is declared in the same class
-        this.y = other.y; // other.y is declared in the same class
-    } // Point2D
-
-    ...
-
-} // Point2D
-```
-
-The lines of code that seem counterintuive to most students are the two lines
-inside of the copy constructor:
-
-```java
-this.x = other.x;
-this.y = other.y;
-```
-
-While `other.x` and `other.y` are declared as private, `other` refers to an object
-of the same `Point2D` class. Since `other.x` and `other.y` are declared in the same
-class, those two lines of code can see `other.x` and `other.y` as presented in the
-example. **The fact that `other` refers to another object does not matter.**
-
-**Regarding Inheritance of Private Members:** You may recall from the Inheritance-related
-readings that **child classes do inherit private instance variables and methods** from their
-parent. However, since those variables are declared private in another class, the
-inheriting class cannot see them directly. In scenarios like this, programmers often use
-inherited getter and setter methods declared with protected and public visibility to
-indirectly access inherited private members. **Another common pattern** is to initialize
-some inherited private variables in a child constructor indirectly by explicitly using
-`super` to invoke a parent constructor.
+:Inheritance of Private Members:
+   You may recall from the Inheritance-related
+   readings that **child classes do inherit private instance variables and methods** from their
+   parent. However, since those variables are declared private in another class, the
+   inheriting class cannot see them directly. In scenarios like this, programmers often use
+   inherited getter and setter methods declared with protected and public visibility to
+   indirectly access inherited private members. **Another common pattern** is to initialize
+   some inherited private variables in a child constructor indirectly by explicitly using
+   `super` to invoke a parent constructor.
 
 ## Package Private Notes
 
