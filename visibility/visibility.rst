@@ -450,11 +450,39 @@ protected        |Y|         |Y|           |Y|
 Example 6
 =========
 
-let's consider the UML diagram below and the two code snippets that follow it.
+In this example, we'll consider two situations that where a protected
+member is visible and one that's not. To get started, let's consider
+the UML diagram below and the three code snippets that follow it.
+There are two snippets for the ``Book`` class constructor, each
+representing an alternative approach (i.e., in reality, we would
+see one or the other, but not both).
 
 .. image:: img/protected_1.svg
 
+.. code-block:: java
 
+   // inside Book.java (cs1302.books package)
+   public Book(String title, double price) {
+       super(price); // <------------------------- LINE1
+       this.title = title;
+   } // Book
+
+.. code-block:: java
+
+   // inside Book.java (cs1302.books package)
+   public Book(String title, double price) {
+       setPrice(price); // <---------------------- LINE2
+       this.title = title;
+   } // Book
+
+.. code-block:: java
+
+   // inside BookDriver.java (cs1302.books package)
+   public static void main(String[] args) {
+       Book lotr = new Book("The Lord of the Rings", 11.99);
+       lotr.setPrice(lotr.getPrice() * 0.8); <---- LINE3
+   } // main
+   
 
 Public Visibility
 *****************
