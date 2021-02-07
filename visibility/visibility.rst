@@ -500,7 +500,7 @@ In ``LINE1`` and ``LINE2``, the ``price`` variable was not visible (it's
 package private and the labelled lines are attempting access from another
 package). The author's two constructor approaches utilize indirection to
 initialize a non-visible inheritted member, something that discussed
-further `here <#inheritance-and-visibility>`_.
+further `here <#non-visible-inherited-members>`_.
 
 Example 7
 =========
