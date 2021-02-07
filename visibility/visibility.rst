@@ -484,7 +484,9 @@ see one or the other, but not both).
    } // main
 
 ====  ====================  =========  ===========  ========  =============  ===========  ========
-LINE  Member                Declared   In           From      Same Package?  From Child?  Visible?
+..    Member                                        Accessed                              ..
+----  --------------------------------------------  ------------------------------------  --------
+LINE  Name                  Declared   In           From      Same Package?  From Child?  Visible?
 ====  ====================  =========  ===========  ========  =============  ===========  ========
 1     ``Product(price)``    protected  ``Product``  ``Book``  |N|            |Y|          |Y|
 ====  ====================  =========  ===========  ========  =============  ===========  ========
