@@ -495,13 +495,13 @@ with a particular visibility are visible from.
 Declared As      Same Class  Same Package  Child Class  Elsewhere
 ===============  ==========  ============  ===========  =========
 public           |Y|         |Y|           |Y|          |Y|
-protected        |Y|         |Y|           |Y|
-package private  |Y|         |Y|
-private          |Y|
+protected        |Y|         |Y|           |Y|          |N|
+package private  |Y|         |Y|           |N|          |N|
+private          |Y|         |N|           |N|          |N|
 ===============  ==========  ============  ===========  =========
 
 Inheritance and Visibility
-==========================
+**************************
 
 You may recall from the inheritance-related readings that **child classes
 inherit instance members** from their parent. In such a scenario, it's
