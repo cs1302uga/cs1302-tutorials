@@ -89,11 +89,10 @@ Private Visibility
 ******************
 
 Instead of saying that something has **private** visibility, we usually
-just say that it's private. In Java, top-level and local-level
-declarations are not allowed to be private; however, any member-level declaration
-is allowed. Private members are considered the least visible;
-they are only visible from lines of code that are written within the same class,
-and they are not visible from any other location.
+just say that it's private. In Java, only member-level declarations
+are allowed to be private. Private members are considered the least visible;
+they are **only visible from lines of code in the same class**.
+
 
 ===============  ==========  ============  ===========  =========
 Visibility       Visible From
@@ -236,12 +235,10 @@ Package Private Visibility
 **************************
 
 Instead of saying that something has **package private** visibility, we usually
-just say that it's package private. In Java, local-level
-declarations are not allowed to be private; however, any top-level and member-level
-declarations are allowed. Things that are package private are slightly more
-visible than things that are private; they are only visible from lines of code
-that are written within the same package. They are not visible from outside the
-package in which they are declared.
+just say that it's package private. In Java, only top-level and member-level
+declarations are allowed to package private. Things that are package private are slightly
+more visible than things that are private; they are **only visible from lines of code
+in the same package**.
 
 ===============  ==========  ============  ===========  =========
 Visibility       Visible From
@@ -257,8 +254,8 @@ package private  |Y|         |Y|
   thing as package private. This is behavior is different for member-level declarations
   within an interface, where the omission of a visibility modifier defaults
   a declaration's visibility to public.
-* In UML, the ``~`` symbol is used just before a member's identifier to
-  illustrate that it's private. Some UML programs may not support displaying
+* In UML, the ``~`` symbol is used just before an identifier to
+  illustrate that it's package private. Some UML programs may not support displaying
   the visibility for top-level declarations; in those cases, a quick hack
   is to include the ``~`` as part of the name. Although omitting a visibility
   modifier in Java code may default to package private, the same is not true
@@ -420,12 +417,10 @@ Protected Visibility
 ********************
 
 Instead of saying that something has **protected** visibility, we usually
-just say that it's protected. In Java, top-level and local-level
-declarations are not allowed to be protected; however, any member-level declaration
-is allowed. Things that are protected are slightly more visible than things that
-are package private; they are only visible from lines of code
-that are written within the same package or a child class (or interface),
-regardless of the package.
+just say that it's protected. In Java, only member-level declarations
+are allowed be protected. Protected members are slightly more visible
+than things that are package private; they are **only visible from lines of code
+that are eithin in the same package or a child class in any package.
 
 ===============  ==========  ============  ===========  =========
 Visibility       Visible From
@@ -435,24 +430,14 @@ Name             Same Class  Same Package  Child Class  Elsewhere
 protected        |Y|         |Y|           |Y|
 ===============  ==========  ============  ===========  =========
 
-* In Java, **there is no modifier keyword for package private visibility**. For
-  top-level declarations and member-level declarations within a class, the omission
-  of a visibility modifier will cause the compiler to treat the declared
-  thing as package private. This is behavior is different for member-level declarations
-  within an interface, where the omission of a visibility modifier defaults
-  a declaration's visibility to public.
-* In UML, the ``~`` symbol is used just before a member's identifier to
-  illustrate that it's private. Some UML programs may not support displaying
-  the visibility for top-level declarations; in those cases, a quick hack
-  is to include the ``~`` as part of the name. Although omitting a visibility
-  modifier in Java code may default to package private, the same is not true
-  for UML class diagrams; they default to public visibility (covered in a
-  later section).
+* In Java, the ``protected`` modifier must be included in a member's declararion for
+  the compiler to consider it a protected member.
+* In UML, the ``#`` symbol is used just before a member's identifier to
+  illustrate that it's protected.
 * The ``javadoc`` program includes protected declarations in a
-  documentation website by default; however, they can be omitted by
-  adding the ``-package`` command-line argument (that option will
-  also include anything that is more visible than package private -- so
-  everything except private).
+  documentation website by default. If you don't want to include
+  protected members, then you can tell ``javadoc`` to only include
+  public declarations (as explained in the section on public visibility).
 
 
 Public Visibility
