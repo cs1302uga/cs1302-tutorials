@@ -463,7 +463,7 @@ see one or the other, but not both).
 
    // inside Book.java (cs1302.books package)
    public Book(String title, double price) {
-       super(price); // <------------------------- LINE1
+       super(price); // <---------------------------- LINE1
        this.title = title;
    } // Book
 
@@ -471,7 +471,7 @@ see one or the other, but not both).
 
    // inside Book.java (cs1302.books package)
    public Book(String title, double price) {
-       setPrice(price); // <---------------------- LINE2
+       setPrice(price); // <------------------------- LINE2
        this.title = title;
    } // Book
 
@@ -480,7 +480,7 @@ see one or the other, but not both).
    // inside BookDriver.java (cs1302.books package)
    public static void main(String[] args) {
        Book lotr = new Book("The Lord of the Rings", 11.99);
-       lotr.setPrice(lotr.getPrice() * 0.8); <---- LINE3
+       lotr.setPrice(lotr.getPrice() * 0.8); // <---- LINE3
    } // main
    
 
