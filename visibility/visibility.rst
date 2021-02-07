@@ -249,7 +249,7 @@ If we apply the second idea to constructors, then a child class constructor may 
 initialize inherited private variables using a call to ``super()`` (or some overload) so
 long as there is a visible parent constructor that performs the desired initializion.
 This is considered **a common pattern** that exemplifies separation of concerns and
-encapsulation. That is, each class is responsible for its own private variables.
+encapsulation as each class is responsible for its own private variables.
 
 Package Private Visibility
 **************************
