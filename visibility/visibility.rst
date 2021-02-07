@@ -75,7 +75,7 @@ code whenever you focus your attention a single, labelled line.
 While you are likely already familiar private and public visibility, please do not
 assume that you already understand how it works. Over the years, we have
 found that many students have a somewhat flawed conceptual model for how
-private visibility works that is actually more complicated that what it
+private visibility works that is actually more complicated than what it
 actually is. Regardless of your experiece, you should work through each
 visibility example in this tutorial until you are able to:
 
@@ -191,9 +191,10 @@ Example 3
 =========
 
 We mentioned earlier that some students have a flawed conceptual model for
-private visibility. Their idea of private is more restrivtice or
-less visible than it actually is. To illustrate, let's consider the UML
-diagram below and the code snippet for a copy constructor [4]_ that follows it.
+private visibility. Their idea of what it means for something to be private
+is more restrivtice than it actually is. **Perhaps this is you?**
+To illustrate, let's consider the UML diagram below and the code snippet for
+a copy constructor [4]_ that follows it.
 
 .. image:: img/private_1.svg
 
@@ -207,21 +208,22 @@ diagram below and the code snippet for a copy constructor [4]_ that follows it.
 
 On the lines labelled ``LINE1`` and ``LINE2``, the code attempts to access
 the private instance members ``name`` and ``age`` of the ``Person`` object
-referred by ``other``. When asked, many students will say thpat this will
-not compile and are shocked when they see that it does. To be clear, **it
-does compile**. Although ``other.name`` and ``other.age`` are private, they're
-visible from ``LINE1`` and ``LINE2`` because they're declared in same
-class as ``LINE1`` and ``LINE2``.
+referred by ``other``. Before we continue, ask yourself whether or not
+this will work.
 
-    Remember, private members are always visible from within the same class.
+When asked, many students will say that this will not compile, then
+they are shocked and amazed when they see that it does. That's right,
+**it does compile**. Although ``other.name`` and ``other.age`` are private,
+they're visible from ``LINE1`` and ``LINE2`` because those lines are in
+the same class as the declarations.
+
+    Remember, private members are always visible from lines in the same class.
 
 While a reference to an object does allow us to find members of the object
 via ``.memberName`` (for some ``memberName``), our ability to access the
 member from the current location (line of code) depends only on where the
 member is declared and its visibility. In general, **visibility itself has
-nothing to do with objects**, so you can make similar arguments for
-situations involving, for example, things that have protected visibility
-(covered in the next section).
+nothing to do with objects; it's all about where the code is written**.
 
 .. [4] A **copy constructor** for a class called ``A`` is the constructor
        ``A(A other)``; if a class has a copy constructor, then calling it
