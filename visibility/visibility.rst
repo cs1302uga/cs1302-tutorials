@@ -493,6 +493,31 @@ LINE  Name                 Declared   In           From      Same Package?  From
 3     ``setPrice(price)``  protected  ``Product``  ``Book``  |N|            |N|          |N|
 ====  ===================  =========  ===========  ========  =============  ===========  ========
 
+Example 7
+=========
+
+In this example, we remind ourselves that protected members are
+visible from the same package. To illustrate this, let's consider
+the UML diagram below and the code snippet that follows it.
+
+.. image:: img/protected_1.svg
+
+.. code-block:: java
+
+   // inside StoreDriver.java (cs1302.store package)
+   public static void main(String[] args) {
+       Book lotr = new Book("The Lord of the Rings", 11.99);
+       lotr.setPrice(lotr.getPrice() * 0.8); // <---- LINE1
+   } // main
+
+====  ===================  =========  ===========  ========  =============  ===========  ========
+..    Member                                       Accessed                              ..
+----  -------------------------------------------  ------------------------------------  --------
+LINE  Name                 Declared   In           From      Same Package?  From Child?  Visible?
+====  ===================  =========  ===========  ========  =============  ===========  ========
+1     ``setPrice(price)``  protected  ``Product``  ``Book``  |Y|            |N|          |Y|
+====  ===================  =========  ===========  ========  =============  ===========  ========
+
 Public Visibility
 *****************
 
