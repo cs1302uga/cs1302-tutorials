@@ -482,7 +482,12 @@ see one or the other, but not both).
        Book lotr = new Book("The Lord of the Rings", 11.99);
        lotr.setPrice(lotr.getPrice() * 0.8); // <---- LINE3
    } // main
-   
+
+====  ====================  =========  ===========  ========  =============  ===========  ========
+LINE  Member                Declared   In           From      Same Package?  From Child?  Visible?
+====  ====================  =========  ===========  ========  =============  ===========  ========
+1     ``Product(price)``    protected  ``Product``  ``Book``  |N|            |Y|          |Y|
+====  ====================  =========  ===========  ========  =============  ===========  ========
 
 Public Visibility
 *****************
