@@ -38,10 +38,10 @@ other factors.
 ===============  ================  ==========  ==============  =================  ================
 Visibility Name  Modifier Keyword  UML Symbol  Top-Level [1]_  Member-Level [2]_  Local-Level [3]_
 ===============  ================  ==========  ==============  =================  ================
-private          ``private``       ``-``                       |Y|
-package private  ..                ``~``       |Y|             |Y|
-protected        ``protected``     ``#``                       |Y|
-public           ``public``        ``+``       |Y|             |Y|
+private          ``private``       ``-``       |N|             |Y|                |N|
+package private  ..                ``~``       |Y|             |Y|                |N|
+protected        ``protected``     ``#``       |N|             |Y|                |N|
+public           ``public``        ``+``       |Y|             |Y|                |N|
 ===============  ================  ==========  ==============  =================  ================
 
 .. [1] A **top-level declaration** is the outermost declaration in a ``.java`` file.
@@ -99,7 +99,7 @@ Visibility       Visible From
 ---------------  ------------------------------------------------
 Name             Same Class  Same Package  Child Class  Elsewhere
 ===============  ==========  ============  ===========  =========
-private          |Y|
+private          |Y|         |N|           |N|          |N|
 ===============  ==========  ============  ===========  =========
 
 * In Java, the ``private`` modifier must be included in a member's declararion for
@@ -247,7 +247,7 @@ Visibility       Visible From
 ---------------  ------------------------------------------------
 Name             Same Class  Same Package  Child Class  Elsewhere
 ===============  ==========  ============  ===========  =========
-package private  |Y|         |Y|
+package private  |Y|         |Y|           |N|          |N|
 ===============  ==========  ============  ===========  =========
 
 * In Java, **there is no modifier keyword for package private visibility**. For
@@ -386,7 +386,9 @@ Class names in the ``In`` and ``From`` columns have been omitted since they're n
 relevant for this particular example.
 
 ====  ====================  ===============  ==================  ==================  ========
-LINE  Member                Declared         In                          From        Visible?
+..    Member                                 Accessed                                ..
+----  -------------------------------------  --------------------------------------  --------
+LINE  Name                  Declared         In                  From                Visible?
 ====  ====================  ===============  ==================  ==================  ========
 1     ``requestChange``     public           ``cs1302.factory``  ``cs1302.factory``  |Y|
 2     ``approveChange``     package private  ``cs1302.factory``  ``cs1302.factory``  |Y|
@@ -398,7 +400,9 @@ to access a different member of the ``Factory`` class **from a different package
 The table below summarizes the scenario for each line.
 
 ====  ====================  ===============  ==================  ==================  ========
-LINE  Member                Declared         In                          From        Visible?
+..    Member                                 Accessed                                ..
+----  -------------------------------------  --------------------------------------  --------
+LINE  Name                  Declared         In                  From                Visible?
 ====  ====================  ===============  ==================  ==================  ========
 4     ``requestChange``     public           ``cs1302.factory``  ``cs1302.store``    |Y|
 5     ``approveChange``     package private  ``cs1302.factory``  ``cs1302.store``    |N|
@@ -435,7 +439,7 @@ Visibility       Visible From
 ---------------  ------------------------------------------------
 Name             Same Class  Same Package  Child Class  Elsewhere
 ===============  ==========  ============  ===========  =========
-protected        |Y|         |Y|           |Y|
+protected        |Y|         |Y|           |Y|          |N|
 ===============  ==========  ============  ===========  =========
 
 * In Java, the ``protected`` modifier must be included in a member's declararion for
