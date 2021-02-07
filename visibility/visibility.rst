@@ -461,15 +461,15 @@ see one or the other, but not both).
 
 .. code-block:: java
 
-   // inside Book.java (cs1302.books package)
-   public Book(String title, double price) {
+   // inside Book.java (cs1302.books package) -- FIRST APPROACH
+   public Book(String title, double price) { 
        super(price); // <---------------------------- LINE1
        this.title = title;
    } // Book
 
 .. code-block:: java
 
-   // inside Book.java (cs1302.books package)
+   // inside Book.java (cs1302.books package) -- SECOND APPROACH
    public Book(String title, double price) {
        setPrice(price); // <------------------------- LINE2
        this.title = title;
