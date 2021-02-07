@@ -287,6 +287,11 @@ package private  |Y|         |Y|
   also include anything that is more visible than package private -- so
   everything except private).
 
+Some people refer to package private visibility as the "default visibility" because
+a modifier isn't needed to indicate that certain declarations are package
+private; However, **the term _default_, should be avoided when describing visibility**
+so that the concept is not confused with Java's default methods feature for interfaces.
+
 Example 4
 =========
 
@@ -486,161 +491,7 @@ private          |Y|
 Important Notes (Do Not Skip)
 *****************************
 
-
-## Package Private Notes
-
-Some people refer to _package private_ visibility as the _default visibility_ for
-methods and instance variables of a Java class. However, **the term _default_ should
-be avoided when talking about visibility** so that the concept is not confused with
-Java's default methods feature for interfaces.
-
-When you declare something in a class without a visibility modifier, it has package
-private visibility. Something that has package private visibility is only visible
-to lines of code within the same package. That is, a line of code can only see
-something that is package private if that something is declared somewhere in the
-same package. To illustrate this, consider the UML diagram below:
-
-<center>
-<img src="PackagePrivate.png">
-</center>
-
-In the example above, we have three classes, each containing one or more static
-methods. The `Math` and `Statistics` classes are both in the same package, while
-the `MathTutorApp` class is in some other package. The associations in the
-diagram illustrate that both the `Statistics` class and the `MathTutorApp` use,
-in some way, the `Math` class.
-
-Most of the static methods in the diagram are declared with public visibility,
-however, the two-parameter overload for `Math.sqrt` is noted as having package
-private visibility. In this case, the programmer realized that the two-parameter
-`sqrt` method might be complicated for users, so they made a concious decision
-to limits its visibility to the package level. At the same time, they provided
-an easier to use `sqrt` method that is publicly visible. Within the `Math` class,
-the two `sqrt` methods might look something like this (**do not neccesarily concern
-yourself with Euler's method; instead keep in mind that the package private
-`sqrt` method is not suitable for public access**):
-
-```java
-package cs1302.util;
-
-/**
- * Contains utility methods for mathematical operations.
- */
-public class Math {
-
-    /**
-     * Returns the square root of {@code n} using Euler's method with
-     * the specified initial {@code estimate}. This method should
-     * only be used within the current package because we cannot
-     * guarantee the user will provide anything meaningful for the
-     * {@code estimate}. In general, this method is faster if a
-     * good {@code estimate} is supplied.
-     *
-     * @param n         number to find the square root of
-     * @param estimate  initial estimate
-     * @return square root of {@code n}
-     */
-    static double sqrt(double n, double estimate) {
-        ...
-    } // sqrt
-
-     /**
-     * Returns the square root of {@code n}.
-     *
-     * @param n  number to find the square root of
-     * @return square root of {@code n}
-     */
-    public static double sqrt(double n) {
-        ...
-    } // sqrt
-
-} // Math
-```
-
-In this example, methods in the `Statistics` class can access both the one-parameter
-and two-parameter `Math.sqrt` method. Here is an example:
-
-```java
-package cs1302.util;
-
-/**
- * Contains utility methods for statistical operations.
- */
-public class Statistics {
-
-    ...
-
-    /**
-     * Returns the standard deviation of the supplied {@code values} based
-     * on their population variance.
-     *
-     * @param values  values to find the standard deviation of
-     * @return standard deviation of {@code values}
-     */
-    public static double stddev(double[] values) {
-        double varianceEst = variance(values);
-        // next line compiles; the two-parameter Math.sqrt is visible from here
-        double stdDevEst   = Math.sqrt(varianceEst, 0.25 * varianceEst);
-        return stdDevEst;
-    } // stddev
-
-} // Statistics
-```
-
-However, **methods in the `MathTutorApp` class can only access the one-parameter `Math.sqrt` method,**
-because relative to any lines in the `MathTutorApp` class, only the public `Math.sqrt` method visible.
-The two-parameter `Math.sqrt` method is not visible because it's declared in another package and has
-package private visibility. Consider the following code example:
-
-```java
-package some.other.package;
-
-import cs1302.util.Math;
-
-/**
- * Driver class for Company XYZ's Math Tutor application.
- */
-public class MathTutorApp {
-
-    ...
-
-    public static void main(String[] args) {
-
-        ...
-
-        double n = 1024.0;
-
-        // next line compiles; one-parameter Math.sqrt is visible from here
-        double stdDev1 = Math.sqrt(n);
-
-        // next line will NOT compile; two-parameter Math.sqrt is not visible from here
-        double stdDev2 = Math.sqrt(n, -100.0);
-
-        ...
-
-    } // main
-
-} // MathTutorApp
-```
-
-Hopefully this example illustrates that, just as with other visibilities,
-making a method or instance variable package private is a design choice.
-You should carefully consider whether access to something is suitable
-only within its declared package versus making it available to all other
-classes.
-
-## Protected Visibility Notes
-
-In a Java class, instance variables and methods that are declared with _protected visibility_
-are only visible to lines of code that are either in the same package as the declaring class
-or in a subclass of the declaring class. It is similar to package private visibility except
-that it does allow lines of code in other packages to see the declared instance variable or
-method if the declaring class is a parent. To illustrate these points, consider
-the following, non-exhaustive example:
-
-<center>
-<img src="Protected.png">
-</center>
+.. image:: img/Protected.png
 
 To simplify the example, we consider whether otherwise valid lines of code in each
 class in the diagram can see the `attribute` variable in the `Game` class. In the
