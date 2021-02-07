@@ -192,8 +192,8 @@ Example 3
 
 We mentioned earlier that some students have a flawed conceptual model for
 private visibility. Their idea of what it means for something to be private
-is more restrivtice than it actually is. **Perhaps this is you?**
-To illustrate, let's consider the UML diagram below and the code snippet for
+is more restrivtice than it actually is. **Could this be you?**
+To find out, let's consider the UML diagram below and the code snippet for
 a copy constructor [4]_ that follows it.
 
 .. image:: img/private_1.svg
