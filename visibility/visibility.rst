@@ -421,8 +421,9 @@ Protected Visibility
 Instead of saying that something has **protected** visibility, we usually
 just say that it's protected. In Java, only member-level declarations
 are allowed be protected. Protected members are slightly more visible
-than things that are package private; they are **only visible from lines of code
-that are eithin in the same package or a child class in any package.
+than things that are package private; they are **only visible from
+lines of code in the same package or a child class (regardless of its
+package)**.
 
 ===============  ==========  ============  ===========  =========
 Visibility       Visible From
