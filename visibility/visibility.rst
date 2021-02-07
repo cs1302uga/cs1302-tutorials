@@ -472,25 +472,6 @@ let's consider the UML diagram below and the two code snippets that follow it.
 
 .. image:: img/protected_1.svg
 
-.. code-block:: java
-
-   // inside Driver.java (cs1302.store package)
-   public static void main(String[] args) {
-       Factory factory = new Factory();
-       factory.requestChange("decrease price"); // <------- LINE1
-       factory.approveChange("decrease price"); // <------- LINE2
-       factory.denyChange("decrease price"); // <---------- LINE3
-   } // main
-
-.. code-block:: java
-
-   // inside Book.java (cs1302.store package)
-   public static void main(String[] args) {
-       Factory factory = new Factory();
-       factory.requestChange("decrease price"); // <------- LINE1
-       factory.approveChange("decrease price"); // <------- LINE2
-       factory.denyChange("decrease price"); // <---------- LINE3
-   } // main
 
 
 Public Visibility
