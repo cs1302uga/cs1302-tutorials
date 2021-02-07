@@ -451,26 +451,13 @@ TODO
 Summary of Visibilities
 ***********************
 
-In the table below, we summarize all of the different visibility scenarios
-that are possible for a single member of a class (e.g., a variable, constant,
-or method). To read the table, you should start by picking the column that
-describes the member's visibility, then pick the row that describes where
-the code is that is attempting to use that member. If you see a ✓ in the
-table, then a member with that visibility is visible from that location.
-
-| # | Visible From  | private | package private | protected | public |
-|---|---------------|---------|-----------------|-----------|--------|
-| 1 | Same Class    | |Y|     | |Y|             | |Y|       | |Y|    |
-| 2 | Same Package  | ..      | |Y|             | |Y|       | |Y|    |
-| 3 | Child Class   | ..      | ..              | |Y|       | |Y|    |
-| 4 | Elsewhere     | ..      | ..              | ..        | |Y|    |
-
-Here is another table with the exact same information.
+In the table below, we summarize the locations that declarations
+with a particular visibility are visible from.
 
 ===============  ==========  ============  ===========  =========
-Visibility       Visible From
+..               Visible From
 ---------------  ------------------------------------------------
-Name             Same Class  Same Package  Child Class  Elsewhere
+Declared As      Same Class  Same Package  Child Class  Elsewhere
 ===============  ==========  ============  ===========  =========
 public           |Y|         |Y|           |Y|          |Y|
 protected        |Y|         |Y|           |Y|
