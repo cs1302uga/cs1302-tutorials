@@ -233,24 +233,6 @@ nothing to do with objects; it's all about where the code is written**.
        the constructor documentation and class documentation for more
        information before you make any assumptions.
 
-Inheritance of Private Members
-==============================
-
-You may recall from the inheritance-related readings that **child classes inherit private instance members**
-from their parent. However, since those private members are declared in another class (the parent),
-they are not visible from lines of code in the child class. That being said, it's often possible
-to access inherited private members indirectly via a member that is visible.
-
-* For inherited private variables, the child class might utilize a visible getter or setter.
-* For inherited private methods, the child class may have access to a visible overload
-  that internally calls the private method.
-
-If we apply the second idea to constructors, then a child class constructor may be able to
-initialize inherited private variables using a call to ``super()`` (or some overload) so
-long as there is a visible parent constructor that performs the desired initializion.
-This is considered **a common pattern** that exemplifies separation of concerns and
-encapsulation as each class is responsible for its own private variables.
-
 Package Private Visibility
 **************************
 
@@ -517,6 +499,49 @@ protected        |Y|         |Y|           |Y|
 package private  |Y|         |Y|
 private          |Y|
 ===============  ==========  ============  ===========  =========
+
+Inheritance and Visibility
+==========================
+
+You may recall from the inheritance-related readings that **child classes
+inherit instance members** from their parent. In such a scenario, it's
+usually pretty clear that inherited members are declared elsewhere
+(in the parent class).
+
+----
+
+Since Java allows authors to override an inherited
+method, it's possible for there to be multiple declarations that sometimes
+have different visibilities. While most overrides preserve the visibility
+of the original declaration, it's also possible for them to be declared
+more visible in the child. This can make some situations a little tricky
+to parse, but the general rule of thumb is this:
+
+    If you try to access ``var.someMethod`` on some line of code, then
+    the visibility that's used by the compiler is determined by type of the
+    variable ``var``, itself, and not the type of the object that ``var``
+    refers to.
+
+Java's dynamic binding will still bind the call to the overload that's
+closest to object's type (e.g., to allow for polymorphism).
+
+----
+
+It's often possible to access access non-visible inherited members indirectly
+via a member that is visible.
+
+* For inherited variables, the child class might utilize a visible getter or setter.
+  That usually works so long as the instance variable is not shadowed (i.e.,
+  declared again in the child, a practice that is highly discouraged).
+* For inherited methods, the child class may have access to a visible overload
+  that internally calls the private method.
+
+If we apply the second idea to constructors, then a child class constructor may be able to
+access non-visible inherited variables (e.g., to initialize them) using a call to a
+visible ``super()`` (or some overload of ``super``); this works really well when
+the parent constructor initializes it's own declared instance variables.
+This is considered **a common pattern** that exemplifies *separation of concerns* and
+*encapsulation* as each class is responsible for its own variables.
 
 Important Notes (Do Not Skip)
 *****************************
