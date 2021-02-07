@@ -282,7 +282,7 @@ package private  |Y|         |Y|           |N|          |N|
 
 Some people refer to package private visibility as the "default visibility" because
 a modifier isn't needed to indicate that certain declarations are package
-private; However, **the term _default_, should be avoided when describing visibility**
+private; However, **the term "default" should be avoided when describing visibility**
 so that the concept is not confused with Java's default methods feature for interfaces.
 
 Example 4
