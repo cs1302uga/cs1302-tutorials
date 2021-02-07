@@ -213,19 +213,20 @@ this will work.
 
 When asked, many students will say that this will not compile, then
 they are shocked and amazed when they see that it does. That's right,
-**it does compile**.
+**it does compile**. The scenario for each line is summarized in the
+table below.
 
-====  ========  ========   ==========  =========  ===========  ========
-..    Member                           Accessed                ..
-----  -------------------------------  ----------------------  --------
-LINE  Name      Declared   In          From       Same Class?  Visible?
-====  ========  ========   ==========  =========  ===========  ========
+====  ========  ========  ==========  ==========  ===========  ========
+..    Member                          Accessed                 ..
+----  ------------------------------  -----------------------  --------
+LINE  Name      Declared  In          From        Same Class?  Visible?
+====  ========  ========  ==========  ==========  ===========  ========
 1     ``name``  private   ``Person``  ``Person``  |Y|          |Y|
 2     ``age``   private   ``Person``  ``Person``  |Y|          |Y|
-====  ========  ========   ==========  =========  ===========  ========
+====  ========  ========  ==========  ==========  ===========  ========
 
-Although ``other.name`` and ``other.age`` are private,
-they're visible from ``LINE1`` and ``LINE2`` because those lines are in
+Although ``other.name`` and ``other.age`` are private, they're visible
+from ``LINE1`` and ``LINE2`` because those lines are in
 the same class as the declarations.
 
     Remember, private members are always visible from lines in the same class.
