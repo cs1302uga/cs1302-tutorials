@@ -483,6 +483,9 @@ see one or the other, but not both).
        lotr.setPrice(lotr.getPrice() * 0.8); // <---- LINE3
    } // main
 
+The visibility situation for each labelled line is summarized in the table
+below.
+   
 ====  ===================  =========  ===========  ========  =============  ===========  ========
 ..    Member                                       Accessed                              ..
 ----  -------------------------------------------  ------------------------------------  --------
@@ -509,6 +512,9 @@ the UML diagram below and the code snippet that follows it.
        Book lotr = new Book("The Lord of the Rings", 11.99);
        lotr.setPrice(lotr.getPrice() * 0.8); // <---- LINE1
    } // main
+
+The visibility situation for each labelled line is summarized in the table
+below.
 
 ====  ===================  =========  ===========  ========  =============  ===========  ========
 ..    Member                                       Accessed                              ..
