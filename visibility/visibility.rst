@@ -506,9 +506,11 @@ Inheritance and Visibility
 You may recall from the inheritance-related readings that **child classes
 inherit instance members** from their parent. In such a scenario, it's
 usually pretty clear that inherited members are declared elsewhere
-(in the parent class).
+(in the parent class); however, some situations like overloading,
+shadowing, an initialization can be tricky to determine.
 
-----
+Overload Resolution
+===================
 
 Since Java allows authors to override an inherited
 method, it's possible for there to be multiple declarations that sometimes
@@ -525,7 +527,8 @@ to parse, but the general rule of thumb is this:
 Java's dynamic binding will still bind the call to the overload that's
 closest to object's type (e.g., to allow for polymorphism).
 
-----
+Non-Visible Inherited Members
+=============================
 
 It's often possible to access access non-visible inherited members indirectly
 via a member that is visible.
