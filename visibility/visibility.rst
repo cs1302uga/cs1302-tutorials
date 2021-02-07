@@ -233,6 +233,24 @@ nothing to do with objects; it's all about where the code is written**.
        the constructor documentation and class documentation for more
        information before you make any assumptions.
 
+Inheritance of Private Members
+==============================
+
+You may recall from the inheritance-related readings that **child classes inherit private instance members**
+from their parent. However, since those private members are declared in another class (the parent),
+they are not visible from lines of code in the child class. That being said, it's often possible
+to access inherited private members indirectly via a member that is visible.
+
+* For inherited private variables, the child class might utilize a visible getter or setter.
+* For inherited private methods, the child class may have access to a visible overload
+  that internally calls the private method.
+
+If we apply the second idea to constructors, then a child class constructor may be able to
+initialize inherited private variables using a call to ``super()`` (or some overload) so
+long as there is a visible parent constructor that performs the desired initializion.
+This is considered **a common pattern** that exemplifies separation of concerns and
+encapsulation. That is, each class is responsible for its own private variables.
+
 Package Private Visibility
 **************************
 
@@ -468,15 +486,6 @@ private          |Y|
 Important Notes (Do Not Skip)
 *****************************
 
-:Inheritance of Private Members:
-   You may recall from the Inheritance-related
-   readings that **child classes do inherit private instance variables and methods** from their
-   parent. However, since those variables are declared private in another class, the
-   inheriting class cannot see them directly. In scenarios like this, programmers often use
-   inherited getter and setter methods declared with protected and public visibility to
-   indirectly access inherited private members. **Another common pattern** is to initialize
-   some inherited private variables in a child constructor indirectly by explicitly using
-   `super` to invoke a parent constructor.
 
 ## Package Private Notes
 
