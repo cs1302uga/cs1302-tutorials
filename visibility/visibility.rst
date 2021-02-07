@@ -38,10 +38,10 @@ other factors.
 ===============  ================  ==========  ==============  =================  ================
 Visibility Name  Modifier Keyword  UML Symbol  Top-Level [1]_  Member-Level [2]_  Local-Level [3]_
 ===============  ================  ==========  ==============  =================  ================
-private          ``private``       ``-``                       |Y|
-package private  ..                ``~``       |Y|             |Y|
-protected        ``protected``     ``#``                       |Y|
-public           ``public``        ``+``       |Y|             |Y|
+private          ``private``       ``-``       |N|             |Y|                |N|
+package private  ..                ``~``       |Y|             |Y|                |N|
+protected        ``protected``     ``#``       |N|             |Y|                |N|
+public           ``public``        ``+``       |Y|             |Y|                |N|
 ===============  ================  ==========  ==============  =================  ================
 
 .. [1] A **top-level declaration** is the outermost declaration in a ``.java`` file.
@@ -99,7 +99,7 @@ Visibility       Visible From
 ---------------  ------------------------------------------------
 Name             Same Class  Same Package  Child Class  Elsewhere
 ===============  ==========  ============  ===========  =========
-private          |Y|
+private          |Y|         |N|           |N|          |N|
 ===============  ==========  ============  ===========  =========
 
 * In Java, the ``private`` modifier must be included in a member's declararion for
@@ -203,7 +203,7 @@ a copy constructor [4]_ that follows it.
    // inside Person.java
    public Person(Person other) {
        setName(other.name); // <---- LINE1
-       setAge(other.age); // <---- LINE2
+       setAge(other.age); // <------ LINE2
    } // setAge
 
 On the lines labelled ``LINE1`` and ``LINE2``, the code attempts to access
@@ -213,11 +213,22 @@ this will work.
 
 When asked, many students will say that this will not compile, then
 they are shocked and amazed when they see that it does. That's right,
-**it does compile**. Although ``other.name`` and ``other.age`` are private,
-they're visible from ``LINE1`` and ``LINE2`` because those lines are in
+**it does compile**. Although ``other.name`` and ``other.age`` are private, they're visible
+from ``LINE1`` and ``LINE2`` because those lines are in
 the same class as the declarations.
 
     Remember, private members are always visible from lines in the same class.
+    
+The scenario for each line is summarized in the table below.
+
+====  ========  ========  ==========  ==========  ===========  ========
+..    Member                          Accessed                 ..
+----  ------------------------------  -----------------------  --------
+LINE  Name      Declared  In          From        Same Class?  Visible?
+====  ========  ========  ==========  ==========  ===========  ========
+1     ``name``  private   ``Person``  ``Person``  |Y|          |Y|
+2     ``age``   private   ``Person``  ``Person``  |Y|          |Y|
+====  ========  ========  ==========  ==========  ===========  ========
 
 While a reference to an object does allow us to find members of the object
 via ``.memberName`` (for some ``memberName``), our ability to access the
@@ -233,24 +244,6 @@ nothing to do with objects; it's all about where the code is written**.
        the constructor documentation and class documentation for more
        information before you make any assumptions.
 
-Inheritance of Private Members
-==============================
-
-You may recall from the inheritance-related readings that **child classes inherit private instance members**
-from their parent. However, since those private members are declared in another class (the parent),
-they are not visible from lines of code in the child class. That being said, it's often possible
-to access inherited private members indirectly via a member that is visible.
-
-* For inherited private variables, the child class might utilize a visible getter or setter.
-* For inherited private methods, the child class may have access to a visible overload
-  that internally calls the private method.
-
-If we apply the second idea to constructors, then a child class constructor may be able to
-initialize inherited private variables using a call to ``super()`` (or some overload) so
-long as there is a visible parent constructor that performs the desired initializion.
-This is considered **a common pattern** that exemplifies separation of concerns and
-encapsulation as each class is responsible for its own private variables.
-
 Package Private Visibility
 **************************
 
@@ -265,7 +258,7 @@ Visibility       Visible From
 ---------------  ------------------------------------------------
 Name             Same Class  Same Package  Child Class  Elsewhere
 ===============  ==========  ============  ===========  =========
-package private  |Y|         |Y|
+package private  |Y|         |Y|           |N|          |N|
 ===============  ==========  ============  ===========  =========
 
 * In Java, **there is no modifier keyword for package private visibility**. For
@@ -289,7 +282,7 @@ package private  |Y|         |Y|
 
 Some people refer to package private visibility as the "default visibility" because
 a modifier isn't needed to indicate that certain declarations are package
-private; However, **the term _default_, should be avoided when describing visibility**
+private; However, **the term "default" should be avoided when describing visibility**
 so that the concept is not confused with Java's default methods feature for interfaces.
 
 Example 4
@@ -404,7 +397,9 @@ Class names in the ``In`` and ``From`` columns have been omitted since they're n
 relevant for this particular example.
 
 ====  ====================  ===============  ==================  ==================  ========
-LINE  Member                Declared         In                          From        Visible?
+..    Member                                 Accessed                                ..
+----  ---------------------------------------------------------  ------------------  --------
+LINE  Name                  Declared         In                  From                Visible?
 ====  ====================  ===============  ==================  ==================  ========
 1     ``requestChange``     public           ``cs1302.factory``  ``cs1302.factory``  |Y|
 2     ``approveChange``     package private  ``cs1302.factory``  ``cs1302.factory``  |Y|
@@ -416,7 +411,9 @@ to access a different member of the ``Factory`` class **from a different package
 The table below summarizes the scenario for each line.
 
 ====  ====================  ===============  ==================  ==================  ========
-LINE  Member                Declared         In                          From        Visible?
+..    Member                                 Accessed                                ..
+----  ---------------------------------------------------------  ------------------  --------
+LINE  Name                  Declared         In                  From                Visible?
 ====  ====================  ===============  ==================  ==================  ========
 4     ``requestChange``     public           ``cs1302.factory``  ``cs1302.store``    |Y|
 5     ``approveChange``     package private  ``cs1302.factory``  ``cs1302.store``    |N|
@@ -453,7 +450,7 @@ Visibility       Visible From
 ---------------  ------------------------------------------------
 Name             Same Class  Same Package  Child Class  Elsewhere
 ===============  ==========  ============  ===========  =========
-protected        |Y|         |Y|           |Y|
+protected        |Y|         |Y|           |Y|          |N|
 ===============  ==========  ============  ===========  =========
 
 * In Java, the ``protected`` modifier must be included in a member's declararion for
@@ -468,11 +465,85 @@ protected        |Y|         |Y|           |Y|
 Example 6
 =========
 
-let's consider the UML diagram below and the two code snippets that follow it.
+In this example, we'll consider two situations that where a protected
+member is visible and one that's not. To get started, let's consider
+the UML diagram below and the three code snippets that follow it.
+There are two snippets for the ``Book`` class constructor, each
+representing an alternative approach (i.e., in reality, we would
+see one or the other, but not both).
 
 .. image:: img/protected_1.svg
 
+.. code-block:: java
 
+   // inside Book.java (cs1302.books package) -- FIRST APPROACH
+   public Book(String title, double price) { 
+       super(price); // <---------------------------- LINE1
+       this.title = title;
+   } // Book
+
+.. code-block:: java
+
+   // inside Book.java (cs1302.books package) -- SECOND APPROACH
+   public Book(String title, double price) {
+       setPrice(price); // <------------------------- LINE2
+       this.title = title;
+   } // Book
+
+.. code-block:: java
+
+   // inside BookDriver.java (cs1302.books package)
+   public static void main(String[] args) {
+       Book lotr = new Book("The Lord of the Rings", 11.99);
+       lotr.setPrice(lotr.getPrice() * 0.8); // <---- LINE3
+   } // main
+
+The visibility situation for each labelled line is summarized in the table
+below.
+   
+====  ===================  =========  ===========  ========  =============  ===========  ========
+..    Member                                       Accessed                              ..
+----  -------------------------------------------  ------------------------------------  --------
+LINE  Name                 Declared   In           From      Same Package?  From Child?  Visible?
+====  ===================  =========  ===========  ========  =============  ===========  ========
+1     ``Product(price)``   protected  ``Product``  ``Book``  |N|            |Y|          |Y|
+2     ``setPrice(price)``  protected  ``Product``  ``Book``  |N|            |Y|          |Y|
+3     ``setPrice(price)``  protected  ``Product``  ``Book``  |N|            |N|          |N|
+====  ===================  =========  ===========  ========  =============  ===========  ========
+
+In ``LINE1`` and ``LINE2``, the ``price`` variable was not visible (it's
+package private and the labelled lines are attempting access from another
+package). The author's two constructor approaches utilize indirection to
+initialize a non-visible inheritted member, something that discussed
+further `here <#non-visible-inherited-members>`_.
+
+Example 7
+=========
+
+In this example, we remind ourselves that protected members are
+visible from the same package. To illustrate this, let's consider
+the UML diagram below and the code snippet that follows it.
+
+.. image:: img/protected_1.svg
+
+.. code-block:: java
+
+   // inside StoreDriver.java (cs1302.store package)
+   public static void main(String[] args) {
+       Book lotr = new Book("The Lord of the Rings", 11.99);
+       lotr.setPrice(lotr.getPrice() * 0.8); // <---- LINE1
+   } // main
+
+The visibility situation for each labelled line is summarized in the table
+below.
+
+====  ===================  =========  ===========  ========  =============  ===========  ========
+..    Member                                       Accessed                              ..
+----  -------------------------------------------  ------------------------------------  --------
+LINE  Name                 Declared   In           From      Same Package?  From Child?  Visible?
+====  ===================  =========  ===========  ========  =============  ===========  ========
+1     ``setPrice(price)``  protected  ``Product``  ``Book``  |Y|            |N|          |Y|
+====  ===================  =========  ===========  ========  =============  ===========  ========
 
 Public Visibility
 *****************
@@ -513,74 +584,67 @@ with a particular visibility are visible from.
 Declared As      Same Class  Same Package  Child Class  Elsewhere
 ===============  ==========  ============  ===========  =========
 public           |Y|         |Y|           |Y|          |Y|
-protected        |Y|         |Y|           |Y|
-package private  |Y|         |Y|
-private          |Y|
+protected        |Y|         |Y|           |Y|          |N|
+package private  |Y|         |Y|           |N|          |N|
+private          |Y|         |N|           |N|          |N|
 ===============  ==========  ============  ===========  =========
 
-Important Notes (Do Not Skip)
-*****************************
+Inheritance and Visibility
+**************************
 
-.. image:: img/Protected.png
+You may recall from the inheritance-related readings that **child classes
+inherit instance members** from their parent. In such a scenario, it's
+usually pretty clear that inherited members are declared elsewhere
+(in the parent class); however, some situations like overloading,
+shadowing, and initialization can be tricky to determine.
 
-To simplify the example, we consider whether otherwise valid lines of code in each
-class in the diagram can see the `attribute` variable in the `Game` class. In the
-table below, the "Visible?" column denotes whether or not the `attribute` variable
-is visible, assuming a proper reference to an object containing `attribute` is
-provided:
+Overload Resolution
+===================
 
-| Class         | Visible? | Comment                                     | Note |
-|---------------|----------|---------------------------------------------|------|
-| `Game       ` | ✓        | `attribute` is declared in the same class   |      |
-| `TypeOneGame` | ✓        | `attribute` is declared in the same package | also inherits `attribute` |
-| `TypeTwoGame` | ✓        | `attribute` is declared in the same package | also inherits `attribute` |
-| `Utility`     | ✓        | `attribute` is declared in the same package |      |
-| `YourGame`    | ✓        | `attribute` is declared in a parent class   | also inherits `attribute` |
-| `Tester`      | ✗        | `attribute` is not visible                  |      |
+Since Java allows authors to override an inherited
+method, it's possible for there to be multiple declarations that sometimes
+have different visibilities. While most overrides preserve the visibility
+of the original declaration, it's also possible for them to be declared
+more visible in the child. This can make some situations a little tricky
+to parse, but the general rule of thumb is this:
 
-There are two additional points that should be considered regarding this
-example. The classes `TypeOneGame`, `TypeTwoGame`, and `YourGame` all have
-access to:
+    If you try to access ``var.someMethod`` on some line of code, then
+    the visibility that's used by the compiler is determined by type of the
+    variable ``var``, itself, and not the type of the object that ``var``
+    refers to. Java's dynamic binding [7]_ will still bind the call to the
+    override that's closest to object's type (e.g., to allow for polymorphism).
 
-1. their own inherited `attribute` variable; **and**
-1. `attribute` variables in objects of each other, assuming
-   a proper reference to an object is given.
+Perhaps that's a little dense. You may find it easier to remember this:
 
-To illustrate the second point, consider the following lines of code,
-which you should assume, for the sake of this example, are located inside
-a method in `YourGame`:
+    The variable type is used for visibility and the object type is used
+    for binding.
 
-```java
-// inside some method in YourGame
-TypeOneGame tog = ...  // not-null; refers to a valid object
-int a = tog.attribute; // COMPILES; yes, this works
-```
+.. [7] The term **binding** usually refers to the association between a
+       method call and a particular method body. Java uses **dynamic binding**,
+       which means that its binding occurs at runtime. This choice was
+       made by the designers of the language to facilitate its polymorphism
+       and method override features.
 
-Remember, **visibility has nothing to do with objects in Java.**
-Instead, visibility has to do with classes. In the third line of
-code, `attribute` via `tog.attribute` is visible because:
+Non-Visible Inherited Members
+=============================
 
-1. a proper reference to an object contain `attribute` is given (via `tog`); and
-1. relative to that line of code, `attribute` is delcared in a parent class of
-   the `YourGame` class which is where these lines are located.
+It's often possible to access access non-visible inherited members indirectly
+via a member that is visible.
 
-## Public Visibility
+* For inherited variables, the child class might utilize a visible getter or setter.
+  That usually works so long as the instance variable is not shadowed (i.e.,
+  declared again in the child, a practice that is highly discouraged).
+* For inherited methods, the child class may have access to a visible overload
+  that internally calls the private method.
 
-When you declare a method or instance variable with public visibility, you
-are explicitly stating that you are okay with that thing being accessed
-from anwhere, including in lines of code that you potentially do not write.
-If that kind of access is inappropriate, then you should carefully consider
-one of the other visibilities.
+If we apply the second idea to constructors, then a child class constructor may be able to
+access non-visible inherited variables (e.g., to initialize them) using a call to a
+visible ``super()`` (or some overload of ``super``); this works really well when
+the parent constructor initializes it's own declared instance variables.
+This is considered **a common pattern** that exemplifies *separation of concerns* and
+*encapsulation* as each class is responsible for its own variables.
 
-## Closing Remarks
-
-You should carefully consider the different scenarios described in this reading
-and try to reproduce them in an actual Java programming environment to see what
-the Java compiler will and will not let you do.
-
-## Glossary
-
-visibility
+.. #############################################################################
 
 .. util
 .. |Y| unicode:: U+2713
