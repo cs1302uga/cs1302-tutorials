@@ -522,10 +522,18 @@ to parse, but the general rule of thumb is this:
     If you try to access ``var.someMethod`` on some line of code, then
     the visibility that's used by the compiler is determined by type of the
     variable ``var``, itself, and not the type of the object that ``var``
-    refers to.
+    refers to. Java's dynamic binding [7]_ will still bind the call to the
+    overload that's closest to object's type (e.g., to allow for polymorphism).
 
-Java's dynamic binding will still bind the call to the overload that's
-closest to object's type (e.g., to allow for polymorphism).
+Perhaps that's a little dense. You may find it easier to remember this:
+
+    The variable type is used for visibility and the object type is used
+    for binding.
+
+.. [7] The term **binding** usually refers to the association between a
+       method call and a particular method body. Java uses **dynamic binding**,
+       which means that binding that occurs at runtime; it does this to
+       facilitate polymorphism.
 
 Non-Visible Inherited Members
 =============================
