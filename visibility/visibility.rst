@@ -469,7 +469,29 @@ protected        |Y|         |Y|           |Y|
 Public Visibility
 *****************
 
-TODO
+Instead of saying that something has **public** visibility, we usually
+just say that it's public. In Java, only top-level and member-level declarations
+are allowed to be public. Things that are public are considered
+to be the most visible; they are **always visible**.
+
+===============  ==========  ============  ===========  =========
+Visibility       Visible From
+---------------  ------------------------------------------------
+Name             Same Class  Same Package  Child Class  Elsewhere
+===============  ==========  ============  ===========  =========
+public           |Y|         |Y|           |Y|          |Y|
+===============  ==========  ============  ===========  =========
+
+* In Java, the ``public`` modifier must be included in a declararion for
+  it to be considered public by the compiler.
+* In UML, the ``+`` symbol is used just before a member's identifier to
+  illustrate that it's public. It is also common practice to assume
+  that a class in a UML class diagram is public if no visibility
+  symbol is included.
+* The ``javadoc`` program includes public declarations in a
+  documentation website by default. If you want ``javadoc``
+  to only include public declarations, then the ``-public``
+  command-line argument can be used.
 
 Summary of Visibilities
 ***********************
