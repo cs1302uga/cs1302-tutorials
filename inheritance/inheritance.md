@@ -26,7 +26,7 @@ The steps in this tutorial assume that you are logged into the Odin server.
    called `cs1302-interfaces`:
 
    ```
-   $ curl -s -L https://git.io/fjAqO | bash
+   $ curl -s -L https://raw.githubusercontent.com/cs1302uga/cs1302-tutorials/master/inheritance/setup.sh | bash
    ```
 
 1. Change into the `cs1302-inheritance` directory that was just created and look around. There should be
