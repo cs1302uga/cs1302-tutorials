@@ -102,9 +102,17 @@ if a class does not explicitly extend another class, then it implicitly extends 
 
 Constructors are __not inherited in the usual sense__. That is, a parent constructor
 does not become a constructor in the child class when inheritance is involved. However, child
-constructors can invoke parent constructors via the `super` keyword. Java allows this
-in order to facilitate a separation of concerns: let the parent class code be responsible
-for setting up the inherited variables. We'll illustrate this with a small in just a moment,
+constructors can invoke the code in a parent constructor via the `super` keyword. In fact, if 
+the author of a child class does not do this, then Java will automatically add `super()`
+(i.e., a call to the parent's default constructor) to the first line of the child contstructor
+during compile-time. 
+
+When we say that a parent constructor is called, we don't mean something like `new Parent()`;
+no object of the parent class is made in what we're describing. Instead, using `super` to
+call a parent constructor just means that we're executing the code that's in a parent 
+constructor. Java does this in order to facilitate a separation of concerns; that is, it lets 
+each class setup/initialize their own stuff so that the child doesn't have to duplicate the
+work that's written in the parent. We'll illustrate this with a small in just a moment,
 but first take case to read the following note:
 
 > It's tempting to imagine that Java moves back and forth from child to parent whenever
@@ -112,10 +120,10 @@ but first take case to read the following note:
 > Instead, embrace the "copy-paste" ideology that's espoused in our videos and apply
 > that thinking here. Although the parent constructor is not included as a separate
 > constructor in the child class, it's convenient to think of it as being pasted into
-> the child class along with other inherited members. Instead of moving back and forth
-> from child to parent, you simply move from constructor to constructor in the child
-> class; eliminating the back and forth makes it easier to reason out what's happening
-> when instance variables are involved.
+> the child class along (renamed to `super`) with other inherited members. Instead of 
+> moving back and forth from child to parent, you simply move from constructor to 
+> constructor in the child class; eliminating the back and forth makes it easier to reason 
+> out what's happening when instance variables are involved.
 
 Now let's work through the example:
 
