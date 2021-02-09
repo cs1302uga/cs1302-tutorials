@@ -108,11 +108,11 @@ the author of a child class does not do this, then Java will automatically add `
 during compile-time. 
 
 When we say that a parent constructor is called, we don't mean something like `new Parent()`;
-no object of the parent class is made in what we're describing. Instead, using `super` to
-call a parent constructor just means that we're executing the code that's in a parent 
+no object of the parent class is made in what we're describing. Instead, "using `super` to
+call a parent constructor" just means that we're telling Java to execute the code that's in a parent 
 constructor. Java does this in order to facilitate a separation of concerns; that is, it lets 
-each class setup/initialize their own stuff so that the child doesn't have to duplicate the
-work that's written in the parent. We'll illustrate this with a small in just a moment,
+each class setup/initialize their own stuff so that the child class doesn't have to duplicate the
+work that's written in the parent. We'll illustrate this with a small example in just a moment,
 but first take case to read the following note:
 
 > It's tempting to imagine that Java moves back and forth from child to parent whenever
@@ -121,9 +121,9 @@ but first take case to read the following note:
 > that thinking here. Although the parent constructor is not included as a separate
 > constructor in the child class, it's convenient to think of it as being pasted into
 > the child class along (renamed to `super`) with other inherited members. Instead of 
-> moving back and forth from child to parent, you simply move from constructor to 
-> constructor in the child class; eliminating the back and forth makes it easier to reason 
-> out what's happening when instance variables are involved.
+> moving back and forth from child to parent, you simply copy and rename from constructor
+> into the child class. Eliminating the back and forth makes it easier to reason 
+> out what's happening.
 
 Now let's work through the example:
 
