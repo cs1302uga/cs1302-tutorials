@@ -5,6 +5,15 @@
 .. |uml_tutorial| replace:: UML Class Diagrams
 .. _uml_tutorial: https://github.com/cs1302uga/cs1302-tutorials/blob/master/uml/uml.md
 
+.. internal links
+.. |reading_private| replace:: Private Visibility
+.. _reading_private: private.rst
+.. |reading_package| replace:: Package Private Visibility
+.. _reading_package: package.rst
+.. |reading_protected| replace:: Protected Visibility
+.. _reading_protected: protected.rst
+.. |reading_public| replace:: Public Visibility
+.. _reading_public: public.rst
 .. image:: img/in-progress.svg
 
 Visibility Reading
@@ -102,13 +111,10 @@ and help others to understand the important details of visibility.p
 Individual Readings
 *******************
 
-.. |reading_private| replace:: Private Visibility
-.. _reading_private: private.rst
-
 * |reading_private|_
-* Package Private Visibility
-* Protected Visibility
-* Public Visibility
+* |reading_package|_
+* |reading_protected|_
+* |reading_public|_
 
 Summary of Visibilities
 ***********************
