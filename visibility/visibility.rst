@@ -82,31 +82,29 @@ public           ``public``        ``+``       |Y|             |Y|              
 
 In this tutorial, we cover each available visibility option with a few examples,
 often illustrated using a combination of `UML diagrams <uml_tutorial>`__ and code
-snippets. The order in which the visibilities are covered is deliberate; we start
-with the option that makes something visible from the least number of locations,
-then work through the rest in the order of increasing visibility.
+snippets.
 
 We will take some liberties when discussing examples involving multiple
 labelled lines (e.g., ``LINE1``) of code; for example, whenever we consider
 whether or not a line will work, we will make a good faith assumption that
 all other labelled lines of code will also work, even if we find out later
-that they don't. If you want to work through such examples yourself (i.e.,
-write the code), you may need to comment out or remove some labelled lines of
-code whenever you focus your attention a single, labelled line.
+that they don't. We mention this because, technically, if one does not work,
+then the whole thing might not work; however, at the same time, it's usually
+less constructive to break such an example into multiple examples as that
+impacts readability.
 
 While you are likely already familiar private and public visibility, please do not
 assume that you already understand how it works. Over the years, we have
 found that many students have a somewhat flawed conceptual model for how
-private visibility works that is actually more complicated than what it
-actually is. Regardless of your experiece, you should work through each
-visibility example in this tutorial until you are able to:
+some visibility options work that is actually more complicated than what it actually is.
+Regardless of your experiece, you should work through each visibility example
+in this tutorial until you are able to:
 
 1. correctly determine the visibility outcome and justification; and
 2. write your own code that illustrates a similar visibility scenario.
 
 We encourage you to make Piazza posts about your examples, ask questions,
 and help others to understand the important details of visibility.p
-
 
 Individual Readings
 *******************
@@ -123,7 +121,7 @@ In the table below, we summarize the locations that declarations
 with a particular visibility are visible from.
 
 ===============  ==========  ============  ===========  =========
-..               Visible From
+Entity           Visible From
 ---------------  ------------------------------------------------
 Declared As      Same Class  Same Package  Child Class  Elsewhere
 ===============  ==========  ============  ===========  =========
