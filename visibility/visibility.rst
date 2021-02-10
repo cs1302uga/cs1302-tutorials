@@ -51,24 +51,28 @@ public           ``public``        ``+``       |Y|             |Y|              
 .. [1] A **top-level declaration** is the outermost declaration in a ``.java`` file.
        Some things that can be declared at the top-level include classes and
        interfaces.
-       
-       .. code-block:: java
-       
-          public class Person { // ...
 
 .. [2] A **member-level declaration** is any declaration of a class or interface member.
        Members can include, where applicable, the constructors, methods, variables, constants,
        etc. (both static or non-static/instance) of the class or interface; however, the
        never includes Local-level declarations.
-       
-       .. code-block:: java
-       
-          private int name;
 
 .. [3] A **local-level declaration** is any variable declaration that is local, in
        scope, to a particular method. The local variables of a method include
        its parameter and any variables declared within the body of the
        method.
+       
+.. [4] Here are some examples to help you distinguish declaration level:
+
+       .. code-block:: java
+       
+          public class Person { // <---------- `Person` is top-level
+              private String name; // <------- `name` is member-level
+              public Person(String name) { <-- `Person` is member-level; `name` is local-level
+                  int x = 42; // <------------ `x` is local-level
+                  this.name = name;
+              } // Person
+          } // Person
 
 In this tutorial, we cover each available visibility option with a few examples,
 often illustrated using a combination of `UML diagrams <uml_tutorial>`__ and code
@@ -206,7 +210,7 @@ We mentioned earlier that some students have a flawed conceptual model for
 private visibility. Their idea of what it means for something to be private
 is more restrivtice than it actually is. **Could this be you?**
 To find out, let's consider the UML diagram below and the code snippet for
-a copy constructor [4]_ that follows it.
+a copy constructor [5]_ that follows it.
 
 .. image:: img/private_1.svg
 
@@ -248,7 +252,7 @@ member from the current location (line of code) depends only on where the
 member is declared and its visibility. In general, **visibility itself has
 nothing to do with objects; it's all about where the code is written**.
 
-.. [4] A **copy constructor** for a class called ``A`` is the constructor
+.. [5] A **copy constructor** for a class called ``A`` is the constructor
        ``A(A other)``; if a class has a copy constructor, then calling it
        with a reference to some existing object of the class as its parameter
        should result in the newly constructed object being a copy. The result
@@ -325,7 +329,7 @@ let's consider the UML diagram below and the two code snippets that follow it.
 On the line labelled ``LINE1``, the author omitted a visibility modifier
 in their top-level declaration of the ``Utility`` class. As discussed earlier,
 this causes the class to default to package private visibility. On ``LINE2``,
-which exists in ``Driver.java`` in a different package [5]_, an attempt is made to
+which exists in ``Driver.java`` in a different package [6]_, an attempt is made to
 import the ``Utility`` class. Since that class is package private, it's not
 visible from this line because things that are package private are only visible
 from within the same package. If you try to compile ``Driver.java``, then
@@ -340,16 +344,16 @@ they omitted a visibility modifier in the top-level class declaration. Had they
 declared it public, for example, then the example would have compiled.
 
 As an aside, the UML diagram for this example also includes a private
-constructor [6]_! You can read about it in the footnote.
+constructor [7]_! You can read about it in the footnote.
 
-.. [5] In Java, two files are said to be in **different packages** whenever
+.. [6] In Java, two files are said to be in **different packages** whenever
        their package statements are not identical. Don't let the directory
        structure for some packages confuse you into believing something that's
        not true. For example, although the directory for package
        ``cs1302.foo.bar`` might be inside the directory for package ``cs1302.foo``,
        they're both considered by the compiler to be in different packages.
 
-.. [6] A **private constructor** may seen counterintuitive -- after all, constructors
+.. [7] A **private constructor** may seen counterintuitive -- after all, constructors
        are used to make objects of a class, and constructor calls often
        occur in other classes. There are, however, some valid use cases:
 
@@ -623,7 +627,7 @@ to parse, but the general rule of thumb is this:
     If you try to access ``var.someMethod`` on some line of code, then
     the visibility that's used by the compiler is determined by type of the
     variable ``var``, itself, and not the type of the object that ``var``
-    refers to. Java's dynamic binding [7]_ will still bind the call to the
+    refers to. Java's dynamic binding [8]_ will still bind the call to the
     override that's closest to object's type (e.g., to allow for polymorphism).
 
 Perhaps that's a little dense. You may find it easier to remember this:
@@ -631,7 +635,7 @@ Perhaps that's a little dense. You may find it easier to remember this:
     The variable type is used for visibility and the object type is used
     for binding.
 
-.. [7] The term **binding** usually refers to the association between a
+.. [8] The term **binding** usually refers to the association between a
        method call and a particular method body. Java uses **dynamic binding**,
        which means that its binding occurs at runtime. This choice was
        made by the designers of the language to facilitate its polymorphism
