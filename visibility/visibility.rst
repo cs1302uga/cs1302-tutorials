@@ -9,7 +9,7 @@
 .. |reading_private| replace:: Private Visibility
 .. _reading_private: private.rst
 .. |reading_package| replace:: Package Private Visibility
-.. _reading_package: package.rst
+.. _reading_package: package-private.rst
 .. |reading_protected| replace:: Protected Visibility
 .. _reading_protected: protected.rst
 .. |reading_public| replace:: Public Visibility
