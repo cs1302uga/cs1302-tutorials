@@ -20,8 +20,8 @@ Introduction
 ************
 
 Java has four different **visibility** options that can be used to facilitate
-**access control**, i.e., to control access to the things that we declare [0]_.
-When you declare that something has a particular visibility in your code,
+**access control**, i.e., to control access to the things that we declare [0]_
+in our code. When you declare that something has a particular visibility in your code,
 you communicate to the compiler the set of locations that are allowed to access
 that thing. The term "access" simply means to "use from elsewhere in the code."
 With that in mind, throughout this tutorial we will often say that various things
