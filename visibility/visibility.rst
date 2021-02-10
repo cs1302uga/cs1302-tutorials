@@ -4,7 +4,7 @@
 .. external links
 .. |uml_tutorial| replace:: UML Class Diagrams
 .. _uml_tutorial: https://github.com/cs1302uga/cs1302-tutorials/blob/master/uml/uml.md
-.. |jls11_access_control| replace:: JLS 11 Section 6.6
+.. |jls11_access_control| replace:: The Java Language Specification (JLS) 11 Section 6.6
 .. _jls11_access_control: https://docs.oracle.com/javase/specs/jls/se11/html/jls-6.html#jls-6.6
 .. |wikipedia_singleton| replace:: Singleton pattern
 .. _wikipedia_singleton: https://en.wikipedia.org/wiki/Singleton_pattern
@@ -20,9 +20,11 @@ Introduction
 ************
 
 Java has four different **visibility** options that can be used to facilitate
-**access control**, i.e., to control access to certain things that we declare [0]_.
+**access control**, i.e., to control access to the things that we declare [0]_.
 
-.. [0] A declaration is...
+.. [0] In Java, a **declaration** introduces an entity (e.g., a variable, method,
+   class, etc.) into a program and includes an identifier (name) that can be used
+   to represent that entity.
 
 When you declare that something has a particular visibility in your code,
 you communicate to the compiler the set of locations that are allowed to access
