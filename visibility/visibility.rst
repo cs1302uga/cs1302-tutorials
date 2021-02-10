@@ -102,7 +102,10 @@ and help others to understand the important details of visibility.p
 Individual Readings
 *******************
 
-* Private Visibility
+.. |reading_private| replace:: Private Visibility
+.. _reading_private: private.rst
+
+* |reading_private|_
 * Package Private Visibility
 * Protected Visibility
 * Public Visibility
