@@ -67,10 +67,10 @@ public           ``public``        ``+``       |Y|             |Y|              
 
        .. code-block:: java
        
-          public class Person { // <---------- `Person` is top-level
-              private String name; // <------- `name` is member-level
-              public Person(String name) { <-- `Person` is member-level; `name` is local-level
-                  int x = 42; // <------------ `x` is local-level
+          public class Person { // <------------- `Person` is top-level
+              private String name; // <---------- `name` is member-level
+              public Person(String name) { // <-- `Person` is member-level; `name` is local-level
+                  int x = 42; // <--------------- `x` is local-level
                   this.name = name;
               } // Person
           } // Person
