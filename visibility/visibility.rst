@@ -21,11 +21,6 @@ Introduction
 
 Java has four different **visibility** options that can be used to facilitate
 **access control**, i.e., to control access to the things that we declare [0]_.
-
-.. [0] In Java, a **declaration** introduces an entity (e.g., a variable, method,
-   class, etc.) into a program and includes an identifier (name) that can be used
-   to represent that entity.
-
 When you declare that something has a particular visibility in your code,
 you communicate to the compiler the set of locations that are allowed to access
 that thing. The term "access" simply means to "use from elsewhere in the code."
@@ -33,6 +28,10 @@ With that in mind, throughout this tutorial we will often say that various thing
 are "visible from" some location; this wording just means that the thing
 "can be accessed from" or "can be used from" that location based on its
 visibility.
+
+.. [0] In Java, a **declaration** introduces an entity (e.g., a variable, method,
+   class, etc.) into a program and includes an identifier (name) that can be used
+   to represent that entity.
 
 The table below shows all four visibility options that are available in Java,
 three of which have an associated **visibility modifier** that we can
