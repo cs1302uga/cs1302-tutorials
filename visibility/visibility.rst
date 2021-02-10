@@ -53,6 +53,7 @@ public           ``public``        ``+``       |Y|             |Y|              
        interfaces.
        
        .. code-block:: java
+       
           public class Person { // ...
 
 .. [2] A **member-level declaration** is any declaration of a class or interface member.
@@ -61,6 +62,7 @@ public           ``public``        ``+``       |Y|             |Y|              
        never includes Local-level declarations.
        
        .. code-block:: java
+       
           private int name;
 
 .. [3] A **local-level declaration** is any variable declaration that is local, in
