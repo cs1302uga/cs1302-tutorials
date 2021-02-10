@@ -52,18 +52,16 @@ public           ``public``        ``+``       |Y|             |Y|              
        Some things that can be declared at the top-level include classes and
        interfaces.
        
-       ```java
-       public class Person { // ...
-       ```
+       .. code-block:: java
+          public class Person { // ...
 
 .. [2] A **member-level declaration** is any declaration of a class or interface member.
        Members can include, where applicable, the constructors, methods, variables, constants,
        etc. (both static or non-static/instance) of the class or interface; however, the
        never includes Local-level declarations.
        
-       ```java
-       private int name;
-       ```
+       .. code-block:: java
+          private int name;
 
 .. [3] A **local-level declaration** is any variable declaration that is local, in
        scope, to a particular method. The local variables of a method include
