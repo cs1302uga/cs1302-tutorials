@@ -37,7 +37,8 @@ The table below shows all four visibility options that are available in Java,
 three of which have an associated **visibility modifier** that we can
 include in various declarations throughout our code. The set of potential
 visibility options for a declaration may also depends on its level and
-other factors.
+other factors. We encourage you to review [4]_, which contains declarations
+at each level.
 
 ===============  ================  ==========  ==============  =================  ================
 Visibility Name  Modifier Keyword  UML Symbol  Top-Level [1]_  Member-Level [2]_  Local-Level [3]_
@@ -62,7 +63,7 @@ public           ``public``        ``+``       |Y|             |Y|              
        its parameter and any variables declared within the body of the
        method.
        
-.. [4] Here are some examples to help you distinguish declaration level:
+.. [4] Here are some examples to help you identify the different declaration levels:
 
        .. code-block:: java
        
