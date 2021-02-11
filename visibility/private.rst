@@ -84,14 +84,14 @@ that follows it.
    public void updateAges(Person[] persons) {
        for (int i = 0; i < persons.length; i++) {
            int newAge = persons[i].getAge() + 1;
-           if (checkAge(newAge)) { // <---- LINE1 ✗
+           if (persons[i].checkAge(newAge)) { // <---- LINE1 ✗
                persons[i].setAge(newAge);
            } // if
        } // for
    } // updateAges
 
 On the line labelled ``LINE1``, the code attempts to access the
-``checkAge`` method, an instance method delcared within another
+``checkAge`` method, an instance method declared within another
 class. Since that method is private, it's not visible from this line
 because private members are only visible from within the class where
 they are declared. If you try to compile ``OtherClass.java``, then
@@ -119,7 +119,7 @@ Example 3
 
 We mentioned earlier that some students have a flawed conceptual model for
 private visibility. Their idea of what it means for something to be private
-is more restrivtice than it actually is. **Could this be you?**
+is more restrictive than it actually is. **Could this be you?**
 To find out, let's consider the UML diagram below and the code snippet for
 a copy constructor [5]_ that follows it.
 
