@@ -14,7 +14,8 @@
 .. _reading_protected: protected.rst
 .. |reading_public| replace:: Public Visibility
 .. _reading_public: public.rst
-.. image:: img/in-progress.svg
+.. 
+  image:: img/in-progress.svg
 
 Visibility Reading
 ##################
@@ -37,11 +38,18 @@ visibility.
 .. [0] In Java, a **declaration** introduces an entity (e.g., a variable, method,
    class, etc.) into a program and includes an identifier (name) that can be used
    to represent that entity.
+   
+   Example declarations:
+      .. code-block:: java   
+      
+         int x;                     // Variable Declaration
+         public class Foo           // Class Declaration
+         public static void bar()   // Method Declaration
 
 The table below shows all four visibility options that are available in Java,
 three of which have an associated **visibility modifier** that we can
 include in various declarations throughout our code. The set of potential
-visibility options for a declaration may also depends on its level and
+visibility options for a declaration may also depend on its level and
 other factors. We encourage you to review [4]_, which contains declarations
 at each level.
 
@@ -60,7 +68,7 @@ public           ``public``        ``+``       |Y|             |Y|              
 
 .. [2] A **member-level declaration** is any declaration of a class or interface member.
        Members can include, where applicable, the constructors, methods, variables, constants,
-       etc. (both static or non-static/instance) of the class or interface; however, the
+       etc. (both static or non-static/instance) of the class or interface; however, they
        never includes Local-level declarations.
 
 .. [3] A **local-level declaration** is any variable declaration that is local, in
@@ -97,14 +105,14 @@ While you are likely already familiar private and public visibility, please do n
 assume that you already understand how it works. Over the years, we have
 found that many students have a somewhat flawed conceptual model for how
 some visibility options work that is actually more complicated than what it actually is.
-Regardless of your experiece, you should work through each visibility example
+Regardless of your experience, you should work through each visibility example
 in this tutorial until you are able to:
 
 1. correctly determine the visibility outcome and justification; and
 2. write your own code that illustrates a similar visibility scenario.
 
 We encourage you to make Piazza posts about your examples, ask questions,
-and help others to understand the important details of visibility.p
+and help others to understand the important details of visibility.
 
 Individual Readings
 *******************
