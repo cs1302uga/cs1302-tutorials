@@ -47,7 +47,7 @@ a modifier isn't needed to indicate that certain declarations are package
 private; However, **the term "default" should be avoided when describing visibility**
 so that the concept is not confused with Java's default methods feature for interfaces.
 
-Example 4
+Example 1
 =========
 
 Here is our first example involving a top-level declaration. To get started,
@@ -117,7 +117,7 @@ constructor [7]_! You can read about it in the footnote.
          here, but the |wikipedia_singleton|_ is example of this idea that
          restricts the total number of objects to be no greater than one.
 
-Example 5
+Example 2
 =========
 
 In this example, we'll see how package private visibility can be used at
