@@ -1,4 +1,4 @@
-.. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet
+.. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Spring%202021-success
    :alt: Approved for: Spring 2021
 
 Visibility Reading
