@@ -33,7 +33,7 @@ protected        |Y|         |Y|           |Y|          |N|
   protected members, then you can tell ``javadoc`` to only include
   public declarations (as explained in the section on public visibility).
 
-Example 6
+Example 1
 =========
 
 In this example, we'll consider two situations that where a protected
@@ -88,7 +88,7 @@ package). The author's two constructor approaches utilize indirection to
 initialize a non-visible inheritted member, something that discussed
 further `here <#non-visible-inherited-members>`_.
 
-Example 7
+Example 2
 =========
 
 In this example, we remind ourselves that protected members are
