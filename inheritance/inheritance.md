@@ -23,7 +23,7 @@ The steps in this tutorial assume that you are logged into the Odin server.
 
 1. Use the following command to download and execute a shell script that retrieves
    the starter code for this tutorial and places it into a subdirectory
-   called `cs1302-interfaces`:
+   called `cs1302-inheritance`:
 
    ```
    $ curl -s -L https://raw.githubusercontent.com/cs1302uga/cs1302-tutorials/master/inheritance/setup.sh | bash
