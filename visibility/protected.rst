@@ -182,7 +182,7 @@ LINE  Name                 Declared   In           From         Same Package?  F
 ====  ===================  =========  ===========  ===========  =============  ===========  ===========  ===========  ========
 
 In practice, the scenario that does not work for ``LINE3`` is rare. When a child class
-wants to call a protected member from its parent, it's the usually the case that the
+wants to call a protected member declared in a parent, it's the usually the case that the
 inherited verson of the method is intended and not the version bound to objects of the
 parent like in ``LINE3``.
 
