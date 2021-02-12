@@ -142,7 +142,7 @@ of the requirement:
 .. epigraph::
 
    In a child class, access to a protected instance member of a parent in another
-   package via a reference variable (or `this` or `super`) is only permitted when 
+   package via a reference variable (or `this` or `super`) is only permitted when
    the variable type is the child type or a child of the child type.
 
 To illustrate the impact of this requirement, let's consider the UML diagram below
@@ -192,9 +192,42 @@ variable used to attempt that access is above the child class in the overall
 inheritance hierarchy.
 
 We should also note that the situation on ``LINE1`` remains the same if we change ``this.getSSN()``
-to ``getSSN()`` (i.e., a simple method call) since simple calls in an instance method are 
+to ``getSSN()`` (i.e., a simple method call) since simple calls in an instance method are
 assumed to be called on the same calling object as the one used the call the instance method
-in which they reside (i.e., the same object referred to by ``this``) when available. 
+in which they reside (i.e., the same object referred to by ``this``) when available.
+
+Example 4
+=========
+
+.. image:: img/protected_3.svg
+
+.. code-block:: java
+
+   // inside A.java (cs1302.baz package)
+   public void doStuff() {
+       doThis(); // <---- LINE1
+       doThat(); // <---- LINE2
+   } // doStuff
+
+.. code-block:: java
+
+   // inside Driver.java (cs1302.buz package)
+   // assume cs1302.baz.A is imported
+   public static void main(String[] args) {
+       A a = new A();
+       a.doStuff(); <---- LINE3
+   } // main
+
+====  ===================  =========  =====  ==========  =============  ===========  ==================  =====  ========
+..    Member                                 Accessed                                Reference                  ..
+----  -------------------------------------  --------------------------------------  -------------------------  --------
+LINE  Name                 Declared   In     From        Same Package?  From Child?  Variable            Type   Visible?
+====  ===================  =========  =====  ==========  =============  ===========  ==================  =====  ========
+1     ``doThis()``         protected  ``C``  ``A``       |N|            |Y|          ``this`` (implied)  ``A``  |Y|
+2     ``doThat()``         protected  ``B``  ``A``       |N|            |Y|          ``this`` (implied)  ``A``  |Y|
+3     ``doStuff()``        public     ``A``  ``Driver``  |N|            |Y|          ``a``               ``A``  |Y|
+====  ===================  =========  =====  ==========  =============  ===========  ==================  =====  ========
+
 
 Inheritance and Visibility
 **************************
