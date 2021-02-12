@@ -119,21 +119,19 @@ LINE  Name                 Declared   In           From      Same Package?  From
 Example 3
 =========
 
-Here is the official definition for protected access from the JLS:
-
 .. |jls11_6_6_2| replace:: JLS 11 Section 6.6.2. Details on protected Access
 .. _jls11_6_6_2: https://docs.oracle.com/javase/specs/jls/se11/html/jls-6.html#jls-6.6.2
+
+Here is the official definition for protected access from |jls11_6_6_2|_:
+
 .. epigraph::
 
    A protected member or constructor of an object may be accessed from outside
    the package in which it is declared only by code that is responsible for
    the implementation of that object.
 
-   -- |jls11_6_6_2|_
-
 .. |jls11_6_6_2_1| replace:: JLS 11 Section 6.6.2.1. Access to a protected Member
 .. _jls11_6_6_2_1: https://docs.oracle.com/javase/specs/jls/se11/html/jls-6.html#jls-6.6.2.1
-
 
 The official definition is nuanced because it requires us to understand what
 it means by "code that is responsible for the implementation of that object."
