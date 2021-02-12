@@ -136,8 +136,8 @@ Here is the official definition for protected access from |jls11_6_6_2|_:
 The official definition is nuanced because it requires us to understand what
 it means by "code that is responsible for the implementation of that object."
 Some details are provided in |jls11_6_6_2_1|_; however, we find the way they
-are presented there to be a little too technical. Here is a more digestible summary
-of the requirement:
+are presented there to be a little too technical. Believe it or not, here is
+a more digestible summary of the requirement:
 
 .. epigraph::
 
@@ -190,6 +190,11 @@ that we just described. Even though ``LINE3`` is in a child class (a valid locat
 does not have access to a protected member declared in a parent since the type of the
 variable used to attempt that access is above the child class in the overall
 inheritance hierarchy.
+
+It is worth noting that the type of the variable used on ``LINE2`` (currently ``Student``)
+can also be child type of ``Student`` and still work, assuming the object reference
+assigned to it is compatible. While this is allowed from a visibility perspective, it's
+considered bad practice because it creates a circular dependency between two classes.
 
 We should also note that the situation on ``LINE1`` remains the same if we change ``this.getSSN()``
 to ``getSSN()`` (i.e., a simple method call) since simple calls in an instance method are
