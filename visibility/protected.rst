@@ -192,7 +192,7 @@ variable used to attempt that access is above the child class in the overall
 inheritance hierarchy.
 
 It is worth noting that the type of the variable used on ``LINE2`` (currently ``Student``)
-can be child type of ``Student`` and the access will still work, assuming the object reference
+can be child class of ``Student`` and the access will still work, assuming the object reference
 assigned to the variable is compatible. While this is allowed from a visibility perspective, it's
 considered bad practice because it creates a circular dependency between two classes.
 
