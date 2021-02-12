@@ -188,8 +188,8 @@ it would not make sense to prevent the assignment of parent objects to reference
 of the parent type, the official definition and its requirement align with usual intent
 that we just described. Even though ``LINE3`` is in a child class (a valid location), it
 does not have access to a protected member declared in a parent since the type of the
-variable used to attempt that access is above the child class in the overall inheritance
-hierarchy.
+variable used to attempt that access is above the child class in the overall
+inheritance hierarchy.
 
 Inheritance and Visibility
 **************************
