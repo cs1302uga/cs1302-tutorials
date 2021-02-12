@@ -164,7 +164,7 @@ requirement:
        Student student = new Student();
        System.out.println(student.getSSN()); <------- LINE2
        Person person = new Person();
-       System.out.println(student.getSSN()); <------- LINE3
+       System.out.println(person.getSSN()); <-------- LINE3
    } // main
 
 
