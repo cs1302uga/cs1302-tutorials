@@ -235,6 +235,11 @@ LINE  Name                 Declared   In     From        Same Package?  From Chi
 3     ``doStuff()``        public     ``A``  ``Driver``  |N|            |Y|          ``a``               ``A``  |Y|
 ====  ===================  =========  =====  ==========  =============  ===========  ==================  =====  ========
 
+The calls on ``LINE1`` and ``LINE2`` to inherited protected members are visible based on
+the rules that we have covered so far in this reading. The part that is most noteworthy
+is the observation that ``A`` is considered a child of ``C`` by the compiler, even
+though it's not a direct child.
+
 The call to ``doStuff()`` on ``LINE4`` does not involve protected visibility; however,
 it is interesting. Although calls to ``doThis()`` and ``doThat()`` would not be visible
 on ``LINE3``, a call to a visible method that has access still works. This is similar
