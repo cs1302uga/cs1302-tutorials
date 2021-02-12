@@ -127,7 +127,6 @@ Nuance
    A protected member or constructor of an object may be accessed from outside
    the package in which it is declared only by code that is responsible for
    the implementation of that object.
-
    -- |jls11_6_6_2|_
 
 Inheritance and Visibility
