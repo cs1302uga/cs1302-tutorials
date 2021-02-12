@@ -183,7 +183,12 @@ LINE  Name                 Declared   In           From         Same Package?  F
 
 In practice, the scenario that does not work for ``LINE3`` is rare. When a child class
 wants to call a protected member declared in a parent, it's the usually the inherited verson
-of the method that is intended and not the version bound to objects of the parent like in ``LINE3``.
+of the method that is intended and not the version bound to objects of the parent. Since
+it would not make sense to prevent the assignment of parent objects to reference variables
+of the parent type, the official definition and its requirement align with usual intent
+that we just described. Even though ``LINE3`` is in a valid location, it does not have
+access to protected member since the type of the variable used to attempt access is
+above the child class in the overall inheritance hierarchy.
 
 Inheritance and Visibility
 **************************
