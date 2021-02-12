@@ -116,8 +116,8 @@ LINE  Name                 Declared   In           From      Same Package?  From
 1     ``setPrice(price)``  protected  ``Product``  ``Book``  |Y|            |N|          |Y|
 ====  ===================  =========  ===========  ========  =============  ===========  ========
 
-Nuance
-******
+Example 3
+=========
 
 Here is the official definition for protected access from the JLS:
 
@@ -146,6 +146,9 @@ requirement:
    In a child class, access to a protected instance member of a parent via a
    reference variable (or `this` or `super`) is only permitted when the variable
    type is the child type or a child of the child type.
+
+To illustrate the impact of this requirement, let's consider the UML diagram below
+and the two code snippets that follow it.
 
 .. image:: img/protected_2.svg
 
