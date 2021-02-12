@@ -199,6 +199,10 @@ in which they reside (i.e., the same object referred to by ``this``) when availa
 Example 4
 =========
 
+Since a direct parent of a direct parent is still considered a parent in Java, it's possible
+for a child class to inherit protected members not originally declared in its direct parent.
+To illustrate this, let's consider the UML diagram below and the code snippet that follows it.
+
 .. image:: img/protected_3.svg
 
 .. code-block:: java
@@ -217,6 +221,9 @@ Example 4
        A a = new A();
        a.doStuff(); // <---- LINE3
    } // main
+
+The visibility situation for each labelled line is summarized in the table
+below.
 
 ====  ===================  =========  =====  ==========  =============  ===========  ==================  =====  ========
 ..    Member                                 Accessed                                Reference                  ..
