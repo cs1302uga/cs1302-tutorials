@@ -172,9 +172,9 @@ The visibility situation for each labelled line is summarized in the table
 below.
 
 ====  ===================  =========  ===========  ===========  =============  ===========  ===========  ===========  ========
-..    Member                                       Accessed                                 Reference              ..
-----  -------------------------------------------  ---------------------------------------  ---------------------  --------
-LINE  Name                 Declared   In           From         Same Package?  From Child?  Variable  Type         Visible?
+..    Member                                       Accessed                                 Reference                 ..
+----  -------------------------------------------  ---------------------------------------  ------------------------  --------
+LINE  Name                 Declared   In           From         Same Package?  From Child?  Variable  Type            Visible?
 ====  ===================  =========  ===========  ===========  =============  ===========  ===========  ===========  ========
 1     ``getSSN()``         protected  ``Person``   ``Student``  |Y|            |Y|          ``this``     ``Student``  |Y|
 1     ``getSSN()``         protected  ``Person``   ``Student``  |Y|            |Y|          ``student``  ``Student``  |Y|
