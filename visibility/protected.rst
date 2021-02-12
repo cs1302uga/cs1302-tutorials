@@ -205,8 +205,8 @@ Example 4
 
    // inside A.java (cs1302.baz package)
    public void doStuff() {
-       doThis(); // <---- LINE1
-       doThat(); // <---- LINE2
+       doThis(); // <------- LINE1
+       doThat(); // <------- LINE2
    } // doStuff
 
 .. code-block:: java
@@ -215,7 +215,7 @@ Example 4
    // assume cs1302.baz.A is imported
    public static void main(String[] args) {
        A a = new A();
-       a.doStuff(); <---- LINE3
+       a.doStuff(); // <---- LINE3
    } // main
 
 ====  ===================  =========  =====  ==========  =============  ===========  ==================  =====  ========
