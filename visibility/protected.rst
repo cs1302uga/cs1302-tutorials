@@ -168,7 +168,16 @@ and the two code snippets that follow it.
        System.out.println(person.getSSN()); <-------- LINE3
    } // main
 
+The visibility situation for each labelled line is summarized in the table
+below.
 
+====  ===================  =========  ===========  ===========  =============  ===========  =====================  ========
+..    Member                                       Accessed                                 Reference              ..
+----  -------------------------------------------  ---------------------------------------  ---------------------  --------
+LINE  Name                 Declared   In           From         Same Package?  From Child?  Variable  Type         Visible?
+====  ===================  =========  ===========  ===========  =============  ===========  ========  ===========  ========
+1     ``getSSN()`          protected  ``Person``   ``Student``  |Y|            |N|          ``this``  ``Student``  |Y|
+====  ===================  =========  ===========  ===========  =============  ===========  ========  ===========  ========
 
 
 
