@@ -229,8 +229,8 @@ LINE  Name                 Declared   In     From        Same Package?  From Chi
 ====  ===================  =========  =====  ==========  =============  ===========  ==================  =====  ========
 
 
-Inheritance and Visibility
-**************************
+More on Inheritance and Visibility
+**********************************
 
 You may recall from the inheritance-related readings that **child classes
 inherit instance members** from their parent. In such a scenario, it's
