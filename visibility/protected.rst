@@ -119,9 +119,10 @@ LINE  Name                 Declared   In           From      Same Package?  From
 Nuance
 ******
 
+Here is the official definition for protected access from the JLS:
+
 .. |jls11_6_6_2| replace:: JLS 11 Section 6.6.2. Details on protected Access
 .. _jls11_6_6_2: https://docs.oracle.com/javase/specs/jls/se11/html/jls-6.html#jls-6.6.2
-
 .. epigraph::
 
    A protected member or constructor of an object may be accessed from outside
@@ -129,6 +130,10 @@ Nuance
    the implementation of that object.
 
    -- |jls11_6_6_2|_
+
+
+
+
 
 Inheritance and Visibility
 **************************
