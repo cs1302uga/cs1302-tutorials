@@ -181,7 +181,7 @@ LINE  Name                 Declared   In           From         Same Package?  F
 3     ``getSSN()``         protected  ``Person``   ``Student``  |Y|            |Y|          ``person``   ``Person``   |N|
 ====  ===================  =========  ===========  ===========  =============  ===========  ===========  ===========  ========
 
-In practice, the scenario that does not work for ``LINE3`` is rare. When a child class
+In practice, the scenario attempted in ``LINE3`` doesn't usually make sense. When a child class
 wants to call a protected member declared in a parent, it's usually the inherited verson
 of the method that is intended and not the version bound to objects of the parent. Since
 it would not make sense to prevent the assignment of parent objects to reference variables
