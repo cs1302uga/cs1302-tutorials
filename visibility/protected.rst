@@ -136,7 +136,7 @@ Here is the official definition for protected access from |jls11_6_6_2|_:
 The official definition is nuanced because it requires us to understand what
 it means by "code that is responsible for the implementation of that object."
 Some details are provided in |jls11_6_6_2_1|_; however, we find the way they
-are presented to be a little too technical. Here is a more digestible summary
+are presented there to be a little too technical. Here is a more digestible summary
 of the requirement:
 
 .. epigraph::
