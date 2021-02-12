@@ -238,7 +238,7 @@ LINE  Name                 Declared   In     From        Same Package?  From Chi
 The call to ``doStuff()`` on ``LINE4`` does not involve protected visibility; however,
 it is interesting. Although calls to ``doThis()`` and ``doThat()`` would not be visible
 on ``LINE3``, a call to a visible method that has access still works. This is similar
-to what you have seen with visible "getter" methods that access private instance variables.
+to what we often see with visible "getter" methods that access private instance variables.
 
 More on Inheritance and Visibility
 **********************************
