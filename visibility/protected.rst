@@ -235,7 +235,7 @@ More on Inheritance and Visibility
 You may recall from the inheritance-related readings that **child classes
 inherit instance members** from their parent. In such a scenario, it's
 usually pretty clear that inherited members are declared elsewhere
-(in the parent class); however, some situations like overloading,
+(in the parent class); however, some situations involving overloading,
 shadowing, and initialization can be tricky to determine.
 
 Overload Resolution
