@@ -171,8 +171,8 @@ and the two code snippets that follow it.
 The visibility situation for each labelled line is summarized in the table
 below.
 
-====  ===================  =========  ===========  ===========  =============  ===========  =====================  ========
-..    Member                                       Accessed                                 Reference
+====  ===================  =========  ===========  ===========  =============  ===========  ========  ===========  ========
+..    Member                                       Accessed                                 Reference              ..
 ----  -------------------------------------------  ---------------------------------------  ---------------------  --------
 LINE  Name                 Declared   In           From         Same Package?  From Child?  Variable  Type         Visible?
 ====  ===================  =========  ===========  ===========  =============  ===========  ========  ===========  ========
