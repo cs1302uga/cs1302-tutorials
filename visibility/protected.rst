@@ -131,6 +131,42 @@ Here is the official definition for protected access from the JLS:
 
    -- |jls11_6_6_2|_
 
+.. |jls11_6_6_2_1| replace:: JLS 11 Section 6.6.2.1. Access to a protected Member
+.. _jls11_6_6_2_1: https://docs.oracle.com/javase/specs/jls/se11/html/jls-6.html#jls-6.6.2.1
+
+
+The official definition is nuanced because it requires us to understand what
+it means by "code that is responsible for the implementation of that object."
+Some details are provided in |jls11_6_6_2_1|_, but the way that it's presented
+may be hard to read. Here is a more digestible summary of the requirement:
+
+.. epigraph::
+
+   In a child class, access to a protected instance member of a parent via a
+   reference variable (or `this` or `super`) is only permitted when the variable
+   type is the child type or a child of the child type.
+
+.. image:: img/protected_2.svg
+
+.. code-block:: java
+
+   // inside Student.java (cs1302.university package)
+   public void printDetails() {
+       System.out.println(this.getName());
+       System.out.ptintln(this.getSSN()); <---------- LINE1
+   } // printDetails
+
+.. code-block:: java
+
+   // inside Student.java (cs1302.university package)
+   public static void main(String[] args) {
+       Student student = new Student();
+       System.out.println(student.getSSN()); <------- LINE2
+       Person person = new Person();
+       System.out.println(student.getSSN()); <------- LINE3
+   } // main
+
+
 
 
 
