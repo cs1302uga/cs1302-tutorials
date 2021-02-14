@@ -225,7 +225,7 @@ Advanced Examples
 
 **The examples in this subsection are considered advanced,** and students in CSCI 1302
 will not be tested on them. They are provided for completeness and for those who
-are interested. **Students may safely skip this section.**
+are interested in learning a bit more. **Students may safely skip this section.**
 
 Example 4
 =========
