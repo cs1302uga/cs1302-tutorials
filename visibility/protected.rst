@@ -165,11 +165,69 @@ it is interesting. Although calls to ``doThis()`` and ``doThat()`` would not be 
 on ``LINE3``, a call to a visible method that has access still works. This is similar
 to what we often see with visible "getter" methods that access private instance variables.
 
+More on Inheritance and Visibility
+**********************************
+
+You may recall from the inheritance-related readings that **child classes
+inherit instance members** from their parent. In such a scenario, it's
+usually pretty clear that inherited members are declared elsewhere
+(in the parent class); however, some situations involving overloading,
+shadowing, and initialization can be tricky to determine.
+
+Overload Resolution
+===================
+
+Since Java allows authors to override an inherited
+method, it's possible for there to be multiple declarations that sometimes
+have different visibilities. While most overrides preserve the visibility
+of the original declaration, it's also possible for them to be declared
+more visible in the child. This can make some situations a little tricky
+to parse, but the general rule of thumb is this:
+
+    If you try to access ``var.someMethod`` on some line of code, then
+    the visibility that's used by the compiler is determined by type of the
+    variable ``var``, itself, and not the type of the object that ``var``
+    refers to. Java's dynamic binding [8]_ will still bind the call to the
+    override that's closest to object's type (e.g., to allow for polymorphism).
+
+Perhaps that's a little dense. You may find it easier to remember this:
+
+    The variable type is used for visibility and the object type is used
+    for binding.
+
+.. [8] The term **binding** usually refers to the association between a
+       method call and a particular method body. Java uses **dynamic binding**,
+       which means that its binding occurs at runtime. This choice was
+       made by the designers of the language to facilitate its polymorphism
+       and method override features.
+
+Non-Visible Inherited Members
+=============================
+
+It's often possible to access access non-visible inherited members indirectly
+via a member that is visible.
+
+* For inherited variables, the child class might utilize a visible getter or setter.
+  That usually works so long as the instance variable is not shadowed (i.e.,
+  declared again in the child, a practice that is highly discouraged).
+* For inherited methods, the child class may have access to a visible overload
+  that internally calls the private method.
+
+If we apply the second idea to constructors, then a child class constructor may be able to
+access non-visible inherited variables (e.g., to initialize them) using a call to a
+visible ``super()`` (or some overload of ``super``); this works really well when
+the parent constructor initializes it's own declared instance variables.
+This is considered **a common pattern** that exemplifies *separation of concerns* and
+*encapsulation* as each class is responsible for its own variables.
+
+**Advanced Examples:**
+
+**The examples in this subsection are considered advanced,** and students in CSCI 1302
+will not be tested on them. They are provided for completeness and for those who
+are interested. **Students may safely skip this section.**
+
 Example 4
 =========
-
-**This example is considered advanced,** and students will not be tested on it.
-**Please continue to the next section.**
 
 .. |jls11_6_6_2| replace:: JLS 11 Section 6.6.2. Details on protected Access
 .. _jls11_6_6_2: https://docs.oracle.com/javase/specs/jls/se11/html/jls-6.html#jls-6.6.2
@@ -252,62 +310,6 @@ We should also note that the situation on ``LINE1`` remains the same if we chang
 to ``getSSN()`` (i.e., a simple method call) since simple calls in an instance method are
 assumed to be called on the same calling object as the one used the call the instance method
 in which they reside (i.e., the same object referred to by ``this``) when available.
-
-
-More on Inheritance and Visibility
-**********************************
-
-You may recall from the inheritance-related readings that **child classes
-inherit instance members** from their parent. In such a scenario, it's
-usually pretty clear that inherited members are declared elsewhere
-(in the parent class); however, some situations involving overloading,
-shadowing, and initialization can be tricky to determine.
-
-Overload Resolution
-===================
-
-Since Java allows authors to override an inherited
-method, it's possible for there to be multiple declarations that sometimes
-have different visibilities. While most overrides preserve the visibility
-of the original declaration, it's also possible for them to be declared
-more visible in the child. This can make some situations a little tricky
-to parse, but the general rule of thumb is this:
-
-    If you try to access ``var.someMethod`` on some line of code, then
-    the visibility that's used by the compiler is determined by type of the
-    variable ``var``, itself, and not the type of the object that ``var``
-    refers to. Java's dynamic binding [8]_ will still bind the call to the
-    override that's closest to object's type (e.g., to allow for polymorphism).
-
-Perhaps that's a little dense. You may find it easier to remember this:
-
-    The variable type is used for visibility and the object type is used
-    for binding.
-
-.. [8] The term **binding** usually refers to the association between a
-       method call and a particular method body. Java uses **dynamic binding**,
-       which means that its binding occurs at runtime. This choice was
-       made by the designers of the language to facilitate its polymorphism
-       and method override features.
-
-Non-Visible Inherited Members
-=============================
-
-It's often possible to access access non-visible inherited members indirectly
-via a member that is visible.
-
-* For inherited variables, the child class might utilize a visible getter or setter.
-  That usually works so long as the instance variable is not shadowed (i.e.,
-  declared again in the child, a practice that is highly discouraged).
-* For inherited methods, the child class may have access to a visible overload
-  that internally calls the private method.
-
-If we apply the second idea to constructors, then a child class constructor may be able to
-access non-visible inherited variables (e.g., to initialize them) using a call to a
-visible ``super()`` (or some overload of ``super``); this works really well when
-the parent constructor initializes it's own declared instance variables.
-This is considered **a common pattern** that exemplifies *separation of concerns* and
-*encapsulation* as each class is responsible for its own variables.
 
 .. #############################################################################
 
