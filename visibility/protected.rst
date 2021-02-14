@@ -119,6 +119,58 @@ LINE  Name                 Declared   In           From      Same Package?  From
 Example 3
 =========
 
+Since a direct parent of a direct parent is still considered a parent in Java, it's possible
+for a child class to inherit protected members not originally declared in its direct parent.
+To illustrate this, let's consider the UML diagram below and the code snippet that follows it.
+
+.. image:: img/protected_3.svg
+
+.. code-block:: java
+
+   // inside A.java (cs1302.baz package)
+   public void doStuff() {
+       doThis(); // <------- LINE1
+       doThat(); // <------- LINE2
+   } // doStuff
+
+.. code-block:: java
+
+   // inside Driver.java (cs1302.buz package)
+   // assume cs1302.baz.A is imported
+   public static void main(String[] args) {
+       A a = new A();
+       a.doStuff(); // <---- LINE3
+   } // main
+
+The visibility situation for each labelled line is summarized in the table
+below.
+
+====  ===================  =========  =====  ==========  =============  ===========  ==================  =====  ========
+..    Member                                 Accessed                                Reference                  ..
+----  -------------------------------------  --------------------------------------  -------------------------  --------
+LINE  Name                 Declared   In     From        Same Package?  From Child?  Variable            Type   Visible?
+====  ===================  =========  =====  ==========  =============  ===========  ==================  =====  ========
+1     ``doThis()``         protected  ``C``  ``A``       |N|            |Y|          ``this`` (implied)  ``A``  |Y|
+2     ``doThat()``         protected  ``B``  ``A``       |N|            |Y|          ``this`` (implied)  ``A``  |Y|
+3     ``doStuff()``        public     ``A``  ``Driver``  |N|            |Y|          ``a``               ``A``  |Y|
+====  ===================  =========  =====  ==========  =============  ===========  ==================  =====  ========
+
+The calls on ``LINE1`` and ``LINE2`` to inherited protected members are visible based on
+the rules that we have covered so far in this reading. The part that is most noteworthy
+is the observation that ``A`` is considered a child of ``C`` by the compiler, even
+though it's not a direct child.
+
+The call to ``doStuff()`` on ``LINE4`` does not involve protected visibility; however,
+it is interesting. Although calls to ``doThis()`` and ``doThat()`` would not be visible
+on ``LINE3``, a call to a visible method that has access still works. This is similar
+to what we often see with visible "getter" methods that access private instance variables.
+
+Example 4
+=========
+
+**This example is considered advanced,** and students will not be tested on it.
+**Please continue to the next section.**
+
 .. |jls11_6_6_2| replace:: JLS 11 Section 6.6.2. Details on protected Access
 .. _jls11_6_6_2: https://docs.oracle.com/javase/specs/jls/se11/html/jls-6.html#jls-6.6.2
 
@@ -201,54 +253,6 @@ to ``getSSN()`` (i.e., a simple method call) since simple calls in an instance m
 assumed to be called on the same calling object as the one used the call the instance method
 in which they reside (i.e., the same object referred to by ``this``) when available.
 
-Example 4
-=========
-
-Since a direct parent of a direct parent is still considered a parent in Java, it's possible
-for a child class to inherit protected members not originally declared in its direct parent.
-To illustrate this, let's consider the UML diagram below and the code snippet that follows it.
-
-.. image:: img/protected_3.svg
-
-.. code-block:: java
-
-   // inside A.java (cs1302.baz package)
-   public void doStuff() {
-       doThis(); // <------- LINE1
-       doThat(); // <------- LINE2
-   } // doStuff
-
-.. code-block:: java
-
-   // inside Driver.java (cs1302.buz package)
-   // assume cs1302.baz.A is imported
-   public static void main(String[] args) {
-       A a = new A();
-       a.doStuff(); // <---- LINE3
-   } // main
-
-The visibility situation for each labelled line is summarized in the table
-below.
-
-====  ===================  =========  =====  ==========  =============  ===========  ==================  =====  ========
-..    Member                                 Accessed                                Reference                  ..
-----  -------------------------------------  --------------------------------------  -------------------------  --------
-LINE  Name                 Declared   In     From        Same Package?  From Child?  Variable            Type   Visible?
-====  ===================  =========  =====  ==========  =============  ===========  ==================  =====  ========
-1     ``doThis()``         protected  ``C``  ``A``       |N|            |Y|          ``this`` (implied)  ``A``  |Y|
-2     ``doThat()``         protected  ``B``  ``A``       |N|            |Y|          ``this`` (implied)  ``A``  |Y|
-3     ``doStuff()``        public     ``A``  ``Driver``  |N|            |Y|          ``a``               ``A``  |Y|
-====  ===================  =========  =====  ==========  =============  ===========  ==================  =====  ========
-
-The calls on ``LINE1`` and ``LINE2`` to inherited protected members are visible based on
-the rules that we have covered so far in this reading. The part that is most noteworthy
-is the observation that ``A`` is considered a child of ``C`` by the compiler, even
-though it's not a direct child.
-
-The call to ``doStuff()`` on ``LINE4`` does not involve protected visibility; however,
-it is interesting. Although calls to ``doThis()`` and ``doThat()`` would not be visible
-on ``LINE3``, a call to a visible method that has access still works. This is similar
-to what we often see with visible "getter" methods that access private instance variables.
 
 More on Inheritance and Visibility
 **********************************
