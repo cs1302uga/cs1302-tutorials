@@ -220,7 +220,8 @@ the parent constructor initializes it's own declared instance variables.
 This is considered **a common pattern** that exemplifies *separation of concerns* and
 *encapsulation* as each class is responsible for its own variables.
 
-**Advanced Examples:**
+Advanced Examples
+*****************
 
 **The examples in this subsection are considered advanced,** and students in CSCI 1302
 will not be tested on them. They are provided for completeness and for those who
