@@ -58,7 +58,7 @@ terminal shell. Let's create one!
    and exclude an optional arguments for now. It should look this:
 
    ```
-   #!/usr/bin/bash
+   #!/bin/bash
    ```
    
 1. In `cs1302-script.sh`, add some lines containing commands that you 
@@ -119,7 +119,7 @@ executes, then add `-x` as an `[optional-arg]` in the shebang or
 add `set -x` as the first command in your script.
 
 ```
-#!/usr/bin/bash -x
+#!/bin/bash -x
 ```
    
 ```
@@ -135,7 +135,7 @@ of them terminates with an error, then add `-e` as an `[optional-arg]`
 in the shebang or add `set -e` as the first command in your script.
 
 ```
-#!/usr/bin/bash -e
+#!/bin/bash -e
 ```
    
 ```
