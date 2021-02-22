@@ -72,15 +72,15 @@ see one or the other, but not both).
 The visibility situation for each labelled line is summarized in the table
 below.
 
-====  ===================  =========  ===========  ========  =============  ===========  ========
-..    Member                                       Accessed                              ..
-----  -------------------------------------------  ------------------------------------  --------
-LINE  Name                 Declared   In           From      Same Package?  From Child?  Visible?
-====  ===================  =========  ===========  ========  =============  ===========  ========
-1     ``Product(price)``   protected  ``Product``  ``Book``  |N|            |Y|          |Y|
-2     ``setPrice(price)``  protected  ``Product``  ``Book``  |N|            |Y|          |Y|
-3     ``setPrice(price)``  protected  ``Product``  ``Book``  |N|            |N|          |N|
-====  ===================  =========  ===========  ========  =============  ===========  ========
+====  ===================  =========  ===========  ==============  =============  ===========  ========
+..    Member                                       Accessed                                    ..
+----  -------------------------------------------  ------------------------------------------  --------
+LINE  Name                 Declared   In           From            Same Package?  From Child?  Visible?
+====  ===================  =========  ===========  ==============  =============  ===========  ========
+1     ``Product(price)``   protected  ``Product``  ``Book``        |N|            |Y|          |Y|
+2     ``setPrice(price)``  protected  ``Product``  ``Book``        |N|            |Y|          |Y|
+3     ``setPrice(price)``  protected  ``Product``  ``BookDriver``  |N|            |N|          |N|
+====  ===================  =========  ===========  ==============  =============  ===========  ========
 
 In ``LINE1`` and ``LINE2``, the ``price`` variable was not visible (it's
 package private and the labelled lines are attempting access from another
