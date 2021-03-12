@@ -32,7 +32,7 @@ determine whether they are fit for use.
 Technically, no special software or libraries are required to perform unit
 testing; it can be done by writing code. For example, the |api_queue_offer|
 method should return ``true`` if the element supplied was added to the queue, 
-else {@code false}; here is some code to that tests |api_queue_offer| on
+else ``false``; here is some code to that tests |api_queue_offer| on
 an empty queue:
 
 .. code-block:: java
