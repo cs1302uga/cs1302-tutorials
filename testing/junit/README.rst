@@ -32,6 +32,9 @@ it possible to write and execute **unit tests**. In programming, **unit testing*
 is a software testing method by which individual units of code are tested to 
 determine whether they are fit for use.
 
+Testing without Special Libraries
+=================================
+
 Technically, no special software or libraries are required to perform unit
 testing; it can be done by writing code. For example, the |api_queue_offer|
 method should return ``true`` if the element supplied was added to the queue, 
@@ -60,6 +63,6 @@ statement, a statement that asserts that some `boolean` condition must be
    
    assert result : "FAIL! offer should return true";
    
-Normally, Java ignores ``assert`` statements; to enable them you need to
+**Normally, Java ignores ``assert`` statements**; to enable them you need to
 include the `-ea` command-line option when running the ``java`` command
 to run the unit test.
