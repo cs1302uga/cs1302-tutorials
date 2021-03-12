@@ -64,6 +64,6 @@ message is thrown during runtime:
    
    assert result : "FAIL! offer should return true";
    
-**Normally, Java ignores ``assert`` statements**; to enable them you need to
+**Normally, Java ignores assertions**; to enable them you need to
 include the ``-ea`` command-line option when running the ``java`` command
 to run the unit test.
