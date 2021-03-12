@@ -17,7 +17,7 @@ In programming, a **unit** of code is a method or small collection of methods
 (e.g., from a class or interface) that can be logically isolated in such way 
 that their expectated behavior is predictable. Consider the |api_queue_offer|_
 method in Java's |api_queue|_ interface, which inserts a specified element into 
-a queue:
+a queue (i.e, a collection with first-in, first-out (FIFO) semantics):
 
 .. code-block:: java
 
