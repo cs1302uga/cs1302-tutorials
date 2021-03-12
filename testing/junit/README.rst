@@ -31,8 +31,8 @@ determine whether they are fit for use.
 
 Technically, no special software or libraries are required to perform unit
 testing; it can be done by writing code. For example, the |api_queue_offer|
-method should increase the ``size()`` of a queue object when its return
-value is ``true``; here is some code to that tests |api_queue_offer| on
+method should return ``true`` if the element supplied was added to the queue, 
+else {@code false}; here is some code to that tests |api_queue_offer| on
 an empty queue:
 
 .. code-block:: java
@@ -40,9 +40,7 @@ an empty queue:
    Queue<String> queue = new LinkedList<String>();
    result = queue.offer("hello");
    
-   if (result && size() == 1) {
-       System.out.println("PASS");
-   } else if (!result && size() == 0) {
+   if (result) {
        System.out.println("PASS");
    } else {
        System.out.println("FAIL");
