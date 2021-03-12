@@ -10,8 +10,8 @@
 Unit Testing with JUnit
 ***********************
 
-Introduction
-============
+Introduction to Unit Testing
+============================
 
 In programming, a **unit** of code is a method or small collection of methods
 (e.g., from a class or interface) that can be logically isolated in such way 
