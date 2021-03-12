@@ -1,4 +1,10 @@
-**IN PROGRESS!**
+.. header::
+
+    **IN PROGRESS!**
+
+.. footer::
+   
+   **TO BE CONTINUED...**
 
 .. |api_queue| replace:: ``Queue<E>``
 .. _api_queue: https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html
