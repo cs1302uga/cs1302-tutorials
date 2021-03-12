@@ -52,7 +52,7 @@ an empty queue:
 
 It's common to use the words **pass** and **fail** to inducate that a unit
 being tested is fit or not fit, respectively, for a particular use. The same 
-unit test we just looked at can also be written in Java using an ``assert`` 
+unit test we just looked at can also be written using an ``assert`` 
 statement, a statement that asserts that some `boolean` condition must be 
 ``true``, else an |api_assertion_error|_ is thrown during runtime:
 
