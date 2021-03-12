@@ -66,7 +66,7 @@ message is thrown during runtime:
    
 **Normally, Java ignores assertions**; to enable them you need to
 include the ``-ea`` command-line option when using the ``java`` command
-to run the program containing the unit test.
+to run the program that executes the unit test.
 
 Testing with JUnit
 ==================
