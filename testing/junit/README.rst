@@ -23,8 +23,8 @@ a queue (i.e, a collection with first-in, first-out (FIFO) semantics):
 
    boolean offer (E e)
 
-In most programming languages
- that together with any associated data, usage procedures, and operating procedures
-
-
-**unit testing** is a software testing method by which individual units of source code sets of one or more computer program modules together with associated control data, usage procedures, and operating procedures—are tested to determine whether they are fit for use.
+This method constitutes a unit because it's isolated from the code in other
+methods and its impact on the queue object is predictable. This quality makes
+it possible to perform a **unit test**. In programming, **unit testing** is a 
+software testing method by which individual units of code are tested to determine
+whether they are fit for use.
