@@ -64,5 +64,5 @@ statement, a statement that asserts that some `boolean` condition must be
    assert result : "FAIL! offer should return true";
    
 **Normally, Java ignores ``assert`` statements**; to enable them you need to
-include the `-ea` command-line option when running the ``java`` command
+include the ``-ea`` command-line option when running the ``java`` command
 to run the unit test.
