@@ -6,6 +6,9 @@
 .. |api_queue_offer| replace:: ``offer``
 .. _api_queue_offer: https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#offer(E)
 
+.. |api_assertion_error| replace:: ``AssertionError``
+.. _api_assertion_error: https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/AssertionError.html
+
 ***********************
 Unit Testing with JUnit
 ***********************
@@ -32,7 +35,7 @@ determine whether they are fit for use.
 Technically, no special software or libraries are required to perform unit
 testing; it can be done by writing code. For example, the |api_queue_offer|
 method should return ``true`` if the element supplied was added to the queue, 
-else ``false``; here is some code to that tests |api_queue_offer| on
+else ``false``; here is some code to that tests a call to |api_queue_offer| on
 an empty queue:
 
 .. code-block:: java
@@ -40,8 +43,23 @@ an empty queue:
    Queue<String> queue = new LinkedList<String>();
    result = queue.offer("hello");
    
-   if (result) {
-       System.out.println("PASS");
-   } else {
-       System.out.println("FAIL");
+   if (!result) {
+       System.out.println("FAIL! offer should return true");
    } // if
+
+It's common to use the words **pass** and **fail** to inducate that a unit
+being tested is fit or not fit, respectively, for a particular use. The same 
+unit test we just looked at can also be written in Java using an ``assert`` 
+statement, a statement that asserts that some `boolean` condition must be 
+``true``, else an ``|api_assertion_error|_ is thrown during runtime:
+
+.. code-block:: java
+
+   Queue<String> queue = new LinkedList<String>();
+   result = queue.offer("hello");
+   
+   assert result : "FAIL! offer should return true";
+   
+Normally, Java ignores ``assert`` statements; to enable them you need to
+include the `-ea` command-line option when running the ``java`` command
+to run the unit test.
