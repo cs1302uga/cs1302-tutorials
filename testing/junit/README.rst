@@ -25,6 +25,25 @@ a queue (i.e, a collection with first-in, first-out (FIFO) semantics):
 
 This method constitutes a unit because it's isolated from the code in other
 methods and its impact on the queue object is predictable. This quality makes
-it possible to perform a **unit test**. In programming, **unit testing** is a 
-software testing method by which individual units of code are tested to determine
-whether they are fit for use.
+it possible to write and execute **unit tests**. In programming, **unit testing** 
+is a software testing method by which individual units of code are tested to 
+determine whether they are fit for use.
+
+Technically, no special software or libraries are required to perform unit
+testing; it can be done by writing code. For example, the |api_queue_offer|
+method should increase the ``size()`` of a queue object when its return
+value is ``true``; here is some code to that tests |api_queue_offer| on
+an empty queue:
+
+.. code-block:: java
+
+   Queue<String> queue = new LinkedList<String>();
+   result = queue.offer("hello");
+   
+   if (result && size() == 1) {
+       System.out.println("PASS");
+   } else if (!result && size() == 0) {
+       System.out.println("PASS");
+   } else {
+       System.out.println("FAIL");
+   } // if
