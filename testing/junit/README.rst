@@ -15,6 +15,9 @@
 .. |api_assertion_error| replace:: ``AssertionError``
 .. _api_assertion_error: https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/AssertionError.html
 
+.. |wiki_queue| replace:: queue
+.. _wiki_queue: https://en.wikipedia.org/wiki/Queue_(abstract_data_type)
+
 ***********************
 Unit Testing with JUnit
 ***********************
@@ -26,7 +29,7 @@ In programming, a **unit** of code is a method or small collection of methods
 (e.g., from a class or interface) that can be logically isolated in such way 
 that their expectated behavior is predictable. Consider the |api_queue_offer|_
 method in Java's |api_queue|_ interface, which inserts a specified element into 
-a queue (i.e, a collection with first-in, first-out (FIFO) semantics):
+a |wiki_queue|_ (i.e, a collection with first-in, first-out (FIFO) semantics):
 
 .. code-block:: java
 
