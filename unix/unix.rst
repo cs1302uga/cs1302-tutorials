@@ -23,7 +23,8 @@ called the *shell*. This program can be usually be accessed via a
 otherwise. In the shell, you enter *commands* at a *prompt*. Here is an
 example of what such a prompt might look like:
 
-::
+.. code-block:: plain
+
    bash$
 
 The shell is just another way to interact with computer. These days, all
