@@ -113,17 +113,17 @@ call a parent constructor" just means that we're telling Java to execute the cod
 constructor. Java does this in order to facilitate a separation of concerns; that is, it lets 
 each class setup/initialize their own stuff so that the child class doesn't have to duplicate the
 work that's written in the parent. We'll illustrate this with a small example in just a moment,
-but first take case to read the following note:
+but first take care to read the following note:
 
 > It's tempting to imagine that Java moves back and forth from child to parent whenever
 > `super` is used; however, thinking of it like that is error prone and often confusing.
 > Instead, embrace the "copy-paste" ideology that's espoused in our videos and apply
 > that thinking here. Although the parent constructor is not included as a separate
 > constructor in the child class, it's convenient to think of it as being pasted into
-> the child class along (renamed to `super`) with other inherited members. Instead of 
-> moving back and forth from child to parent, you simply copy and rename from constructor
-> into the child class. Eliminating the back and forth makes it easier to reason 
-> out what's happening.
+> the child class (renamed to `super`) along with other inherited members. Instead of 
+> moving back and forth from child to parent, you simply "copy" the constructor
+> into the child class and rename it. Eliminating the back and forth makes it easier 
+> to reason out what is happening.
 
 Now let's work through the example:
 
