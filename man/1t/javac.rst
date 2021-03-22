@@ -92,7 +92,7 @@ Oracle and/or its affiliates [1]_.
 AUTHOR
 ------
 
-**javac(7t)** by |mepcott|_
+**javac(1t)** by |mepcott|_
 
 .. |mepcott| replace:: Michael E. Cotterell
 .. _mepcott: mepcott@uga.edu

@@ -58,6 +58,6 @@ man_show_urls = True
 man_make_section_directory = True
 
 man_pages = [
-    ('intro', 'intro', 'introduction to tutorial pages', None, '1t'),
-    ('javac', 'javac', 'compile Java source code into byte code', None, '1t')
+    ('1t/intro', 'intro', 'introduction to tutorial pages', None, '1t'),
+    ('1t/javac', 'javac', 'compile Java source code into byte code', None, '1t')
 ]
