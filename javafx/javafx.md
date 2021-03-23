@@ -144,7 +144,7 @@ page for direct links to commonly used classes.
    class and overriding the `start` method. In the starter code, inspect the class declaration inside of `ExampleApp.java`.
    We will explain the inside of the `start` method shortly.
    
-1. Assuming you have a JavaFX app class (e.g., `ExampleApp`), the perferred way of launching an instance of the
+1. Assuming you have a JavaFX app class (e.g., `ExampleApp`), the preferred way of launching an instance of the
    app is by using the static `Application.launch` inside of some driver class. In the starter code, inspect the
    `main` method inside of `ExampleDriver.java`.
    
