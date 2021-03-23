@@ -198,7 +198,7 @@ page for direct links to commonly used classes.
       * You may swap scenes on a `Stage` at any time so long as the call to `setScene` is made on the 
         JavaFX Application Thread (more on this later).
       
-      One reason that JavaFX exmploys the use of scenes instead of directly adding nodes / components to a stage is to
+      One reason that JavaFX employs the use of scenes instead of directly adding nodes / components to a stage is to
       enable easier swapping between modes of an app. For example, consider a video game with a title screen,
       main game screen, and an options screen. In this scenario, each "screen" might be its own scene.
 	
