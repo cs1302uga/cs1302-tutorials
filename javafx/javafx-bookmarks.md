@@ -104,7 +104,7 @@ in the example. Please pay attention to the subtle differences between each appr
   
   **PRO:** This will work with or without Maven.
   
-  **CAVEAT:** This will only work if the program is run in the directory immediately above 
+  **CON:** This will only work if the program is run in the directory immediately above 
   `resources`. If you try to run the program from some other location, then Java may not be 
   able to find the stylesheet. To remedy this, you will need to add the path to your top-level
   project directory to the class path (e.g., using `-cp`). 
