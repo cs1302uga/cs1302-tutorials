@@ -81,13 +81,49 @@
    
 ### Including a CSS file
 
-Let's assume you have a CSS file located at `resources/theme-uga.css` where `resources` is in your top-level project
-directory -- for a Maven-based project, this means that `resources` is directly inside the same directory as the 
-project's `pom.xml` file. Under that assumption, you can add `theme-uga.css` to a scene using the following:
+Let's assume you have a Cascading Style Sheet (CSS) file located at `resources/theme-uga.css`. In order for 
+the style declarations in that file to affect the nodes in a scene, the file needs to be added to a scene's 
+collection of stylesheets:
 
 ```java
-scene.getStylesheets().add("file:resources/theme-uga.css");
+String stylesheet = // replace-me; see below
+scene.getStylesheets().add(stylesheet);
 ```
+
+Below, we describe two portable ways to refer to `resources/theme-uga.css` using the `stylesheet` variable 
+in the example. Please pay attention to the subtle differences between each approach.
+
+* If `resources` is in your top-level project directory -- for a Maven-based project, this means that 
+  `resources` **is directly inside** the same directory as the project's `pom.xml` file, then you can 
+  use `"file:resources/theme-uga.css"` to refer to `theme-uga.css`:
+  
+  ```java
+  String stylesheet = "file:resources/theme-uga.css";
+  scene.getStylesheets().add(stylesheet);
+  ```
+  
+  **PRO:** This will work with or without Maven.
+  
+  **CAVEAT:** This will only work if the program is run in the directory immediately above 
+  `resources`. If you try to run the program from some other location, then Java may not be 
+  able to find the stylesheet. To remedy this, you will need to add the path to your top-level
+  project directory to the class path (e.g., using `-cp`). 
+  
+* If `resources` is in `src/main` (i.e., it's relative path in your top-level project directory
+  is `src/main/resources`), then you can use 
+  `getClass().getClassLoader().getResource("theme-uga.css").toExternalForm()` to refer 
+  to `theme-uga.css`:
+  
+  ```java
+  String stylesheet = getClass().getClassLoader().getResource("theme-uga.css").toExternalForm();
+  scene.getStylesheets().add(stylesheet);
+  ```
+  
+  **PRO:** This will work even when packaged into a JAR file.
+  
+  **CON:** It's clunky. While Maven will add `src/main/resources` to the class path, you may need
+  to manuall add that directory to the class path if running without Maven.
+ 
 
 The next example shows what `theme-uga.css` might look like. It declares some reusable color variables in the `.root`
 declaration, then it declares that all rendered `Rectangle` objects should have their fill color set to 
