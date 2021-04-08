@@ -43,6 +43,7 @@
    * [javafx.scene.control.Control](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/Control.html) - (class) Base class for all user interface controls.
    * [javafx.scene.control.Button](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/Button.html) - (class) A simple button control.
    * [javafx.scene.control.Label](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/Label.html) - (class) Label is a non-editable text control.
+   * [javafx.scene.control.ProgressBar](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/ProgressBar.html) - (class) A horizontal progress bar. 
    * [javafx.scene.text.Text](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/text/Text.html) - (class) Defines a node that displays text.
    * [javafx.scene.control.TextField](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/TextField.html) - (class) Text input component.
    
