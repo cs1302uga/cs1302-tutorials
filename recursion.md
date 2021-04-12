@@ -339,6 +339,12 @@ Of course, this assumes single-threaded execution. In a multi-threaded applicati
 one call stack per thread. In our recursion examples, we do not explicitly create new threads
 so we assume that only one method is ever executing at any given time.
 
+What is presented above is good enough to establish a proper conceptual model
+for how method calls are handled in many programming languages. Students who are 
+interested in taking a deep dive into how all of this works specifically in Java
+are encouraged to read [Chapter 2: The Structure of the Java Virtual Machine](https://docs.oracle.com/javase/specs/jvms/se11/html/jvms-2.html) in
+*The Java® Virtual Machine Specification* (Java SE 11 Edition).
+
 ## Recursive Factorial
 
 **Problem**: What is the factorial of the non-negative integer `n`?
