@@ -27,9 +27,9 @@ $ mvn --version
 It should print out your installed version of Maven, for example:
  
 ```
-Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+Apache Maven 3.8.1 (05c21c65bdfed0f71a2f2ada8b84da59348c4c5d)
 Maven home: /usr/local/mepcott/cs1302/apache-maven
-Java version: 11.0.8, vendor: Oracle Corporation, runtime: /usr/local/mepcott/jdk/jdk-11.0.8
+Java version: 11.0.10, vendor: Oracle Corporation, runtime: /usr/local/mepcott/jdk/jdk-11.0.10
 Default locale: en_US, platform encoding: UTF-8
 OS name: "linux", version: "3.10.0-1160.el7.x86_64", arch: "amd64", family: "unix"
 ```
