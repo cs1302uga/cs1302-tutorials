@@ -343,7 +343,7 @@ using Maven.
 
 1. In some of the examples above, we walked you through how to run a driver
    class after compiling for packaging the project. There is also a way
-   to run a driver class driectly using Maven using the `exec:java` phase:
+   to run a driver class directly using Maven using the `exec:java` phase:
    
    ```
    $ mvn exec:java -Dexec.mainClass="cs1302.mvn.App"
