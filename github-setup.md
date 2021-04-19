@@ -30,13 +30,17 @@ private key -- the Git program will do this with GitHub so long as the key pair 
 1. Login to Odin.
 
 1. **Before you type the following command,** please note that it will prompt you to answer
-   questions. Do **NOT** change any values when prompted -- simply press return until the command is finished
-   executing. **Simply press return when asked for a password.** 
-   With that in mind, please execute the command below, replacing `your_email@uga.edu` 
+   questions. 
+   
+   * Do **NOT** change any values when prompted -- simply press return until the `ssh-keygen`
+     command is finished executing. 
+   * When asked for a password, **simply press return** -- do not enter a password. 
+   
+   With all of that in mind, please execute the command below, replacing `your_email@uga.edu` 
    with your `@uga.edu` email address.
    
    ```
-   $ ssh-keygen -t rsa -b 4096 -C "your_email@uga.edu"
+   $ ssh-keygen -t ed25519 -C "your_email@uga.edu"
    ```
   
    This creates a public / private key pair in the default location: `~/.ssh/`.
@@ -45,7 +49,7 @@ private key -- the Git program will do this with GitHub so long as the key pair 
    the text in your terminal, then right clicking on the selection and clicking "Copy"):
 
    ```
-   $ cat ~/.ssh/id_rsa.pub
+   $ cat ~/.ssh/id_ed25519.pub
    ```
    
 1. Login to [GitHub](https://www.github.com/).
@@ -90,7 +94,7 @@ private key -- the Git program will do this with GitHub so long as the key pair 
    1. Create an initial `README` file using `echo "# cs1302-testRepo" >> README.md`.
    1. Add your `README` file to the repository using `git add README.md`.
    1. Commit your changes using `git commit -am "first commit"`.
-   1. Push your changes to GitHub using `git push origin master`
+   1. Push your changes to GitHub using `git push origin main`
    1. Refresh your GitHub page to see the changes to the repository. Your repository should
       look similar to the below image. Note the number of commits (1 so far) to this
       repository, the latest commit time, and the contents of the `README` file are
