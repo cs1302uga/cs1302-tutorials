@@ -84,6 +84,7 @@ private key -- the Git program will do this with GitHub so long as the key pair 
      PTY allocation request failed on channel 0
      Hi <YourGitHubUsername>! You've successfully authenticated, but GitHub does not provide shell access.
      Connection to github.com closed.
+     ```
      
    * If you see the following, then something went wrong:
 
