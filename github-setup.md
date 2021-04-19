@@ -71,6 +71,26 @@ private key -- the Git program will do this with GitHub so long as the key pair 
 
 1. If prompted, confirm your GitHub password.
 
+1. On Odin, verify that your key pair is setup correctly by trying to SSH to
+   `git@github.com` (do not change the username):
+   
+   ```
+   $ ssh git@github.com
+   ```
+   
+   * If you see something similar to the following, then you should be okay to proceed:
+   
+     ```
+     PTY allocation request failed on channel 0
+     Hi <YourGitHubUsername>! You've successfully authenticated, but GitHub does not provide shell access.
+     Connection to github.com closed.
+     
+   * If you see the following, then something went wrong:
+
+     ```
+     Permission denied (publickey).
+     ```
+
 ## Creating a Repository
 
 1. Login to [GitHub](https://www.github.com/)
