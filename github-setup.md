@@ -13,8 +13,10 @@ online repository.
 As students, you receive **free access** to [GitHub Pro](https://github.com/pricing) while you are a student.
 To set up your account:
 
-1. [Click Here](https://education.github.com/pack/join)
+1. Make a normal GitHub account using your `@uga.edu` email address here: https://github.com/join 
+1. Go to the Education Pack "join page" on GitHub: https://education.github.com/pack/join
 1. Click on "Get your Pack".
+1. Click on “Get Student Benefits” and Sign In with your Account, if needed.
 1. Fill out the form and submit for review
 1. Wait on email confirmation from GitHub. Hopefully, this will take less than a day.
 
