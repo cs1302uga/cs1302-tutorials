@@ -130,6 +130,7 @@ private key -- the Git program will do this with GitHub so long as the key pair 
       you've cloned an empty repository. That's okay! You should now have a folder
       called `cs1302-testRepo`.
    1. Change into the `cs1302-testRepo` directory.
+   1. Rename the main branch to `main` using `git branch -M main`.
    1. Create an initial `README` file using `echo "# cs1302-testRepo" >> README.md`.
    1. Add your `README` file to the repository using `git add README.md`.
    1. Commit your changes using `git commit -am "first commit"`.
