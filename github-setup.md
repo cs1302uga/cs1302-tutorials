@@ -80,6 +80,22 @@ private key -- the Git program will do this with GitHub so long as the key pair 
    $ ssh git@github.com
    ```
    
+   * You may see something like the following:
+     
+     ```
+     The authenticity of host 'github.com (www.xxx.yyy.zzz)' can't be established.
+     RSA key fingerprint is ...
+     ...
+     Are you sure you want to continue connecting (yes/no)?
+     ```
+     
+     Type `yes`, then press return. It may emit the following warning, but
+     that's okay and to be expected:
+     
+     ```
+     Warning: Permanently added 'bitbucket.org,...`
+     ```
+   
    * If you see something similar to the following, then you should be okay to proceed:
    
      ```
