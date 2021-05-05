@@ -159,7 +159,6 @@ private key -- the Git program will do this with GitHub so long as the key pair 
       and branch (or *refspec*) are expected but not provided, then many commands 
       will simply default to the upstream information. You are encouraged to read 
       `git help push` for more information about upstreams and refspecs.
-      
       **The next time you need to push or pull to `origin main`, you can
       simply use argument-less `git push` or `git pull`, respectively.** 
       
