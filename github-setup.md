@@ -139,7 +139,7 @@ private key -- the Git program will do this with GitHub so long as the key pair 
       
       ----
    
-   1. If the current branch name is `master`, then rename it to `main` using `git branch -M main`.
+   1. If the current branch name is not `main`, then rename it to `main` using `git branch -M main`.
 
       ----
       
