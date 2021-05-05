@@ -130,7 +130,16 @@ private key -- the Git program will do this with GitHub so long as the key pair 
       you've cloned an empty repository. That's okay! You should now have a folder
       called `cs1302-testRepo`.
    1. Change into the `cs1302-testRepo` directory.
-   1. Rename the initial branch to `main` using `git branch -M main`.
+   1. Check the status of your local repository using `git status`.
+   
+      ----
+      
+      **NOTE:** Take note of the branch name displayed in the output (i.e., the
+      `<name>` in `On branch <name>`). 
+      
+      ----
+   
+   1. If the current branch name is `master`, then rename it to `main` using `git branch -M main`.
 
       ----
       
@@ -141,7 +150,8 @@ private key -- the Git program will do this with GitHub so long as the key pair 
       connotations for many groups of people and started encouraging the use of more inclusive 
       branch names such as `main`. You can read more about it 
       [here](https://sfconservancy.org/news/2020/jun/23/gitbranchname/) and
-      [here](https://github.com/github/renaming).
+      [here](https://github.com/github/renaming). Future versions of `git` may
+      adopt 
       
       ----
       
@@ -160,8 +170,19 @@ private key -- the Git program will do this with GitHub so long as the key pair 
       will simply default to the upstream information. You are encouraged to read 
       `git help push` for more information about upstreams and refspecs.
       **The next time you need to push or pull to `origin main`, you can
-      simply use argument-less `git push` or `git pull`, respectively.** 
+      simply use argument-less `git push` or `git pull`, respectively.**
       
+      ----
+      
+      **ERROR:** If the `push` fails and you instead see 
+      `error: src refspec main does not match any` and/or
+      `error: failed to push some refs to ...`, then it's very likely that your local
+      repository is empty. If you're following this turorial for the first time, then
+      that means you skipped one or more of the previous three steps.
+      If you're replicating the steps in this tutorial for a new repository,
+      then simply stage and commit some files to the respository's history,
+      then try executing `git push -u origin main` again.
+      ```
       ----
       
    1. Refresh your GitHub page to see the changes to the repository. Your repository should
