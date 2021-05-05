@@ -174,15 +174,20 @@ private key -- the Git program will do this with GitHub so long as the key pair 
       
       ----
       
-      **ERROR:** If the `push` fails and you instead see 
+      **ERROR?** If the `push` fails and you instead see 
       `error: src refspec main does not match any` and/or
-      `error: failed to push some refs to ...`, then it's very likely that your local
-      repository is empty. If you're following this turorial for the first time, then
-      that means you skipped one or more of the previous three steps.
-      If you're replicating the steps in this tutorial for a new repository,
-      then simply stage and commit some files to the respository's history,
-      then try executing `git push -u origin main` again.
-      ```
+      `error: failed to push some refs to ...`, then it is very likely 
+      that your local repository is empty (i.e., its commit log is empty) --
+      you can verify this using `git log`.
+      
+      * If you're following this turorial for the first time and
+        your commit log is empty, then that means you skipped one or more of 
+        the previous three steps. Attempt to repeat the steps that you're missing
+        before executing `git push -u origin main` again.
+      * If you're replicating the steps in this tutorial for a new repository,
+        then simply stage and commit some files to the respository 
+        before executing `git push -u origin main` again.
+      
       ----
       
    1. Refresh your GitHub page to see the changes to the repository. Your repository should
