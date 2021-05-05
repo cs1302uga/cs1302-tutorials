@@ -134,7 +134,15 @@ private key -- the Git program will do this with GitHub so long as the key pair 
    1. Create an initial `README` file using `echo "# cs1302-testRepo" >> README.md`.
    1. Add your `README` file to the repository using `git add README.md`.
    1. Commit your changes using `git commit -am "first commit"`.
-   1. Push your changes to GitHub using `git push origin main`
+   1. Push your changes to GitHub using `git push -u origin main`
+      - **NOTE:** The `-u` or `--set-upstream` option enables argument-less `git pull`, 
+        `git push`, and other commands if the push is successful -- that is, if a remote 
+        repository and branch pair are not given (sometimes referred to as the *refspec*), 
+        then many commands will default to whatever refspec was used when you called 
+        `git push -u`. **The next time you need to push or pull to `origin main`, you can
+        simply use `git push` or `git pull`, respectively.** If you need to use a different
+        refspect, you can do that; just make sure to NOT include the `-u` option unless
+        your intent is to change the default.
    1. Refresh your GitHub page to see the changes to the repository. Your repository should
       look similar to the below image. Note the number of commits (1 so far) to this
       repository, the latest commit time, and the contents of the `README` file are
