@@ -174,7 +174,7 @@ private key -- the Git program will do this with GitHub so long as the key pair 
       
       ----
       
-      **ERROR?** If the `push` fails and you instead see 
+      **ERROR:** If the `push` fails and you see 
       `error: src refspec main does not match any` and/or
       `error: failed to push some refs to ...`, then it is very likely 
       that your local repository is empty (i.e., its commit log is empty) --
