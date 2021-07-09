@@ -7,7 +7,7 @@
 In computer programming, a **_variable_** is just an alias for a location in memory. Instead of
 requiring programmers to remember explicit memory addresses, we let them use variables as a 
 matter of convenience. Some languages (e.g., C and C++) also allow programmers to deal directly
-with memory adresses. Every declared variable has the following:
+with memory addresses. Every declared variable has the following:
 
 * a **_value_**, the actual data stored in some memory location;
 * a **_type_**, an attribute that tells the computer how to interpret the value and how much space
