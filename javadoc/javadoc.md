@@ -203,7 +203,7 @@ this tutorial.
      then you might also need to include `throws` in the method signature.
      
    * The `throws` keyword is used in a method or constructor signature to list the checked exceptions
-     that the method is allowed to [propogate](https://github.com/cs1302uga/cs1302-tutorials/blob/master/exceptions/exceptions.md#explicitly-throwing-exceptions--exception-propagation).
+     that the method is allowed to [propagate](https://github.com/cs1302uga/cs1302-tutorials/blob/master/exceptions/exceptions.md#explicitly-throwing-exceptions--exception-propagation).
      
    * The `@throws` tag is a Javadoc tag that is used in the Javadoc comment associated with a method 
      (or constructor) to document that it can throw an exception under certain circumstances.
