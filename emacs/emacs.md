@@ -167,8 +167,8 @@ practicing and, over time, you'll be amazed at how productive you become!
 | `M-v`     | Move up one page                                                       |
 | `C-l`     | Scroll to make the current line appear in the center, bottom, then top |
 | `M-g M-g` | Go to line (enter number at prompt, then press `RET`)                  |
-| `M-<`     | Move to beginning of buffer (`CTRL` + `SHIFT` + `,` = `C-<`)           |
-| `M->`     | Move to end of buffer (`CTRL` + `SHIFT` + `.` = `C->`)                 |
+| `M-<`     | Move to beginning of buffer (`META` + `SHIFT` + `,` = `M-<`)           |
+| `M->`     | Move to end of buffer (`META` + `SHIFT` + `.` = `M->`)                 |
 
 ### Delete
 
