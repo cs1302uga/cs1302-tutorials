@@ -181,7 +181,7 @@ Let's try it!
    ```
    
    The output of the `find` command shows that we sucessfully separated the source code (`src`) from 
-   the compiled code (`bin`). If you see any tilda (~) files, those are just backup copies of older versions 
+   the compiled code (`bin`). If you see any tilde (~) files, those are just backup copies of older versions 
    of your files. You can ignore those.
 
    **PROTIP:** Remember, source code should really only be placed directly in the default 
@@ -275,7 +275,7 @@ to let `javac` know where the _compiled_ version of that depedency is.
    using `bin` as the destination for the compiled code. Once it compiles, make sure that the 
    output from `find` matches the output below:
    
-   **Note:**  If you see any tilda (~) files, those are just backup copies of older versions 
+   **Note:**  If you see any tilde (~) files, those are just backup copies of older versions 
    of your files. You can ignore those.
    
    ```
