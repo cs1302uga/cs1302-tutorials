@@ -151,7 +151,7 @@ Let's try it!
    
    When you're first starting out in a Unix environment, you might feel lost at times. Remember, 
    it's always important to know your present working directory (pwd) as that is the location where 
-   the commands you enter will be ran. In the command above, our pwd is `cs1302-packages`. Since the
+   the commands you enter will be run. In the command above, our pwd is `cs1302-packages`. Since the
    `HelloWorld.java` file is not in that directory, we had to specify the relative path `src/HelloWorld.java`
    to tell the compiler how to find that file relative to the pwd. We're telling the compiler "first, go into the
    `src` directory and then you'll see the file `HelloWorld.java`".
