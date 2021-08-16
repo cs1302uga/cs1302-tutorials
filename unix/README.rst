@@ -27,11 +27,11 @@ called the *shell*. This program can be usually be accessed via another program
 called a *terminal emulator*. In the shell, you enter *commands* at a *prompt*.
 Here are some examples of what such a prompt might look like:
 
-.. code-block:: plain
+.. code-block:: shell
 
    bash$
 
-.. code-block:: plain
+.. code-block:: shell
 
    zsh%
 
@@ -79,6 +79,10 @@ means that the text after the ``$`` character represents a command that
 should be typed at a prompt. In such examples, the first ``$`` character
 is **not** part of the command.
 
+.. code-block:: shell
+
+   $ whoami
+   mepcott
 
 Glossary
 ========
