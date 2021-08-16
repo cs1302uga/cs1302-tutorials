@@ -51,19 +51,34 @@ of the commands ``ls`` and ``tree`` (discussed later). On the right, the graphic
 Finder app is displayed containing some of the same information shown in the
 terminal window.
 
-----
-
-**NOTE:** Everyone's shell prompt text might look different depending
-on system type and user profile settings. Therefore, we will use the convention
-of denoting the prompt with a single `$`. Lines in this tutorial that begin with
-a single `$`, therefore, are examples of commands that can be typed at a
-prompt. The first `$` is **not** part of a command.
-
-----
-
 Tutorial
 ========
 
+Note About Prompts
+------------------
+
+The text that a shell displays for its prompt will differ depending
+the shell program itself and a user's profile settings. Consider the
+two prompts shown in the introduction. Intentionally presented, the
+``bash$`` prompt is similar to what a |bash|_ shell would produce, and
+the ``zsh%`` prompt is similar to what a |zsh|_ shell would produce.
+
+.. |bash| replace:: Bash
+.. _bash: https://en.wikipedia.org/wiki/Bash_(Unix_shell)
+
+.. |zsh| replace:: Zsh
+.. _zsh: https://en.wikipedia.org/wiki/Z_shell
+
+In this tutorial, we will not present any features that are specific
+to either of these shells; instead, we will focus on general Unix
+commands using syntax that is supported by both.
+
+To keep things simple, we will follow a standard convention of denoting
+the prompt with a single ``$`` character. Therefore, if you see a line
+of text in this tutorial that begins with a single ``$`` character, then it
+means that the text after the ``$`` character represents a command that
+should be typed at a prompt. In such examples, the first ``$`` character
+is **not** part of the command.
 
 
 Glossary
