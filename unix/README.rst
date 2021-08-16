@@ -9,6 +9,12 @@
 
 |approval_notice|
 
+Table of Contents
+=================
+
+.. contents:: Table of Contents
+   :depth: 2
+
 Introduction
 ============
 
