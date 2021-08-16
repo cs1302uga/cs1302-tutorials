@@ -58,6 +58,20 @@ prompt. The first `$` is **not** part of a command.
 Glossary
 ========
 
+command
+    Valid text input for a shell that instructs the shell to work
+    with the operating system to accomplish some task (e.g.,
+    running another program).
+
+prompt
+    The text produced by the shell to request user prompt.
+
+shell
+    A computer program that wraps access to an operating system's
+    services via a command-line or graphical interface. If a shell
+    provides a command-line interface, then services and other programs
+    are managed via commands.
+
 terminal
    A computer hardware interface for text entry and display. For example, a
    laptops's keyboard and display might be considered its terminal.
@@ -69,20 +83,6 @@ terminal emulator
     referred to as a *local terminal*; however, if the emulated
     terminal is connected to some other computer (e.g., a remote server),
     then it's called a *remote terminal*.
-
-shell
-    A computer program that wraps access to an operating system's
-    services via a command-line or graphical interface. If a shell
-    provides a command-line interface, then services and other programs
-    are managed via commands.
-
-prompt
-    The text produced by the shell to request user prompt.
-
-command
-    Valid text input for a shell that instructs the shell to work
-    with the operating system to accomplish some task (e.g.,
-    running another program).
 
 .. copyright and license information
 .. |copy| unicode:: U+000A9 .. COPYRIGHT SIGN
