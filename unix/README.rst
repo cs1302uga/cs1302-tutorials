@@ -62,16 +62,15 @@ the shell program itself and a user's profile settings. Consider the
 two prompts shown in the introduction. Intentionally presented, the
 ``bash$`` prompt is similar to what a |bash|_ shell would produce, and
 the ``zsh%`` prompt is similar to what a |zsh|_ shell would produce.
+In this tutorial, we will not present any features that are specific
+to either of these shells; instead, we will focus on general Unix
+commands using syntax that is supported by both.
 
 .. |bash| replace:: Bash
 .. _bash: https://en.wikipedia.org/wiki/Bash_(Unix_shell)
 
 .. |zsh| replace:: Zsh
 .. _zsh: https://en.wikipedia.org/wiki/Z_shell
-
-In this tutorial, we will not present any features that are specific
-to either of these shells; instead, we will focus on general Unix
-commands using syntax that is supported by both.
 
 To keep things simple, we will follow a standard convention of denoting
 the prompt with a single ``$`` character. Therefore, if you see a line
