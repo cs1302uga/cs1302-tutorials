@@ -3,13 +3,9 @@
 
 .. |approval_notice| image:: https://img.shields.io/badge/Status-Not%20Ready-red.svg
 
-===============
- Unix Tutorial
-===============
-
-------------------
- Basic Navigation
-------------------
+=================================
+ Unix Tutorial: Basic Navigation
+=================================
 
 |approval_notice|
 
