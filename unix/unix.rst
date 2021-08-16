@@ -57,8 +57,8 @@ terminal emulator
 shell
     A computer program that wraps access to an operating system's
     services via a command-line or graphical interface. If a shell
-    provided a command-line interface, then services and programs
-    are launched via commands.
+    provides a command-line interface, then services and other programs
+    are managed via commands.
 
 prompt
     The text produced by the shell to request user prompt.
