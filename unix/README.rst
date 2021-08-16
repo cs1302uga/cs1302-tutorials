@@ -88,3 +88,7 @@ command
    and the public. The content and opinions expressed on this Web page do not necessarily
    reflect the views of nor are they endorsed by the University of Georgia or the University
    System of Georgia.
+
+----
+
+.. include:: navigation.rst
