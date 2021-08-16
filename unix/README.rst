@@ -25,11 +25,15 @@ reminiscent of a Unix system.
 In Unix, the primary end-user, command-line interface to the system is a program
 called the *shell*. This program can be usually be accessed via another program
 called a *terminal emulator*. In the shell, you enter *commands* at a *prompt*.
-Here is an example of what such a prompt might look like:
+Here are some examples of what such a prompt might look like:
 
 .. code-block:: plain
 
    bash$
+
+.. code-block:: plain
+
+   zsh%
 
 The shell is just another way to interact with computer. These days, all
 students are familiar with the point-and-click graphical windowing systems
