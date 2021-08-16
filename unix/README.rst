@@ -38,6 +38,7 @@ However, only some realize that the windowing system they're used to is
 only one way to interact with a computer.
 
 .. figure:: img/intro1.png
+   :alt: Local terminal (left) and Finder app (right) on macOS.
 
    On the left, the commands ``ls`` and ``tree`` (discussed later) are used
    in a local terminal on the macOS. On the right, the graphical Finder app
