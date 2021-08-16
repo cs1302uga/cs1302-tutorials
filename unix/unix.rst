@@ -32,6 +32,9 @@ provided in operating systems like Windows, macOS, and even phones.
 However, only some realize that the windowing system they're used to is
 only one way to interact with a computer.
 
+.. figure:: img/terminal1.pnf
+   :figwidth: 45%
+
 ----
 
 **NOTE:** Everyone's shell prompt text might look different depending
