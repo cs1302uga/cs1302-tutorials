@@ -10,7 +10,7 @@
 |approval_notice|
 
 Introduction
-************
+============
 
 Unix is a family of computer operating systems that derive from work performed
 in the 1970s at the Bell Labs research center by Ken Thompson, Dennis Ritchie,
