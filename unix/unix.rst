@@ -25,7 +25,7 @@ example of what such a prompt might look like:
 
 .. code-block:: plain
 
-   bash$
+   bash
 
 The shell is just another way to interact with computer. These days, all
 students are familiar with the point-and-click graphica windowing systems
