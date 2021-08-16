@@ -37,7 +37,9 @@ provided in operating systems like Windows, macOS, and even phones.
 However, only some realize that the windowing system they're used to is
 only one way to interact with a computer.
 
-**TODO:** Place figure here...
+.. figure:: img/intro1.png
+
+   CAPTION.
 
 ----
 
