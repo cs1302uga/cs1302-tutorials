@@ -55,6 +55,9 @@ prompt. The first `$` is **not** part of a command.
 
 ----
 
+Glossary
+========
+
 terminal
    A computer hardware interface for text entry and display. For example, a
    laptops's keyboard and display might be considered its terminal.
