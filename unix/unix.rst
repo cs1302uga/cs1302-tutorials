@@ -17,29 +17,56 @@ and others. In this course, we use the term Unix to refer to systems that are
 Unix-like; i.e., their user interface and basic set of utilities are
 reminiscent of a Unix system.
 
-In Unix, the primary end-user, text-based interface to the system is a program
-called the *shell*. This program can be usually be accessed via a
-*terminal emulator* if a graphical windowing system is available or directly
-otherwise. In the shell, you enter *commands* at a *prompt*. Here is an
-example of what such a prompt might look like:
+In Unix, the primary end-user, command-line interface to the system is a program
+called the *shell*. This program can be usually be accessed via another program
+called a *terminal emulator*. In the shell, you enter *commands* at a *prompt*.
+Here is an example of what such a prompt might look like:
 
 .. code-block:: plain
 
-   bash
+   bash$
 
 The shell is just another way to interact with computer. These days, all
-students are familiar with the point-and-click graphica windowing systems
+students are familiar with the point-and-click graphical windowing systems
 provided in operating systems like Windows, macOS, and even phones.
 However, only some realize that the windowing system they're used to is
 only one way to interact with a computer.
 
-**NOTE:** Everyone's shell prompt text might look a little different depending
-on system type and user customizations. Therefore, we will use the convention
+----
+
+**NOTE:** Everyone's shell prompt text might look different depending
+on system type and user profile settings. Therefore, we will use the convention
 of denoting the prompt with a single `$`. Lines in this tutorial that begin with
 a single `$`, therefore, are examples of commands that can be typed at a
 prompt. The first `$` is **not** part of a command.
 
+----
 
+terminal
+   A computer hardware interface for text entry and display. For example, a
+   laptops's keyboard and display might be considered its terminal.
+
+terminal emulator
+    A computer program that emulates a terminal, usually whinin a window.
+    If the emulated terminal is connected to the same computer that
+    the terminal emulator program is running on, then it's often
+    referred to as a *local terminal*; however, if the emulated
+    terminal is connected to some other computer (e.g., a remote server),
+    then it's called a *remote terminal*.
+
+shell
+    A computer program that wraps access to an operating system's
+    services via a command-line or graphical interface. If a shell
+    provided a command-line interface, then services and programs
+    are launched via commands.
+
+prompt
+    The text produced by the shell to request user prompt.
+
+command
+    Valid text input for a shell that instructs the shell to work
+    with the operating system to accomplish some task (e.g.,
+    running another program).
 
 .. copyright and license information
 .. |copy| unicode:: U+000A9 .. COPYRIGHT SIGN
