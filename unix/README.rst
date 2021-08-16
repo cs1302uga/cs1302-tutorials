@@ -4,9 +4,9 @@
 
 .. |approval_notice| image:: https://img.shields.io/badge/Status-Not%20Ready-red.svg
 
-===============
- Unix Tutorial
-===============
+======
+ Unix
+======
 
 |approval_notice|
 
@@ -56,6 +56,11 @@ a single `$`, therefore, are examples of commands that can be typed at a
 prompt. The first `$` is **not** part of a command.
 
 ----
+
+Tutorial
+========
+
+
 
 Glossary
 ========
