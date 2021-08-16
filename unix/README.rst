@@ -81,8 +81,13 @@ is **not** part of the command.
 
 .. code-block:: shell
 
-   $ whoami
-   mepcott
+   $ date
+   Mon Aug 16 19:58:29 EDT 2021
+
+.. code-block:: shell
+
+   $ $ date
+   bash: $: command not found...
 
 Glossary
 ========
