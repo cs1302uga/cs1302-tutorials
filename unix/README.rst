@@ -35,15 +35,17 @@ The shell is just another way to interact with computer. These days, all
 students are familiar with the point-and-click graphical windowing systems
 provided in operating systems like Windows, macOS, and even phones.
 However, only some realize that the windowing system they're used to is
-only one way to interact with a computer.
+only one way to interact with a computer. Consider the figure below.
 
 .. figure:: img/intro1.png
    :alt: Local terminal (left) and Finder app (right) on macOS.
 
-   **FIGURE:** On the left, the commands ``ls`` and ``tree`` (discussed later) are used
-   in a local terminal on a computer running macOS. On the right, the graphical Finder
-   app on the same computer is used to show some of the same information produced
-   by the ``ls`` and ``tree`` commands.
+In the figure, two different interfaces to the same computer running the Unix-like
+macOS operating system are presented. On the left, the window of a terminal
+emulator (i.e., a terminal window) is displayed containing the output of the
+commands ``ls`` and ``tree`` (discussed later). On the right, the graphical
+Finder app is displayed containing some of the same information shown in the
+terminal window.
 
 ----
 
