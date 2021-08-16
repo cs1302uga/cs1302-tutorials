@@ -3,8 +3,9 @@
 
 .. |approval_notice| image:: https://img.shields.io/badge/Status-Not%20Ready-red.svg
 
-Unix Tutorial
-#############
+===============
+ Unix Tutorial
+===============
 
 |approval_notice|
 
