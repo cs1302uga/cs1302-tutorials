@@ -32,7 +32,7 @@ provided in operating systems like Windows, macOS, and even phones.
 However, only some realize that the windowing system they're used to is
 only one way to interact with a computer.
 
-.. figure:: img/terminal1.pnf
+.. figure:: img/terminal1.png
    :figwidth: 45%
 
 ----
