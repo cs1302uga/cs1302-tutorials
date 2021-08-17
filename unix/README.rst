@@ -113,7 +113,7 @@ Tutorial
 Local Terminal
 --------------
 
-When
+.. figure:: img/local1.png
 
 Glossary
 ========
