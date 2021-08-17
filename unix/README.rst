@@ -389,11 +389,12 @@ from the Internet.
 
 .. figure:: img/nav-prep-demo.svg
 
-``ls``, ``ls PATH``
-+++++++++++++++++++
+``ls``, ``ls PATH``, ``tree``
++++++++++++++++++++++++++++++
 
 To list the files in your current working directory, use the ``ls`` (list)
-command.
+command. It is common for ``ls`` to differentiate between directories
+and regular files in its output using different colors.
 
 .. code-block:: shell
 
