@@ -194,7 +194,6 @@ screen -- this is the expected behavior. Simply type in your password, then pres
 the return key as seen in the terminal recording below.
 
 .. figure:: img/login-demo.svg
-   :figclass: markdown-body
 
 If you have trouble logging into Odin, then please
 contact support@cs.uga.edu as soon as possible.
@@ -210,6 +209,8 @@ You can see where your home directory is on the system with the help of the
 .. code-block:: shell
 
    $ pwd
+
+.. figure:: img/pwd-demo.svg
 
 TODO write more!
 

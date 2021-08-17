@@ -1,0 +1,7 @@
+{"version": 2, "width": 238, "height": 60, "timestamp": 1629180105, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
+[0.169046, "o", "\u001b]0;mepcott@csci-odin:~\u0007\u001b[?1034h[mepcott@csci-odin ~]$ "]
+[2.199196, "o", "p"]
+[2.352361, "o", "w"]
+[2.712694, "o", "d"]
+[4.607735, "o", "\r\n/home/myid/mepcott\r\n\u001b]0;mepcott@csci-odin:~\u0007[mepcott@csci-odin ~]$ "]
+[7.962538, "o", "exit\r\n"]
