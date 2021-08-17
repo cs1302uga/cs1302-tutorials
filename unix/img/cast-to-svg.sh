@@ -8,7 +8,7 @@ if [[ -n ${1} ]]; then
     OLD_HEIGHT=$(xmlstarlet sel -t -v "/_:svg/@height" ${SVG_FILE})
     NEW_HEIGHT=$(echo "${OLD_HEIGHT} + 15.0" | bc)
     echo "Adjusting height to create a 15px bottom margin (${OLD_HEIGHT} => ${NEW_HEIGHT})..."
-    xmlstarlet ed --inplace -u "/_:svg/@height" -v '{$NEW_HEIGHT}' ${SVG_FILE}
+    xmlstarlet ed --inplace -u "/_:svg/@height" -v "${NEW_HEIGHT}" ${SVG_FILE}
     echo "Done!"
 else
     echo "USAGE: ${0} CAST_FILE"
