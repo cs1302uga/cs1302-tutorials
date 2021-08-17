@@ -7,7 +7,7 @@
     <circle cx="60" cy="20" r="6" fill="#18c132"/>
   </svg>
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="65.13" viewBox="0 0 124 6.513" width="1240" x="15" y="50">
-    <style>@keyframes i{0%{transform:translateX(0)}1.7%{transform:translateX(-124px)}20.5%{transform:translateX(-248px)}50.7%{transform:translateX(-372px)}69.3%{transform:translateX(-620px)}to{transform:translateX(-744px)}}.a{fill:#282d35}.f{fill:#b9c0cb;white-space:pre}</style>
+    <style>@keyframes i{0%{transform:translateX(0)}1.7%{transform:translateX(-124px)}20.5%{transform:translateX(-248px)}25.9%{transform:translateX(-372px)}69.3%{transform:translateX(-620px)}to{transform:translateX(-744px)}}.a{fill:#282d35}.f{fill:#b9c0cb;white-space:pre}</style>
     <g font-family="Monaco,Consolas,Menlo,'Bitstream Vera Sans Mono','Powerline Symbols',monospace" font-size="1.67">
       <defs>
         <symbol id="1">
