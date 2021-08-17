@@ -13,8 +13,8 @@
 .. contents:: **Table of Contents**
    :depth: 2
 
-Introduction
-============
+Getting Started
+===============
 
 Unix is a family of computer operating systems that derive from work performed
 in the 1970s at the Bell Labs research center by Ken Thompson, Dennis Ritchie,
@@ -107,13 +107,23 @@ terminular emulator installed. If you are not sure how to access the terminal
 emulator provided by your operating system, then please consult your operating
 system's documentation.
 
-Tutorial
-========
-
 Local Terminal
 --------------
 
+When you run a terminal emulator, the usual default is for it
+to be connected to the same computer it is running on. This *local terminal*
+interface provides a shell to that computer. Consider the
+
 .. figure:: img/local1.png
+   :alt: iTerm 2 on macOS Big Sur (left) and MobaXterm 21.2 on Windows 10 (right)
+
+In the figure, we see the iTerm 2 terminal emulator running on macOS on the left
+and the MobaXterm terminal emulator running on Windows on the right.
+
+Tutorial
+========
+
+
 
 Glossary
 ========
