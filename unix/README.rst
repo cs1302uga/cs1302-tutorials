@@ -95,7 +95,7 @@ Getting Started
 ---------------
 
 Before you continue, if you are using a Windows computer or a Mac, then please
-follow the instructions below that match up with your computer's operating
+follow the instructions below that best match your computer's operating
 system.
 
 * `Setup on macOS <https://github.com/cs1302uga/cs1302-exercises/blob/master/misc/MacOS.md>`__
