@@ -77,12 +77,11 @@ the prompt with a single ``$`` character. Therefore, if you see a line
 of text in this tutorial that begins with a single ``$`` character, then it
 means that the text after the ``$`` character represents a command that
 should be typed at a prompt. In such examples, the first ``$`` character
-is **not** part of the command.
+is **not** part of the command. Consider the following example:
 
 .. code-block:: shell
 
    $ date
-   Mon Aug 16 19:58:29 EDT 2021
 
 .. code-block:: shell
 
