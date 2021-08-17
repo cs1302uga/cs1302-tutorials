@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="140.13">
+  <rect width="1280" height="125.13" rx="5" ry="5" class="a"/>
+  <svg y="0%" x="0%">
+    <circle cx="20" cy="20" r="6" fill="#ff5f58"/>
+    <circle cx="40" cy="20" r="6" fill="#ffbd2e"/>
+    <circle cx="60" cy="20" r="6" fill="#18c132"/>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="65.13" viewBox="0 0 124 6.513" width="1240" x="15" y="50">
+    <style>@keyframes i{0%{transform:translateX(0)}1.7%{transform:translateX(-124px)}20.5%{transform:translateX(-248px)}50.7%{transform:translateX(-372px)}69.3%{transform:translateX(-620px)}to{transform:translateX(-744px)}}.a{fill:#282d35}.f{fill:#b9c0cb;white-space:pre}</style>
+    <g font-family="Monaco,Consolas,Menlo,'Bitstream Vera Sans Mono','Powerline Symbols',monospace" font-size="1.67">
+      <defs>
+        <symbol id="1">
+          <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+        </symbol>
+        <symbol id="2">
+          <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+          <text x="21.042" y="1.67" class="f">curl</text>
+          <text x="26.052" y="1.67" class="f">-s</text>
+          <text x="29.058" y="1.67" class="f">-L</text>
+          <text x="32.064" y="1.67" class="f">https://git.io/fjbdg</text>
+          <text x="53.106" y="1.67" class="f">|</text>
+          <text x="55.11" y="1.67" class="f">bash</text>
+        </symbol>
+        <symbol id="3">
+          <text y="1.67" class="f">subdirectory</text>
+          <text x="13.026" y="1.67" class="f">cs1302-unix</text>
+          <text x="25.05" y="1.67" class="f">successfully</text>
+          <text x="38.076" y="1.67" class="f">created</text>
+        </symbol>
+        <symbol id="a">
+          <path fill="transparent" d="M0 0h124v3H0z"/>
+        </symbol>
+        <symbol id="b">
+          <path fill="#6f7683" d="M0 0h1.102v2.171H0z"/>
+        </symbol>
+      </defs>
+      <path class="a" d="M0 0h124v6.513H0z"/>
+      <g style="animation-duration:12.087101s;animation-iteration-count:infinite;animation-name:i;animation-timing-function:steps(1,end)">
+        <svg width="868">
+          <svg>
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="-.004"/>
+          </svg>
+          <svg x="124">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="20.996"/>
+            <use xlink:href="#1"/>
+          </svg>
+          <svg x="248">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="58.996"/>
+            <use xlink:href="#2"/>
+          </svg>
+          <svg x="372">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="-.004" y="2.146"/>
+            <use xlink:href="#2"/>
+          </svg>
+          <svg x="496">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="-.004" y="4.317"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#3" y="2.171"/>
+          </svg>
+          <svg x="620">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="20.996" y="4.317"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#3" y="2.171"/>
+            <use xlink:href="#1" y="4.342"/>
+          </svg>
+          <svg x="744">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="-.004" y="4.317"/>
+            <use xlink:href="#3"/>
+            <use xlink:href="#1" y="2.171"/>
+          </svg>
+        </svg>
+      </g>
+    </g>
+  </svg>
+</svg>

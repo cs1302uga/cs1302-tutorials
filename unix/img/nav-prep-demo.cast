@@ -1,0 +1,7 @@
+{"version": 2, "width": 124, "height": 3, "timestamp": 1629226903, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
+[0.211359, "o", "■■■■■■■@csci-odin:~$ "]
+[2.479854, "o", "curl -s -L https://git.io/fjbdg | bash"]
+[6.130041, "o", "\r\n"]
+[8.379487, "o", "subdirectory cs1302-unix successfully created\r\n"]
+[8.379779, "o", "■■■■■■■@csci-odin:~$ "]
+[12.087101, "o", "\r\n"]

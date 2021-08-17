@@ -385,6 +385,8 @@ have these files, you should execute the command below.
 
    $ curl -s -L https://git.io/fjbdg | bash
 
+.. figure:: img/nav-prep-demo.svg
+
 ``ls``
 ++++++
 
