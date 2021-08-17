@@ -389,8 +389,8 @@ from the Internet.
 
 .. figure:: img/nav-prep-demo.svg
 
-``ls``, ``ls PATH``, ``tree``
-+++++++++++++++++++++++++++++
+``ls``, ``ls PATH``, ``tree PATH``
+++++++++++++++++++++++++++++++++++
 
 To list the files in your current working directory, use the ``ls`` (list)
 command. It is common for ``ls`` to differentiate between directories
@@ -420,6 +420,15 @@ path to that directory as a command-line argument.
   What is the command to list the files in your home directory using an
   absolute path?
 
+Sometimes it is hard to see the whole picture with the ``ls`` command.
+This is where a commands like ``tree`` comes in handy. The ``tree`` command
+lists the contents of a directory in a tree-like format.
+
+.. code-block:: shell
+
+   $ tree cs1302-unix
+
+.. figure:: img/tree-path-demo.svg
 
 
 ``ls -l``, ``ls -h``, ``ls -lh``
