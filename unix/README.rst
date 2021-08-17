@@ -157,10 +157,13 @@ as illustrated in the figure below.
          all connected to a remote computer (center).
 
 Most Unix-like operating systems support multiple users and multiple sessions
-per user.
+per user. The tutorial will show you how to establish a remote terminal
+session. After that, you are encouraged to try logging in more than once to
+see what it's like.
 
 Tutorial
 ========
+
 
 
 
