@@ -308,6 +308,12 @@ Moving and Removing
 ``rm``, ``rm -r``
 +++++++++++++++++
 
+Piping
+------
+
+File Redirection
+----------------
+
 Glossary
 ========
 
