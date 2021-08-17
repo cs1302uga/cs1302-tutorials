@@ -216,7 +216,7 @@ You can see where your home directory is on the system with the help of the
 
    /
    ├── home
-   │   └── mepcott
+   │   └── mepcott
 
 
 ``whoami``
