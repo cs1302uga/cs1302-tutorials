@@ -340,11 +340,20 @@ When ``bash`` is launched as a login shell, it sources a default system pofile,
 then it looks in the user's home directory for ``.bash_profile``, ``.bash_login``,
 and ``.profile`` files, in that order, and sources the first one that is available.
 
-To enable the **CSCI 1302 shell profile**, you need to modify the ``.bash_profile``
-file in your home directory by adding a single line to it. This only needs to be
-done once! If possible, we prefer that you copy-paste the line instead of manually
-typing it out.
+You may already have the **CSCI 1302 shell profile** enabled. If you do, then
+you will see::
 
+  Setting up environment for CSCI 1302...
+
+followed by lines prefixed with ``[cs1302]`` when you login to Odin.
+
+.. figure:: img/cs1302-profile-check-demo.svg
+
+If you do not see any of that when you login, then you need to add a line to the
+``.bash_profile`` file in your home directory according to the instructions below.
+Please read the instructions carefully. They only need to be performed done once!
+If possible, we prefer that you copy-paste the relevant line instead of manually
+typing it out.
 
 Navigating the Filesystem
 -------------------------
