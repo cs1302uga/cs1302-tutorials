@@ -194,7 +194,7 @@ screen -- this is the expected behavior. Simply type in your password, then pres
 the return key as seen in the terminal recording below.
 
 .. figure:: img/login-demo.svg
-   :class: markdown-body
+   :figclass: markdown-body
 
 .. note::
 
