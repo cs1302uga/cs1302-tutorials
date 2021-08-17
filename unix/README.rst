@@ -196,10 +196,8 @@ the return key as seen in the terminal recording below.
 .. figure:: img/login-demo.svg
    :figclass: markdown-body
 
-.. note::
-
-   If you have trouble logging into Odin, then please
-   contact support@cs.uga.edu as soon as possible.
+If you have trouble logging into Odin, then please
+contact support@cs.uga.edu as soon as possible.
 
 * ``ssh``
 * home directory
