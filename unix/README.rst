@@ -93,9 +93,10 @@ command itself. This is illustrated in the figure below.
 Getting Started
 ---------------
 
-Before you continue, if you are using a Windows computer or a Mac, then please
-follow the instructions below that best match your computer's operating
-system.
+Before you continue, you need to make sure that your computer is setup to
+follow along with this tutorial. If you are using a Windows computer or a Mac,
+then please follow the instructions below that best match your computer's
+operating system.
 
 * `Setup on macOS <https://github.com/cs1302uga/cs1302-exercises/blob/master/misc/MacOS.md>`__
 * `Setup on Windows 10 <https://github.com/cs1302uga/cs1302-exercises/blob/master/misc/Windows10.md>`__
@@ -106,6 +107,11 @@ system (other than macOS), then do not fret -- they almost always come with a
 terminular emulator installed. If you are not sure how to access the terminal
 emulator provided by your operating system, then please consult your operating
 system's documentation.
+
+Local Terminal
+--------------
+
+When
 
 Glossary
 ========
