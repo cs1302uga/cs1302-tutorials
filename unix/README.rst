@@ -172,16 +172,27 @@ CSCI class at UGA, then you probably have access.
 Logging into a Unix Machine
 ---------------------------
 
-Access to ``odin`` is restricted behind a firewall. If you are attempting to access
-``odin`` while off campus, then you will need to connect to UGA's remote access
-VPN using the instructions found `here <https://eits.uga.edu/access_and_security/infosec/tools/vpn/>`__.
+Access to ``odin`` is restricted behind a firewall. In order to access ``odin``, you
+will need to connect to UGA's remote access VPN using the instructions found
+`here <https://eits.uga.edu/access_and_security/infosec/tools/vpn/>`__.
 
 ``ssh``
 +++++++
 
+Your username on ``odin`` is your UGA MyID and the password is the same one that
+is associated with your MyID. Once you are successfully logged into the VPN,
+open up a local terminal in your terminal emulator and execute the ``ssh``
+(secure shell) command to establish a secure connection -- be sure to
+replace ``username`` with your MyID:
+
 .. code-block:: shell
 
-   $ ssh your_myid@odin.cs.uga.edu
+   $ ssh username@odin.cs.uga.edu
+
+When you type in your password, it will not display anything to the
+screen--this the expected behavior. Simply type in your password and hit return.
+If have trouble logging into ``odin``, then please contact support@cs.uga.edu
+as soon as possible.
 
 * ``ssh``
 * home directory
