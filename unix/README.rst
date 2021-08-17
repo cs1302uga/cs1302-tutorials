@@ -222,6 +222,18 @@ commands.
 * Is ``bash`` still the login shell when you login?
   If not, then please inform your instructor!
 
+If you are interested in the environment variables that are available to you,
+then you can list them using the ``env`` (environment) command -- the variable
+names are displayed without the ``$`` prefix.
+
+.. code-block:: shell
+
+   $ env
+
+.. figure:: img/env-demo.svg
+
+   * What is the value of your ``$HOME`` variable
+
 Remember, the shell itself is a program, and one of the things it does is help
 us run other programs. To see what version of ``bash`` is running, you run
 ``bash`` itself with ``--version`` supplied as a command-line argument.

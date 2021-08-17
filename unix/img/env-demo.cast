@@ -1,0 +1,9 @@
+{"version": 2, "width": 128, "height": 15, "timestamp": 1629213181, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
+[0.201622, "o", "\u001b]0;mepcott@csci-odin:~\u0007\u001b[?1034h[mepcott@csci-odin ~]$ "]
+[1.523327, "o", "e"]
+[1.958499, "o", "n"]
+[2.097435, "o", "v"]
+[3.28004, "o", "\r\n"]
+[3.281155, "o", "XDG_SESSION_ID=310391\r\nHOSTNAME=csci-odin.cs.uga.edu\r\nTERM=xterm-256color\r\nSHELL=/bin/bash\r\nHISTSIZE=1000\r\nUSER=mepcott\r\n"]
+[3.281369, "o", "PWD=/home/myid/mepcott\r\nEDITOR=emacs -nw\r\nLANG=en_US.UTF-8\r\nHISTCONTROL=ignoredups\r\nHOME=/home/myid/mepcott\r\n...\r\n\r\n\u001b]0;mepcott@csci-odin:~\u0007[mepcott@csci-odin ~]$ "]
+[5.411611, "o", "exit\r\n"]
