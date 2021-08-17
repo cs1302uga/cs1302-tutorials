@@ -200,14 +200,16 @@ contact support@cs.uga.edu as soon as possible.
 ++++++++
 
 On Odin, the shell that is launched when you login (i.e., the *login shell*)
-is GNU bash. GNU is an extensive collection of free programs maintained by
-the Free Software Foundation. The word "GNU" is a |racronym|_ that
-stands for "GNU's Not Unix!" While GNU's provides implementations of
-most programs people associate with Unix, some Unix-like operating
-systems have different implementations.
+is GNU `bash <bash>`__. GNU is an extensive collection of free programs
+maintained by the Free Software Foundation. The word "GNU" is a |racronym|_ that
+stands for "GNU's Not Unix!" While the GNU project provides implementations of
+most programs that people associate with Unix, some Unix-like operating
+systems utilize different implementations.
 
 .. |racronym| replace:: recursive acronym
 .. _racronym: https://en.wikipedia.org/wiki/Recursive_acronym
+
+
 
 ``pwd``
 +++++++
