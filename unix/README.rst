@@ -183,15 +183,13 @@ Your username on Odin is your UGA MyID and the password is the same one that
 is associated with your MyID. Once you are successfully logged into the VPN,
 open up a local terminal in your terminal emulator and execute the ``ssh``
 (secure shell) command shown below to establish a secure connection -- be
-sure to replace ``username`` with your MyID:
+sure to replace ``username`` with your MyID. When you type in your password,
+it will not display anything to the screen -- this is the expected behavior.
+Simply type in your password, then press the return key to continue.
 
 .. code-block:: shell
 
    $ ssh username@odin.cs.uga.edu
-
-When you type in your password, it will not display anything to the
-screen -- this is the expected behavior. Simply type in your password, then press
-the return key as seen in the terminal recording below.
 
 .. figure:: img/login-demo.svg
 
