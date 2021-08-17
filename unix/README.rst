@@ -377,6 +377,14 @@ root of the filesystem. The macOS and Linux operating systems organize their
 filesystems the same way. If you are coming from a Windows background, then it
 is not unreasonable to compare ``/`` to the ``C:`` drive.
 
+For this part of the tutorial, we are going to assume that you have
+some specific files in your home directory. To make sure that you
+have these files, you should execute the command below.
+
+.. code-block:: shell
+
+   $ curl -s -L https://git.io/fjbdg | bash
+
 ``ls``
 ++++++
 
