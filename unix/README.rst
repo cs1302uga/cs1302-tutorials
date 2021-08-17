@@ -203,7 +203,7 @@ contact support@cs.uga.edu as soon as possible.
 
 When you login to Odin, you are placed in your *home directory* (home folder).
 You can see where your home directory is on the system with the help of the
-``pwd`` (present working directory) command. It always displays the absolute
+``pwd`` (print working directory) command. It always displays the absolute
 "path" of the directory that you are presently in.
 
 .. code-block:: shell
