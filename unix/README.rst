@@ -205,9 +205,9 @@ the things it does is help us run other programs. To see what version of
 ``bash`` is running, you run ``bash`` with ``--version`` supplied as a
 command-line argument.
 
-```
-$ bash --version
-```
+.. code-block:: shell
+
+   $ bash --version
 
 .. figure:: img/bash-version-demo.svg
 
