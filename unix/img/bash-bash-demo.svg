@@ -7,7 +7,7 @@
     <circle cx="60" cy="20" r="6" fill="#18c132"/>
   </svg>
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="108.55" viewBox="0 0 128 10.855" width="1280" x="15" y="50">
-    <style>@keyframes i{0%{transform:translateX(0)}1.1%{transform:translateX(-128px)}9.7%{transform:translateX(-256px)}11.7%{transform:translateX(-384px)}12.5%{transform:translateX(-512px)}13.7%{transform:translateX(-640px)}18.1%{transform:translateX(-768px)}21.5%{transform:translateX(-896px)}22.7%{transform:translateX(-1024px)}25.5%{transform:translateX(-1152px)}26.9%{transform:translateX(-1280px)}28.3%{transform:translateX(-1408px)}31.2%{transform:translateX(-1536px)}41.4%{transform:translateX(-1792px)}57.3%{transform:translateX(-1920px)}59.3%{transform:translateX(-2048px)}65.1%{transform:translateX(-2176px)}66%{transform:translateX(-2304px)}72%{transform:translateX(-2560px)}91.3%{transform:translateX(-2688px)}92.9%{transform:translateX(-2816px)}95.5%{transform:translateX(-2944px)}96.5%{transform:translateX(-3072px)}to{transform:translateX(-3200px)}}.a{fill:#282d35}.f{fill:#b9c0cb;white-space:pre}</style>
+    <style>@keyframes i{0%{transform:translateX(0)}1%{transform:translateX(-128px)}9.6%{transform:translateX(-256px)}11.5%{transform:translateX(-384px)}12.3%{transform:translateX(-512px)}13.5%{transform:translateX(-640px)}17.8%{transform:translateX(-768px)}21.2%{transform:translateX(-896px)}22.3%{transform:translateX(-1024px)}25%{transform:translateX(-1152px)}26.5%{transform:translateX(-1280px)}27.9%{transform:translateX(-1408px)}30.7%{transform:translateX(-1536px)}40.7%{transform:translateX(-1792px)}56.4%{transform:translateX(-1920px)}58.3%{transform:translateX(-2048px)}64.1%{transform:translateX(-2176px)}64.9%{transform:translateX(-2304px)}70.8%{transform:translateX(-2560px)}89.8%{transform:translateX(-2688px)}91.4%{transform:translateX(-2816px)}94%{transform:translateX(-2944px)}94.9%{transform:translateX(-3072px)}98.4%{transform:translateX(-3200px)}to{transform:translateX(-3328px)}}.a{fill:#282d35}.f{fill:#b9c0cb;white-space:pre}</style>
     <g font-family="Monaco,Consolas,Menlo,'Bitstream Vera Sans Mono','Powerline Symbols',monospace" font-size="1.67">
       <defs>
         <symbol id="1">
@@ -37,6 +37,9 @@
           <text x="19.038" y="1.67" class="f">~]$</text>
           <text x="23.046" y="1.67" class="f">exit</text>
         </symbol>
+        <symbol id="7">
+          <text y="1.67" class="f">logout</text>
+        </symbol>
         <symbol id="a">
           <path fill="transparent" d="M0 0h128v5H0z"/>
         </symbol>
@@ -45,8 +48,8 @@
         </symbol>
       </defs>
       <path class="a" d="M0 0h128v10.855H0z"/>
-      <g style="animation-duration:12.787803s;animation-iteration-count:infinite;animation-name:i;animation-timing-function:steps(1,end)">
-        <svg width="3328">
+      <g style="animation-duration:13s;animation-iteration-count:infinite;animation-name:i;animation-timing-function:steps(1,end)">
+        <svg width="3456">
           <svg>
             <use xlink:href="#a"/>
             <use xlink:href="#b" x="-.004"/>
@@ -225,11 +228,20 @@
           </svg>
           <svg x="3200">
             <use xlink:href="#a"/>
+            <use xlink:href="#b" x="5.996" y="8.659"/>
+            <use xlink:href="#3"/>
+            <use xlink:href="#4" y="2.171"/>
+            <use xlink:href="#5" y="4.342"/>
+            <use xlink:href="#6" y="6.513"/>
+            <use xlink:href="#7" y="8.684"/>
+          </svg>
+          <svg x="3328">
+            <use xlink:href="#a"/>
             <use xlink:href="#b" x="-.004" y="8.659"/>
             <use xlink:href="#4"/>
             <use xlink:href="#5" y="2.171"/>
             <use xlink:href="#6" y="4.342"/>
-            <text y="8.183" class="f">logout</text>
+            <use xlink:href="#7" y="6.513"/>
           </svg>
         </svg>
       </g>
