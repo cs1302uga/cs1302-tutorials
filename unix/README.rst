@@ -272,6 +272,9 @@ Getting Help
 ``apropos``
 +++++++++++
 
+``whatis``
+++++++++++
+
 Inspecting Files
 ----------------
 
