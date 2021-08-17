@@ -339,8 +339,8 @@ What is a Job?
 Foreground vs. Background Jobs
 ++++++++++++++++++++++++++++++
 
-``C-z``
-+++++++
+``C-c``, ``C-z``, ``jobs``, ``fg``
+++++++++++++++++++++++++++++++++++
 
 
 Glossary
