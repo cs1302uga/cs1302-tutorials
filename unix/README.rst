@@ -164,7 +164,25 @@ see what it's like.
 Tutorial
 ========
 
+Logging into a Unix Machine
+---------------------------
 
+* ``ssh``
+* home directory
+* ``whoami``
+
+Navigating the Filesystem
+-------------------------
+
+* ``ls``
+* ``cd``, path, relative path, absolute path
+* ``..``
+
+New Directories and Regular Files
+---------------------------------
+
+* ``mkdir``
+* ``touch``
 
 
 Glossary
