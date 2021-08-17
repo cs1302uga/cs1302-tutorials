@@ -164,8 +164,15 @@ see what it's like.
 Tutorial
 ========
 
+This tutorial assumes that the reader is a Computer Science student
+at the University of Georgia with access to the department's ``odin``
+instructional server. If you were assigned this reading in a CSCI
+class at UGA, then you probably have access.
+
 Logging into a Unix Machine
 ---------------------------
+
+
 
 ``ssh``
 +++++++
