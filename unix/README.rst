@@ -132,6 +132,12 @@ system.
 Remote Terminal
 ---------------
 
+To make sure that readers all roughly the same experience with the tutorial,
+we will instruct them to use a local terminal to launch a program that will
+connect their terminal emulator to a remote computer. Once connected,
+that *remote terminal* provides a shell with a command-line interface to
+that remote computer.
+
 Tutorial
 ========
 
