@@ -296,6 +296,15 @@ New Directories and Regular Files
 Moving and Removing
 -------------------
 
+``mv``
+++++++
+
+``cp``, ``cp -r``
++++++++++++++++++
+
+``rm``, ``rm -r``
++++++++++++++++++
+
 Glossary
 ========
 
