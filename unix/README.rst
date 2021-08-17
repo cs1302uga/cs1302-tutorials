@@ -404,6 +404,10 @@ and regular files in its output using different colors.
 
 * How many directories and regular files are in your home directory?
 
+The ``ls`` (list) command is not limited to the current working directory.
+You can tell ``ls`` to list the files in some other directory by supply a
+path to that directory as a command-line argument.
+
 .. code-block:: shell
 
    $ ls cs1302-unix
