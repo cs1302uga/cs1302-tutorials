@@ -467,6 +467,16 @@ is included in the "long" output format:
 
 .. [2] **Hard Links:** TODO
 
+.. [3] **User / Owner:** TODO
+
+.. [4] **Group:** TODO
+
+.. [5] **Size:** TODO
+
+.. [6] **Last Modified Timestamp:** TODO
+
+.. [7] **Name:** TODO
+
 
 
 
