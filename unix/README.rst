@@ -320,7 +320,7 @@ returns to the shell that launched it.
 
    $ bash --norc
 
-.. figure:: img/bash-bash-demo.svg?1
+.. figure:: img/bash-bash-demo.svg?2
 
 * What is the difference between the two ``exit`` commands in
   the example shown above?
