@@ -212,6 +212,12 @@ You can see where your home directory is on the system with the help of the
 
 .. figure:: img/pwd-demo.svg?1
 
+::
+   /
+   ├── home
+   │   └── mepcott
+
+
 ``whoami``
 ++++++++++
 
