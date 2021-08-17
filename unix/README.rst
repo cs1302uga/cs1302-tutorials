@@ -210,9 +210,7 @@ You can see where your home directory is on the system with the help of the
 
    $ pwd
 
-.. figure:: img/pwd-demo.svg
-
-TODO write more!
+.. figure:: img/pwd-demo.svg?1
 
 ``whoami``
 ++++++++++
