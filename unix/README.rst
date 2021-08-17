@@ -359,6 +359,8 @@ followed by lines prefixed with ``[cs1302]`` when you login to Odin.
 
      $ /usr/local/mepcott/cs1302.enable
 
+  .. figure:: img/cs1302-profile-enable-demo.svg
+
 Navigating the Filesystem
 -------------------------
 
