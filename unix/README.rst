@@ -412,7 +412,7 @@ path to that directory as a command-line argument.
 
    $ ls cs1302-unix
 
-.. figure:: img/ls-path-demo.svg
+.. figure:: img/ls-path-demo.svg?1
 
 
 ``ls -l``, ``ls -h``, ``ls -lh``
