@@ -209,8 +209,9 @@ is GNU `bash <bash>`__. On most Unix-like systems, the login procedure not only
 launches a login shell, it also exposes the location of the login shell program
 via a ``$SHELL`` variable that is available in your shell's running environment.
 You can display this and other environment variables in a line of text using the
-``echo`` command. Once the ``echo`` command is finished running, control returns
-to the shell that launched it.
+``echo`` command. Once ``echo`` is finished running, control returns to the shell
+that launched it -- this is the usual behavior for programs launched via shell
+commands.
 
 .. code-block:: shell
 
@@ -234,8 +235,12 @@ us run other programs. To see what version of ``bash`` is running, you run
 * Odin may have recieved updates since this tutorial was written.
   What version of ``bash`` is available when you are logged in?
 
-You can even use ``bash`` to run ``bash``.
-
+If you run ``bash`` without supplying any command-line arguments, then
+it launches a *subshell,* When the subshell exits, control returns to
+the shell that launched it. A subshell is not the login shell, even
+if they are instances of the same shell program. A more precise
+definition for *login shell* is the instance of the shell program
+that is launched when you login.
 
 The GNU of GNU bash is an extensive collection of free programs
 maintained by the Free Software Foundation. The word "GNU" is a |racronym|_ that
