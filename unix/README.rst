@@ -244,6 +244,10 @@ Navigating the Filesystem
 ``ls``
 ++++++
 
+.. code-block:: shell
+
+   $ ls
+
 ``ls -l``, ``ls -h``, ``ls -lh``
 ++++++++++++++++++++++++++++++++
 
