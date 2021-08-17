@@ -153,6 +153,8 @@ even have two terminal emulators on the same machine connected to the remote com
 as illustrated in the figure below.
 
 .. figure:: img/multi-user.png
+   :alt: One terminal on one machine (left) and two terminals on a second machine (right)
+         all connected to a remote computer (center).
 
 Most Unix-like operating systems support multiple users and multiple sessions
 per user.
