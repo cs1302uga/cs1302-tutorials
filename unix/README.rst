@@ -456,7 +456,9 @@ is included in the "long" output format:
 .. table::
 
    =====  ==========  ==  =======  =====  =======  ============  =======================
-   Type   Mode        ..  Ownder   Group  Size     Timestamp     Name
+   Mode               ..  ..              ..       ..            ..
+   -----------------  --  --------------  -------  ------------  -----------------------
+   Type   Permission  ..  Owner    Group  Size     Timestamp     Name
    =====  ==========  ==  =======  =====  =======  ============  =======================
    ``-``  rw-r--r--.  1   mepcott  myid   1276233  Feb 28 10:45  moby_dick.txt
    ``-``  rw-r--r--.  1   mepcott  myid    799645  Feb 10  2021  pride_and_prejudice.txt
