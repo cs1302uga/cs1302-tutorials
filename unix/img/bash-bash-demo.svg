@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1320" height="{$NEW_HEIGHT}">
+  <rect width="1320" height="168.55" rx="5" ry="5" class="a"/>
+  <svg y="0%" x="0%">
+    <circle cx="20" cy="20" r="6" fill="#ff5f58"/>
+    <circle cx="40" cy="20" r="6" fill="#ffbd2e"/>
+    <circle cx="60" cy="20" r="6" fill="#18c132"/>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="108.55" viewBox="0 0 128 10.855" width="1280" x="15" y="50">
+    <style>@keyframes i{0%{transform:translateX(0)}1.1%{transform:translateX(-128px)}9.7%{transform:translateX(-256px)}11.7%{transform:translateX(-384px)}12.5%{transform:translateX(-512px)}13.7%{transform:translateX(-640px)}18.1%{transform:translateX(-768px)}21.5%{transform:translateX(-896px)}22.7%{transform:translateX(-1024px)}25.5%{transform:translateX(-1152px)}26.9%{transform:translateX(-1280px)}28.3%{transform:translateX(-1408px)}31.2%{transform:translateX(-1536px)}41.4%{transform:translateX(-1792px)}57.3%{transform:translateX(-1920px)}59.3%{transform:translateX(-2048px)}65.1%{transform:translateX(-2176px)}66%{transform:translateX(-2304px)}72%{transform:translateX(-2560px)}91.3%{transform:translateX(-2688px)}92.9%{transform:translateX(-2816px)}95.5%{transform:translateX(-2944px)}96.5%{transform:translateX(-3072px)}to{transform:translateX(-3200px)}}.a{fill:#282d35}.f{fill:#b9c0cb;white-space:pre}</style>
+    <g font-family="Monaco,Consolas,Menlo,'Bitstream Vera Sans Mono','Powerline Symbols',monospace" font-size="1.67">
+      <defs>
+        <symbol id="1">
+          <text y="1.67" class="f">[mepcott@csci-odin</text>
+          <text x="19.038" y="1.67" class="f">~]$</text>
+        </symbol>
+        <symbol id="2">
+          <text y="1.67" class="f">[mepcott@csci-odin</text>
+          <text x="19.038" y="1.67" class="f">~]$</text>
+          <text x="23.046" y="1.67" class="f">bash</text>
+        </symbol>
+        <symbol id="3">
+          <text y="1.67" class="f">[mepcott@csci-odin</text>
+          <text x="19.038" y="1.67" class="f">~]$</text>
+          <text x="23.046" y="1.67" class="f">bash</text>
+          <text x="28.056" y="1.67" class="f">--norc</text>
+        </symbol>
+        <symbol id="4">
+          <text y="1.67" class="f">bash-4.2$</text>
+          <text x="10.02" y="1.67" class="f">exit</text>
+        </symbol>
+        <symbol id="5">
+          <text y="1.67" class="f">exit</text>
+        </symbol>
+        <symbol id="6">
+          <text y="1.67" class="f">[mepcott@csci-odin</text>
+          <text x="19.038" y="1.67" class="f">~]$</text>
+          <text x="23.046" y="1.67" class="f">exit</text>
+        </symbol>
+        <symbol id="a">
+          <path fill="transparent" d="M0 0h128v5H0z"/>
+        </symbol>
+        <symbol id="b">
+          <path fill="#6f7683" d="M0 0h1.102v2.171H0z"/>
+        </symbol>
+      </defs>
+      <path class="a" d="M0 0h128v10.855H0z"/>
+      <g style="animation-duration:12.787803s;animation-iteration-count:infinite;animation-name:i;animation-timing-function:steps(1,end)">
+        <svg width="3328">
+          <svg>
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="-.004"/>
+          </svg>
+          <svg x="128">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="22.996"/>
+            <use xlink:href="#1"/>
+          </svg>
+          <svg x="256">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="23.996"/>
+            <text y="1.67" class="f">[mepcott@csci-odin</text>
+            <text x="19.038" y="1.67" class="f">~]$</text>
+            <text x="23.046" y="1.67" class="f">b</text>
+          </svg>
+          <svg x="384">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="24.996"/>
+            <text y="1.67" class="f">[mepcott@csci-odin</text>
+            <text x="19.038" y="1.67" class="f">~]$</text>
+            <text x="23.046" y="1.67" class="f">ba</text>
+          </svg>
+          <svg x="512">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="25.996"/>
+            <text y="1.67" class="f">[mepcott@csci-odin</text>
+            <text x="19.038" y="1.67" class="f">~]$</text>
+            <text x="23.046" y="1.67" class="f">bas</text>
+          </svg>
+          <svg x="640">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="26.996"/>
+            <use xlink:href="#2"/>
+          </svg>
+          <svg x="768">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="27.996"/>
+            <use xlink:href="#2"/>
+          </svg>
+          <svg x="896">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="28.996"/>
+            <text y="1.67" class="f">[mepcott@csci-odin</text>
+            <text x="19.038" y="1.67" class="f">~]$</text>
+            <text x="23.046" y="1.67" class="f">bash</text>
+            <text x="28.056" y="1.67" class="f">-</text>
+          </svg>
+          <svg x="1024">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="29.996"/>
+            <text y="1.67" class="f">[mepcott@csci-odin</text>
+            <text x="19.038" y="1.67" class="f">~]$</text>
+            <text x="23.046" y="1.67" class="f">bash</text>
+            <text x="28.056" y="1.67" class="f">--</text>
+          </svg>
+          <svg x="1152">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="30.996"/>
+            <text y="1.67" class="f">[mepcott@csci-odin</text>
+            <text x="19.038" y="1.67" class="f">~]$</text>
+            <text x="23.046" y="1.67" class="f">bash</text>
+            <text x="28.056" y="1.67" class="f">--n</text>
+          </svg>
+          <svg x="1280">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="31.996"/>
+            <text y="1.67" class="f">[mepcott@csci-odin</text>
+            <text x="19.038" y="1.67" class="f">~]$</text>
+            <text x="23.046" y="1.67" class="f">bash</text>
+            <text x="28.056" y="1.67" class="f">--no</text>
+          </svg>
+          <svg x="1408">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="32.996"/>
+            <text y="1.67" class="f">[mepcott@csci-odin</text>
+            <text x="19.038" y="1.67" class="f">~]$</text>
+            <text x="23.046" y="1.67" class="f">bash</text>
+            <text x="28.056" y="1.67" class="f">--nor</text>
+          </svg>
+          <svg x="1536">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="33.996"/>
+            <use xlink:href="#3"/>
+          </svg>
+          <svg x="1664">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="-.004" y="2.146"/>
+            <use xlink:href="#3"/>
+          </svg>
+          <svg x="1792">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="9.996" y="2.146"/>
+            <use xlink:href="#3"/>
+            <text y="3.841" class="f">bash-4.2$</text>
+          </svg>
+          <svg x="1920">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="10.996" y="2.146"/>
+            <use xlink:href="#3"/>
+            <text y="3.841" class="f">bash-4.2$</text>
+            <text x="10.02" y="3.841" class="f">e</text>
+          </svg>
+          <svg x="2048">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="11.996" y="2.146"/>
+            <use xlink:href="#3"/>
+            <text y="3.841" class="f">bash-4.2$</text>
+            <text x="10.02" y="3.841" class="f">ex</text>
+          </svg>
+          <svg x="2176">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="12.996" y="2.146"/>
+            <use xlink:href="#3"/>
+            <text y="3.841" class="f">bash-4.2$</text>
+            <text x="10.02" y="3.841" class="f">exi</text>
+          </svg>
+          <svg x="2304">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="13.996" y="2.146"/>
+            <use xlink:href="#3"/>
+            <use xlink:href="#4" y="2.171"/>
+          </svg>
+          <svg x="2432">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="-.004" y="6.488"/>
+            <use xlink:href="#3"/>
+            <use xlink:href="#4" y="2.171"/>
+            <use xlink:href="#5" y="4.342"/>
+          </svg>
+          <svg x="2560">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="22.996" y="6.488"/>
+            <use xlink:href="#3"/>
+            <use xlink:href="#4" y="2.171"/>
+            <use xlink:href="#5" y="4.342"/>
+            <use xlink:href="#1" y="6.513"/>
+          </svg>
+          <svg x="2688">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="23.996" y="6.488"/>
+            <use xlink:href="#3"/>
+            <use xlink:href="#4" y="2.171"/>
+            <use xlink:href="#5" y="4.342"/>
+            <text y="8.183" class="f">[mepcott@csci-odin</text>
+            <text x="19.038" y="8.183" class="f">~]$</text>
+            <text x="23.046" y="8.183" class="f">e</text>
+          </svg>
+          <svg x="2816">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="24.996" y="6.488"/>
+            <use xlink:href="#3"/>
+            <use xlink:href="#4" y="2.171"/>
+            <use xlink:href="#5" y="4.342"/>
+            <text y="8.183" class="f">[mepcott@csci-odin</text>
+            <text x="19.038" y="8.183" class="f">~]$</text>
+            <text x="23.046" y="8.183" class="f">ex</text>
+          </svg>
+          <svg x="2944">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="25.996" y="6.488"/>
+            <use xlink:href="#3"/>
+            <use xlink:href="#4" y="2.171"/>
+            <use xlink:href="#5" y="4.342"/>
+            <text y="8.183" class="f">[mepcott@csci-odin</text>
+            <text x="19.038" y="8.183" class="f">~]$</text>
+            <text x="23.046" y="8.183" class="f">exi</text>
+          </svg>
+          <svg x="3072">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="26.996" y="6.488"/>
+            <use xlink:href="#3"/>
+            <use xlink:href="#4" y="2.171"/>
+            <use xlink:href="#5" y="4.342"/>
+            <use xlink:href="#6" y="6.513"/>
+          </svg>
+          <svg x="3200">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="-.004" y="8.659"/>
+            <use xlink:href="#4"/>
+            <use xlink:href="#5" y="2.171"/>
+            <use xlink:href="#6" y="4.342"/>
+            <text y="8.183" class="f">logout</text>
+          </svg>
+        </svg>
+      </g>
+    </g>
+  </svg>
+</svg>

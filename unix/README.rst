@@ -235,13 +235,6 @@ us run other programs. To see what version of ``bash`` is running, you run
 * Odin may have recieved updates since this tutorial was written.
   What version of ``bash`` is available when you are logged in?
 
-If you run ``bash`` without supplying any command-line arguments, then
-it launches a *subshell,* When the subshell exits, control returns to
-the shell that launched it. A subshell is not the login shell, even
-if they are instances of the same shell program. A more precise
-definition for *login shell* is the instance of the shell program
-that is launched when you login.
-
 The GNU of GNU bash is an extensive collection of free programs
 maintained by the Free Software Foundation. The word "GNU" is a |racronym|_ that
 stands for "GNU's Not Unix!" While the GNU project provides implementations of
@@ -288,7 +281,8 @@ directory at a time.
 ``date``, ``exit``, ``logout``, ``whoami``
 ++++++++++++++++++++++++++++++++++++++++++
 
-Listed below are some easy commands that you can try out immediately.
+Listed below are some easy commands that you can try out immediately, some
+of which you may have seen in earlier examples.
 
 .. table::
 
@@ -300,6 +294,21 @@ Listed below are some easy commands that you can try out immediately.
    ``logout``  Exit the login shell.
    ``whoami``  Print the user name associated with the current user.
    ==========  ======================================================================================
+
+If you run a shell inside your login shell, then a *subshell* is launched.
+A subshell is not the login shell, even if they are instances of the same
+shell program. A more precise definition for *login shell* is the *instance*
+of the shell program that is launched when you login. For example, if you
+run ``bash`` supplying the ``--norc`` command-line argument, then a ``bash``
+subshell is launched with no customizations (e.g., no custom prompt text).
+Just like most programs launched by a shell, when a subshell exits, control
+returns to the shell that launched it.
+
+.. code-block:: shell
+
+   $ bash --norc
+
+.. figure:: img/bash-bash-demo.svg
 
 Navigating the Filesystem
 -------------------------
