@@ -438,7 +438,7 @@ lists the contents of a directory in a tree-like format.
 
    $ ls -l cs1302-unix/books
 
-.. figure:: img/ls-long-demo.svg
+.. figure:: img/ls-long-demo.svg?1
 
 ``cd PATH``
 +++++++++++
