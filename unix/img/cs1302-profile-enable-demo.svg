@@ -7,7 +7,7 @@
     <circle cx="60" cy="20" r="6" fill="#18c132"/>
   </svg>
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="173.68" viewBox="0 0 124 17.368" width="1240" x="15" y="50">
-    <style>@keyframes i{0%{transform:translateX(-124px)}10.3%{transform:translateX(-248px)}15.4%{transform:translateX(-372px)}20.5%{transform:translateX(-496px)}25.6%{transform:translateX(-620px)}30.8%{transform:translateX(-744px)}35.9%{transform:translateX(-868px)}41%{transform:translateX(-992px)}46.2%{transform:translateX(-1116px)}48.7%{transform:translateX(-1240px)}51.3%{transform:translateX(-1364px)}66.7%{transform:translateX(-1488px)}74.4%{transform:translateX(-1612px)}79.5%{transform:translateX(-1736px)}to{transform:translateX(-1860px)}}.a{fill:#282d35}.f{fill:#b9c0cb;white-space:pre}</style>
+    <style>@keyframes i{0%{transform:translateX(-124px)}9.3%{transform:translateX(-248px)}14%{transform:translateX(-372px)}18.6%{transform:translateX(-496px)}23.3%{transform:translateX(-620px)}27.9%{transform:translateX(-744px)}32.6%{transform:translateX(-868px)}37.2%{transform:translateX(-992px)}41.9%{transform:translateX(-1116px)}44.2%{transform:translateX(-1240px)}46.5%{transform:translateX(-1364px)}60.5%{transform:translateX(-1488px)}67.4%{transform:translateX(-1612px)}72.1%{transform:translateX(-1736px)}to{transform:translateX(-1860px)}}.a{fill:#282d35}.f{fill:#b9c0cb;white-space:pre}</style>
     <g font-family="Monaco,Consolas,Menlo,'Bitstream Vera Sans Mono','Powerline Symbols',monospace" font-size="1.67">
       <defs>
         <symbol id="1">
@@ -66,7 +66,7 @@
         </symbol>
       </defs>
       <path class="a" d="M0 0h124v17.368H0z"/>
-      <g style="animation-duration:9.75s;animation-iteration-count:infinite;animation-name:i;animation-timing-function:steps(1,end)">
+      <g style="animation-duration:10.75s;animation-iteration-count:infinite;animation-name:i;animation-timing-function:steps(1,end)">
         <svg width="1984">
           <svg>
             <use xlink:href="#a"/>

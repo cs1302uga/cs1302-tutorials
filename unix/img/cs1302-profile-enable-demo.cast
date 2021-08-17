@@ -13,4 +13,4 @@
 [6.500000, "o", "\r\n"]
 [7.250000, "o", "Adding the following line to /home/myid/■■■■■■■/.bash_profile:\r\n\r\n    CS1302=/usr/local/mepcott/cs1302.profile; [[ -f $CS1302 ]] && . $CS1302\r\n\r\nCSCI 1302 shell profile is now enabled.\r\nChanges will take effect the next time you log in.\r\n"]
 [7.750000, "o", "[■■■■■■■@csci-odin ~]$ "]
-[9.750000, "o", "\r\n"]
+[10.750000, "o", "\r\n"]
