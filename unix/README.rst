@@ -402,6 +402,8 @@ and regular files in its output using different colors.
 
 .. figure:: img/ls-demo.svg?1
 
+* How many directories and regular files are in your home directory?
+
 .. code-block:: shell
 
    $ ls cs1302-unix
