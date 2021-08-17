@@ -272,6 +272,18 @@ Getting Help
 ``apropos``
 +++++++++++
 
+Inspecting Files
+----------------
+
+``cat``, ``head``, ``tail``
++++++++++++++++++++++++++++
+
+``less``
+++++++++
+
+``wc``
+++++++
+
 New Directories and Regular Files
 ---------------------------------
 
