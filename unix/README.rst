@@ -111,14 +111,16 @@ Local Terminal
 --------------
 
 When you run a terminal emulator, the usual default is for it
-to be connected to the same computer it is running on. This *local terminal*
-interface provides a shell to that computer. Consider the
+to connect to the same computer it is running on. This *local terminal*
+provides a shell with a command-line interface to that computer. Consider the
+figure below.
 
 .. figure:: img/local1.png
    :alt: iTerm 2 on macOS Big Sur (left) and MobaXterm 21.2 on Windows 10 (right)
 
-In the figure, we see the iTerm 2 terminal emulator running on macOS on the left
-and the MobaXterm terminal emulator running on Windows on the right.
+In the figure, we see two different terminal emulators running on two different
+computers: the iTerm 2 terminal emulator on the left is running on macOS
+and the MobaXterm terminal emulator on the right is running on Windows.
 
 Tutorial
 ========
