@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="682.88">
-  <rect width="1280" height="667.88" rx="5" ry="5" class="a"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="226.97">
+  <rect width="1280" height="211.97" rx="5" ry="5" class="a"/>
   <svg y="0%" x="0%">
     <circle cx="20" cy="20" r="6" fill="#ff5f58"/>
     <circle cx="40" cy="20" r="6" fill="#ffbd2e"/>
     <circle cx="60" cy="20" r="6" fill="#18c132"/>
   </svg>
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="607.88" viewBox="0 0 124 60.788" width="1240" x="15" y="50">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="151.97" viewBox="0 0 124 15.197" width="1240" x="15" y="50">
     <style>@keyframes j{0%{transform:translateX(0)}.85%{transform:translateX(-124px)}8.83%{transform:translateX(-248px)}9.58%{transform:translateX(-372px)}11.94%{transform:translateX(-496px)}11.95%{transform:translateX(-744px)}21%{transform:translateX(-868px)}21.68%{transform:translateX(-992px)}22.79%{transform:translateX(-1116px)}25.07%{transform:translateX(-1240px)}25.93%{transform:translateX(-1364px)}27.28%{transform:translateX(-1488px)}27.61%{transform:translateX(-1612px)}29.11%{transform:translateX(-1736px)}30.13%{transform:translateX(-1860px)}32.68%{transform:translateX(-1984px)}34.39%{transform:translateX(-2108px)}34.91%{transform:translateX(-2232px)}35.94%{transform:translateX(-2356px)}36.6%{transform:translateX(-2480px)}40.41%{transform:translateX(-2604px)}40.42%{transform:translateX(-2728px)}40.61%{transform:translateX(-2852px)}51.61%{transform:translateX(-2976px)}52.51%{transform:translateX(-3100px)}53.71%{transform:translateX(-3224px)}54.78%{transform:translateX(-3348px)}55.58%{transform:translateX(-3472px)}58.12%{transform:translateX(-3596px)}58.48%{transform:translateX(-3720px)}59.62%{transform:translateX(-3844px)}60.43%{transform:translateX(-3968px)}64.01%{transform:translateX(-4092px)}65.79%{transform:translateX(-4216px)}66.19%{transform:translateX(-4340px)}67.95%{transform:translateX(-4464px)}68.89%{transform:translateX(-4588px)}71.77%{transform:translateX(-4712px)}76.56%{transform:translateX(-4836px)}77.99%{transform:translateX(-4960px)}78.87%{transform:translateX(-5084px)}79.39%{transform:translateX(-5208px)}80.93%{transform:translateX(-5332px)}87.23%{transform:translateX(-5456px)}87.24%{transform:translateX(-5704px)}to{transform:translateX(-5828px)}}.a{fill:#282d35}.f,.g{fill:#b9c0cb;white-space:pre}.g{fill:#005fff}</style>
     <g font-family="Monaco,Consolas,Menlo,'Bitstream Vera Sans Mono','Powerline Symbols',monospace" font-size="1.67">
       <defs>
@@ -97,13 +97,13 @@
           <text x="40.08" y="1.67" class="f">sherlock_holmes.txt</text>
         </symbol>
         <symbol id="a">
-          <path fill="transparent" d="M0 0h124v28H0z"/>
+          <path fill="transparent" d="M0 0h124v7H0z"/>
         </symbol>
         <symbol id="b">
           <path fill="#6f7683" d="M0 0h1.102v2.171H0z"/>
         </symbol>
       </defs>
-      <path class="a" d="M0 0h124v60.788H0z"/>
+      <path class="a" d="M0 0h124v15.197H0z"/>
       <g style="animation-duration:21.073267s;animation-iteration-count:infinite;animation-name:j;animation-timing-function:steps(1,end)">
         <svg width="5952">
           <svg>

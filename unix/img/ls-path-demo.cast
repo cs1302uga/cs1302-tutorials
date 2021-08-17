@@ -1,4 +1,4 @@
-{"version": 2, "width": 124, "height": 28, "timestamp": 1629228547, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
+{"version": 2, "width": 124, "height": 7, "timestamp": 1629228547, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
 [0.179272, "o", "■■■■■■■@csci-odin:~$ "]
 [1.861318, "o", "l"]
 [2.017779, "o", "s"]
