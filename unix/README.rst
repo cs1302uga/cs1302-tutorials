@@ -414,6 +414,13 @@ path to that directory as a command-line argument.
 
 .. figure:: img/ls-path-demo.svg?1
 
+* The paths used in the examples above are *relative paths*. Instead of describing
+  the traversal path starting from ``/``, they describe the traversal path starting
+  from the current working directory. The ``ls`` command also works with absolute paths.
+  What is the command to list the files in your home directory using an
+  absolute path?
+
+
 
 ``ls -l``, ``ls -h``, ``ls -lh``
 ++++++++++++++++++++++++++++++++
