@@ -167,6 +167,9 @@ Tutorial
 Logging into a Unix Machine
 ---------------------------
 
+``ssh``
++++++++
+
 * ``ssh``
 * home directory
 * ``whoami``
