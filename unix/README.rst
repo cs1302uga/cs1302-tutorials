@@ -103,7 +103,7 @@ your computer's operating system.
 
 If you are using a Linux computer or a computer running a Unix-like operating
 system (other than macOS), then do not fret -- they almost always come with a
-terminular emulator installed. If you are not sure how to access the terminal
+terminal emulator installed. If you are not sure how to access the terminal
 emulator provided by your operating system, then please consult your operating
 system's documentation.
 
@@ -244,7 +244,7 @@ us run other programs. To see what version of ``bash`` is running, you run
 
 .. figure:: img/bash-version-demo.svg
 
-* Odin may have recieved updates since this tutorial was written.
+* Odin may have received updates since this tutorial was written.
   What version of ``bash`` is available when you are logged in?
 
 The GNU of GNU bash is an extensive collection of free programs
@@ -270,7 +270,7 @@ You can see where your home directory is on the system with the help of the
 ``pwd`` (print working directory) command. It always displays the absolute
 "path" of the directory that you are presently in. It is called an absolute
 path, because it describes the path of directories that you would need to
-traverse to get from the root of the filesystem (i.e., the ``/`` directory)
+traverse to get from the root of the file system (i.e., the ``/`` directory)
 to the current working directory one directory at a time.
 
 .. code-block:: shell
@@ -336,7 +336,7 @@ To continue with this tutorial, the **CSCI 1302 shell profile** needs
 to be enabled on your Odin account. Enabling this profile is also required
 to complete coursework in CSCI 1302. A *shell profile* includes commands
 and setting customizations that take effect when the profile is *sourced* (loaded).
-When ``bash`` is launched as a login shell, it sources a default system pofile,
+When ``bash`` is launched as a login shell, it sources a default system profile,
 then it looks in the user's home directory for ``.bash_profile``, ``.bash_login``,
 and ``.profile`` files, in that order, and sources the first one that is available.
 
@@ -348,7 +348,7 @@ followed by lines prefixed with ``[cs1302]`` when you login to Odin.
 
 * If you see something similar when you login, then the CSCI 1302 shell profile
   is enabled on your account, and you should proceed immediately to the next section
-  of this turorial.
+  of this tutorial.
 
 * If you do not see any of that when you login, then the CSCI 1302 shell profile
   is not enabled on your account. To enable it, execute the command below. The
@@ -363,7 +363,7 @@ followed by lines prefixed with ``[cs1302]`` when you login to Odin.
 
   * Make sure that you logout, then login again before continuing.
 
-Navigating the Filesystem
+Navigating the File System
 -------------------------
 
 Earlier in this tutorial, you experienced the ``pwd`` (print working directory)
@@ -373,8 +373,8 @@ operating systems; that is, in most cases the words "directory" and "folder"
 are interchangeable. Your current working directory is the directory that you
 are currently executing commands in. There are other directories, and in Unix,
 they all organized under a top-most directory called ``/``, representing the
-root of the filesystem. The macOS and Linux operating systems organize their
-filesystems the same way. If you are coming from a Windows background, then it
+root of the file system. The macOS and Linux operating systems organize their
+file systems the same way. If you are coming from a Windows background, then it
 is not unreasonable to compare ``/`` to the ``C:`` drive.
 
 For this part of the tutorial, we are going to assume that you have
@@ -427,8 +427,8 @@ path to that directory as a command-line argument.
 ``cd ~``, ``cd``
 ++++++++++++++++
 
-Timesavers
-----------
+Time-saving Tips
+----------------
 
 Tab Completion
 ++++++++++++++
@@ -531,7 +531,7 @@ terminal
    laptops's keyboard and display might be considered its terminal.
 
 terminal emulator
-    A computer program that emulates a terminal, usually whinin a window.
+    A computer program that emulates a terminal, usually within a window.
     If the emulated terminal is connected to the same computer that
     the terminal emulator program is running on, then it's often
     referred to as a *local terminal*; however, if the emulated
