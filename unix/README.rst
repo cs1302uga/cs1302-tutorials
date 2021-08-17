@@ -220,14 +220,19 @@ directory at a time.
        └── myid
            └── mepcott
 
-* What your username?
 * What is the absolute path of your home directory?
 
-``whoami``
-++++++++++
+``whoami`` and ``date``
++++++++++++++++++++++++
 
-``date``
-++++++++
+.. table::
+
+   ==========  =====================================================
+   Command     Description
+   ==========  =====================================================
+   ``date``    Print the system date and time.
+   ``whoami``  Print the user name associated with the current user.
+   ==========  =====================================================
 
 Navigating the Filesystem
 -------------------------
