@@ -420,8 +420,9 @@ path to that directory as a command-line argument.
   What is the command to list the files in your home directory using an
   absolute path?
 
-Sometimes it is hard to see the whole picture with the ``ls`` command.
-This is where a commands like ``tree`` comes in handy. The ``tree`` command
+While ``ls`` is nice and probably one of the most used Unix commands of all time,
+it doesn't really let us see the whole picture without us issuing repetetive
+``ls`` commands. To see the bigger picture, use the ``tree`` command, which
 lists the contents of a directory in a tree-like format.
 
 .. code-block:: shell
