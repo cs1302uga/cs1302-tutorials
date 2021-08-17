@@ -227,16 +227,18 @@ directory at a time.
 ``date``, ``exit``, ``logout``, ``whoami``
 ++++++++++++++++++++++++++++++++++++++++++
 
+List below are some other easy commands that you can try out immediately.
+
 .. table::
 
-   ==========  =====================================================
+   ==========  ======================================================================================
    Command     Description
-   ==========  =====================================================
+   ==========  ======================================================================================
    ``date``    Print the system date and time.
-   ``exit``    Exit the current shell.
+   ``exit``    Exit the current shell -- if the current shell is a login shell, this runs ``logout``.
    ``logout``  Exit the login shell.
    ``whoami``  Print the user name associated with the current user.
-   ==========  =====================================================
+   ==========  ======================================================================================
 
 Navigating the Filesystem
 -------------------------
