@@ -232,7 +232,7 @@ names are displayed without the ``$`` prefix.
 
 .. figure:: img/env-demo.svg
 
-* What is the value of your ``$HOME`` variable
+* What is the value of your ``$HOME`` variable?
 
 Remember, the shell itself is a program, and one of the things it does is help
 us run other programs. To see what version of ``bash`` is running, you run
