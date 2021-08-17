@@ -74,14 +74,14 @@ of text in this tutorial that begins with a single ``$`` character, then it
 means that the text after the ``$`` character represents a command that
 should be typed at a prompt. In such examples, the first ``$`` character
 is **not** part of the command. To emphasize this, consider the following
-example:
+example of the ``date`` command:
 
 .. code-block:: shell
 
    $ date
 
-When you try to execute this command on your own, do not include the first
-``$`` character in what you type or paste into your terminal emulator.  If
+When you try to execute the command on your own, do not include the
+first ``$`` character in what you type or paste into your terminal emulator.  If
 you forget to omit it, then your shell will interpret it as part of the
 command itself. This is illustrated in the figures below.
 
