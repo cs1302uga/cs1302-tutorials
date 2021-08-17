@@ -211,8 +211,8 @@ command-line argument.
 
 .. figure:: img/bash-version-demo.svg
 
-   * Odin may have recieved updates since this tutorial was written.
-     What version of ``bash`` is available when you login to Odin?
+* Odin may have recieved updates since this tutorial was written.
+  What version of ``bash`` is available when you are logged in?
 
 You can even use ``bash`` to run ``bash``.
 
