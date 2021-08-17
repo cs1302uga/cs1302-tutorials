@@ -308,7 +308,7 @@ returns to the shell that launched it.
 
    $ bash --norc
 
-.. figure:: img/bash-bash-demo.svg
+.. figure:: img/bash-bash-demo.svg?1
 
 Navigating the Filesystem
 -------------------------
