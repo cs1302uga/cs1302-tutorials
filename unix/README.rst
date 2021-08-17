@@ -54,8 +54,8 @@ terminal window.
 Tutorial
 ========
 
-Note About Prompts
-------------------
+Prompt and Circumstance
+-----------------------
 
 The text that a shell displays for its prompt will differ depending
 the shell program itself and a user's profile settings. Consider the
@@ -90,6 +90,7 @@ you forget to omit it, then your shell will interpret it as part of the
 command itself. This is illustrated in the figure below.
 
 .. figure:: img/prompt1.png
+
 
 
 Glossary
