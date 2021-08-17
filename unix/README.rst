@@ -370,7 +370,7 @@ command and were provided a brief introduction to absolute paths. In Unix, a
 operating systems; that is, in most cases the words "directory" and "folder"
 are interchangeable. Your current working directory is the directory that you
 are currently executing commands in. There are other directories, and in Unix,
-they all organized under a top-most directory called "``/``," representing the
+they all organized under a top-most directory called ``/``, representing the
 root of the filesystem. The macOS and Linux operating systems organize their
 filesystems this way. If you are coming from a Windows background, then it is
 not unreasonable to compare ``/`` to the ``C:`` drive.
