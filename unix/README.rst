@@ -222,8 +222,8 @@ directory at a time.
 
 * What is the absolute path of your home directory?
 
-``whoami`` and ``date``
-+++++++++++++++++++++++
+``date``, ``exit``, ``logout``, ``whoami``
+++++++++++++++++++++++++++++++++++++++++++
 
 .. table::
 
