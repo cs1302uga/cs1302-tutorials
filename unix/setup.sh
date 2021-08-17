@@ -6,13 +6,16 @@ if [ ! -d $DIR ]; then
   mkdir $DIR
   cd $DIR
   mkdir -p notes/cs1302
-  mkdir -p notes/cs1302/ce00
-  mkdir -p notes/cs1302/ce01
+  echo "# Unix Notes" > notes/cs1302/unix.md
+  echo "# Java Notes" > notes/cs1302/java.md
   mkdir -p notes/cs1730
-  echo "# ce00 NOTES" > notes/cs1302/ce00/NOTES.md
-  echo "# ce01 NOTES" > notes/cs1302/ce01/NOTES.md
+  echo "# C/C++ Notes" > notes/cs1302/cpp.md
+  mkdir -p books
+  wget -qO books/pride_and_prejudice.txt https://www.gutenberg.org/files/1342/1342-0.txt
+  wget -qO books/sherlock_holmes.txt https://www.gutenberg.org/files/1661/1661-0.txt
+  wget -qO books/moby_dick.txt https://www.gutenberg.org/files/2701/2701-0.txt
   echo "# README" > README.md
   echo "subdirectory $DIR successfully created"
 else
   >&2 echo "subdirectory $DIR already exists"
-fi  
+fi
