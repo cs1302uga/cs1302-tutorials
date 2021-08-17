@@ -336,9 +336,6 @@ Job Control
 What is a Job?
 ++++++++++++++
 
-Foreground vs. Background Jobs
-++++++++++++++++++++++++++++++
-
 ``C-c``, ``C-z``
 ++++++++++++++++
 
