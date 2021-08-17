@@ -199,12 +199,29 @@ the return key as seen in the terminal recording below.
 If you have trouble logging into Odin, then please
 contact support@cs.uga.edu as soon as possible.
 
-* ``ssh``
-* home directory
-* ``whoami``
+``pwd``
++++++++
+
+When you login to Odin, you are placed in your *home directory* (home folder).
+You can see where your home directory is on the system with the help of the
+``pwd`` (present working directory) command. It always displays the absolute
+"path" of the directory that you are presently in.
+
+.. code-block:: shell
+
+   $ pwd
+
+TODO write more!
+
+``whoami``
+++++++++++
+
+``date``
+++++++++
 
 Navigating the Filesystem
 -------------------------
+
 
 * ``ls``
 * ``cd``, path, relative path, absolute path
