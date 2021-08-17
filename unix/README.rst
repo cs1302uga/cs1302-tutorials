@@ -346,8 +346,14 @@ followed by lines prefixed with ``[cs1302]`` when you login to Odin.
 
 .. figure:: img/cs1302-profile-check-demo.svg?1
 
-If you do not see any of that when you login, then you need to add a line to the
-``.bash_profile`` file in your home directory according to the instructions below.
+* If you see something similar when you login, then the **CSCI 1302 shell profile**
+  is enabled on your account, and you should proceed immediately to the next section
+  of this turorial.
+
+* If you do not see any of that when you login, then the **CSCI 1302 shell profile**
+  is not enabled on your account. You need to add a line to the ``.bash_profile`` file
+  in your home directory following the instructions provided below.
+
 Please read the instructions carefully. They only need to be performed done once!
 If possible, we prefer that you copy-paste the relevant line instead of manually
 typing it out.
