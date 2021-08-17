@@ -389,12 +389,17 @@ from the Internet.
 
 .. figure:: img/nav-prep-demo.svg
 
-``ls``
-++++++
+``ls``, ``ls PATH``
++++++++++++++++++++
+
+To list the files in your current working directory, use the ``ls`` (list)
+command.
 
 .. code-block:: shell
 
    $ ls
+
+.. figure:: img/ls-demo.svg
 
 ``ls -l``, ``ls -h``, ``ls -lh``
 ++++++++++++++++++++++++++++++++
