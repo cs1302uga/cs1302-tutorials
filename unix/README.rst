@@ -346,9 +346,9 @@ followed by lines prefixed with ``[cs1302]`` when you login to Odin.
 
 .. figure:: img/cs1302-profile-check-demo.svg?1
 
-* If you see something similar when you login, then the CSCI 1302 shell profile
-  is enabled on your account, and you should proceed immediately to the next section
-  of this tutorial.
+* If you see something similar to what is presented above when you login,
+  then the CSCI 1302 shell profile is enabled on your account, and you should
+  proceed immediately to the next section of this tutorial.
 
 * If you do not see any of that when you login, then the CSCI 1302 shell profile
   is not enabled on your account. To enable it, execute the command below. The
@@ -431,9 +431,14 @@ lists the contents of a directory in a tree-like format.
 
 .. figure:: img/tree-path-demo.svg
 
+``ls -l``, ``ls -lh``
++++++++++++++++++++++
 
-``ls -l``, ``ls -h``, ``ls -lh``
-++++++++++++++++++++++++++++++++
+.. code-block:: shell
+
+   $ ls -l cs1302-unix/books
+
+.. figure:: img/ls-long-demo.svg
 
 ``cd PATH``
 +++++++++++
