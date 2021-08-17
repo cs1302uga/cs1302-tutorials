@@ -400,7 +400,7 @@ and regular files in its output using different colors.
 
    $ ls
 
-.. figure:: img/ls-demo.svg
+.. figure:: img/ls-demo.svg?1
 
 ``ls -l``, ``ls -h``, ``ls -lh``
 ++++++++++++++++++++++++++++++++
