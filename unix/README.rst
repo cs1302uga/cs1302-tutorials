@@ -124,6 +124,14 @@ and the MobaXterm terminal emulator on the right is running on Windows. While
 the commands that were entered by the user are similar in both images, the output
 is different because the commands are executing on different machines.
 
+Most, if not all, of the basic commands that we present in the tutorial
+should work within a local terminal. When they do not, you should consult
+the documentation for your combination of terminal emulator and operating
+system.
+
+Remote Terminal
+---------------
+
 Tutorial
 ========
 
