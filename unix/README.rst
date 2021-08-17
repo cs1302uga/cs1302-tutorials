@@ -190,7 +190,7 @@ replace ``username`` with your MyID:
    $ ssh username@odin.cs.uga.edu
 
 When you type in your password, it will not display anything to the
-screen--this the expected behavior. Simply type in your password and hit return.
+screen -- this the expected behavior. Simply type in your password and hit return.
 If have trouble logging into ``odin``, then please contact support@cs.uga.edu
 as soon as possible.
 
