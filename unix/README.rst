@@ -77,14 +77,17 @@ the prompt with a single ``$`` character. Therefore, if you see a line
 of text in this tutorial that begins with a single ``$`` character, then it
 means that the text after the ``$`` character represents a command that
 should be typed at a prompt. In such examples, the first ``$`` character
-is **not** part of the command. Consider the following example:
+is **not** part of the command. To emphasize this, consider the following
+example:
 
 .. code-block:: shell
 
    $ date
 
-The figure below illustrates two different ways someone might attempt
-to type out the example.
+When you try to execute this command on your own, do not include the first
+``$`` character in what you type or paste into your terminal emulator.  If
+you forget to omit it, then your shell will interpret it as part of the
+command itself. This is illustrated in the figure below.
 
 .. figure:: img/prompt1.png
 
