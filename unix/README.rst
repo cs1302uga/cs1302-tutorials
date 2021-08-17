@@ -402,6 +402,13 @@ and regular files in its output using different colors.
 
 .. figure:: img/ls-demo.svg?1
 
+.. code-block:: shell
+
+   $ ls cs1302-unix
+
+.. figure:: img/ls-path-demo.svg
+
+
 ``ls -l``, ``ls -h``, ``ls -lh``
 ++++++++++++++++++++++++++++++++
 
