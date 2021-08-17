@@ -221,6 +221,8 @@ directory at a time.
            └── mepcott
 
 * What is the absolute path of your home directory?
+* What character does an absolute path always start with, and
+  what does it represent?
 
 ``date``, ``exit``, ``logout``, ``whoami``
 ++++++++++++++++++++++++++++++++++++++++++
@@ -239,10 +241,14 @@ directory at a time.
 Navigating the Filesystem
 -------------------------
 
+``ls``
+++++++
 
-* ``ls``
-* ``cd``, path, relative path, absolute path
-* ``..``
+``ls -l``, ``ls -h``, ``ls -lh``
+++++++++++++++++++++++++++++++++
+
+``cd path``, ``cd ..``, ``cd ~``, ``cd``
+++++++++++++++++++++++++++++++++++++++++
 
 New Directories and Regular Files
 ---------------------------------
