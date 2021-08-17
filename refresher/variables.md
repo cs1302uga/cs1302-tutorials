@@ -1,6 +1,6 @@
 # Refresher: Reference Variables
 
-![Approved for: Spring 2021](https://img.shields.io/badge/Approved%20for-Fall%202021-blue)
+![Approved for: Fall 2021](https://img.shields.io/badge/Approved%20for-Fall%202021-blue)
 
 ## Introduction
 
