@@ -467,8 +467,8 @@ is included in the "long" output format:
 
        The first character denotes the filetype. Common examples include:
 
-       :``d``:
-          directory file
+       ``d``
+           directory file
 
 .. [2] **Hard Links:** TODO
 
