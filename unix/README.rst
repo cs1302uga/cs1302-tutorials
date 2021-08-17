@@ -196,6 +196,11 @@ Simply type in your password, then press the return key to continue.
 If you have trouble logging into Odin, then please
 contact support@cs.uga.edu as soon as possible.
 
+When typing into a remote terminal, the commands that you enter
+are executed on the remote computer. It might look like you are
+running programs locally, but they are simply being displayed
+locally.
+
 ``echo``, ``env``, ``bash``
 +++++++++++++++++++++++++++
 
