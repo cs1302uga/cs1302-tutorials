@@ -344,7 +344,7 @@ You may already have the **CSCI 1302 shell profile** enabled. If you do, then
 you will see ``Setting up environment for CSCI 1302...``
 followed by lines prefixed with ``[cs1302]`` when you login to Odin.
 
-.. figure:: img/cs1302-profile-check-demo.svg
+.. figure:: img/cs1302-profile-check-demo.svg?1
 
 If you do not see any of that when you login, then you need to add a line to the
 ``.bash_profile`` file in your home directory according to the instructions below.
