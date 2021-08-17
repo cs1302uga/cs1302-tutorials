@@ -212,8 +212,7 @@ You can display this and other environment variables in a line of text using the
 
 .. figure:: img/echo-shell-demo.svg
 
-* Odin may have recieved updates since this tutorial was written.
-  Is ``bash`` still the login shell?
+* Is ``bash`` still the login shell when you login?
   If not, then please inform your instructor!
 
 Remember, the shell itself is a program, and one of the things it does is help
