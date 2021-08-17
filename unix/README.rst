@@ -293,6 +293,8 @@ New Directories and Regular Files
 ``touch``
 +++++++++
 
+Moving and Removing
+-------------------
 
 Glossary
 ========
