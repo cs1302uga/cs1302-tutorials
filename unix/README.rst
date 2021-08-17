@@ -320,6 +320,16 @@ Moving and Removing
 Piping and File Redirection
 ---------------------------
 
+``|``
++++++
+
+``>``, ``>>``
++++++++++++++
+
+``<``
++++++
+
+
 Job Control
 -----------
 
