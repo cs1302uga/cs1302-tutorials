@@ -1,4 +1,4 @@
-{"version": 2, "width": 128, "height": 14, "timestamp": 1629218721, "env": {"SHELL": "/bin/zsh", "TERM": "xterm-256color"}}
+{"version": 2, "width": 128, "height": 12, "timestamp": 1629218721, "env": {"SHELL": "/bin/zsh", "TERM": "xterm-256color"}}
 [0.000000, "o", "Welcome to odin.cs.uga.edu.\r\n"]
 [0.100000, "o", "\u001b[2m"]
 [0.200000, "o", " ⋮ ⋮ ⋮ \r\n"]
