@@ -329,6 +329,23 @@ The ``bash`` program can also be used to execute scripts containing sequences
 of commands and more. We will cover the creation and execution of scripts in
 another reading.
 
+``.bash_profile``
++++++++++++++++++
+
+To continue with this tutorial, the **CSCI 1302 shell profile** needs
+to be enabled on your Odin account. Enabling this profile is also required
+to complete coursework in CSCI 1302. A *shell profile* includes commands
+and setting customizations that take effect when the profile is *sourced* (loaded).
+When ``bash`` is launched as a login shell, it sources a default system pofile,
+then it looks in the user's home directory for ``.bash_profile``, ``.bash_login``,
+and ``.profile`` files, in that order, and sources the first one that is available.
+
+To enable the **CSCI 1302 shell profile**, you need to modify the ``.bash_profile``
+file in your home directory by adding a single line to it. This only needs to be
+done once! If possible, we prefer that you copy-paste the line instead of manually
+typing it out.
+
+
 Navigating the Filesystem
 -------------------------
 
