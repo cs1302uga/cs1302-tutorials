@@ -379,7 +379,9 @@ is not unreasonable to compare ``/`` to the ``C:`` drive.
 
 For this part of the tutorial, we are going to assume that you have
 some specific files in your home directory. To make sure that you
-have these files, you should execute the command below.
+have these files, you should execute the command below. The command
+may take a few seconds to run as it involves downloading some files
+from the Internet.
 
 .. code-block:: shell
 
