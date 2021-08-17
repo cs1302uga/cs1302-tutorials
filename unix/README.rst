@@ -134,9 +134,9 @@ Remote Terminal
 
 To make sure that readers all have roughly the same experience with the tutorial,
 we will instruct them to use a local terminal to launch a program that will
-connect their terminal emulator to a remote computer. Once connected,
-that *remote terminal* provides a shell with a command-line interface to
-that remote computer. Consider the figure below.
+connect their terminal emulator to a remote computer (often referred to as a
+server). Once connected, that *remote terminal* provides a shell with a command-line
+interface to that remote computer. Consider the figure below.
 
 .. figure:: img/remote-terminals.png
    :alt: iTerm 2 on macOS Big Sur (left) and MobaXterm 21.2 on Windows 10 (right)
@@ -146,7 +146,13 @@ In the figure, we see two different terminal emulators running on two different
 machines; however, both are connected to the same remote computer. Just like
 you need credentials (e.g., a personal username and password) to access certain
 websites or online apps, you will also need credentials to initiate a remote
-terminal session.
+terminal session. In the figure, the same user credentials were used in both
+images, which means that that they are both logged in as the same user on
+the remote computer.
+
+.. figure:: img/multi-user.png
+
+
 
 Tutorial
 ========
