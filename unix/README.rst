@@ -204,7 +204,8 @@ is GNU `bash <bash>`__. On most Unix-like systems, the login procedure not only
 launches a login shell, it also exposes the location of the login shell program
 via a ``$SHELL`` variable that is available in your shell's running environment.
 You can display this and other environment variables in a line of text using the
-``echo`` command.
+``echo`` command. Once the ``echo`` command is finished running, control returns
+to the shell that launched it.
 
 .. code-block:: shell
 
@@ -217,8 +218,7 @@ You can display this and other environment variables in a line of text using the
 
 Remember, the shell itself is a program, and one of the things it does is help
 us run other programs. To see what version of ``bash`` is running, you run
-another instance of ``bash`` itself with ``--version`` supplied as a
-command-line argument.
+``bash`` itself with ``--version`` supplied as a command-line argument.
 
 .. code-block:: shell
 
