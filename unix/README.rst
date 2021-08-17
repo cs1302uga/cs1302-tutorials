@@ -85,9 +85,9 @@ first ``$`` character in what you type or paste into your terminal emulator.  If
 you forget to omit it, then your shell will interpret it as part of the
 command itself. This is illustrated in the figures below.
 
-.. figure:: img/prompt-correct.png
+.. figure:: img/prompt-correct.png?2
 
-.. figure:: img/prompt-incorrect.png
+.. figure:: img/prompt-incorrect.png?2
 
 Required Setup
 --------------
