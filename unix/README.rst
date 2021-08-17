@@ -120,7 +120,9 @@ figure below.
 
 In the figure, we see two different terminal emulators running on two different
 computers: the iTerm 2 terminal emulator on the left is running on macOS
-and the MobaXterm terminal emulator on the right is running on Windows.
+and the MobaXterm terminal emulator on the right is running on Windows. While
+the commands that were entered by the user are similar in both images, the output
+is different because the commands are executing on different machines.
 
 Tutorial
 ========
