@@ -215,8 +215,8 @@ You can see where your home directory is on the system with the help of the
 .. code-block:: plain
 
    /
-   ├── home
-   │   └── mepcott
+   └── home
+       └── mepcott
 
 
 ``whoami``
