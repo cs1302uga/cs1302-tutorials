@@ -90,8 +90,8 @@ command itself. This is illustrated in the figure below.
 
 .. figure:: img/prompt1.png
 
-Getting Started
----------------
+Required Setup
+--------------
 
 Before you continue, you need to make sure that your computer is setup to
 follow along with this tutorial. If you are using a Windows computer or a Mac,
