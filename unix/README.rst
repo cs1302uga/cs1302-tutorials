@@ -267,6 +267,7 @@ Tab Completion
 ++++++++++++++
 
 Keyboard Shortcuts
+++++++++++++++++++
 
 Getting Help
 ------------
