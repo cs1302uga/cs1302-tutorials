@@ -196,13 +196,29 @@ Simply type in your password, then press the return key to continue.
 If you have trouble logging into Odin, then please
 contact support@cs.uga.edu as soon as possible.
 
-``bash``
-++++++++
+``echo``, ``env``, ``bash``
++++++++++++++++++++++++++++
 
 On Odin, the shell that is launched when you login (i.e., the *login shell*)
-is GNU `bash <bash>`__. Remember, the shell itself is a program, and one of
-the things it does is help us run other programs. To see what version of
-``bash`` is running, you run ``bash`` with ``--version`` supplied as a
+is GNU `bash <bash>`__. On most Unix-like systems, the login procedure not only
+launches a login shell, it also exposes the location of the login shell program
+via a ``$SHELL`` variable that is available in your shell's running environment.
+You can display this and other environment variables in a line of text using the
+``echo`` command.
+
+.. code-block:: shell
+
+   $ echo "login shell: $SHELL"
+
+.. figure:: img/echo-shell-demo.svg
+
+* Odin may have recieved updates since this tutorial was written.
+  Is ``bash`` still the login shell?
+  If not, then please inform your instructor!
+
+Remember, the shell itself is a program, and one of the things it does is help
+us run other programs. To see what version of ``bash`` is running, you run
+another instance of ``bash`` itself with ``--version`` supplied as a
 command-line argument.
 
 .. code-block:: shell
