@@ -154,8 +154,8 @@ as illustrated in the figure below.
 
 .. figure:: img/multi-user.png
 
-
-
+Most Unix-like operating systems support multiple users and multiple sessions
+per user.
 
 Tutorial
 ========
