@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1320" height="183.55">
-  <rect width="1320" height="168.55" rx="5" ry="5" class="a"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1320" height="205.26">
+  <rect width="1320" height="190.26" rx="5" ry="5" class="a"/>
   <svg y="0%" x="0%">
     <circle cx="20" cy="20" r="6" fill="#ff5f58"/>
     <circle cx="40" cy="20" r="6" fill="#ffbd2e"/>
     <circle cx="60" cy="20" r="6" fill="#18c132"/>
   </svg>
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="108.55" viewBox="0 0 128 10.855" width="1280" x="15" y="50">
-    <style>@keyframes i{0%{transform:translateX(0)}1%{transform:translateX(-128px)}9.2%{transform:translateX(-256px)}11.1%{transform:translateX(-384px)}11.8%{transform:translateX(-512px)}13%{transform:translateX(-640px)}17.2%{transform:translateX(-768px)}20.4%{transform:translateX(-896px)}21.5%{transform:translateX(-1024px)}24.1%{transform:translateX(-1152px)}25.5%{transform:translateX(-1280px)}26.8%{transform:translateX(-1408px)}29.6%{transform:translateX(-1536px)}39.2%{transform:translateX(-1792px)}54.3%{transform:translateX(-1920px)}56.2%{transform:translateX(-2048px)}61.7%{transform:translateX(-2176px)}62.5%{transform:translateX(-2304px)}68.2%{transform:translateX(-2560px)}86.5%{transform:translateX(-2688px)}88%{transform:translateX(-2816px)}90.5%{transform:translateX(-2944px)}91.4%{transform:translateX(-3072px)}94.7%{transform:translateX(-3200px)}to{transform:translateX(-3328px)}}.a{fill:#282d35}.f{fill:#b9c0cb;white-space:pre}</style>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="130.26" viewBox="0 0 128 13.026" width="1280" x="15" y="50">
+    <style>@keyframes i{0%{transform:translateX(0)}1%{transform:translateX(-128px)}9.1%{transform:translateX(-256px)}11%{transform:translateX(-384px)}11.7%{transform:translateX(-512px)}12.8%{transform:translateX(-640px)}16.9%{transform:translateX(-768px)}20.1%{transform:translateX(-896px)}21.1%{transform:translateX(-1024px)}23.8%{transform:translateX(-1152px)}25.1%{transform:translateX(-1280px)}26.4%{transform:translateX(-1408px)}29.1%{transform:translateX(-1536px)}38.6%{transform:translateX(-1664px)}38.7%{transform:translateX(-1792px)}53.5%{transform:translateX(-1920px)}55.3%{transform:translateX(-2048px)}60.8%{transform:translateX(-2176px)}61.6%{transform:translateX(-2304px)}67.2%{transform:translateX(-2560px)}85.2%{transform:translateX(-2688px)}86.7%{transform:translateX(-2816px)}89.2%{transform:translateX(-2944px)}90.1%{transform:translateX(-3072px)}93.3%{transform:translateX(-3200px)}to{transform:translateX(-3328px)}}.a{fill:#282d35}.f{fill:#b9c0cb;white-space:pre}</style>
     <g font-family="Monaco,Consolas,Menlo,'Bitstream Vera Sans Mono','Powerline Symbols',monospace" font-size="1.67">
       <defs>
         <symbol id="1">
@@ -41,14 +41,14 @@
           <text y="1.67" class="f">logout</text>
         </symbol>
         <symbol id="a">
-          <path fill="transparent" d="M0 0h128v5H0z"/>
+          <path fill="transparent" d="M0 0h128v6H0z"/>
         </symbol>
         <symbol id="b">
           <path fill="#6f7683" d="M0 0h1.102v2.171H0z"/>
         </symbol>
       </defs>
-      <path class="a" d="M0 0h128v10.855H0z"/>
-      <g style="animation-duration:13.5s;animation-iteration-count:infinite;animation-name:i;animation-timing-function:steps(1,end)">
+      <path class="a" d="M0 0h128v13.026H0z"/>
+      <g style="animation-duration:13.7s;animation-iteration-count:infinite;animation-name:i;animation-timing-function:steps(1,end)">
         <svg width="3456">
           <svg>
             <use xlink:href="#a"/>
@@ -228,19 +228,21 @@
           </svg>
           <svg x="3200">
             <use xlink:href="#a"/>
-            <use xlink:href="#b" x="-.004" y="8.659"/>
-            <use xlink:href="#4"/>
-            <use xlink:href="#5" y="2.171"/>
-            <use xlink:href="#6" y="4.342"/>
-            <use xlink:href="#7" y="6.513"/>
+            <use xlink:href="#b" x="-.004" y="10.83"/>
+            <use xlink:href="#3"/>
+            <use xlink:href="#4" y="2.171"/>
+            <use xlink:href="#5" y="4.342"/>
+            <use xlink:href="#6" y="6.513"/>
+            <use xlink:href="#7" y="8.684"/>
           </svg>
           <svg x="3328">
             <use xlink:href="#a"/>
-            <use xlink:href="#b" x="-.004" y="8.659"/>
-            <use xlink:href="#4"/>
-            <use xlink:href="#5" y="2.171"/>
-            <use xlink:href="#6" y="4.342"/>
-            <use xlink:href="#7" y="6.513"/>
+            <use xlink:href="#b" x="-.004" y="10.83"/>
+            <use xlink:href="#3"/>
+            <use xlink:href="#4" y="2.171"/>
+            <use xlink:href="#5" y="4.342"/>
+            <use xlink:href="#6" y="6.513"/>
+            <use xlink:href="#7" y="8.684"/>
           </svg>
         </svg>
       </g>

@@ -1,4 +1,4 @@
-{"version": 2, "width": 128, "height": 5, "timestamp": 1629210251, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
+{"version": 2, "width": 128, "height": 6, "timestamp": 1629210251, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
 [0.136333, "o", "\u001b]0;mepcott@csci-odin:~\u0007\u001b[?1034h[mepcott@csci-odin ~]$ "]
 [1.246591, "o", "b"]
 [1.501226, "o", "a"]
@@ -24,4 +24,4 @@
 [12.214263, "o", "i"]
 [12.341283, "o", "t"]
 [12.787803, "o", "\r\nlogout\r\n"]
-[13.500000, "o", ""]
+[13.700000, "o", ""]
