@@ -254,6 +254,18 @@ Navigating the Filesystem
 ``cd path``, ``cd ..``, ``cd ~``, ``cd``
 ++++++++++++++++++++++++++++++++++++++++
 
+Getting Help
+------------
+
+``--help``
+++++++++++
+
+``man``
++++++++
+
+``apropos``
++++++++++++
+
 New Directories and Regular Files
 ---------------------------------
 
