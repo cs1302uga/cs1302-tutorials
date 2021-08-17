@@ -231,7 +231,7 @@ directory at a time.
    Command     Description
    ==========  =====================================================
    ``date``    Print the system date and time.
-   ``exit``    Exit the shell.
+   ``exit``    Exit the current shell.
    ``logout``  Exit the login shell.
    ``whoami``  Print the user name associated with the current user.
    ==========  =====================================================
