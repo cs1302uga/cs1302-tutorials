@@ -83,10 +83,11 @@ is **not** part of the command. Consider the following example:
 
    $ date
 
-.. code-block:: shell
+The figure below illustrates two different ways someone might attempt
+to type out the example.
 
-   $ $ date
-   bash: $: command not found...
+.. figure:: img/prompt1.png
+
 
 Glossary
 ========
