@@ -260,6 +260,14 @@ Navigating the Filesystem
 ``cd ~``, ``cd``
 ++++++++++++++++
 
+Timesavers
+----------
+
+Tab Completion
+++++++++++++++
+
+Keyboard Shortcuts
+
 Getting Help
 ------------
 
@@ -308,11 +316,21 @@ Moving and Removing
 ``rm``, ``rm -r``
 +++++++++++++++++
 
-Piping
-------
+Piping and File Redirection
+---------------------------
 
-File Redirection
-----------------
+Job Control
+-----------
+
+What is a Job?
+++++++++++++++
+
+Foreground vs. Background Jobs
+++++++++++++++++++++++++++++++
+
+``C-z``
++++++++
+
 
 Glossary
 ========
