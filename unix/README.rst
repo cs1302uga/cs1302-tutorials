@@ -326,7 +326,8 @@ returns to the shell that launched it.
   the example shown above?
 
 The ``bash`` program can also be used to execute scripts containing sequences
-of commands and more. We will cover scripts in another reading.
+of commands and more. We will cover the creation and execution of scripts in
+another reading.
 
 Navigating the Filesystem
 -------------------------
