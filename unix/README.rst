@@ -115,7 +115,7 @@ to connect to the same computer it is running on. This *local terminal*
 provides a shell with a command-line interface to that computer. Consider the
 figure below.
 
-.. figure:: img/local1.png
+.. figure:: img/local-terminals.png
    :alt: iTerm 2 on macOS Big Sur (left) and MobaXterm 21.2 on Windows 10 (right)
 
 In the figure, we see two different terminal emulators running on two different
