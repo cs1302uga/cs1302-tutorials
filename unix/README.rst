@@ -361,6 +361,8 @@ followed by lines prefixed with ``[cs1302]`` when you login to Odin.
 
   .. figure:: img/cs1302-profile-enable-demo.svg
 
+  * Make sure that you logout, then login again before continuing.
+
 Navigating the Filesystem
 -------------------------
 
