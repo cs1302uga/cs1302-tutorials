@@ -310,6 +310,9 @@ returns to the shell that launched it.
 
 .. figure:: img/bash-bash-demo.svg?1
 
+The ``bash`` program can also be used to execute scripts containing sequences
+of commands and more. We will cover scripts in another reading.
+
 Navigating the Filesystem
 -------------------------
 
