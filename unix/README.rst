@@ -220,6 +220,8 @@ directory at a time.
        └── myid
            └── mepcott
 
+* What your username?
+* What is the absolute path of your home directory?
 
 ``whoami``
 ++++++++++
