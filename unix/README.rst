@@ -148,11 +148,9 @@ you need credentials (e.g., a personal username and password) to access certain
 websites or online apps, you will also need credentials to initiate a remote
 terminal session. In the figure, the same user credentials were used in both
 images, which means that that they are both logged in as the same user on
-the remote computer. Since a terminal emulator (|terminal|) is, itself, a
-program, you can even have two terminal emulators on the same machine
-connected to the remote computer, as illustrated in the figure below.
-
-.. |terminal| image:: img/terminal.svg
+the remote computer. Since a terminal emulator is, itself, a program, you can
+even have two terminal emulators on the same machine connected to the remote computer,
+as illustrated in the figure below.
 
 .. figure:: img/multi-user.png
 
