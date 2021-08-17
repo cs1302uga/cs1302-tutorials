@@ -341,10 +341,7 @@ then it looks in the user's home directory for ``.bash_profile``, ``.bash_login`
 and ``.profile`` files, in that order, and sources the first one that is available.
 
 You may already have the **CSCI 1302 shell profile** enabled. If you do, then
-you will see::
-
-  Setting up environment for CSCI 1302...
-
+you will see ``Setting up environment for CSCI 1302...``
 followed by lines prefixed with ``[cs1302]`` when you login to Odin.
 
 .. figure:: img/cs1302-profile-check-demo.svg
