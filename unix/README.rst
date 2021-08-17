@@ -166,20 +166,20 @@ Tutorial
 
 This tutorial assumes that the reader is a Computer Science student
 at the University of Georgia with access to the department's
-instructional server called ``odin``. If you were assigned this reading in a
+instructional server called Odin. If you were assigned this reading in a
 CSCI class at UGA, then you probably have access.
 
 Logging into a Unix Machine
 ---------------------------
 
-Access to ``odin`` is restricted behind a firewall. In order to access ``odin``, you
+Access to Odin is restricted behind a firewall. In order to access Odin, you
 will need to connect to UGA's remote access VPN using the instructions found
 `here <https://eits.uga.edu/access_and_security/infosec/tools/vpn/>`__.
 
 ``ssh``
 +++++++
 
-Your username on ``odin`` is your UGA MyID and the password is the same one that
+Your username on Odin is your UGA MyID and the password is the same one that
 is associated with your MyID. Once you are successfully logged into the VPN,
 open up a local terminal in your terminal emulator and execute the ``ssh``
 (secure shell) command to establish a secure connection -- be sure to
@@ -191,7 +191,7 @@ replace ``username`` with your MyID:
 
 When you type in your password, it will not display anything to the
 screen -- this the expected behavior. Simply type in your password, the press
-the return key. If you have trouble logging into ``odin``, then please
+the return key. If you have trouble logging into Odin, then please
 contact support@cs.uga.edu as soon as possible.
 
 * ``ssh``
