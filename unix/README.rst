@@ -269,8 +269,11 @@ Getting Help
 New Directories and Regular Files
 ---------------------------------
 
-* ``mkdir``
-* ``touch``
+``mkdir``, ``mkdir -p``
++++++++++++++++++++++++
+
+``touch``
++++++++++
 
 
 Glossary
