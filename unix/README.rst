@@ -227,7 +227,7 @@ directory at a time.
 ``date``, ``exit``, ``logout``, ``whoami``
 ++++++++++++++++++++++++++++++++++++++++++
 
-List below are some other easy commands that you can try out immediately.
+Listed below are some easy commands that you can try out immediately.
 
 .. table::
 
