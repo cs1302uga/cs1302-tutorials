@@ -351,19 +351,13 @@ followed by lines prefixed with ``[cs1302]`` when you login to Odin.
   of this turorial.
 
 * If you do not see any of that when you login, then the CSCI 1302 shell profile
-  is not enabled on your account, and you should follow the instructions provided
-  below.
+  is not enabled on your account. To enable it, execute the command below. The
+  command adds a line to the ``.bash_profile`` file in your home directory so
+  that the profile is sourced each time you login.
 
-  1. Make sure you are logged into Odin.
+  .. code-block:: shell
 
-  2. Once logged in, execute the command below to enable the CSCI 1302 shell
-     profile on your account. The command adds a line to the ``.bash_profile`` file
-     in your home directory so that the profile is sourced each time you
-     login.
-
-     .. code-block:: shell
-
-        $ /usr/local/mepcott/cs1302.enable
+     $ /usr/local/mepcott/cs1302.enable
 
 Navigating the Filesystem
 -------------------------
