@@ -269,9 +269,9 @@ When you login to Odin, you are placed in your *home directory* (home folder).
 You can see where your home directory is on the system with the help of the
 ``pwd`` (print working directory) command. It always displays the absolute
 "path" of the directory that you are presently in. It is called an absolute
-path, because it describes the directories that you would need to traverse
-to get from the root of the filesystem to the current working directory one
-directory at a time.
+path, because it describes the path of directories that you would need to
+traverse to get from the root of the filesystem (i.e., the ``/`` directory)
+to the current working directory one directory at a time.
 
 .. code-block:: shell
 
