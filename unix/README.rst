@@ -200,7 +200,22 @@ contact support@cs.uga.edu as soon as possible.
 ++++++++
 
 On Odin, the shell that is launched when you login (i.e., the *login shell*)
-is GNU `bash <bash>`__.
+is GNU `bash <bash>`__. Remember, the shell itself is a program, and one of
+the things it does is help us run other programs. To see what version of
+``bash`` is running, you run ``bash`` with ``--version`` supplied as a
+command-line argument.
+
+```
+$ bash --version
+```
+
+.. figure:: img/bash-version-demo.svg
+
+   * Odin may have recieved updates since this tutorial was written.
+     What version of ``bash`` is available when you login to Odin?
+
+You can even use ``bash`` to run ``bash``.
+
 
 The GNU of GNU bash is an extensive collection of free programs
 maintained by the Free Software Foundation. The word "GNU" is a |racronym|_ that
