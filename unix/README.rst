@@ -10,8 +10,8 @@
 
 |approval_notice|
 
-* Unix: Getting Started
-* Unix: Tutorial
+* `Unix: Getting Started <https://github.com/cs1302uga/cs1302-tutorials/blob/master/unix/unix-getting-started.rst>`_
+* `Unix: Tutorial <https://github.com/cs1302uga/cs1302-tutorials/blob/master/unix/unix-tutorial.rst>`_
 
 .. copyright and license information
 .. |copy| unicode:: U+000A9 .. COPYRIGHT SIGN
