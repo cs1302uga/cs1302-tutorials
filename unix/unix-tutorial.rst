@@ -161,7 +161,8 @@ For this part of the tutorial, we are going to assume that you have
 some specific files in your home directory. To make sure that you
 have these files, you should execute the command below. The command
 may take a few seconds to run as it involves downloading some files
-from the Internet.
+from the Internet. You don't need to memorize or understand the command
+below; you just need to execute in order to proceed with the tutorial.
 
 .. code-block:: shell
 
@@ -460,7 +461,7 @@ to your home directory. How convenient!
    Command            Description
    =================  ================================================================================================
    ``ls -a``          ``ls`` shows hidden files (those that start with ``.``)
-   ``ls .``            ``ls`` lists the contents of ``.`` (current directory); same as ``ls`` with no arguments
+   ``ls .``           ``ls`` lists the contents of ``.`` (current directory); same as ``ls`` with no arguments
    ``ls ..``          ``ls`` lists the contents of ``..`` (parent directory)
    ``cd ..``          ``cd`` changes working directory to ``..`` (parent directory; "up one")
    ``cd ../..``       ``cd`` changes working directory to ``../..`` (parent of parent directory; "up two")
@@ -475,8 +476,6 @@ Tab Completion
 The tab completion feature in ``bash`` permits typing a partial command or path,
 then pressing the ``TAB`` key to auto-complete the sequence. When multiple
 completions are possible, pressing the ``TAB`` key again lists them all.
-
-* Try typing out the command below using ``TAB`` completion.
 
 Keyboard Shortcuts
 ++++++++++++++++++
@@ -509,9 +508,15 @@ Getting Help
 ``--help``
 ++++++++++
 
+Many Unix programs print out information about what they do and
+the command-line arguments they support when ``--help`` is supplied
+as a command-line argument, usually by itself.
+
 .. code-block:: shell
 
    $ ls --help
+
+.. figure:: img/ls-help-demo.svg
 
 ``man``
 +++++++
