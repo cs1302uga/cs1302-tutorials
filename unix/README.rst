@@ -659,6 +659,9 @@ Inspecting Files
 ``wc``
 ++++++
 
+``grep``
+++++++++
+
 New Directories and Regular Files
 ---------------------------------
 
@@ -695,9 +698,6 @@ Piping and File Redirection
 
 Job Control
 -----------
-
-What is a Job?
-++++++++++++++
 
 ``C-c``, ``C-z``
 ++++++++++++++++
