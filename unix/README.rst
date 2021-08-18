@@ -479,7 +479,9 @@ is included in the "long" output format:
    ``-rw-r--r--.``  ``1``  ``mepcott``   ``myid``    ``9``        ``Aug 17 17:39``  ``README.md``
    ===============  =====  ============  ==========  ===========  ================  ===========================
 
-.. [1] **Mode:** The file type and permissions. The first character denotes the file type.
+.. [1] .. rubric:: **Mode**
+
+       The file type and permissions. The first character denotes the file type.
        In Unix, file type refers to how the file behaves from the file system's perspective.
        File type and content format are different concepts. File suffixes like ``.txt``,
        ``.mp3``, ``.pdf``, etc. are all naming conventions for the content formats of certain
@@ -516,13 +518,11 @@ is included in the "long" output format:
        reading, but for those who are curious, the ``.`` indicates that a file has an SELinux security context
        and no other alternate access method.
 
-.. [2] .. rubric:: Hard Links
+.. [2] .. rubric:: **Hard Links**
 
        This topic is outside the scope of this reading. If you are interested in hard links,
        then you are encouraged to read about them `here <wiki_hard_link>`_.
-
-       Symbolic links are more common,
-       and will discussed in a future reading.
+       Symbolic links are more common, and will discussed in a future reading.
 
        .. _wiki_hard_link: https://en.wikipedia.org/wiki/Hard_link
 
