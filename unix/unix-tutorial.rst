@@ -639,9 +639,9 @@ Moving and Removing
 
 In Unix, every file has an absolute path that describes
 the traversal path from the root of the disk ``/`` to
-the file itself. Each path can be split into two components,
-one describing the parents (the *dirname*) and one describing
-the name of the file at the end of the path (the *basename*).
+the file itself. Each path can be split into two components:
+the first describing the parents (the *dirname*); and
+the second describing the file at the end of the path (the *basename*).
 Consider the following path that we have carefully annotated
 using ASCII characters::
 
@@ -652,7 +652,7 @@ using ASCII characters::
                  dirname                    basename
 
 Understanding this split is important when it comes to
-moving and renaming files, since both concepts deal
+moving and renaming file as both concepts deal
 with the modification of a file's absolute path.
 
 .. |Y| replace:: ✓
@@ -668,6 +668,7 @@ with the modification of a file's absolute path.
    |N|      |Y|       rename a file
    |Y|      |Y|       move and rename a file
    =======  ========  ======================
+
 
 
 ``cp``, ``cp -r``
