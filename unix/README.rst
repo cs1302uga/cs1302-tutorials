@@ -562,7 +562,9 @@ is included in the "long" output format:
 
        The name of the file. Most systems limit the length of a filename to some value between
        14 characters (older systems) and 255 characters (newer systems), and they require that
-       a filename be unique inside its directory.
+       a filename be unique inside its directory. Except for the directory file ``/`` at the root
+       of the file system, file names in Unix cannot contain the ``/`` character since
+       it is used as the path separator character.
 
 ``cd PATH``
 +++++++++++
