@@ -687,6 +687,9 @@ Piping and File Redirection
 ``<``
 +++++
 
+Modifying Regular Files
+-----------------------
+
 
 Job Control
 -----------
