@@ -521,17 +521,17 @@ as a command-line argument, usually by itself.
 ``man``
 +++++++
 
+Unix systems come with a digital copy of their manual, which provides
+detailed information about the programs and features that are available.
+To access the manual entry ("man" page) for a command, enter the ``man``
+(manual) command and supply the command name you want to lookup as a
+command-line argument. To exit a man page, press the ``q`` key.
+
 .. code-block:: shell
 
    $ man ls
 
-.. code-block:: shell
-
-   $ man man
-
-.. code-block:: shell
-
-   $ man 1 intro
+.. figure:: img/man-ls-demo.svg
 
 Inspecting Files
 ----------------

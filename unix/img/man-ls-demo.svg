@@ -1,0 +1,1834 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="682.88">
+  <rect width="1280" height="667.88" rx="5" ry="5" class="a"/>
+  <svg y="0%" x="0%">
+    <circle cx="20" cy="20" r="6" fill="#ff5f58"/>
+    <circle cx="40" cy="20" r="6" fill="#ffbd2e"/>
+    <circle cx="60" cy="20" r="6" fill="#18c132"/>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="607.88" viewBox="0 0 124 60.788" width="1240" x="15" y="50">
+    <style>@keyframes k{0%{transform:translateX(0)}.77%{transform:translateX(-124px)}6.83%{transform:translateX(-248px)}7.29%{transform:translateX(-372px)}8.2%{transform:translateX(-496px)}10.27%{transform:translateX(-620px)}14.71%{transform:translateX(-744px)}14.99%{transform:translateX(-868px)}19.93%{transform:translateX(-992px)}20.04%{transform:translateX(-1116px)}20.13%{transform:translateX(-1364px)}30.04%{transform:translateX(-1612px)}38.58%{transform:translateX(-1860px)}46.52%{transform:translateX(-2108px)}53.77%{transform:translateX(-2356px)}60.33%{transform:translateX(-2604px)}65.66%{transform:translateX(-2852px)}71.56%{transform:translateX(-3100px)}76.72%{transform:translateX(-3224px)}90.76%{transform:translateX(-3472px)}to{transform:translateX(-3596px)}}.a{fill:#282d35}.f{fill:#b9c0cb}.f,.g,.h{white-space:pre}.g{fill:#b9c0cb;font-weight:700}.h{text-decoration:underline}.h,.m{fill:#b9c0cb}.n{fill:#282d35;white-space:pre}</style>
+    <g font-family="Monaco,Consolas,Menlo,'Bitstream Vera Sans Mono','Powerline Symbols',monospace" font-size="1.67">
+      <defs>
+        <symbol id="1">
+          <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+        </symbol>
+        <symbol id="2">
+          <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+          <text x="21.042" y="1.67" class="f">man</text>
+        </symbol>
+        <symbol id="3">
+          <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+          <text x="21.042" y="1.67" class="f">man</text>
+          <text x="25.05" y="1.67" class="f">ls</text>
+        </symbol>
+        <symbol id="4">
+          <text y="1.67" class="f">LS(1)</text>
+          <text x="54.108" y="1.67" class="f">User</text>
+          <text x="59.118" y="1.67" class="f">Commands</text>
+          <text x="115.23" y="1.67" class="f">LS(1)</text>
+        </symbol>
+        <symbol id="5">
+          <text y="1.67" class="g">NAME</text>
+        </symbol>
+        <symbol id="6">
+          <text x="7.014" y="1.67" class="f">ls</text>
+          <text x="10.02" y="1.67" class="f">-</text>
+          <text x="12.024" y="1.67" class="f">list</text>
+          <text x="17.034" y="1.67" class="f">directory</text>
+          <text x="27.054" y="1.67" class="f">contents</text>
+        </symbol>
+        <symbol id="7">
+          <text y="1.67" class="g">SYNOPSIS</text>
+        </symbol>
+        <symbol id="8">
+          <text x="7.014" y="1.67" class="g">ls</text>
+          <text x="10.02" y="1.67" class="f">[</text>
+          <text x="11.022" y="1.67" class="h">OPTION</text>
+          <text x="17.034" y="1.67" class="f">]...</text>
+          <text x="22.044" y="1.67" class="f">[</text>
+          <text x="23.046" y="1.67" class="h">FILE</text>
+          <text x="27.054" y="1.67" class="f">]...</text>
+        </symbol>
+        <symbol id="9">
+          <text y="1.67" class="g">DESCRIPTION</text>
+        </symbol>
+        <symbol id="10">
+          <text x="7.014" y="1.67" class="f">List</text>
+          <text x="13.026" y="1.67" class="f">information</text>
+          <text x="26.052" y="1.67" class="f">about</text>
+          <text x="33.066" y="1.67" class="f">the</text>
+          <text x="38.076" y="1.67" class="f">FILEs</text>
+          <text x="45.09" y="1.67" class="f">(the</text>
+          <text x="50.1" y="1.67" class="f">current</text>
+          <text x="58.116" y="1.67" class="f">directory</text>
+          <text x="68.136" y="1.67" class="f">by</text>
+          <text x="71.142" y="1.67" class="f">default).</text>
+          <text x="82.164" y="1.67" class="f">Sort</text>
+          <text x="87.174" y="1.67" class="f">entries</text>
+          <text x="95.19" y="1.67" class="f">alphabetically</text>
+          <text x="110.22" y="1.67" class="f">if</text>
+          <text x="113.226" y="1.67" class="f">none</text>
+          <text x="118.236" y="1.67" class="f">of</text>
+        </symbol>
+        <symbol id="11">
+          <text x="7.014" y="1.67" class="g">-cftuvSUX</text>
+          <text x="17.034" y="1.67" class="f">nor</text>
+          <text x="21.042" y="1.67" class="g">--sort</text>
+          <text x="28.056" y="1.67" class="f">is</text>
+          <text x="31.062" y="1.67" class="f">specified.</text>
+        </symbol>
+        <symbol id="12">
+          <text x="7.014" y="1.67" class="f">Mandatory</text>
+          <text x="17.034" y="1.67" class="f">arguments</text>
+          <text x="27.054" y="1.67" class="f">to</text>
+          <text x="30.06" y="1.67" class="f">long</text>
+          <text x="35.07" y="1.67" class="f">options</text>
+          <text x="43.086" y="1.67" class="f">are</text>
+          <text x="47.094" y="1.67" class="f">mandatory</text>
+          <text x="57.114" y="1.67" class="f">for</text>
+          <text x="61.122" y="1.67" class="f">short</text>
+          <text x="67.134" y="1.67" class="f">options</text>
+          <text x="75.15" y="1.67" class="f">too.</text>
+        </symbol>
+        <symbol id="13">
+          <text x="7.014" y="1.67" class="g">-a</text>
+          <text x="9.018" y="1.67" class="f">,</text>
+          <text x="11.022" y="1.67" class="g">--all</text>
+        </symbol>
+        <symbol id="14">
+          <text x="14.028" y="1.67" class="f">do</text>
+          <text x="17.034" y="1.67" class="f">not</text>
+          <text x="21.042" y="1.67" class="f">ignore</text>
+          <text x="28.056" y="1.67" class="f">entries</text>
+          <text x="36.072" y="1.67" class="f">starting</text>
+          <text x="45.09" y="1.67" class="f">with</text>
+          <text x="50.1" y="1.67" class="f">.</text>
+        </symbol>
+        <symbol id="15">
+          <text x="7.014" y="1.67" class="g">-A</text>
+          <text x="9.018" y="1.67" class="f">,</text>
+          <text x="11.022" y="1.67" class="g">--almost-all</text>
+        </symbol>
+        <symbol id="16">
+          <text x="14.028" y="1.67" class="f">do</text>
+          <text x="17.034" y="1.67" class="f">not</text>
+          <text x="21.042" y="1.67" class="f">list</text>
+          <text x="26.052" y="1.67" class="f">implied</text>
+          <text x="34.068" y="1.67" class="f">.</text>
+          <text x="36.072" y="1.67" class="f">and</text>
+          <text x="40.08" y="1.67" class="f">..</text>
+        </symbol>
+        <symbol id="17">
+          <text x="7.014" y="1.67" class="g">--author</text>
+        </symbol>
+        <symbol id="18">
+          <text x="14.028" y="1.67" class="f">with</text>
+          <text x="19.038" y="1.67" class="g">-l</text>
+          <text x="21.042" y="1.67" class="f">,</text>
+          <text x="23.046" y="1.67" class="f">print</text>
+          <text x="29.058" y="1.67" class="f">the</text>
+          <text x="33.066" y="1.67" class="f">author</text>
+          <text x="40.08" y="1.67" class="f">of</text>
+          <text x="43.086" y="1.67" class="f">each</text>
+          <text x="48.096" y="1.67" class="f">file</text>
+        </symbol>
+        <symbol id="19">
+          <text x="7.014" y="1.67" class="g">-b</text>
+          <text x="9.018" y="1.67" class="f">,</text>
+          <text x="11.022" y="1.67" class="g">--escape</text>
+        </symbol>
+        <symbol id="20">
+          <text x="14.028" y="1.67" class="f">print</text>
+          <text x="20.04" y="1.67" class="f">C-style</text>
+          <text x="28.056" y="1.67" class="f">escapes</text>
+          <text x="36.072" y="1.67" class="f">for</text>
+          <text x="40.08" y="1.67" class="f">nongraphic</text>
+          <text x="51.102" y="1.67" class="f">characters</text>
+        </symbol>
+        <symbol id="21">
+          <text x="7.014" y="1.67" class="g">--block-size</text>
+          <text x="19.038" y="1.67" class="f">=</text>
+          <text x="20.04" y="1.67" class="h">SIZE</text>
+        </symbol>
+        <symbol id="22">
+          <text x="14.028" y="1.67" class="f">scale</text>
+          <text x="20.04" y="1.67" class="f">sizes</text>
+          <text x="26.052" y="1.67" class="f">by</text>
+          <text x="29.058" y="1.67" class="f">SIZE</text>
+          <text x="34.068" y="1.67" class="f">before</text>
+          <text x="41.082" y="1.67" class="f">printing</text>
+          <text x="50.1" y="1.67" class="f">them;</text>
+          <text x="56.112" y="1.67" class="f">e.g.,</text>
+          <text x="62.124" y="1.67" class="f">'--block-size=M'</text>
+          <text x="79.158" y="1.67" class="f">prints</text>
+          <text x="86.172" y="1.67" class="f">sizes</text>
+          <text x="92.184" y="1.67" class="f">in</text>
+          <text x="95.19" y="1.67" class="f">units</text>
+          <text x="101.202" y="1.67" class="f">of</text>
+          <text x="104.208" y="1.67" class="f">1,048,576</text>
+          <text x="114.228" y="1.67" class="f">bytes;</text>
+        </symbol>
+        <symbol id="23">
+          <text x="14.028" y="1.67" class="f">see</text>
+          <text x="18.036" y="1.67" class="f">SIZE</text>
+          <text x="23.046" y="1.67" class="f">format</text>
+          <text x="30.06" y="1.67" class="f">below</text>
+        </symbol>
+        <symbol id="24">
+          <text x="7.014" y="1.67" class="g">-B</text>
+          <text x="9.018" y="1.67" class="f">,</text>
+          <text x="11.022" y="1.67" class="g">--ignore-backups</text>
+        </symbol>
+        <symbol id="25">
+          <text x="14.028" y="1.67" class="f">do</text>
+          <text x="17.034" y="1.67" class="f">not</text>
+          <text x="21.042" y="1.67" class="f">list</text>
+          <text x="26.052" y="1.67" class="f">implied</text>
+          <text x="34.068" y="1.67" class="f">entries</text>
+          <text x="42.084" y="1.67" class="f">ending</text>
+          <text x="49.098" y="1.67" class="f">with</text>
+          <text x="54.108" y="1.67" class="f">~</text>
+        </symbol>
+        <symbol id="26">
+          <text x="7.014" y="1.67" class="g">-c</text>
+          <text x="14.028" y="1.67" class="f">with</text>
+          <text x="20.04" y="1.67" class="g">-lt</text>
+          <text x="23.046" y="1.67" class="f">:</text>
+          <text x="26.052" y="1.67" class="f">sort</text>
+          <text x="31.062" y="1.67" class="f">by,</text>
+          <text x="35.07" y="1.67" class="f">and</text>
+          <text x="39.078" y="1.67" class="f">show,</text>
+          <text x="45.09" y="1.67" class="f">ctime</text>
+          <text x="51.102" y="1.67" class="f">(time</text>
+          <text x="57.114" y="1.67" class="f">of</text>
+          <text x="60.12" y="1.67" class="f">last</text>
+          <text x="65.13" y="1.67" class="f">modification</text>
+          <text x="78.156" y="1.67" class="f">of</text>
+          <text x="81.162" y="1.67" class="f">file</text>
+          <text x="86.172" y="1.67" class="f">status</text>
+          <text x="93.186" y="1.67" class="f">information);</text>
+          <text x="107.214" y="1.67" class="f">with</text>
+          <text x="112.224" y="1.67" class="g">-l</text>
+          <text x="114.228" y="1.67" class="f">:</text>
+          <text x="116.232" y="1.67" class="f">show</text>
+        </symbol>
+        <symbol id="27">
+          <text x="14.028" y="1.67" class="f">ctime</text>
+          <text x="20.04" y="1.67" class="f">and</text>
+          <text x="24.048" y="1.67" class="f">sort</text>
+          <text x="29.058" y="1.67" class="f">by</text>
+          <text x="32.064" y="1.67" class="f">name;</text>
+          <text x="38.076" y="1.67" class="f">otherwise:</text>
+          <text x="49.098" y="1.67" class="f">sort</text>
+          <text x="54.108" y="1.67" class="f">by</text>
+          <text x="57.114" y="1.67" class="f">ctime,</text>
+          <text x="64.128" y="1.67" class="f">newest</text>
+          <text x="71.142" y="1.67" class="f">first</text>
+        </symbol>
+        <symbol id="28">
+          <text x="7.014" y="1.67" class="g">-C</text>
+          <text x="14.028" y="1.67" class="f">list</text>
+          <text x="19.038" y="1.67" class="f">entries</text>
+          <text x="27.054" y="1.67" class="f">by</text>
+          <text x="30.06" y="1.67" class="f">columns</text>
+        </symbol>
+        <symbol id="29">
+          <text x="7.014" y="1.67" class="g">--color</text>
+          <text x="14.028" y="1.67" class="f">[=</text>
+          <text x="16.032" y="1.67" class="h">WHEN</text>
+          <text x="20.04" y="1.67" class="f">]</text>
+        </symbol>
+        <symbol id="30">
+          <text x="14.028" y="1.67" class="f">colorize</text>
+          <text x="23.046" y="1.67" class="f">the</text>
+          <text x="27.054" y="1.67" class="f">output;</text>
+          <text x="35.07" y="1.67" class="f">WHEN</text>
+          <text x="40.08" y="1.67" class="f">can</text>
+          <text x="44.088" y="1.67" class="f">be</text>
+          <text x="47.094" y="1.67" class="f">'never',</text>
+          <text x="56.112" y="1.67" class="f">'auto',</text>
+          <text x="64.128" y="1.67" class="f">or</text>
+          <text x="67.134" y="1.67" class="f">'always'</text>
+          <text x="76.152" y="1.67" class="f">(the</text>
+          <text x="81.162" y="1.67" class="f">default);</text>
+          <text x="91.182" y="1.67" class="f">more</text>
+          <text x="96.192" y="1.67" class="f">info</text>
+          <text x="101.202" y="1.67" class="f">below</text>
+        </symbol>
+        <symbol id="31">
+          <text x="7.014" y="1.67" class="g">-d</text>
+          <text x="9.018" y="1.67" class="f">,</text>
+          <text x="11.022" y="1.67" class="g">--directory</text>
+        </symbol>
+        <symbol id="32">
+          <text x="14.028" y="1.67" class="f">list</text>
+          <text x="19.038" y="1.67" class="f">directories</text>
+          <text x="31.062" y="1.67" class="f">themselves,</text>
+          <text x="43.086" y="1.67" class="f">not</text>
+          <text x="47.094" y="1.67" class="f">their</text>
+          <text x="53.106" y="1.67" class="f">contents</text>
+        </symbol>
+        <symbol id="33">
+          <text x="7.014" y="1.67" class="g">-D</text>
+          <text x="9.018" y="1.67" class="f">,</text>
+          <text x="11.022" y="1.67" class="g">--dired</text>
+        </symbol>
+        <symbol id="34">
+          <text x="14.028" y="1.67" class="f">generate</text>
+          <text x="23.046" y="1.67" class="f">output</text>
+          <text x="30.06" y="1.67" class="f">designed</text>
+          <text x="39.078" y="1.67" class="f">for</text>
+          <text x="43.086" y="1.67" class="f">Emacs'</text>
+          <text x="50.1" y="1.67" class="f">dired</text>
+          <text x="56.112" y="1.67" class="f">mode</text>
+        </symbol>
+        <symbol id="35">
+          <text x="7.014" y="1.67" class="g">-F</text>
+          <text x="9.018" y="1.67" class="f">,</text>
+          <text x="11.022" y="1.67" class="g">--classify</text>
+        </symbol>
+        <symbol id="36">
+          <text x="14.028" y="1.67" class="f">append</text>
+          <text x="21.042" y="1.67" class="f">indicator</text>
+          <text x="31.062" y="1.67" class="f">(one</text>
+          <text x="36.072" y="1.67" class="f">of</text>
+          <text x="39.078" y="1.67" class="f">*/=&gt;@|)</text>
+          <text x="47.094" y="1.67" class="f">to</text>
+          <text x="50.1" y="1.67" class="f">entries</text>
+        </symbol>
+        <symbol id="37">
+          <text x="7.014" y="1.67" class="g">--file-type</text>
+        </symbol>
+        <symbol id="38">
+          <text x="14.028" y="1.67" class="f">likewise,</text>
+          <text x="24.048" y="1.67" class="f">except</text>
+          <text x="31.062" y="1.67" class="f">do</text>
+          <text x="34.068" y="1.67" class="f">not</text>
+          <text x="38.076" y="1.67" class="f">append</text>
+          <text x="45.09" y="1.67" class="f">'*'</text>
+        </symbol>
+        <symbol id="39">
+          <text x="7.014" y="1.67" class="g">--format</text>
+          <text x="15.03" y="1.67" class="f">=</text>
+          <text x="16.032" y="1.67" class="h">WORD</text>
+        </symbol>
+        <symbol id="40">
+          <text x="14.028" y="1.67" class="f">across</text>
+          <text x="21.042" y="1.67" class="g">-x</text>
+          <text x="23.046" y="1.67" class="f">,</text>
+          <text x="25.05" y="1.67" class="f">commas</text>
+          <text x="32.064" y="1.67" class="g">-m</text>
+          <text x="34.068" y="1.67" class="f">,</text>
+          <text x="36.072" y="1.67" class="f">horizontal</text>
+          <text x="47.094" y="1.67" class="g">-x</text>
+          <text x="49.098" y="1.67" class="f">,</text>
+          <text x="51.102" y="1.67" class="f">long</text>
+          <text x="56.112" y="1.67" class="g">-l</text>
+          <text x="58.116" y="1.67" class="f">,</text>
+          <text x="60.12" y="1.67" class="f">single-column</text>
+          <text x="74.148" y="1.67" class="g">-1</text>
+          <text x="76.152" y="1.67" class="f">,</text>
+          <text x="78.156" y="1.67" class="f">verbose</text>
+          <text x="86.172" y="1.67" class="g">-l</text>
+          <text x="88.176" y="1.67" class="f">,</text>
+          <text x="90.18" y="1.67" class="f">vertical</text>
+          <text x="99.198" y="1.67" class="g">-C</text>
+        </symbol>
+        <symbol id="41">
+          <text x="7.014" y="1.67" class="g">--full-time</text>
+        </symbol>
+        <symbol id="42">
+          <text x="14.028" y="1.67" class="f">like</text>
+          <text x="19.038" y="1.67" class="g">-l</text>
+          <text x="22.044" y="1.67" class="g">--time-style</text>
+          <text x="34.068" y="1.67" class="f">=</text>
+          <text x="35.07" y="1.67" class="h">full-iso</text>
+        </symbol>
+        <symbol id="43">
+          <text x="7.014" y="1.67" class="g">-g</text>
+          <text x="14.028" y="1.67" class="f">like</text>
+          <text x="19.038" y="1.67" class="g">-l</text>
+          <text x="21.042" y="1.67" class="f">,</text>
+          <text x="23.046" y="1.67" class="f">but</text>
+          <text x="27.054" y="1.67" class="f">do</text>
+          <text x="30.06" y="1.67" class="f">not</text>
+          <text x="34.068" y="1.67" class="f">list</text>
+          <text x="39.078" y="1.67" class="f">owner</text>
+        </symbol>
+        <symbol id="44">
+          <text x="7.014" y="1.67" class="g">--group-directories-first</text>
+        </symbol>
+        <symbol id="45">
+          <text x="14.028" y="1.67" class="f">group</text>
+          <text x="20.04" y="1.67" class="f">directories</text>
+          <text x="32.064" y="1.67" class="f">before</text>
+          <text x="39.078" y="1.67" class="f">files;</text>
+        </symbol>
+        <symbol id="46">
+          <text x="14.028" y="1.67" class="f">can</text>
+          <text x="18.036" y="1.67" class="f">be</text>
+          <text x="21.042" y="1.67" class="f">augmented</text>
+          <text x="31.062" y="1.67" class="f">with</text>
+          <text x="36.072" y="1.67" class="f">a</text>
+          <text x="38.076" y="1.67" class="g">--sort</text>
+          <text x="45.09" y="1.67" class="f">option,</text>
+          <text x="53.106" y="1.67" class="f">but</text>
+          <text x="57.114" y="1.67" class="f">any</text>
+          <text x="61.122" y="1.67" class="f">use</text>
+          <text x="65.13" y="1.67" class="f">of</text>
+          <text x="68.136" y="1.67" class="g">--sort</text>
+          <text x="74.148" y="1.67" class="f">=</text>
+          <text x="75.15" y="1.67" class="h">none</text>
+          <text x="80.16" y="1.67" class="f">(</text>
+          <text x="81.162" y="1.67" class="g">-U</text>
+          <text x="83.166" y="1.67" class="f">)</text>
+          <text x="85.17" y="1.67" class="f">disables</text>
+          <text x="94.188" y="1.67" class="f">grouping</text>
+        </symbol>
+        <symbol id="47">
+          <text x="7.014" y="1.67" class="g">-G</text>
+          <text x="9.018" y="1.67" class="f">,</text>
+          <text x="11.022" y="1.67" class="g">--no-group</text>
+        </symbol>
+        <symbol id="48">
+          <text x="14.028" y="1.67" class="f">in</text>
+          <text x="17.034" y="1.67" class="f">a</text>
+          <text x="19.038" y="1.67" class="f">long</text>
+          <text x="24.048" y="1.67" class="f">listing,</text>
+          <text x="33.066" y="1.67" class="f">don't</text>
+          <text x="39.078" y="1.67" class="f">print</text>
+          <text x="45.09" y="1.67" class="f">group</text>
+          <text x="51.102" y="1.67" class="f">names</text>
+        </symbol>
+        <symbol id="49">
+          <text x="7.014" y="1.67" class="g">-h</text>
+          <text x="9.018" y="1.67" class="f">,</text>
+          <text x="11.022" y="1.67" class="g">--human-readable</text>
+        </symbol>
+        <symbol id="50">
+          <text x="14.028" y="1.67" class="f">with</text>
+          <text x="19.038" y="1.67" class="g">-l</text>
+          <text x="21.042" y="1.67" class="f">,</text>
+          <text x="23.046" y="1.67" class="f">print</text>
+          <text x="29.058" y="1.67" class="f">sizes</text>
+          <text x="35.07" y="1.67" class="f">in</text>
+          <text x="38.076" y="1.67" class="f">human</text>
+          <text x="44.088" y="1.67" class="f">readable</text>
+          <text x="53.106" y="1.67" class="f">format</text>
+          <text x="60.12" y="1.67" class="f">(e.g.,</text>
+          <text x="67.134" y="1.67" class="f">1K</text>
+          <text x="70.14" y="1.67" class="f">234M</text>
+          <text x="75.15" y="1.67" class="f">2G)</text>
+        </symbol>
+        <symbol id="51">
+          <text x="7.014" y="1.67" class="g">--si</text>
+          <text x="14.028" y="1.67" class="f">likewise,</text>
+          <text x="24.048" y="1.67" class="f">but</text>
+          <text x="28.056" y="1.67" class="f">use</text>
+          <text x="32.064" y="1.67" class="f">powers</text>
+          <text x="39.078" y="1.67" class="f">of</text>
+          <text x="42.084" y="1.67" class="f">1000</text>
+          <text x="47.094" y="1.67" class="f">not</text>
+          <text x="51.102" y="1.67" class="f">1024</text>
+        </symbol>
+        <symbol id="52">
+          <text x="7.014" y="1.67" class="g">-H</text>
+          <text x="9.018" y="1.67" class="f">,</text>
+          <text x="11.022" y="1.67" class="g">--dereference-command-line</text>
+        </symbol>
+        <symbol id="53">
+          <text x="14.028" y="1.67" class="f">follow</text>
+          <text x="21.042" y="1.67" class="f">symbolic</text>
+          <text x="30.06" y="1.67" class="f">links</text>
+          <text x="36.072" y="1.67" class="f">listed</text>
+          <text x="43.086" y="1.67" class="f">on</text>
+          <text x="46.092" y="1.67" class="f">the</text>
+          <text x="50.1" y="1.67" class="f">command</text>
+          <text x="58.116" y="1.67" class="f">line</text>
+        </symbol>
+        <symbol id="54">
+          <text x="7.014" y="1.67" class="g">--dereference-command-line-symlink-to-dir</text>
+        </symbol>
+        <symbol id="55">
+          <text x="14.028" y="1.67" class="f">follow</text>
+          <text x="21.042" y="1.67" class="f">each</text>
+          <text x="26.052" y="1.67" class="f">command</text>
+          <text x="34.068" y="1.67" class="f">line</text>
+          <text x="39.078" y="1.67" class="f">symbolic</text>
+          <text x="48.096" y="1.67" class="f">link</text>
+        </symbol>
+        <symbol id="56">
+          <text x="14.028" y="1.67" class="f">that</text>
+          <text x="19.038" y="1.67" class="f">points</text>
+          <text x="26.052" y="1.67" class="f">to</text>
+          <text x="29.058" y="1.67" class="f">a</text>
+          <text x="31.062" y="1.67" class="f">directory</text>
+        </symbol>
+        <symbol id="57">
+          <text x="7.014" y="1.67" class="g">--hide</text>
+          <text x="13.026" y="1.67" class="f">=</text>
+          <text x="14.028" y="1.67" class="h">PATTERN</text>
+        </symbol>
+        <symbol id="58">
+          <text x="14.028" y="1.67" class="f">do</text>
+          <text x="17.034" y="1.67" class="f">not</text>
+          <text x="21.042" y="1.67" class="f">list</text>
+          <text x="26.052" y="1.67" class="f">implied</text>
+          <text x="34.068" y="1.67" class="f">entries</text>
+          <text x="42.084" y="1.67" class="f">matching</text>
+          <text x="51.102" y="1.67" class="f">shell</text>
+          <text x="57.114" y="1.67" class="f">PATTERN</text>
+          <text x="65.13" y="1.67" class="f">(overridden</text>
+          <text x="77.154" y="1.67" class="f">by</text>
+          <text x="80.16" y="1.67" class="g">-a</text>
+          <text x="83.166" y="1.67" class="f">or</text>
+          <text x="86.172" y="1.67" class="g">-A</text>
+          <text x="88.176" y="1.67" class="f">)</text>
+        </symbol>
+        <symbol id="59">
+          <text x="7.014" y="1.67" class="g">--indicator-style</text>
+          <text x="24.048" y="1.67" class="f">=</text>
+          <text x="25.05" y="1.67" class="h">WORD</text>
+        </symbol>
+        <symbol id="60">
+          <text x="14.028" y="1.67" class="f">append</text>
+          <text x="21.042" y="1.67" class="f">indicator</text>
+          <text x="31.062" y="1.67" class="f">with</text>
+          <text x="36.072" y="1.67" class="f">style</text>
+          <text x="42.084" y="1.67" class="f">WORD</text>
+          <text x="47.094" y="1.67" class="f">to</text>
+          <text x="50.1" y="1.67" class="f">entry</text>
+          <text x="56.112" y="1.67" class="f">names:</text>
+          <text x="63.126" y="1.67" class="f">none</text>
+          <text x="69.138" y="1.67" class="f">(default),</text>
+          <text x="81.162" y="1.67" class="f">slash</text>
+          <text x="88.176" y="1.67" class="f">(</text>
+          <text x="89.178" y="1.67" class="g">-p</text>
+          <text x="91.182" y="1.67" class="f">),</text>
+          <text x="95.19" y="1.67" class="f">file-type</text>
+          <text x="106.212" y="1.67" class="f">(</text>
+          <text x="107.214" y="1.67" class="g">--file-type</text>
+          <text x="118.236" y="1.67" class="f">),</text>
+        </symbol>
+        <symbol id="61">
+          <text x="14.028" y="1.67" class="f">classify</text>
+          <text x="23.046" y="1.67" class="f">(</text>
+          <text x="24.048" y="1.67" class="g">-F</text>
+          <text x="26.052" y="1.67" class="f">)</text>
+        </symbol>
+        <symbol id="62">
+          <text x="7.014" y="1.67" class="g">-i</text>
+          <text x="9.018" y="1.67" class="f">,</text>
+          <text x="11.022" y="1.67" class="g">--inode</text>
+        </symbol>
+        <symbol id="63">
+          <text x="14.028" y="1.67" class="f">print</text>
+          <text x="20.04" y="1.67" class="f">the</text>
+          <text x="24.048" y="1.67" class="f">index</text>
+          <text x="30.06" y="1.67" class="f">number</text>
+          <text x="37.074" y="1.67" class="f">of</text>
+          <text x="40.08" y="1.67" class="f">each</text>
+          <text x="45.09" y="1.67" class="f">file</text>
+        </symbol>
+        <symbol id="64">
+          <text x="7.014" y="1.67" class="g">-I</text>
+          <text x="9.018" y="1.67" class="f">,</text>
+          <text x="11.022" y="1.67" class="g">--ignore</text>
+          <text x="19.038" y="1.67" class="f">=</text>
+          <text x="20.04" y="1.67" class="h">PATTERN</text>
+        </symbol>
+        <symbol id="65">
+          <text x="14.028" y="1.67" class="f">do</text>
+          <text x="17.034" y="1.67" class="f">not</text>
+          <text x="21.042" y="1.67" class="f">list</text>
+          <text x="26.052" y="1.67" class="f">implied</text>
+          <text x="34.068" y="1.67" class="f">entries</text>
+          <text x="42.084" y="1.67" class="f">matching</text>
+          <text x="51.102" y="1.67" class="f">shell</text>
+          <text x="57.114" y="1.67" class="f">PATTERN</text>
+        </symbol>
+        <symbol id="66">
+          <text x="7.014" y="1.67" class="g">-k</text>
+          <text x="9.018" y="1.67" class="f">,</text>
+          <text x="11.022" y="1.67" class="g">--kibibytes</text>
+        </symbol>
+        <symbol id="67">
+          <text x="14.028" y="1.67" class="f">default</text>
+          <text x="22.044" y="1.67" class="f">to</text>
+          <text x="25.05" y="1.67" class="f">1024-byte</text>
+          <text x="35.07" y="1.67" class="f">blocks</text>
+          <text x="42.084" y="1.67" class="f">for</text>
+          <text x="46.092" y="1.67" class="f">disk</text>
+          <text x="51.102" y="1.67" class="f">usage</text>
+        </symbol>
+        <symbol id="68">
+          <text x="7.014" y="1.67" class="g">-l</text>
+          <text x="14.028" y="1.67" class="f">use</text>
+          <text x="18.036" y="1.67" class="f">a</text>
+          <text x="20.04" y="1.67" class="f">long</text>
+          <text x="25.05" y="1.67" class="f">listing</text>
+          <text x="33.066" y="1.67" class="f">format</text>
+        </symbol>
+        <symbol id="69">
+          <text x="7.014" y="1.67" class="g">-L</text>
+          <text x="9.018" y="1.67" class="f">,</text>
+          <text x="11.022" y="1.67" class="g">--dereference</text>
+        </symbol>
+        <symbol id="70">
+          <text x="14.028" y="1.67" class="f">when</text>
+          <text x="20.04" y="1.67" class="f">showing</text>
+          <text x="29.058" y="1.67" class="f">file</text>
+          <text x="35.07" y="1.67" class="f">information</text>
+          <text x="48.096" y="1.67" class="f">for</text>
+          <text x="53.106" y="1.67" class="f">a</text>
+          <text x="56.112" y="1.67" class="f">symbolic</text>
+          <text x="65.13" y="1.67" class="f">link,</text>
+          <text x="71.142" y="1.67" class="f">show</text>
+          <text x="76.152" y="1.67" class="f">information</text>
+          <text x="88.176" y="1.67" class="f">for</text>
+          <text x="92.184" y="1.67" class="f">the</text>
+          <text x="96.192" y="1.67" class="f">file</text>
+          <text x="101.202" y="1.67" class="f">the</text>
+          <text x="105.21" y="1.67" class="f">link</text>
+          <text x="110.22" y="1.67" class="f">references</text>
+        </symbol>
+        <symbol id="71">
+          <text x="14.028" y="1.67" class="f">rather</text>
+          <text x="21.042" y="1.67" class="f">than</text>
+          <text x="26.052" y="1.67" class="f">for</text>
+          <text x="30.06" y="1.67" class="f">the</text>
+          <text x="34.068" y="1.67" class="f">link</text>
+          <text x="39.078" y="1.67" class="f">itself</text>
+        </symbol>
+        <symbol id="72">
+          <text x="7.014" y="1.67" class="g">-m</text>
+          <text x="14.028" y="1.67" class="f">fill</text>
+          <text x="19.038" y="1.67" class="f">width</text>
+          <text x="25.05" y="1.67" class="f">with</text>
+          <text x="30.06" y="1.67" class="f">a</text>
+          <text x="32.064" y="1.67" class="f">comma</text>
+          <text x="38.076" y="1.67" class="f">separated</text>
+          <text x="48.096" y="1.67" class="f">list</text>
+          <text x="53.106" y="1.67" class="f">of</text>
+          <text x="56.112" y="1.67" class="f">entries</text>
+        </symbol>
+        <symbol id="73">
+          <text x="7.014" y="1.67" class="g">-n</text>
+          <text x="9.018" y="1.67" class="f">,</text>
+          <text x="11.022" y="1.67" class="g">--numeric-uid-gid</text>
+        </symbol>
+        <symbol id="74">
+          <text x="14.028" y="1.67" class="f">like</text>
+          <text x="19.038" y="1.67" class="g">-l</text>
+          <text x="21.042" y="1.67" class="f">,</text>
+          <text x="23.046" y="1.67" class="f">but</text>
+          <text x="27.054" y="1.67" class="f">list</text>
+          <text x="32.064" y="1.67" class="f">numeric</text>
+          <text x="40.08" y="1.67" class="f">user</text>
+          <text x="45.09" y="1.67" class="f">and</text>
+          <text x="49.098" y="1.67" class="f">group</text>
+          <text x="55.11" y="1.67" class="f">IDs</text>
+        </symbol>
+        <symbol id="75">
+          <text x="7.014" y="1.67" class="g">-N</text>
+          <text x="9.018" y="1.67" class="f">,</text>
+          <text x="11.022" y="1.67" class="g">--literal</text>
+        </symbol>
+        <symbol id="76">
+          <text x="14.028" y="1.67" class="f">print</text>
+          <text x="20.04" y="1.67" class="f">raw</text>
+          <text x="24.048" y="1.67" class="f">entry</text>
+          <text x="30.06" y="1.67" class="f">names</text>
+          <text x="36.072" y="1.67" class="f">(don't</text>
+          <text x="43.086" y="1.67" class="f">treat</text>
+          <text x="49.098" y="1.67" class="f">e.g.</text>
+          <text x="54.108" y="1.67" class="f">control</text>
+          <text x="62.124" y="1.67" class="f">characters</text>
+          <text x="73.146" y="1.67" class="f">specially)</text>
+        </symbol>
+        <symbol id="77">
+          <text x="7.014" y="1.67" class="g">-o</text>
+          <text x="14.028" y="1.67" class="f">like</text>
+          <text x="19.038" y="1.67" class="g">-l</text>
+          <text x="21.042" y="1.67" class="f">,</text>
+          <text x="23.046" y="1.67" class="f">but</text>
+          <text x="27.054" y="1.67" class="f">do</text>
+          <text x="30.06" y="1.67" class="f">not</text>
+          <text x="34.068" y="1.67" class="f">list</text>
+          <text x="39.078" y="1.67" class="f">group</text>
+          <text x="45.09" y="1.67" class="f">information</text>
+        </symbol>
+        <symbol id="78">
+          <text x="7.014" y="1.67" class="g">-p</text>
+          <text x="9.018" y="1.67" class="f">,</text>
+          <text x="11.022" y="1.67" class="g">--indicator-style</text>
+          <text x="28.056" y="1.67" class="f">=</text>
+          <text x="29.058" y="1.67" class="h">slash</text>
+        </symbol>
+        <symbol id="79">
+          <text x="14.028" y="1.67" class="f">append</text>
+          <text x="21.042" y="1.67" class="f">/</text>
+          <text x="23.046" y="1.67" class="f">indicator</text>
+          <text x="33.066" y="1.67" class="f">to</text>
+          <text x="36.072" y="1.67" class="f">directories</text>
+        </symbol>
+        <symbol id="80">
+          <text x="7.014" y="1.67" class="g">-q</text>
+          <text x="9.018" y="1.67" class="f">,</text>
+          <text x="11.022" y="1.67" class="g">--hide-control-chars</text>
+        </symbol>
+        <symbol id="81">
+          <text x="14.028" y="1.67" class="f">print</text>
+          <text x="20.04" y="1.67" class="f">?</text>
+          <text x="22.044" y="1.67" class="f">instead</text>
+          <text x="30.06" y="1.67" class="f">of</text>
+          <text x="33.066" y="1.67" class="f">nongraphic</text>
+          <text x="44.088" y="1.67" class="f">characters</text>
+        </symbol>
+        <symbol id="82">
+          <text x="7.014" y="1.67" class="g">--show-control-chars</text>
+        </symbol>
+        <symbol id="83">
+          <text x="14.028" y="1.67" class="f">show</text>
+          <text x="19.038" y="1.67" class="f">nongraphic</text>
+          <text x="30.06" y="1.67" class="f">characters</text>
+          <text x="41.082" y="1.67" class="f">as-is</text>
+          <text x="47.094" y="1.67" class="f">(the</text>
+          <text x="52.104" y="1.67" class="f">default,</text>
+          <text x="61.122" y="1.67" class="f">unless</text>
+          <text x="68.136" y="1.67" class="f">program</text>
+          <text x="76.152" y="1.67" class="f">is</text>
+          <text x="79.158" y="1.67" class="f">'ls'</text>
+          <text x="84.168" y="1.67" class="f">and</text>
+          <text x="88.176" y="1.67" class="f">output</text>
+          <text x="95.19" y="1.67" class="f">is</text>
+          <text x="98.196" y="1.67" class="f">a</text>
+          <text x="100.2" y="1.67" class="f">terminal)</text>
+        </symbol>
+        <symbol id="84">
+          <text x="7.014" y="1.67" class="g">-Q</text>
+          <text x="9.018" y="1.67" class="f">,</text>
+          <text x="11.022" y="1.67" class="g">--quote-name</text>
+        </symbol>
+        <symbol id="85">
+          <text x="14.028" y="1.67" class="f">enclose</text>
+          <text x="22.044" y="1.67" class="f">entry</text>
+          <text x="28.056" y="1.67" class="f">names</text>
+          <text x="34.068" y="1.67" class="f">in</text>
+          <text x="37.074" y="1.67" class="f">double</text>
+          <text x="44.088" y="1.67" class="f">quotes</text>
+        </symbol>
+        <symbol id="86">
+          <text x="7.014" y="1.67" class="g">--quoting-style</text>
+          <text x="22.044" y="1.67" class="f">=</text>
+          <text x="23.046" y="1.67" class="h">WORD</text>
+        </symbol>
+        <symbol id="87">
+          <text x="14.028" y="1.67" class="f">use</text>
+          <text x="18.036" y="1.67" class="f">quoting</text>
+          <text x="26.052" y="1.67" class="f">style</text>
+          <text x="32.064" y="1.67" class="f">WORD</text>
+          <text x="37.074" y="1.67" class="f">for</text>
+          <text x="41.082" y="1.67" class="f">entry</text>
+          <text x="47.094" y="1.67" class="f">names:</text>
+          <text x="54.108" y="1.67" class="f">literal,</text>
+          <text x="63.126" y="1.67" class="f">locale,</text>
+          <text x="71.142" y="1.67" class="f">shell,</text>
+          <text x="78.156" y="1.67" class="f">shell-always,</text>
+          <text x="92.184" y="1.67" class="f">c,</text>
+          <text x="95.19" y="1.67" class="f">escape</text>
+        </symbol>
+        <symbol id="88">
+          <text x="7.014" y="1.67" class="g">-r</text>
+          <text x="9.018" y="1.67" class="f">,</text>
+          <text x="11.022" y="1.67" class="g">--reverse</text>
+        </symbol>
+        <symbol id="89">
+          <text x="14.028" y="1.67" class="f">reverse</text>
+          <text x="22.044" y="1.67" class="f">order</text>
+          <text x="28.056" y="1.67" class="f">while</text>
+          <text x="34.068" y="1.67" class="f">sorting</text>
+        </symbol>
+        <symbol id="90">
+          <text x="7.014" y="1.67" class="g">-R</text>
+          <text x="9.018" y="1.67" class="f">,</text>
+          <text x="11.022" y="1.67" class="g">--recursive</text>
+        </symbol>
+        <symbol id="91">
+          <text x="14.028" y="1.67" class="f">list</text>
+          <text x="19.038" y="1.67" class="f">subdirectories</text>
+          <text x="34.068" y="1.67" class="f">recursively</text>
+        </symbol>
+        <symbol id="92">
+          <text x="7.014" y="1.67" class="g">-s</text>
+          <text x="9.018" y="1.67" class="f">,</text>
+          <text x="11.022" y="1.67" class="g">--size</text>
+        </symbol>
+        <symbol id="93">
+          <text x="14.028" y="1.67" class="f">print</text>
+          <text x="20.04" y="1.67" class="f">the</text>
+          <text x="24.048" y="1.67" class="f">allocated</text>
+          <text x="34.068" y="1.67" class="f">size</text>
+          <text x="39.078" y="1.67" class="f">of</text>
+          <text x="42.084" y="1.67" class="f">each</text>
+          <text x="47.094" y="1.67" class="f">file,</text>
+          <text x="53.106" y="1.67" class="f">in</text>
+          <text x="56.112" y="1.67" class="f">blocks</text>
+        </symbol>
+        <symbol id="94">
+          <text x="7.014" y="1.67" class="g">-S</text>
+          <text x="14.028" y="1.67" class="f">sort</text>
+          <text x="19.038" y="1.67" class="f">by</text>
+          <text x="22.044" y="1.67" class="f">file</text>
+          <text x="27.054" y="1.67" class="f">size</text>
+        </symbol>
+        <symbol id="95">
+          <text x="7.014" y="1.67" class="g">--sort</text>
+          <text x="13.026" y="1.67" class="f">=</text>
+          <text x="14.028" y="1.67" class="h">WORD</text>
+        </symbol>
+        <symbol id="96">
+          <text x="14.028" y="1.67" class="f">sort</text>
+          <text x="19.038" y="1.67" class="f">by</text>
+          <text x="22.044" y="1.67" class="f">WORD</text>
+          <text x="27.054" y="1.67" class="f">instead</text>
+          <text x="35.07" y="1.67" class="f">of</text>
+          <text x="38.076" y="1.67" class="f">name:</text>
+          <text x="44.088" y="1.67" class="f">none</text>
+          <text x="49.098" y="1.67" class="f">(</text>
+          <text x="50.1" y="1.67" class="g">-U</text>
+          <text x="52.104" y="1.67" class="f">),</text>
+          <text x="55.11" y="1.67" class="f">size</text>
+          <text x="60.12" y="1.67" class="f">(</text>
+          <text x="61.122" y="1.67" class="g">-S</text>
+          <text x="63.126" y="1.67" class="f">),</text>
+          <text x="66.132" y="1.67" class="f">time</text>
+          <text x="71.142" y="1.67" class="f">(</text>
+          <text x="72.144" y="1.67" class="g">-t</text>
+          <text x="74.148" y="1.67" class="f">),</text>
+          <text x="77.154" y="1.67" class="f">version</text>
+          <text x="85.17" y="1.67" class="f">(</text>
+          <text x="86.172" y="1.67" class="g">-v</text>
+          <text x="88.176" y="1.67" class="f">),</text>
+          <text x="91.182" y="1.67" class="f">extension</text>
+          <text x="101.202" y="1.67" class="f">(</text>
+          <text x="102.204" y="1.67" class="g">-X</text>
+          <text x="104.208" y="1.67" class="f">)</text>
+        </symbol>
+        <symbol id="97">
+          <text x="7.014" y="1.67" class="g">--time</text>
+          <text x="13.026" y="1.67" class="f">=</text>
+          <text x="14.028" y="1.67" class="h">WORD</text>
+        </symbol>
+        <symbol id="98">
+          <text x="14.028" y="1.67" class="f">with</text>
+          <text x="19.038" y="1.67" class="g">-l</text>
+          <text x="21.042" y="1.67" class="f">,</text>
+          <text x="23.046" y="1.67" class="f">show</text>
+          <text x="28.056" y="1.67" class="f">time</text>
+          <text x="33.066" y="1.67" class="f">as</text>
+          <text x="36.072" y="1.67" class="f">WORD</text>
+          <text x="41.082" y="1.67" class="f">instead</text>
+          <text x="49.098" y="1.67" class="f">of</text>
+          <text x="52.104" y="1.67" class="f">default</text>
+          <text x="60.12" y="1.67" class="f">modification</text>
+          <text x="73.146" y="1.67" class="f">time:</text>
+          <text x="79.158" y="1.67" class="f">atime</text>
+          <text x="85.17" y="1.67" class="f">or</text>
+          <text x="88.176" y="1.67" class="f">access</text>
+          <text x="95.19" y="1.67" class="f">or</text>
+          <text x="98.196" y="1.67" class="f">use</text>
+          <text x="102.204" y="1.67" class="f">(</text>
+          <text x="103.206" y="1.67" class="g">-u</text>
+          <text x="105.21" y="1.67" class="f">)</text>
+          <text x="107.214" y="1.67" class="f">ctime</text>
+          <text x="113.226" y="1.67" class="f">or</text>
+          <text x="116.232" y="1.67" class="f">sta&#x2010;</text>
+        </symbol>
+        <symbol id="99">
+          <text x="14.028" y="1.67" class="f">tus</text>
+          <text x="18.036" y="1.67" class="f">(</text>
+          <text x="19.038" y="1.67" class="g">-c</text>
+          <text x="21.042" y="1.67" class="f">);</text>
+          <text x="24.048" y="1.67" class="f">also</text>
+          <text x="29.058" y="1.67" class="f">use</text>
+          <text x="33.066" y="1.67" class="f">specified</text>
+          <text x="43.086" y="1.67" class="f">time</text>
+          <text x="48.096" y="1.67" class="f">as</text>
+          <text x="51.102" y="1.67" class="f">sort</text>
+          <text x="56.112" y="1.67" class="f">key</text>
+          <text x="60.12" y="1.67" class="f">if</text>
+          <text x="63.126" y="1.67" class="g">--sort</text>
+          <text x="69.138" y="1.67" class="f">=</text>
+          <text x="70.14" y="1.67" class="h">time</text>
+        </symbol>
+        <symbol id="100">
+          <text x="7.014" y="1.67" class="g">--time-style</text>
+          <text x="19.038" y="1.67" class="f">=</text>
+          <text x="20.04" y="1.67" class="h">STYLE</text>
+        </symbol>
+        <symbol id="101">
+          <text x="14.028" y="1.67" class="f">with</text>
+          <text x="20.04" y="1.67" class="g">-l</text>
+          <text x="22.044" y="1.67" class="f">,</text>
+          <text x="24.048" y="1.67" class="f">show</text>
+          <text x="29.058" y="1.67" class="f">times</text>
+          <text x="35.07" y="1.67" class="f">using</text>
+          <text x="41.082" y="1.67" class="f">style</text>
+          <text x="47.094" y="1.67" class="f">STYLE:</text>
+          <text x="54.108" y="1.67" class="f">full-iso,</text>
+          <text x="64.128" y="1.67" class="f">long-iso,</text>
+          <text x="74.148" y="1.67" class="f">iso,</text>
+          <text x="79.158" y="1.67" class="f">locale,</text>
+          <text x="87.174" y="1.67" class="f">or</text>
+          <text x="90.18" y="1.67" class="f">+FORMAT;</text>
+          <text x="99.198" y="1.67" class="f">FORMAT</text>
+          <text x="106.212" y="1.67" class="f">is</text>
+          <text x="109.218" y="1.67" class="f">interpreted</text>
+        </symbol>
+        <symbol id="102">
+          <text x="14.028" y="1.67" class="f">like</text>
+          <text x="19.038" y="1.67" class="f">in</text>
+          <text x="22.044" y="1.67" class="f">'date';</text>
+          <text x="30.06" y="1.67" class="f">if</text>
+          <text x="33.066" y="1.67" class="f">FORMAT</text>
+          <text x="40.08" y="1.67" class="f">is</text>
+          <text x="43.086" y="1.67" class="f">FORMAT1&lt;newline&gt;FORMAT2,</text>
+          <text x="68.136" y="1.67" class="f">then</text>
+          <text x="73.146" y="1.67" class="f">FORMAT1</text>
+          <text x="81.162" y="1.67" class="f">applies</text>
+          <text x="89.178" y="1.67" class="f">to</text>
+          <text x="92.184" y="1.67" class="f">non-recent</text>
+          <text x="103.206" y="1.67" class="f">files</text>
+          <text x="109.218" y="1.67" class="f">and</text>
+          <text x="113.226" y="1.67" class="f">FORMAT2</text>
+        </symbol>
+        <symbol id="103">
+          <text x="7.014" y="1.67" class="g">-U</text>
+          <text x="14.028" y="1.67" class="f">do</text>
+          <text x="17.034" y="1.67" class="f">not</text>
+          <text x="21.042" y="1.67" class="f">sort;</text>
+          <text x="27.054" y="1.67" class="f">list</text>
+          <text x="32.064" y="1.67" class="f">entries</text>
+          <text x="40.08" y="1.67" class="f">in</text>
+          <text x="43.086" y="1.67" class="f">directory</text>
+          <text x="53.106" y="1.67" class="f">order</text>
+        </symbol>
+        <symbol id="104">
+          <text x="7.014" y="1.67" class="g">-v</text>
+          <text x="14.028" y="1.67" class="f">natural</text>
+          <text x="22.044" y="1.67" class="f">sort</text>
+          <text x="27.054" y="1.67" class="f">of</text>
+          <text x="30.06" y="1.67" class="f">(version)</text>
+          <text x="40.08" y="1.67" class="f">numbers</text>
+          <text x="48.096" y="1.67" class="f">within</text>
+          <text x="55.11" y="1.67" class="f">text</text>
+        </symbol>
+        <symbol id="105">
+          <text x="7.014" y="1.67" class="g">-w</text>
+          <text x="9.018" y="1.67" class="f">,</text>
+          <text x="11.022" y="1.67" class="g">--width</text>
+          <text x="18.036" y="1.67" class="f">=</text>
+          <text x="19.038" y="1.67" class="h">COLS</text>
+        </symbol>
+        <symbol id="106">
+          <text x="14.028" y="1.67" class="f">assume</text>
+          <text x="21.042" y="1.67" class="f">screen</text>
+          <text x="28.056" y="1.67" class="f">width</text>
+          <text x="34.068" y="1.67" class="f">instead</text>
+          <text x="42.084" y="1.67" class="f">of</text>
+          <text x="45.09" y="1.67" class="f">current</text>
+          <text x="53.106" y="1.67" class="f">value</text>
+        </symbol>
+        <symbol id="107">
+          <text x="7.014" y="1.67" class="g">-x</text>
+          <text x="14.028" y="1.67" class="f">list</text>
+          <text x="19.038" y="1.67" class="f">entries</text>
+          <text x="27.054" y="1.67" class="f">by</text>
+          <text x="30.06" y="1.67" class="f">lines</text>
+          <text x="36.072" y="1.67" class="f">instead</text>
+          <text x="44.088" y="1.67" class="f">of</text>
+          <text x="47.094" y="1.67" class="f">by</text>
+          <text x="50.1" y="1.67" class="f">columns</text>
+        </symbol>
+        <symbol id="108">
+          <text x="7.014" y="1.67" class="g">-X</text>
+          <text x="14.028" y="1.67" class="f">sort</text>
+          <text x="19.038" y="1.67" class="f">alphabetically</text>
+          <text x="34.068" y="1.67" class="f">by</text>
+          <text x="37.074" y="1.67" class="f">entry</text>
+          <text x="43.086" y="1.67" class="f">extension</text>
+        </symbol>
+        <symbol id="109">
+          <text x="7.014" y="1.67" class="g">-1</text>
+          <text x="14.028" y="1.67" class="f">list</text>
+          <text x="19.038" y="1.67" class="f">one</text>
+          <text x="23.046" y="1.67" class="f">file</text>
+          <text x="28.056" y="1.67" class="f">per</text>
+          <text x="32.064" y="1.67" class="f">line</text>
+        </symbol>
+        <symbol id="110">
+          <text x="7.014" y="1.67" class="f">SELinux</text>
+          <text x="15.03" y="1.67" class="f">options:</text>
+        </symbol>
+        <symbol id="111">
+          <text x="7.014" y="1.67" class="g">--lcontext</text>
+        </symbol>
+        <symbol id="112">
+          <text x="14.028" y="1.67" class="f">Display</text>
+          <text x="22.044" y="1.67" class="f">security</text>
+          <text x="31.062" y="1.67" class="f">context.</text>
+          <text x="42.084" y="1.67" class="f">Enable</text>
+          <text x="49.098" y="1.67" class="g">-l</text>
+          <text x="51.102" y="1.67" class="f">.</text>
+          <text x="53.106" y="1.67" class="f">Lines</text>
+          <text x="59.118" y="1.67" class="f">will</text>
+          <text x="64.128" y="1.67" class="f">probably</text>
+          <text x="73.146" y="1.67" class="f">be</text>
+          <text x="76.152" y="1.67" class="f">too</text>
+          <text x="80.16" y="1.67" class="f">wide</text>
+          <text x="85.17" y="1.67" class="f">for</text>
+          <text x="89.178" y="1.67" class="f">most</text>
+          <text x="94.188" y="1.67" class="f">displays.</text>
+        </symbol>
+        <symbol id="113">
+          <text x="7.014" y="1.67" class="g">-Z</text>
+          <text x="9.018" y="1.67" class="f">,</text>
+          <text x="11.022" y="1.67" class="g">--context</text>
+        </symbol>
+        <symbol id="114">
+          <text x="14.028" y="1.67" class="f">Display</text>
+          <text x="22.044" y="1.67" class="f">security</text>
+          <text x="31.062" y="1.67" class="f">context</text>
+          <text x="39.078" y="1.67" class="f">so</text>
+          <text x="42.084" y="1.67" class="f">it</text>
+          <text x="45.09" y="1.67" class="f">fits</text>
+          <text x="50.1" y="1.67" class="f">on</text>
+          <text x="53.106" y="1.67" class="f">most</text>
+          <text x="58.116" y="1.67" class="f">displays.</text>
+          <text x="69.138" y="1.67" class="f">Displays</text>
+          <text x="78.156" y="1.67" class="f">only</text>
+          <text x="83.166" y="1.67" class="f">mode,</text>
+          <text x="89.178" y="1.67" class="f">user,</text>
+          <text x="95.19" y="1.67" class="f">group,</text>
+          <text x="103.206" y="1.67" class="f">security</text>
+          <text x="113.226" y="1.67" class="f">context</text>
+        </symbol>
+        <symbol id="115">
+          <text x="14.028" y="1.67" class="f">and</text>
+          <text x="18.036" y="1.67" class="f">file</text>
+          <text x="23.046" y="1.67" class="f">name.</text>
+        </symbol>
+        <symbol id="116">
+          <text x="7.014" y="1.67" class="g">--scontext</text>
+        </symbol>
+        <symbol id="117">
+          <text x="14.028" y="1.67" class="f">Display</text>
+          <text x="22.044" y="1.67" class="f">only</text>
+          <text x="27.054" y="1.67" class="f">security</text>
+          <text x="36.072" y="1.67" class="f">context</text>
+          <text x="44.088" y="1.67" class="f">and</text>
+          <text x="48.096" y="1.67" class="f">file</text>
+          <text x="53.106" y="1.67" class="f">name.</text>
+        </symbol>
+        <symbol id="118">
+          <text x="7.014" y="1.67" class="g">--help</text>
+          <text x="14.028" y="1.67" class="f">display</text>
+          <text x="22.044" y="1.67" class="f">this</text>
+          <text x="27.054" y="1.67" class="f">help</text>
+          <text x="32.064" y="1.67" class="f">and</text>
+          <text x="36.072" y="1.67" class="f">exit</text>
+        </symbol>
+        <symbol id="119">
+          <text x="7.014" y="1.67" class="g">--version</text>
+        </symbol>
+        <symbol id="120">
+          <text x="14.028" y="1.67" class="f">output</text>
+          <text x="21.042" y="1.67" class="f">version</text>
+          <text x="29.058" y="1.67" class="f">information</text>
+          <text x="41.082" y="1.67" class="f">and</text>
+          <text x="45.09" y="1.67" class="f">exit</text>
+        </symbol>
+        <symbol id="121">
+          <text x="7.014" y="1.67" class="f">SIZE</text>
+          <text x="12.024" y="1.67" class="f">is</text>
+          <text x="15.03" y="1.67" class="f">an</text>
+          <text x="18.036" y="1.67" class="f">integer</text>
+          <text x="26.052" y="1.67" class="f">and</text>
+          <text x="30.06" y="1.67" class="f">optional</text>
+          <text x="39.078" y="1.67" class="f">unit</text>
+          <text x="44.088" y="1.67" class="f">(example:</text>
+          <text x="54.108" y="1.67" class="f">10M</text>
+          <text x="58.116" y="1.67" class="f">is</text>
+          <text x="61.122" y="1.67" class="f">10*1024*1024).</text>
+          <text x="77.154" y="1.67" class="f">Units</text>
+          <text x="83.166" y="1.67" class="f">are</text>
+          <text x="87.174" y="1.67" class="f">K,</text>
+          <text x="90.18" y="1.67" class="f">M,</text>
+          <text x="93.186" y="1.67" class="f">G,</text>
+          <text x="96.192" y="1.67" class="f">T,</text>
+          <text x="99.198" y="1.67" class="f">P,</text>
+          <text x="102.204" y="1.67" class="f">E,</text>
+          <text x="105.21" y="1.67" class="f">Z,</text>
+          <text x="108.216" y="1.67" class="f">Y</text>
+          <text x="110.22" y="1.67" class="f">(powers</text>
+          <text x="118.236" y="1.67" class="f">of</text>
+        </symbol>
+        <symbol id="122">
+          <text x="7.014" y="1.67" class="f">1024)</text>
+          <text x="13.026" y="1.67" class="f">or</text>
+          <text x="16.032" y="1.67" class="f">KB,</text>
+          <text x="20.04" y="1.67" class="f">MB,</text>
+          <text x="24.048" y="1.67" class="f">...</text>
+          <text x="28.056" y="1.67" class="f">(powers</text>
+          <text x="36.072" y="1.67" class="f">of</text>
+          <text x="39.078" y="1.67" class="f">1000).</text>
+        </symbol>
+        <symbol id="123">
+          <text x="7.014" y="1.67" class="f">Using</text>
+          <text x="13.026" y="1.67" class="f">color</text>
+          <text x="19.038" y="1.67" class="f">to</text>
+          <text x="22.044" y="1.67" class="f">distinguish</text>
+          <text x="34.068" y="1.67" class="f">file</text>
+          <text x="39.078" y="1.67" class="f">types</text>
+          <text x="45.09" y="1.67" class="f">is</text>
+          <text x="48.096" y="1.67" class="f">disabled</text>
+          <text x="57.114" y="1.67" class="f">both</text>
+          <text x="62.124" y="1.67" class="f">by</text>
+          <text x="65.13" y="1.67" class="f">default</text>
+          <text x="73.146" y="1.67" class="f">and</text>
+          <text x="77.154" y="1.67" class="f">with</text>
+          <text x="82.164" y="1.67" class="g">--color</text>
+          <text x="89.178" y="1.67" class="f">=</text>
+          <text x="90.18" y="1.67" class="h">never</text>
+          <text x="95.19" y="1.67" class="f">.</text>
+          <text x="98.196" y="1.67" class="f">With</text>
+          <text x="103.206" y="1.67" class="g">--color</text>
+          <text x="110.22" y="1.67" class="f">=</text>
+          <text x="111.222" y="1.67" class="h">auto</text>
+          <text x="115.23" y="1.67" class="f">,</text>
+          <text x="118.236" y="1.67" class="f">ls</text>
+        </symbol>
+        <symbol id="124">
+          <text x="7.014" y="1.67" class="f">emits</text>
+          <text x="14.028" y="1.67" class="f">color</text>
+          <text x="21.042" y="1.67" class="f">codes</text>
+          <text x="27.054" y="1.67" class="f">only</text>
+          <text x="32.064" y="1.67" class="f">when</text>
+          <text x="37.074" y="1.67" class="f">standard</text>
+          <text x="46.092" y="1.67" class="f">output</text>
+          <text x="53.106" y="1.67" class="f">is</text>
+          <text x="56.112" y="1.67" class="f">connected</text>
+          <text x="66.132" y="1.67" class="f">to</text>
+          <text x="69.138" y="1.67" class="f">a</text>
+          <text x="71.142" y="1.67" class="f">terminal.</text>
+          <text x="82.164" y="1.67" class="f">The</text>
+          <text x="86.172" y="1.67" class="f">LS_COLORS</text>
+          <text x="96.192" y="1.67" class="f">environment</text>
+          <text x="108.216" y="1.67" class="f">variable</text>
+          <text x="117.234" y="1.67" class="f">can</text>
+        </symbol>
+        <symbol id="125">
+          <text x="7.014" y="1.67" class="f">change</text>
+          <text x="14.028" y="1.67" class="f">the</text>
+          <text x="18.036" y="1.67" class="f">settings.</text>
+          <text x="29.058" y="1.67" class="f">Use</text>
+          <text x="33.066" y="1.67" class="f">the</text>
+          <text x="37.074" y="1.67" class="f">dircolors</text>
+          <text x="47.094" y="1.67" class="f">command</text>
+          <text x="55.11" y="1.67" class="f">to</text>
+          <text x="58.116" y="1.67" class="f">set</text>
+          <text x="62.124" y="1.67" class="f">it.</text>
+        </symbol>
+        <symbol id="126">
+          <text x="3.006" y="1.67" class="g">Exit</text>
+          <text x="8.016" y="1.67" class="g">status:</text>
+        </symbol>
+        <symbol id="127">
+          <text x="7.014" y="1.67" class="f">0</text>
+          <text x="14.028" y="1.67" class="f">if</text>
+          <text x="17.034" y="1.67" class="f">OK,</text>
+        </symbol>
+        <symbol id="128">
+          <text x="7.014" y="1.67" class="f">1</text>
+          <text x="14.028" y="1.67" class="f">if</text>
+          <text x="17.034" y="1.67" class="f">minor</text>
+          <text x="23.046" y="1.67" class="f">problems</text>
+          <text x="32.064" y="1.67" class="f">(e.g.,</text>
+          <text x="39.078" y="1.67" class="f">cannot</text>
+          <text x="46.092" y="1.67" class="f">access</text>
+          <text x="53.106" y="1.67" class="f">subdirectory),</text>
+        </symbol>
+        <symbol id="129">
+          <text x="7.014" y="1.67" class="f">2</text>
+          <text x="14.028" y="1.67" class="f">if</text>
+          <text x="17.034" y="1.67" class="f">serious</text>
+          <text x="25.05" y="1.67" class="f">trouble</text>
+          <text x="33.066" y="1.67" class="f">(e.g.,</text>
+          <text x="40.08" y="1.67" class="f">cannot</text>
+          <text x="47.094" y="1.67" class="f">access</text>
+          <text x="54.108" y="1.67" class="f">command-line</text>
+          <text x="67.134" y="1.67" class="f">argument).</text>
+        </symbol>
+        <symbol id="130">
+          <text x="7.014" y="1.67" class="f">GNU</text>
+          <text x="11.022" y="1.67" class="f">coreutils</text>
+          <text x="21.042" y="1.67" class="f">online</text>
+          <text x="28.056" y="1.67" class="f">help:</text>
+          <text x="34.068" y="1.67" class="f">&lt;http://www.gnu.org/software/coreutils/&gt;</text>
+          <text x="75.15" y="1.67" class="f">Report</text>
+          <text x="82.164" y="1.67" class="f">ls</text>
+          <text x="85.17" y="1.67" class="f">translation</text>
+          <text x="97.194" y="1.67" class="f">bugs</text>
+          <text x="102.204" y="1.67" class="f">to</text>
+          <text x="106.212" y="1.67" class="f">&lt;http://trans&#x2010;</text>
+        </symbol>
+        <symbol id="131">
+          <text x="7.014" y="1.67" class="f">lationproject.org/team/&gt;</text>
+        </symbol>
+        <symbol id="132">
+          <text y="1.67" class="g">AUTHOR</text>
+        </symbol>
+        <symbol id="133">
+          <text x="7.014" y="1.67" class="f">Written</text>
+          <text x="15.03" y="1.67" class="f">by</text>
+          <text x="18.036" y="1.67" class="f">Richard</text>
+          <text x="26.052" y="1.67" class="f">M.</text>
+          <text x="29.058" y="1.67" class="f">Stallman</text>
+          <text x="38.076" y="1.67" class="f">and</text>
+          <text x="42.084" y="1.67" class="f">David</text>
+          <text x="48.096" y="1.67" class="f">MacKenzie.</text>
+        </symbol>
+        <symbol id="134">
+          <text y="1.67" class="g">COPYRIGHT</text>
+        </symbol>
+        <symbol id="135">
+          <text x="7.014" y="1.67" class="f">Copyright</text>
+          <text x="19.038" y="1.67" class="f">&#xA9;</text>
+          <text x="23.046" y="1.67" class="f">2013</text>
+          <text x="30.06" y="1.67" class="f">Free</text>
+          <text x="37.074" y="1.67" class="f">Software</text>
+          <text x="48.096" y="1.67" class="f">Foundation,</text>
+          <text x="62.124" y="1.67" class="f">Inc.</text>
+          <text x="70.14" y="1.67" class="f">License</text>
+          <text x="80.16" y="1.67" class="f">GPLv3+:</text>
+          <text x="89.178" y="1.67" class="f">GNU</text>
+          <text x="94.188" y="1.67" class="f">GPL</text>
+          <text x="99.198" y="1.67" class="f">version</text>
+          <text x="108.216" y="1.67" class="f">3</text>
+          <text x="111.222" y="1.67" class="f">or</text>
+          <text x="115.23" y="1.67" class="f">later</text>
+        </symbol>
+        <symbol id="136">
+          <text x="7.014" y="1.67" class="f">&lt;http://gnu.org/licenses/gpl.html&gt;.</text>
+        </symbol>
+        <symbol id="137">
+          <text x="7.014" y="1.67" class="f">This</text>
+          <text x="12.024" y="1.67" class="f">is</text>
+          <text x="15.03" y="1.67" class="f">free</text>
+          <text x="20.04" y="1.67" class="f">software:</text>
+          <text x="30.06" y="1.67" class="f">you</text>
+          <text x="34.068" y="1.67" class="f">are</text>
+          <text x="38.076" y="1.67" class="f">free</text>
+          <text x="43.086" y="1.67" class="f">to</text>
+          <text x="46.092" y="1.67" class="f">change</text>
+          <text x="53.106" y="1.67" class="f">and</text>
+          <text x="57.114" y="1.67" class="f">redistribute</text>
+          <text x="70.14" y="1.67" class="f">it.</text>
+          <text x="75.15" y="1.67" class="f">There</text>
+          <text x="81.162" y="1.67" class="f">is</text>
+          <text x="84.168" y="1.67" class="f">NO</text>
+          <text x="87.174" y="1.67" class="f">WARRANTY,</text>
+          <text x="97.194" y="1.67" class="f">to</text>
+          <text x="100.2" y="1.67" class="f">the</text>
+          <text x="104.208" y="1.67" class="f">extent</text>
+          <text x="111.222" y="1.67" class="f">permitted</text>
+        </symbol>
+        <symbol id="a">
+          <path fill="transparent" d="M0 0h124v28H0z"/>
+        </symbol>
+        <symbol id="b">
+          <path fill="#6f7683" d="M0 0h1.102v2.171H0z"/>
+        </symbol>
+      </defs>
+      <path class="a" d="M0 0h124v60.788H0z"/>
+      <g style="animation-duration:21.51368s;animation-iteration-count:infinite;animation-name:k;animation-timing-function:steps(1,end)">
+        <svg width="3720">
+          <svg>
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="-.004"/>
+          </svg>
+          <svg x="124">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="20.996"/>
+            <use xlink:href="#1"/>
+          </svg>
+          <svg x="248">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="21.996"/>
+            <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+            <text x="21.042" y="1.67" class="f">m</text>
+          </svg>
+          <svg x="372">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="22.996"/>
+            <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+            <text x="21.042" y="1.67" class="f">ma</text>
+          </svg>
+          <svg x="496">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="23.996"/>
+            <use xlink:href="#2"/>
+          </svg>
+          <svg x="620">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="24.996"/>
+            <use xlink:href="#2"/>
+          </svg>
+          <svg x="744">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="25.996"/>
+            <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+            <text x="21.042" y="1.67" class="f">man</text>
+            <text x="25.05" y="1.67" class="f">l</text>
+          </svg>
+          <svg x="868">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="26.996"/>
+            <use xlink:href="#3"/>
+          </svg>
+          <svg x="992">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="-.004" y="2.146"/>
+            <use xlink:href="#3"/>
+          </svg>
+          <svg x="1116">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="-.004" y="2.146"/>
+          </svg>
+          <svg x="1240">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="23.996" y="58.592"/>
+            <use xlink:href="#4" y="2.171"/>
+            <use xlink:href="#5" y="6.513"/>
+            <use xlink:href="#6" y="8.684"/>
+            <use xlink:href="#7" y="13.026"/>
+            <use xlink:href="#8" y="15.197"/>
+            <use xlink:href="#9" y="19.539"/>
+            <use xlink:href="#10" y="21.71"/>
+            <use xlink:href="#11" y="23.881"/>
+            <use xlink:href="#12" y="28.223"/>
+            <use xlink:href="#13" y="32.565"/>
+            <use xlink:href="#14" y="34.736"/>
+            <use xlink:href="#15" y="39.078"/>
+            <use xlink:href="#16" y="41.249"/>
+            <use xlink:href="#17" y="45.591"/>
+            <use xlink:href="#18" y="47.762"/>
+            <use xlink:href="#19" y="52.104"/>
+            <use xlink:href="#20" y="54.275"/>
+            <use xlink:href="#21" y="58.617"/>
+          </svg>
+          <svg x="1364">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="56.996" y="58.592"/>
+            <use xlink:href="#4"/>
+            <use xlink:href="#5" y="4.342"/>
+            <use xlink:href="#6" y="6.513"/>
+            <use xlink:href="#7" y="10.855"/>
+            <use xlink:href="#8" y="13.026"/>
+            <use xlink:href="#9" y="17.368"/>
+            <use xlink:href="#10" y="19.539"/>
+            <use xlink:href="#11" y="21.71"/>
+            <use xlink:href="#12" y="26.052"/>
+            <use xlink:href="#13" y="30.394"/>
+            <use xlink:href="#14" y="32.565"/>
+            <use xlink:href="#15" y="36.907"/>
+            <use xlink:href="#16" y="39.078"/>
+            <use xlink:href="#17" y="43.42"/>
+            <use xlink:href="#18" y="45.591"/>
+            <use xlink:href="#19" y="49.933"/>
+            <use xlink:href="#20" y="52.104"/>
+            <use xlink:href="#21" y="56.446"/>
+            <path class="m" d="M0 58.617h57v2.171H0z"/>
+            <text y="60.287" class="n">Manual page ls(1) line 1 (press h for help or q to quit)</text>
+          </svg>
+          <svg x="1488">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="46.996" y="58.592"/>
+            <use xlink:href="#17"/>
+            <use xlink:href="#18" y="2.171"/>
+            <use xlink:href="#19" y="6.513"/>
+            <use xlink:href="#20" y="8.684"/>
+            <use xlink:href="#21" y="13.026"/>
+            <use xlink:href="#22" y="15.197"/>
+            <use xlink:href="#23" y="17.368"/>
+            <use xlink:href="#24" y="21.71"/>
+            <use xlink:href="#25" y="23.881"/>
+            <use xlink:href="#26" y="28.223"/>
+            <use xlink:href="#27" y="30.394"/>
+            <use xlink:href="#28" y="34.736"/>
+            <use xlink:href="#29" y="39.078"/>
+            <use xlink:href="#30" y="41.249"/>
+            <use xlink:href="#31" y="45.591"/>
+            <use xlink:href="#32" y="47.762"/>
+            <use xlink:href="#33" y="52.104"/>
+            <use xlink:href="#34" y="54.275"/>
+            <text x="7.014" y="60.287" class="g">-f</text>
+            <text x="14.028" y="60.287" class="f">do</text>
+            <text x="17.034" y="60.287" class="f">not</text>
+            <text x="21.042" y="60.287" class="f">sort,</text>
+            <text x="27.054" y="60.287" class="f">enable</text>
+            <text x="34.068" y="60.287" class="g">-aU</text>
+            <text x="37.074" y="60.287" class="f">,</text>
+            <text x="39.078" y="60.287" class="f">disable</text>
+          </svg>
+          <svg x="1612">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="57.996" y="58.592"/>
+            <use xlink:href="#22"/>
+            <use xlink:href="#23" y="2.171"/>
+            <use xlink:href="#24" y="6.513"/>
+            <use xlink:href="#25" y="8.684"/>
+            <use xlink:href="#26" y="13.026"/>
+            <use xlink:href="#27" y="15.197"/>
+            <use xlink:href="#28" y="19.539"/>
+            <use xlink:href="#29" y="23.881"/>
+            <use xlink:href="#30" y="26.052"/>
+            <use xlink:href="#31" y="30.394"/>
+            <use xlink:href="#32" y="32.565"/>
+            <use xlink:href="#33" y="36.907"/>
+            <use xlink:href="#34" y="39.078"/>
+            <text x="7.014" y="45.09" class="g">-f</text>
+            <text x="14.028" y="45.09" class="f">do</text>
+            <text x="17.034" y="45.09" class="f">not</text>
+            <text x="21.042" y="45.09" class="f">sort,</text>
+            <text x="27.054" y="45.09" class="f">enable</text>
+            <text x="34.068" y="45.09" class="g">-aU</text>
+            <text x="37.074" y="45.09" class="f">,</text>
+            <text x="39.078" y="45.09" class="f">disable</text>
+            <text x="47.094" y="45.09" class="g">-ls</text>
+            <text x="51.102" y="45.09" class="g">--color</text>
+            <use xlink:href="#35" y="47.762"/>
+            <use xlink:href="#36" y="49.933"/>
+            <use xlink:href="#37" y="54.275"/>
+            <use xlink:href="#38" y="56.446"/>
+            <path class="m" d="M0 58.617h58v2.171H0z"/>
+            <text y="60.287" class="n">Manual page ls(1) line 30 (press h for help or q to quit)</text>
+          </svg>
+          <svg x="1736">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="-.004" y="58.592"/>
+            <use xlink:href="#35"/>
+            <use xlink:href="#36" y="2.171"/>
+            <use xlink:href="#37" y="6.513"/>
+            <use xlink:href="#38" y="8.684"/>
+            <use xlink:href="#39" y="13.026"/>
+            <use xlink:href="#40" y="15.197"/>
+            <use xlink:href="#41" y="19.539"/>
+            <use xlink:href="#42" y="21.71"/>
+            <use xlink:href="#43" y="26.052"/>
+            <use xlink:href="#44" y="30.394"/>
+            <use xlink:href="#45" y="32.565"/>
+            <use xlink:href="#46" y="36.907"/>
+            <use xlink:href="#47" y="41.249"/>
+            <use xlink:href="#48" y="43.42"/>
+            <use xlink:href="#49" y="47.762"/>
+            <use xlink:href="#50" y="49.933"/>
+            <use xlink:href="#51" y="54.275"/>
+            <use xlink:href="#52" y="58.617"/>
+          </svg>
+          <svg x="1860">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="57.996" y="58.592"/>
+            <use xlink:href="#39" y="2.171"/>
+            <use xlink:href="#40" y="4.342"/>
+            <use xlink:href="#41" y="8.684"/>
+            <use xlink:href="#42" y="10.855"/>
+            <use xlink:href="#43" y="15.197"/>
+            <use xlink:href="#44" y="19.539"/>
+            <use xlink:href="#45" y="21.71"/>
+            <use xlink:href="#46" y="26.052"/>
+            <use xlink:href="#47" y="30.394"/>
+            <use xlink:href="#48" y="32.565"/>
+            <use xlink:href="#49" y="36.907"/>
+            <use xlink:href="#50" y="39.078"/>
+            <use xlink:href="#51" y="43.42"/>
+            <use xlink:href="#52" y="47.762"/>
+            <use xlink:href="#53" y="49.933"/>
+            <use xlink:href="#54" y="54.275"/>
+            <use xlink:href="#55" y="56.446"/>
+            <path class="m" d="M0 58.617h58v2.171H0z"/>
+            <text y="60.287" class="n">Manual page ls(1) line 57 (press h for help or q to quit)</text>
+          </svg>
+          <svg x="1984">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="4.996" y="58.592"/>
+            <use xlink:href="#53"/>
+            <use xlink:href="#54" y="4.342"/>
+            <use xlink:href="#55" y="6.513"/>
+            <use xlink:href="#56" y="10.855"/>
+            <use xlink:href="#57" y="15.197"/>
+            <use xlink:href="#58" y="17.368"/>
+            <use xlink:href="#59" y="21.71"/>
+            <use xlink:href="#60" y="23.881"/>
+            <use xlink:href="#61" y="26.052"/>
+            <use xlink:href="#62" y="30.394"/>
+            <use xlink:href="#63" y="32.565"/>
+            <use xlink:href="#64" y="36.907"/>
+            <use xlink:href="#65" y="39.078"/>
+            <use xlink:href="#66" y="43.42"/>
+            <use xlink:href="#67" y="45.591"/>
+            <use xlink:href="#68" y="49.933"/>
+            <use xlink:href="#69" y="54.275"/>
+            <use xlink:href="#70" y="56.446"/>
+          </svg>
+          <svg x="2108">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="57.996" y="58.592"/>
+            <use xlink:href="#56" y="2.171"/>
+            <use xlink:href="#57" y="6.513"/>
+            <use xlink:href="#58" y="8.684"/>
+            <use xlink:href="#59" y="13.026"/>
+            <use xlink:href="#60" y="15.197"/>
+            <use xlink:href="#61" y="17.368"/>
+            <use xlink:href="#62" y="21.71"/>
+            <use xlink:href="#63" y="23.881"/>
+            <use xlink:href="#64" y="28.223"/>
+            <use xlink:href="#65" y="30.394"/>
+            <use xlink:href="#66" y="34.736"/>
+            <use xlink:href="#67" y="36.907"/>
+            <use xlink:href="#68" y="41.249"/>
+            <use xlink:href="#69" y="45.591"/>
+            <use xlink:href="#70" y="47.762"/>
+            <use xlink:href="#71" y="49.933"/>
+            <use xlink:href="#72" y="54.275"/>
+            <path class="m" d="M0 58.617h58v2.171H0z"/>
+            <text y="60.287" class="n">Manual page ls(1) line 84 (press h for help or q to quit)</text>
+          </svg>
+          <svg x="2232">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="10.996" y="58.592"/>
+            <use xlink:href="#71"/>
+            <use xlink:href="#72" y="4.342"/>
+            <use xlink:href="#73" y="8.684"/>
+            <use xlink:href="#74" y="10.855"/>
+            <use xlink:href="#75" y="15.197"/>
+            <use xlink:href="#76" y="17.368"/>
+            <use xlink:href="#77" y="21.71"/>
+            <use xlink:href="#78" y="26.052"/>
+            <use xlink:href="#79" y="28.223"/>
+            <use xlink:href="#80" y="32.565"/>
+            <use xlink:href="#81" y="34.736"/>
+            <use xlink:href="#82" y="39.078"/>
+            <use xlink:href="#83" y="41.249"/>
+            <use xlink:href="#84" y="45.591"/>
+            <use xlink:href="#85" y="47.762"/>
+            <use xlink:href="#86" y="52.104"/>
+            <use xlink:href="#87" y="54.275"/>
+            <text x="7.014" y="60.287" class="g">-r</text>
+            <text x="9.018" y="60.287" class="f">,</text>
+          </svg>
+          <svg x="2356">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="58.996" y="58.592"/>
+            <use xlink:href="#73"/>
+            <use xlink:href="#74" y="2.171"/>
+            <use xlink:href="#75" y="6.513"/>
+            <use xlink:href="#76" y="8.684"/>
+            <use xlink:href="#77" y="13.026"/>
+            <use xlink:href="#78" y="17.368"/>
+            <use xlink:href="#79" y="19.539"/>
+            <use xlink:href="#80" y="23.881"/>
+            <use xlink:href="#81" y="26.052"/>
+            <use xlink:href="#82" y="30.394"/>
+            <use xlink:href="#83" y="32.565"/>
+            <use xlink:href="#84" y="36.907"/>
+            <use xlink:href="#85" y="39.078"/>
+            <use xlink:href="#86" y="43.42"/>
+            <use xlink:href="#87" y="45.591"/>
+            <use xlink:href="#88" y="49.933"/>
+            <use xlink:href="#89" y="52.104"/>
+            <use xlink:href="#90" y="56.446"/>
+            <path class="m" d="M0 58.617h59v2.171H0z"/>
+            <text y="60.287" class="n">Manual page ls(1) line 111 (press h for help or q to quit)</text>
+          </svg>
+          <svg x="2480">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="13.996" y="58.592"/>
+            <use xlink:href="#84"/>
+            <use xlink:href="#85" y="2.171"/>
+            <use xlink:href="#86" y="6.513"/>
+            <use xlink:href="#87" y="8.684"/>
+            <use xlink:href="#88" y="13.026"/>
+            <use xlink:href="#89" y="15.197"/>
+            <use xlink:href="#90" y="19.539"/>
+            <use xlink:href="#91" y="21.71"/>
+            <use xlink:href="#92" y="26.052"/>
+            <use xlink:href="#93" y="28.223"/>
+            <use xlink:href="#94" y="32.565"/>
+            <use xlink:href="#95" y="36.907"/>
+            <use xlink:href="#96" y="39.078"/>
+            <use xlink:href="#97" y="43.42"/>
+            <use xlink:href="#98" y="45.591"/>
+            <use xlink:href="#99" y="47.762"/>
+            <use xlink:href="#100" y="52.104"/>
+            <use xlink:href="#101" y="54.275"/>
+            <use xlink:href="#102" y="56.446"/>
+          </svg>
+          <svg x="2604">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="58.996" y="58.592"/>
+            <use xlink:href="#91"/>
+            <use xlink:href="#92" y="4.342"/>
+            <use xlink:href="#93" y="6.513"/>
+            <use xlink:href="#94" y="10.855"/>
+            <use xlink:href="#95" y="15.197"/>
+            <use xlink:href="#96" y="17.368"/>
+            <use xlink:href="#97" y="21.71"/>
+            <use xlink:href="#98" y="23.881"/>
+            <use xlink:href="#99" y="26.052"/>
+            <use xlink:href="#100" y="30.394"/>
+            <use xlink:href="#101" y="32.565"/>
+            <use xlink:href="#102" y="34.736"/>
+            <text x="14.028" y="38.577" class="f">to</text>
+            <text x="17.034" y="38.577" class="f">recent</text>
+            <text x="24.048" y="38.577" class="f">files;</text>
+            <text x="31.062" y="38.577" class="f">if</text>
+            <text x="34.068" y="38.577" class="f">STYLE</text>
+            <text x="40.08" y="38.577" class="f">is</text>
+            <text x="43.086" y="38.577" class="f">prefixed</text>
+            <text x="52.104" y="38.577" class="f">with</text>
+            <text x="57.114" y="38.577" class="f">'posix-',</text>
+            <text x="67.134" y="38.577" class="f">STYLE</text>
+            <text x="73.146" y="38.577" class="f">takes</text>
+            <text x="79.158" y="38.577" class="f">effect</text>
+            <text x="86.172" y="38.577" class="f">only</text>
+            <text x="91.182" y="38.577" class="f">outside</text>
+            <text x="99.198" y="38.577" class="f">the</text>
+            <text x="103.206" y="38.577" class="f">POSIX</text>
+            <text x="109.218" y="38.577" class="f">locale</text>
+            <text x="7.014" y="42.919" class="g">-t</text>
+            <text x="14.028" y="42.919" class="f">sort</text>
+            <text x="19.038" y="42.919" class="f">by</text>
+            <text x="22.044" y="42.919" class="f">modification</text>
+            <text x="35.07" y="42.919" class="f">time,</text>
+            <text x="41.082" y="42.919" class="f">newest</text>
+            <text x="48.096" y="42.919" class="f">first</text>
+            <text x="7.014" y="47.261" class="g">-T</text>
+            <text x="9.018" y="47.261" class="f">,</text>
+            <text x="11.022" y="47.261" class="g">--tabsize</text>
+            <text x="20.04" y="47.261" class="f">=</text>
+            <text x="21.042" y="47.261" class="h">COLS</text>
+            <text x="14.028" y="49.432" class="f">assume</text>
+            <text x="21.042" y="49.432" class="f">tab</text>
+            <text x="25.05" y="49.432" class="f">stops</text>
+            <text x="31.062" y="49.432" class="f">at</text>
+            <text x="34.068" y="49.432" class="f">each</text>
+            <text x="39.078" y="49.432" class="f">COLS</text>
+            <text x="44.088" y="49.432" class="f">instead</text>
+            <text x="52.104" y="49.432" class="f">of</text>
+            <text x="55.11" y="49.432" class="f">8</text>
+            <text x="7.014" y="53.774" class="g">-u</text>
+            <text x="14.028" y="53.774" class="f">with</text>
+            <text x="20.04" y="53.774" class="g">-lt</text>
+            <text x="23.046" y="53.774" class="f">:</text>
+            <text x="26.052" y="53.774" class="f">sort</text>
+            <text x="31.062" y="53.774" class="f">by,</text>
+            <text x="35.07" y="53.774" class="f">and</text>
+            <text x="39.078" y="53.774" class="f">show,</text>
+            <text x="45.09" y="53.774" class="f">access</text>
+            <text x="52.104" y="53.774" class="f">time;</text>
+            <text x="58.116" y="53.774" class="f">with</text>
+            <text x="63.126" y="53.774" class="g">-l</text>
+            <text x="65.13" y="53.774" class="f">:</text>
+            <text x="67.134" y="53.774" class="f">show</text>
+            <text x="72.144" y="53.774" class="f">access</text>
+            <text x="79.158" y="53.774" class="f">time</text>
+            <text x="84.168" y="53.774" class="f">and</text>
+            <text x="88.176" y="53.774" class="f">sort</text>
+            <text x="93.186" y="53.774" class="f">by</text>
+            <text x="96.192" y="53.774" class="f">name;</text>
+            <text x="102.204" y="53.774" class="f">otherwise:</text>
+            <text x="113.226" y="53.774" class="f">sort</text>
+            <text x="118.236" y="53.774" class="f">by</text>
+            <text x="14.028" y="55.945" class="f">access</text>
+            <text x="21.042" y="55.945" class="f">time</text>
+            <path class="m" d="M0 58.617h59v2.171H0z"/>
+            <text y="60.287" class="n">Manual page ls(1) line 138 (press h for help or q to quit)</text>
+          </svg>
+          <svg x="2728">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="-.004" y="58.592"/>
+            <use xlink:href="#103"/>
+            <use xlink:href="#104" y="4.342"/>
+            <use xlink:href="#105" y="8.684"/>
+            <use xlink:href="#106" y="10.855"/>
+            <use xlink:href="#107" y="15.197"/>
+            <use xlink:href="#108" y="19.539"/>
+            <use xlink:href="#109" y="23.881"/>
+            <use xlink:href="#110" y="28.223"/>
+            <use xlink:href="#111" y="32.565"/>
+            <use xlink:href="#112" y="34.736"/>
+            <use xlink:href="#113" y="39.078"/>
+            <use xlink:href="#114" y="41.249"/>
+            <use xlink:href="#115" y="43.42"/>
+            <use xlink:href="#116" y="47.762"/>
+            <use xlink:href="#117" y="49.933"/>
+            <use xlink:href="#118" y="54.275"/>
+          </svg>
+          <svg x="2852">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="58.996" y="58.592"/>
+            <use xlink:href="#103"/>
+            <use xlink:href="#104" y="4.342"/>
+            <use xlink:href="#105" y="8.684"/>
+            <use xlink:href="#106" y="10.855"/>
+            <use xlink:href="#107" y="15.197"/>
+            <use xlink:href="#108" y="19.539"/>
+            <use xlink:href="#109" y="23.881"/>
+            <use xlink:href="#110" y="28.223"/>
+            <use xlink:href="#111" y="32.565"/>
+            <use xlink:href="#112" y="34.736"/>
+            <use xlink:href="#113" y="39.078"/>
+            <use xlink:href="#114" y="41.249"/>
+            <use xlink:href="#115" y="43.42"/>
+            <use xlink:href="#116" y="47.762"/>
+            <use xlink:href="#117" y="49.933"/>
+            <use xlink:href="#118" y="54.275"/>
+            <path class="m" d="M0 58.617h59v2.171H0z"/>
+            <text y="60.287" class="n">Manual page ls(1) line 165 (press h for help or q to quit)</text>
+          </svg>
+          <svg x="2976">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="-.004" y="58.592"/>
+            <use xlink:href="#114"/>
+            <use xlink:href="#115" y="2.171"/>
+            <use xlink:href="#116" y="6.513"/>
+            <use xlink:href="#117" y="8.684"/>
+            <use xlink:href="#118" y="13.026"/>
+            <use xlink:href="#119" y="17.368"/>
+            <use xlink:href="#120" y="19.539"/>
+            <use xlink:href="#121" y="23.881"/>
+            <use xlink:href="#122" y="26.052"/>
+            <use xlink:href="#123" y="30.394"/>
+            <use xlink:href="#124" y="32.565"/>
+            <use xlink:href="#125" y="34.736"/>
+            <use xlink:href="#126" y="39.078"/>
+            <use xlink:href="#127" y="41.249"/>
+            <use xlink:href="#128" y="45.591"/>
+            <use xlink:href="#129" y="49.933"/>
+            <use xlink:href="#130" y="54.275"/>
+            <use xlink:href="#131" y="56.446"/>
+          </svg>
+          <svg x="3100">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="58.996" y="58.592"/>
+            <use xlink:href="#119"/>
+            <use xlink:href="#120" y="2.171"/>
+            <use xlink:href="#121" y="6.513"/>
+            <use xlink:href="#122" y="8.684"/>
+            <use xlink:href="#123" y="13.026"/>
+            <use xlink:href="#124" y="15.197"/>
+            <use xlink:href="#125" y="17.368"/>
+            <use xlink:href="#126" y="21.71"/>
+            <use xlink:href="#127" y="23.881"/>
+            <use xlink:href="#128" y="28.223"/>
+            <use xlink:href="#129" y="32.565"/>
+            <use xlink:href="#130" y="36.907"/>
+            <use xlink:href="#131" y="39.078"/>
+            <use xlink:href="#132" y="43.42"/>
+            <use xlink:href="#133" y="45.591"/>
+            <use xlink:href="#134" y="49.933"/>
+            <use xlink:href="#135" y="52.104"/>
+            <use xlink:href="#136" y="54.275"/>
+            <use xlink:href="#137" y="56.446"/>
+            <path class="m" d="M0 58.617h59v2.171H0z"/>
+            <text y="60.287" class="n">Manual page ls(1) line 192 (press h for help or q to quit)</text>
+          </svg>
+          <svg x="3224">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="68.996" y="58.592"/>
+            <use xlink:href="#127"/>
+            <use xlink:href="#128" y="4.342"/>
+            <use xlink:href="#129" y="8.684"/>
+            <use xlink:href="#130" y="13.026"/>
+            <use xlink:href="#131" y="15.197"/>
+            <use xlink:href="#132" y="19.539"/>
+            <use xlink:href="#133" y="21.71"/>
+            <use xlink:href="#134" y="26.052"/>
+            <use xlink:href="#135" y="28.223"/>
+            <use xlink:href="#136" y="30.394"/>
+            <use xlink:href="#137" y="32.565"/>
+            <text x="7.014" y="36.406" class="f">by</text>
+            <text x="10.02" y="36.406" class="f">law.</text>
+            <text y="40.748" class="g">SEE</text>
+            <text x="4.008" y="40.748" class="g">ALSO</text>
+            <text x="7.014" y="42.919" class="f">The</text>
+            <text x="12.024" y="42.919" class="f">full</text>
+            <text x="18.036" y="42.919" class="f">documentation</text>
+            <text x="33.066" y="42.919" class="f">for</text>
+            <text x="38.076" y="42.919" class="g">ls</text>
+            <text x="42.084" y="42.919" class="f">is</text>
+            <text x="46.092" y="42.919" class="f">maintained</text>
+            <text x="58.116" y="42.919" class="f">as</text>
+            <text x="61.122" y="42.919" class="f">a</text>
+            <text x="63.126" y="42.919" class="f">Texinfo</text>
+            <text x="71.142" y="42.919" class="f">manual.</text>
+            <text x="80.16" y="42.919" class="f">If</text>
+            <text x="83.166" y="42.919" class="f">the</text>
+            <text x="87.174" y="42.919" class="g">info</text>
+            <text x="92.184" y="42.919" class="f">and</text>
+            <text x="96.192" y="42.919" class="g">ls</text>
+            <text x="99.198" y="42.919" class="f">programs</text>
+            <text x="108.216" y="42.919" class="f">are</text>
+            <text x="112.224" y="42.919" class="f">properly</text>
+            <text x="7.014" y="45.09" class="f">installed</text>
+            <text x="17.034" y="45.09" class="f">at</text>
+            <text x="20.04" y="45.09" class="f">your</text>
+            <text x="25.05" y="45.09" class="f">site,</text>
+            <text x="31.062" y="45.09" class="f">the</text>
+            <text x="35.07" y="45.09" class="f">command</text>
+            <text x="14.028" y="49.432" class="g">info</text>
+            <text x="19.038" y="49.432" class="g">coreutils</text>
+            <text x="29.058" y="49.432" class="g">'ls</text>
+            <text x="33.066" y="49.432" class="g">invocation'</text>
+            <text x="7.014" y="53.774" class="f">should</text>
+            <text x="14.028" y="53.774" class="f">give</text>
+            <text x="19.038" y="53.774" class="f">you</text>
+            <text x="23.046" y="53.774" class="f">access</text>
+            <text x="30.06" y="53.774" class="f">to</text>
+            <text x="33.066" y="53.774" class="f">the</text>
+            <text x="37.074" y="53.774" class="f">complete</text>
+            <text x="46.092" y="53.774" class="f">manual.</text>
+            <text y="58.116" class="f">GNU</text>
+            <text x="4.008" y="58.116" class="f">coreutils</text>
+            <text x="14.028" y="58.116" class="f">8.22</text>
+            <text x="56.112" y="58.116" class="f">July</text>
+            <text x="61.122" y="58.116" class="f">2020</text>
+            <text x="115.23" y="58.116" class="f">LS(1)</text>
+            <path class="m" d="M0 58.617h69v2.171H0z"/>
+            <text y="60.287" class="n">Manual page ls(1) line 203/231 (END) (press h for help or q to quit)</text>
+          </svg>
+          <svg x="3348">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="-.004" y="2.146"/>
+            <use xlink:href="#3"/>
+          </svg>
+          <svg x="3472">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="20.996" y="2.146"/>
+            <use xlink:href="#3"/>
+            <use xlink:href="#1" y="2.171"/>
+          </svg>
+          <svg x="3596">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="20.996" y="2.146"/>
+            <use xlink:href="#3"/>
+            <use xlink:href="#1" y="2.171"/>
+          </svg>
+        </svg>
+      </g>
+    </g>
+  </svg>
+</svg>
