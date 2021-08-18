@@ -700,11 +700,7 @@ the file's dirname.
 .. code-block:: shell
 
    $ cd ~/cs1302-unix
-   $ tree notes
-   $ realpath notes/cs1302/cpp.md
    $ mv notes/cs1302/cpp.md notes/cs1730/cpp.md
-   $ realpath notes/cs1730/cpp.md
-   $ tree notes
 
 .. figure:: img/mv-first-demo.svg
 
@@ -723,11 +719,7 @@ the file's basename.
 .. code-block:: shell
 
    $ cd ~/cs1302-unix
-   $ tree notes
-   $ realpath notes/cs1730/cpp.md
    $ mv notes/cs1302/cpp.md notes/cs1730/c.md
-   $ realpath notes/cs1730/c.md
-   $ tree notes
 
 .. table::
 
