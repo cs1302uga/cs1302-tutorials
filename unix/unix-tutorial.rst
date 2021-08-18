@@ -568,11 +568,50 @@ respectively.
 
 .. figure:: img/less-demo.svg
 
-New Directories and Regular Files
----------------------------------
+New Directories
+---------------
 
 ``mkdir``, ``mkdir -p``
 +++++++++++++++++++++++
+
+To make a new directory, use the ``mkdir`` (make directory) command and supply
+a path ending with the directory you want created as a command-line argument.
+
+.. code-block:: shell
+
+   $ cd ~/cs1302-unix
+   $ ls -l
+   $ mkdir practice
+   $ ls -l
+
+.. figure:: mkdir-first-demo.svg
+
+.. code-block:: shell
+
+   $ cd ~/cs1302-unix
+   $ tree notes
+   $ mkdir notes/other
+   $ tree notes
+
+.. .. figure:: mkdir-second-demo.svg
+
+.. code-block:: shell
+
+   $ cd ~/cs1302-unix
+   $ tree notes
+   $ mkdir notes/other/a/b/c
+   $ tree notes
+
+.. .. figure:: mkdir-third-demo.svg
+
+.. code-block:: shell
+
+   $ cd ~/cs1302-unix
+   $ tree notes
+   $ mkdir -p notes/other/a/b/c
+   $ tree notes
+
+.. .. figure:: mkdir-fourth-demo.svg
 
 Moving and Removing
 -------------------
