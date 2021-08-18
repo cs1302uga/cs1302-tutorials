@@ -623,8 +623,8 @@ it's time for your current working directory to change. This can be done using t
 ``cd ~``, ``cd``
 ++++++++++++++++
 
-Time-saving Tips
-----------------
+More Time-saving Tips
+---------------------
 
 Tab Completion
 ++++++++++++++
