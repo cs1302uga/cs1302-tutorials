@@ -450,6 +450,8 @@ as a command-line argument.
 
    $ ls -a
 
+.. figure:: img/ls-all-demo.svg
+
 .. code-block:: shell
 
    $ ls .
