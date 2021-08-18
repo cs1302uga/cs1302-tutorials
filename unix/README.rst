@@ -642,14 +642,20 @@ Getting Help
 ``--help``
 ++++++++++
 
+.. code-block:: shell
+
+   $ ls --help
+
 ``man``
 +++++++
 
-``apropos``
-+++++++++++
+.. code-block:: shell
 
-``whatis``
-++++++++++
+   $ man ls
+
+.. code-block:: shell
+
+   $ man man
 
 Inspecting Files
 ----------------
