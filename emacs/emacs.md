@@ -74,6 +74,8 @@ result in `C-x C-f`:
 
 ## Built-in Emacs Tutorial
 
+If you're on Windows, you will need to make sure you have followed the instructions to [make backspace work properly](https://github.com/cs1302uga/cs1302-exercises/blob/master/misc/Windows10.md#setup-backspace-required) before the built-in tutorial will work properly.
+
 **Learn by doing.** Emacs comes with a built-in, interactive turorial. It can be 
 reached by launching Emacs using the `emacs` command, then following the instructions
 on the Emacs welcome screen. With some terminal emulators, the shortcut used to 
