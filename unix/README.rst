@@ -706,6 +706,21 @@ Inspecting Files
 ``grep``
 ++++++++
 
+.. code-block:: shell
+
+   $ cd ~/cs1302-unix/books
+   $ grep "BOOK" moby_dick.txt
+
+.. code-block:: shell
+
+   $ cd ~/cs1302-unix/books
+   $ grep "^BOOK" moby_dick.txt
+
+.. code-block:: shell
+
+   $ cd ~/cs1302-unix/books
+   $ grep "^BOOK " moby_dick.txt
+
 New Directories and Regular Files
 ---------------------------------
 
