@@ -397,6 +397,7 @@ it's time for your current working directory to change. This can be done using t
 
    $ cd notes/cs1302
 
+.. figure:: img/cd-path-demo2.svg
 
 If you to change to the directory you were last in prior to your current working directory,
 then supply ``-`` (minus sign) as a command-line argument to ``cd``.

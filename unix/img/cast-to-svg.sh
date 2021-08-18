@@ -1,9 +1,12 @@
-#!/bin/bash -e
+#!/bin/bash -ex
 
 if [[ -n ${1} ]]; then
     CAST_FILE=${1}
     SVG_FILE=${CAST_FILE/.cast/.svg}
     echo "Converting '${CAST_FILE}' to '${SVG_FILE}'..."
+    sed -i'.original' -e "s/mepcott/■■■■■■■/g" ${CAST_FILE}
+    HEIGHT=$(asciinema play ${CAST_FILE} | cat | wc -l)
+    sed -i'.original' -E "s/\"height\": [0-9]+,/\"height\": ${HEIGHT},/g" ${CAST_FILE}
     cat ${CAST_FILE} | svg-term --out=${SVG_FILE} --window
     OLD_HEIGHT=$(xmlstarlet sel -t -v "/_:svg/@height" ${SVG_FILE})
     NEW_HEIGHT=$(echo "${OLD_HEIGHT} + 15.0" | bc)
