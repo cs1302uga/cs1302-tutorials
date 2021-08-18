@@ -803,6 +803,13 @@ manual:
 
 .. figure:: img/cp-first-demo.svg
 
+.. code-block:: shell
+
+   $ cd ~/cs1302-unix
+   $ cp books/moby_dick.txt notes/other/a/
+
+.. figure:: img/cp-second-demo.svg
+
 For more information about ``cp``, consult the manual page
 using ``man cp``.
 
