@@ -593,7 +593,7 @@ a path ending with the directory you want created as a command-line argument.
    $ mkdir notes/other
    $ tree notes
 
-.. .. figure:: mkdir-second-demo.svg
+.. figure:: img/mkdir-second-demo.svg
 
 .. code-block:: shell
 
