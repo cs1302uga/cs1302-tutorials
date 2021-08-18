@@ -139,8 +139,9 @@
           <text x="56.112" y="1.67" class="f">notes/cs1730/cpp.md</text>
         </symbol>
         <symbol id="30">
-          <text y="1.67" class="f">realpath</text>
-          <text x="9.018" y="1.67" class="f">notes/cs1730/cpp.md</text>
+          <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+          <text x="33.066" y="1.67" class="f">realpath</text>
+          <text x="42.084" y="1.67" class="f">notes/cs1730/cpp.md</text>
         </symbol>
         <symbol id="31">
           <text y="1.67" class="f">/home/myid/&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;/cs1302-unix/notes/cs1730/cpp.md</text>
@@ -1959,7 +1960,7 @@
           </svg>
           <svg x="13268">
             <use xlink:href="#a"/>
-            <use xlink:href="#b" x="27.996" y="39.053"/>
+            <use xlink:href="#b" x="60.996" y="36.882"/>
             <use xlink:href="#2"/>
             <use xlink:href="#12" y="2.171"/>
             <use xlink:href="#13" y="4.342"/>
@@ -1976,10 +1977,30 @@
             <use xlink:href="#25" y="30.394"/>
             <use xlink:href="#26" y="32.565"/>
             <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#3" y="36.907"/>
-            <use xlink:href="#30" y="39.078"/>
+            <use xlink:href="#30" y="36.907"/>
           </svg>
           <svg x="13392">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="-.004" y="39.053"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#25" y="30.394"/>
+            <use xlink:href="#26" y="32.565"/>
+            <use xlink:href="#29" y="34.736"/>
+            <use xlink:href="#30" y="36.907"/>
+          </svg>
+          <svg x="13516">
             <use xlink:href="#a"/>
             <use xlink:href="#b" x="-.004" y="41.224"/>
             <use xlink:href="#2"/>
@@ -1998,10 +2019,263 @@
             <use xlink:href="#25" y="30.394"/>
             <use xlink:href="#26" y="32.565"/>
             <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#3" y="36.907"/>
-            <use xlink:href="#30" y="39.078"/>
+            <use xlink:href="#30" y="36.907"/>
+            <use xlink:href="#31" y="39.078"/>
           </svg>
-          <svg x="13516">
+          <svg x="13640">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="32.996" y="41.224"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#25" y="30.394"/>
+            <use xlink:href="#26" y="32.565"/>
+            <use xlink:href="#29" y="34.736"/>
+            <use xlink:href="#30" y="36.907"/>
+            <use xlink:href="#31" y="39.078"/>
+            <use xlink:href="#3" y="41.249"/>
+          </svg>
+          <svg x="13764">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="33.996" y="41.224"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#25" y="30.394"/>
+            <use xlink:href="#26" y="32.565"/>
+            <use xlink:href="#29" y="34.736"/>
+            <use xlink:href="#30" y="36.907"/>
+            <use xlink:href="#31" y="39.078"/>
+            <use xlink:href="#4" y="41.249"/>
+          </svg>
+          <svg x="13888">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="34.996" y="41.224"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#25" y="30.394"/>
+            <use xlink:href="#26" y="32.565"/>
+            <use xlink:href="#29" y="34.736"/>
+            <use xlink:href="#30" y="36.907"/>
+            <use xlink:href="#31" y="39.078"/>
+            <use xlink:href="#5" y="41.249"/>
+          </svg>
+          <svg x="14012">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="35.996" y="41.224"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#25" y="30.394"/>
+            <use xlink:href="#26" y="32.565"/>
+            <use xlink:href="#29" y="34.736"/>
+            <use xlink:href="#30" y="36.907"/>
+            <use xlink:href="#31" y="39.078"/>
+            <use xlink:href="#6" y="41.249"/>
+          </svg>
+          <svg x="14136">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="36.996" y="41.224"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#25" y="30.394"/>
+            <use xlink:href="#26" y="32.565"/>
+            <use xlink:href="#29" y="34.736"/>
+            <use xlink:href="#30" y="36.907"/>
+            <use xlink:href="#31" y="39.078"/>
+            <use xlink:href="#7" y="41.249"/>
+          </svg>
+          <svg x="14260">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="37.996" y="41.224"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#25" y="30.394"/>
+            <use xlink:href="#26" y="32.565"/>
+            <use xlink:href="#29" y="34.736"/>
+            <use xlink:href="#30" y="36.907"/>
+            <use xlink:href="#31" y="39.078"/>
+            <use xlink:href="#7" y="41.249"/>
+          </svg>
+          <svg x="14384">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="38.996" y="41.224"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#25" y="30.394"/>
+            <use xlink:href="#26" y="32.565"/>
+            <use xlink:href="#29" y="34.736"/>
+            <use xlink:href="#30" y="36.907"/>
+            <use xlink:href="#31" y="39.078"/>
+            <use xlink:href="#8" y="41.249"/>
+          </svg>
+          <svg x="14508">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="39.996" y="41.224"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#25" y="30.394"/>
+            <use xlink:href="#26" y="32.565"/>
+            <use xlink:href="#29" y="34.736"/>
+            <use xlink:href="#30" y="36.907"/>
+            <use xlink:href="#31" y="39.078"/>
+            <use xlink:href="#9" y="41.249"/>
+          </svg>
+          <svg x="14632">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="40.996" y="41.224"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#25" y="30.394"/>
+            <use xlink:href="#26" y="32.565"/>
+            <use xlink:href="#29" y="34.736"/>
+            <use xlink:href="#30" y="36.907"/>
+            <use xlink:href="#31" y="39.078"/>
+            <use xlink:href="#10" y="41.249"/>
+          </svg>
+          <svg x="14756">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="41.996" y="41.224"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#25" y="30.394"/>
+            <use xlink:href="#26" y="32.565"/>
+            <use xlink:href="#29" y="34.736"/>
+            <use xlink:href="#30" y="36.907"/>
+            <use xlink:href="#31" y="39.078"/>
+            <use xlink:href="#11" y="41.249"/>
+          </svg>
+          <svg x="14880">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="42.996" y="41.224"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#25" y="30.394"/>
+            <use xlink:href="#26" y="32.565"/>
+            <use xlink:href="#29" y="34.736"/>
+            <use xlink:href="#30" y="36.907"/>
+            <use xlink:href="#31" y="39.078"/>
+            <use xlink:href="#12" y="41.249"/>
+          </svg>
+          <svg x="15004">
             <use xlink:href="#a"/>
             <use xlink:href="#b" x="-.004" y="43.395"/>
             <use xlink:href="#2"/>
@@ -2020,316 +2294,28 @@
             <use xlink:href="#25" y="30.394"/>
             <use xlink:href="#26" y="32.565"/>
             <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#3" y="36.907"/>
-            <use xlink:href="#30" y="39.078"/>
-            <use xlink:href="#31" y="41.249"/>
-          </svg>
-          <svg x="13640">
-            <use xlink:href="#a"/>
-            <use xlink:href="#b" x="32.996" y="43.395"/>
-            <use xlink:href="#2"/>
-            <use xlink:href="#12" y="2.171"/>
-            <use xlink:href="#13" y="4.342"/>
-            <use xlink:href="#14" y="6.513"/>
-            <use xlink:href="#15" y="8.684"/>
-            <use xlink:href="#16" y="10.855"/>
-            <use xlink:href="#17" y="13.026"/>
-            <use xlink:href="#18" y="15.197"/>
-            <use xlink:href="#19" y="17.368"/>
-            <use xlink:href="#20" y="19.539"/>
-            <use xlink:href="#21" y="21.71"/>
-            <use xlink:href="#22" y="23.881"/>
-            <use xlink:href="#23" y="28.223"/>
-            <use xlink:href="#25" y="30.394"/>
-            <use xlink:href="#26" y="32.565"/>
-            <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#3" y="36.907"/>
-            <use xlink:href="#30" y="39.078"/>
-            <use xlink:href="#31" y="41.249"/>
-            <use xlink:href="#3" y="43.42"/>
-          </svg>
-          <svg x="13764">
-            <use xlink:href="#a"/>
-            <use xlink:href="#b" x="33.996" y="43.395"/>
-            <use xlink:href="#2"/>
-            <use xlink:href="#12" y="2.171"/>
-            <use xlink:href="#13" y="4.342"/>
-            <use xlink:href="#14" y="6.513"/>
-            <use xlink:href="#15" y="8.684"/>
-            <use xlink:href="#16" y="10.855"/>
-            <use xlink:href="#17" y="13.026"/>
-            <use xlink:href="#18" y="15.197"/>
-            <use xlink:href="#19" y="17.368"/>
-            <use xlink:href="#20" y="19.539"/>
-            <use xlink:href="#21" y="21.71"/>
-            <use xlink:href="#22" y="23.881"/>
-            <use xlink:href="#23" y="28.223"/>
-            <use xlink:href="#25" y="30.394"/>
-            <use xlink:href="#26" y="32.565"/>
-            <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#3" y="36.907"/>
-            <use xlink:href="#30" y="39.078"/>
-            <use xlink:href="#31" y="41.249"/>
-            <use xlink:href="#4" y="43.42"/>
-          </svg>
-          <svg x="13888">
-            <use xlink:href="#a"/>
-            <use xlink:href="#b" x="34.996" y="43.395"/>
-            <use xlink:href="#2"/>
-            <use xlink:href="#12" y="2.171"/>
-            <use xlink:href="#13" y="4.342"/>
-            <use xlink:href="#14" y="6.513"/>
-            <use xlink:href="#15" y="8.684"/>
-            <use xlink:href="#16" y="10.855"/>
-            <use xlink:href="#17" y="13.026"/>
-            <use xlink:href="#18" y="15.197"/>
-            <use xlink:href="#19" y="17.368"/>
-            <use xlink:href="#20" y="19.539"/>
-            <use xlink:href="#21" y="21.71"/>
-            <use xlink:href="#22" y="23.881"/>
-            <use xlink:href="#23" y="28.223"/>
-            <use xlink:href="#25" y="30.394"/>
-            <use xlink:href="#26" y="32.565"/>
-            <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#3" y="36.907"/>
-            <use xlink:href="#30" y="39.078"/>
-            <use xlink:href="#31" y="41.249"/>
-            <use xlink:href="#5" y="43.42"/>
-          </svg>
-          <svg x="14012">
-            <use xlink:href="#a"/>
-            <use xlink:href="#b" x="35.996" y="43.395"/>
-            <use xlink:href="#2"/>
-            <use xlink:href="#12" y="2.171"/>
-            <use xlink:href="#13" y="4.342"/>
-            <use xlink:href="#14" y="6.513"/>
-            <use xlink:href="#15" y="8.684"/>
-            <use xlink:href="#16" y="10.855"/>
-            <use xlink:href="#17" y="13.026"/>
-            <use xlink:href="#18" y="15.197"/>
-            <use xlink:href="#19" y="17.368"/>
-            <use xlink:href="#20" y="19.539"/>
-            <use xlink:href="#21" y="21.71"/>
-            <use xlink:href="#22" y="23.881"/>
-            <use xlink:href="#23" y="28.223"/>
-            <use xlink:href="#25" y="30.394"/>
-            <use xlink:href="#26" y="32.565"/>
-            <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#3" y="36.907"/>
-            <use xlink:href="#30" y="39.078"/>
-            <use xlink:href="#31" y="41.249"/>
-            <use xlink:href="#6" y="43.42"/>
-          </svg>
-          <svg x="14136">
-            <use xlink:href="#a"/>
-            <use xlink:href="#b" x="36.996" y="43.395"/>
-            <use xlink:href="#2"/>
-            <use xlink:href="#12" y="2.171"/>
-            <use xlink:href="#13" y="4.342"/>
-            <use xlink:href="#14" y="6.513"/>
-            <use xlink:href="#15" y="8.684"/>
-            <use xlink:href="#16" y="10.855"/>
-            <use xlink:href="#17" y="13.026"/>
-            <use xlink:href="#18" y="15.197"/>
-            <use xlink:href="#19" y="17.368"/>
-            <use xlink:href="#20" y="19.539"/>
-            <use xlink:href="#21" y="21.71"/>
-            <use xlink:href="#22" y="23.881"/>
-            <use xlink:href="#23" y="28.223"/>
-            <use xlink:href="#25" y="30.394"/>
-            <use xlink:href="#26" y="32.565"/>
-            <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#3" y="36.907"/>
-            <use xlink:href="#30" y="39.078"/>
-            <use xlink:href="#31" y="41.249"/>
-            <use xlink:href="#7" y="43.42"/>
-          </svg>
-          <svg x="14260">
-            <use xlink:href="#a"/>
-            <use xlink:href="#b" x="37.996" y="43.395"/>
-            <use xlink:href="#2"/>
-            <use xlink:href="#12" y="2.171"/>
-            <use xlink:href="#13" y="4.342"/>
-            <use xlink:href="#14" y="6.513"/>
-            <use xlink:href="#15" y="8.684"/>
-            <use xlink:href="#16" y="10.855"/>
-            <use xlink:href="#17" y="13.026"/>
-            <use xlink:href="#18" y="15.197"/>
-            <use xlink:href="#19" y="17.368"/>
-            <use xlink:href="#20" y="19.539"/>
-            <use xlink:href="#21" y="21.71"/>
-            <use xlink:href="#22" y="23.881"/>
-            <use xlink:href="#23" y="28.223"/>
-            <use xlink:href="#25" y="30.394"/>
-            <use xlink:href="#26" y="32.565"/>
-            <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#3" y="36.907"/>
-            <use xlink:href="#30" y="39.078"/>
-            <use xlink:href="#31" y="41.249"/>
-            <use xlink:href="#7" y="43.42"/>
-          </svg>
-          <svg x="14384">
-            <use xlink:href="#a"/>
-            <use xlink:href="#b" x="38.996" y="43.395"/>
-            <use xlink:href="#2"/>
-            <use xlink:href="#12" y="2.171"/>
-            <use xlink:href="#13" y="4.342"/>
-            <use xlink:href="#14" y="6.513"/>
-            <use xlink:href="#15" y="8.684"/>
-            <use xlink:href="#16" y="10.855"/>
-            <use xlink:href="#17" y="13.026"/>
-            <use xlink:href="#18" y="15.197"/>
-            <use xlink:href="#19" y="17.368"/>
-            <use xlink:href="#20" y="19.539"/>
-            <use xlink:href="#21" y="21.71"/>
-            <use xlink:href="#22" y="23.881"/>
-            <use xlink:href="#23" y="28.223"/>
-            <use xlink:href="#25" y="30.394"/>
-            <use xlink:href="#26" y="32.565"/>
-            <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#3" y="36.907"/>
-            <use xlink:href="#30" y="39.078"/>
-            <use xlink:href="#31" y="41.249"/>
-            <use xlink:href="#8" y="43.42"/>
-          </svg>
-          <svg x="14508">
-            <use xlink:href="#a"/>
-            <use xlink:href="#b" x="39.996" y="43.395"/>
-            <use xlink:href="#2"/>
-            <use xlink:href="#12" y="2.171"/>
-            <use xlink:href="#13" y="4.342"/>
-            <use xlink:href="#14" y="6.513"/>
-            <use xlink:href="#15" y="8.684"/>
-            <use xlink:href="#16" y="10.855"/>
-            <use xlink:href="#17" y="13.026"/>
-            <use xlink:href="#18" y="15.197"/>
-            <use xlink:href="#19" y="17.368"/>
-            <use xlink:href="#20" y="19.539"/>
-            <use xlink:href="#21" y="21.71"/>
-            <use xlink:href="#22" y="23.881"/>
-            <use xlink:href="#23" y="28.223"/>
-            <use xlink:href="#25" y="30.394"/>
-            <use xlink:href="#26" y="32.565"/>
-            <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#3" y="36.907"/>
-            <use xlink:href="#30" y="39.078"/>
-            <use xlink:href="#31" y="41.249"/>
-            <use xlink:href="#9" y="43.42"/>
-          </svg>
-          <svg x="14632">
-            <use xlink:href="#a"/>
-            <use xlink:href="#b" x="40.996" y="43.395"/>
-            <use xlink:href="#2"/>
-            <use xlink:href="#12" y="2.171"/>
-            <use xlink:href="#13" y="4.342"/>
-            <use xlink:href="#14" y="6.513"/>
-            <use xlink:href="#15" y="8.684"/>
-            <use xlink:href="#16" y="10.855"/>
-            <use xlink:href="#17" y="13.026"/>
-            <use xlink:href="#18" y="15.197"/>
-            <use xlink:href="#19" y="17.368"/>
-            <use xlink:href="#20" y="19.539"/>
-            <use xlink:href="#21" y="21.71"/>
-            <use xlink:href="#22" y="23.881"/>
-            <use xlink:href="#23" y="28.223"/>
-            <use xlink:href="#25" y="30.394"/>
-            <use xlink:href="#26" y="32.565"/>
-            <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#3" y="36.907"/>
-            <use xlink:href="#30" y="39.078"/>
-            <use xlink:href="#31" y="41.249"/>
-            <use xlink:href="#10" y="43.42"/>
-          </svg>
-          <svg x="14756">
-            <use xlink:href="#a"/>
-            <use xlink:href="#b" x="41.996" y="43.395"/>
-            <use xlink:href="#2"/>
-            <use xlink:href="#12" y="2.171"/>
-            <use xlink:href="#13" y="4.342"/>
-            <use xlink:href="#14" y="6.513"/>
-            <use xlink:href="#15" y="8.684"/>
-            <use xlink:href="#16" y="10.855"/>
-            <use xlink:href="#17" y="13.026"/>
-            <use xlink:href="#18" y="15.197"/>
-            <use xlink:href="#19" y="17.368"/>
-            <use xlink:href="#20" y="19.539"/>
-            <use xlink:href="#21" y="21.71"/>
-            <use xlink:href="#22" y="23.881"/>
-            <use xlink:href="#23" y="28.223"/>
-            <use xlink:href="#25" y="30.394"/>
-            <use xlink:href="#26" y="32.565"/>
-            <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#3" y="36.907"/>
-            <use xlink:href="#30" y="39.078"/>
-            <use xlink:href="#31" y="41.249"/>
-            <use xlink:href="#11" y="43.42"/>
-          </svg>
-          <svg x="14880">
-            <use xlink:href="#a"/>
-            <use xlink:href="#b" x="42.996" y="43.395"/>
-            <use xlink:href="#2"/>
-            <use xlink:href="#12" y="2.171"/>
-            <use xlink:href="#13" y="4.342"/>
-            <use xlink:href="#14" y="6.513"/>
-            <use xlink:href="#15" y="8.684"/>
-            <use xlink:href="#16" y="10.855"/>
-            <use xlink:href="#17" y="13.026"/>
-            <use xlink:href="#18" y="15.197"/>
-            <use xlink:href="#19" y="17.368"/>
-            <use xlink:href="#20" y="19.539"/>
-            <use xlink:href="#21" y="21.71"/>
-            <use xlink:href="#22" y="23.881"/>
-            <use xlink:href="#23" y="28.223"/>
-            <use xlink:href="#25" y="30.394"/>
-            <use xlink:href="#26" y="32.565"/>
-            <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#3" y="36.907"/>
-            <use xlink:href="#30" y="39.078"/>
-            <use xlink:href="#31" y="41.249"/>
-            <use xlink:href="#12" y="43.42"/>
-          </svg>
-          <svg x="15004">
-            <use xlink:href="#a"/>
-            <use xlink:href="#b" x="-.004" y="45.566"/>
-            <use xlink:href="#2"/>
-            <use xlink:href="#12" y="2.171"/>
-            <use xlink:href="#13" y="4.342"/>
-            <use xlink:href="#14" y="6.513"/>
-            <use xlink:href="#15" y="8.684"/>
-            <use xlink:href="#16" y="10.855"/>
-            <use xlink:href="#17" y="13.026"/>
-            <use xlink:href="#18" y="15.197"/>
-            <use xlink:href="#19" y="17.368"/>
-            <use xlink:href="#20" y="19.539"/>
-            <use xlink:href="#21" y="21.71"/>
-            <use xlink:href="#22" y="23.881"/>
-            <use xlink:href="#23" y="28.223"/>
-            <use xlink:href="#25" y="30.394"/>
-            <use xlink:href="#26" y="32.565"/>
-            <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#3" y="36.907"/>
-            <use xlink:href="#30" y="39.078"/>
-            <use xlink:href="#31" y="41.249"/>
-            <use xlink:href="#12" y="43.42"/>
+            <use xlink:href="#30" y="36.907"/>
+            <use xlink:href="#31" y="39.078"/>
+            <use xlink:href="#12" y="41.249"/>
           </svg>
           <svg x="15128">
             <use xlink:href="#a"/>
             <use xlink:href="#b" x="-.004" y="67.276"/>
-            <use xlink:href="#13"/>
-            <use xlink:href="#14" y="2.171"/>
-            <use xlink:href="#15" y="4.342"/>
-            <use xlink:href="#16" y="6.513"/>
-            <use xlink:href="#17" y="8.684"/>
-            <use xlink:href="#18" y="10.855"/>
-            <use xlink:href="#19" y="13.026"/>
-            <use xlink:href="#20" y="15.197"/>
-            <use xlink:href="#21" y="17.368"/>
-            <use xlink:href="#22" y="19.539"/>
-            <use xlink:href="#23" y="23.881"/>
-            <use xlink:href="#25" y="26.052"/>
-            <use xlink:href="#26" y="28.223"/>
-            <use xlink:href="#29" y="30.394"/>
-            <use xlink:href="#3" y="32.565"/>
+            <use xlink:href="#12"/>
+            <use xlink:href="#13" y="2.171"/>
+            <use xlink:href="#14" y="4.342"/>
+            <use xlink:href="#15" y="6.513"/>
+            <use xlink:href="#16" y="8.684"/>
+            <use xlink:href="#17" y="10.855"/>
+            <use xlink:href="#18" y="13.026"/>
+            <use xlink:href="#19" y="15.197"/>
+            <use xlink:href="#20" y="17.368"/>
+            <use xlink:href="#21" y="19.539"/>
+            <use xlink:href="#22" y="21.71"/>
+            <use xlink:href="#23" y="26.052"/>
+            <use xlink:href="#25" y="28.223"/>
+            <use xlink:href="#26" y="30.394"/>
+            <use xlink:href="#29" y="32.565"/>
             <use xlink:href="#30" y="34.736"/>
             <use xlink:href="#31" y="36.907"/>
             <use xlink:href="#12" y="39.078"/>
@@ -2348,21 +2334,21 @@
           <svg x="15252">
             <use xlink:href="#a"/>
             <use xlink:href="#b" x="32.996" y="67.276"/>
-            <use xlink:href="#13"/>
-            <use xlink:href="#14" y="2.171"/>
-            <use xlink:href="#15" y="4.342"/>
-            <use xlink:href="#16" y="6.513"/>
-            <use xlink:href="#17" y="8.684"/>
-            <use xlink:href="#18" y="10.855"/>
-            <use xlink:href="#19" y="13.026"/>
-            <use xlink:href="#20" y="15.197"/>
-            <use xlink:href="#21" y="17.368"/>
-            <use xlink:href="#22" y="19.539"/>
-            <use xlink:href="#23" y="23.881"/>
-            <use xlink:href="#25" y="26.052"/>
-            <use xlink:href="#26" y="28.223"/>
-            <use xlink:href="#29" y="30.394"/>
-            <use xlink:href="#3" y="32.565"/>
+            <use xlink:href="#12"/>
+            <use xlink:href="#13" y="2.171"/>
+            <use xlink:href="#14" y="4.342"/>
+            <use xlink:href="#15" y="6.513"/>
+            <use xlink:href="#16" y="8.684"/>
+            <use xlink:href="#17" y="10.855"/>
+            <use xlink:href="#18" y="13.026"/>
+            <use xlink:href="#19" y="15.197"/>
+            <use xlink:href="#20" y="17.368"/>
+            <use xlink:href="#21" y="19.539"/>
+            <use xlink:href="#22" y="21.71"/>
+            <use xlink:href="#23" y="26.052"/>
+            <use xlink:href="#25" y="28.223"/>
+            <use xlink:href="#26" y="30.394"/>
+            <use xlink:href="#29" y="32.565"/>
             <use xlink:href="#30" y="34.736"/>
             <use xlink:href="#31" y="36.907"/>
             <use xlink:href="#12" y="39.078"/>
@@ -2382,21 +2368,21 @@
           <svg x="15376">
             <use xlink:href="#a"/>
             <use xlink:href="#b" x="32.996" y="67.276"/>
-            <use xlink:href="#13"/>
-            <use xlink:href="#14" y="2.171"/>
-            <use xlink:href="#15" y="4.342"/>
-            <use xlink:href="#16" y="6.513"/>
-            <use xlink:href="#17" y="8.684"/>
-            <use xlink:href="#18" y="10.855"/>
-            <use xlink:href="#19" y="13.026"/>
-            <use xlink:href="#20" y="15.197"/>
-            <use xlink:href="#21" y="17.368"/>
-            <use xlink:href="#22" y="19.539"/>
-            <use xlink:href="#23" y="23.881"/>
-            <use xlink:href="#25" y="26.052"/>
-            <use xlink:href="#26" y="28.223"/>
-            <use xlink:href="#29" y="30.394"/>
-            <use xlink:href="#3" y="32.565"/>
+            <use xlink:href="#12"/>
+            <use xlink:href="#13" y="2.171"/>
+            <use xlink:href="#14" y="4.342"/>
+            <use xlink:href="#15" y="6.513"/>
+            <use xlink:href="#16" y="8.684"/>
+            <use xlink:href="#17" y="10.855"/>
+            <use xlink:href="#18" y="13.026"/>
+            <use xlink:href="#19" y="15.197"/>
+            <use xlink:href="#20" y="17.368"/>
+            <use xlink:href="#21" y="19.539"/>
+            <use xlink:href="#22" y="21.71"/>
+            <use xlink:href="#23" y="26.052"/>
+            <use xlink:href="#25" y="28.223"/>
+            <use xlink:href="#26" y="30.394"/>
+            <use xlink:href="#29" y="32.565"/>
             <use xlink:href="#30" y="34.736"/>
             <use xlink:href="#31" y="36.907"/>
             <use xlink:href="#12" y="39.078"/>
