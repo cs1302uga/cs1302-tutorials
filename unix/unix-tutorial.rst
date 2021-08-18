@@ -93,28 +93,6 @@ of which you may have seen in earlier examples.
    ``whoami``  Print the user name associated with the current user.
    ==========  ======================================================================================
 
-If you run a shell inside your login shell, then a *subshell* is launched.
-A subshell is not the login shell, even if they are instances of the same
-shell program. A more precise definition for *login shell* is the *instance*
-of the shell program that is launched when you login. For example, if you
-run ``bash`` supplying the ``--norc`` command-line argument, then a ``bash``
-subshell is launched with no customizations (e.g., no custom prompt text).
-Just like most programs launched by a shell, when a subshell exits, control
-returns to the shell that launched it.
-
-.. code-block:: shell
-
-   $ bash --norc
-
-.. figure:: img/bash-bash-demo.svg?3
-
-* What is the difference between the two ``exit`` commands in
-  the example shown above?
-
-The ``bash`` program can also be used to execute scripts containing sequences
-of commands and more. We will cover the creation and execution of scripts in
-another reading.
-
 ``.bash_profile``
 +++++++++++++++++
 
@@ -694,6 +672,32 @@ ways to get help later in this tutorial.
 
 .. |racronym| replace:: recursive acronym
 .. _racronym: https://en.wikipedia.org/wiki/Recursive_acronym
+
+Subshells
++++++++++
+
+If you run a shell inside your login shell, then a *subshell* is launched.
+A subshell is not the login shell, even if they are instances of the same
+shell program. A more precise definition for *login shell* is the *instance*
+of the shell program that is launched when you login. For example, if you
+run ``bash`` supplying the ``--norc`` command-line argument, then a ``bash``
+subshell is launched with no customizations (e.g., no custom prompt text).
+Just like most programs launched by a shell, when a subshell exits, control
+returns to the shell that launched it.
+
+.. code-block:: shell
+
+   $ bash --norc
+
+.. figure:: img/bash-bash-demo.svg?3
+
+* What is the difference between the two ``exit`` commands in
+  the example shown above?
+
+The ``bash`` program can also be used to execute scripts containing sequences
+of commands and more. We will cover the creation and execution of scripts in
+another reading.
+
 
 .. copyright and license information
 .. |copy| unicode:: U+000A9 .. COPYRIGHT SIGN
