@@ -467,7 +467,6 @@ named ``.`` and ``..``.
 Remember, the default behavior of ``ls`` is to list the contents of
 the current working directory. If we supply ``.`` as a path to ``ls``,
 then it does the same thing.
-argument
 
 .. code-block:: shell
 
@@ -484,13 +483,20 @@ of the current working directory's parent (i.e., its parent directory).
 
 .. figure:: img/ls-dotdot-demo.svg
 
+You can supply ``..`` as a path to ``cd`` to change to go up one
+directory; that is, change to the parent directory.
+
 .. code-block:: shell
 
    $ cd ..
 
+.. figure:: img/cd-dotdot-demo.svg
+
 .. code-block:: shell
 
    $ cd ../..
+
+.. figure:: img/cd-dotdot2-demo.svg
 
 .. table::
 
