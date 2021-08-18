@@ -567,7 +567,7 @@ is included in the "long" output format:
        it is used as the path separator character.
 
 As mentioned in [5]_, you can supply ``-h`` as a command line argument to ``ls -l`` to
-enable the use of human-readable units when displaying file sizes. Many Unix programs
+enable the display of human-readable units for file sizes. Many Unix programs
 like ``ls`` allow you to combine single character (short) options into a single
 command-line argument when entering the command at the shell prompt. All three
 examples below produce the same output.
