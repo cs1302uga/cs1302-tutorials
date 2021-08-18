@@ -492,6 +492,8 @@ directory; that is, change to the parent directory.
 
 .. figure:: img/cd-dotdot-demo.svg
 
+You can even go up two directories using ``../..``.
+
 .. code-block:: shell
 
    $ cd ../..
