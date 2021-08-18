@@ -717,6 +717,18 @@ the file's dirname.
    After   ``/home/myid/■■■■■■■/cs1302-unix/notes/cs1730/cpp.md``
    ======  ======================================================
 
+To **rename a file**, use the ``mv`` command in a way that changes
+the file's basename.
+
+.. code-block:: shell
+
+   $ cd ~/cs1302-unix
+   $ tree notes
+   $ realpath notes/cs1730/cpp.md
+   $ mv notes/cs1302/cpp.md notes/cs1730/c.md
+   $ realpath notes/cs1730/c.md
+   $ tree notes
+
 ``cp``, ``cp -r``
 +++++++++++++++++
 
