@@ -414,7 +414,9 @@ used to change to directories nested under your home directory.
 
 .. code-block:: shell
 
-   $ cd ~/cs1302-unix/notes
+   $ cd ~/cs1302-unix
+
+.. figure:: img/cd-minus-demo.svg
 
 If you use the ``cd`` command without supplying any command-line arguments, then it changes
 to your home directory. How convenient!
@@ -422,6 +424,8 @@ to your home directory. How convenient!
 .. code-block:: shell
 
    $ cd
+
+.. figure:: img/cd-solo-demo.svg
 
 .. table::
 

@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="205.26">
+  <rect width="1280" height="190.26" rx="5" ry="5" class="a"/>
+  <svg y="0%" x="0%">
+    <circle cx="20" cy="20" r="6" fill="#ff5f58"/>
+    <circle cx="40" cy="20" r="6" fill="#ffbd2e"/>
+    <circle cx="60" cy="20" r="6" fill="#18c132"/>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="130.26" viewBox="0 0 124 13.026" width="1240" x="15" y="50">
+    <style>@keyframes i{0%{transform:translateX(0)}1.1%{transform:translateX(-124px)}16%{transform:translateX(-248px)}16.8%{transform:translateX(-372px)}17.9%{transform:translateX(-496px)}23.9%{transform:translateX(-620px)}35.3%{transform:translateX(-744px)}36.6%{transform:translateX(-868px)}41.1%{transform:translateX(-992px)}52.4%{transform:translateX(-1116px)}54.5%{transform:translateX(-1240px)}54.7%{transform:translateX(-1364px)}60.8%{transform:translateX(-1488px)}to{transform:translateX(-1612px)}}.a{fill:#282d35}.f{fill:#b9c0cb;white-space:pre}</style>
+    <g font-family="Monaco,Consolas,Menlo,'Bitstream Vera Sans Mono','Powerline Symbols',monospace" font-size="1.67">
+      <defs>
+        <symbol id="1">
+          <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix/notes/cs1302$</text>
+        </symbol>
+        <symbol id="2">
+          <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix/notes/cs1302$</text>
+          <text x="46.092" y="1.67" class="f">pwd</text>
+        </symbol>
+        <symbol id="3">
+          <text y="1.67" class="f">/home/myid/&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;/cs1302-unix/notes/cs1302</text>
+        </symbol>
+        <symbol id="4">
+          <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix/notes/cs1302$</text>
+          <text x="46.092" y="1.67" class="f">cd</text>
+        </symbol>
+        <symbol id="5">
+          <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+        </symbol>
+        <symbol id="6">
+          <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+          <text x="21.042" y="1.67" class="f">pwd</text>
+        </symbol>
+        <symbol id="7">
+          <text y="1.67" class="f">/home/myid/&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;</text>
+        </symbol>
+        <symbol id="a">
+          <path fill="transparent" d="M0 0h124v6H0z"/>
+        </symbol>
+        <symbol id="b">
+          <path fill="#6f7683" d="M0 0h1.102v2.171H0z"/>
+        </symbol>
+      </defs>
+      <path class="a" d="M0 0h124v13.026H0z"/>
+      <g style="animation-duration:11.380617s;animation-iteration-count:infinite;animation-name:i;animation-timing-function:steps(1,end)">
+        <svg width="1736">
+          <svg>
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="-.004"/>
+          </svg>
+          <svg x="124">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="45.996"/>
+            <use xlink:href="#1"/>
+          </svg>
+          <svg x="248">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="46.996"/>
+            <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix/notes/cs1302$</text>
+            <text x="46.092" y="1.67" class="f">p</text>
+          </svg>
+          <svg x="372">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="47.996"/>
+            <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix/notes/cs1302$</text>
+            <text x="46.092" y="1.67" class="f">pw</text>
+          </svg>
+          <svg x="496">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="48.996"/>
+            <use xlink:href="#2"/>
+          </svg>
+          <svg x="620">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="45.996" y="4.317"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#3" y="2.171"/>
+            <use xlink:href="#1" y="4.342"/>
+          </svg>
+          <svg x="744">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="46.996" y="4.317"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#3" y="2.171"/>
+            <text y="6.012" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix/notes/cs1302$</text>
+            <text x="46.092" y="6.012" class="f">c</text>
+          </svg>
+          <svg x="868">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="47.996" y="4.317"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#3" y="2.171"/>
+            <use xlink:href="#4" y="4.342"/>
+          </svg>
+          <svg x="992">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="20.996" y="6.488"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#3" y="2.171"/>
+            <use xlink:href="#4" y="4.342"/>
+            <use xlink:href="#5" y="6.513"/>
+          </svg>
+          <svg x="1116">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="21.996" y="6.488"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#3" y="2.171"/>
+            <use xlink:href="#4" y="4.342"/>
+            <text y="8.183" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+            <text x="21.042" y="8.183" class="f">p</text>
+          </svg>
+          <svg x="1240">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="22.996" y="6.488"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#3" y="2.171"/>
+            <use xlink:href="#4" y="4.342"/>
+            <text y="8.183" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+            <text x="21.042" y="8.183" class="f">pw</text>
+          </svg>
+          <svg x="1364">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="23.996" y="6.488"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#3" y="2.171"/>
+            <use xlink:href="#4" y="4.342"/>
+            <use xlink:href="#6" y="6.513"/>
+          </svg>
+          <svg x="1488">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="20.996" y="10.83"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#3" y="2.171"/>
+            <use xlink:href="#4" y="4.342"/>
+            <use xlink:href="#6" y="6.513"/>
+            <use xlink:href="#7" y="8.684"/>
+            <use xlink:href="#5" y="10.855"/>
+          </svg>
+          <svg x="1612">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="-.004" y="10.83"/>
+            <use xlink:href="#3"/>
+            <use xlink:href="#4" y="2.171"/>
+            <use xlink:href="#6" y="4.342"/>
+            <use xlink:href="#7" y="6.513"/>
+            <text y="10.354" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+            <text x="21.042" y="10.354" class="f">exit</text>
+          </svg>
+        </svg>
+      </g>
+    </g>
+  </svg>
+</svg>
