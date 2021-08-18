@@ -726,8 +726,8 @@ supplying the relative path as a command-line argument.
 
 .. figure:: img/realpath-demo.svg
 
-To move or rename a file in Unix, the ``mv`` (move) command
-is used. Here is some of usage information provided by the
+To move or rename a file in Unix, use the ``mv`` (move) command.
+Here is some of usage information adapted from the
 manual:
 
 .. table::
@@ -782,6 +782,19 @@ using ``man mv``.
 
 ``cp``, ``cp -r``
 +++++++++++++++++
+
+To copy a file in Unix, use the ``cp`` (copy) command.
+Here is some of usage information adapted from the
+manual:
+
+.. table::
+
+   ==========================  =====================================
+   Command                     Description
+   ==========================  =====================================
+   ``cp SOURCE DEST``          Copy ``SOURCE`` to ``DEST``
+   ``mv SOURCE... DIRECTORY``  Copy ``SOURCE(s)`` into ``DIRECTORY``
+   ==========================  =====================================
 
 For more information about ``cp``, consult the manual page
 using ``man cp``.
