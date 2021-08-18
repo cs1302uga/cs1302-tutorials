@@ -845,7 +845,7 @@ option as a command-line argument. **REMEMBER, THIS CANNOT BE UNDONE**.
 .. code-block:: shell
 
    $ cd ~/cs1302-unix
-   $ rm notes/cs1730/c.md
+   $ rm notes/other
 
 .. figure:: img/rm-third-demo.svg
 
