@@ -49,6 +49,14 @@ are executed on the remote computer. It might look like you are
 running programs locally, but they are simply being displayed
 locally.
 
+.. table::
+
+   =====================  ======================================================================
+   Command                 Description
+   =====================  ======================================================================
+   ``ssh user@hostname``  Start a secure shell connection to ``hostname`` and login as ``user``.
+   =====================  ======================================================================
+
 ``pwd``
 +++++++
 
@@ -76,6 +84,14 @@ to the current working directory one directory at a time.
 * What is the absolute path of your home directory?
 * What character does an absolute path always start with, and
   what does it represent?
+
+.. table::
+
+   ========  ======================================================================
+   Command   Description
+   ========  ======================================================================
+   ``pwd``   Print absolute path of current working directory.
+   ========  ======================================================================
 
 ``date``, ``exit``, ``whoami``
 ++++++++++++++++++++++++++++++
@@ -194,6 +210,16 @@ lists the contents of a directory in a tree-like format.
    $ tree cs1302-unix
 
 .. figure:: img/tree-path-demo.svg
+
+.. table::
+
+   ===============  ======================================================================================================
+   Command          Description
+   ===============  ======================================================================================================
+   ``ls``           List contents of current working directory.
+   ``ls PATH``      List contents of the last directory in the provided ``PATH`` (e.g., ``c`` in ``a/b/c`` or ``/a/b/c``).
+   ``tree PATH``    List contents of the last directory in the provided ``PATH`` and its subdirecoties, in a tree format.
+   ===============  ======================================================================================================
 
 ``ls -l``, ``ls -lh``
 +++++++++++++++++++++
