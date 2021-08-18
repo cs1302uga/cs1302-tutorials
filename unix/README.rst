@@ -2,9 +2,9 @@
 ..    :alt: Approved for: Spring 2021
 .. sectnum::
 
-======
- Unix
-======
+======================
+ Introduction to Unix
+======================
 
 * `Unix: Getting Started <https://github.com/cs1302uga/cs1302-tutorials/blob/master/unix/unix-getting-started.rst>`_
 * `Unix: Tutorial <https://github.com/cs1302uga/cs1302-tutorials/blob/master/unix/unix-tutorial.rst>`_
