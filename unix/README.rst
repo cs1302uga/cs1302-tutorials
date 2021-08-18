@@ -526,29 +526,36 @@ is included in the "long" output format:
 
        .. _wiki_hard_link: https://en.wikipedia.org/wiki/Hard_link
 
-.. [3] **User / Owner:** The user denoted as the owner of the file. In most cases, the owner of a file
+.. [3] ..rubric:: **User / Owner**
+
+       The user denoted as the owner of the file. In most cases, the owner of a file
        is the user who created the file. A file's owner can only be changed by a superuser (administrator)
        or a program acting on behalf of a superuser. Unless the owner of a file is a superuser, the owner
        is subject to the user permissions indicated in the file's mode.
 
-.. [4] **Group:** The user denoted as the group of the file. In most cases, a file's group is the same
+.. [4] .. rubric:: **Group**
+
+       The user denoted as the group of the file. In most cases, a file's group is the same
        as its owner's group. A file's owner can only be changed by a superuser (administrator)
        or a program acting on behalf of a superuser. Users in a file's group that are not the
        file's owner or a superuser are subject to the group permissions indicated in the file's mode.
 
-.. [5] **File Size:** Normally the size is printed as a byte count or block count without punctuation.
+.. [5] .. rubric:: **File Size**
+
+       Normally the size is printed as a byte count or block count without punctuation.
        These days, byte counts are not very readable, especially for larger file sizes. You can make
        the output more human-readable by supplying the ``-h`` (human-readable) option as a command-line
        argument to ``ls -l``. The human-readable output uses unites like ``K`` (kilobyte), ``M`` (megabyte),
        ``G`` (gigabyte), etc. whenever they apply. Block counts are usually shown for directories,
        but that topic is outside the scope of this reading.
 
-.. [6] **Last Modified Timestamp:** TODO
+.. [6] ..rubric **Last Modified Timestamp**
 
-.. [7] **Name:** TODO
+       TODO
 
+.. [7] ..rubric:: **Name:**
 
-
+       TODO
 
 ``cd PATH``
 +++++++++++
