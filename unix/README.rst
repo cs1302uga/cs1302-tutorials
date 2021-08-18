@@ -551,11 +551,18 @@ is included in the "long" output format:
 
 .. [6] .. rubric:: **Last Modified Timestamp**
 
-       TODO
+       The last time the contents of the file were modified or the file itself was touched. Often
+       referred to as the file's last modification time. Neither reading a file nor changing a file's
+       permissions modify the contents of a file, and thus do not cause a change in the file's
+       modification time. A file's modification time is changed when a program writes to the file
+       or uses the ``touch`` command to update the file's access and modification times to the
+       current time.
 
-.. [7] .. rubric:: **Name:**
+.. [7] .. rubric:: **Filename:**
 
-       TODO
+       The name of the file. Most systems limit the length of a filename to some value between
+       14 characters (older systems) and 255 characters (newer systems), and they require that
+       a filename be unique inside its directory.
 
 ``cd PATH``
 +++++++++++
