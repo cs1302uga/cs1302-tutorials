@@ -693,6 +693,28 @@ completions are possible, pressing the ``TAB`` key again lists them all.
 Keyboard Shortcuts
 ++++++++++++++++++
 
+.. table::
+
+   ========  ====================================================
+   Key       Description
+   ========  ====================================================
+   ``C``     ``CRTL`` (control)
+   ``M``     ``META`` (meta): usually ``ALT``, ``OPT`` or ``ESC``
+   ========  ====================================================
+
+.. table::
+
+   ========  ==========================================
+   Shortcut  Description
+   ========  ==========================================
+   ``C-a``   Move to beginning of line.
+   ``C-e``   Move to end of line.
+   ``C-f``   Move forward (right) one character.
+   ``M-f``   Move forward (right) one word.
+   ``C-b``   Move backward (left) one character.
+   ``M-b``   Move backward (left) one word.
+   ========  ==========================================
+
 Getting Help
 ------------
 
