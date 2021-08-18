@@ -497,7 +497,7 @@ is included in the "long" output format, as described below the next few example
        R      W      X      R      W      X      R      W      X
        =====  =====  =====  =====  =====  =====  =====  =====  =====
        ``r``  ``w``  ``-``  ``r``  ``-``  ``-``  ``r``  ``-``  ``-``
-       ``✓``  ``✓``  ``✗``  ``✓``  ``✗``  ``✗``  ``✓``  ``✗``  ``✗``
+       ✓      ✓      ✗      ✓      ✗      ✗      ✓      ✗      ✗
        =====  =====  =====  =====  =====  =====  =====  =====  =====
 
        File type cannot usually be changed after a file has been created; however, a file's permissions
