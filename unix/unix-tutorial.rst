@@ -682,8 +682,8 @@ supplying the relative path as a command-line argument.
 .. figure:: img/realpath-demo.svg
 
 To move or rename a file in Unix, the ``mv`` (move) command
-is used. Before we go to some examples, here is the
-usage information provided by the manual:
+is used. Here is some of usage information provided by the
+manual:
 
 .. table::
 
@@ -694,9 +694,8 @@ usage information provided by the manual:
    ``mv SOURCE... DIRECTORY``  Move ``SOURCE(s)`` to ``DIRECTORY``
    ==========================  ===================================
 
-To move a file, use the ``mv`` command in a way that results in
-a change of the file's dirname. The examples below utlize a new
-
+To **move a file**, use the ``mv`` command in a way that changes
+the file's dirname.
 
 .. code-block:: shell
 
