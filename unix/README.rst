@@ -463,16 +463,17 @@ is included in the "long" output format:
    ``-rw-r--r--.``  ``1``  ``mepcott``   ``myid``    ``607430``   ``Jun  9 12:45``  ``sherlock_holmes.txt``
    ===============  =====  ============  ==========  ===========  ================  ===========================
 
-.. [1] **Mode:** the file type and permissions. The first character denotes the filetype.
+.. [1] **Mode:** the file type and permissions. The first character denotes the file type.
        Common file types include:
 
-       =====  ==============
-       Type   Meaning
-       =====  ==============
+       =========  ==============
+       Character  Type
+       =========  ==============
        ``d``  directory file
        ``-``  regular file
        ``l``  symbolic link
-       =====  ==============
+       =========  ==============
+
 
 .. [2] **Hard Links:** TODO
 
