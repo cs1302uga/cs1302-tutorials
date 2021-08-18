@@ -595,6 +595,11 @@ a path ending with the directory you want created as a command-line argument.
 
 .. figure:: img/mkdir-second-demo.svg
 
+The default behavior of ``mkdir`` requires that intermediate
+directories along the path already exist. If one or more
+directories along the path do not exist, then ``mkdir``
+will emit a ``No such file or directory`` error.
+
 .. code-block:: shell
 
    $ cd ~/cs1302-unix
@@ -602,7 +607,7 @@ a path ending with the directory you want created as a command-line argument.
    $ mkdir notes/other/a/b/c
    $ tree notes
 
-.. .. figure:: mkdir-third-demo.svg
+.. figure:: img/mkdir-third-demo.svg
 
 .. code-block:: shell
 
