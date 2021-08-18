@@ -469,9 +469,9 @@ is included in the "long" output format:
        =========  ==============
        Character  Type
        =========  ==============
-       ``d``  directory file
-       ``-``  regular file
-       ``l``  symbolic link
+       ``d``      directory file
+       ``-``      regular file
+       ``l``      symbolic link
        =========  ==============
 
 
