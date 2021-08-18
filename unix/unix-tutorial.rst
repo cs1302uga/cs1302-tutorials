@@ -77,7 +77,7 @@ to the current working directory one directory at a time.
 * What character does an absolute path always start with, and
   what does it represent?
 
-``date``, ``exit``, ``logout``, ``whoami``
+``date``, ``exit``, ``whoami``
 ++++++++++++++++++++++++++++++++++++++++++
 
 Listed below are some easy commands that you can try out immediately, some
