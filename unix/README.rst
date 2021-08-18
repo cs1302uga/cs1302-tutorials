@@ -479,7 +479,9 @@ is included in the "long" output format:
    ``-rw-r--r--.``  ``1``  ``mepcott``   ``myid``    ``9``        ``Aug 17 17:39``  ``README.md``
    ===============  =====  ============  ==========  ===========  ================  ===========================
 
-.. [1] **Mode:** The file type and permissions. The first character denotes the file type.
+.. [1] **Mode:** The file type and permissions.
+
+       The first character denotes the file type.
        In Unix, file type refers to how the file behaves from the file system's perspective.
        File type and content format are different concepts. File suffixes like ``.txt``,
        ``.mp3``, ``.pdf``, etc. are all naming conventions for the content formats of certain
