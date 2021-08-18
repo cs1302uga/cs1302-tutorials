@@ -578,8 +578,8 @@ examples below produce the same output.
 
 .. figure:: img/ls-long-human-demo.svg
 
-``cd PATH``
-+++++++++++
+``cd PATH``, ``cd -``, ``cd ~``, ``cd``
++++++++++++++++++++++++++++++++++++++++
 
 So far, you know how to list the files in your home directory, your current working directory,
 and other directories; however, all of the examples so far have utilized absolute or relative
@@ -597,6 +597,29 @@ it's time for your current working directory to change. This can be done using t
 
    $ cd notes/cs1302
 
+
+If you to change to the directory you were last in prior to your current working directory,
+then supply ``-`` (minus sign) as a command-line argument to ``cd``.
+
+.. code-block:: shell
+
+   $ cd -
+
+On most Unix systems, ``~`` (tilde) is an alias for the absolute path of your home directoy.
+While you can use it with ``cd`` to change directly to your home directory, it's more commonly
+used to change to directories nested under your home directory.
+
+.. code-block:: shell
+
+   $ cd ~/cs1302-unix/notes
+
+If you use the ``cd`` command without supplying any command-line arguments, then it changes
+to your home directory. How convenient!
+
+.. code-block:: shell
+
+   $ cd
+
 ``ls -a``, ``cd ..``
 ++++++++++++++++++++
 
@@ -612,20 +635,8 @@ it's time for your current working directory to change. This can be done using t
 
    $ cd ..
 
-``cd ~``, ``cd -``, ``cd``
-++++++++++++++++++++++++++
 
-.. code-block:: shell
 
-   $ cd ~
-
-.. code-block:: shell
-
-   $ cd -
-
-.. code-block:: shell
-
-   $ cd
 
 More Time-saving Tips
 ---------------------
