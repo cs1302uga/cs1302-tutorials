@@ -601,9 +601,24 @@ it's time for your current working directory to change. This can be done using t
 
 .. figure:: img/cd-path-demo1.svg
 
+.. code-block:: shell
+
+   $ cd notes/cs1302
 
 ``ls -a``, ``cd ..``
 ++++++++++++++++++++
+
+.. code-block:: shell
+
+   $ ls -a
+
+.. code-block:: shell
+
+   $ ls . -a
+
+.. code-block:: shell
+
+   $ cd ..
 
 ``cd ~``, ``cd``
 ++++++++++++++++
