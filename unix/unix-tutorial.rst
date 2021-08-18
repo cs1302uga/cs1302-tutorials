@@ -634,8 +634,8 @@ using ``man mkdir``.
 Moving and Removing
 -------------------
 
-``mv``
-++++++
+``realpath``, ``mv``
+++++++++++++++++++++
 
 In Unix, every file has an absolute path that describes
 the traversal path from the root of the disk ``/`` to
@@ -669,7 +669,45 @@ with the modification of a file's absolute path.
    |Y|      |Y|       move and rename a file
    =======  ========  ======================
 
+If you are unsure what the absolute path for a file is, but
+you do know some relative path for it, then you can
+print its absolute path using the ``realpath`` command,
+supplying the relative path as a command-line argument.
 
+.. code-block:: shell
+
+   $ cd ~/cs1302-unix
+   $ realpath notes/cs1302/cpp.md
+
+.. figure:: img/realpath-demo.svg
+
+To move or rename a file in Unix, the ``mv`` (move) command
+is used. Before we go to some examples, here is the
+usage information provided by the manual:
+
+.. table::
+
+   ==========================  ===================================
+   Command                     Description
+   ==========================  ===================================
+   ``mv SOURCE DEST``          Rename ``SOURCE`` to ``DEST``
+   ``mv SOURCE... DIRECTORY``  Move ``SOURCE(s)`` to ``DIRECTORY``
+   ==========================  ===================================
+
+To move a file, use the ``mv`` command in a way that results in
+a change of the file's dirname. The examples below utlize a new
+
+
+.. code-block:: shell
+
+   $ cd ~/cs1302-unix
+   $ tree notes
+   $ realpath notes/cs1302/cpp.md
+   $ mv notes/cs1302/cpp.md notes/cs1730/cpp.md
+   $ realpath notes/cs1730/cpp.md
+   $ tree notes
+
+.. figure:: img/mv-first-demo.svg
 
 ``cp``, ``cp -r``
 +++++++++++++++++
