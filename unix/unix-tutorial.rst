@@ -816,10 +816,41 @@ using ``man cp``.
 ``rm``, ``rm -r``
 +++++++++++++++++
 
+To remove or delete a file in Unix, use the ``rm`` (remove)
+command. If you have permission to remove a file, then you
+can do so by supplying ``rm`` a path to the file as a
+command-line argument. **REMOVAL CANNOT BE UNDONE.**
+
+.. code-block:: shell
+
+   $ cd ~/cs1302-unix
+   $ rm notes/cs1730/c.md
+
+.. figure:: img/rm-first-demo.svg
+
+The default behavior of ``rm`` is to not permit the removal
+of a directory file.
+
+.. code-block:: shell
+
+   $ cd ~/cs1302-unix
+   $ rm notes/other
+
+.. figure:: img/rm-second-demo.svg
+
+To make ``rm`` recursively remove the contents of a directory
+so that it can remove it, supply ``rm`` with the ``-r`` (recursive)
+option as a command-line argument. **REMEMBER, THIS CANNOT BE UNDONE**.
+
+.. code-block:: shell
+
+   $ cd ~/cs1302-unix
+   $ rm notes/cs1730/c.md
+
+.. figure:: img/rm-third-demo.svg
+
 For more information about ``rm``, consult the manual page
 using ``man rm``.
-
-
 
 .. copyright and license information
 .. |copy| unicode:: U+000A9 .. COPYRIGHT SIGN
