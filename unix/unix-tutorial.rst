@@ -764,7 +764,9 @@ the file's basename.
 .. code-block:: shell
 
    $ cd ~/cs1302-unix
-   $ mv notes/cs1302/cpp.md notes/cs1730/c.md
+   $ mv notes/cs1730/cpp.md notes/cs1730/c.md
+
+.. figure:: img/mv-second-demo.svg
 
 .. table::
 
