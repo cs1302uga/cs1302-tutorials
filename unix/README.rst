@@ -719,7 +719,7 @@ Inspecting Files
 .. code-block:: shell
 
    $ cd ~/cs1302-unix/books
-   $ grep -vE "^BOOK " moby_dick.txt
+   $ grep -v "BOOK" moby_dick.txt
 
 
 New Directories and Regular Files
