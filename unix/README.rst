@@ -549,11 +549,11 @@ is included in the "long" output format:
        ``G`` (gigabyte), etc. whenever they apply. Block counts are usually shown for directories,
        but that topic is outside the scope of this reading.
 
-.. [6] .. rubric **Last Modified Timestamp**
+.. [6] .. rubric:: **Last Modified Timestamp**
 
        TODO
 
-.. [7] ..rubric:: **Name:**
+.. [7] .. rubric:: **Name:**
 
        TODO
 
