@@ -406,6 +406,8 @@ then supply ``-`` (minus sign) as a command-line argument to ``cd``.
 
    $ cd -
 
+.. figure:: img/cd-minus-demo.svg
+
 On most Unix systems, ``~`` (tilde) is an alias for the absolute path of your home directoy.
 While you can use it with ``cd`` to change directly to your home directory, it's more commonly
 used to change to directories nested under your home directory.
