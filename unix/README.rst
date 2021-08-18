@@ -686,6 +686,10 @@ More Time-saving Tips
 Tab Completion
 ++++++++++++++
 
+The tab completion feature in ``bash`` permits typing a partial command or path,
+then pressing the ``TAB`` key to auto-complete the sequence. When multiple
+completions are possible, pressing the ``TAB`` key again lists them all.
+
 Keyboard Shortcuts
 ++++++++++++++++++
 
