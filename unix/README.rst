@@ -479,7 +479,7 @@ is included in the "long" output format:
    ``-rw-r--r--.``  ``1``  ``mepcott``   ``myid``    ``9``        ``Aug 17 17:39``  ``README.md``
    ===============  =====  ============  ==========  ===========  ================  ===========================
 
-.. [1] **Mode:** the file type and permissions. The first character denotes the file type.
+.. [1] **Mode:** The file type and permissions. The first character denotes the file type.
        In Unix, file type refers to how the file behaves from the file system's perspective.
        File type and content format are different concepts. File suffixes like ``.txt``,
        ``.mp3``, ``.pdf``, etc. are all naming conventions for the content formats of certain
@@ -532,7 +532,12 @@ is included in the "long" output format:
        or a program acting on behalf of a superuser. Users in a file's group that are not the
        file's owner or a superuser are subject to the group permissions indicated in the file's mode.
 
-.. [5] **Size:** TODO
+.. [5] **File Size:** Normally the size is printed as a byte count or block count without punctuation.
+       These days, byte counts are not very readable, especially for larger file sizes. You can make
+       the output more human-readable by supplying the ``-h`` (human-readable) option as a command-line
+       argument to ``ls -l``. The human-readable output uses unites like ``K`` (kilobyte), ``M`` (megabyte),
+       ``G`` (gigabyte), etc. whenever they apply. Block counts are usually shown for directories,
+       but that topic is outside the scope of this reading.
 
 .. [6] **Last Modified Timestamp:** TODO
 
