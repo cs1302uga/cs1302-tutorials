@@ -15,6 +15,9 @@ if [ ! -d $DIR ]; then
   wget -qO books/sherlock_holmes.txt https://www.gutenberg.org/files/1661/1661-0.txt
   wget -qO books/moby_dick.txt https://www.gutenberg.org/files/2701/2701-0.txt
   echo "# README" > README.md
+  echo "spooky file contents" > .spooky
+  echo "some secret here" > .secret
+  chmod 600 .secret
   echo "subdirectory $DIR successfully created"
 else
   >&2 echo "subdirectory $DIR already exists"

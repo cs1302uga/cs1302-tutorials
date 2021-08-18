@@ -435,6 +435,10 @@ to your home directory. How convenient!
 ``ls -a``, ``cd ..``
 ++++++++++++++++++++
 
+The default behavior of ``ls`` is to ignore files starting with ``.`` (hidden files).
+To force ``ls`` to not ignore hidden files, supply the ``-a`` (all) option
+as a command-line argument.
+
 .. code-block:: shell
 
    $ ls -a
