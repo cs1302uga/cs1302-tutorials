@@ -416,7 +416,7 @@ used to change to directories nested under your home directory.
 
    $ cd ~/cs1302-unix
 
-.. figure:: img/cd-minus-demo.svg
+.. figure:: img/cd-tilde-demo.svg
 
 If you use the ``cd`` command without supplying any command-line arguments, then it changes
 to your home directory. How convenient!
