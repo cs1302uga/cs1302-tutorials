@@ -436,16 +436,8 @@ lists the contents of a directory in a tree-like format.
 
 By defauly, the ``ls`` command displays the contents of a directory using its "simple"
 output format. A "long" output option can be specified by supplying a ``-l`` as a
-command-line argument.  In addition to the name of each file, the following information
-is included in the "long" output format:
-
-* file type,
-* file mode bits (permissions),
-* number of hard links
-* owner name,
-* group name,
-* file size,
-* modification timestamp
+command-line argument. In addition to the name of each file, additional information
+is included in the "long" output format, as described below the next few examples.
 
 .. code-block:: shell
 
