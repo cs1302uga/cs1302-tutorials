@@ -796,6 +796,13 @@ manual:
    ``mv SOURCE... DIRECTORY``  Copy ``SOURCE(s)`` into ``DIRECTORY``
    ==========================  =====================================
 
+.. code-block:: shell
+
+   $ cd ~/cs1302-unix
+   $ cp notes/cs1730/c.md notes/cs1730/cpp.md
+
+.. figure:: img/cp-first-demo.svg
+
 For more information about ``cp``, consult the manual page
 using ``man cp``.
 

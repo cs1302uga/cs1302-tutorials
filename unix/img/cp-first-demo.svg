@@ -1,0 +1,1528 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="726.3">
+  <rect width="1280" height="711.3" rx="5" ry="5" class="a"/>
+  <svg y="0%" x="0%">
+    <circle cx="20" cy="20" r="6" fill="#ff5f58"/>
+    <circle cx="40" cy="20" r="6" fill="#ffbd2e"/>
+    <circle cx="60" cy="20" r="6" fill="#18c132"/>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="651.3" viewBox="0 0 124 65.13" width="1240" x="15" y="50">
+    <style>@keyframes j{0%{transform:translateX(0)}.31%{transform:translateX(-124px)}1.1%{transform:translateX(-248px)}1.46%{transform:translateX(-372px)}1.87%{transform:translateX(-496px)}2.61%{transform:translateX(-620px)}3.43%{transform:translateX(-744px)}3.89%{transform:translateX(-868px)}4.29%{transform:translateX(-992px)}5.36%{transform:translateX(-1116px)}5.47%{transform:translateX(-1240px)}6.33%{transform:translateX(-1364px)}6.56%{transform:translateX(-1488px)}7.18%{transform:translateX(-1612px)}10.14%{transform:translateX(-1736px)}10.36%{transform:translateX(-1860px)}10.82%{transform:translateX(-1984px)}11.15%{transform:translateX(-2108px)}12.22%{transform:translateX(-2232px)}13.15%{transform:translateX(-2356px)}13.57%{transform:translateX(-2480px)}14.08%{transform:translateX(-2604px)}14.4%{transform:translateX(-2728px)}14.78%{transform:translateX(-2852px)}15.26%{transform:translateX(-2976px)}15.88%{transform:translateX(-3100px)}16.12%{transform:translateX(-3224px)}16.54%{transform:translateX(-3348px)}16.95%{transform:translateX(-3472px)}20.91%{transform:translateX(-3596px)}20.92%{transform:translateX(-3844px)}22.89%{transform:translateX(-3968px)}23.95%{transform:translateX(-4092px)}28.34%{transform:translateX(-4216px)}30.89%{transform:translateX(-4340px)}31.27%{transform:translateX(-4464px)}31.58%{transform:translateX(-4588px)}32.01%{transform:translateX(-4712px)}32.53%{transform:translateX(-4836px)}33.58%{transform:translateX(-4960px)}34.18%{transform:translateX(-5084px)}34.76%{transform:translateX(-5208px)}37.96%{transform:translateX(-5332px)}38.47%{transform:translateX(-5456px)}39.04%{transform:translateX(-5580px)}39.58%{transform:translateX(-5704px)}43.61%{transform:translateX(-5828px)}44.73%{transform:translateX(-5952px)}46.21%{transform:translateX(-6076px)}48.88%{transform:translateX(-6200px)}49.24%{transform:translateX(-6324px)}50.57%{transform:translateX(-6448px)}52.15%{transform:translateX(-6572px)}52.83%{transform:translateX(-6696px)}53.47%{transform:translateX(-6820px)}53.64%{transform:translateX(-6944px)}54.06%{transform:translateX(-7068px)}55.54%{transform:translateX(-7192px)}57.1%{transform:translateX(-7316px)}57.53%{transform:translateX(-7440px)}59.22%{transform:translateX(-7564px)}60.21%{transform:translateX(-7688px)}60.42%{transform:translateX(-7812px)}64.75%{transform:translateX(-7936px)}66.74%{transform:translateX(-8060px)}68.75%{transform:translateX(-8184px)}69.36%{transform:translateX(-8308px)}69.74%{transform:translateX(-8432px)}73.14%{transform:translateX(-8556px)}74.53%{transform:translateX(-8680px)}74.78%{transform:translateX(-8804px)}79.19%{transform:translateX(-9052px)}83.42%{transform:translateX(-9176px)}83.86%{transform:translateX(-9300px)}84.29%{transform:translateX(-9424px)}84.65%{transform:translateX(-9548px)}85%{transform:translateX(-9672px)}85.49%{transform:translateX(-9796px)}86.21%{transform:translateX(-9920px)}86.59%{transform:translateX(-10044px)}87.03%{transform:translateX(-10168px)}87.46%{transform:translateX(-10292px)}90.04%{transform:translateX(-10416px)}90.05%{transform:translateX(-10664px)}to{transform:translateX(-10788px)}}.a{fill:#282d35}.f,.g{fill:#b9c0cb;white-space:pre}.g{fill:#005fff}</style>
+    <g font-family="Monaco,Consolas,Menlo,'Bitstream Vera Sans Mono','Powerline Symbols',monospace" font-size="1.67">
+      <defs>
+        <symbol id="1">
+          <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+          <text x="21.042" y="1.67" class="f">cd</text>
+        </symbol>
+        <symbol id="2">
+          <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+          <text x="21.042" y="1.67" class="f">cd</text>
+          <text x="24.048" y="1.67" class="f">~/cs1302-unix</text>
+        </symbol>
+        <symbol id="3">
+          <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+        </symbol>
+        <symbol id="4">
+          <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+          <text x="33.066" y="1.67" class="f">t</text>
+        </symbol>
+        <symbol id="5">
+          <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+          <text x="33.066" y="1.67" class="f">tr</text>
+        </symbol>
+        <symbol id="6">
+          <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+          <text x="33.066" y="1.67" class="f">tre</text>
+        </symbol>
+        <symbol id="7">
+          <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+          <text x="33.066" y="1.67" class="f">tree</text>
+        </symbol>
+        <symbol id="8">
+          <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+          <text x="33.066" y="1.67" class="f">tree</text>
+          <text x="38.076" y="1.67" class="f">n</text>
+        </symbol>
+        <symbol id="9">
+          <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+          <text x="33.066" y="1.67" class="f">tree</text>
+          <text x="38.076" y="1.67" class="f">no</text>
+        </symbol>
+        <symbol id="10">
+          <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+          <text x="33.066" y="1.67" class="f">tree</text>
+          <text x="38.076" y="1.67" class="f">not</text>
+        </symbol>
+        <symbol id="11">
+          <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+          <text x="33.066" y="1.67" class="f">tree</text>
+          <text x="38.076" y="1.67" class="f">note</text>
+        </symbol>
+        <symbol id="12">
+          <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+          <text x="33.066" y="1.67" class="f">tree</text>
+          <text x="38.076" y="1.67" class="f">notes</text>
+        </symbol>
+        <symbol id="13">
+          <text y="1.67" class="g">notes</text>
+        </symbol>
+        <symbol id="14">
+          <text y="1.67" class="f">&#x251C;&#x2500;&#x2500;</text>
+          <text x="4.008" y="1.67" class="g">cs1302</text>
+        </symbol>
+        <symbol id="15">
+          <text y="1.67" class="f">&#x2502;</text>
+          <text x="4.008" y="1.67" class="f">&#x251C;&#x2500;&#x2500;</text>
+          <text x="8.016" y="1.67" class="f">java.md</text>
+        </symbol>
+        <symbol id="16">
+          <text y="1.67" class="f">&#x2502;</text>
+          <text x="4.008" y="1.67" class="f">&#x2514;&#x2500;&#x2500;</text>
+          <text x="8.016" y="1.67" class="f">unix.md</text>
+        </symbol>
+        <symbol id="17">
+          <text y="1.67" class="f">&#x251C;&#x2500;&#x2500;</text>
+          <text x="4.008" y="1.67" class="g">cs1730</text>
+        </symbol>
+        <symbol id="18">
+          <text y="1.67" class="f">&#x2502;</text>
+          <text x="4.008" y="1.67" class="f">&#x2514;&#x2500;&#x2500;</text>
+          <text x="8.016" y="1.67" class="f">c.md</text>
+        </symbol>
+        <symbol id="19">
+          <text y="1.67" class="f">&#x2514;&#x2500;&#x2500;</text>
+          <text x="4.008" y="1.67" class="g">other</text>
+        </symbol>
+        <symbol id="20">
+          <text x="4.008" y="1.67" class="f">&#x2514;&#x2500;&#x2500;</text>
+          <text x="8.016" y="1.67" class="g">a</text>
+        </symbol>
+        <symbol id="21">
+          <text x="8.016" y="1.67" class="f">&#x2514;&#x2500;&#x2500;</text>
+          <text x="12.024" y="1.67" class="g">b</text>
+        </symbol>
+        <symbol id="22">
+          <text x="12.024" y="1.67" class="f">&#x2514;&#x2500;&#x2500;</text>
+          <text x="16.032" y="1.67" class="g">c</text>
+        </symbol>
+        <symbol id="23">
+          <text y="1.67" class="f">6</text>
+          <text x="2.004" y="1.67" class="f">directories,</text>
+          <text x="15.03" y="1.67" class="f">3</text>
+          <text x="17.034" y="1.67" class="f">files</text>
+        </symbol>
+        <symbol id="24">
+          <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+          <text x="33.066" y="1.67" class="f">cp</text>
+        </symbol>
+        <symbol id="25">
+          <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+          <text x="33.066" y="1.67" class="f">cp</text>
+          <text x="36.072" y="1.67" class="f">notes/cs1730/c.md</text>
+        </symbol>
+        <symbol id="26">
+          <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+          <text x="33.066" y="1.67" class="f">cp</text>
+          <text x="36.072" y="1.67" class="f">notes/cs1730/c.md</text>
+          <text x="54.108" y="1.67" class="f">notes/cs1730/cpp.md</text>
+        </symbol>
+        <symbol id="27">
+          <text y="1.67" class="f">&#x2502;</text>
+          <text x="4.008" y="1.67" class="f">&#x251C;&#x2500;&#x2500;</text>
+          <text x="8.016" y="1.67" class="f">c.md</text>
+        </symbol>
+        <symbol id="28">
+          <text y="1.67" class="f">&#x2502;</text>
+          <text x="4.008" y="1.67" class="f">&#x2514;&#x2500;&#x2500;</text>
+          <text x="8.016" y="1.67" class="f">cpp.md</text>
+        </symbol>
+        <symbol id="29">
+          <text y="1.67" class="f">6</text>
+          <text x="2.004" y="1.67" class="f">directories,</text>
+          <text x="15.03" y="1.67" class="f">4</text>
+          <text x="17.034" y="1.67" class="f">files</text>
+        </symbol>
+        <symbol id="a">
+          <path fill="transparent" d="M0 0h124v30H0z"/>
+        </symbol>
+        <symbol id="b">
+          <path fill="#6f7683" d="M0 0h1.102v2.171H0z"/>
+        </symbol>
+      </defs>
+      <path class="a" d="M0 0h124v65.13H0z"/>
+      <g style="animation-duration:39.317481s;animation-iteration-count:infinite;animation-name:j;animation-timing-function:steps(1,end)">
+        <svg width="10912">
+          <svg>
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="-.004"/>
+          </svg>
+          <svg x="124">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="20.996"/>
+            <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+          </svg>
+          <svg x="248">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="21.996"/>
+            <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+            <text x="21.042" y="1.67" class="f">c</text>
+          </svg>
+          <svg x="372">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="22.996"/>
+            <use xlink:href="#1"/>
+          </svg>
+          <svg x="496">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="23.996"/>
+            <use xlink:href="#1"/>
+          </svg>
+          <svg x="620">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="24.996"/>
+            <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+            <text x="21.042" y="1.67" class="f">cd</text>
+            <text x="24.048" y="1.67" class="f">~</text>
+          </svg>
+          <svg x="744">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="25.996"/>
+            <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+            <text x="21.042" y="1.67" class="f">cd</text>
+            <text x="24.048" y="1.67" class="f">~/</text>
+          </svg>
+          <svg x="868">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="26.996"/>
+            <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+            <text x="21.042" y="1.67" class="f">cd</text>
+            <text x="24.048" y="1.67" class="f">~/c</text>
+          </svg>
+          <svg x="992">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="27.996"/>
+            <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+            <text x="21.042" y="1.67" class="f">cd</text>
+            <text x="24.048" y="1.67" class="f">~/cs</text>
+          </svg>
+          <svg x="1116">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="28.996"/>
+            <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+            <text x="21.042" y="1.67" class="f">cd</text>
+            <text x="24.048" y="1.67" class="f">~/cs1</text>
+          </svg>
+          <svg x="1240">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="29.996"/>
+            <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+            <text x="21.042" y="1.67" class="f">cd</text>
+            <text x="24.048" y="1.67" class="f">~/cs13</text>
+          </svg>
+          <svg x="1364">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="30.996"/>
+            <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+            <text x="21.042" y="1.67" class="f">cd</text>
+            <text x="24.048" y="1.67" class="f">~/cs130</text>
+          </svg>
+          <svg x="1488">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="31.996"/>
+            <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+            <text x="21.042" y="1.67" class="f">cd</text>
+            <text x="24.048" y="1.67" class="f">~/cs1302</text>
+          </svg>
+          <svg x="1612">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="32.996"/>
+            <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+            <text x="21.042" y="1.67" class="f">cd</text>
+            <text x="24.048" y="1.67" class="f">~/cs1302-</text>
+          </svg>
+          <svg x="1736">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="33.996"/>
+            <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+            <text x="21.042" y="1.67" class="f">cd</text>
+            <text x="24.048" y="1.67" class="f">~/cs1302-u</text>
+          </svg>
+          <svg x="1860">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="34.996"/>
+            <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+            <text x="21.042" y="1.67" class="f">cd</text>
+            <text x="24.048" y="1.67" class="f">~/cs1302-un</text>
+          </svg>
+          <svg x="1984">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="35.996"/>
+            <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~$</text>
+            <text x="21.042" y="1.67" class="f">cd</text>
+            <text x="24.048" y="1.67" class="f">~/cs1302-uni</text>
+          </svg>
+          <svg x="2108">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="36.996"/>
+            <use xlink:href="#2"/>
+          </svg>
+          <svg x="2232">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="32.996" y="2.146"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#3" y="2.171"/>
+          </svg>
+          <svg x="2356">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="33.996" y="2.146"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#4" y="2.171"/>
+          </svg>
+          <svg x="2480">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="34.996" y="2.146"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#5" y="2.171"/>
+          </svg>
+          <svg x="2604">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="35.996" y="2.146"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#6" y="2.171"/>
+          </svg>
+          <svg x="2728">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="36.996" y="2.146"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#7" y="2.171"/>
+          </svg>
+          <svg x="2852">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="37.996" y="2.146"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#7" y="2.171"/>
+          </svg>
+          <svg x="2976">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="38.996" y="2.146"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#8" y="2.171"/>
+          </svg>
+          <svg x="3100">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="39.996" y="2.146"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#9" y="2.171"/>
+          </svg>
+          <svg x="3224">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="40.996" y="2.146"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#10" y="2.171"/>
+          </svg>
+          <svg x="3348">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="41.996" y="2.146"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#11" y="2.171"/>
+          </svg>
+          <svg x="3472">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="42.996" y="2.146"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+          </svg>
+          <svg x="3596">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="-.004" y="4.317"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+          </svg>
+          <svg x="3720">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="-.004" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+          </svg>
+          <svg x="3844">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="32.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#3" y="30.394"/>
+          </svg>
+          <svg x="3968">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="33.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">c</text>
+          </svg>
+          <svg x="4092">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="34.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#24" y="30.394"/>
+          </svg>
+          <svg x="4216">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="35.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#24" y="30.394"/>
+          </svg>
+          <svg x="4340">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="36.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">n</text>
+          </svg>
+          <svg x="4464">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="37.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">no</text>
+          </svg>
+          <svg x="4588">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="38.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">not</text>
+          </svg>
+          <svg x="4712">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="39.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">note</text>
+          </svg>
+          <svg x="4836">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="40.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes</text>
+          </svg>
+          <svg x="4960">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="41.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/</text>
+          </svg>
+          <svg x="5084">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="42.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/c</text>
+          </svg>
+          <svg x="5208">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="43.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/cs</text>
+          </svg>
+          <svg x="5332">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="44.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/cs1</text>
+          </svg>
+          <svg x="5456">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="45.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/cs17</text>
+          </svg>
+          <svg x="5580">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="46.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/cs173</text>
+          </svg>
+          <svg x="5704">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="47.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/cs1730</text>
+          </svg>
+          <svg x="5828">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="48.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/cs1730/</text>
+          </svg>
+          <svg x="5952">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="49.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/cs1730/c</text>
+          </svg>
+          <svg x="6076">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="50.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/cs1730/c.</text>
+          </svg>
+          <svg x="6200">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="51.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/cs1730/c.m</text>
+          </svg>
+          <svg x="6324">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="52.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#25" y="30.394"/>
+          </svg>
+          <svg x="6448">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="53.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#25" y="30.394"/>
+          </svg>
+          <svg x="6572">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="54.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/cs1730/c.md</text>
+            <text x="54.108" y="32.064" class="f">n</text>
+          </svg>
+          <svg x="6696">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="55.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/cs1730/c.md</text>
+            <text x="54.108" y="32.064" class="f">no</text>
+          </svg>
+          <svg x="6820">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="56.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/cs1730/c.md</text>
+            <text x="54.108" y="32.064" class="f">not</text>
+          </svg>
+          <svg x="6944">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="57.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/cs1730/c.md</text>
+            <text x="54.108" y="32.064" class="f">note</text>
+          </svg>
+          <svg x="7068">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="58.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/cs1730/c.md</text>
+            <text x="54.108" y="32.064" class="f">notes</text>
+          </svg>
+          <svg x="7192">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="59.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/cs1730/c.md</text>
+            <text x="54.108" y="32.064" class="f">notes/</text>
+          </svg>
+          <svg x="7316">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="60.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/cs1730/c.md</text>
+            <text x="54.108" y="32.064" class="f">notes/c</text>
+          </svg>
+          <svg x="7440">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="61.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/cs1730/c.md</text>
+            <text x="54.108" y="32.064" class="f">notes/cs</text>
+          </svg>
+          <svg x="7564">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="62.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/cs1730/c.md</text>
+            <text x="54.108" y="32.064" class="f">notes/cs1</text>
+          </svg>
+          <svg x="7688">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="63.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/cs1730/c.md</text>
+            <text x="54.108" y="32.064" class="f">notes/cs17</text>
+          </svg>
+          <svg x="7812">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="64.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/cs1730/c.md</text>
+            <text x="54.108" y="32.064" class="f">notes/cs173</text>
+          </svg>
+          <svg x="7936">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="65.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/cs1730/c.md</text>
+            <text x="54.108" y="32.064" class="f">notes/cs1730</text>
+          </svg>
+          <svg x="8060">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="66.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/cs1730/c.md</text>
+            <text x="54.108" y="32.064" class="f">notes/cs1730/</text>
+          </svg>
+          <svg x="8184">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="67.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/cs1730/c.md</text>
+            <text x="54.108" y="32.064" class="f">notes/cs1730/c</text>
+          </svg>
+          <svg x="8308">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="68.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/cs1730/c.md</text>
+            <text x="54.108" y="32.064" class="f">notes/cs1730/cp</text>
+          </svg>
+          <svg x="8432">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="69.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/cs1730/c.md</text>
+            <text x="54.108" y="32.064" class="f">notes/cs1730/cpp</text>
+          </svg>
+          <svg x="8556">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="70.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/cs1730/c.md</text>
+            <text x="54.108" y="32.064" class="f">notes/cs1730/cpp.</text>
+          </svg>
+          <svg x="8680">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="71.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <text y="32.064" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="32.064" class="f">cp</text>
+            <text x="36.072" y="32.064" class="f">notes/cs1730/c.md</text>
+            <text x="54.108" y="32.064" class="f">notes/cs1730/cpp.m</text>
+          </svg>
+          <svg x="8804">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="72.996" y="30.369"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#26" y="30.394"/>
+          </svg>
+          <svg x="8928">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="-.004" y="32.54"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#26" y="30.394"/>
+          </svg>
+          <svg x="9052">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="32.996" y="32.54"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#26" y="30.394"/>
+            <use xlink:href="#3" y="32.565"/>
+          </svg>
+          <svg x="9176">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="33.996" y="32.54"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#26" y="30.394"/>
+            <use xlink:href="#4" y="32.565"/>
+          </svg>
+          <svg x="9300">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="34.996" y="32.54"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#26" y="30.394"/>
+            <use xlink:href="#5" y="32.565"/>
+          </svg>
+          <svg x="9424">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="35.996" y="32.54"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#26" y="30.394"/>
+            <use xlink:href="#6" y="32.565"/>
+          </svg>
+          <svg x="9548">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="36.996" y="32.54"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#26" y="30.394"/>
+            <use xlink:href="#7" y="32.565"/>
+          </svg>
+          <svg x="9672">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="37.996" y="32.54"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#26" y="30.394"/>
+            <use xlink:href="#7" y="32.565"/>
+          </svg>
+          <svg x="9796">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="38.996" y="32.54"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#26" y="30.394"/>
+            <use xlink:href="#8" y="32.565"/>
+          </svg>
+          <svg x="9920">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="39.996" y="32.54"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#26" y="30.394"/>
+            <use xlink:href="#9" y="32.565"/>
+          </svg>
+          <svg x="10044">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="40.996" y="32.54"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#26" y="30.394"/>
+            <use xlink:href="#10" y="32.565"/>
+          </svg>
+          <svg x="10168">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="41.996" y="32.54"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#26" y="30.394"/>
+            <use xlink:href="#11" y="32.565"/>
+          </svg>
+          <svg x="10292">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="42.996" y="32.54"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#26" y="30.394"/>
+            <use xlink:href="#12" y="32.565"/>
+          </svg>
+          <svg x="10416">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="-.004" y="34.711"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#26" y="30.394"/>
+            <use xlink:href="#12" y="32.565"/>
+          </svg>
+          <svg x="10540">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="-.004" y="62.934"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#26" y="30.394"/>
+            <use xlink:href="#12" y="32.565"/>
+            <use xlink:href="#13" y="34.736"/>
+            <use xlink:href="#14" y="36.907"/>
+            <use xlink:href="#15" y="39.078"/>
+            <use xlink:href="#16" y="41.249"/>
+            <use xlink:href="#17" y="43.42"/>
+            <use xlink:href="#27" y="45.591"/>
+            <use xlink:href="#28" y="47.762"/>
+            <use xlink:href="#19" y="49.933"/>
+            <use xlink:href="#20" y="52.104"/>
+            <use xlink:href="#21" y="54.275"/>
+            <use xlink:href="#22" y="56.446"/>
+            <use xlink:href="#29" y="60.788"/>
+          </svg>
+          <svg x="10664">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="32.996" y="62.934"/>
+            <use xlink:href="#2"/>
+            <use xlink:href="#12" y="2.171"/>
+            <use xlink:href="#13" y="4.342"/>
+            <use xlink:href="#14" y="6.513"/>
+            <use xlink:href="#15" y="8.684"/>
+            <use xlink:href="#16" y="10.855"/>
+            <use xlink:href="#17" y="13.026"/>
+            <use xlink:href="#18" y="15.197"/>
+            <use xlink:href="#19" y="17.368"/>
+            <use xlink:href="#20" y="19.539"/>
+            <use xlink:href="#21" y="21.71"/>
+            <use xlink:href="#22" y="23.881"/>
+            <use xlink:href="#23" y="28.223"/>
+            <use xlink:href="#26" y="30.394"/>
+            <use xlink:href="#12" y="32.565"/>
+            <use xlink:href="#13" y="34.736"/>
+            <use xlink:href="#14" y="36.907"/>
+            <use xlink:href="#15" y="39.078"/>
+            <use xlink:href="#16" y="41.249"/>
+            <use xlink:href="#17" y="43.42"/>
+            <use xlink:href="#27" y="45.591"/>
+            <use xlink:href="#28" y="47.762"/>
+            <use xlink:href="#19" y="49.933"/>
+            <use xlink:href="#20" y="52.104"/>
+            <use xlink:href="#21" y="54.275"/>
+            <use xlink:href="#22" y="56.446"/>
+            <use xlink:href="#29" y="60.788"/>
+            <use xlink:href="#3" y="62.959"/>
+          </svg>
+          <svg x="10788">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="-.004" y="62.934"/>
+            <use xlink:href="#12"/>
+            <use xlink:href="#13" y="2.171"/>
+            <use xlink:href="#14" y="4.342"/>
+            <use xlink:href="#15" y="6.513"/>
+            <use xlink:href="#16" y="8.684"/>
+            <use xlink:href="#17" y="10.855"/>
+            <use xlink:href="#18" y="13.026"/>
+            <use xlink:href="#19" y="15.197"/>
+            <use xlink:href="#20" y="17.368"/>
+            <use xlink:href="#21" y="19.539"/>
+            <use xlink:href="#22" y="21.71"/>
+            <use xlink:href="#23" y="26.052"/>
+            <use xlink:href="#26" y="28.223"/>
+            <use xlink:href="#12" y="30.394"/>
+            <use xlink:href="#13" y="32.565"/>
+            <use xlink:href="#14" y="34.736"/>
+            <use xlink:href="#15" y="36.907"/>
+            <use xlink:href="#16" y="39.078"/>
+            <use xlink:href="#17" y="41.249"/>
+            <use xlink:href="#27" y="43.42"/>
+            <use xlink:href="#28" y="45.591"/>
+            <use xlink:href="#19" y="47.762"/>
+            <use xlink:href="#20" y="49.933"/>
+            <use xlink:href="#21" y="52.104"/>
+            <use xlink:href="#22" y="54.275"/>
+            <use xlink:href="#29" y="58.617"/>
+            <text y="62.458" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
+            <text x="33.066" y="62.458" class="f">exit</text>
+          </svg>
+        </svg>
+      </g>
+    </g>
+  </svg>
+</svg>
