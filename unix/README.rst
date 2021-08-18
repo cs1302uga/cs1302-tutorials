@@ -662,8 +662,23 @@ Summary
 
    $ cd ..
 
+.. code-block:: shell
 
+   $ cd ../..
 
+Summary
+*******
+
+.. table::
+
+   =================  ================================================================================================
+   Command            Description
+   =================  ================================================================================================
+   ``ls -a``          ``ls`` shows hidden files (those that start with ``.``)
+   ``ls ..``          ``ls`` lists the contents of ``..`` (parent directory)
+   ``cd ..``          ``cd`` changes working directory to ``..`` (parent directory; "up one")
+   ``cd ../..``       ``cd`` changes working directory to ``../..`` (parent of parent directory; "up two")
+   =================  ================================================================================================
 
 More Time-saving Tips
 ---------------------
