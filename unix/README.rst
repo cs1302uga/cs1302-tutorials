@@ -516,7 +516,9 @@ is included in the "long" output format:
        reading, but for those who are curious, the ``.`` indicates that a file has an SELinux security context
        and no other alternate access method.
 
-.. [2] **Hard Links:** This topic is outside the scope of this reading. If you are interested in hard links,
+.. [2] .. rubric:: Hard Links
+
+       This topic is outside the scope of this reading. If you are interested in hard links,
        then you are encouraged to read about them `here <wiki_hard_link>`_.
 
        Symbolic links are more common,
