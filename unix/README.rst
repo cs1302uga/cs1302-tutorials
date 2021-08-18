@@ -490,19 +490,31 @@ is included in the "long" output format:
        ``✓``  ``✓``  ``✗``  ``✓``  ``✗``  ``✗``  ``✓``  ``✗``  ``✗``
        =====  =====  =====  =====  =====  =====  =====  =====  =====
 
+       File type cannot usually be changed after a file has been created; however, a file's permissions
+       can always be changed by its owner, a superuser (administrator), or a program acting on behalf
+       of either the owner or a superuser. It is also worth noting that superusers are usually not
+       subject to permission restrictions.
+
        The eleventh (11) character specifies whether an alternate access method such as an access control list
        applies to the file in addition to the displayed permissions. This topic is beyond the scope of this
        reading, but for those who are curious, the ``.`` indicates that a file has an SELinux security context
        and no other alternate access method.
 
 .. [2] **Hard Links:** This topic is outside the scope of this reading. If you are interested in hard links,
-       then you are encouraged to read about them `here <wiki_hard_link>`_.
+       then you are encouraged to read about them `here <wiki_hard_link>`_. Symbolic links are more common,
+       and will discussed in a future reading.
 
        .. _wiki_hard_link: https://en.wikipedia.org/wiki/Hard_link
 
-.. [3] **User / Owner:** TODO
+.. [3] **User / Owner:** The user denoted as the owner of the file. In most cases, the owner of a file
+       is the user who created the file. A file's owner can only be changed by a superuser (administrator)
+       or a program acting on behalf of a superuser. Unless the owner of a file is a superuser, the owner
+       is subject to the user permissions indicated in the file's mode.
 
-.. [4] **Group:** TODO
+.. [4] **Group:** The user denoted as the group of the file. In most cases, a file's group is the same
+       as its owner's group. A file's owner can only be changed by a superuser (administrator)
+       or a program acting on behalf of a superuser. Users in a file's group that are not the
+       file's owner or a superuser are subject to the group permissions indicated in the file's mode.
 
 .. [5] **Size:** TODO
 
