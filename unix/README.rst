@@ -466,8 +466,8 @@ is included in the "long" output format:
 .. [1] **Mode:** the file type and permissions. The first character denotes the file type.
        In Unix, file type refers to how the file behaves from the file system's perspective.
        File type and content format are different concepts. File suffixes like ``.txt``,
-       ``.mp3``, ``.pdf``, etc. are all naming conventions for the content format of regular
-       type files (regular files). Common file types include:
+       ``.mp3``, ``.pdf``, etc. are all naming conventions for the content formats of certain
+       regular files. Common file types include:
 
        =========  ==============  ===================
        Character  File Type       Description
@@ -495,7 +495,10 @@ is included in the "long" output format:
        reading, but for those who are curious, the ``.`` indicates that a file has an SELinux security context
        and no other alternate access method.
 
-.. [2] **Hard Links:** The number of TODO
+.. [2] **Hard Links:** This topic is outside the scope of this reading. If you are interested in hard links,
+       then you are encouraged to read about them `here <wiki_hard_link>`__.
+
+       .. _wiki_hard_link: https://en.wikipedia.org/wiki/Hard_link
 
 .. [3] **User / Owner:** TODO
 
