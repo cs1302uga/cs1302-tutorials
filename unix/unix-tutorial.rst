@@ -729,6 +729,15 @@ the file's basename.
    $ realpath notes/cs1730/c.md
    $ tree notes
 
+.. table::
+
+   ======  ======================================================
+   State   Absolute Path
+   ======  ======================================================
+   Before  ``/home/myid/■■■■■■■/cs1302-unix/notes/cs1730/cpp.md``
+   After   ``/home/myid/■■■■■■■/cs1302-unix/notes/cs1730/c.md``
+   ======  ======================================================
+
 For more information about ``mv``, consult the manual page
 using ``man mv``.
 
