@@ -536,23 +536,19 @@ command-line argument. To exit a man page, press the ``q`` key.
 Inspecting Files
 ----------------
 
-``cat``, ``head``, ``tail``
-+++++++++++++++++++++++++++
+``cat``
++++++++
+
+One quick way to display the contents of a regular file to standard output
+is using the ``cat`` (concatenate [to standard output]) command, supplying
+a path to the file you want to view as a command-line argument.
 
 .. code-block:: shell
 
    $ cd ~/cs1302-unix/books
    $ cat sherlock_holmes.txt
 
-.. code-block:: shell
-
-   $ cd
-   $ head ~/cs1302-unix/books/pride_and_prejudice.txt
-
-.. code-block:: shell
-
-   $ cd ~/cs1302-unix
-   $ tail books/moby_dick.txt.txt
+.. figure:: img/cat-demo.svg
 
 ``less``
 ++++++++
