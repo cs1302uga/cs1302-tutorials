@@ -469,11 +469,18 @@ is included in the "long" output format:
        =========  ==============
        Character  Type
        =========  ==============
-       ``d``      directory file
        ``-``      regular file
+       ``d``      directory file
        ``l``      symbolic link
        =========  ==============
 
+       The next nine (9) characters denote the read (``r``), write (``w``), and execute (``x``) for permissions
+       for the file's user (``u``), group (``g``), and others (``o``).
+
+       The eleventh (11) character specifies whether an alternate access method such as an access control list
+       applies to the file in addition to the displayed permissions. This topic is beyond the scope of this
+       reading, but for those who are curious, the ``.`` indicates that a file has an SELinux security context
+       and no other alternate access method.
 
 .. [2] **Hard Links:** TODO
 
