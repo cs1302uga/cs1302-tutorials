@@ -574,9 +574,6 @@ New Directories and Regular Files
 ``mkdir``, ``mkdir -p``
 +++++++++++++++++++++++
 
-``touch``
-+++++++++
-
 Moving and Removing
 -------------------
 

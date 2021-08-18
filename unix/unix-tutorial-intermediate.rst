@@ -158,6 +158,14 @@ The ``bash`` program can also be used to execute scripts containing sequences
 of commands and more. We will cover the creation and execution of scripts in
 another reading.
 
+Other Important Commands
+------------------------
+
+``stat``
++++++++++
+
+``touch``
++++++++++
 
 .. copyright and license information
 .. |copy| unicode:: U+000A9 .. COPYRIGHT SIGN
