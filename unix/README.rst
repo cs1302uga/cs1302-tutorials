@@ -483,9 +483,7 @@ is included in the "long" output format:
        In Unix, file type refers to how the file behaves from the file system's perspective.
        File type and content format are different concepts. File suffixes like ``.txt``,
        ``.mp3``, ``.pdf``, etc. are all naming conventions for the content formats of certain
-       regular files.
-
-       Common file types include:
+       regular files. Common file types include:
 
        =========  ==============  ===================
        Character  File Type       Description
