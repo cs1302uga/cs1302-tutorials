@@ -424,9 +424,6 @@ examples below produce the same output.
 
 .. figure:: img/ls-long-human-demo.svg
 
-Summary
-*******
-
 .. table::
 
    =================  ================================================================================================
@@ -478,9 +475,6 @@ to your home directory. How convenient!
 
    $ cd
 
-Summary
-*******
-
 .. table::
 
    =================  ================================================================================================
@@ -515,9 +509,6 @@ Summary
 .. code-block:: shell
 
    $ cd ../..
-
-Summary
-*******
 
 .. table::
 
