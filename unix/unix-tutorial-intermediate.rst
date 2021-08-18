@@ -29,6 +29,37 @@ Piping and File Redirection
 ``<``
 +++++
 
+``wc``
+++++++
+
+.. code-block:: shell
+
+   $ cd ~/cs1302-unix/books
+   $ wc moby_dick.txt
+
+.. code-block:: shell
+
+   $ cd ~/cs1302-unix/books
+   $ wc -l moby_dick.txt
+
+``grep``
+++++++++
+
+.. code-block:: shell
+
+   $ cd ~/cs1302-unix/books
+   $ grep "BOOK" moby_dick.txt
+
+.. code-block:: shell
+
+   $ cd ~/cs1302-unix/books
+   $ grep -E "^BOOK " moby_dick.txt
+
+.. code-block:: shell
+
+   $ cd ~/cs1302-unix/books
+   $ grep -v "BOOK" moby_dick.txt
+
 Job Control
 -----------
 

@@ -564,41 +564,9 @@ respectively.
 .. code-block:: shell
 
    $ cd
-   $ less ~/cs1302-unix/books/moby_dick.txt
+   $ less cs1302-unix/books/moby_dick.txt
 
 .. figure:: img/less-demo.svg
-
-``wc``
-++++++
-
-.. code-block:: shell
-
-   $ cd ~/cs1302-unix/books
-   $ wc moby_dick.txt
-
-.. code-block:: shell
-
-   $ cd ~/cs1302-unix/books
-   $ wc -l moby_dick.txt
-
-``grep``
-++++++++
-
-.. code-block:: shell
-
-   $ cd ~/cs1302-unix/books
-   $ grep "BOOK" moby_dick.txt
-
-.. code-block:: shell
-
-   $ cd ~/cs1302-unix/books
-   $ grep -E "^BOOK " moby_dick.txt
-
-.. code-block:: shell
-
-   $ cd ~/cs1302-unix/books
-   $ grep -v "BOOK" moby_dick.txt
-
 
 New Directories and Regular Files
 ---------------------------------
