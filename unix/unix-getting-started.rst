@@ -1,8 +1,4 @@
-.. .. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Fall%202021-blue
-
-..    :alt: Approved for: Spring 2021
 .. sectnum::
-
 .. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Fall%202021-blue
 
 =======================
