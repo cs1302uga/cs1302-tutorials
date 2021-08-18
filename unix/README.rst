@@ -589,7 +589,11 @@ examples below produce the same output.
 ``cd PATH``
 +++++++++++
 
-
+So far, you know how to list the files in your home directory, your current working directory,
+and other directories; however, all of the examples so far have utilized absolute or relative
+paths in a way that kept you in your home directory. It's time for that to change, or rather
+it's time for your current working directory to change. This can be done using the ``cd``
+(change directory) command.
 
 ``ls -a``, ``cd ..``
 ++++++++++++++++++++
