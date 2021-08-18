@@ -612,8 +612,20 @@ it's time for your current working directory to change. This can be done using t
 
    $ cd ..
 
-``cd ~``, ``cd``
-++++++++++++++++
+``cd ~``, ``cd -``, ``cd``
+++++++++++++++++++++++++++
+
+.. code-block:: shell
+
+   $ cd ~
+
+.. code-block:: shell
+
+   $ cd -
+
+.. code-block:: shell
+
+   $ cd
 
 More Time-saving Tips
 ---------------------
