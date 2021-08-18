@@ -620,6 +620,21 @@ to your home directory. How convenient!
 
    $ cd
 
+Summary
+*******
+
+.. table::
+
+   =================  =======================================================================================
+   Command            Change to
+   =================  =======================================================================================
+   ``cd``             home directory
+   ``cd -``           last previous working directory
+   ``cd a/b/dest``    ``dest``, assuming ``path/to/dest`` is a valid *relative* path
+   ``cd /a/b/dest``   ``dest``, assuming ``/path/to/dest`` is a valid *absolute* path
+   ``cd ~/a/b/dest``  ``dest``, assuming ``path/to/dest`` is a valid path and ``a`` is in your home directory
+   =================  =======================================================================================
+
 ``ls -a``, ``cd ..``
 ++++++++++++++++++++
 
