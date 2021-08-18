@@ -475,7 +475,16 @@ is included in the "long" output format:
        =========  ==============
 
        The next nine (9) characters denote the read (``r``), write (``w``), and execute (``x``) for permissions
-       for the file's user (``u``), group (``g``), and others (``o``).
+       for the file's user (``u``), group (``g``), and others (``o``). Here is a breakdown for ``rw-r--r--``:
+
+       =====  =====  =====  =====  =====  =====  =====  =====  =====
+       User                 Group                Others
+       -------------------  -------------------  -------------------
+       ``r``  ``w``  ``x``  ``r``  ``w``  ``x``  ``r``  ``w``  ``x``
+       =====  =====  =====  =====  =====  =====  =====  =====  =====
+       ``r``  ``w``  ``-``  ``r``  ``-``  ``-``  ``r``  ``-``  ``-``
+       ``✓``  ``✓``  ``✗``  ``✓``  ``✗``  ``✗``  ``✓``  ``✗``  ``✗``
+       =====  =====  =====  =====  =====  =====  =====  =====  =====
 
        The eleventh (11) character specifies whether an alternate access method such as an access control list
        applies to the file in addition to the displayed permissions. This topic is beyond the scope of this
