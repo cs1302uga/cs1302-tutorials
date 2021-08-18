@@ -584,7 +584,7 @@ a path ending with the directory you want created as a command-line argument.
    $ mkdir practice
    $ ls -l
 
-.. figure:: mkdir-first-demo.svg
+.. figure:: img/mkdir-first-demo.svg
 
 .. code-block:: shell
 
