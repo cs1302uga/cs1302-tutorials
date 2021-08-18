@@ -466,11 +466,13 @@ is included in the "long" output format:
 .. [1] **Mode:** the file type and permissions. The first character denotes the filetype.
        Common file types include:
 
-       ``d`` directory file
-           TODO
-
-       ``-`` regular file
-           TODO
+       =====  ==============
+       Type   Meaning
+       =====  ==============
+       ``d``  directory file
+       ``-``  regular file
+       ``l``  symbolic link
+       =====  ==============
 
 .. [2] **Hard Links:** TODO
 
