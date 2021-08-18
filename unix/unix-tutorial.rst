@@ -89,8 +89,7 @@ of which you may have seen in earlier examples.
    Command     Description
    ==========  ======================================================================================
    ``date``    Print the system date and time.
-   ``exit``    Exit the current shell -- if the current shell is a login shell, this runs ``logout``.
-   ``logout``  Exit the login shell.
+   ``exit``    Exit the current shell.
    ``whoami``  Print the user name associated with the current user.
    ==========  ======================================================================================
 
