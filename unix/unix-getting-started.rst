@@ -14,7 +14,7 @@
    :depth: 3
 
 Introduction
-------------
+============
 
 Unix is a family of computer operating systems that derive from work performed
 in the 1970s at the Bell Labs research center by Ken Thompson, Dennis Ritchie,
@@ -51,7 +51,7 @@ of the commands ``ls`` and ``tree`` (discussed later). On the right, the graphic
 Finder app is displayed containing some of the same information.
 
 Prompt and Circumstance
------------------------
+=======================
 
 The text that a shell displays for its prompt will differ depending
 the shell program itself and a user's profile settings. Consider the
@@ -90,7 +90,7 @@ command itself. This is illustrated in the figures below.
 .. figure:: img/prompt-incorrect.png?2
 
 Required Setup
---------------
+==============
 
 Before you continue, you need to make sure that your computer is setup so
 that you can follow along with the tutorial. If you are using a Windows
@@ -108,7 +108,7 @@ emulator provided by your operating system, then please consult your operating
 system's documentation.
 
 Local Terminal
---------------
+==============
 
 When you run a terminal emulator, the usual default is for it
 to connect to the same computer it is running on. This *local terminal*
@@ -130,7 +130,7 @@ and consult the documentation for your combination of terminal emulator and
 operating system.
 
 Remote Terminal
----------------
+===============
 
 To make sure that readers all have roughly the same experience with the tutorial,
 we will instruct them to use a local terminal to launch a program that will
