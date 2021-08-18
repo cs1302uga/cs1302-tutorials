@@ -711,7 +711,7 @@ the file's dirname.
 .. table::
 
    ======  ======================================================
-   State   Absolute Path
+   State   Absoloute Path
    ======  ======================================================
    Before  ``/home/myid/■■■■■■■/cs1302-unix/notes/cs1302/cpp.md``
    After   ``/home/myid/■■■■■■■/cs1302-unix/notes/cs1730/cpp.md``
