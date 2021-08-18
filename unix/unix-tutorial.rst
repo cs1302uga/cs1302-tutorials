@@ -49,67 +49,6 @@ are executed on the remote computer. It might look like you are
 running programs locally, but they are simply being displayed
 locally.
 
-``echo``, ``env``, ``bash``
-+++++++++++++++++++++++++++
-
-On Odin, the shell that is launched when you login (i.e., the *login shell*)
-is GNU `bash <bash>`__. On most Unix-like systems, the login procedure not only
-launches a login shell, it also exposes the location of the login shell program
-via a ``$SHELL`` variable that is available in your shell's running environment.
-You can display this and other environment variables in a line of text using the
-``echo`` command. Once ``echo`` is finished running, control returns to the shell
-that launched it -- this is the usual behavior for programs launched via shell
-commands.
-
-.. code-block:: shell
-
-   $ echo "login shell: $SHELL"
-
-.. figure:: img/echo-shell-demo.svg
-
-* Is ``bash`` still the login shell when you login?
-  If not, then please inform your instructor!
-
-If you are interested in the environment variables that are available to you,
-then you can list them using the ``env`` (environment) command -- the variable
-names are displayed without the ``$`` prefix.
-
-.. code-block:: shell
-
-   $ env
-
-.. figure:: img/env-demo.svg
-
-* What is the value of your ``$HOME`` variable?
-
-Remember, the shell itself is a program, and one of the things it does is help
-us run other programs. To see what version of ``bash`` is running, you run
-``bash`` itself with ``--version`` supplied as a command-line argument.
-
-.. code-block:: shell
-
-   $ bash --version
-
-.. figure:: img/bash-version-demo.svg
-
-* Odin may have received updates since this tutorial was written.
-  What version of ``bash`` is available when you are logged in?
-
-The GNU of GNU bash is an extensive collection of free programs
-maintained by the Free Software Foundation. The word "GNU" is a |racronym|_ that
-stands for "GNU's Not Unix!" While the GNU project provides implementations of
-most programs that people associate with Unix, some Unix-like operating
-systems utilize different implementations. Don't let that deter you! The
-different implementations of a "Unix program" usually support a common set
-of features and a common command-line interface for those features. When
-you encounter an implementation that offers an additional feature or
-strays from the norm, then there are various ways to get help directly
-from the machine the program is running on. We will cover some different
-ways to get help later in this tutorial.
-
-.. |racronym| replace:: recursive acronym
-.. _racronym: https://en.wikipedia.org/wiki/Recursive_acronym
-
 ``pwd``
 +++++++
 
@@ -692,6 +631,70 @@ Job Control
 
 ``ps``, ``jobs``, ``fg``
 ++++++++++++++++++++++++
+
+More About Shells
+-----------------
+
+``echo``, ``env``, ``bash``
++++++++++++++++++++++++++++
+
+On Odin, the shell that is launched when you login (i.e., the *login shell*)
+is GNU `bash <bash>`__. On most Unix-like systems, the login procedure not only
+launches a login shell, it also exposes the location of the login shell program
+via a ``$SHELL`` variable that is available in your shell's running environment.
+You can display this and other environment variables in a line of text using the
+``echo`` command. Once ``echo`` is finished running, control returns to the shell
+that launched it -- this is the usual behavior for programs launched via shell
+commands.
+
+.. code-block:: shell
+
+   $ echo "login shell: $SHELL"
+
+.. figure:: img/echo-shell-demo.svg
+
+* Is ``bash`` still the login shell when you login?
+  If not, then please inform your instructor!
+
+If you are interested in the environment variables that are available to you,
+then you can list them using the ``env`` (environment) command -- the variable
+names are displayed without the ``$`` prefix.
+
+.. code-block:: shell
+
+   $ env
+
+.. figure:: img/env-demo.svg
+
+* What is the value of your ``$HOME`` variable?
+
+Remember, the shell itself is a program, and one of the things it does is help
+us run other programs. To see what version of ``bash`` is running, you run
+``bash`` itself with ``--version`` supplied as a command-line argument.
+
+.. code-block:: shell
+
+   $ bash --version
+
+.. figure:: img/bash-version-demo.svg
+
+* Odin may have received updates since this tutorial was written.
+  What version of ``bash`` is available when you are logged in?
+
+The GNU of GNU bash is an extensive collection of free programs
+maintained by the Free Software Foundation. The word "GNU" is a |racronym|_ that
+stands for "GNU's Not Unix!" While the GNU project provides implementations of
+most programs that people associate with Unix, some Unix-like operating
+systems utilize different implementations. Don't let that deter you! The
+different implementations of a "Unix program" usually support a common set
+of features and a common command-line interface for those features. When
+you encounter an implementation that offers an additional feature or
+strays from the norm, then there are various ways to get help directly
+from the machine the program is running on. We will cover some different
+ways to get help later in this tutorial.
+
+.. |racronym| replace:: recursive acronym
+.. _racronym: https://en.wikipedia.org/wiki/Recursive_acronym
 
 .. copyright and license information
 .. |copy| unicode:: U+000A9 .. COPYRIGHT SIGN
