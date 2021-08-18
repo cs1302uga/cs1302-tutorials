@@ -526,7 +526,7 @@ is included in the "long" output format:
 
        .. _wiki_hard_link: https://en.wikipedia.org/wiki/Hard_link
 
-.. [3] ..rubric:: **User / Owner**
+.. [3] .. rubric:: **User / Owner**
 
        The user denoted as the owner of the file. In most cases, the owner of a file
        is the user who created the file. A file's owner can only be changed by a superuser (administrator)
