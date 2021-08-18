@@ -3,7 +3,7 @@
 ..    :alt: Approved for: Spring 2021
 .. sectnum::
 
-.. |approval_notice| image:: ![Approved for: Fall 2021](https://img.shields.io/badge/Approved%20for-Fall%202021-blue)
+.. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Fall%202021-blue
 
 =======================
  Unix: Getting Started
