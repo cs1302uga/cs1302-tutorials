@@ -628,6 +628,9 @@ the desired path.
 
 .. figure:: img/mkdir-fourth-demo.svg
 
+For more information about ``mkdir``, consult the manual page
+using ``man mkdir``.
+
 Moving and Removing
 -------------------
 
