@@ -10,6 +10,8 @@
 .. contents:: **Table of Contents**
    :depth: 3
 
+----
+
 This tutorial assumes that the reader is a Computer Science student
 at the University of Georgia with access to the department's
 instructional server called Odin. If you were assigned this reading in a
