@@ -1,4 +1,4 @@
-{"version": 2, "width": 124, "height": 33, "timestamp": 1629316718, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
+{"version": 2, "width": 124, "height": 32, "timestamp": 1629316718, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
 [0.178501, "o", "■■■■■■■@csci-odin:~$ "]
 [1.408665, "o", "c"]
 [1.579193, "o", "d"]
@@ -105,9 +105,7 @@
 [35.284512, "o", "d"]
 [36.296453, "o", "\r\n"]
 [36.298456, "o", "■■■■■■■@csci-odin:~/cs1302-unix$ "]
-[37.594505, "o", "mv notes/cs1302/cpp.md notes/cs1730/cpp.md"]
-[36.298456, "o", "\r\n■■■■■■■@csci-odin:~/cs1302-unix$ "]
-[37.867908, "o", "realpath notes/cs1730/cpp.md"]
+[37.867908, "o", "\r\nrealpath notes/cs1730/cpp.md"]
 [40.545864, "o", "\r\n"]
 [40.547022, "o", "/home/myid/■■■■■■■/cs1302-unix/notes/cs1730/cpp.md\r\n"]
 [40.547294, "o", "■■■■■■■@csci-odin:~/cs1302-unix$ "]

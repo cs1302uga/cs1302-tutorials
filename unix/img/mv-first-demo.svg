@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="791.43">
-  <rect width="1280" height="776.43" rx="5" ry="5" class="a"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="769.72">
+  <rect width="1280" height="754.72" rx="5" ry="5" class="a"/>
   <svg y="0%" x="0%">
     <circle cx="20" cy="20" r="6" fill="#ff5f58"/>
     <circle cx="40" cy="20" r="6" fill="#ffbd2e"/>
     <circle cx="60" cy="20" r="6" fill="#18c132"/>
   </svg>
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="716.43" viewBox="0 0 124 71.643" width="1240" x="15" y="50">
-    <style>@keyframes j{0%{transform:translateX(0)}.36%{transform:translateX(-124px)}2.81%{transform:translateX(-248px)}3.15%{transform:translateX(-372px)}3.38%{transform:translateX(-496px)}4.05%{transform:translateX(-620px)}4.72%{transform:translateX(-744px)}5.78%{transform:translateX(-868px)}6.15%{transform:translateX(-992px)}6.69%{transform:translateX(-1116px)}6.8%{transform:translateX(-1240px)}7.1%{transform:translateX(-1364px)}7.36%{transform:translateX(-1488px)}7.55%{transform:translateX(-1612px)}8.14%{transform:translateX(-1736px)}8.28%{transform:translateX(-1860px)}9.43%{transform:translateX(-1984px)}10.19%{transform:translateX(-2108px)}12.28%{transform:translateX(-2232px)}13.04%{transform:translateX(-2356px)}13.42%{transform:translateX(-2480px)}13.79%{transform:translateX(-2604px)}14.05%{transform:translateX(-2728px)}14.32%{transform:translateX(-2852px)}14.55%{transform:translateX(-2976px)}14.99%{transform:translateX(-3100px)}15.26%{transform:translateX(-3224px)}15.52%{transform:translateX(-3348px)}15.85%{transform:translateX(-3472px)}17.42%{transform:translateX(-3596px)}17.43%{transform:translateX(-3844px)}20.78%{transform:translateX(-3968px)}21.02%{transform:translateX(-4092px)}21.3%{transform:translateX(-4216px)}21.64%{transform:translateX(-4340px)}22.27%{transform:translateX(-4464px)}22.51%{transform:translateX(-4588px)}22.92%{transform:translateX(-4712px)}23.97%{transform:translateX(-4836px)}24.82%{transform:translateX(-4960px)}25.61%{transform:translateX(-5084px)}26.02%{transform:translateX(-5208px)}26.29%{transform:translateX(-5332px)}26.65%{transform:translateX(-5456px)}27.07%{transform:translateX(-5580px)}28.17%{transform:translateX(-5704px)}28.79%{transform:translateX(-5828px)}29.12%{transform:translateX(-5952px)}29.98%{transform:translateX(-6076px)}30.03%{transform:translateX(-6200px)}30.62%{transform:translateX(-6324px)}30.91%{transform:translateX(-6448px)}31.72%{transform:translateX(-6572px)}32.11%{transform:translateX(-6696px)}32.52%{transform:translateX(-6820px)}32.81%{transform:translateX(-6944px)}33.3%{transform:translateX(-7068px)}33.93%{transform:translateX(-7192px)}34.23%{transform:translateX(-7316px)}36.43%{transform:translateX(-7440px)}36.44%{transform:translateX(-7688px)}42.2%{transform:translateX(-7812px)}42.74%{transform:translateX(-7936px)}43.26%{transform:translateX(-8060px)}44.12%{transform:translateX(-8184px)}44.45%{transform:translateX(-8308px)}44.59%{transform:translateX(-8432px)}44.96%{transform:translateX(-8556px)}45.32%{transform:translateX(-8680px)}45.98%{transform:translateX(-8804px)}46.25%{transform:translateX(-8928px)}46.6%{transform:translateX(-9052px)}47.21%{transform:translateX(-9176px)}47.32%{transform:translateX(-9300px)}47.61%{transform:translateX(-9424px)}47.89%{transform:translateX(-9548px)}49.63%{transform:translateX(-9672px)}51.13%{transform:translateX(-9796px)}51.97%{transform:translateX(-9920px)}52.3%{transform:translateX(-10044px)}52.81%{transform:translateX(-10168px)}54.07%{transform:translateX(-10292px)}54.4%{transform:translateX(-10416px)}55%{transform:translateX(-10540px)}56.83%{transform:translateX(-10664px)}57.2%{transform:translateX(-10788px)}57.47%{transform:translateX(-10912px)}57.84%{transform:translateX(-11036px)}58.23%{transform:translateX(-11160px)}59.29%{transform:translateX(-11284px)}60.13%{transform:translateX(-11408px)}60.44%{transform:translateX(-11532px)}62.61%{transform:translateX(-11656px)}63.07%{transform:translateX(-11780px)}63.75%{transform:translateX(-11904px)}64.09%{transform:translateX(-12028px)}66.02%{transform:translateX(-12152px)}66.99%{transform:translateX(-12276px)}67.43%{transform:translateX(-12400px)}67.71%{transform:translateX(-12524px)}69.06%{transform:translateX(-12648px)}70.03%{transform:translateX(-12772px)}70.3%{transform:translateX(-12896px)}72.32%{transform:translateX(-13392px)}74.9%{transform:translateX(-13268px)}75.45%{transform:translateX(-13516px)}80.78%{transform:translateX(-13640px)}80.79%{transform:translateX(-13888px)}84.59%{transform:translateX(-14012px)}84.92%{transform:translateX(-14136px)}85.24%{transform:translateX(-14260px)}85.49%{transform:translateX(-14384px)}85.74%{transform:translateX(-14508px)}86.1%{transform:translateX(-14632px)}86.47%{transform:translateX(-14756px)}86.63%{transform:translateX(-14880px)}86.92%{transform:translateX(-15004px)}87.21%{transform:translateX(-15128px)}90.52%{transform:translateX(-15500px)}to{transform:translateX(-15624px)}}.a{fill:#282d35}.f,.g{fill:#b9c0cb;white-space:pre}.g{fill:#005fff}</style>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="694.72" viewBox="0 0 124 69.472" width="1240" x="15" y="50">
+    <style>@keyframes j{0%{transform:translateX(0)}.36%{transform:translateX(-124px)}2.81%{transform:translateX(-248px)}3.15%{transform:translateX(-372px)}3.38%{transform:translateX(-496px)}4.05%{transform:translateX(-620px)}4.72%{transform:translateX(-744px)}5.78%{transform:translateX(-868px)}6.15%{transform:translateX(-992px)}6.69%{transform:translateX(-1116px)}6.8%{transform:translateX(-1240px)}7.1%{transform:translateX(-1364px)}7.36%{transform:translateX(-1488px)}7.55%{transform:translateX(-1612px)}8.14%{transform:translateX(-1736px)}8.28%{transform:translateX(-1860px)}9.43%{transform:translateX(-1984px)}10.19%{transform:translateX(-2108px)}12.28%{transform:translateX(-2232px)}13.04%{transform:translateX(-2356px)}13.42%{transform:translateX(-2480px)}13.79%{transform:translateX(-2604px)}14.05%{transform:translateX(-2728px)}14.32%{transform:translateX(-2852px)}14.55%{transform:translateX(-2976px)}14.99%{transform:translateX(-3100px)}15.26%{transform:translateX(-3224px)}15.52%{transform:translateX(-3348px)}15.85%{transform:translateX(-3472px)}17.42%{transform:translateX(-3596px)}17.43%{transform:translateX(-3844px)}20.78%{transform:translateX(-3968px)}21.02%{transform:translateX(-4092px)}21.3%{transform:translateX(-4216px)}21.64%{transform:translateX(-4340px)}22.27%{transform:translateX(-4464px)}22.51%{transform:translateX(-4588px)}22.92%{transform:translateX(-4712px)}23.97%{transform:translateX(-4836px)}24.82%{transform:translateX(-4960px)}25.61%{transform:translateX(-5084px)}26.02%{transform:translateX(-5208px)}26.29%{transform:translateX(-5332px)}26.65%{transform:translateX(-5456px)}27.07%{transform:translateX(-5580px)}28.17%{transform:translateX(-5704px)}28.79%{transform:translateX(-5828px)}29.12%{transform:translateX(-5952px)}29.98%{transform:translateX(-6076px)}30.03%{transform:translateX(-6200px)}30.62%{transform:translateX(-6324px)}30.91%{transform:translateX(-6448px)}31.72%{transform:translateX(-6572px)}32.11%{transform:translateX(-6696px)}32.52%{transform:translateX(-6820px)}32.81%{transform:translateX(-6944px)}33.3%{transform:translateX(-7068px)}33.93%{transform:translateX(-7192px)}34.23%{transform:translateX(-7316px)}36.43%{transform:translateX(-7440px)}36.44%{transform:translateX(-7688px)}42.2%{transform:translateX(-7812px)}42.74%{transform:translateX(-7936px)}43.26%{transform:translateX(-8060px)}44.12%{transform:translateX(-8184px)}44.45%{transform:translateX(-8308px)}44.59%{transform:translateX(-8432px)}44.96%{transform:translateX(-8556px)}45.32%{transform:translateX(-8680px)}45.98%{transform:translateX(-8804px)}46.25%{transform:translateX(-8928px)}46.6%{transform:translateX(-9052px)}47.21%{transform:translateX(-9176px)}47.32%{transform:translateX(-9300px)}47.61%{transform:translateX(-9424px)}47.89%{transform:translateX(-9548px)}49.63%{transform:translateX(-9672px)}51.13%{transform:translateX(-9796px)}51.97%{transform:translateX(-9920px)}52.3%{transform:translateX(-10044px)}52.81%{transform:translateX(-10168px)}54.07%{transform:translateX(-10292px)}54.4%{transform:translateX(-10416px)}55%{transform:translateX(-10540px)}56.83%{transform:translateX(-10664px)}57.2%{transform:translateX(-10788px)}57.47%{transform:translateX(-10912px)}57.84%{transform:translateX(-11036px)}58.23%{transform:translateX(-11160px)}59.29%{transform:translateX(-11284px)}60.13%{transform:translateX(-11408px)}60.44%{transform:translateX(-11532px)}62.61%{transform:translateX(-11656px)}63.07%{transform:translateX(-11780px)}63.75%{transform:translateX(-11904px)}64.09%{transform:translateX(-12028px)}66.02%{transform:translateX(-12152px)}66.99%{transform:translateX(-12276px)}67.43%{transform:translateX(-12400px)}67.71%{transform:translateX(-12524px)}69.06%{transform:translateX(-12648px)}70.03%{transform:translateX(-12772px)}70.3%{transform:translateX(-12896px)}72.32%{transform:translateX(-13144px)}75.45%{transform:translateX(-13268px)}80.78%{transform:translateX(-13392px)}80.79%{transform:translateX(-13640px)}84.59%{transform:translateX(-13764px)}84.92%{transform:translateX(-13888px)}85.24%{transform:translateX(-14012px)}85.49%{transform:translateX(-14136px)}85.74%{transform:translateX(-14260px)}86.1%{transform:translateX(-14384px)}86.47%{transform:translateX(-14508px)}86.63%{transform:translateX(-14632px)}86.92%{transform:translateX(-14756px)}87.21%{transform:translateX(-14880px)}90.52%{transform:translateX(-15252px)}to{transform:translateX(-15376px)}}.a{fill:#282d35}.f,.g{fill:#b9c0cb;white-space:pre}.g{fill:#005fff}</style>
     <g font-family="Monaco,Consolas,Menlo,'Bitstream Vera Sans Mono','Powerline Symbols',monospace" font-size="1.67">
       <defs>
         <symbol id="1">
@@ -139,9 +139,8 @@
           <text x="56.112" y="1.67" class="f">notes/cs1730/cpp.md</text>
         </symbol>
         <symbol id="30">
-          <text y="1.67" class="f">&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;@csci-odin:~/cs1302-unix$</text>
-          <text x="33.066" y="1.67" class="f">realpath</text>
-          <text x="42.084" y="1.67" class="f">notes/cs1730/cpp.md</text>
+          <text y="1.67" class="f">realpath</text>
+          <text x="9.018" y="1.67" class="f">notes/cs1730/cpp.md</text>
         </symbol>
         <symbol id="31">
           <text y="1.67" class="f">/home/myid/&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;/cs1302-unix/notes/cs1730/cpp.md</text>
@@ -152,15 +151,15 @@
           <text x="8.016" y="1.67" class="f">cpp.md</text>
         </symbol>
         <symbol id="a">
-          <path fill="transparent" d="M0 0h124v33H0z"/>
+          <path fill="transparent" d="M0 0h124v32H0z"/>
         </symbol>
         <symbol id="b">
           <path fill="#6f7683" d="M0 0h1.102v2.171H0z"/>
         </symbol>
       </defs>
-      <path class="a" d="M0 0h124v71.643H0z"/>
+      <path class="a" d="M0 0h124v69.472H0z"/>
       <g style="animation-duration:50.190687s;animation-iteration-count:infinite;animation-name:j;animation-timing-function:steps(1,end)">
-        <svg width="15748">
+        <svg width="15500">
           <svg>
             <use xlink:href="#a"/>
             <use xlink:href="#b" x="-.004"/>
@@ -1960,7 +1959,7 @@
           </svg>
           <svg x="13268">
             <use xlink:href="#a"/>
-            <use xlink:href="#b" x="74.996" y="36.882"/>
+            <use xlink:href="#b" x="27.996" y="39.053"/>
             <use xlink:href="#2"/>
             <use xlink:href="#12" y="2.171"/>
             <use xlink:href="#13" y="4.342"/>
@@ -1977,53 +1976,10 @@
             <use xlink:href="#25" y="30.394"/>
             <use xlink:href="#26" y="32.565"/>
             <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#29" y="36.907"/>
-          </svg>
-          <svg x="13392">
-            <use xlink:href="#a"/>
-            <use xlink:href="#b" x="32.996" y="39.053"/>
-            <use xlink:href="#2"/>
-            <use xlink:href="#12" y="2.171"/>
-            <use xlink:href="#13" y="4.342"/>
-            <use xlink:href="#14" y="6.513"/>
-            <use xlink:href="#15" y="8.684"/>
-            <use xlink:href="#16" y="10.855"/>
-            <use xlink:href="#17" y="13.026"/>
-            <use xlink:href="#18" y="15.197"/>
-            <use xlink:href="#19" y="17.368"/>
-            <use xlink:href="#20" y="19.539"/>
-            <use xlink:href="#21" y="21.71"/>
-            <use xlink:href="#22" y="23.881"/>
-            <use xlink:href="#23" y="28.223"/>
-            <use xlink:href="#25" y="30.394"/>
-            <use xlink:href="#26" y="32.565"/>
-            <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#29" y="36.907"/>
-            <use xlink:href="#3" y="39.078"/>
-          </svg>
-          <svg x="13516">
-            <use xlink:href="#a"/>
-            <use xlink:href="#b" x="60.996" y="39.053"/>
-            <use xlink:href="#2"/>
-            <use xlink:href="#12" y="2.171"/>
-            <use xlink:href="#13" y="4.342"/>
-            <use xlink:href="#14" y="6.513"/>
-            <use xlink:href="#15" y="8.684"/>
-            <use xlink:href="#16" y="10.855"/>
-            <use xlink:href="#17" y="13.026"/>
-            <use xlink:href="#18" y="15.197"/>
-            <use xlink:href="#19" y="17.368"/>
-            <use xlink:href="#20" y="19.539"/>
-            <use xlink:href="#21" y="21.71"/>
-            <use xlink:href="#22" y="23.881"/>
-            <use xlink:href="#23" y="28.223"/>
-            <use xlink:href="#25" y="30.394"/>
-            <use xlink:href="#26" y="32.565"/>
-            <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#29" y="36.907"/>
+            <use xlink:href="#3" y="36.907"/>
             <use xlink:href="#30" y="39.078"/>
           </svg>
-          <svg x="13640">
+          <svg x="13392">
             <use xlink:href="#a"/>
             <use xlink:href="#b" x="-.004" y="41.224"/>
             <use xlink:href="#2"/>
@@ -2042,10 +1998,10 @@
             <use xlink:href="#25" y="30.394"/>
             <use xlink:href="#26" y="32.565"/>
             <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#29" y="36.907"/>
+            <use xlink:href="#3" y="36.907"/>
             <use xlink:href="#30" y="39.078"/>
           </svg>
-          <svg x="13764">
+          <svg x="13516">
             <use xlink:href="#a"/>
             <use xlink:href="#b" x="-.004" y="43.395"/>
             <use xlink:href="#2"/>
@@ -2064,11 +2020,11 @@
             <use xlink:href="#25" y="30.394"/>
             <use xlink:href="#26" y="32.565"/>
             <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#29" y="36.907"/>
+            <use xlink:href="#3" y="36.907"/>
             <use xlink:href="#30" y="39.078"/>
             <use xlink:href="#31" y="41.249"/>
           </svg>
-          <svg x="13888">
+          <svg x="13640">
             <use xlink:href="#a"/>
             <use xlink:href="#b" x="32.996" y="43.395"/>
             <use xlink:href="#2"/>
@@ -2087,12 +2043,12 @@
             <use xlink:href="#25" y="30.394"/>
             <use xlink:href="#26" y="32.565"/>
             <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#29" y="36.907"/>
+            <use xlink:href="#3" y="36.907"/>
             <use xlink:href="#30" y="39.078"/>
             <use xlink:href="#31" y="41.249"/>
             <use xlink:href="#3" y="43.42"/>
           </svg>
-          <svg x="14012">
+          <svg x="13764">
             <use xlink:href="#a"/>
             <use xlink:href="#b" x="33.996" y="43.395"/>
             <use xlink:href="#2"/>
@@ -2111,12 +2067,12 @@
             <use xlink:href="#25" y="30.394"/>
             <use xlink:href="#26" y="32.565"/>
             <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#29" y="36.907"/>
+            <use xlink:href="#3" y="36.907"/>
             <use xlink:href="#30" y="39.078"/>
             <use xlink:href="#31" y="41.249"/>
             <use xlink:href="#4" y="43.42"/>
           </svg>
-          <svg x="14136">
+          <svg x="13888">
             <use xlink:href="#a"/>
             <use xlink:href="#b" x="34.996" y="43.395"/>
             <use xlink:href="#2"/>
@@ -2135,12 +2091,12 @@
             <use xlink:href="#25" y="30.394"/>
             <use xlink:href="#26" y="32.565"/>
             <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#29" y="36.907"/>
+            <use xlink:href="#3" y="36.907"/>
             <use xlink:href="#30" y="39.078"/>
             <use xlink:href="#31" y="41.249"/>
             <use xlink:href="#5" y="43.42"/>
           </svg>
-          <svg x="14260">
+          <svg x="14012">
             <use xlink:href="#a"/>
             <use xlink:href="#b" x="35.996" y="43.395"/>
             <use xlink:href="#2"/>
@@ -2159,12 +2115,12 @@
             <use xlink:href="#25" y="30.394"/>
             <use xlink:href="#26" y="32.565"/>
             <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#29" y="36.907"/>
+            <use xlink:href="#3" y="36.907"/>
             <use xlink:href="#30" y="39.078"/>
             <use xlink:href="#31" y="41.249"/>
             <use xlink:href="#6" y="43.42"/>
           </svg>
-          <svg x="14384">
+          <svg x="14136">
             <use xlink:href="#a"/>
             <use xlink:href="#b" x="36.996" y="43.395"/>
             <use xlink:href="#2"/>
@@ -2183,12 +2139,12 @@
             <use xlink:href="#25" y="30.394"/>
             <use xlink:href="#26" y="32.565"/>
             <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#29" y="36.907"/>
+            <use xlink:href="#3" y="36.907"/>
             <use xlink:href="#30" y="39.078"/>
             <use xlink:href="#31" y="41.249"/>
             <use xlink:href="#7" y="43.42"/>
           </svg>
-          <svg x="14508">
+          <svg x="14260">
             <use xlink:href="#a"/>
             <use xlink:href="#b" x="37.996" y="43.395"/>
             <use xlink:href="#2"/>
@@ -2207,12 +2163,12 @@
             <use xlink:href="#25" y="30.394"/>
             <use xlink:href="#26" y="32.565"/>
             <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#29" y="36.907"/>
+            <use xlink:href="#3" y="36.907"/>
             <use xlink:href="#30" y="39.078"/>
             <use xlink:href="#31" y="41.249"/>
             <use xlink:href="#7" y="43.42"/>
           </svg>
-          <svg x="14632">
+          <svg x="14384">
             <use xlink:href="#a"/>
             <use xlink:href="#b" x="38.996" y="43.395"/>
             <use xlink:href="#2"/>
@@ -2231,12 +2187,12 @@
             <use xlink:href="#25" y="30.394"/>
             <use xlink:href="#26" y="32.565"/>
             <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#29" y="36.907"/>
+            <use xlink:href="#3" y="36.907"/>
             <use xlink:href="#30" y="39.078"/>
             <use xlink:href="#31" y="41.249"/>
             <use xlink:href="#8" y="43.42"/>
           </svg>
-          <svg x="14756">
+          <svg x="14508">
             <use xlink:href="#a"/>
             <use xlink:href="#b" x="39.996" y="43.395"/>
             <use xlink:href="#2"/>
@@ -2255,12 +2211,12 @@
             <use xlink:href="#25" y="30.394"/>
             <use xlink:href="#26" y="32.565"/>
             <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#29" y="36.907"/>
+            <use xlink:href="#3" y="36.907"/>
             <use xlink:href="#30" y="39.078"/>
             <use xlink:href="#31" y="41.249"/>
             <use xlink:href="#9" y="43.42"/>
           </svg>
-          <svg x="14880">
+          <svg x="14632">
             <use xlink:href="#a"/>
             <use xlink:href="#b" x="40.996" y="43.395"/>
             <use xlink:href="#2"/>
@@ -2279,12 +2235,12 @@
             <use xlink:href="#25" y="30.394"/>
             <use xlink:href="#26" y="32.565"/>
             <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#29" y="36.907"/>
+            <use xlink:href="#3" y="36.907"/>
             <use xlink:href="#30" y="39.078"/>
             <use xlink:href="#31" y="41.249"/>
             <use xlink:href="#10" y="43.42"/>
           </svg>
-          <svg x="15004">
+          <svg x="14756">
             <use xlink:href="#a"/>
             <use xlink:href="#b" x="41.996" y="43.395"/>
             <use xlink:href="#2"/>
@@ -2303,12 +2259,12 @@
             <use xlink:href="#25" y="30.394"/>
             <use xlink:href="#26" y="32.565"/>
             <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#29" y="36.907"/>
+            <use xlink:href="#3" y="36.907"/>
             <use xlink:href="#30" y="39.078"/>
             <use xlink:href="#31" y="41.249"/>
             <use xlink:href="#11" y="43.42"/>
           </svg>
-          <svg x="15128">
+          <svg x="14880">
             <use xlink:href="#a"/>
             <use xlink:href="#b" x="42.996" y="43.395"/>
             <use xlink:href="#2"/>
@@ -2327,12 +2283,12 @@
             <use xlink:href="#25" y="30.394"/>
             <use xlink:href="#26" y="32.565"/>
             <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#29" y="36.907"/>
+            <use xlink:href="#3" y="36.907"/>
             <use xlink:href="#30" y="39.078"/>
             <use xlink:href="#31" y="41.249"/>
             <use xlink:href="#12" y="43.42"/>
           </svg>
-          <svg x="15252">
+          <svg x="15004">
             <use xlink:href="#a"/>
             <use xlink:href="#b" x="-.004" y="45.566"/>
             <use xlink:href="#2"/>
@@ -2351,114 +2307,111 @@
             <use xlink:href="#25" y="30.394"/>
             <use xlink:href="#26" y="32.565"/>
             <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#29" y="36.907"/>
+            <use xlink:href="#3" y="36.907"/>
             <use xlink:href="#30" y="39.078"/>
             <use xlink:href="#31" y="41.249"/>
             <use xlink:href="#12" y="43.42"/>
           </svg>
+          <svg x="15128">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="-.004" y="67.276"/>
+            <use xlink:href="#13"/>
+            <use xlink:href="#14" y="2.171"/>
+            <use xlink:href="#15" y="4.342"/>
+            <use xlink:href="#16" y="6.513"/>
+            <use xlink:href="#17" y="8.684"/>
+            <use xlink:href="#18" y="10.855"/>
+            <use xlink:href="#19" y="13.026"/>
+            <use xlink:href="#20" y="15.197"/>
+            <use xlink:href="#21" y="17.368"/>
+            <use xlink:href="#22" y="19.539"/>
+            <use xlink:href="#23" y="23.881"/>
+            <use xlink:href="#25" y="26.052"/>
+            <use xlink:href="#26" y="28.223"/>
+            <use xlink:href="#29" y="30.394"/>
+            <use xlink:href="#3" y="32.565"/>
+            <use xlink:href="#30" y="34.736"/>
+            <use xlink:href="#31" y="36.907"/>
+            <use xlink:href="#12" y="39.078"/>
+            <use xlink:href="#13" y="41.249"/>
+            <use xlink:href="#14" y="43.42"/>
+            <use xlink:href="#16" y="45.591"/>
+            <use xlink:href="#17" y="47.762"/>
+            <use xlink:href="#18" y="49.933"/>
+            <use xlink:href="#32" y="52.104"/>
+            <use xlink:href="#19" y="54.275"/>
+            <use xlink:href="#20" y="56.446"/>
+            <use xlink:href="#21" y="58.617"/>
+            <use xlink:href="#22" y="60.788"/>
+            <use xlink:href="#23" y="65.13"/>
+          </svg>
+          <svg x="15252">
+            <use xlink:href="#a"/>
+            <use xlink:href="#b" x="32.996" y="67.276"/>
+            <use xlink:href="#13"/>
+            <use xlink:href="#14" y="2.171"/>
+            <use xlink:href="#15" y="4.342"/>
+            <use xlink:href="#16" y="6.513"/>
+            <use xlink:href="#17" y="8.684"/>
+            <use xlink:href="#18" y="10.855"/>
+            <use xlink:href="#19" y="13.026"/>
+            <use xlink:href="#20" y="15.197"/>
+            <use xlink:href="#21" y="17.368"/>
+            <use xlink:href="#22" y="19.539"/>
+            <use xlink:href="#23" y="23.881"/>
+            <use xlink:href="#25" y="26.052"/>
+            <use xlink:href="#26" y="28.223"/>
+            <use xlink:href="#29" y="30.394"/>
+            <use xlink:href="#3" y="32.565"/>
+            <use xlink:href="#30" y="34.736"/>
+            <use xlink:href="#31" y="36.907"/>
+            <use xlink:href="#12" y="39.078"/>
+            <use xlink:href="#13" y="41.249"/>
+            <use xlink:href="#14" y="43.42"/>
+            <use xlink:href="#16" y="45.591"/>
+            <use xlink:href="#17" y="47.762"/>
+            <use xlink:href="#18" y="49.933"/>
+            <use xlink:href="#32" y="52.104"/>
+            <use xlink:href="#19" y="54.275"/>
+            <use xlink:href="#20" y="56.446"/>
+            <use xlink:href="#21" y="58.617"/>
+            <use xlink:href="#22" y="60.788"/>
+            <use xlink:href="#23" y="65.13"/>
+            <use xlink:href="#3" y="67.301"/>
+          </svg>
           <svg x="15376">
             <use xlink:href="#a"/>
-            <use xlink:href="#b" x="-.004" y="69.447"/>
-            <use xlink:href="#12"/>
-            <use xlink:href="#13" y="2.171"/>
-            <use xlink:href="#14" y="4.342"/>
-            <use xlink:href="#15" y="6.513"/>
-            <use xlink:href="#16" y="8.684"/>
-            <use xlink:href="#17" y="10.855"/>
-            <use xlink:href="#18" y="13.026"/>
-            <use xlink:href="#19" y="15.197"/>
-            <use xlink:href="#20" y="17.368"/>
-            <use xlink:href="#21" y="19.539"/>
-            <use xlink:href="#22" y="21.71"/>
-            <use xlink:href="#23" y="26.052"/>
-            <use xlink:href="#25" y="28.223"/>
-            <use xlink:href="#26" y="30.394"/>
-            <use xlink:href="#29" y="32.565"/>
-            <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#30" y="36.907"/>
-            <use xlink:href="#31" y="39.078"/>
-            <use xlink:href="#12" y="41.249"/>
-            <use xlink:href="#13" y="43.42"/>
-            <use xlink:href="#14" y="45.591"/>
-            <use xlink:href="#16" y="47.762"/>
-            <use xlink:href="#17" y="49.933"/>
-            <use xlink:href="#18" y="52.104"/>
-            <use xlink:href="#32" y="54.275"/>
-            <use xlink:href="#19" y="56.446"/>
-            <use xlink:href="#20" y="58.617"/>
-            <use xlink:href="#21" y="60.788"/>
-            <use xlink:href="#22" y="62.959"/>
-            <use xlink:href="#23" y="67.301"/>
-          </svg>
-          <svg x="15500">
-            <use xlink:href="#a"/>
-            <use xlink:href="#b" x="32.996" y="69.447"/>
-            <use xlink:href="#12"/>
-            <use xlink:href="#13" y="2.171"/>
-            <use xlink:href="#14" y="4.342"/>
-            <use xlink:href="#15" y="6.513"/>
-            <use xlink:href="#16" y="8.684"/>
-            <use xlink:href="#17" y="10.855"/>
-            <use xlink:href="#18" y="13.026"/>
-            <use xlink:href="#19" y="15.197"/>
-            <use xlink:href="#20" y="17.368"/>
-            <use xlink:href="#21" y="19.539"/>
-            <use xlink:href="#22" y="21.71"/>
-            <use xlink:href="#23" y="26.052"/>
-            <use xlink:href="#25" y="28.223"/>
-            <use xlink:href="#26" y="30.394"/>
-            <use xlink:href="#29" y="32.565"/>
-            <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#30" y="36.907"/>
-            <use xlink:href="#31" y="39.078"/>
-            <use xlink:href="#12" y="41.249"/>
-            <use xlink:href="#13" y="43.42"/>
-            <use xlink:href="#14" y="45.591"/>
-            <use xlink:href="#16" y="47.762"/>
-            <use xlink:href="#17" y="49.933"/>
-            <use xlink:href="#18" y="52.104"/>
-            <use xlink:href="#32" y="54.275"/>
-            <use xlink:href="#19" y="56.446"/>
-            <use xlink:href="#20" y="58.617"/>
-            <use xlink:href="#21" y="60.788"/>
-            <use xlink:href="#22" y="62.959"/>
-            <use xlink:href="#23" y="67.301"/>
-            <use xlink:href="#3" y="69.472"/>
-          </svg>
-          <svg x="15624">
-            <use xlink:href="#a"/>
-            <use xlink:href="#b" x="32.996" y="69.447"/>
-            <use xlink:href="#12"/>
-            <use xlink:href="#13" y="2.171"/>
-            <use xlink:href="#14" y="4.342"/>
-            <use xlink:href="#15" y="6.513"/>
-            <use xlink:href="#16" y="8.684"/>
-            <use xlink:href="#17" y="10.855"/>
-            <use xlink:href="#18" y="13.026"/>
-            <use xlink:href="#19" y="15.197"/>
-            <use xlink:href="#20" y="17.368"/>
-            <use xlink:href="#21" y="19.539"/>
-            <use xlink:href="#22" y="21.71"/>
-            <use xlink:href="#23" y="26.052"/>
-            <use xlink:href="#25" y="28.223"/>
-            <use xlink:href="#26" y="30.394"/>
-            <use xlink:href="#29" y="32.565"/>
-            <use xlink:href="#29" y="34.736"/>
-            <use xlink:href="#30" y="36.907"/>
-            <use xlink:href="#31" y="39.078"/>
-            <use xlink:href="#12" y="41.249"/>
-            <use xlink:href="#13" y="43.42"/>
-            <use xlink:href="#14" y="45.591"/>
-            <use xlink:href="#16" y="47.762"/>
-            <use xlink:href="#17" y="49.933"/>
-            <use xlink:href="#18" y="52.104"/>
-            <use xlink:href="#32" y="54.275"/>
-            <use xlink:href="#19" y="56.446"/>
-            <use xlink:href="#20" y="58.617"/>
-            <use xlink:href="#21" y="60.788"/>
-            <use xlink:href="#22" y="62.959"/>
-            <use xlink:href="#23" y="67.301"/>
-            <use xlink:href="#3" y="69.472"/>
+            <use xlink:href="#b" x="32.996" y="67.276"/>
+            <use xlink:href="#13"/>
+            <use xlink:href="#14" y="2.171"/>
+            <use xlink:href="#15" y="4.342"/>
+            <use xlink:href="#16" y="6.513"/>
+            <use xlink:href="#17" y="8.684"/>
+            <use xlink:href="#18" y="10.855"/>
+            <use xlink:href="#19" y="13.026"/>
+            <use xlink:href="#20" y="15.197"/>
+            <use xlink:href="#21" y="17.368"/>
+            <use xlink:href="#22" y="19.539"/>
+            <use xlink:href="#23" y="23.881"/>
+            <use xlink:href="#25" y="26.052"/>
+            <use xlink:href="#26" y="28.223"/>
+            <use xlink:href="#29" y="30.394"/>
+            <use xlink:href="#3" y="32.565"/>
+            <use xlink:href="#30" y="34.736"/>
+            <use xlink:href="#31" y="36.907"/>
+            <use xlink:href="#12" y="39.078"/>
+            <use xlink:href="#13" y="41.249"/>
+            <use xlink:href="#14" y="43.42"/>
+            <use xlink:href="#16" y="45.591"/>
+            <use xlink:href="#17" y="47.762"/>
+            <use xlink:href="#18" y="49.933"/>
+            <use xlink:href="#32" y="52.104"/>
+            <use xlink:href="#19" y="54.275"/>
+            <use xlink:href="#20" y="56.446"/>
+            <use xlink:href="#21" y="58.617"/>
+            <use xlink:href="#22" y="60.788"/>
+            <use xlink:href="#23" y="65.13"/>
+            <use xlink:href="#3" y="67.301"/>
           </svg>
         </svg>
       </g>
