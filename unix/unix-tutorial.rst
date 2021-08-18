@@ -637,6 +637,39 @@ Moving and Removing
 ``mv``
 ++++++
 
+In Unix, every file has an absolute path that describes
+the traversal path from the root of the disk ``/`` to
+the file itself. Each path can be split into two components,
+one describing the parents (the *dirname*) and one describing
+the name of the file at the end of the path (the *basename*).
+Consider the following path that we have carefully annotated
+using ASCII characters::
+
+  /home/myid/■■■■■■■/cs1302-unix/notes/cs1302/cpp.md
+  |                                          |     |
+  +------------------------------------------+-----+
+                    |                           |
+                 dirname                    basename
+
+Understanding this split is important when it comes to
+moving and renaming files, since both concepts deal
+with the modification of a file's absolute path.
+
+.. |Y| replace:: ✓
+.. |N| replace:: ✗
+.. table::
+
+   =======  ========  ======================
+   If you modify      Related
+   -----------------  ----------------------
+   dirname  basename  Concept
+   =======  ========  ======================
+   |Y|      |N|       move a file
+   |N|      |Y|       rename a file
+   |Y|      |Y|       move and rename a file
+   =======  ========  ======================
+
+
 ``cp``, ``cp -r``
 +++++++++++++++++
 
