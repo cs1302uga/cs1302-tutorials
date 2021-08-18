@@ -496,7 +496,7 @@ is included in the "long" output format:
        and no other alternate access method.
 
 .. [2] **Hard Links:** This topic is outside the scope of this reading. If you are interested in hard links,
-       then you are encouraged to read about them `here <wiki_hard_link>`__.
+       then you are encouraged to read about them `here <wiki_hard_link>`_.
 
        .. _wiki_hard_link: https://en.wikipedia.org/wiki/Hard_link
 
