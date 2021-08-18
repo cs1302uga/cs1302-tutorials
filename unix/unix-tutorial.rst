@@ -19,7 +19,7 @@ instructional server called Odin. If you were assigned this reading in a
 CSCI class at UGA, then you probably have access.
 
 Logging into a Unix Machine
-===========================
+---------------------------
 
 Access to Odin is restricted behind a firewall. In order to access Odin, you
 will need to connect to UGA's remote access VPN using the instructions found
