@@ -595,6 +595,13 @@ paths in a way that kept you in your home directory. It's time for that to chang
 it's time for your current working directory to change. This can be done using the ``cd``
 (change directory) command.
 
+.. code-block:: shell
+
+   $ cd cs1302-unix
+
+.. figure:: img/cd-path-demo1.svg
+
+
 ``ls -a``, ``cd ..``
 ++++++++++++++++++++
 
