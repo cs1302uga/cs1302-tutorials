@@ -452,13 +452,37 @@ as a command-line argument.
 
 .. figure:: img/ls-all-demo.svg
 
+Every directy on a Unix system has two special hidden files
+named ``.`` and ``..``.
+
+.. table::
+
+   ======  =========================================================
+   File    Description
+   ======  =========================================================
+   ``.``   path alias for the directory itself
+   ``..``  path alias for parent of the directory (parent directory)
+   ======  =========================================================
+
+Remember, the default behavior of ``ls`` is to list the contents of
+the current working directory. If we supply ``.`` as a path to ``ls``,
+then it does the same thing.
+argument
+
 .. code-block:: shell
 
    $ ls .
 
+.. figure:: img/ls-dot-demo.svg
+
+You can supply ``..`` as a path for ``ls`` to list the contents
+of the current working directory's parent (i.e., its parent directory).
+
 .. code-block:: shell
 
    $ ls ..
+
+.. figure:: img/ls-dotdot-demo.svg
 
 .. code-block:: shell
 
