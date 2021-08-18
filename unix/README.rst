@@ -463,6 +463,22 @@ is included in the "long" output format:
    ``-rw-r--r--.``  ``1``  ``mepcott``   ``myid``    ``607430``   ``Jun  9 12:45``  ``sherlock_holmes.txt``
    ===============  =====  ============  ==========  ===========  ================  ===========================
 
+.. code-block:: shell
+
+   $ ls -l cs1302-unix
+
+.. figure:: img/ls-long-demo2.svg
+
+.. table::
+
+   ===============  =====  ============  ==========  ===========  ================  ===========================
+   [1]_ Mode        [2]_   [3]_ User     [4]_ Group  [5]_ Size    [6]_ Timestamp    [7]_ Name
+   ===============  =====  ============  ==========  ===========  ================  ===========================
+   ``drw-r-xr-x.``  ``2``  ``mepcott``   ``myid``    ``85``       ``Aug 17 17:39``  ``books``
+   ``drw-r-xr-x.``  ``4``  ``mepcott``   ``myid``    ``46``       ``Aug 17 17:39``  ``notes``
+   ``-rw-r--r--.``  ``1``  ``mepcott``   ``myid``    ``9``        ``Aug 17 17:39``  ``README.md``
+   ===============  =====  ============  ==========  ===========  ================  ===========================
+
 .. [1] **Mode:** the file type and permissions. The first character denotes the file type.
        In Unix, file type refers to how the file behaves from the file system's perspective.
        File type and content format are different concepts. File suffixes like ``.txt``,
