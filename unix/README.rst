@@ -464,18 +464,22 @@ is included in the "long" output format:
    ===============  =====  ============  ==========  ===========  ================  ===========================
 
 .. [1] **Mode:** the file type and permissions. The first character denotes the file type.
-       Common file types include:
+       In Unix, file type refers to how the file behaves from the file system's perspective.
+       File type and content format are different concepts. File suffixes like ``.txt``,
+       ``.mp3``, ``.pdf``, etc. are all naming conventions for the content format of regular
+       type files (regular files). Common file types include:
 
-       =========  ==============
-       Character  Type
-       =========  ==============
-       ``-``      regular file
-       ``d``      directory file
-       ``l``      symbolic link
-       =========  ==============
+       =========  ==============  ===================
+       Character  File Type       Description
+       =========  ==============  ===================
+       ``-``      regular file    text or binary data
+       ``d``      directory file  collection of files
+       ``l``      symbolic link   shortcut to a file
+       =========  ==============  ===================
 
-       The next nine (9) characters denote the read (``r``), write (``w``), and execute (``x``) for permissions
-       for the file's user (``u``), group (``g``), and others (``o``). Here is a breakdown for ``rw-r--r--``:
+       The next nine (9) characters denote the read (``r``), write (``w``), and execute (``x``) permissions
+       for the file's user (``u``), group (``g``), and others (``o``). We will go into more detail regarding
+       file permissions later, but here is a quick breakdown for ``rw-r--r--``:
 
        =====  =====  =====  =====  =====  =====  =====  =====  =====
        User                 Group                Others
@@ -491,7 +495,7 @@ is included in the "long" output format:
        reading, but for those who are curious, the ``.`` indicates that a file has an SELinux security context
        and no other alternate access method.
 
-.. [2] **Hard Links:** TODO
+.. [2] **Hard Links:** The number of TODO
 
 .. [3] **User / Owner:** TODO
 
