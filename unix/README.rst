@@ -657,17 +657,51 @@ Getting Help
 
    $ man man
 
+.. code-block:: shell
+
+   $ man 1 intro
+
 Inspecting Files
 ----------------
 
 ``cat``, ``head``, ``tail``
 +++++++++++++++++++++++++++
 
+.. code-block:: shell
+
+   $ cd ~/cs1302-unix/books
+   $ cat sherlock_holmes.txt
+
+.. code-block:: shell
+
+   $ cd
+   $ head ~/cs1302-unix/books/pride_and_prejudice.txt
+
+.. code-block:: shell
+
+   $ cd ~/cs1302-unix
+   $ tail books/moby_dick.txt.txt
+
 ``less``
 ++++++++
 
+.. code-block:: shell
+
+   $ cd
+   $ less ~/cs1302-unix/books/moby_dick.txt
+
 ``wc``
 ++++++
+
+.. code-block:: shell
+
+   $ cd ~/cs1302-unix/books
+   $ wc moby_dick.txt
+
+.. code-block:: shell
+
+   $ cd ~/cs1302-unix/books
+   $ wc -l moby_dick.txt
 
 ``grep``
 ++++++++
