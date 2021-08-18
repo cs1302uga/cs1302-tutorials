@@ -609,6 +609,16 @@ will emit a ``No such file or directory`` error.
 
 .. figure:: img/mkdir-third-demo.svg
 
+When intermediate directories do not exist along the desired
+path, it is possible to create them one at a time and in the
+order that they appear along the path from beginning to end.
+The creators of the ``mkdir`` anticipated that such repetitive
+calls to their command might be undesirable, so they included
+a "passive" option that forces ``mkdir`` to create intermediate
+directories when possible. To enable the passive option,
+supply ``-p`` as a command-line argument to ``mkdir`` before
+the desired path.
+
 .. code-block:: shell
 
    $ cd ~/cs1302-unix
@@ -616,7 +626,7 @@ will emit a ``No such file or directory`` error.
    $ mkdir -p notes/other/a/b/c
    $ tree notes
 
-.. .. figure:: mkdir-fourth-demo.svg
+.. figure:: img/mkdir-fourth-demo.svg
 
 Moving and Removing
 -------------------
