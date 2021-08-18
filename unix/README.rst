@@ -656,7 +656,11 @@ Summary
 
 .. code-block:: shell
 
-   $ ls . -a
+   $ ls .
+
+.. code-block:: shell
+
+   $ ls ..
 
 .. code-block:: shell
 
@@ -675,6 +679,7 @@ Summary
    Command            Description
    =================  ================================================================================================
    ``ls -a``          ``ls`` shows hidden files (those that start with ``.``)
+   ``ls .``            ``ls`` lists the contents of ``.`` (current directory); same as ``ls`` with no arguments
    ``ls ..``          ``ls`` lists the contents of ``..`` (parent directory)
    ``cd ..``          ``cd`` changes working directory to ``..`` (parent directory; "up one")
    ``cd ../..``       ``cd`` changes working directory to ``../..`` (parent of parent directory; "up two")
