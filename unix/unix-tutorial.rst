@@ -729,11 +729,22 @@ the file's basename.
    $ realpath notes/cs1730/c.md
    $ tree notes
 
+For more information about ``mv``, consult the manual page
+using ``man mv``.
+
 ``cp``, ``cp -r``
 +++++++++++++++++
 
+For more information about ``cp``, consult the manual page
+using ``man cp``.
+
 ``rm``, ``rm -r``
 +++++++++++++++++
+
+For more information about ``rm``, consult the manual page
+using ``man rm``.
+
+
 
 .. copyright and license information
 .. |copy| unicode:: U+000A9 .. COPYRIGHT SIGN
