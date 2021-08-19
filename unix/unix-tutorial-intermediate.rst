@@ -20,6 +20,8 @@ CSCI class at UGA, then you probably have access.
 Piping and File Redirection
 ---------------------------
 
+Here, we could introduce ``wget`` and have them download the sherlock holmes text. Then, they could use piping, redirection, and wc on that file.
+
 ``|``
 +++++
 
