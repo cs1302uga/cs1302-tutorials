@@ -46,8 +46,8 @@ macOS operating system are presented. On the left, the window of a terminal
 emulator (or a "terminal window," for short) is displayed containing the output
 of the commands ``ls`` and ``tree`` (discussed later). On the right, the graphical
 Finder app is displayed containing some of the same information. Take a moment
-to convince yourself that both images are displaying the same information in different
-ways.
+to convince yourself that both images are displaying roughly the same information 
+in two different ways.
 
 Prompt and Circumstance
 =======================
