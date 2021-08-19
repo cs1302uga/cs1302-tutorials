@@ -15,12 +15,14 @@
 This tutorial assumes that the reader is a Computer Science student
 at the University of Georgia with access to the department's
 instructional server called Odin. If you were assigned this reading in a
-CSCI class at UGA, then you probably have access.
+CSCI class at UGA, then you probably have access. We recommend writing the
+answers to any questions asked in this tutorial in your notes along with some
+context. These notes will be helpful for studying.
 
 Logging into a Unix Machine
 ---------------------------
 
-Access to Odin is restricted behind a firewall. In order to access Odin, you
+Access to Odin is restricted behind a firewall. In order to access Odin off-campus, you
 will need to connect to UGA's remote access VPN using the instructions found
 `here <https://eits.uga.edu/access_and_security/infosec/tools/vpn/>`_.
 
@@ -133,7 +135,8 @@ followed by lines prefixed with ``[cs1302]`` when you login to Odin.
 * If you do not see any of that when you login, then the CSCI 1302 shell profile
   is not enabled on your account. To enable it, execute the command below. The
   command adds a line to the ``.bash_profile`` file in your home directory so
-  that the profile is sourced each time you login.
+  that the profile is sourced each time you login. You won't have to run this command
+  again this semester.
 
   .. code-block:: shell
 
@@ -141,21 +144,21 @@ followed by lines prefixed with ``[cs1302]`` when you login to Odin.
 
   .. figure:: img/cs1302-profile-enable-demo.svg
 
-  * Make sure that you logout, then login again before continuing.
+  * **Make sure that you logout, then login again before continuing.**
 
 Navigating the File System
 -------------------------
 
 Earlier in this tutorial, you experienced the ``pwd`` (print working directory)
 command and were provided a brief introduction to absolute paths. In Unix, a
-*directory file* or *directory* is same concept as a folder in other
+*directory file* or *directory* is the same concept as a folder in other
 operating systems; that is, in most cases the words "directory" and "folder"
 are interchangeable. Your current working directory is the directory that you
 are currently executing commands in. There are other directories, and in Unix,
 they all organized under a top-most directory called ``/``, representing the
 root of the file system. The macOS and Linux operating systems organize their
 file systems the same way. If you are coming from a Windows background, then it
-is not unreasonable to compare ``/`` to the ``C:`` drive.
+is reasonable to compare ``/`` to the ``C:`` drive.
 
 For this part of the tutorial, we are going to assume that you have
 some specific files in your home directory. To make sure that you
@@ -211,6 +214,8 @@ lists the contents of a directory in a tree-like format.
    $ tree cs1302-unix
 
 .. figure:: img/tree-path-demo.svg
+
+* Which files are contained in the ``cs1302`` directory? What about the ``books`` directory?
 
 .. table::
 
@@ -386,6 +391,10 @@ and other directories; however, all of the examples so far have utilized absolut
 paths in a way that kept you in your home directory. It's time for that to change, or rather
 it's time for your current working directory to change. This can be done using the ``cd``
 (change directory) command.
+
+As you navigate to various directories in this section, try typing ``pwd`` and ``ls`` in each
+directory. Note how the output of each command changes as you change directories. That's because
+commands are always executed in the context of the current directory.
 
 .. code-block:: shell
 
