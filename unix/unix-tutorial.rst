@@ -802,7 +802,7 @@ manual:
    Command                     Description
    ==========================  =====================================
    ``cp SOURCE DEST``          Copy ``SOURCE`` to ``DEST``
-   ``mv SOURCE... DIRECTORY``  Copy ``SOURCE(s)`` into ``DIRECTORY``
+   ``cp SOURCE... DIRECTORY``  Copy ``SOURCE(s)`` into ``DIRECTORY``
    ==========================  =====================================
 
 .. code-block:: shell
@@ -818,6 +818,17 @@ manual:
    $ cp books/moby_dick.txt notes/other/a/
 
 .. figure:: img/cp-second-demo.svg
+
+The default behavior of ``cp`` when attempting to copy a
+directory is to copy the directory itself but not its
+contents. To make ``cp`` recursively copy the contents of 
+a directory in addition to the directory itself, supply ``cp`` 
+with the ``-r`` (recursive) option as a command-line argument.
+
+.. code-block:: shell
+
+   $ cd ~/cs1302-unix
+   $ cp -r books books-copy
 
 For more information about ``cp``, consult the manual page
 using ``man cp``.
