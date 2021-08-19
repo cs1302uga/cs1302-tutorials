@@ -1,5 +1,5 @@
 .. sectnum::
-.. |approval_notice| image:: https://img.shields.io/badge/Status-Not%20Ready-red.svg
+.. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Fall%202021-blue
 
 ================
  Unix: Tutorial
