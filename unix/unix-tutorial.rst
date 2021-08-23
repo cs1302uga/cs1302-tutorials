@@ -309,10 +309,8 @@ is included in the "long" output format, as described below the next few example
 .. [2] .. rubric:: **Hard Links**
 
        This topic is outside the scope of this reading. If you are interested in hard links,
-       then you are encouraged to read about them `here <wiki_hard_link>`_.
+       then you are encouraged to read about them `here <https://en.wikipedia.org/wiki/Hard_link>`_.
        Symbolic links are more common, and will discussed in a future reading.
-
-       .. _wiki_hard_link: https://en.wikipedia.org/wiki/Hard_link
 
 .. [3] .. rubric:: **User / Owner**
 
