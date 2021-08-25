@@ -137,6 +137,11 @@ followed by lines prefixed with ``[cs1302]`` when you login to Odin.
   command adds a line to the ``.bash_profile`` file in your home directory so
   that the profile is sourced each time you login. You won't have to run this command
   again this semester.
+  
+  **NOTE:** Unlike some of the examples you've seen with ``mepcott`` (i.e., Dr. Cotterell's
+  username), the ``mepcott`` in the following command should NOT be replaced with 
+  your username. The command is provided by Dr. Cotterell to enable the
+  CSCI 1302 shell profile on your account.
 
   .. code-block:: shell
 
