@@ -868,7 +868,7 @@ option as a command-line argument. **REMEMBER, THIS CANNOT BE UNDONE**.
 .. code-block:: shell
 
    $ cd ~/cs1302-unix
-   $ rm notes/other
+   $ rm -r notes/other
 
 .. figure:: img/rm-third-demo.svg
 
