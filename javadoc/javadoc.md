@@ -228,7 +228,7 @@ this tutorial.
 1. __Why not use `cp` or `mv` to copy or move (respectively) the generated API documentation__
    __website directly to `~/public_html/cs1302-javadoc-doc` instead using `ln`?__
    
-   Since our use of `ln` created a symbolc link to the `doc` directory, we can now
+   Since our use of `ln` created a symbolic link to the `doc` directory, we can now
    regenerate the API documentation website in `doc` and have those changes be automatically
    reflected in `~/public_html/cs1302-javadoc-doc`. Also, from an organizational standpoint, 
    it makes sense to have the documentation contained within the main project directory.
