@@ -22,6 +22,7 @@ you should follow along and take notes.
 * [Identifying Checked vs. Unchecked Exceptions](#identifying-checked-vs-unchecked-exceptions)
 * [Multiple Catch Blocks](#multiple-catch-blocks)
 * [Explicitly Throwing Exceptions & Exception Propagation](#explicitly-throwing-exceptions--exception-propagation)
+* [Regarding Scope](#regarding-scope)
 
 ## Definition
 
@@ -302,6 +303,31 @@ In Java, checked exceptions must either be handled directly using a try-catch
 or progated up using `throws`. Note, while it is possible to place a `throws`
 in the signature of a program's `main` method, doing so is _strongly_ discouraged
 as exceptions propagated past `main` will always cause the program to crash.
+
+## Regarding Scope
+
+The same basic scoping rules (i.e., what can be seen within a method when curly
+braces are involved) that you are used to for if-statements and loops also apply
+to try-blocks and catch-blocks. If you declare a variable inside a try-block or 
+catch-block, then its scope only extends to what is inside that block. 
+
+If you encounter a compile-time `Cannot find symbol error` related to a variable that
+you declared in a try-block, then You have two general, high-level options for dealing
+with that error (assuming it's not a simple typo):
+
+1. You can move the declaration/initialization to a line that precedes the try-block  
+   to increase its scope, then simply reassign (but not redeclare) it inside the try-block. 
+   If you do this, then the code that uses the variable after the try-catch should not assume 
+   the code in the try-block is ever executed as an exception may cause it to get skipped. 
+   For example, if you initialize a reference variable to `null` prior to a try-catch and 
+   reassign to something that's not `null` within the try-block, then the code after the 
+   try-catch needs to account for possibility that the variable is still `null` -- if it does not,
+   then it runs the risk of throwing an unchecked `NullPointerException` during runtime.
+   reassigned. encountering a NullPointerException; ot
+
+2. You could put the code that uses the variable into the try-block with the understanding
+   that it will be skipped should an exception occur within the try-block before that 
+   line (as control flows to a corresponding catch-block).
 
 <hr/>
 
