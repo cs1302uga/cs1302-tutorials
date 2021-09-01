@@ -311,7 +311,7 @@ braces are involved) that you are used to for if-statements and loops also apply
 to try-blocks and catch-blocks. If you declare a variable inside a try-block or 
 catch-block, then its scope only extends to what is inside that block. 
 
-If you encounter a compile-time `Cannot find symbol error` related to a variable that
+If you encounter a compile-time `Cannot find symbol` error related to a variable that
 you declared in a try-block, then You have two general, high-level options for dealing
 with that error (assuming it's not a simple typo):
 
