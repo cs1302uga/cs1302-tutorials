@@ -311,7 +311,8 @@ braces are involved) that you are used to for if-statements and loops also apply
 to try-blocks and catch-blocks. If you declare a variable inside a try-block or
 catch-block, then its scope only extends to what is inside that block.
 
-To illustrate this, we have included a [`cs1302.scope.Example`](src/cs1302/scope/Example.java)
+To illustrate this, we have included an *unfinished*
+[`cs1302.scope.Example`](src/cs1302/scope/Example.java)
 program with this tutorial that does not compile due to a scoping issue. Here is
 the ``main`` method for that program:
 
