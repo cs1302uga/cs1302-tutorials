@@ -435,6 +435,13 @@ There are two high-level strategies for dealing with this kind of scoping issue:
      } // main
      ```
 
+Here is a short video demonstrating these concepts:
+
+https://www.youtube.com/watch?v=DlmrBF7pP1k
+
+<a href="https://www.youtube.com/watch?v=DlmrBF7pP1k">
+<img src="http://i3.ytimg.com/vi/DlmrBF7pP1k/maxresdefault.jpg" alt="IMAGE ALT TEXT">
+</a>
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
