@@ -440,7 +440,7 @@ Here is a short video demonstrating these concepts:
 https://www.youtube.com/watch?v=DlmrBF7pP1k
 
 <a href="https://www.youtube.com/watch?v=DlmrBF7pP1k">
-<img src="http://i3.ytimg.com/vi/DlmrBF7pP1k/maxresdefault.jpg" alt="IMAGE ALT TEXT">
+<img src="http://i3.ytimg.com/vi/DlmrBF7pP1k/hqdefault.jpg" alt="IMAGE ALT TEXT">
 </a>
 <hr/>
 
