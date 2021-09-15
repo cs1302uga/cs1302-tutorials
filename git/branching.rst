@@ -15,8 +15,11 @@ Introduction
 ============
 
 Every Git repository has at least one "branch," usually called ``main``, that
-represents the project's main line of development (i.e., its main progression
-over time).
+represents a project's main line of development (i.e., its main progression
+over time). A repository may have multiple branches, each representing its
+own line of development. In `Figure 1.1 <#fig1.1>`__, we see a repository with
+one branch, and in `Figure 1.2 <#fig1.2>`__ we see a repository with multiple
+branches.
 
 .. raw:: html
 
@@ -24,15 +27,6 @@ over time).
    <img src="figures/branching/example1.svg" align="center">
    <p align="center"><strong>1.1</strong>. Example of a <code>main</code> branch.</p>
    </p>
-   
-Consider `Figure 1.1 <#fig1.1>`__ and the following ``git log``: 
-   
-.. code::
-
-   * 15061fc (HEAD -> main) added release notes
-   * 671f7ae initial feature set implemented
-   * 9cfe0ed updated header in README
-   * 6214c7d initial commit
 
 New Repositories
 ================
