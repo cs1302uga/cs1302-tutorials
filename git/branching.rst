@@ -25,7 +25,14 @@ branches.
 
    <p id="fig1.1" align="center">
    <img src="figures/branching/example1.svg" align="center">
-   <p align="center"><strong>1.1</strong>. Example of a <code>main</code> branch.</p>
+   <p align="center"><strong>1.1</strong>. Git repository with one branch named <code>main</code>.</p>
+   </p>
+   
+.. raw:: html
+
+   <p id="fig1.2" align="center">
+   <img src="figures/branching/example1.svg" align="center">
+   <p align="center"><strong>1.2</strong>. Git repository with multiple branches.</p>
    </p>
 
 New Repositories
