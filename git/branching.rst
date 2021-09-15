@@ -22,7 +22,7 @@ over time).
 
    <p align="center">
    <img src="figures/branching/example1.svg" align="center">
-   <p align="center"><strong>1.1</strong> Example of a <code>main</code> branch.</p>
+   <p align="center"><strong>1.1</strong>. Example of a <code>main</code> branch.</p>
    </p>
    
 .. code::
