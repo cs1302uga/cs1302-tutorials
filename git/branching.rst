@@ -25,7 +25,7 @@ over time).
    <p align="center"><strong>1.1</strong>. Example of a <code>main</code> branch.</p>
    </p>
    
-Consider `Figure 1.1 <#fig1.1>`__ and the following `git log`: 
+Consider `Figure 1.1 <#fig1.1>`__ and the following ``git log``: 
    
 .. code::
 
