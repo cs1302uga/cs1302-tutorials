@@ -19,6 +19,7 @@ represents the project's main line of development (i.e., its main progression
 over time).
 
 .. figure:: figures/branching/example1.svg
+   :align: center
 
 New Repositories
 ================
