@@ -18,8 +18,14 @@ Every Git repository has at least one "branch," usually called ``main``, that
 represents the project's main line of development (i.e., its main progression
 over time).
 
+.. raw:: html
+   <p align="center">
+   
 .. image:: figures/branching/example1.svg
    :align: center
+   
+.. raw:: html
+   </p>
 
 New Repositories
 ================
