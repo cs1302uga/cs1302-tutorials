@@ -20,6 +20,13 @@ over time).
 
 .. image:: figures/branching/example1.svg
    :align: center
+   
+.. code::
+
+   * 15061fc (HEAD -> main) added release notes
+   * 671f7ae initial feature set implemented
+   * 9cfe0ed updated header in README
+   * 6214c7d initial commit
 
 New Repositories
 ================
