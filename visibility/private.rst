@@ -1,4 +1,4 @@
-.. |approval_notice| image:: image:: https://img.shields.io/badge/Approved%20for-Fall%202021-blue
+.. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Fall%202021-blue
    :alt: Approved for: Fall 2021
 
 .. external links
