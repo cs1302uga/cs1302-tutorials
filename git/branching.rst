@@ -15,9 +15,34 @@ Introduction
 ============
 
 Every Git repository has at least one "`branch <gitglossary_branch>`_," usually
-called ``main``\ [1]_, that represents the project's main line of development
-(i.e., its main progression over time).
+called ``master`` or ``main``\ [1]_, that represents the project's main line of
+development (i.e., its main progression over time). When you create a new
+repository using ``git init``, the specific branch name that is used is
+governed by the ``init.defaultBranch`` setting.
 
+.. code:: sh
+
+   $ git config --global init.defaultBranch
+
+.. code:: sh
+
+   main
+
+If the value of your ``init.defaultBranch`` is ``master``\ [1]_, then you are
+encouraged to change it to ``main`` using the following command:
+
+.. code:: sh
+
+   $ git config --global init.defaultBranch main
+
+.. [1] At the time of this writing, the default value for ``init.defaultBranch``
+       is ``master``; however, in 2020, the Git development community and its
+       partners reflected on the fact that "master" has negative connotations for
+       many groups of people and started encouraging the use of more inclusive
+       branch names like ``main``. Popular services like GitHub and GitLab
+       already default their ``init.defaultBranch`` value to ``main``.
+
+.. references
 .. _gitglossary_branch: https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefbranchabranch
 
 .. copyright and license information
