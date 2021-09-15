@@ -20,10 +20,12 @@ over time).
 
 .. raw:: html
 
-   <p align="center">
+   <p id="fig1.1" align="center">
    <img src="figures/branching/example1.svg" align="center">
    <p align="center"><strong>1.1</strong>. Example of a <code>main</code> branch.</p>
    </p>
+   
+Consider `Figure 1.1 <#fig1.1>`__ and the following `git log`: 
    
 .. code::
 
