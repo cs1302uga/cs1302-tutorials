@@ -14,11 +14,11 @@
 Introduction
 ============
 
-Every Git repository has at least one "`branch <gitglossary_branch>`_," usually
-called ``master`` or ``main``\ [1]_, that represents the project's main line of
-development (i.e., its main progression over time). When you create a new
-repository using ``git init``, the specific branch name that is used is
-governed by the ``init.defaultBranch`` setting.
+Every Git repository has at least one "branch," usually called ``master`` or
+``main``\ [1]_, that represents the project's main line of development (i.e.,
+its main progression over time). When you create a new repository using
+``git init``, the specific branch name that is used is governed by the
+``init.defaultBranch`` setting.
 
 .. code:: sh
 
