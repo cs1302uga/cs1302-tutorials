@@ -1,8 +1,14 @@
 # Git Branching
 
-A "[branch][branch-ref]" is a line of development.
+Every Git repository has at least one "[branch][branch-ref]," usually called
+`main`<sup id="a1">[1](#f1)</sup>, that represents the project's main line of
+development (i.e., its main progression).
 
 [branch-ref]: https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefbranchabranch "Git Glossary: branch"
+
+<hr/>
+
+<b id="f1">1</b> footnote here. [↩](#a1)
 
 <hr/>
 
