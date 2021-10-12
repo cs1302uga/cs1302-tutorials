@@ -38,9 +38,22 @@ Introduction
 .. _functional_interface: https://docs.oracle.com/javase/specs/jls/se11/html/jls-9.html#jls-9.8
 
 .. |java_lang_object| replace:: ``Object``
-.. _java_lang_object: https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
+.. _java_lang_object: https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html
+
+.. |java_lang_runnable| replace:: ``Runnable``
+.. _java_lang_runnable: https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runnable.html
 
 In Java, a **lambda expression** is a special syntax for creating an object that implements
-an interface that only has one abstract method that doesn't match a method in the |java_lang_Object|_
+an interface that only has one abstract method that doesn't match a method in the |java_lang_object|_
 class. Not all interfaces meet that requirement, but any interface that does is called a
-|functional_interface|_.
+|functional_interface|_. One of the simplest functional interfaces that comes with Java
+is |java_lang_runnable|_, which we display below without its associated documentation (it's
+not relevant to the discussion):
+
+.. code:: java
+
+   public interface Runnable {
+
+       public void run();
+
+   } // Runnable
