@@ -79,8 +79,8 @@ of that class elsewhere, then call the object's ``run`` method:
    public class Driver {
 
        public static void main(String[] args) {
-           Runnable r = new MyRunnable();
-           r.run();
+           Runnable r = new MyRunnable();  // create object
+           r.run();                        // output: hello, world!
        } // main
 
    } // Driver
