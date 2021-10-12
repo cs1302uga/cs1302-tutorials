@@ -92,8 +92,8 @@ using lambda expression syntax. Before we show you the syntax,
 it's important to note different aspects of the abstract method in
 ``Runnable`` that made it qualify as a functional interface:
 
-===========  ===========  ==============
-Return Type  Method Name  Parameter List
-===========  ===========  ==============
-``void``     ``run``      ``()``
-===========  ===========  ==============
+==============  ===========  ==============
+Parameter List  Name         Return Type
+==============  ===========  ==============
+``()``          ``run``      ``void``
+==============  ===========  ==============
