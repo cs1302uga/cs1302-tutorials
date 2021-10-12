@@ -92,8 +92,12 @@ using lambda expression syntax. Before we show you the syntax,
 it's important to note different aspects of the abstract method in
 ``Runnable`` that made it qualify as a functional interface:
 
-==============  ===========  ==============
-Parameter List  Name         Return Type
-==============  ===========  ==============
-``()``          ``run``      ``void``
-==============  ===========  ==============
+==============  ===========  ==============  ================
+Parameter List  Name         Return Type     Type Layout [1]_
+==============  ===========  ==============  ================
+``()``          ``run``      ``void``        ``() -> void``
+==============  ===========  ==============  ================
+
+.. [1] To construct the "Type Layout," write the parameter list
+   with the variable names omitted, an arrow (``->``), then
+   the return type.
