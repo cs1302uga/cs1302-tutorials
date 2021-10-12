@@ -123,7 +123,7 @@ Parameter List  Name         Return Type     Type Layout [1]_  Scaffold [2]_
 
 .. [2] To construct the "Scaffold," write the parameter list
    with the variable types omitted, an arrow (``->``), then
-   ``{ ... }`` if the return type is ``void`` and ``{ return }``
+   ``{ ... }`` if the return type is ``void`` and ``{ ...; return ?; }``
    if the return type is anything else.
 
 Now that the functional interface's method has been described,
@@ -142,6 +142,8 @@ an object created using a lambda expression instead of using
    as a starting point, replace the object instantiation expression
    (``new MyRunnable()``) with the ``run`` method's scaffold
    we identified earlier (``() -> { ... }``):
+
+   .. rubric:: **Driver.java:**
 
    .. code:: java
 
@@ -164,6 +166,8 @@ an object created using a lambda expression instead of using
 2. Once the ``run`` method's scaffold is in place, replace `...`
    with the desired method body, epanding the scaffold's block
    (i.e., the curly braces) as needed:
+
+   .. rubric:: **Driver.java:**
 
    .. code:: java
 
