@@ -102,7 +102,7 @@ Parameter List  Name         Return Type     Type Layout [1]_  Scaffold [2]_
    with the variable names omitted, an arrow (``->``), then
    the return type.
 
-.. [1] To construct the "Scaffold," write the parameter list
+.. [2] To construct the "Scaffold," write the parameter list
    with the variable types omitted, an arrow (``->``), then
    ``{ ... }`` if the return type is ``void`` and ``{ return }``
    if the return type is anything else.
