@@ -169,7 +169,7 @@ an object created using a lambda expression instead of using
 
    .. rubric:: **Driver.java:**
 
-   .. code:: java
+   .. code:: java=
       :class: test
 
       public class Driver {
