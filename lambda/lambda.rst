@@ -123,7 +123,7 @@ Parameter List  Name         Return Type     Type Layout [1]_  Scaffold [2]_
 
 .. [2] To construct the "Scaffold," write the parameter list
    with the variable types omitted, an arrow (``->``), then
-   ``{ ... }`` if the return type is ``void`` and ``{ ...; return ?; }``
+   ``{ ... }`` if the return type is ``void`` and ``{ ... return ?; }``
    if the return type is anything else.
 
 Now that the functional interface's method has been described,
@@ -170,17 +170,18 @@ an object created using a lambda expression instead of using
    .. rubric:: **Driver.java:**
 
    .. code:: java
+      :linenos:
 
       public class Driver {
 
           public static void main(String[] args) {
               Runnable r = () -> {
                   System.out.println("hello");
-                  System.out.println("world")
+                  System.out.println("world");
               };
               r.run();
           } // main
 
       } // Driver
 
-   and replace the `...` with the
+3.  **That's it!**
