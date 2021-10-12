@@ -174,12 +174,17 @@ an object created using a lambda expression instead of using
 
       public class Driver {
 
+          public static void runTwice(Runnable r) {
+             r.run();
+             r.run();
+          } // runTwice
+
           public static void main(String[] args) {
               Runnable r = () -> {
                   System.out.println("hello");
                   System.out.println("world");
               };
-              r.run();
+              runTwice(r);
           } // main
 
       } // Driver
