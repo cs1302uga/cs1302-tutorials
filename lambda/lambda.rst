@@ -95,6 +95,10 @@ of that class elsewhere, then call the object's ``run`` method:
 
    } // Driver
 
+.. rubric:: **Pseudo-Memory Diagram:**
+
+.. img:: lambda1.png
+
 .. rubric:: **Output:**
 
 .. code:: text
