@@ -113,7 +113,9 @@ class that implements that interface using a lambda expression.
 The goal of the next few steps is to have ``r.run()`` do the
 same thing that it did in the previous code example, but with
 an object created using a lambda expression instead of using
-``new``. Here are the step:
+``new``.
+
+.. rubric:: **Constructing a Lambda Expression**
 
 1. Since a lambda expression creates a nameless class, we cannot
    create a ``.java`` file for it; instead, we will define the class
