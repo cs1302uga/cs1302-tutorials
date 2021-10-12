@@ -59,4 +59,4 @@ not relevant to the discussion):
    } // Runnable
 
 The ``Runnable`` interface is considered a *functional interface* since it has one
-abstract method that doesn't match a method in ``Object`` -- that method is ``run``.
+abstract method, ``run``, that doesn't match a method in the ``Object`` class.
