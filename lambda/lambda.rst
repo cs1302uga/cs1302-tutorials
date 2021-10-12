@@ -58,5 +58,17 @@ not relevant to the discussion):
 
    } // Runnable
 
-The ``Runnable`` interface is considered a *functional interface* since it has one
-abstract method, ``run``, that doesn't match a method in the ``Object`` class.
+The ``Runnable`` interface is considered a *functional interface* since it has
+one abstract method, ``run``, that doesn't match a method in the ``Object``
+class. To implement this interface, you might define a class:
+
+.. code:: java
+
+   public class MyRunnable implements Runnable {
+
+       @Override
+       public void run() {
+           System.out.println("hello, world!");
+       } // run
+
+   } // Runnable
