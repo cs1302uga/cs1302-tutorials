@@ -184,4 +184,15 @@ an object created using a lambda expression instead of using
 
       } // Driver
 
-3.  **That's it!**
+   .. rubric:: **Output:**
+
+   .. code:: text
+
+      hello
+      world
+      hello
+      world
+
+3.  **That's it!** The updated code now uses a **lambda expression** to define
+    and create the object that the ``r`` variable refers to instead of the
+    usual syntax involvinf ``new``.
