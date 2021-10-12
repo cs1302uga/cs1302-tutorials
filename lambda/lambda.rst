@@ -170,7 +170,7 @@ an object created using a lambda expression instead of using
    .. rubric:: **Driver.java:**
 
    .. code:: java
-      :linenos:
+      :class: test
 
       public class Driver {
 
