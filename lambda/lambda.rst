@@ -57,3 +57,6 @@ not relevant to the discussion):
        public void run();
 
    } // Runnable
+
+The ``Runnable`` interface is considered a *functional interface* since it has one
+abstract method that doesn't match a method in ``Object`` -- that method is ``run``.
