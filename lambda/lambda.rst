@@ -192,6 +192,10 @@ an object created using a lambda expression instead of using
           } // main
 
       } // Driver
+      
+   .. rubric:: **Pseudo-Memory Diagram:**
+
+   .. image:: lambda2.png
 
    .. rubric:: **Output:**
 
@@ -204,4 +208,4 @@ an object created using a lambda expression instead of using
 
 3.  **That's it!** The updated code now uses a **lambda expression** to define
     and create the object that the ``r`` variable refers to instead of the
-    usual syntax involvinf ``new``.
+    usual syntax involving a separate names class and ``new``.
