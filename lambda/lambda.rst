@@ -110,18 +110,27 @@ Parameter List  Name         Return Type     Type Layout [1]_  Scaffold [2]_
 Now that the functional interface's method has been described,
 including its type layout, we discuss how to define a nameless
 class that implements that interface using a lambda expression.
-Since the class we will be creating has no name, there is no
-need to create a `.java` file for it. Instead, we go directly
-to where the ``Runnable`` variable was declared in the
-previous example:
+The goal of the next few steps is to have ``r.run()`` do the
+same thing that it did in the previous code example, but with
+an object created using a lambda expression instead of using
+``new``. Here are the step:
 
-.. code:: java
+1. Since a lambda expression creates a nameless class, we cannot
+   create a ``.java`` file for it; instead, we will define the class
+   where the object is created. Using the previous code example
+   as a starting point, replace the object instantiation expression
+   ``new MyRunnable()`` with the ``run`` method's scaffold
+   ``() -> { ... }``:
 
-   public class Driver {
+   .. code:: java
 
-       public static void main(String[] args) {
-           Runnable r = () ->
-           r.run();                        // output: hello, world!
-       } // main
+      public class Driver {
 
-   } // Driver
+          public static void main(String[] args) {
+              Runnable r = () -> {
+                  ...
+              };
+              r.run();
+          } // main
+
+      } // Driver
