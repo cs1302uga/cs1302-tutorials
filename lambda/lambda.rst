@@ -60,7 +60,8 @@ not relevant to the discussion):
 
 The ``Runnable`` interface is considered a *functional interface* since it has
 one abstract method, ``run``, that doesn't match a method in the ``Object``
-class. To implement this interface, you might define a class:
+class. To implement this interface, you might define a class, create an object
+of that class elsewhere, then call the object's ``run`` method:
 
 .. code:: java
 
@@ -72,3 +73,14 @@ class. To implement this interface, you might define a class:
        } // run
 
    } // Runnable
+
+.. code:: java
+
+   public class Driver {
+
+       public static void main(String[] args) {
+           Runnable r = new MyRunnable();
+           r.run();
+       } // main
+
+   } // Driver
