@@ -97,7 +97,7 @@ of that class elsewhere, then call the object's ``run`` method:
 
 .. rubric:: **Pseudo-Memory Diagram:**
 
-.. img:: lambda1.png
+.. image:: lambda1.png
 
 .. rubric:: **Output:**
 
