@@ -63,27 +63,46 @@ one abstract method, ``run``, that doesn't match a method in the ``Object``
 class. To implement this interface, you might define a class, create an object
 of that class elsewhere, then call the object's ``run`` method:
 
+.. rubric:: **MyRunnable.java:**
+
 .. code:: java
 
    public class MyRunnable implements Runnable {
 
        @Override
        public void run() {
-           System.out.println("hello, world!");
+           System.out.println("hello");
+           System.out.println("world");
        } // run
 
    } // Runnable
+
+.. rubric:: **Driver.java:**
 
 .. code:: java
 
    public class Driver {
 
+       public static void runTwice(Runnable r) {
+           r.run();
+           r.run();
+       } // runTwice
+
        public static void main(String[] args) {
            Runnable r = new MyRunnable();  // create object
-           r.run();                        // output: hello, world!
+           runTwice(r);                    // calls r.run() twice
        } // main
 
    } // Driver
+
+.. rubric:: **Output:**
+
+.. code:: text
+
+   hello
+   world
+   hello
+   world
 
 The example above illustrates the typical way to implement almost
 any interface. Since ``Runnable`` meets the definition for a
@@ -121,8 +140,30 @@ an object created using a lambda expression instead of using
    create a ``.java`` file for it; instead, we will define the class
    where the object is created. Using the previous code example
    as a starting point, replace the object instantiation expression
-   ``new MyRunnable()`` with the ``run`` method's scaffold
-   ``() -> { ... }``:
+   (``new MyRunnable()``) with the ``run`` method's scaffold
+   we identified earlier (``() -> { ... }``):
+
+   .. code:: java
+
+      public class Driver {
+
+          public static void runTwice(Runnable r) {
+             r.run();
+             r.run();
+          } // runTwice
+
+          public static void main(String[] args) {
+              Runnable r = () -> { ... };
+              runTwice(r);
+          } // main
+
+      } // Driver
+
+   **IMPORTANT:** Take care to note that the semicolon remained!
+
+2. Once the ``run`` method's scaffold is in place, replace `...`
+   with the desired method body, epanding the scaffold's block
+   (i.e., the curly braces) as needed:
 
    .. code:: java
 
@@ -130,9 +171,12 @@ an object created using a lambda expression instead of using
 
           public static void main(String[] args) {
               Runnable r = () -> {
-                  ...
+                  System.out.println("hello");
+                  System.out.println("world")
               };
               r.run();
           } // main
 
       } // Driver
+
+   and replace the `...` with the
