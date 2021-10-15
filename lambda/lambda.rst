@@ -119,7 +119,7 @@ Below is an example that illustrates the difference between using
 a named class and a lambda expression when implementing
 |java_util_function_consumer|_, a functional interface that comes
 with Java (its one abstract method is ``void accept(T t)``).
-`
+
 .. rubric:: **NAMED CLASS:**
 
 .. code:: java
