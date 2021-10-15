@@ -46,162 +46,324 @@ Introduction
 In Java, a **lambda expression** is a special syntax for creating an object that implements
 an interface that only has one abstract method that doesn't match a method in the |java_lang_object|_
 class. Not all interfaces meet that requirement, but any interface that does is called a
-|functional_interface|_. One of the simplest functional interfaces that comes with Java
-is |java_lang_runnable|_, which we display below without its associated documentation (it's
-not relevant to the discussion):
+|functional_interface|_.
+
+Quick Review: Interfaces
+========================
+
+In Java, any interface can be implemented and utilized via the following steps.
+
+1. **Sign the contract:** Create a class in its own `.java` file, and include the
+   appropriate `implements` clause in the class declaration.
+
+2. **Meet the minimum requirements:** Override the abstract methods from the
+   interface so that code compiles.
+
+3. **Meet the full requirements:** Ensure that each overridden method aligns
+   with the expectations outlined in the interface documentation.
+
+4. **Instantiate:** Create one or more objects of the class.
+
+5. **Interact using the interface:** When interacting with the objects,
+   use a variable with the interface as its type so that your code works
+   with any object (of a class) that implements the interface and not
+   just objects of the new class you created.
+
+The code described in step 5 may have been written before you step 1
+is started, especially in cases where other classes that implement the
+interface already exists. The overall process outlined above has real,
+tangible benefites. For example, the new class can:
+
+1. be reused (by utlizing its constructor);
+
+2. have instance variables that allow its objects to manage their state;
+
+3. include helper methods; and
+
+4. include documentation that differs from or adds on to the interface
+   documentation in some way.
+
+All of that sounds great, but what if you don't need one or more
+of those benefits? What if you don't need any of them? Suddenly,
+the five-step process described earlier for implementing the
+interface sounds tedious, especially in cases where the interface
+only has one abstract method.
+
+Functional Interfaces
+=====================
+
+.. |java_util_function_consumer| replace:: ``Consumer<T>``
+.. _java_util_function_consumer: https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html
+
+As mentioned in the introduction, any interface that only has one abstract
+method that doesn't match a method in the |java_lang_object|_ class is a
+**functional interface**, and while they can be implemented and used by
+following the five-step process outlined earlier, Java allows us to
+reduce that down to a two-step process by using something
+**lambda expression** syntax:
+
+1. **Instantiate:** Use a lambda expression to create an object of an
+   unnamed class that implements the interface by defining what the
+   override behavior should be for the one abstract method in the
+   interface (all in one place).
+
+2. **Interact using the interface:** When interacting with the objects,
+   use a variable with the interface as its type so that your code works
+   with any object (of a class) that implements the interface and not
+   just objects of the new class you created.
+
+Example: Named Class vs. Lambda Expression
+******************************************
+
+Below is an example that illustrates the difference between using
+a named class and a lambda expression when implementing
+|java_util_function_consumer|_, a functional interface that comes
+with Java (its one abstract method is ``void accept(T t)``).
+`
+.. rubric:: **NAMED CLASS:**
 
 .. code:: java
 
-   public interface Runnable {
-
-       public void run();
-
-   } // Runnable
-
-The ``Runnable`` interface is considered a *functional interface* since it has
-one abstract method, ``run``, that doesn't match a method in the ``Object``
-class. To implement this interface, you might define a class, create an object
-of that class elsewhere, then call the object's ``run`` method:
-
-.. rubric:: **MyRunnable.java:**
-
-.. code:: java
-
-   public class MyRunnable implements Runnable {
+   // Shouter.java (assume proper package and import statements)
+   public class Shouter implements Consumer<String>() {
 
        @Override
-       public void run() {
-           System.out.println("hello");
-           System.out.println("world");
-       } // run
+       public void accept(String t) {
+           System.out.println(t.toUpperCase());
+       } // accept
 
-   } // Runnable
-
-.. rubric:: **Driver.java:**
+   } // Shouter
 
 .. code:: java
 
+   // Driver.java (assume proper package and import statements)
    public class Driver {
 
-       public static void runTwice(Runnable r) {
-           r.run();
-           r.run();
-       } // runTwice
+       public static void forEach(String[] strings, Consumer<String> consumer) {
+           for (int i = 0; i < strings.length; i++) {
+               String str = strings[i];
+               consumer.accept(str);
+           } // for
+       } // forEach
 
        public static void main(String[] args) {
-           Runnable r = new MyRunnable();  // create object
-           runTwice(r);                    // calls r.run() twice
+           Consumer<String> shout = new Shouter();
+           Driver.forEach(args, shout);
        } // main
 
    } // Driver
 
-.. rubric:: **Pseudo-Memory Diagram:**
+.. code:: text
 
-.. img:: lambda1.png
+   # compile two files, then run:
 
-.. rubric:: **Output:**
+   $ java Driver hello world how are you?
+   HELLO
+   WORLD
+   HOW
+   ARE
+   YOU?
+
+.. rubric:: **USING A LAMBDA EXPRESSION:**
+
+.. code:: java
+
+   // Driver.java (assume proper package and import statements)
+   public class Driver {
+
+       public static void forEach(String[] strings, Consumer<String> consumer) {
+           for (int i = 0; i < strings.length; i++) {
+               String str = strings[i];
+               consumer.accept(str);
+           } // for
+       } // forEach
+
+       public static void main(String[] args) {
+           Consumer<String> shout = (String t) -> System.out.println(t.toUpperCase());
+           Driver.forEach(args, shout);
+       } // main
+
+   } // Driver
 
 .. code:: text
 
-   hello
-   world
-   hello
-   world
+   # compile one file, then run:
 
-The example above illustrates the typical way to implement almost
-any interface. Since ``Runnable`` meets the definition for a
-functional interface, it is also possible to implement ``Runnable``
-using lambda expression syntax. Before we show you the syntax,
-it's important to note different aspects of the abstract method in
-``Runnable`` that made it qualify as a functional interface:
+   $ java Driver hello world how are you?
+   HELLO
+   WORLD
+   HOW
+   ARE
+   YOU?
 
-==============  ===========  ==============  ================  =================
-Parameter List  Name         Return Type     Type Layout [1]_  Scaffold [2]_
-==============  ===========  ==============  ================  =================
-``()``          ``run``      ``void``        ``() -> void``    ``() -> { ... }``
-==============  ===========  ==============  ================  =================
+In the second example that utilizes the lambda expression syntax, we didn't
+create an additional file for a class that implements the interface, but
+we did define a class that implements the interface and make an object
+out of that class. **It all happened on one line:**
 
-.. [1] To construct the "Type Layout," write the parameter list
-   with the variable names omitted, an arrow (``->``), then
-   the return type.
+.. code:: java
 
-.. [2] To construct the "Scaffold," write the parameter list
-   with the variable types omitted, an arrow (``->``), then
-   ``{ ... }`` if the return type is ``void`` and ``{ ... return ?; }``
-   if the return type is anything else.
+   Consumer<String> shout = (String t) -> System.out.println(t.toUpperCase());
 
-Now that the functional interface's method has been described,
-including its type layout, we discuss how to define a nameless
-class that implements that interface using a lambda expression.
-The goal of the next few steps is to have ``r.run()`` do the
-same thing that it did in the previous code example, but with
-an object created using a lambda expression instead of using
-``new``.
+Explaining the Example
+**********************
 
-.. rubric:: **Constructing a Lambda Expression**
+Let's break it down:
 
-1. Since a lambda expression creates a nameless class, we cannot
-   create a ``.java`` file for it; instead, we will define the class
-   where the object is created. Using the previous code example
-   as a starting point, replace the object instantiation expression
-   (``new MyRunnable()``) with the ``run`` method's scaffold
-   we identified earlier (``() -> { ... }``):
+.. code:: java
 
-   .. rubric:: **Driver.java:**
+   Consumer<String> shout = (String t) -> System.out.println(t.toUpperCase());
+   // -------------------|-|-------------------------------------------------|
+   //         1          |3|                       2                         |
+   //                                    the lambda expression
+
+1. First, a reference variable named ``shout`` is declared with type
+   ``Consumer<String>``;
+
+2. A lambda expression is used to **create an object** that has one method
+   by defining what that method should do. In this case, we want the
+   method's type layout o match the abstract method ``accept`` in
+   ``Consumer<String>``, and it does.
+
+3. Assign the object's reference to the variable.
+
+Since we didn't define the object's method in some named class, it is
+considered an object of an unnamed class. That's okay, so long we don't
+need multiple objects of that class.
+
+How to Create a Lambda Expression
+*********************************
+
+The easiest way to create a **lambda expression** is by pretending
+to assign your intended method override to a variable of the
+interface type. Here's an example:
+
+1. Assign your intended method override to a variable of the
+   interface type:
+
+   .. code:: java
+
+      // this won't compile, but it's a good way to get started
+      Consumer<String> shout = @Override public void accept(String t) {
+          return System.out.println(t.toUpperCase());
+      };
+
+2. Remove the annotation (``@Override``), the visibility modifer (``public``),
+   the return type (``void``) and the method name (``accept``):
 
    .. code:: java
 
-      public class Driver {
+      // this still won't compile, but it's only two characters away from working
+      Consumer<String> shout = (String t) {
+          System.out.println(t.toUpperCase());
+      };
 
-          public static void runTwice(Runnable r) {
-             r.run();
-             r.run();
-          } // runTwice
-
-          public static void main(String[] args) {
-              Runnable r = () -> { ... };
-              runTwice(r);
-          } // main
-
-      } // Driver
-
-   **IMPORTANT:** Take care to note that the semicolon remained!
-
-2. Once the ``run`` method's scaffold is in place, replace `...`
-   with the desired method body, epanding the scaffold's block
-   (i.e., the curly braces) as needed:
-
-   .. rubric:: **Driver.java:**
+3. Add an arrow (``->``) between the parameter list and the openning curly
+   brace:
 
    .. code:: java
-      :class: line-numbers
 
-      public class Driver {
+      // this WILL compile; we provided a valid lambda expression!
+      Consumer<String> shout = (String t) -> {
+          System.out.println(t.toUpperCase());
+      };
 
-          public static void runTwice(Runnable r) {
-             r.run();
-             r.run();
-          } // runTwice
+The three-step process above leads to a valid lambda expression (try it);
+however, there's still room for improvement.
 
-          public static void main(String[] args) {
-              Runnable r = () -> {
-                  System.out.println("hello");
-                  System.out.println("world");
-              };
-              runTwice(r);
-          } // main
+1. If the method body only contains a single statement, then we
+   can ommit the curly braces all together and write the lamda
+   expression on a single line:
 
-      } // Driver
+   .. code:: java
 
-   .. rubric:: **Output:**
+      Consumer<String> shout = (String t) -> System.out.println(t.toUpperCase());
 
-   .. code:: text
+   If the only statement is a `return` statement, then the keyword `return`
+   is omitted when writing a lambda expression without curly braces.
 
-      hello
-      world
-      hello
-      world
+2. Specifying the parameter types is optional.
 
-3.  **That's it!** The updated code now uses a **lambda expression** to define
-    and create the object that the ``r`` variable refers to instead of the
-    usual syntax involvinf ``new``.
+   .. code:: java
+
+      Consumer<String> shout = (t) -> System.out.println(t.toUpperCase());
+
+   If we don't include the parameter types in our lambda expression, then
+   Java will try to determine what they are based on context. For example,
+   if we're assigning the created object to a ``Consumer<String>`` variable,
+   then Java knows that the parameter list for ``aceppt`` is ``(String t)``
+   and will automatically convert ``(t)`` to ``(String t)``.
+
+3. If there is exactly one method parameter, then the parentheses for the
+   parameter list are optional.
+
+   .. code:: java
+
+      Consumer<String> shout = t -> System.out.println(t.toUpperCase());
+
+   If the method doesn't have any parameters, then parentheses are still
+   required, and ``() ->`` is used.
+
+More Examples
+*************
+
+In the code presented below, we create three more objects using lambda
+expressions (four total). Using the usual named class approach to
+implementing the interface would have required four ``.java`` files,
+one for each named class. Using the lambda expression approach, all
+four (unnamed) classes are created and instantiated using a single
+``.java`` file, and in this case, all in one method!
+
+.. code:: java
+
+   // Driver.java (assume proper package and import statements)
+   public class Driver {
+
+       public static void forEach(String[] strings, Consumer<String> consumer) {
+           for (int i = 0; i < strings.length; i++) {
+               String str = strings[i];
+               consumer.accept(str);
+           } // for
+       } // forEach
+
+       public static void main(String[] args) {
+           Consumer<String> println = t -> System.out.println(t);
+           Driver.forEach(args, println);
+           System.out.println();
+
+           Consumer<String> shout = t -> System.out.println(t.toUpperCase());
+           Driver.forEach(args, shout);
+           System.out.println();
+
+           Consumer<String> whisper = t -> System.out.println(t.toLowerCase());
+           Driver.forEach(args, whisper);
+           System.out.println();
+
+           Consumer<String> repeat2 = t -> System.out.println((t + " ").repeat(2));
+           Driver.forEach(args, repeat2);
+           System.out.println();
+       } // main
+
+   } // Driver
+
+.. code:: text
+
+   # compile ONE file, then run:
+
+   $ java Driver hello WORLD
+   hello
+   WORLD
+
+   HELLO
+   WORLD
+
+   hello
+   world
+
+   hello hello
+   WORLD WORLD
+
+Video Examples
+==============
+
+**TODO**
