@@ -71,7 +71,7 @@ In Java, any interface can be implemented and utilized via the following steps.
 
 The code described in step 5 may have been written before you step 1
 is started, especially in cases where other classes that implement the
-interface already exists. The overall process outlined above has real,
+interface already exist. The overall process outlined above has real,
 tangible benefites. For example, the new class can:
 
 1. be reused (by utlizing its constructor);
@@ -258,7 +258,7 @@ interface type. Here's an example:
           System.out.println(t.toUpperCase());
       };
 
-3. Add an arrow (``->``) between the parameter list and the openning curly
+3. Add an arrow (``->``) between the parameter list and the opening curly
    brace:
 
    .. code:: java
@@ -272,7 +272,7 @@ The three-step process above leads to a valid lambda expression (try it);
 however, there's still room for improvement.
 
 1. If the method body only contains a single statement, then we
-   can ommit the curly braces all together and write the lamda
+   can omit the curly braces all together and write the lambda
    expression on a single line:
 
    .. code:: java
@@ -366,4 +366,4 @@ four (unnamed) classes are created and instantiated using a single
 Video Examples
 ==============
 
-**TODO**
+**Coming Soon**
