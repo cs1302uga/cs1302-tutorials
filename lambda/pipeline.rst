@@ -67,18 +67,17 @@ appear on the same line, all without modifying the original list:
 
 Instead of expressing the overall computation as a sequence of
 **imperative operations** on the individual elements of a list
-(using a for-loop), let's express them as a *pipeline* of
-**aggregate operations**. Here is an example:
+(using a for-loop), let's express them more simply and concisely
+as a *pipeline* of **aggregate operations**. Here is an example:
 
 .. code:: java
 
    List<String> list = List.<String>of("one", "two   ", "three", "stream", "world");
 
-   Predicate<String> isSmall = item -> item.length() < 6;
-   Function<String, String> toUpperCase = item -> item.toUpperCase();
-   Consumer<String> print = item -> System.out.print(item + " ");
-
-   Pipeline.<String>from(list).keep(isSmall).convert(toUpperCase).forEach(print);
+   Pipeline.<String>from(list)
+       .keep(item -> item.length() < 6)
+       .convert(item -> item.toUpperCase())
+       .forEach(item -> System.out.print(item + " "));
    System.out.println();
 
 .. code:: text
