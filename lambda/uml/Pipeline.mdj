@@ -286,7 +286,7 @@
 											"top": 167,
 											"width": 424.869140625,
 											"height": 12,
-											"text": "+reject(condition: Predicate<T>): Pipeline<T>",
+											"text": "+remove(condition: Predicate<T>): Pipeline<T>",
 											"horizontalAlignment": 0
 										},
 										{
@@ -641,7 +641,7 @@
 							"_parent": {
 								"$ref": "AAAAAAF8jyq7PmXLUyM="
 							},
-							"name": "reject",
+							"name": "remove",
 							"tags": [
 								{
 									"_type": "Tag",
