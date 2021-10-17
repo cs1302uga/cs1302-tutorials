@@ -34,4 +34,62 @@ interface-based polymorphism and generics in Java.
 Introduction
 ============
 
+Processing the elements of a list explicit with multiple for-loops
+can be tedious, repetitive, and potentially error prone. Consider
+the following code that looks at the items in the list, keeps its
+attention on the small items (length less than 6), concerts those
+items to upper case, then prints each one out such that they all
+appear on the same line, all without modifying the original list:
+
+.. code:: java
+
+   List<String> list = List.<String>of("one", "two   ", "three", "stream", "world");
+
+   List<String> copy = List.<String>copyOf(list);
+   List<Integer> result = new LinkedList<Integer>();
+   for (String item: copy) {
+       if (item.length() < 6) {
+           String allCaps = item.toUpperCase();
+           if (!allCaps.contains("h") {
+               result.add(item);
+           } // if
+       } // if
+   } // for
+
+   for (String item: result) {
+       System.out.print(item + " ");
+   } // for
+   System.out.println();
+
+.. code:: text
+
+   ONE HELLO WORLD
+
+Instead of expressing the overall computation as a sequence of
+**imperative operations** on the individual elements of a list
+(using a for-loop), let's express them as a *pipeline* of
+**aggregate operations**. Here is an example:
+
+.. code:: java
+
+   List<String> list = List.<String>of("one", "two   ", "three", "stream", "world");
+
+   Predicate<String> smallItems = item -> item.length() < 6;
+   Function<String, String> toUpperCase = item -> item.toUpperCase();
+   Consumer<String> print = item -> System.out.print(item + " ");
+
+   Pipeline.<String>from(list).keep(smallItems).convert(toUpperCase).forEach(print);
+   System.out.println();
+
+.. code:: text
+
+   ONE HELLO WORLD
+
+In this set of videos, we are going to implement a generic class called
+``Pipeline<T>`` that will enable us to create **pipeline** objects from
+**list** objects (i.e., objects of classes that implements Java's
+``java.util.List<T>`` interface). The goal of a pipeline object is to
+enable us to express our logic as a pipeline of aggregate operations,
+as described above.
+
 .. image:: uml/Pipeline.svg
