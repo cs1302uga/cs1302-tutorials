@@ -74,11 +74,11 @@ Instead of expressing the overall computation as a sequence of
 
    List<String> list = List.<String>of("one", "two   ", "three", "stream", "world");
 
-   Predicate<String> smallItems = item -> item.length() < 6;
+   Predicate<String> isSmall = item -> item.length() < 6;
    Function<String, String> toUpperCase = item -> item.toUpperCase();
    Consumer<String> print = item -> System.out.print(item + " ");
 
-   Pipeline.<String>from(list).keep(smallItems).convert(toUpperCase).forEach(print);
+   Pipeline.<String>from(list).keep(isSmall).convert(toUpperCase).forEach(print);
    System.out.println();
 
 .. code:: text
