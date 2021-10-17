@@ -37,7 +37,7 @@ Introduction
 Processing the elements of a list explicit with multiple for-loops
 can be tedious, repetitive, and potentially error prone. Consider
 the following code that looks at the items in the list, keeps its
-attention on the small items (length less than 6), concerts those
+attention on the small items (length less than 6), converts those
 items to upper case, then prints each one out such that they all
 appear on the same line, all without modifying the original list:
 
@@ -50,9 +50,7 @@ appear on the same line, all without modifying the original list:
    for (String item: copy) {
        if (item.length() < 6) {
            String allCaps = item.toUpperCase();
-           if (!allCaps.contains("h") {
-               result.add(item);
-           } // if
+           result.add(allCaps);
        } // if
    } // for
 
