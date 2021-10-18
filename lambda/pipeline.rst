@@ -95,7 +95,7 @@ Starter Code
 Starter code is available so that you can follow along. To get it, use the
 command below -- it downloads and executes a script that gets the starter code,
 compiles it, and generates the Javadoc documentation website. If you run the
-command on Odin, then it will automatically link `~/public_html/cs1302-lambda`
+command on Odin, then it will automatically link ``~/public_html/cs1302-lambda``
 to the documentation website so that you can access it via your webwork URL.
 
 .. code:: text
