@@ -44,7 +44,7 @@ public class Pipeline<T> {
     /**
      * Perform an action on each item in the pipeline.
      *
-     * @param list the source of items for the pipeline.
+     * @param action a consumer that described the action.
      */
     public void forEach(Consumer<T> action) {
         throw new UnsupportedOperationException("forEach(action): not yet implemented");
@@ -109,6 +109,7 @@ public class Pipeline<T> {
      * Returns the result of combining items in a pairwise fashion from left to
      * right, starting with some initial value.
      *
+     * @param <R> result type
      * @param initial initial value for pairwise combining
      * @param combiner a function that can comine two items into a single result
      * @return the result of combining elements in a pairwise fashion.
