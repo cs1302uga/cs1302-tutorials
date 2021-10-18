@@ -34,6 +34,27 @@ function compile-starter-code() {
     )
 } # compile-starter-code
 
+function publish-doc() {
+    local directory="$1"
+    local reltarget="$2"
+    local rellinkname="$3"
+    local target="$(pwd)/${directory}/${reltarget}"
+    local linkname="~/public_html/${rellinkname}"
+    local hostname=$(hostname)
+    local user="$(whoami)"
+    local url="https://webwork.cs.uga.edu/~${user}/"
+    (
+        if [[ ${hostname} == csci-odin.cs.uga.edu ]]; then
+            if [[ ! -L ${linkname} ]]; then
+                ln -s ${target} ${linkname}
+                echo "   - doc: ${DIR}/doc"
+                echo "     - ${linkname} -> ${target}"
+                echo "     - ${url} -> ${linkname}"
+            fi
+        fi
+    )
+} # publish doc
+
 if [ ! -d $DIR ]; then
     git-fetch-pathspec ${REPO} ${BRANCH} ${PATHSPEC} ${DIR}
     compile-starter-code ${DIR}
@@ -43,6 +64,7 @@ if [ ! -d $DIR ]; then
     echo "   - src: ${DIR}/src"
     echo "   - bin: ${DIR}/bin"
     echo "   - doc: ${DIR}/doc"
+    publish-doc ${DIR} doc ${PATHSPEC}
     echo ""
 else
   >&2 echo "subdirectory ${DIR} already exists"
