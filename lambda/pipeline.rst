@@ -85,8 +85,22 @@ as a *pipeline* of **aggregate operations**. Here is an example:
 In this set of videos, we are going to implement a generic class called
 ``Pipeline<T>`` that will enable us to create **pipeline** objects from
 **list** objects (i.e., objects of classes that implements Java's
-``java.util.List<T>`` interface). The goal of a pipeline object is to
-enable us to express our logic as a pipeline of aggregate operations,
-as described above.
+``java.util.List<T>`` interface). Here is a UML diagram for the class:
 
 .. image:: uml/Pipeline.svg
+
+Starter Code
+============
+
+Starter code is available so that you can follow along. To get it, use the
+command below -- it downloads and executes a script that gets the starter code,
+compiles it, and generates the Javadoc documentation website. If you run the
+command on Odin, then it will automatically link `~/public_html/cs1302-lambda`
+to the documentation website so that you can access it via your webwork URL.
+
+.. code:: text
+
+   $ wget -qO- https://git.io/JKx6v | bash
+
+Video 1: ``forEach`` and ``Consumer<T>``
+========================================
