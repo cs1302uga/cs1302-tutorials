@@ -39,10 +39,10 @@ function publish-doc() {
     local reltarget="$2"
     local rellinkname="$3"
     local target="$(pwd)/${directory}/${reltarget}"
-    local linkname="~/public_html/${rellinkname}"
+    local linkname="${HOME}/public_html/${rellinkname}"
     local hostname=$(hostname)
     local user="$(whoami)"
-    local url="https://webwork.cs.uga.edu/~${user}/"
+    local url="https://webwork.cs.uga.edu/~${user}/${rellinkname}"
     (
         if [[ ${hostname} == csci-odin.cs.uga.edu ]]; then
             if [[ ! -L ${linkname} ]]; then
@@ -64,7 +64,7 @@ if [ ! -d $DIR ]; then
     echo "   - src: ${DIR}/src"
     echo "   - bin: ${DIR}/bin"
     echo "   - doc: ${DIR}/doc"
-    publish-doc ${DIR} doc ${PATHSPEC}
+    publish-doc ${DIR} doc ${DIR}
     echo ""
 else
   >&2 echo "subdirectory ${DIR} already exists"
