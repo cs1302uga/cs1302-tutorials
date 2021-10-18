@@ -34,7 +34,7 @@ public class Employee {
 
     /**
      * Return the last/family name.
-     * @returns the last/family name.
+     * @return the last/family name.
      */
     public String getLastName() {
         return this.lastName;
@@ -42,7 +42,7 @@ public class Employee {
 
     /**
      * Return the first/given name.
-     * @returns the first/given name.
+     * @return the first/given name.
      */
     public String getFirstName() {
         return this.firstName;
@@ -50,7 +50,7 @@ public class Employee {
 
     /**
      * Return the date of birth.
-     * @returns the date of birth.
+     * @return the date of birth.
      */
     public LocalDate getBirthDate() {
         return this.birthDate;
@@ -58,7 +58,7 @@ public class Employee {
 
     /**
      * Return the employment start date.
-     * @returns the employment start date.
+     * @return the employment start date.
      */
     public LocalDate getHireDate() {
         return this.hireDate;
