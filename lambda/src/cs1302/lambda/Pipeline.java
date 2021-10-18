@@ -41,6 +41,11 @@ public class Pipeline<T> {
         return new Pipeline<T>(list);
     } // from
 
+    @Override
+    public String toString() {
+        return String.format("Pipeline%s", this.list.toString());
+    } // toString
+
     /**
      * Perform an action on each item in the pipeline.
      *
