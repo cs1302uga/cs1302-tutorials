@@ -36,7 +36,7 @@
      right, bottom, and center positions.
    * [javafx.geometry.Insets](https://openjfx.io/javadoc/11/javafx.graphics/javafx/geometry/Insets.html) - (class) Used to describe a set of inside offsets 
      for the 4 side of a rectangular area. Often used with the setPadding method.
-   * [javafx.scene.control.ToolBar](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/ToolBar.html) - (class) displays items horizontally (by default) or vertically
+   * [javafx.scene.control.ToolBar](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/ToolBar.html) - (class) displays children horizontally (by default) or vertically
    
 ## RE: Controls
 
@@ -46,6 +46,7 @@
    * [javafx.scene.control.Label](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/Label.html) - (class) Label is a non-editable text control.
    * [javafx.scene.control.ProgressBar](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/ProgressBar.html) - (class) A horizontal progress bar. 
    * [javafx.scene.text.Text](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/text/Text.html) - (class) Defines a node that displays text.
+   * [javafx.scene.control.Separator](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/Separator.html) - (class)  horizontal or vertical separator line, often included as a child in a `Toolbar`
    * [javafx.scene.control.TextField](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/TextField.html) - (class) Text input component.
    
 ## RE: Event Handling
