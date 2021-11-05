@@ -1,6 +1,6 @@
 # Brief Introduction to Java Threads
 
-![Approved for: Spring 2021](https://img.shields.io/badge/Approved%20for-Spring%202021-success)
+![Approved for: Fall 2021](https://img.shields.io/badge/Approved%20for-Fall%202021-blue)
 
 ## Prerequisites
 
