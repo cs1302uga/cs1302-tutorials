@@ -36,6 +36,7 @@
      right, bottom, and center positions.
    * [javafx.geometry.Insets](https://openjfx.io/javadoc/11/javafx.graphics/javafx/geometry/Insets.html) - (class) Used to describe a set of inside offsets 
      for the 4 side of a rectangular area. Often used with the setPadding method.
+   * [javafx.scene.control.ToolBar](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/ToolBar.html) - (class) displays items horizontally (by default) or vertically
    
 ## RE: Controls
 
