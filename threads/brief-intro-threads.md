@@ -23,6 +23,35 @@ https://youtu.be/zCeo15G3nvI
 <img src="https://img.youtube.com/vi/zCeo15G3nvI/0.jpg?20190726" alt="IMAGE ALT TEXT">
 </a>
 
+### Basic Terms
+
+<dl>
+    <dt>thread</dt>
+    <dd>a sequence of instructions emitted by executing a method</dd>
+    <dt>main thread</dt>
+    <dd>the thread for instructions emitted by the main method</dd>
+</dl> 
+
+### Daemon Threads
+
+In Java, every `Thread` object has a boolean property named `daemon` that impacts 
+program termination. Normal termination occurs when the only threads running are 
+all <em>daemon</em> threads.
+
+<dl>
+    <dt>non-deamon thread (<code></code>)</dt>
+    <dd><code>isDaemon() == false</code>; must finish before normal program termination is allowed</dd>
+    <dt>daemon thread</dt>
+    <dd><code>isDaemon() == true</code>; not required to finish before normal program termination is allowed</dd>
+</dl> 
+
+A thread's `daemon` property cannot be changed after the thread has started executing 
+(i.e., after it's `start()` method has been called). When a new thread is created, its  
+`daemon` property is set to the same as the thread that created it. The <em>main thread</em> 
+is a <em>non-daemon thread</em>, so any new threads that are created in the main thread will
+also be non-daemon threads, i.e., unless their `daemon` status is changed to `true` using
+using `setDaemon(true)` before they are started.
+
 ## JavaFX Application Thread
 
 In this video, we briefly discuss the JavaFX Application Cycle and the JavaFX Application Thread 
