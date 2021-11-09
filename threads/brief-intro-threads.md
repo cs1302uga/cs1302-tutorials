@@ -34,23 +34,36 @@ https://youtu.be/zCeo15G3nvI
 
 ### Daemon Threads
 
-In Java, every `Thread` object has a boolean property named `daemon` that impacts 
-program termination. Normal termination occurs when the only threads running are 
-all <em>daemon</em> threads.
+In Java, every `Thread` object has a boolean property named `daemon` that 
+impacts when a program can exit. Under normal conditions, a Java program
+will only exit under two conditions:
 
-<dl>
-    <dt>non-deamon thread (<code></code>)</dt>
-    <dd><code>isDaemon() == false</code>; must finish before normal program termination is allowed</dd>
-    <dt>daemon thread</dt>
-    <dd><code>isDaemon() == true</code>; not required to finish before normal program termination is allowed</dd>
-</dl> 
+1. explicit exit: the `exit(int)` method in the `Runtime` class is called
+   (e.g., as is done by `System.exit(int)`[^1]); or
+   
+2. implicit exit: all the threads currently running are *non-daemon* threads 
+   (i.e., they have their `daemon` property set to `false`).
 
+| Thread Type      | `isDaemon()` | Blocks implicit exit? |
+|------------------|--------------|-----------------------|
+| *non-daemon*[^2] | `false`      | `true`                |
+| *daemon*         | `true`       | `false`               |
+   
 A thread's `daemon` property cannot be changed after the thread has started executing
 (i.e., after it's `start()` method has been called). When a new thread is created, its
-`daemon` property is set to the same as the thread that created it. The *main thread*
-is a *non-daemon thread*, so any new threads that are created in the main thread will
-also be non-daemon threads, i.e., unless their `daemon` status is changed to `true` using
-using `setDaemon(true)` before they are started.
+`daemon` property is set to the same as the thread that created it. 
+
+The *main thread* is a *non-daemon thread*, so any new threads that are 
+created in the main thread will also be non-daemon threads, i.e., unless their 
+`daemon` value is changed to `true` using using `setDaemon(true)` before they 
+are started.
+
+[^1]: [System.exit(int)](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#exit(int))
+
+[^2]: In offocial Java documentation, a non-daemon thread is often referred to as a
+*user thread*; however, we chose not to use that term here since its 
+[usual definition](https://en.wikipedia.org/wiki/Thread_(computing)#User_threads)
+would include both both daemon and non-daemon threads in Java.
 
 ## JavaFX Application Thread
 
