@@ -45,10 +45,10 @@ all <em>daemon</em> threads.
     <dd><code>isDaemon() == true</code>; not required to finish before normal program termination is allowed</dd>
 </dl> 
 
-A thread's `daemon` property cannot be changed after the thread has started executing 
-(i.e., after it's `start()` method has been called). When a new thread is created, its  
-`daemon` property is set to the same as the thread that created it. The <em>main thread</em> 
-is a <em>non-daemon thread</em>, so any new threads that are created in the main thread will
+A thread's `daemon` property cannot be changed after the thread has started executing
+(i.e., after it's `start()` method has been called). When a new thread is created, its
+`daemon` property is set to the same as the thread that created it. The *main thread*
+is a *non-daemon thread*, so any new threads that are created in the main thread will
 also be non-daemon threads, i.e., unless their `daemon` status is changed to `true` using
 using `setDaemon(true)` before they are started.
 
