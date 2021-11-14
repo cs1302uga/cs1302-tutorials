@@ -15,7 +15,8 @@
      methods to help ensure the application life-cycle.
    * [javafx.stage](https://openjfx.io/javadoc/11/javafx.graphics/javafx/stage/package-summary.html) - (package) Provides the top-level container 
      (i.e., "window") classes for JavaFX content.
-   * [javafx.stage.Stage](https://openjfx.io/javadoc/11/javafx.graphics/javafx/stage/Stage.html) - (class) The top level JavaFX container. 
+   * [javafx.stage.Stage](https://openjfx.io/javadoc/11/javafx.graphics/javafx/stage/Stage.html) - (class) The top level JavaFX container.
+   * [javafx.scene.control.Alert](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/Alert.html) - (class) A [dialog box](https://en.wikipedia.org/wiki/Dialog_box) that has one of [these](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/Alert.AlertType.html) types.
    
 ## RE: Scene Graph
    
