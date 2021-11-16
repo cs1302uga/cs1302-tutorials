@@ -1,6 +1,6 @@
 # Setting up your own GitHub Account
 
-![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
+![Approved for: Fall 2021](https://img.shields.io/badge/Approved%20for-Fall%202021-blue)
 
 In this tutorial, we will walk you through creating your own GitHub account, creating a private repository 
 (so your code won't be publicly visible on the web), and cloning and pushing content to your private, 
