@@ -35,6 +35,7 @@
    * [javafx.scene.layout.VBox](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/layout/VBox.html) - (class) Lays out its children in a single vertical column.
    * [javafx.scene.layout.BorderPane](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/layout/BorderPane.html) - (class) Lays out children in top, left, 
      right, bottom, and center positions.
+   * [javafx.scene.layout.TilePane](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/layout/TilePane.html) - lays out its children in a grid of uniformly sized "tiles".
    * [javafx.geometry.Insets](https://openjfx.io/javadoc/11/javafx.graphics/javafx/geometry/Insets.html) - (class) Used to describe a set of inside offsets 
      for the 4 side of a rectangular area. Often used with the setPadding method.
    * [javafx.scene.control.ToolBar](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/ToolBar.html) - (class) displays children horizontally (by default) or vertically
