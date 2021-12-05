@@ -41,14 +41,14 @@ will only exit under two conditions:
 1. explicit exit: the `exit(int)` method in the `Runtime` class is called
    (e.g., as is done by `System.exit(int)`[^1]); or
    
-2. implicit exit: all the threads currently running are *non-daemon* threads 
-   (i.e., they have their `daemon` property set to `false`).
+2. implicit exit: all the threads currently running are *daemon* threads 
+   (i.e., they have their `daemon` property set to `true`) [^2].
 
-| Thread Type      | `isDaemon()` | Blocks implicit exit? |
-|------------------|--------------|-----------------------|
-| *non-daemon*[^2] | `false`      | `true`                |
-| *daemon*         | `true`       | `false`               |
-   
+| Thread Type      | `isDaemon()` | Prevent implicit exit? |
+|------------------|--------------|------------------------|
+| *non-daemon*[^3] | `false`      | `true`                 |
+| *daemon*         | `true`       | `false`                |
+
 A thread's `daemon` property cannot be changed after the thread has started executing
 (i.e., after it's `start()` method has been called). When a new thread is created, its
 `daemon` property is set to the same as the thread that created it. 
@@ -60,7 +60,12 @@ are started.
 
 [^1]: [System.exit(int)](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#exit(int))
 
-[^2]: In offocial Java documentation, a non-daemon thread is often referred to as a
+[^2]: Per the API documentation for the 
+[`Thread` class](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html),
+the implicit exit condition can also be phrased as follows: all started non-daemon threads
+have finished executing.
+
+[^3]: In offocial Java documentation, a non-daemon thread is often referred to as a
 *user thread*; however, we chose not to use that term here since its 
 [usual definition](https://en.wikipedia.org/wiki/Thread_(computing)#User_threads)
 would include both both daemon and non-daemon threads in Java.
