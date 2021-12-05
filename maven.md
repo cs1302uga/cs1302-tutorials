@@ -4,7 +4,7 @@
 
 ## Maven
 
-This tutorial is designed to help you learn about how to setup and work with Java-based 
+This tutorial is designed to help you learn how to setup and work with Java-based 
 Maven projects. While shell scripting is useful in a wide variety of situations, Maven is a more
 powerful option for compiling your Java projects. According to its authors, the [Apache Maven](https://maven.apache.org/)
 tool, named after a [Yiddish word](https://en.wikipedia.org/wiki/Maven) meaning 
@@ -33,6 +33,10 @@ Java version: 11.0.10, vendor: Oracle Corporation, runtime: /usr/local/mepcott/j
 Default locale: en_US, platform encoding: UTF-8
 OS name: "linux", version: "3.10.0-1160.el7.x86_64", arch: "amd64", family: "unix"
 ```
+
+If you are on Odin and the `mvn` command is not recognized, then please
+ensure that you have setup the CSCI 1302 shell profile according to the
+instructions provided [here](https://github.com/cs1302uga/cs1302-tutorials/blob/master/unix/unix-tutorial.rst#bash-profile).
    
 ## Creating a Project
 
