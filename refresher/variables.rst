@@ -6,6 +6,9 @@ Refresher: Reference Variables
 
    Approved for: Fall 2021
 
+.. contents:: Table of Contents
+   :depth: 2
+
 Introduction
 ------------
 
@@ -79,7 +82,7 @@ at location ``800`` is ``null``.
 
 ::
 
-   800: [ null ]  
+   800: [ null ]
 
 Since using the variable name is more readable and doesn’t require us to
 choose an arbitrary address, it is more common to diagram this using the
@@ -118,7 +121,7 @@ Java.
 
 ::
 
-     800: [ 12048 ]  
+     800: [ 12048 ]
                 ...
    12048: [ scanner object contents ... ]
 
