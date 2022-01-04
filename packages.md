@@ -59,13 +59,18 @@ You should ask questions on Piazza if you are unable to proceed or if some aspec
 
 ## Default Package 
 
-Here, the `src` directory is known as the **default package** for source code.
-It is the base directory for packages that you will create. 
-It is also an unnamed package where package-less `.java` files can be placed for convenience when developing small or 
-temporary applications or when just beginning development 
-[[2]](https://docs.oracle.com/javase/specs/jls/se8/html/jls-7.html). 
-   
-Let's try it! 
+Here, the `src` directory is the location of the **default package** (proper noun) 
+for source code. The default package contains classes (and other types) that are
+not in a named package. When developing small or temporary applications, it is a
+convenient place for package-less `.java` files 
+[[2]](https://docs.oracle.com/javase/specs/jls/se8/html/jls-7.html).
+The default package location for source code also serves as the base directory 
+for named packages that you will create. 
+
+Let's dive in! The steps below show you how to create, compile, and execute a class 
+in the default package (i.e., a class in a package-less `.java` file). Once you
+are comfortable with that, move on to the next section to learn about
+named packages.
    
 1. Using Emacs, create a basic "Hello, World!" program in a driver class
    called `HelloWorld` in the default package directory for source code (the `src` directory).
