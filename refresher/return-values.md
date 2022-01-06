@@ -29,8 +29,8 @@ public static Object doSomething() {
 In this example, the variable `x` either has `null` as its value or a
 reference to some object. In either case, since `Object` is always a
 compatible superclass, the value of `x` can be returned. **However, you
-should treat this as if you are assigning \`\`x\`\` to a variable of
-type \`\`Object\`\` via the \`\`return\`\` statement.** That is, the
+should treat this as if you are assigning `x` to a variable of
+type `Object` via the `return` statement.** That is, the
 reference value being returned will now be treated as a reference of
 type `Object`, regardless of the type of object actually being referred
 to.
