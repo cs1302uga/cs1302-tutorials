@@ -1,12 +1,10 @@
 Refresher: Reference Variables
 ==============================
 
-.. figure:: https://img.shields.io/badge/Approved%20for-Fall%202021-blue
-   :alt: Approved for: Fall 2021
+.. image:: https://img.shields.io/badge/Approved%20for-Spring%202022-purple
+   :alt: Approved for: Spring 2022
 
-   Approved for: Fall 2021
-
-.. contents:: Table of Contents
+.. contents::
    :depth: 2
 
 Introduction
@@ -25,25 +23,25 @@ memory addresses. Every declared variable has the following:
    want to use to refer to the associated data.
 
 According to `Chapter 4 of the Java Language
-Specification <https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.10.1>`__,
+Specification <https://docs.oracle.com/javase/specs/jls/se17/html/jls-4.html#jls-4.10.1>`__,
 
    There are two kinds of types in the Java programming language:
    primitive types
-   (`§4.2 <https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.2>`__)
+   (`§4.2 <https://docs.oracle.com/javase/specs/jls/se17/html/jls-4.html#jls-4.2>`__)
    and reference types
-   (`§4.3 <https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.3>`__).
+   (`§4.3 <https://docs.oracle.com/javase/specs/jls/se17/html/jls-4.html#jls-4.3>`__).
    There are, correspondingly, two kinds of data values that can be
    stored in variables, passed as arguments, returned by methods, and
    operated on: primitive values
-   (`§4.2 <https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.2>`__)
+   (`§4.2 <https://docs.oracle.com/javase/specs/jls/se17/html/jls-4.html#jls-4.2>`__)
    and reference values
-   (`§4.3 <https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.3>`__).
+   (`§4.3 <https://docs.oracle.com/javase/specs/jls/se17/html/jls-4.html#jls-4.3>`__).
 
 Reference Types Overview
 ------------------------
 
-In Java, the reference types
-(`§4.3 <https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.3>`__)
+In Java, the **reference types**
+(`§4.3 <https://docs.oracle.com/javase/specs/jls/se17/html/jls-4.html#jls-4.3>`__)
 are class types, interface types, and array types.
 
 An **object** is really just a collection of variables that are defined
@@ -191,24 +189,25 @@ Consider the following reference type variable declaration:
    SomeType varName;
 
 The values that can be assigned to ``varName`` are ``null`` and any
-reference to an object whose type is compatible with ``SomeType``. In
-Java, types are compatible if they are the same or if the variable type
-is a superclass or interface of the reference type being assigned.
+reference to an object whose type is compatible with ``SomeType``.
+In Java, a reference to an object of a particular type is always
+compatible with a variable of the same type. Here are some examples:
+
+.. code:: java
+
+   Scanner scan = new Scanner(System.in); // same types
+   String str = "Hello";                  // same types
+
+Object references are also compatible with a variable when the
+type of that is a superclass or interface of the reference type
+being assigned. We will discuss this in more detail later in the
+semester once interfaces and inheritance are introduced.
 
 When you invoke a constructor using ``new SomeClassName()`` (or
 similar), the type of the reference produced by the expression is the
 same as the class name. This reference can be assigned to any compatible
 variable or returned in any method with a compatible return type.
 
-Common Examples
-~~~~~~~~~~~~~~~
-
-.. code:: java
-
-   Scanner scan = new Scanner(System.in); // same types
-   String str = "Hello";                  // same types
-   Object obj = new String("cool");       // compatible superclass
-   Drivable drv = new Car(120.0);         // compatible interface
 
 Return Value Example
 ~~~~~~~~~~~~~~~~~~~~
@@ -288,7 +287,7 @@ a ``Scanner`` variable is okay. However, we know this will probably
 cause an issue because the object being referred to actually has type
 ``String``. Although this compiles, if you were to run the code, you
 would get a
-```ClassCastException`` <https://docs.oracle.com/javase/8/docs/api/java/lang/ClassCastException.html>`__
+`ClassCastException <https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/ClassCastException.html>`__
 since a ``Scanner`` variable cannot actually refer to a ``String``
 object. This exception is thrown to indicate that the code has attempted
 to cast an object reference to an incompatible reference type.
