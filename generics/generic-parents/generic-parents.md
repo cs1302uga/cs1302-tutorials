@@ -6,13 +6,13 @@
 
 ## Generic Interfaces
 
-1. Look at the [`java.lang.Comparable`](https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html)
+1. Look at the [`java.lang.Comparable`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Comparable.html)
    interface. 
    
    * This generic interface is known as `Comparable<T>`, and its FQN is `java.lang.Comparable`.
    * The interface documentation goes into a lot of detail (as it should), but this interface 
      is responsible for defining the semantics of the 
-     [`compareTo`](https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html#compareTo-T-)
+     [`compareTo`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Comparable.html#compareTo-T-)
      method. 
      
    The entire interface, sans documentation, is as follows:
@@ -27,7 +27,7 @@
    } // Comparable<T>
    ```
    
-1. Now let's look at the [`java.lang.String`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)
+1. Now let's look at the [`java.lang.String`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html)
    class, which is known to implement the `Comparable` interface. 
    
    * The class declaration for the `String` class is:
@@ -39,7 +39,7 @@
      As we can see, it implements `Comparable<String>`.
      
    * Sure enough, when we look at `String` class's 
-     [`compareTo`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#compareTo-java.lang.String-) 
+     [`compareTo`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html#compareTo-java.lang.String-) 
      method, we see that `T` has been replaced with `String` as expected. Furthermore,
      we see a note that says:
      

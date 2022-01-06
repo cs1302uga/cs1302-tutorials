@@ -373,7 +373,7 @@ In Java, you do not have to import classes that are in the same package. However
 note that `import` statements are actually never required in Java. We just use them for convenience. 
 Assuming the corresponding default package for class's package is on the class path when compiling 
 and/or running, you can always refer to a class by its fully qualified name. Consider two uses of
-[`java.util.Random`](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html) below:
+[`java.util.Random`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Random.html) below:
 
 ```java
 // assuming the class was imported

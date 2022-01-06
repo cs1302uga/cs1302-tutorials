@@ -32,7 +32,7 @@ that its type will be replaced with some reference type. This is important
 because we wrote a line of code that calls a method using `o`. What methods
 are available? As written, the only methods that we can call using `o` are
 those that are defined in 
-[`Object`](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html).
+[`Object`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html).
 We called `equals(elem)` using `o`. That's okay since the 
 `equals` method is declared in the `Object` class. 
 
@@ -72,12 +72,12 @@ for a generic type parameter is called a upper bound, because you can only
 replace the type parameter with that bound or reference types that are below
 it in the overall hierarchy. Here are some examples of types that work
 for `<T extends Comparable<T>>`:
-* [`String`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)
+* [`String`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html)
   works because it's compatible with `Comparable<String>`
-* [`Integer`](https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html)
+* [`Integer`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html)
   works because it's compatible with `Comparable<Integer>` Integer implement 
 
-If you inspect the [`Comparable`](https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html)
+If you inspect the [`Comparable`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Comparable.html)
 interface, you'll see that it defines the `compareTo` method. This method is
 not defined in `Object`, however, we can call it in the example using `o` because
 we've restricted `T` using an upper bound to those reference types that have 
@@ -109,7 +109,7 @@ Here is an example with multiple upper bounds:
 ```
 
 In this example, `T` can be replaced with something like 
-[`CharBuffer`](https://docs.oracle.com/javase/8/docs/api/java/nio/CharBuffer.html)
+[`CharBuffer`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/CharBuffer.html)
 since `CharBuffer` is compatible with both `Comparable<CharBuffer>` and `Appendable`.
 
 ### Extending the First Example
