@@ -80,9 +80,9 @@ Since using the variable name is more readable and doesn’t require us to
 choose an arbitrary address, it is more common to diagram this using the
 variable name:
 
-    +------+
+      +------+
     s | null |
-    +------+
+      +------+
 
 ### Example 2: Refer to Some Object
 
@@ -115,10 +115,10 @@ It is more common to diagram this using the variable name and an arrow
 to the object (since we may not know or care what the actual value of
 the memory address of `s`):
 
-    +--+     +----------------+
+      +--+     +----------------+
     s | -|----◆|                |
-    +--+     |                |
-             +----------------+
+      +--+     |                |
+               +----------------+
 
 **Important:** When a method is called using `s` (for example,
 `s.nextLine()`), the object that `s` refers to is known as the **calling
@@ -149,14 +149,14 @@ variable `t` is declared with `Scanner` as its type; ii) the value of
 `t`. Since the value of `t` is now the same as the value of `s`, we
 might say that `s` and `t` both refer to the same `Scanner` object.
 
-    +--+     +----------------+
+      +--+     +----------------+
     s | -|----◆|                |
-    +--+     |                |
-             +----------------+
-               ◆
-    +--+       |
+      +--+     |                |
+               +----------------+
+                 ◆
+      +--+       |
     t | -|-------+
-    +--+
+      +--+
 
 This is an interesting scenario because the calling object for `s` and
 the calling object for `t` are now the same object!
