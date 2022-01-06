@@ -207,7 +207,7 @@ Javadoc comments in the interface.
    
    **NOTE:** The only other methods available via a reference variable with an interface type
    are the methods listed in the 
-   [`java.lang.Object`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html)
+   [`java.lang.Object`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html)
    class, which are common to all objects in Java. We will come back to the `Object` class
    in a future tutorial or reading, but it includes methods like `equals` and `toString`. 
    

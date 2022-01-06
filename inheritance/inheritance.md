@@ -91,7 +91,7 @@ in which they are declared.
 ### The `Object` Class
 
 According the Java Language Specification, the
-[`java.lang.Object`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html)
+[`java.lang.Object`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html)
 class is the superclass for all other classes [1]. Take a few moments to look through
 the `Object` class documentation. Write down any methods you recognize and may have used in the past
 in your notes. Remember, all classes that you create automatically inherit those methods. That is,

@@ -34,7 +34,7 @@ two things happen:
 1. the normal flow of control is disrupted.
 
 You have likely encountered the dreaded
-[`NullPointerException`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/NullPointerException.html)
+[`NullPointerException`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/NullPointerException.html)
 before reading this tutorial. If not, it's easy to create a program that will
 throw a `NullPointerException` object:
 
@@ -164,13 +164,13 @@ Let's look at an example.
    Exception in thread "main" java.lang.ArithmeticException: / by zero
       at exceptions.Unchecked.main(Unchecked.java:5)
    ```
-   An [`ArithmeticException`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ArithmeticException.html)
+   An [`ArithmeticException`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/ArithmeticException.html)
    (specifically, a divide by zero) caused our program to crash. Since `ArithmeticException` is an **unchecked exception**, the
    Java compiler did not force us (the programmer) to catch or propagate this exception.  It is completely up to the programmer to decide
    whether or not to handle exceptions of this type. You've probably experienced other, unchecked exceptions such as:
-   [`StringIndexOutOfBoundsException`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StringIndexOutOfBoundsException.html),
-   [`NullPointerException`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/NullPointerException.html),
-   [`NumberFormatException`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/NumberFormatException.html), etc.
+   [`StringIndexOutOfBoundsException`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/StringIndexOutOfBoundsException.html),
+   [`NullPointerException`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/NullPointerException.html),
+   [`NumberFormatException`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/NumberFormatException.html), etc.
 
 1. On Odin, create the class `exceptions.Checked` containing the following code:
 
@@ -237,7 +237,7 @@ Let's look at an example.
 
 For now, we will use a simple method for checking if an exception is checked or unchecked.
 
-1. Visit the Java API page for [`ArithmeticException`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ArithmeticException.html).
+1. Visit the Java API page for [`ArithmeticException`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/ArithmeticException.html).
 
 1. At the top of the page, there is a hierarchy of Java classes which looks like this:
 
@@ -247,7 +247,7 @@ For now, we will use a simple method for checking if an exception is checked or 
    you cannot find `java.lang.RuntimeException` in the hierarchy for a given exception, then that tells you it is a checked exception.
 
 1. For an example of a checked exception, see
-[`FileNotFoundException`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileNotFoundException.html)
+[`FileNotFoundException`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/FileNotFoundException.html)
 
 ## Multiple Catch Blocks
 
@@ -266,7 +266,7 @@ Now that you have seen how to handle exceptions in code written by others
 that can throw exceptions, it's important understand how and why you can
 throw exceptions yourself. In Java, the `throw` keyword is used to explicitly
 throw an exception. Here is an example where we create an
-[`IllegalArgumentException`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/IllegalArgumentException.html)
+[`IllegalArgumentException`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html)
 and explicitly throw it:
 
 ```java

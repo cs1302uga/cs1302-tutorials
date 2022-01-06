@@ -58,10 +58,10 @@ created in the main thread will also be non-daemon threads, i.e., unless their
 `daemon` value is changed to `true` using using `setDaemon(true)` before they 
 are started.
 
-[^1]: [System.exit(int)](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#exit(int))
+[^1]: [System.exit(int)](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/System.html#exit(int))
 
 [^2]: Per the API documentation for the 
-[`Thread` class](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html),
+[`Thread` class](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Thread.html),
 the implicit exit condition can also be phrased as follows: all started non-daemon threads
 have finished executing.
 

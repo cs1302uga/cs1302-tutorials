@@ -177,9 +177,9 @@ object based on the key values associated with key frames in a `Timeline`.
 ### Timeline Example
 
 Here is an example that prints the current time (using 
-[`LocalTime`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html)) to 
+[`LocalTime`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalTime.html)) to 
 standard output every two (2) seconds (specified using
-[`Duration`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html)), 
+[`Duration`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Duration.html)), 
 indefinitely:
 
 ```java
