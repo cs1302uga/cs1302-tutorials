@@ -38,10 +38,10 @@ Introduction
 .. _functional_interface: https://docs.oracle.com/javase/specs/jls/se11/html/jls-9.html#jls-9.8
 
 .. |java_lang_object| replace:: ``Object``
-.. _java_lang_object: https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html
+.. _java_lang_object: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html
 
 .. |java_lang_runnable| replace:: ``Runnable``
-.. _java_lang_runnable: https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runnable.html
+.. _java_lang_runnable: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Runnable.html
 
 In Java, a **lambda expression** is a special syntax for creating an object that implements
 an interface that only has one abstract method that doesn't match a method in the |java_lang_object|_
@@ -93,7 +93,7 @@ Functional Interfaces
 =====================
 
 .. |java_util_function_consumer| replace:: ``Consumer<T>``
-.. _java_util_function_consumer: https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html
+.. _java_util_function_consumer: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Consumer.html
 
 As mentioned in the introduction, any interface that only has one abstract
 method that doesn't match a method in the |java_lang_object|_ class is a

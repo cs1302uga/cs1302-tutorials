@@ -7,13 +7,13 @@
    **TO BE CONTINUED...**
 
 .. |api_queue| replace:: ``Queue<E>``
-.. _api_queue: https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html
+.. _api_queue: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Queue.html
 
 .. |api_queue_offer| replace:: ``offer``
-.. _api_queue_offer: https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#offer(E)
+.. _api_queue_offer: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Queue.html#offer(E)
 
 .. |api_assertion_error| replace:: ``AssertionError``
-.. _api_assertion_error: https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/AssertionError.html
+.. _api_assertion_error: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/AssertionError.html
 
 .. |wiki_queue| replace:: queue
 .. _wiki_queue: https://en.wikipedia.org/wiki/Queue_(abstract_data_type)
