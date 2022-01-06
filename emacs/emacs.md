@@ -1,6 +1,6 @@
 # Emacs Tutorial
 
-![Approved for: Fall 2021](https://img.shields.io/badge/Approved%20for-Fall%202021-blue)
+![Approved for: Spring 2022](https://img.shields.io/badge/Approved%20for-Spring%202022-purple)
 
 ![Emacs Welcome Screen](welcome.PNG)
 
