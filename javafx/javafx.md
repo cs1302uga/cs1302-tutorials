@@ -29,22 +29,6 @@ page for direct links to commonly used classes.
    Also, the `-X` and `-Y` options can be used individually with or without each other. 
    See the manual page for `ssh` for more information about the differences between
    these two options.
-   
-1. First, check your Java version:
-
-   ```
-   $ java -version
-   ```
-   
-   ```
-   java version "11.0.12" 2021-07-20 LTS
-   Java(TM) SE Runtime Environment 18.9 (build 11.0.12+8-LTS-237)
-   Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.12+8-LTS-237, mixed mode
-   ```
-   
-   **If you do not see the exact same output presented above,** then please ensure that
-   you have followed the instructions provided at the beginning of the semester for
-   [How to Connect to Odin & First Steps](https://github.com/cs1302uga/cs1302-exercises/blob/master/misc/OdinSetup.md).
 
 1. Use the following command to download and execute a shell script that retrieves 
    the starter code for this tutorial and places it into a subdirectory 
