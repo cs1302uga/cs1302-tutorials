@@ -238,7 +238,7 @@ lists the contents of a directory in a tree-like format.
 ``ls -l``, ``ls -lh``
 +++++++++++++++++++++
 
-By defauly, the ``ls`` command displays the contents of a directory using its "simple"
+By default, the ``ls`` command displays the contents of a directory using its "simple"
 output format. A "long" output option can be specified by supplying a ``-l`` as a
 command-line argument. In addition to the name of each file, additional information
 is included in the "long" output format, as described below the next few examples.
