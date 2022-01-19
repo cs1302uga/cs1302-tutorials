@@ -1,6 +1,6 @@
 # Command-Line Arguments
 
-![Approved for: Fall 2021](https://img.shields.io/badge/Approved%20for-Fall%202021-blue)
+![Approved for: Spring 2022](https://img.shields.io/badge/Approved%20for-Spring%202022-purple)
 
 When working in a Unix-like environment, programs are launched when the user
 enters the program's name into the shell (i.e., they type it in, then press
