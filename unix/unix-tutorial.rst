@@ -146,6 +146,9 @@ followed by lines prefixed with ``[cs1302]`` when you login to Odin.
   .. code-block:: shell
 
      $ /usr/local/mepcott/cs1302.enable
+     
+  .. code-block:: shell
+  
      #           |-------|
      #               |
      #    MUST USE "mepcott" HERE
