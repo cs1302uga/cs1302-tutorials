@@ -3,10 +3,10 @@
 ![Approved for: Spring 2022](https://img.shields.io/badge/Approved%20for-Spring%202022-purple) 
 
 JavaFX is a library for creating and delivering applications with graphical user interfaces (GUIs)
-in Java. In this tutorial, we will use JavaFX 11 along with Java 11. The API documentation for
+in Java. In this tutorial, we will use JavaFX 17 along with Java 17. The API documentation for
 the many packages included with JavaFX can be found 
-[here](https://openjfx.io/javadoc/11/). You can use the search feature on the API website to find
-a particular class or use the [JavaFX 11 Bookmarks](https://github.com/cs1302uga/cs1302-tutorials/blob/master/javafx/javafx-bookmarks.md)
+[here](https://openjfx.io/javadoc/17/). You can use the search feature on the API website to find
+a particular class or use the [JavaFX 17 Bookmarks](https://github.com/cs1302uga/cs1302-tutorials/blob/master/javafx/javafx-bookmarks.md)
 page for direct links to commonly used classes.
 
 ## Getting Started
@@ -58,8 +58,8 @@ page for direct links to commonly used classes.
         on Odin.
 	
       * `--add-modules javafx.controls`: JavaFX is organized into 7 different modules. This option
-        tells `javac` which modules to include. A list of the modules in JavaFX 11 can be found 
-	[here](https://openjfx.io/javadoc/11/).
+        tells `javac` which modules to include. A list of the modules in JavaFX 17 can be found 
+	[here](https://openjfx.io/javadoc/17/).
 
 1. Run the compiled code using the command below:
 
@@ -69,7 +69,7 @@ page for direct links to commonly used classes.
    
    Notice the use of the `-p` and `add-modules` command line arguments as in the previous step. 
    
-1. If the previous command was successful, then one of the following things should happen:
+1. If the previous command was successful (it may not be and that's okay), then one of the following things should happen:
    
    1. A small GUI app containing the text "Hello, World" will appear on your screen. This may appear in another
       desktop or minimized if your computer utilizes multiple windows.
@@ -84,9 +84,7 @@ page for direct links to commonly used classes.
       Error in glXCreateNewContext, remote GLX is likely disabled
       ```
       
-   1. **IS THIS ONE POSSIBLE WITH JAVAFX 11?**
-   
-      A scary <a name="fbConfigs2">error message</a> similar to the following will appear and no GUI app will appear 
+   1. A scary <a name="fbConfigs2">error message</a> similar to the following will appear and no GUI app will appear 
       on your screen (don't panic):
       
       ```
@@ -124,7 +122,7 @@ page for direct links to commonly used classes.
 ## High-Level Walkthrough 
 
 1. In JavaFX, applications (or apps) are created by creating a class that extends the
-   [`javafx.application.Application`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/application/Application.html)
+   [`javafx.application.Application`](https://openjfx.io/javadoc/17/javafx.graphics/javafx/application/Application.html)
    class and overriding the `start` method. In the starter code, inspect the class declaration inside of `ExampleApp.java`.
    We will explain the inside of the `start` method shortly.
    
@@ -137,21 +135,21 @@ page for direct links to commonly used classes.
      exception relates to a timeout issue with the X-forwarding -- in this case, we want to inform the user that
      they can logout, then log back in to resolve the problem.
      
-1. The [`launch`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/application/Application.html#launch(java.lang.Class,java.lang.String...))
+1. The [`launch`](https://openjfx.io/javadoc/17/javafx.graphics/javafx/application/Application.html#launch(java.lang.Class,java.lang.String...))
    launches the app by initiating the JavaFX application life-cycle, a sequence of steps that occur over the life
    of the launched application. The JavaFX runtime does the following, in order, whenever an application is launched:
 
    1. Constructs an instance of the specified `Application` subclass;
-   1. Calls the app's [`init`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/application/Application.html#init())
+   1. Calls the app's [`init`](https://openjfx.io/javadoc/17/javafx.graphics/javafx/application/Application.html#init())
       method, which the programmer may have overidden;
-   1. Creates a `Stage` object and calls the app's [`start`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/application/Application.html#start(javafx.stage.Stage))
+   1. Creates a `Stage` object and calls the app's [`start`](https://openjfx.io/javadoc/17/javafx.graphics/javafx/application/Application.html#start(javafx.stage.Stage))
       method with a reference to that `Stage` object;
    1. Waits for the app to finish, which happens when either of the following occur:
       
-      * the app calls [`Platform.exit`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/application/Platform.html#exit())
+      * the app calls [`Platform.exit`](https://openjfx.io/javadoc/17/javafx.graphics/javafx/application/Platform.html#exit())
       * the last window has been closed and the `implicitExit` attribute on `Platform` is true -- this is the default.
     
-   1. Calls the app's [`stop`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/application/Application.html#stop()) 
+   1. Calls the app's [`stop`](https://openjfx.io/javadoc/17/javafx.graphics/javafx/application/Application.html#stop()) 
       method, which the programmer may have overidden;
 
 ## Mid-Level Walkthrough 
@@ -170,13 +168,13 @@ page for direct links to commonly used classes.
       
    1. By default, a stage is not visible. You must initialize it with a reference to a `Scene` object 
       before making it visible. You should refer to the API documentation for the 
-      [`Stage`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/stage/Stage.html) class about
+      [`Stage`](https://openjfx.io/javadoc/17/javafx.graphics/javafx/stage/Stage.html) class about
       different properties a stage can have, including decorations and modality options.
    
    1. What is a `Scene` object? In JavaFX, a scene is the container for all content in a scene graph. The term
       "scene graph" is just a fancy term for a structured hierarchy of the nodes / components contained in a
       particular scene. We use the term "node" because all such objects have an upper bound of 
-      [`javafx.scene.Node`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/Node.html).
+      [`javafx.scene.Node`](https://openjfx.io/javadoc/17/javafx.graphics/javafx/scene/Node.html).
    
       * There can only be one `Scene` on a `Stage` at a time, and a `Scene` can only be on one `Stage` at a time. 
       * You may swap scenes on a `Stage` at any time so long as the call to `setScene` is made on the 
@@ -192,8 +190,8 @@ page for direct links to commonly used classes.
           |
       hello: Text
       ```
-      The "root" of this scene graph is an object of the [`HBox`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/layout/HBox.html)
-      container class. This object has one child, an object of the [`Text`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/text/Text.html) 
+      The "root" of this scene graph is an object of the [`HBox`](https://openjfx.io/javadoc/17/javafx.graphics/javafx/scene/layout/HBox.html)
+      container class. This object has one child, an object of the [`Text`](https://openjfx.io/javadoc/17/javafx.graphics/javafx/scene/text/Text.html) 
       class. 
 
 1. Before you continue, you should note what each line in the `start` method of `ExampleApp.java` is doing by
@@ -212,18 +210,18 @@ page for direct links to commonly used classes.
       hello: Text
       ```
       The "root" of the containment hierarchy is an object of the 
-      [`Stage`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/stage/Stage.html)
+      [`Stage`](https://openjfx.io/javadoc/17/javafx.graphics/javafx/stage/Stage.html)
       container class. The `stage` object contains the 
-      [`Scene`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/Scene.html).
+      [`Scene`](https://openjfx.io/javadoc/17/javafx.graphics/javafx/scene/Scene.html).
    
 ## Events and Event Handlers
 
-In JavaFX, nodes can generate [`Event`](https://openjfx.io/javadoc/11/javafx.base/javafx/event/Event.html)
+In JavaFX, nodes can generate [`Event`](https://openjfx.io/javadoc/17/javafx.base/javafx/event/Event.html)
 objects. This can happen automatically or in response to user input. Each event has a corresponding event handler,
 i.e., a method that is registered to handle the event when its generated. Let's add a button to `ExampleApp`, then
 register an event handler for one of the events the button might generate.
 
-1. In `ExampleApp.java`, import the [`Button`](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/Button.html),
+1. In `ExampleApp.java`, import the [`Button`](https://openjfx.io/javadoc/17/javafx.controls/javafx/scene/control/Button.html),
    then add the following line immediately after the line that creates the `Text` object:
    ```java
    Button button = new Button("Click me!");
@@ -249,7 +247,7 @@ register an event handler for one of the events the button might generate.
      button's style to change.
      
 1. When a user clicks on a button, that causes the button to generate an
-   [`ActionEvent`](https://openjfx.io/javadoc/11/javafx.base/javafx/event/ActionEvent.html) object.
+   [`ActionEvent`](https://openjfx.io/javadoc/17/javafx.base/javafx/event/ActionEvent.html) object.
    You can register an event handler for this event by calling the `setOnAction` method. Here is the
    signature of the `setOnAction` method:
    ```java
@@ -257,7 +255,7 @@ register an event handler for one of the events the button might generate.
    ```
 
 1. As you can see, to call the `setOnAction` method, we will need to supply a reference to an `EventHandler<ActionEvent>`
-   object. It turns out that [`EventHandler<T>`](https://openjfx.io/javadoc/11/javafx.base/javafx/event/EventHandler.html)
+   object. It turns out that [`EventHandler<T>`](https://openjfx.io/javadoc/17/javafx.base/javafx/event/EventHandler.html)
    is an interface. This gives us many options. It also turns out that this interface is a functional interface,
    which means that we can use a lambda expression. We point out that `EventHandler<T>` is an interface before 
    to remind you that you can always implement the interface the interface in the usual way instead of using a
@@ -288,8 +286,8 @@ register an event handler for one of the events the button might generate.
 
 ## References
 
-* [JavaFX 11 Bookmarks](https://github.com/cs1302uga/cs1302-tutorials/blob/master/javafx/javafx-bookmarks.md)
-* [JavaFX 11 API Documentation](https://openjfx.io/javadoc/11/)
+* [JavaFX 17 Bookmarks](https://github.com/cs1302uga/cs1302-tutorials/blob/master/javafx/javafx-bookmarks.md)
+* [JavaFX 17 API Documentation](https://openjfx.io/javadoc/17/)
 
 <hr/>
 
