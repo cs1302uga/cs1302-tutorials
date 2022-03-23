@@ -1,11 +1,11 @@
 # JavaFX Custom Component Tutorial
 
-![Approved for: Fall 2021](https://img.shields.io/badge/Approved%20for-Fall%202021-blue)
+![Approved for: Spring 2022](https://img.shields.io/badge/Approved%20for-Spring%202022-purple) 
 
 JavaFX is a library for creating and delivering applications with graphical user interfaces (GUIs)
-in Java. In this tutorial, we will use JavaFX 11. The API documentation for
+in Java. In this tutorial, we will use JavaFX 17. The API documentation for
 the many packages included ith JavaFX can be found 
-[here](https://openjfx.io/javadoc/11/).
+[here](https://openjfx.io/javadoc/17/).
 
 ## Course-Specific Learning Outcomes
 * **LO2.a:** Identify redundancy in a set of classes and interfaces, then refactor
