@@ -42,7 +42,7 @@ Here is the general layout for a generic method in Java:
 [visibility] [static] <PlaceholderType> ReturnType methodName([params])
 ```
 
-* `<PlaceholderType>` denotes the reference types that are replaced when
+* `<PlaceholderType>` denotes the *type parameters*, i.e., the reference types that are replaced when
   the method is invoked. 
   
   * Enclosed in angle brackets: `<`, `>`.
