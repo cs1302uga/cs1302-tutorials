@@ -23,10 +23,6 @@ public class WebDriver {
         try {
             Application.launch(WebApp.class, args);
         } catch (Exception ex) {
-            Optional.<Exception>of(ex)
-                .filter(e -> e instanceof UnsupportedOperationException)
-                .filter(e -> e.getMessage().contains("Unable to open DISPLA"))
-                .ifPresent(e -> WebDriver.printDisplayWarning());
             WebDriver.printException(ex);
             System.exit(1);
         } // try
@@ -36,11 +32,15 @@ public class WebDriver {
      * Print an exception and its stack trace.
      * @param e the exception
      */
-    private static void printException(Exception e) {
+    private static void printException(Exception ex) {
         System.err.println(WebDriver.HRULE);
-        System.err.println(e);
+        System.err.println(ex);
+        Optional.<Exception>of(ex)
+            .filter(e -> e instanceof UnsupportedOperationException)
+            .filter(e -> e.getMessage().contains("Unable to open DISPLAY"))
+            .ifPresent(e -> WebDriver.printDisplayWarning());
         System.err.println(WebDriver.HRULE);
-        e.printStackTrace();
+        ex.printStackTrace();
     } // printException
 
     /**
@@ -48,16 +48,16 @@ public class WebDriver {
      */
     private static void printDisplayWarning() {
         System.err.println(WebDriver.HRULE);
-        String message = ""
-            + "If you see SSH_ in the output below, then the you are "
-            + "connected via SSH, but X-forwarding is either: "
-            + "i) not enabled for the current connection; or "
-            + "ii) experiencing network issues (e.g., lag, timeout, etc.).";
+        String message = "WARNING: "
+            + "If you are connected via SSH, then X-forwarding is either: \n"
+            + " 1. not enabled for the current connection; or \n"
+            + " 2. experiencing network issues (e.g., lag, timeout, etc.).";
         System.err.println(message);
-        System.err.println("Cannot connect to the display!");
+        System.err.println(WebDriver.HRULE);
+        System.err.println("RELATED ENVIRONMENT VARIABLES: ");
         List.of("DISPLAY", "SSH_CLIENT", "SSH_TTY", "SSH_CONNECTION")
             .stream()
-            .map(key -> String.format("%s=%s", key, System.getenv(key)))
+            .map(key -> String.format(" - %s=%s", key, System.getenv(key)))
             .forEach(System.err::println);
     } // printDisplayWarning
 
