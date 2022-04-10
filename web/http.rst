@@ -76,8 +76,8 @@ Class                           Description
 |HttpRequest|
 +++++++++++++
 
-.. |builder| replace:: builder pattern
-.. _builder: https://en.wikipedia.org/wiki/Builder_pattern
+.. |builder_pattern| replace:: builder pattern
+.. _builder_pattern: https://en.wikipedia.org/wiki/Builder_pattern
 
 .. |HttpRequest_Builder| replace:: ``HttpRequest.Builder``
 .. _HttpRequest_Builder: https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html
@@ -120,16 +120,36 @@ information about a requst. Here is the code:
 
 .. code-block:: java
 
-   URI location =
    HttpRequest request = HttpRequest.newBuilder()
-       .uri(URI.create("https://api.github.com/licenses"))
+       .uri(URI.create("https://api.github.com/licenses/MIT"))
        .header("Accept", "application/vnd.github.v3.text-match+json")
        .build();
 
+.. |query_string| replace:: query string
+.. _query_string: https://en.wikipedia.org/wiki/Query_string
+
+.. |itunes_search_api| replace:: iTunes Search API
+.. _itunes_search_api: https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/Searching.html
+
+Some HTTP servers also let you specify request metadata using
+a special |query_string| included near the end of the request URI.
+Special care must be taken when including a query string in a URI
+so that its metadata values are encoded properly. The example below
+builds an |HttpRequest| that queries the |itunes_search_api| for up
+to 5 records related to "Daft Punk".
+
+.. code-block:: java
+
+   String term = URLEncoder.encode("daft punk", StandardCharsets.UTF_8); // "daft+punk"
+   String limit = URLEncoder.encode("5", StandardCharsets.UTF_8);        // "5"
+   String query = String.format("?term=%s&limit=%s", term, limit);       // "?term=daft+punk&limit=5"
+   HttpRequest request = HttpRequest.newBuilder()
+       .uri(URI.create("https://itunes.apple.com/search" + query))
+       .header("Accept", "application/vnd.github.v3.text-match+json")
+       .build();
 
 |HttpClient|
 ++++++++++++
-
 
 The |HttpClient|_ class provided by |java_net_http|_ includes a ``send`` method that
 sends an HTTP request message (described by an |HttpRequest| object) and returns the
