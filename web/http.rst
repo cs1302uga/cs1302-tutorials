@@ -187,10 +187,10 @@ constant:
 .. |HttpClient_send| replace:: ``send``
 .. _HttpClient_send: https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpClient.html#send(java.net.http.HttpRequest,java.net.http.HttpResponse.BodyHandler)
 
-.. |HttpResponse_BodyHandler| replace:: ``HttpResponse.BodyHandler<T>`
+.. |HttpResponse_BodyHandler| replace:: ``HttpResponse.BodyHandler<T>``
 .. _HttpResponse_BodyHandler: https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandler.html
 
-.. |HttpResponse_BodyHandlers| replace:: ``HttpResponse.BodyHandlers`
+.. |HttpResponse_BodyHandlers| replace:: ``HttpResponse.BodyHandlers``
 .. _HttpResponse_BodyHandlers: https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html
 
 Once built, an |HttpClient| object's |HttpClient_send|_ method can be called
