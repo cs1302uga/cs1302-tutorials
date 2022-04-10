@@ -1,5 +1,5 @@
-HTTP Tutorial
-=============
+HTTP
+====
 
 .. contents::
 
@@ -52,17 +52,41 @@ Java's ``java.net.http`` Library
 Java (versions >=11) ships with |java_net_http|_, a package that provides
 classes and interfaces that understand HTTP. It enables Java programs to
 access web content without worrying about the low-level details of the
-data exchange we described earlier.
+data exchange we described earlier. In this reading, we are going to
+focus on these three classes:
 
-``HttpClient``
+==============================  =============================================================
+Class                           Description
+==============================  =============================================================
+``java.net.http.HttpRequest``   Represents an HTTP request.
+``java.net.http.HttpClient``    Used to send HTTP requests and receive their HTTP responses.
+``java.net.http.HttpResponse``  Represents an HTTP response.
+==============================  =============================================================
+
+.. |HttpRequest| replace:: ``HttpRequest``
+.. _HttpRequest: https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpRequest.html
+
+.. |HttpClient| replace:: ``HttpClient``
+.. _HttpClient: https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpClient.html
+
+.. |HttpResponse| replace:: ``HttpResponse<T>``
+.. _HttpResponse: https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpResponse.html
+
+
+|HttpRequest|
++++++++++++++
+
+
+
+|HttpClient|
+++++++++++++
+
+The |HttpClient|_ class provided by |java_net_http|_ includes a ``send`` method that
+can be used to send an HTTP request described by some |HttpRequest| object and return
+an |HttpResponse| object describing the associated HTTP response.
+
+|HttpResponse|
 ++++++++++++++
-
-
-``HttpRequest``
-++++++++++++++
-
-``HttpResponse<T>``
-+++++++++++++++++++
 
 If an HTTP response message is received, then the program must decide what to
 do based on the information contained in the response message. Typically,
