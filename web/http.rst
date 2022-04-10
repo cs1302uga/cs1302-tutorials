@@ -90,6 +90,13 @@ to "build" HTTP request messages that can be sent using an HTTP client. Instead 
 providing a public constructor, the authors of |HttpRequest| decided to use
 the |builder_pattern| -- |HttpRequest| objects are constructing by *building*
 them using an |HttpRequest_Builder|_ object returned from ``HttpRequest.newBuilder()``.
+The authors' use of the |builder_pattern|_ prevents the construction of
+incomplete request objects. Most of the methods provided by |HttpRequest_Builder|
+merely update the request information stored in the builder object, then just
+return a reference to builder object itself so that you can update it further
+via additional method calls. Once all the request information is specified,
+the ``build()`` method is called to construct the actual |HttpRequest|
+object.
 
 Here is an example that builds an |HttpRequest| for an image:
 
@@ -99,14 +106,6 @@ Here is an example that builds an |HttpRequest| for an image:
    HttpRequest request = HttpRequest.newBuilder()
        .uri(location) // sets this HttpRequest's request URI
        .build();      // builds and returns an HttpRequest.
-
-The authors' use of the |builder_pattern|_ prevents the construction of
-incomplete request objects. Most of the methods provided by |HttpRequest_Builder|
-merely update the request information stored in the builder object, then just
-return a reference to builder object itself so that you can update it further
-via additional method calls. Once all the request information is specified,
-the ``build()`` method is called to construct the actual |HttpRequest|
-object.
 
 .. |get_a_license| replace:: get a license
 .. _get_a_license: https://docs.github.com/en/rest/reference/licenses#get-a-license
