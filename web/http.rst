@@ -17,7 +17,7 @@ Quick Introduction to HTTP
 HTTP stands for "HyperText Transfer Protocol", the protocol that defines
 the standard data exchange procedure used by the |WWW|_ (i.e., the "web").
 Whenever a program (e.g., a web browser) tries to access web content (i.e.,
-content located at a ``http://``-prefixed or ``https://``-prefixed |URL|_), it
+content located at a ``http://``-prefixed or ``https://``-prefixed |URL|_ or URI), it
 uses an **HTTP client** (web client) to communicate with the **HTTP server**
 (web server) that hosts the content. Sometimes the program itself is an
 HTTP client (i.e., it knows all the protocol details); however, it's more common
@@ -76,14 +76,66 @@ Class                           Description
 |HttpRequest|
 +++++++++++++
 
+.. |builder| replace:: builder pattern
+.. _builder: https://en.wikipedia.org/wiki/Builder_pattern
+
+.. |HttpRequest_Builder| replace:: ``HttpRequest.Builder``
+.. _HttpRequest_Builder: https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html
+
+.. |URI| replace:: URI
+.. _URI: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URI.html
+
+The |HttpRequest|_ class provided by |java_net_http|_ allows Java programs
+to "build" HTTP request messages that can be sent using an HTTP client. Instead of
+providing a public constructor, the authors of |HttpRequest| decided to use
+the |builder_pattern| -- |HttpRequest| objects are constructing by *building*
+them using an |HttpRequest_Builder|_ object returned from ``HttpRequest.newBuilder()``.
+
+Here is an example that builds an |HttpRequest| for an image:
+
+.. code-block:: java
+
+   URI location = URI.create("http://csweb.cs.uga.edu/~mec/cs1302/gui/pikachu.png");
+   HttpRequest request = HttpRequest.newBuilder()
+       .uri(location) // sets this HttpRequest's request URI
+       .build();      // builds and returns an HttpRequest.
+
+The authors' use of the |builder_pattern|_ prevents the construction of
+incomplete request objects. Most of the methods provided by |HttpRequest_Builder|
+merely update the request information stored in the builder object, then just
+return a reference to builder object itself so that you can update it further
+via additional method calls. Once all the request information is specified,
+the ``build()`` method is called to construct the actual |HttpRequest|
+object.
+
+.. |get_a_license| replace:: get a license
+.. _get_a_license: https://docs.github.com/en/rest/reference/licenses#get-a-license
+
+The |builder_pattern| really comes in handy when a request involves
+more than just a location |URI|_. The example below builds an
+|HttpRequest| to |get_a_license| using GitHub's REST API. According to
+GitHub, they recommend setting the "Accept" header when building a
+request -- headers are one way to provide an HTTP server with more
+information about a requst. Here is the code:
+
+.. code-block:: java
+
+   URI location =
+   HttpRequest request = HttpRequest.newBuilder()
+       .uri(URI.create("https://api.github.com/licenses"))
+       .header("Accept", "application/vnd.github.v3.text-match+json")
+       .build();
 
 
 |HttpClient|
 ++++++++++++
 
+
 The |HttpClient|_ class provided by |java_net_http|_ includes a ``send`` method that
-can be used to send an HTTP request described by some |HttpRequest| object and return
-an |HttpResponse| object describing the associated HTTP response.
+sends an HTTP request message (described by an |HttpRequest| object) and returns the
+corresponsing HTTP response message (described as an |HttpResponse| object). The
+preferred way to construct an |HttpClient| object is by "building" it using its ``newBuilder``
+,
 
 |HttpResponse|
 ++++++++++++++
