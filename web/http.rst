@@ -156,10 +156,18 @@ The example below builds an |HttpRequest| that queries the
 |HttpClient|
 ++++++++++++
 
-The |HttpClient|_ class provided by |java_net_http|_ includes a ``send`` method that
-sends an HTTP request message (described by an |HttpRequest| object) and returns the
+The |HttpClient|_ class provided by |java_net_http|_ includes a ``send`` method to
+send an HTTP request message (described by an |HttpRequest| object) and return the
 corresponsing HTTP response message (described as an |HttpResponse| object).
 The |HttpClient| class also uses the |builder_pattern| for object creation.
+
+.. code-block:: java
+
+   HttpClient client = HttpClient.newBuilder()
+       .version(HttpClient.Version.HTTP_2)           // uses HTTP protocol version 2 where possible
+       .followRedirects(HttpClient.Redirect.NORMAL)  // always redirects, except from HTTPS to HTTP
+       .build();                                     // builds and returns an HttpClient
+
 
 |HttpResponse|
 ++++++++++++++
