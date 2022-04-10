@@ -161,7 +161,7 @@ send an HTTP request message (described by an |HttpRequest| object) and return t
 corresponsing HTTP response message (described as an |HttpResponse| object).
 The |HttpClient| class also uses the |builder_pattern| for object creation.
 
-Here is a quick example that builds and |HttpClient| with preferred, modern
+Here is a quick example that builds an |HttpClient| with preferred, modern
 settings:
 
 .. code-block:: java
