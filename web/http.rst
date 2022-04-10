@@ -35,8 +35,34 @@ by an HTTP server:
 
 .. image:: img/http.png
 
+.. |http_spec| replace:: HTTP/1.1 specification
+.. _http_spec: https://httpwg.org/specs/rfc7231.html
+
+If you're interested in the low-level details of HTTP, then we
+encourage you to take a Computer Networks class, read the
+|http_spec|_, or both!
+
+
 Java's ``java.net.http`` Library
 ********************************
+
+.. |java_net_http| replace:: ``java.net.http``
+.. _java_net_http: https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/package-summary.html
+
+Java (versions >=11) ships with |java_net_http|_, a package that provides
+classes and interfaces that understand HTTP. It enables Java programs to
+access web content without worrying about the low-level details of the
+data exchange we described earlier.
+
+``HttpClient``
+++++++++++++++
+
+
+``HttpRequest``
+++++++++++++++
+
+``HttpResponse<T>``
++++++++++++++++++++
 
 If an HTTP response message is received, then the program must decide what to
 do based on the information contained in the response message. Typically,
