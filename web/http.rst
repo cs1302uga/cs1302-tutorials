@@ -166,10 +166,23 @@ settings:
 
 .. code-block:: java
 
-   HttpClient client = HttpClient.newBuilder()
+   HttpClient httpClient = HttpClient.newBuilder()
        .version(HttpClient.Version.HTTP_2)           // uses HTTP protocol version 2 where possible
        .followRedirects(HttpClient.Redirect.NORMAL)  // always redirects, except from HTTPS to HTTP
        .build();                                     // builds and returns an HttpClient
+
+Since a single |HttpClient| object can be used to send multiple requests, you are
+encouraged to only create one |HttpClient| object for your program, unless a
+specific need to do otherwise arises -- you might do this by defining a static
+constant:
+
+.. code-block:: java
+
+   public static final HttpClient HTTP_CLIENT = HttpClient.newBuilder()
+       .version(HttpClient.Version.HTTP_2)           // uses HTTP protocol version 2 where possible
+       .followRedirects(HttpClient.Redirect.NORMAL)  // always redirects, except from HTTPS to HTTP
+       .build();                                     // builds and returns an HttpClient
+
 
 |HttpResponse|
 ++++++++++++++
