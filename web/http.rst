@@ -130,12 +130,19 @@ information about a requst. Here is the code:
 .. |itunes_search_api| replace:: iTunes Search API
 .. _itunes_search_api: https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/Searching.html
 
+.. |URLEncoder_encode| replace:: ``URLEncoder.encode``
+.. _URLEncoder_encode: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URLEncoder.html#encode(java.lang.String,java.nio.charset.Charset)
+
+.. |StandardCharsets_UTF_8| replace:: ``StandardCharsets.UTF_8``
+.. _StandardCharsets_UTF_8: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/charset/StandardCharsets.html#UTF_8
+
 Some HTTP servers also let you specify request metadata using
-a special |query_string| included near the end of the request URI.
+a special |query_string|_ included near the end of the request URI.
 Special care must be taken when including a query string in a URI
-so that its metadata values are encoded properly. The example below
-builds an |HttpRequest| that queries the |itunes_search_api| for up
-to 5 records related to "Daft Punk".
+so that the metadata values are encoded properly using a combination
+of |URLEncoder_encode|_ and |StandardCharsets_UTF_8|_.
+The example below builds an |HttpRequest| that queries the
+|itunes_search_api| for up to 5 records related to "Daft Punk".
 
 .. code-block:: java
 
@@ -144,7 +151,6 @@ to 5 records related to "Daft Punk".
    String query = String.format("?term=%s&limit=%s", term, limit);       // "?term=daft+punk&limit=5"
    HttpRequest request = HttpRequest.newBuilder()
        .uri(URI.create("https://itunes.apple.com/search" + query))
-       .header("Accept", "application/vnd.github.v3.text-match+json")
        .build();
 
 |HttpClient|
@@ -152,9 +158,8 @@ to 5 records related to "Daft Punk".
 
 The |HttpClient|_ class provided by |java_net_http|_ includes a ``send`` method that
 sends an HTTP request message (described by an |HttpRequest| object) and returns the
-corresponsing HTTP response message (described as an |HttpResponse| object). The
-preferred way to construct an |HttpClient| object is by "building" it using its ``newBuilder``
-,
+corresponsing HTTP response message (described as an |HttpResponse| object).
+The |HttpClient| class also uses the |builder_pattern| for object creation.
 
 |HttpResponse|
 ++++++++++++++
