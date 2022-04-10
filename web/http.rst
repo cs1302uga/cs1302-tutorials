@@ -184,6 +184,38 @@ constant:
        .build();                                     // builds and returns an HttpClient
 
 
+.. |HttpClient_send| replace:: ``send``
+.. _HttpClient_send: https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpClient.html#send(java.net.http.HttpRequest,java.net.http.HttpResponse.BodyHandler)
+
+.. |HttpResponse_BodyHandler| replace:: ``HttpResponse.BodyHandler<T>`
+.. _HttpResponse_BodyHandler: https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandler.html
+
+.. |HttpResponse_BodyHandlers| replace:: ``HttpResponse.BodyHandlers`
+.. _HttpResponse_BodyHandlers: https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html
+
+Once built, an |HttpClient| object's |HttpClient_send|_ method can be called
+to send an |HttpRequest|_; when doing so, an |HttpResponse_BodyHandler|_ must
+also be supplied so that the |HttpClient| object knows how to construct
+the |HttpResponse|_ object is creates for the response message. The
+|HttpResponse_BodyHandlers|_ class provides some static methods to create
+create commonly used |HttpResponse_BodyHandler| objects:
+
+================================  =========================  ===================
+Method                            Response Type              Response Body Type
+================================  =========================  ===================
+``BodyHandlers.ofString()``       ``Response<String>``       ``String``
+``BodyHandlers.ofInputStream()``  ``Response<InputStream>``  ``InputStream``
+================================  =========================  ===================
+
+
+.. code-block:: java
+
+   HttpRequest request = HttpRequest.newBuilder()
+       .uri(URI.create("https://www.gutenberg.org/files/1661/1661-0.txt"))
+       .build();
+   HttpResponse<String> response = HTTP_CLIENT.send(response. BodyHandlers.ofString());
+
+
 |HttpResponse|
 ++++++++++++++
 
