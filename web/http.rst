@@ -265,8 +265,8 @@ body         ``body()``        The content of the response.  Data type specified
                                                              the |HttpResponse_BodyHandler|_
                                                              used when calling
                                                              |HttpClient_send|_.
-status code  ``statusCode()``  The "status code" integer,    Usually ``200`` is what you want.
-                               indicating whether the        A list of more status code can be
+status code  ``statusCode()``  The "status code" integer     Usually ``200`` is what you want.
+                               that indicates whether the    A list of more status code can be
                                request was successful.       found `here <http_status>`__.
 ===========  ================  ============================  =================================
 
