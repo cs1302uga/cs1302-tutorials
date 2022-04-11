@@ -16,8 +16,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
-    <exec.mainClass>cs1302.web/cs1302.web.WebDriver</exec.mainClass>
-    <exec.cleanupDaemonThreads>true</exec.cleanupDaemonThreads>
+    <exec.mainClass>cs1302.web/cs1302.web.Example1</exec.mainClass>
+    <exec.cleanupDaemonThreads>false</exec.cleanupDaemonThreads>
     <prism.order>sw</prism.order>
   </properties>
 
@@ -25,11 +25,6 @@
     <dependency>
       <groupId>org.openjfx</groupId>
       <artifactId>javafx-controls</artifactId>
-      <version>17.0.2</version>
-    </dependency>
-    <dependency>
-      <groupId>org.openjfx</groupId>
-      <artifactId>javafx-web</artifactId>
       <version>17.0.2</version>
     </dependency>
     <dependency>
