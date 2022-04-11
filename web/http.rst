@@ -177,6 +177,10 @@ The example below builds an |HttpRequest| that queries the
        .uri(URI.create("https://itunes.apple.com/search" + query))
        .build();
 
+**NOTE:** |ex3|_ demonstrates how to build a request for the iTunes Search API
+and use the Google |GSON|_ library to parse the JSON string included in the body
+of the associated response.
+
 |HttpClient|
 ++++++++++++
 
@@ -260,9 +264,13 @@ Complete Examples
 .. |ex2| replace:: ``cs1302.web/cs1302.web.Example2``
 .. _ex2: src/main/java/cs1302/web/Example2.java
 
-=======  ===============================================================================
+.. |ex3| replace:: ``cs1302.web/cs1302.web.Example3``
+.. _ex3: src/main/java/cs1302/web/Example3.java
+
+=======  ================================================================================
 Example  Description
-=======  ===============================================================================
+=======  ================================================================================
 |ex1|_   Get image data to construct a JavaFX ``Image`` object.
 |ex2|_   Get license data using the GitHub API, then parse the JSON response using Gson.
-=======  ===============================================================================
+|ex3|_   Get results from the iTunes Search API, then parse the JSON response using Gson.
+=======  ================================================================================
