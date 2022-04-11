@@ -147,7 +147,7 @@ information about a request. Here is the code:
        .header("Accept", "application/vnd.github.v3.text-match+json")
        .build();
 
-.. |GSON| replace:: GSON
+.. |GSON| replace:: Gson
 .. _GSON: https://github.com/google/gson
 
 .. |JSON| replace:: JSON
@@ -338,10 +338,13 @@ Name     Description
 |ex0|_   Get text content hosted by the Project Gutenberg website.
 |ex1|_   Get image data to construct a JavaFX ``Image`` object.
 |ex2|_   Get license data using the GitHub API, then parse the JSON-formatted string in
-         the response body using Google's Gson library.
+         the response body using Google's Gson library. [1]_
 |ex3|_   Get results from the iTunes Search API, then parse the JSON-formatted string in
-         the response body using Google's Gson library.
+         the response body using Google's Gson library. [1]_
 =======  ================================================================================
+
+.. [1] A quick introduction to JSON-formatted strings and Google's Gson library
+   is provided `here <json.rst>`__.
 
 To run an example, use the provided ``compile.sh`` script along with the
 name of the example:
