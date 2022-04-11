@@ -271,6 +271,27 @@ status code  ``statusCode()``  The "status code" integer     Usually ``200`` is 
                                request was successful.       found `here <http_status>`__.
 ===========  ================  ============================  ==================================
 
+.. _http_status: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+Here is an example of a generic method that throws an exception if the
+status code of the supplies response is not ``200`` ().
+
+.. code-block:: java
+
+   /**
+    * Throw an {@link java.io.IOException} if the HTTP status code of the
+    * {@link java.net.http.HttpResponse} supplied by {@code response} is
+    * not {@code 200 OK}.
+    * @param <T> response body type
+    * @param response response to check
+    * @see <a href="https://httpwg.org/specs/rfc7231.html#status.200">[RFC7232] 200 OK</a>
+    */
+   private static <T> void ensureGoodResponse(HttpResponse<T> response) throws IOException {
+       if (response.statusCode() != 200) {
+           throw new IOException(response.toString());
+       } // if
+   } // ensureGoodResponse
+
 
 Complete Examples
 +++++++++++++++++
