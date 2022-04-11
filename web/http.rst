@@ -154,8 +154,8 @@ information about a request. Here is the code:
 .. _JSON: https://en.wikipedia.org/wiki/JSON
 
 **NOTE:** |ex2|_ demonstrates how to build a request for license data and
-use the Google |GSON|_ library to parse the JSON string included in the body of
-the associated response.
+use the Google |GSON|_ library to parse the JSON-formatted string included in
+the body of the associated response.
 
 .. |query_string| replace:: query string
 .. _query_string: https://en.wikipedia.org/wiki/Query_string
@@ -187,8 +187,8 @@ The example below builds an |HttpRequest| that queries the
        .build();
 
 **NOTE:** |ex3|_ demonstrates how to build a request for the iTunes Search API
-and use the Google |GSON|_ library to parse the JSON string included in the body
-of the associated response.
+and use the Google |GSON|_ library to parse the JSON-formatted string included
+in the body of the associated response.
 
 |HttpClient|
 ++++++++++++
@@ -353,7 +353,17 @@ name of the example:
 
    $ ./compile.sh cs1302.web/cs1302.web.Example0
 
-JSON
-****
+.. copyright and license information
+.. |copy| unicode:: U+000A9 .. COPYRIGHT SIGN
+.. |copyright| replace:: Copyright |copy| Michael E. Cotterell, Bradley J. Barnes, and the University of Georgia.
+.. |license| replace:: CC BY-NC-ND 4.0
+.. _license: http://creativecommons.org/licenses/by-nc-nd/4.0/
+.. |license_image| image:: https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg
+                   :target: http://creativecommons.org/licenses/by-nc-nd/4.0/
+.. standard footer
+.. footer:: |license_image|
 
-TODO.
+   |copyright| This work is licensed under a |license|_ license to students
+   and the public. The content and opinions expressed on this Web page do not necessarily
+   reflect the views of nor are they endorsed by the University of Georgia or the University
+   System of Georgia.
