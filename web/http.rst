@@ -351,7 +351,7 @@ name of the example:
 
 .. code-block::
 
-   $ ./compile.sh cs1302.web/cs1302.web.Example1
+   $ ./compile.sh cs1302.web/cs1302.web.Example0
 
 JSON
 ****
