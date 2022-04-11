@@ -76,6 +76,9 @@ Class                           Description
 .. |HttpResponse| replace:: ``HttpResponse<T>``
 .. _HttpResponse: https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpResponse.html
 
+Some complete examples that involve all three classes are included near the end
+of the reading.
+
 |HttpRequest|
 +++++++++++++
 
@@ -109,6 +112,11 @@ Here is an example that builds an |HttpRequest| for an image:
    HttpRequest request = HttpRequest.newBuilder()
        .uri(location) // sets this HttpRequest's request URI
        .build();      // builds and returns an HttpRequest.
+
+
+**NOTE:** |ex1|_ demonstrates how to build a request for an image, then create
+a JavaFX ``Image`` object using the data included in the body of the associated
+response.
 
 .. |GitHubApi| replace:: GutHub API
 .. _GitHubApi: https://docs.github.com/en/rest
