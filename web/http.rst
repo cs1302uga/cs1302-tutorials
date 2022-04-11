@@ -268,7 +268,7 @@ Here are some typical examples:
 -----------------------------  ----------------------------------------------------------------
 Information  Method            Description                   Note
 ===========  ================  ============================  ==================================
-body         ``body()``        The content of the response.  The return type type of ``body()``
+body         ``body()``        The content of the response.  The return type of ``body()``
                                                              is determined by the the
                                                              |HttpResponse_BodyHandler|_ that
                                                              was used to |HttpClient_send|_
