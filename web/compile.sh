@@ -28,4 +28,4 @@ function mvn_exec_java() {
 
 mvn_clean
 mvn_compile
-mvn_exec_java
+mvn_exec_java $@
