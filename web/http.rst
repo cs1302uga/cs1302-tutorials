@@ -305,7 +305,15 @@ section:
 Complete Examples
 *****************
 
-Here are some complete examples that accompany this reading:
+Several complete and working code examples accompany this reading so
+that readers can see the |java_net_http| package in some real-world
+situations. To download these examples, use the following command:
+
+.. code-block::
+
+   $ curl -s -L https://github.com/cs1302uga/cs1302-tutorials/raw/master/web/setup.sh | bash
+
+Here is a list of the examples:
 
 .. |ex1| replace:: ``cs1302.web/cs1302.web.Example1``
 .. _ex1: src/main/java/cs1302/web/Example1.java
@@ -317,9 +325,16 @@ Here are some complete examples that accompany this reading:
 .. _ex3: src/main/java/cs1302/web/Example3.java
 
 =======  ================================================================================
-Example  Description
+Name     Description
 =======  ================================================================================
 |ex1|_   Get image data to construct a JavaFX ``Image`` object.
 |ex2|_   Get license data using the GitHub API, then parse the JSON response using Gson.
 |ex3|_   Get results from the iTunes Search API, then parse the JSON response using Gson.
 =======  ================================================================================
+
+To run an example, use the provided ``compile.sh`` script along with the
+name of the example:
+
+.. code-block::
+
+   $ ./compile.sh cs1302.web/cs1302.web.Example1
