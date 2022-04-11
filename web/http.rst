@@ -6,23 +6,27 @@ HTTP
 Quick Introduction to HTTP
 **************************
 
-.. |WWW| replace:: World Wide Web
-.. _WWW: https://en.wikipedia.org/wiki/World_Wide_Web
+.. |wiki_WWW| replace:: World Wide Web
+.. _wiki_WWW: https://en.wikipedia.org/wiki/World_Wide_Web
 
-.. |URL| replace:: URL
-.. _URL: https://en.wikipedia.org/wiki/URL
+.. |wiki_URL| replace:: URL
+.. _wiki_URL: https://en.wikipedia.org/wiki/URL
+
+.. |wiki_URI| replace:: URI
+.. _wiki_URI: https://en.wikipedia.org/wiki/URI
 
 .. |web_server| replace:: web server
 
 HTTP stands for "HyperText Transfer Protocol", the protocol that defines
-the standard data exchange procedure used by the |WWW|_ (i.e., the "web").
+the standard data exchange procedure used by the |wiki_WWW|_ (i.e., the "web").
 Whenever a program (e.g., a web browser) tries to access web content (i.e.,
-content located at a ``http://``-prefixed or ``https://``-prefixed |URL|_ or URI), it
-uses an **HTTP client** (web client) to communicate with the **HTTP server**
-(web server) that hosts the content. Sometimes the program itself is an
-HTTP client (i.e., it knows all the protocol details); however, it's more common
-these days to use an HTTP client provided by a library. From the program's
-perspective, the following steps are taken to access :
+content located at a ``http://``-prefixed or ``https://``-prefixed |wiki_URL|_
+or |wiki_URI|_), it uses an **HTTP client** (web client) to communicate with the
+**HTTP server** (web server) that hosts the content. Sometimes the program itself
+is an HTTP client (i.e., it knows all the protocol details); however, it's more
+common these days to use an HTTP client provided by a library.
+
+From a program's perspective, the following steps are taken to access web content:
 
 1. construct an HTTP request message;
 2. use an HTTP client to send the HTTP request message to the HTTP server;
@@ -72,7 +76,6 @@ Class                           Description
 .. |HttpResponse| replace:: ``HttpResponse<T>``
 .. _HttpResponse: https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpResponse.html
 
-
 |HttpRequest|
 +++++++++++++
 
@@ -107,13 +110,16 @@ Here is an example that builds an |HttpRequest| for an image:
        .uri(location) // sets this HttpRequest's request URI
        .build();      // builds and returns an HttpRequest.
 
+.. |GitHubApi| replace:: GutHub API
+.. _GitHubApi: https://docs.github.com/en/rest
+
 .. |get_a_license| replace:: get a license
 .. _get_a_license: https://docs.github.com/en/rest/reference/licenses#get-a-license
 
 The |builder_pattern| really comes in handy when a request involves
 more than just a location |URI|_. The example below builds an
-|HttpRequest| to |get_a_license| using GitHub's REST API. According to
-GitHub, they recommend setting the "Accept" header when building a
+|HttpRequest| to |get_a_license|_ using the |GitHubApi|_. According to
+GitHub's API documentation, they recommend setting the "Accept" header when building a
 request -- headers are one way to provide an HTTP server with more
 information about a requst. Here is the code:
 
