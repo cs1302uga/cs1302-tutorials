@@ -253,7 +253,7 @@ do based on the information contained in the response message. Typically,
 the following information is: ...
 
 Complete Examples
-*****************
++++++++++++++++++
 
 .. |ex1| replace:: ``cs1302.web/cs1302.web.Example1``
 .. _ex1: src/main/java/cs1302/web/Example1.java
