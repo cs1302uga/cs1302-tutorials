@@ -57,7 +57,7 @@ Java (versions >=11) ships with |java_net_http|_, a package that provides
 classes and interfaces that understand HTTP. It enables Java programs to
 access web content without worrying about the low-level details of the
 data exchange we described earlier. In this reading, we are going to
-focus on these three classes:
+focus on these three types:
 
 ==============================  =============================================================
 Class                           Description
@@ -76,7 +76,9 @@ Class                           Description
 .. |HttpResponse| replace:: ``HttpResponse<T>``
 .. _HttpResponse: https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpResponse.html
 
-Some complete examples that involve all three classes are included near the end
+
+
+Some complete code examples that involve all three types are included near the end
 of the reading.
 
 |HttpRequest|
@@ -255,6 +257,9 @@ to inform the client that we want it to interpret the body of the response
    HttpResponse<String> response = HTTP_CLIENT.send(response. BodyHandlers.ofString());
    String body = response.body();
 
+**NOTE:** A rewritten version of the code above is provided in |ex0|_ so that
+you can see it alongside the required exception handling.
+
 |HttpResponse|
 ++++++++++++++
 
@@ -315,6 +320,9 @@ situations. To download these examples, use the following command:
 
 Here is a list of the examples:
 
+.. |ex0| replace:: ``cs1302.web/cs1302.web.Example0``
+.. _ex0: src/main/java/cs1302/web/Example0.java
+
 .. |ex1| replace:: ``cs1302.web/cs1302.web.Example1``
 .. _ex1: src/main/java/cs1302/web/Example1.java
 
@@ -327,6 +335,7 @@ Here is a list of the examples:
 =======  ================================================================================
 Name     Description
 =======  ================================================================================
+|ex0|_   Get text content hosted by the Project Gutenberg website.
 |ex1|_   Get image data to construct a JavaFX ``Image`` object.
 |ex2|_   Get license data using the GitHub API, then parse the JSON-formatted string in
          the response body using Google's Gson library.
