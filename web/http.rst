@@ -328,8 +328,10 @@ Here is a list of the examples:
 Name     Description
 =======  ================================================================================
 |ex1|_   Get image data to construct a JavaFX ``Image`` object.
-|ex2|_   Get license data using the GitHub API, then parse the JSON response using Gson.
-|ex3|_   Get results from the iTunes Search API, then parse the JSON response using Gson.
+|ex2|_   Get license data using the GitHub API, then parse the JSON-formatted string in
+         the response body using Google's Gson library.
+|ex3|_   Get results from the iTunes Search API, then parse the JSON-formatted string in
+         the response body using Google's Gson library.
 =======  ================================================================================
 
 To run an example, use the provided ``compile.sh`` script along with the
