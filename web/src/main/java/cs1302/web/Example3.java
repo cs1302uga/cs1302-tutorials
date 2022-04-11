@@ -77,7 +77,7 @@ public class Example3 {
     private static void parseItunesResponse(String responseBody) {
         ItunesResponse response = GSON.fromJson(responseBody, Example3.ItunesResponse.class);
         System.out.println("********** RAW JSON STRING: **********");
-        System.out.println(responseBody);
+        System.out.println(responseBody.trim());
         System.out.println();
         System.out.println("********** PRETTY JSON STRING: **********");
         System.out.println(GSON.toJson(response));
