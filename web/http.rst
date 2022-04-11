@@ -243,6 +243,6 @@ Complete Examples
 +---------+-----------------+-----------------------------------------------+
 | Example | Compile and Run | Description                                   |
 +=========+=================+===============================================+
-| |ex1|_  | |ex1_run|_      | Get image data to construct a JavaFX          |
+| |ex1|_  | |ex1_run|       | Get image data to construct a JavaFX          |
 |         |                 | ``Image`` object.                             |
 +---------+-----------------+-----------------------------------------------+
