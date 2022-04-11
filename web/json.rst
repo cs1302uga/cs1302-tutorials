@@ -32,7 +32,8 @@ constructed by hand using Java code:
        + "}                   ";
    System.out.println(jsonString);
 
-Here is the output for that example:
+Here is the output for that example -- once printed, the JSON-formatted
+string looks really nice:
 
 .. code-block:: json
 
@@ -45,6 +46,57 @@ Here is the output for that example:
        "CSCI 2610"
      ]
    }
+
+In a JSON-formatted string,
+
+* ``""`` is used to denote a *key* or literal *value*;
+* ``{}`` is used to denote an *object*; and
+* ``[]`` is used to denote an array.
+
+With that in mind, let's consider a Java class that might
+organize its instance data in a similar to way to the
+object described by the JSON-formatted string from earlier:
+
+.. code-block:: java
+
+   public class Student {
+       String name;
+       int age;
+       String[] classes;
+   } // Student
+
+Now that we have a Java class to represent the same kind
+of information, we can use Google's |GSON|_ library to
+parse the JSON-formatted string directly into a ``Student``
+object. The example below assumes that Gson is added
+as a project dependency and that a ``Gson`` object is
+available -- instructions describing how to add Gson to
+a Maven project are include later in this reading:
+
+.. code-block:: java
+
+   // parse JSON-formatted string into a Student object
+   Student jay = GSON.fromJson(jsonString, Example4.Student.class);
+
+   // inspect the result
+   System.out.println(jay.name);
+   System.out.println(jay.age);
+   System.out.println("Classes:");
+   for (int i = 0; i < jay.classes.length; i++) {
+       String className = jay.classes[i];
+       System.out.println(" - " + className);
+   } // for
+
+Here is the expected output:
+
+.. code-block::
+
+   Jay
+   19
+   Classes:
+    - CSCI 1302
+    - CSCI 1730
+    - CSCI 2610
 
 .. copyright and license information
 .. |copy| unicode:: U+000A9 .. COPYRIGHT SIGN
