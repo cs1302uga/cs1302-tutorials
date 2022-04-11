@@ -136,7 +136,7 @@ more than just a location |URI|_. The example below builds an
 |HttpRequest| to |get_a_license|_ using the |GitHubApi|_. According to
 GitHub's API documentation, they recommend setting the "Accept" header when building a
 request -- headers are one way to provide an HTTP server with more
-information about a requst. Here is the code:
+information about a request. Here is the code:
 
 .. code-block:: java
 
@@ -193,7 +193,7 @@ of the associated response.
 
 The |HttpClient|_ class provided by |java_net_http|_ includes a ``send`` method to
 send an HTTP request message (described by an |HttpRequest|_ object) and return the
-corresponsing HTTP response message (described as an |HttpResponse|_ object).
+corresponding HTTP response message (described as an |HttpResponse|_ object).
 The |HttpClient| class also uses the |builder_pattern|_ for object creation.
 
 Here is a quick example that builds an |HttpClient| with preferred, modern

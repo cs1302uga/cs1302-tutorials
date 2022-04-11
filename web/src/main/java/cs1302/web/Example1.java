@@ -42,8 +42,7 @@ public class Example1 {
     /**
      * Returns a {@link javafx.image.Image} using data located at the specified
      * {@code url}. Instead of letting the {@code Image} class handle the
-     * download, this method uses the {@link java.net.http/java.net.http}
-     * package instead.
+     * download, this method uses {@link java.net.http} instead.
      * @param url image location
      * @return an image
      * @throws IOException if an I/O error occurs when sending, receiving, or parsing
