@@ -240,9 +240,7 @@ Complete Examples
 .. |example1| replace:: ``cs1302.web/cs1302.web.Example1`
 .. _example1: src/main/java/cs1302/web/Example1.java
 
-
-
-+----------- -+-----------------+-----------------------------------------------+
++-------------+-----------------+-----------------------------------------------+
 | Example     | Compile and Run | Description                                   |
 +=============+=================+===============================================+
 | |example1|_ | |example1_run|_ | Get image data to construct a JavaFX ``Image` |
