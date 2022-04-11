@@ -3,6 +3,7 @@ package cs1302.web;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;
+import java.net.URL;
 import java.net.http.HttpClient;
 import java.net.http.HttpResponse;
 import java.net.http.HttpResponse.BodyHandlers;
@@ -10,10 +11,6 @@ import java.net.http.HttpRequest;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 
 /**
  * Example 2: Get license data using the GitHub REST API.
@@ -23,13 +20,32 @@ import com.google.gson.JsonParser;
  */
 public class Example2 {
 
+    /**
+     * Represents GitHub license data. This is used by Gson to create an object
+     * from the JSON response body.
+     */
+    private static class GitHubLicense {
+        String key;
+        String name;
+        String spdxId;
+        URL url;
+        String nodeId;
+        URL htmlUrl;
+        String description;
+        String implementation;
+        String[] permissions;
+        String[] conditions;
+        String[] limitations;
+        String body;
+        boolean featured;
+    } // GitHubLicense
+
     private static HttpClient HTTP_CLIENT = HttpClient.newBuilder()
         .version(HttpClient.Version.HTTP_2)           // uses HTTP protocol version 2 where possible
         .followRedirects(HttpClient.Redirect.NORMAL)  // always redirects, except from HTTPS to HTTP
         .build();                                     // builds and returns an HttpClient
 
     private static Gson GSON = new GsonBuilder()
-        .enableComplexMapKeySerialization()
         .setPrettyPrinting()
         .create();
 
@@ -55,19 +71,17 @@ public class Example2 {
      * @param licenseData license data in JSON format
      */
     private static void parseLicense(String licenseData) {
-        JsonElement root = JsonParser.parseString(licenseData);
-        System.out.println("\nJSON RESPONSE:");
-        System.out.println(GSON.toJson(root));
-        String name = Example2.jsonPath(root, "name").getAsString();
-        String description = Example2.jsonPath(root, "description").getAsString();
-        JsonArray permissions = Example2.jsonPath(root, "permissions").getAsJsonArray();
-        System.out.println("\nLICENSE INFO:");
-        System.out.println(name);
-        System.out.println(description);
-        for (int i = 0; i < permissions.size(); i++) {
-            String permission = Example2.jsonPath(permissions, i).getAsString();
-            System.out.println(" - " + permission);
-        } // for
+        GitHubLicense license = GSON.fromJson(licenseData, Example2.GitHubLicense.class);
+        System.out.println("********** RAW JSON STRING: **********");
+        System.out.println(licenseData);
+        System.out.println();
+        System.out.println("********** PRETTY JSON STRING: **********");
+        System.out.println(GSON.toJson(license));
+        System.out.println();
+        System.out.println("********** LICENSE INFORMATION: **********");
+        System.out.println(license.name);
+        System.out.println(license.url);
+        System.out.println(license.description);
     } // parseLicense
 
     /**
@@ -105,63 +119,5 @@ public class Example2 {
             throw new IOException(response.toString());
         } // if
     } // ensureGoodResponse
-
-    /**
-     * Return the {@link JsonElement} described by the {@code keys}.
-     * Given a {@code JsonElement} that denotes a portion
-     * of valid JSON, hereafter referred to as the {@code root} element, this
-     * method attempts to return the element reached by starting at the root and
-     * following the path described by the sequence of provided {@code keys}.
-     * Here are some various examples, assuming {@code root} refers to the
-     * outer-most element in the JSON response that is presented:
-     *
-     * <pre>
-     * {                          // get(root).getAsJsonObject()
-     *   numFound: 494,           // get(root, "numFound").getAsInt()
-     *   docs: [                  // get(root, "docs").getAsJsonArray()
-     *     {                      // get(root, "docs", 0).getAsJsonObject()
-     *       title: "Some Title", // get(root, "docs", 0, "title").getAsString()
-     *       person: [            // get(root, "docs", 0, "person").getAsJsonArray()
-     *         "Person 1",        // get(root, "docs", 0, "person", 0).getAsString()
-     *         "Person 2",        // get(root, "docs", 0, "person", 1).getAsString()
-     *       ],
-     *     },
-     *     {                      // get(root, "docs", 1).getAsJsonObject()
-     *        title: "Title 2",   // get(root, "docs", 1, "title").getAsString()
-     *        ...
-     *     },
-     *     ...
-     *   ]
-     * }
-     * </pre>
-     *
-     * @param root starting element
-     * @param keys list of keys describing the path from the root to the
-     *        desired element
-     * @return desired element
-     * @throws NullPointerException if a key is encountered that does not exist
-     *         at the corresponding location in the path
-     * @throws IllegalArgumentException if a key is encountered that is neither
-     *         an {@code int} nor a {@code String}.
-     */
-    public static JsonElement jsonPath(JsonElement root, Object... keys) {
-        for (Object key : keys) {
-            try {
-                if (key instanceof String) {
-                    root = root.getAsJsonObject().get((String) key);
-                } else if (key instanceof Integer) {
-                    root = root.getAsJsonArray().get((int) key);
-                } else {
-                    String message = String
-                        .format("argument type not supported (%s)", key.getClass());
-                    throw new IllegalArgumentException(message);
-                } // if
-            } catch (NullPointerException npe) {
-                String message = String.format("key does not exist (%s)", key);
-                throw new NullPointerException(message);
-            } // try
-        } // for
-        return root;
-    } // jsonPath
 
 } // Example2
