@@ -256,19 +256,20 @@ do based on the information contained in that response message. This information
 can be accessed by calling methods on the associated |HttpResponse|_ object.
 Here are some typical examples:
 
-===========  ================  ============================  =================================
+===========  ================  ============================  ==================================
 |HttpResponse|_                Details
------------------------------  ---------------------------------------------------------------
+-----------------------------  ----------------------------------------------------------------
 Information  Method            Description                   Note
-===========  ================  ============================  =================================
-body         ``body()``        The content of the response.  Data type specified by
-                                                             the |HttpResponse_BodyHandler|_
-                                                             used when calling
-                                                             |HttpClient_send|_.
+===========  ================  ============================  ==================================
+body         ``body()``        The content of the response.  The return type type of ``body()``
+                                                             is determined by the the
+                                                             |HttpResponse_BodyHandler|_ that
+                                                             was used to |HttpClient_send|_
+                                                             the request.
 status code  ``statusCode()``  The "status code" integer     Usually ``200`` is what you want.
                                that indicates whether the    A list of more status code can be
                                request was successful.       found `here <http_status>`__.
-===========  ================  ============================  =================================
+===========  ================  ============================  ==================================
 
 
 Complete Examples
