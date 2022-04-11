@@ -252,8 +252,17 @@ to inform the client that we want it to interpret the body of the response
 ++++++++++++++
 
 If an HTTP response message is received, then the program must decide what to
-do based on the information contained in the response message. Typically,
-the following information is: ...
+do based on the information contained in that response message. This information
+can be accessed by calling methods on the associated |HttpResponse|_ object.
+Here are some typical examples:
+
+===========  ======================  ==========================  =====================================================================================
+Information  |HttpResponse|_ Method  Description                 Note
+===========  ======================  ==========================  =====================================================================================
+body         ``body()``              The "body" or content.      Data type specified by the |BodyHandler|_ used when calling |HttpClient_send|_.
+status code  ``statusCode()``        The "status code" integer.  Usually ``200`` is what you want -- click `here <http_status>`__ for a list of codes.
+===========  ======================  ==========================  =====================================================================================
+
 
 Complete Examples
 +++++++++++++++++
