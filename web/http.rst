@@ -236,8 +236,8 @@ the following information is: ...
 Complete Examples
 *****************
 
-.. |ex1_run| replace:: ``$ ./compile cs1302.web/cs1302.web.Example1`
-.. |ex1| replace:: ``cs1302.web/cs1302.web.Example1`
+.. |ex1_run| replace:: ``$ ./compile cs1302.web/cs1302.web.Example1``
+.. |ex1| replace:: ``cs1302.web/cs1302.web.Example1``
 .. _ex1: src/main/java/cs1302/web/Example1.java
 
 +---------+-----------------+-----------------------------------------------+
