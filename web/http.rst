@@ -276,7 +276,7 @@ status code  ``statusCode()``  The "status code" integer     Usually ``200`` is 
 
 Here is a generic method that you can use to throw an exception if the
 status code of a supplied response is not ``200`` (OK) -- you can see it
-used in several of the code examples provided in the `Complete Examples`
+used in several of the code examples provided in the `Complete Examples`_
 section:
 
 .. code-block:: java
