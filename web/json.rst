@@ -65,13 +65,17 @@ object described by the JSON-formatted string from earlier:
        String[] classes;
    } // Student
 
+.. |Gson_fromJson| replace:: fromJson
+.. _Gson_fromJson: https://www.javadoc.io/doc/com.google.code.gson/gson/latest/com.google.gson/com/google/gson/Gson.html
+
 Now that we have a Java class to represent the same kind
 of information, we can use Google's |GSON|_ library to
 parse the JSON-formatted string directly into a ``Student``
-object. The example below assumes that Gson is added
-as a project dependency and that a ``Gson`` object is
-available -- instructions describing how to add Gson to
-a Maven project are include later in this reading:
+object using the |Gson_fromJson|_ method. The example below
+assumes that Gson is added as a project dependency and that a
+``Gson`` object is available via ``GSON`` -- instructions
+describing how to add Gson to a Maven project are included
+later in this reading:
 
 .. code-block:: java
 
@@ -128,6 +132,12 @@ name of the example:
 .. code-block::
 
    $ ./compile.sh cs1302.web/cs1302.web.Example4
+
+Adding Gson to a Maven Project
+******************************
+
+
+
 
 .. copyright and license information
 .. |copy| unicode:: U+000A9 .. COPYRIGHT SIGN
