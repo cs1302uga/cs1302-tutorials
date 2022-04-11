@@ -136,8 +136,32 @@ name of the example:
 Adding Gson to a Maven Project
 ******************************
 
+.. |maven_add_deps| replace:: Importing Dependencies
+.. _maven_add_deps: https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Importing_Dependencies
 
+To use Gson in a Maven project, Gson must be added as a dependency
+in the project's ``pom.xml`` file -- refer to the |maven_add_deps|_
+page in Maven's documentation for more information:
 
+.. code-block:: xml
+
+   <dependency>
+     <groupId>com.google.code.gson</groupId>
+     <artifactId>gson</artifactId>
+     <version>2.9.0</version>
+   </dependency>
+
+Once added as a dependency, Gson will automatically be available
+on the classpath. For example, you could include the following
+near the top a class to make a ``Gson`` object available within
+that class -- the code will compile using ``mvn compile`` so
+long as the dependency is aded to the ``pom.xml`` correctly:
+
+.. code-block:: java
+
+   private static Gson GSON = new GsonBuilder()
+       .setPrettyPrinting()
+       .create();
 
 .. copyright and license information
 .. |copy| unicode:: U+000A9 .. COPYRIGHT SIGN
