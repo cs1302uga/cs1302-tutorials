@@ -236,7 +236,7 @@ the following information is: ...
 Complete Examples
 *****************
 
-.. |example1| replace:: cs1302.web/cs1302.web.Example1
+.. |example1| replace:: ``cs1302.web/cs1302.web.Example1``
 .. _example1: src/main/java/cs1302/web/Example1.java
 
 ===========  ==============================================
