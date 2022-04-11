@@ -98,6 +98,9 @@ Here is the expected output:
     - CSCI 1730
     - CSCI 2610
 
+**NOTE:** An extended version of this example can be seen in
+|ex4|_.
+
 Complete Examples
 *****************
 
@@ -125,7 +128,6 @@ name of the example:
 .. code-block::
 
    $ ./compile.sh cs1302.web/cs1302.web.Example4
-
 
 .. copyright and license information
 .. |copy| unicode:: U+000A9 .. COPYRIGHT SIGN
