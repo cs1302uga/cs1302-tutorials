@@ -114,7 +114,7 @@ Here is an example that builds an |HttpRequest| for an image:
        .build();      // builds and returns an HttpRequest.
 
 
-**NOTE:** |ex1|_ demonstrates how to build a request for an image, then create
+**NOTE:** |ex1|_ demonstrates how to build a request for an image and create
 a JavaFX ``Image`` object using the data included in the body of the associated
 response.
 
@@ -126,6 +126,7 @@ response.
 
 The |builder_pattern| really comes in handy when a request involves
 more than just a location |URI|_. The example below builds an
+
 |HttpRequest| to |get_a_license|_ using the |GitHubApi|_. According to
 GitHub's API documentation, they recommend setting the "Accept" header when building a
 request -- headers are one way to provide an HTTP server with more
@@ -137,6 +138,16 @@ information about a requst. Here is the code:
        .uri(URI.create("https://api.github.com/licenses/MIT"))
        .header("Accept", "application/vnd.github.v3.text-match+json")
        .build();
+
+.. |GSON| replace:: GSON
+.. _GSON: https://github.com/google/gson
+
+.. |JSON| replace:: JSON
+.. _JSON: https://en.wikipedia.org/wiki/JSON
+
+**NOTE:** |ex2|_ demonstrates how to build a request for license data and
+use the Google |GSON|_ library to parse the JSON string included in the body of
+the associated response.
 
 .. |query_string| replace:: query string
 .. _query_string: https://en.wikipedia.org/wiki/Query_string
