@@ -1,8 +1,11 @@
-Web Tutorials
-=============
+Web Tutorials / Readings
+========================
 
-.. |http_tut| replace:: **HTTP Tutorial**
+.. |http_tut| replace:: **HTTP**
 .. _http_tut: http.rst
+
+.. |json_tut| replace:: **JSON**
+.. _json_tut: json.rst
 
 * |http_tut|_: Provides a quick overview of the ``HttpClient``,
   ``HttpRequest``, and ``HttpResponse`` classes, and multiple
