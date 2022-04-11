@@ -242,7 +242,7 @@ Method                            Response Type              Response Body Type
 ``BodyHandlers.ofInputStream()``  ``Response<InputStream>``  ``InputStream``
 ================================  =========================  ===================
 
-In the exmample below, we access a copy of *The Adventures of Sherlock Holmes* by Arthur Conan Doyle
+In the example below, we access a copy of *The Adventures of Sherlock Holmes* by Arthur Conan Doyle
 that is hosted by Project Gutenberg -- when we send the request, we use ``BodyHandlers.ofString()``
 to inform the client that we want it to interpret the body of the response
 (i.e., the response content) as a string.
