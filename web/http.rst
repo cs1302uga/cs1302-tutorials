@@ -232,3 +232,15 @@ to inform the client that we want it to interpret the body of the response
 If an HTTP response message is received, then the program must decide what to
 do based on the information contained in the response message. Typically,
 the following information is: ...
+
+Complete Examples
+*****************
+
+.. |example1| replace:: cs1302.web/cs1302.web.Example1
+.. _example1: src/main/java/cs1302/web/Example1.java
+
+===========  ==============================================
+Example      Compile and Run
+===========  ==============================================
+|example1|_  ``$ ./compile cs1302.web/cs1302.web.Example1``
+===========  ==============================================
