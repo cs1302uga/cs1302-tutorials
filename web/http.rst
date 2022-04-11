@@ -236,13 +236,12 @@ the following information is: ...
 Complete Examples
 *****************
 
-.. |ex1_run| replace:: ``$ ./compile cs1302.web/cs1302.web.Example1``
 .. |ex1| replace:: ``cs1302.web/cs1302.web.Example1``
 .. _ex1: src/main/java/cs1302/web/Example1.java
 
-+---------+-----------------+-----------------------------------------------+
-| Example | Compile and Run | Description                                   |
-+=========+=================+===============================================+
-| |ex1|_  | |ex1_run|       | Get image data to construct a JavaFX          |
-|         |                 | ``Image`` object.                             |
-+---------+-----------------+-----------------------------------------------+
+
+=======  =======================================================================
+Example  Description
+=======  =======================================================================
+|ex1|_   Get image data to construct a JavaFX ``Image`` object.
+=======  =======================================================================
