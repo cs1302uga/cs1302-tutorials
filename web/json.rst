@@ -155,7 +155,7 @@ Once added as a dependency, Gson will automatically be available
 on the classpath. For example, you could include the following
 near the top a class to make a ``Gson`` object available within
 that class -- the code will compile using ``mvn compile`` so
-long as the dependency is aded to the ``pom.xml`` correctly:
+long as the Gson dependency is aded to the ``pom.xml`` file correctly:
 
 .. code-block:: java
 
