@@ -102,8 +102,7 @@ public class Example2 {
             .send(request, BodyHandlers.ofString());
         System.out.printf("response = %s; headers = %s\n", response, response.headers());
         Example2.ensureGoodResponse(response);
-        String licenseData = response.body();
-        return licenseData;
+        return response.body();
     } // fetchLicense
 
     /**

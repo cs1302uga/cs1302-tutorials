@@ -303,7 +303,9 @@ section:
    } // ensureGoodResponse
 
 Complete Examples
-+++++++++++++++++
+*****************
+
+Here are some complete examples that accompany this reading:
 
 .. |ex1| replace:: ``cs1302.web/cs1302.web.Example1``
 .. _ex1: src/main/java/cs1302/web/Example1.java
