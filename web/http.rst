@@ -256,17 +256,19 @@ do based on the information contained in that response message. This information
 can be accessed by calling methods on the associated |HttpResponse|_ object.
 Here are some typical examples:
 
-===========  ======================  ============================  ============================================================================================
-|HttpResponse|_
------------------------------------  ----------------------------  --------------------------------------------------------------------------------------------
-Information  |HttpResponse|_ Method  Description                   Note
-===========  ======================  ============================  ============================================================================================
-body         ``body()``              The content of the response.  Data type specified by
-                                                                   the |HttpResponse_BodyHandler|_
-                                                                   used when calling
-                                                                   |HttpClient_send|_.
-status code  ``statusCode()``        The "status code" integer.    Usually ``200`` is what you want -- click `here <http_status>`__ for a list of codes.
-===========  ======================  ============================  ============================================================================================
+===========  ================  ============================  =================================
+|HttpResponse|_                Details
+-----------------------------  ---------------------------------------------------------------
+Information  Method            Description                   Note
+===========  ================  ============================  =================================
+body         ``body()``        The content of the response.  Data type specified by
+                                                             the |HttpResponse_BodyHandler|_
+                                                             used when calling
+                                                             |HttpClient_send|_.
+status code  ``statusCode()``  The "status code" integer,    Usually ``200`` is what you want.
+                               indicating whether the        A list of more status code can be
+                               request was successful.       found `here <http_status>`__.
+===========  ================  ============================  =================================
 
 
 Complete Examples
