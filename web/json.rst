@@ -98,6 +98,35 @@ Here is the expected output:
     - CSCI 1730
     - CSCI 2610
 
+Complete Examples
+*****************
+
+Several complete and working code examples accompany this reading so
+that readers can see JSON and Gson used in some real-world
+situations. To download these examples, follow the instructions
+`here <http.rst#complete-examples>`__.
+
+In addition to the examples listed in the HTTP reading, the following
+examples are specific to this JSON reading:
+
+.. |ex4| replace:: ``cs1302.web/cs1302.web.Example4``
+.. _ex4: src/main/java/cs1302/web/Example4.java
+
+=======  ================================================================================
+Name     Description
+=======  ================================================================================
+|ex4|_   Create a JSON-formatted string by hand, then parse it into a Java object using
+         using Google's Gson library.
+=======  ================================================================================
+
+To run an example, use the provided ``compile.sh`` script along with the
+name of the example:
+
+.. code-block::
+
+   $ ./compile.sh cs1302.web/cs1302.web.Example4
+
+
 .. copyright and license information
 .. |copy| unicode:: U+000A9 .. COPYRIGHT SIGN
 .. |copyright| replace:: Copyright |copy| Michael E. Cotterell, Bradley J. Barnes, and the University of Georgia.
