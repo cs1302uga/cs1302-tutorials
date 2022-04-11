@@ -268,13 +268,16 @@ body         ``body()``        The content of the response.  The return type typ
                                                              the request.
 status code  ``statusCode()``  The "status code" integer     Usually ``200`` is what you want.
                                that indicates whether the    A list of more status code can be
-                               request was successful.       found `here <http_status>`__.
+                               request was successful.       found |http_status_here|_.
 ===========  ================  ============================  ==================================
 
-.. _http_status: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+.. |http_status_here| replace:: here
+.. _http_status_here: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 
-Here is an example of a generic method that throws an exception if the
-status code of the supplies response is not ``200`` ().
+Here is a generic method that you can use to throw an exception if the
+status code of a supplied response is not ``200`` (OK) -- you can see it
+used in several of the code examples provided in the `Complete Examples`
+section:
 
 .. code-block:: java
 
@@ -291,7 +294,6 @@ status code of the supplies response is not ``200`` ().
            throw new IOException(response.toString());
        } // if
    } // ensureGoodResponse
-
 
 Complete Examples
 +++++++++++++++++
