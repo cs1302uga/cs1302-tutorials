@@ -77,8 +77,9 @@ public class Example3 {
         try {
             // form URI
             String term = URLEncoder.encode("daft punk", StandardCharsets.UTF_8);
+            String media = URLEncoder.encode("music", StandardCharsets.UTF_8);
             String limit = URLEncoder.encode("5", StandardCharsets.UTF_8);
-            String query = String.format("?term=%s&limit=%s", term, limit);
+            String query = String.format("?term=%s&media=%s&limit=%s", term, media, limit);
             String uri = ITUNES_API + query;
             // build request
             HttpRequest request = HttpRequest.newBuilder()
