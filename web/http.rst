@@ -110,7 +110,7 @@ By default, |HttpRequest_Builder| builds "GET" requests that ask
 an HTTP server to include the requested content in the body of the
 response message that is sends back to the client. The HTTP specification
 refers to "GET" as a *method*, but those are outside the scope of this
-readings -- readers who are interested should not that |HttpRequest_Builder|
+reading -- readers who are interested should note that |HttpRequest_Builder|
 does include methods to specify the HTTP *method* that should be used.
 
 Here is an example that builds an |HttpRequest| for an image:
