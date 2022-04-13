@@ -147,7 +147,7 @@ response.
 .. _get_a_license: https://docs.github.com/en/rest/reference/licenses#get-a-license
 
 The |builder_pattern| really comes in handy when a request involves
-more than just a location |URI|_. The example below builds an
+more than just a location |URI|. The example below builds an
 |HttpRequest| to |get_a_license|_ using the |GitHubApi|_. According to
 GitHub's API documentation, they recommend setting the "Accept" header when building a
 request -- headers are one way to provide an HTTP server with more
