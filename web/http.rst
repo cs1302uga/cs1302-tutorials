@@ -134,7 +134,7 @@ Here is an example that builds an |HttpRequest| for an image:
 
 **NOTE:** The classes and interfaces in |java_net_http| use the |java_net_URI| class
 to represent location / address information for web content. You are likely familiar with
-the concept of a |URL|_; all URLs are also `URIs <URI>`__.
+the concept of a URL; all URLs are also `URIs <URI>`__.
 
 **NOTE:** |ex1|_ demonstrates how to build a request for an image and create
 a JavaFX ``Image`` object using the data included in the body of the associated
