@@ -25,20 +25,41 @@ public class Example3 {
     /**
      * Represents a response from the iTunes Search API. This is used by Gson to
      * create an object from the JSON response body.
+     *
+     * <pre>
+     * {
+     *   "resultCount": 3,
+     *   "results": [
+     *     ItunesResult object,
+     *     ItunesResult object,
+     *     ItunesResult object
+     *   ]
+     * }
+     * </pre>
      */
     private static class ItunesResponse {
-        int resultCount;
-        ItunesResult[] results;
+        int resultCount;         // package private visibility is intentional
+        ItunesResult[] results;  // if you make these, private, then add getters
     } // ItunesResponse
 
     /**
      * Represents a result in a response from the iTunes Search API. This is
      * used by Gson to create an object from the JSON response body.
+     *
+     * <pre>
+     * {
+     *   "wrapperType": "track",
+     *   "kind": "song",
+     *   ...,
+     *   "artworkUrl100": "https://.../source/100x100bb.jpg",
+     *   ...
+     * }
+     * </pre>
      */
     private static class ItunesResult {
-        String wrapperType;
-        String kind;
-        String artworkUrl100;
+        String wrapperType;   // package private visibility is intentional
+        String kind;          // if you make these, private, then add getters
+        String artworkUrl100; // we omit variables for data we're not interested in
     } // ItunesResult
 
     private static HttpClient HTTP_CLIENT = HttpClient.newBuilder()
@@ -54,12 +75,31 @@ public class Example3 {
 
     public static void main(String[] args) {
         try {
+            // form URI
             String term = URLEncoder.encode("daft punk", StandardCharsets.UTF_8);
             String limit = URLEncoder.encode("5", StandardCharsets.UTF_8);
             String query = String.format("?term=%s&limit=%s", term, limit);
-            String url = ITUNES_API + query;
-            String responseBody = Example3.fetchString(url);
-            Example3.parseItunesResponse(responseBody);
+            String uri = ITUNES_API + query;
+            // build request
+            HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create(uri))
+                .build();
+            // send request / receive response in the form of a String
+            HttpResponse<String> response = HTTP_CLIENT
+                .send(request, BodyHandlers.ofString());
+            // ensure the request is okay
+            if (response.statusCode() != 200) {
+                throw new IOException(response.toString());
+            } // if
+            // get request body (the content we requested)
+            String jsonString = response.body();
+            System.out.println("********** RAW JSON STRING: **********");
+            System.out.println(jsonString.trim());
+            // parse the JSON-formatted string using GSON
+            ItunesResponse itunesResponse = GSON
+                .fromJson(jsonString, Example3.ItunesResponse.class);
+            // print info about the response
+            Example3.printItunesResponse(itunesResponse);
         } catch (IOException | InterruptedException e) {
             // either:
             // 1. an I/O error occurred when sending or receiving;
@@ -71,60 +111,23 @@ public class Example3 {
     } // main
 
     /**
-     * Parse the JSON string using Gson, then print some information.
-     * @param responseBody the JSON response body to parse
+     * Print a response from the iTunes Search API.
+     * @param itunesResponse the response object
      */
-    private static void parseItunesResponse(String responseBody) {
-        ItunesResponse response = GSON.fromJson(responseBody, Example3.ItunesResponse.class);
-        System.out.println("********** RAW JSON STRING: **********");
-        System.out.println(responseBody.trim());
+    private static void printItunesResponse(ItunesResponse itunesResponse) {
         System.out.println();
         System.out.println("********** PRETTY JSON STRING: **********");
-        System.out.println(GSON.toJson(response));
+        System.out.println(GSON.toJson(itunesResponse));
         System.out.println();
         System.out.println("********** PARSED RESULTS: **********");
-        System.out.printf("resultCount = %s\n", response.resultCount);
-        for (int i = 0; i < response.results.length; i++) {
-            System.out.printf("response.results[%d]:\n", i);
-            ItunesResult result = response.results[i];
+        System.out.printf("resultCount = %s\n", itunesResponse.resultCount);
+        for (int i = 0; i < itunesResponse.results.length; i++) {
+            System.out.printf("itunesResponse.results[%d]:\n", i);
+            ItunesResult result = itunesResponse.results[i];
             System.out.printf(" - wrapperType = %s\n", result.wrapperType);
             System.out.printf(" - kind = %s\n", result.kind);
             System.out.printf(" - artworkUrl100 = %s\n", result.artworkUrl100);
         } // for
     } // parseItunesResponse
-
-    /**
-     * Returns string from a URL.
-     * @param url content location
-     * @return content as string
-     * @throws IOException if an I/O error occurs when sending, receiving, or parsing
-     * @throws InterruptedException if the HTTP client's {@code send} method is
-     *    interrupted
-     */
-    private static String fetchString(String url) throws IOException, InterruptedException {
-        HttpRequest request = HttpRequest.newBuilder()
-            .uri(URI.create(url))
-            .build();
-        System.out.printf("request = %s; headers = %s\n", request, request.headers());
-        HttpResponse<String> response = HTTP_CLIENT
-            .send(request, BodyHandlers.ofString());
-        System.out.printf("response = %s; headers = %s\n", response, response.headers());
-        Example3.ensureGoodResponse(response);
-        return response.body();
-    } // fetchLicense
-
-    /**
-     * Throw an {@link java.io.IOException} if the HTTP status code of the
-     * {@link java.net.http.HttpResponse} supplied by {@code response} is
-     * not {@code 200 OK}.
-     * @param <T> response body type
-     * @param response response to check
-     * @see <a href="https://httpwg.org/specs/rfc7231.html#status.200">[RFC7232] 200 OK</a>
-     */
-    private static <T> void ensureGoodResponse(HttpResponse<T> response) throws IOException {
-        if (response.statusCode() != 200) {
-            throw new IOException(response.toString());
-        } // if
-    } // ensureGoodResponse
 
 } // Example3
