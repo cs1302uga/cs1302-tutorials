@@ -76,8 +76,6 @@ Class                           Description
 .. |HttpResponse| replace:: ``HttpResponse<T>``
 .. _HttpResponse: https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpResponse.html
 
-
-
 Some complete code examples that involve all three types are included near the end
 of the reading.
 
@@ -99,19 +97,28 @@ providing a public constructor, the authors of |HttpRequest| decided to use
 the |builder_pattern| -- |HttpRequest| objects are constructing by *building*
 them using an |HttpRequest_Builder|_ object returned from ``HttpRequest.newBuilder()``.
 The authors' use of the |builder_pattern|_ prevents the construction of
-incomplete request objects. Most of the methods provided by |HttpRequest_Builder|
+incomplete request objects.
+
+Most of the methods provided by |HttpRequest_Builder|
 merely update the request information stored in the builder object, then just
 return a reference to builder object itself so that you can update it further
 via additional method calls. Once all the request information is specified,
 the ``build()`` method is called to construct the actual |HttpRequest|
 object.
 
+.. code-block:: java
+
+   HttpRequest request = HttpRequest.newBuilder()
+       .uri(location) // sets the HttpRequest's URI
+       .build();      // builds and returns an HttpRequest.
+
 By default, |HttpRequest_Builder| builds "GET" requests that ask
 an HTTP server to include the requested content in the body of the
 response message that is sends back to the client. The HTTP specification
-refers to "GET" as a *method*, but those are outside the scope of this
+refers to "GET" as a *method*, but that is outside the scope of this
 reading -- readers who are interested should note that |HttpRequest_Builder|
-does include methods to specify the HTTP *method* that should be used.
+does include Java methods to specify the HTTP *method* that should be used
+if "GET" is not what you want..
 
 Here is an example that builds an |HttpRequest| for an image:
 
@@ -122,6 +129,12 @@ Here is an example that builds an |HttpRequest| for an image:
        .uri(location) // sets this HttpRequest's request URI
        .build();      // builds and returns an HttpRequest.
 
+.. |java_net_URI| replace:: ``URI``
+.. _java_net_URI: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URI.html
+
+**NOTE:** The classes and interfaces in |java_net_http| use the |java_net_URI| class
+to represent location / address information for web content. You are likely familiar with
+the concept of a |URL|_; all URLs are also `URIs <URI>`__.
 
 **NOTE:** |ex1|_ demonstrates how to build a request for an image and create
 a JavaFX ``Image`` object using the data included in the body of the associated
