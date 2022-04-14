@@ -228,6 +228,7 @@ The example below builds an |HttpRequest| that queries the
    String term = URLEncoder.encode("daft punk", StandardCharsets.UTF_8); // "daft+punk"
    String limit = URLEncoder.encode("5", StandardCharsets.UTF_8);        // "5"
    String query = String.format("?term=%s&limit=%s", term, limit);       // "?term=daft+punk&limit=5"
+
    HttpRequest request = HttpRequest.newBuilder()
        .uri(URI.create("https://itunes.apple.com/search" + query))
        .build();
