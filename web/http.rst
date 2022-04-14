@@ -85,6 +85,9 @@ of the reading.
 .. |builder_pattern| replace:: builder pattern
 .. _builder_pattern: https://en.wikipedia.org/wiki/Builder_pattern
 
+.. |HttpClient_newBuilder| replace:: ``HttpClient.newBuilder()``
+.. _HttpClient_newBuilder: https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpClient.html#newBuilder()
+
 .. |HttpRequest_Builder| replace:: ``HttpRequest.Builder``
 .. _HttpRequest_Builder: https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html
 
@@ -95,16 +98,23 @@ The |HttpRequest|_ class provided by |java_net_http|_ allows Java programs
 to "build" HTTP request messages that can be sent using an HTTP client. Instead of
 providing a public constructor, the authors of |HttpRequest| decided to use
 the |builder_pattern| -- |HttpRequest| objects are constructing by *building*
-them using an |HttpRequest_Builder|_ object returned from ``HttpRequest.newBuilder()``.
-The authors' use of the |builder_pattern|_ prevents the construction of
-incomplete request objects.
+them using an |HttpRequest_Builder|_ object returned from |HttpRequest_newBuilder|_.
+The authors' use of the |builder_pattern| prevents the construction of
+incomplete request objects and provides an nice alternative to potentially
+complex looking constructor calls..
 
 Most of the methods provided by |HttpRequest_Builder|
 merely update the request information stored in the builder object, then just
 return a reference to builder object itself so that you can update it further
 via additional method calls. Once all the request information is specified,
 the ``build()`` method is called to construct the actual |HttpRequest|
-object.
+object. The following two code snippets build a request object using the
+exact same statement -- the second snippet distributes the statement across
+several lines to make it easier to read:
+
+.. code-block:: java
+
+   HttpRequest request = HttpRequest.newBuilder().uri(location).build();
 
 .. code-block:: java
 
@@ -112,13 +122,31 @@ object.
        .uri(location) // sets the HttpRequest's URI
        .build();      // builds and returns an HttpRequest.
 
-By default, |HttpRequest_Builder| builds "GET" requests that ask
+The HTTP specification requires that requests indicate their purpose and
+expectations regarding a successful result by setting a request *method*
+value. By default, |HttpRequest_Builder| builds "GET" requests that ask
 an HTTP server to include the requested content in the body of the
-response message that is sends back to the client. The HTTP specification
-refers to "GET" as a *method*, but that is outside the scope of this
-reading -- readers who are interested should note that |HttpRequest_Builder|
-does include Java methods to specify the HTTP *method* that should be used
-if "GET" is not what you want..
+response message that is sent back to the client. The following two
+code snippets build the same "GET" request:
+
+.. code-block:: java
+
+   HttpRequest request = HttpRequest.newBuilder()
+       .uri(location) // sets the HttpRequest's URI
+       .GET();        // sets the HttpRequest's request method to GET
+       .build();      // builds and returns an HttpRequest.
+
+.. code-block:: java
+
+   HttpRequest request = HttpRequest.newBuilder()
+       .uri(location) // sets the HttpRequest's URI
+       .build();      // builds and returns an HttpRequest.
+
+
+Other request *method* values  are outside the scope of this
+reading; however, readers who are interested should note that |HttpRequest_Builder|
+does include Java methods to specify a different request *method*
+value if "GET" is not what you need.
 
 Here is an example that builds an |HttpRequest| for an image:
 
@@ -140,17 +168,22 @@ the concept of a URL; all URLs are also `URIs <URI>`__.
 a JavaFX ``Image`` object using the data included in the body of the associated
 response.
 
-.. |GitHubApi| replace:: GutHub API
+.. |GitHubApi| replace:: GutHub REST API
 .. _GitHubApi: https://docs.github.com/en/rest
 
 .. |get_a_license| replace:: get a license
 .. _get_a_license: https://docs.github.com/en/rest/reference/licenses#get-a-license
 
-The |builder_pattern| really comes in handy when a request involves
-more than just a location |URI|. The example below builds an
-|HttpRequest| to |get_a_license|_ using the |GitHubApi|_. According to
-GitHub's API documentation, they recommend setting the "Accept" header when building a
-request -- headers are one way to provide an HTTP server with more
+Some HTTP servers host Application Programming Interfaces (APIs)
+that we can interact with using HTTP requests -- instead of a URI referring to
+a "page" or "file", it refers to structured "data" that our program might
+leverage to accomplish some goal. For example, the |GitHubApi| provides
+URIs for accessing information stored by GitHub. Since GitHub supports many
+open source projects, their API provides a URI for structured data about
+open source software licenses. The example below builds an
+|HttpRequest| to |get_a_license|_ (in this case, the MIT license) using the
+|GitHubApi|. According to GitHub's API documentation, they recommend setting the
+"Accept" header when building a request -- headers are one way to provide an HTTP server with more
 information about a request. Here is the code:
 
 .. code-block:: java
