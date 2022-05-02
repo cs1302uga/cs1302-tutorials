@@ -65,7 +65,7 @@ are started.
 the implicit exit condition can also be phrased as follows: all started non-daemon threads
 have finished executing.
 
-[^3]: In offocial Java documentation, a non-daemon thread is often referred to as a
+[^3]: In official Java documentation, a non-daemon thread is often referred to as a
 *user thread*; however, we chose not to use that term here since its 
 [usual definition](https://en.wikipedia.org/wiki/Thread_(computing)#User_threads)
 would include both both daemon and non-daemon threads in Java.
