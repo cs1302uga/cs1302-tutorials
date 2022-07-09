@@ -15,14 +15,14 @@
 This tutorial assumes that the reader is a Computer Science student
 at the University of Georgia with access to the department's
 instructional server called Odin. If you were assigned this reading in a
-CSCI class at UGA, then you probably have access. We recommend writing the
+CSCI class at UGA, then you should already have access. We recommend writing the
 answers to any questions asked in this tutorial in your notes along with some
 context. These notes will be helpful for studying.
 
 Logging into a Unix Machine
 ---------------------------
 
-Access to Odin is restricted behind a firewall. In order to access Odin off-campus, you
+Access to Odin is restricted behind a firewall. In order to access Odin from off-campus, you
 will need to connect to UGA's remote access VPN using the instructions found
 `here <https://eits.uga.edu/access_and_security/infosec/tools/vpn/>`_.
 
