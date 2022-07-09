@@ -297,42 +297,12 @@ is included in the "long" output format, as described below the next few example
 
 .. [1] .. rubric:: **Mode**
 
-       The file type and permissions. The first character denotes the file type.
-       In Unix, file type refers to how the file behaves from the file system's perspective.
-       File type and content format are different concepts. File suffixes like ``.txt``,
-       ``.mp3``, ``.pdf``, etc. are all naming conventions for the content formats of certain
-       regular files. Common file types include:
-
-       =========  ==============  ===================
-       Character  File Type       Description
-       =========  ==============  ===================
-       ``-``      regular file    text or binary data
-       ``d``      directory file  collection of files
-       ``l``      symbolic link   shortcut to a file
-       =========  ==============  ===================
-
-       The next nine (9) characters denote the read (``r``), write (``w``), and execute (``x``) permissions
-       for the file's user (``u``), group (``g``), and others (``o``). We will go into more detail regarding
-       file permissions later, but here is a quick breakdown for ``rw-r--r--``:
-
-       =====  =====  =====  =====  =====  =====  =====  =====  =====
-       User                 Group                Others
-       -------------------  -------------------  -------------------
-       R      W      X      R      W      X      R      W      X
-       =====  =====  =====  =====  =====  =====  =====  =====  =====
-       ``r``  ``w``  ``-``  ``r``  ``-``  ``-``  ``r``  ``-``  ``-``
-       ✓      ✓      ✗      ✓      ✗      ✗      ✓      ✗      ✗
-       =====  =====  =====  =====  =====  =====  =====  =====  =====
-
-       File type cannot usually be changed after a file has been created; however, a file's permissions
-       can always be changed by its owner, a superuser (administrator), or a program acting on behalf
-       of either the owner or a superuser. It is also worth noting that superusers are usually not
-       subject to permission restrictions.
-
-       The eleventh (11) character specifies whether an alternate access method such as an access control list
-       applies to the file in addition to the displayed permissions. This topic is beyond the scope of this
-       reading, but for those who are curious, the ``.`` indicates that a file has an SELinux security context
-       and no other alternate access method.
+       The mode specifies the file type and permissions. The first character tells you what type of file is listed. 
+       In most cases, this character will be either ``-`` for regular files and ``d`` for directories. 
+       The rest of the bits represent the permissions of the file. In other words, which users on the system are
+       allowed to read, modify, and execute the file. We will talk about permissions in more detail in a few weeks.
+       If you are interested in reading ahead, please see the 
+       `1302 Octal Mode Tutorial <https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/octal-mode.md>`_.
 
 .. [2] .. rubric:: **Hard Links**
 
