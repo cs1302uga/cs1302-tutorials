@@ -45,26 +45,21 @@ about the file's type (e.g., regular file or directory file) and its associated 
 The first character of the mode denotes the file type. In Unix, file type refers to how the file 
 behaves from the file system's perspective. Common file types include:
 
-       =========  ==============  ===================
-       Character  File Type       Description
-       =========  ==============  ===================
-       ``-``      regular file    text or binary data
-       ``d``      directory file  collection of files
-       ``l``      symbolic link   shortcut to a file
-       =========  ==============  ===================
+   |Character   |File Type        |Description          |
+   |----------- |---------------- |---------------------|
+   |`-`         |regular file     |text or binary data  |
+   |`d`         |directory file   |collection of files. |
+   |`l`         |symbolic link    |shortcut to a file   |
 
 The next nine (9) characters denote the read (``r``), write (``w``), and execute (``x``) permissions
 for the file's user (``u``), group (``g``), and others (``o``). We will go into more detail regarding
 file permissions later in this tutorial, but here is a quick breakdown for ``rw-r--r--``:
 
-       =====  =====  =====  =====  =====  =====  =====  =====  =====
-       User                 Group                Others
-       -------------------  -------------------  -------------------
-       R      W      X      R      W      X      R      W      X
-       =====  =====  =====  =====  =====  =====  =====  =====  =====
-       ``r``  ``w``  ``-``  ``r``  ``-``  ``-``  ``r``  ``-``  ``-``
-       ✓      ✓      ✗      ✓      ✗      ✗      ✓      ✗      ✗
-       =====  =====  =====  =====  =====  =====  =====  =====  =====
+   |User                  |Group                |Others             |
+   |--------------------- |-------------------  |-------------------|
+   |R      W     X        |R      W      X      |R      W      X    |
+   |`r`   `w`    `-`      |`r`    `-`    `-`    |`r`   `-`    `-`   |
+   |✓      ✓      ✗       |✓      ✗      ✗      |✓      ✗      ✗    |
 
 File type cannot usually be changed after a file has been created; however, a file's permissions
 can always be changed by its owner, a superuser (administrator), or a program acting on behalf
