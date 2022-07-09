@@ -1,6 +1,6 @@
 # Setup on macOS
 
-![Approved for: Spring 2022](https://img.shields.io/badge/Approved%20for-Spring%202022-purple)
+![Approved for: Spring 2022]([https://img.shields.io/badge/Approved%20for-Spring%202022-purple](https://img.shields.io/badge/Approved%20for-Fall%202022-lightgreen))
 
 The following instructions are designed to help get you up and running with macOS for development
 in CSCI 1302. The majority of the time, you will not be developing directly on your Mac. Instead,
@@ -14,7 +14,8 @@ If typing `Ctrl-<SPACE>` (i.e., `⌃Space`) changes your keyboard layout, then y
 adjust some settings as that keyboard shortcut is used heavily in one of the programs we'll
 be using this semester. **If it doesn't, then you can skip to the next section.**
 
-To fix `Ctrl-<SPACE>`, go to the "Keyboard Settings" for your Mac, then select the
+To fix `Ctrl-<SPACE>`, click the apple icon in the top-left of your screen then select "System Preferences". 
+From there, go to the "Keyboard Settings" which may be just called "Keyboard", then select the
 "Shortcuts" tab. Find the shortcut that is mapped to `⌃Space` and either change it
 or disable it. Once you've made the change, you should be all set as far as 
 `Ctrl-<SPACE>` is concerned.
