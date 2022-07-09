@@ -101,8 +101,8 @@ that you can follow along with the tutorial. If you are using a Windows
 computer or a Mac, then please follow the instructions below that best match
 your computer's operating system.
 
-* `Setup on macOS <https://github.com/cs1302uga/cs1302-exercises/blob/master/misc/MacOS.md>`__
-* `Setup on Windows 10 <https://github.com/cs1302uga/cs1302-exercises/blob/master/misc/Windows10.md>`__
+* `Setup on macOS <https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/setup/MacOS.md>`__
+* `Setup on Windows 10 <https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/setup/Windows.md>`__
   (should also work for Windows 11)
 
 If you are using a Linux computer or a computer running a Unix-like operating
