@@ -47,7 +47,10 @@ emulator (or a "terminal window," for short) is displayed containing the output
 of the commands ``ls`` and ``tree`` (discussed later). On the right, the graphical
 Finder app is displayed containing some of the same information. Take a moment
 to convince yourself that both images are displaying roughly the same information 
-in two different ways.
+in two different ways. On the left, the output of the ``tree`` command looks very 
+similar to the output on the right. The only difference is that the user typed 
+the command with the keyboard instead of double-clicking a folder icon as they would
+on the right.
 
 Prompt and Circumstance
 =======================
