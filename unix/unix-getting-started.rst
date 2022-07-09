@@ -32,8 +32,10 @@ Here are some examples of what such a prompt might look like:
 
    zsh%
 
-The shell is just another way to interact with computer. These days, all
-students are familiar with the point-and-click graphical windowing systems
+The shell is just another way to interact with computer. Think of it as an interface
+that allows you to type your commands on the keyboard instead of clicking icons on the
+screen. Both interfaces allow you to do the same things, just in a different way.
+These days, all students are familiar with the point-and-click graphical windowing systems
 provided in operating systems like Windows, macOS, and even phones.
 However, only some realize that the windowing system they're used to is
 only one way to interact with a computer. Consider the figure below.
