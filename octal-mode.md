@@ -1,6 +1,6 @@
 # Octal Mode
 
-![Approved for: Spring 2022](https://img.shields.io/badge/Approved%20for-Spring%202022-purple)
+![Approved for: Fall 2022](https://img.shields.io/badge/Approved%20for-Fall%202022-darkgreen)
 
 ## Prerequisites
 
@@ -37,12 +37,49 @@ On Odin, try the following:
    $ stat newfile
    ```
 
-## Octal Mode
+## Mode
 
 One very important part of a file's status information is its _mode_, which contains information
-about the file's type (e.g., regular file or directory file) and its associated permissions. In
-the output to `ls -l`, you see the symbolic mode. However, another way to express the permission
-portion of the mode is using octal notation.
+about the file's type (e.g., regular file or directory file) and its associated permissions. 
+
+The first character of the mode denotes the file type. In Unix, file type refers to how the file 
+behaves from the file system's perspective. Common file types include:
+
+       =========  ==============  ===================
+       Character  File Type       Description
+       =========  ==============  ===================
+       ``-``      regular file    text or binary data
+       ``d``      directory file  collection of files
+       ``l``      symbolic link   shortcut to a file
+       =========  ==============  ===================
+
+The next nine (9) characters denote the read (``r``), write (``w``), and execute (``x``) permissions
+for the file's user (``u``), group (``g``), and others (``o``). We will go into more detail regarding
+file permissions later in this tutorial, but here is a quick breakdown for ``rw-r--r--``:
+
+       =====  =====  =====  =====  =====  =====  =====  =====  =====
+       User                 Group                Others
+       -------------------  -------------------  -------------------
+       R      W      X      R      W      X      R      W      X
+       =====  =====  =====  =====  =====  =====  =====  =====  =====
+       ``r``  ``w``  ``-``  ``r``  ``-``  ``-``  ``r``  ``-``  ``-``
+       ✓      ✓      ✗      ✓      ✗      ✗      ✓      ✗      ✗
+       =====  =====  =====  =====  =====  =====  =====  =====  =====
+
+File type cannot usually be changed after a file has been created; however, a file's permissions
+can always be changed by its owner, a superuser (administrator), or a program acting on behalf
+of either the owner or a superuser. It is also worth noting that superusers are usually not
+subject to permission restrictions.
+
+The eleventh (11) character specifies whether an alternate access method such as an access control list
+applies to the file in addition to the displayed permissions. This topic is beyond the scope of this
+reading, but for those who are curious, the ``.`` indicates that a file has an SELinux security context
+and no other alternate access method.
+       
+## Octal Mode
+
+In the output to `ls -l` and in the examples above, you see the symbolic mode. However, another way to 
+express the permission portion of the mode is using octal notation.
 
 **NOTE:** Although the symoblic mode may be more readable in many cases, octal notation is vastly
 more prevalent in literature and examples that you may find online. 
