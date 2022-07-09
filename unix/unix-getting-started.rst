@@ -114,9 +114,12 @@ system's documentation.
 Local Terminal
 ==============
 
-When you run a terminal emulator, the usual default is for it
-to connect to the same computer it is running on. This *local terminal*
-provides a shell with a command-line interface to that computer. Consider the
+When you run a terminal emulator on your local (personal) computer (laptop or desktop), 
+the default is for it to connect to the same computer it is running on. In other 
+words, any commands you type will execute on your local computer. For example,
+executing the ``ls`` command will list all of the files in the directory the shell
+is working from on your local computer. This *local terminal*
+provides a shell with a command-line interface to your computer. Consider the
 figure below.
 
 .. figure:: img/local-terminals.png
@@ -136,11 +139,14 @@ operating system.
 Remote Terminal
 ===============
 
-To make sure that readers all have roughly the same experience with the tutorial,
-we will instruct them to use a local terminal to launch a program that will
+In this course, you will rarely be working from your local computer. Instead,
+we will instruct you to use a local terminal to launch a program that will
 connect their terminal emulator to a remote computer (often referred to as a
 server). Once connected, that *remote terminal* provides a shell with a command-line
-interface to that remote computer. Consider the figure below.
+interface to that remote computer. Once connected, any commands you type will execute
+on the remote computer instead of on your local machine. So, typing ``ls`` will list
+the contents of the remote directory instead of a directory found on your computer.
+Consider the figure below.
 
 .. figure:: img/remote-terminals.png
    :alt: iTerm 2 on macOS Big Sur (left) and MobaXterm 21.2 on Windows 10 (right)
