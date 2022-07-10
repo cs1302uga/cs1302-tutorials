@@ -24,7 +24,9 @@ When working through any tutorial in 1302, it is expected that you will fully en
 other words, it is not sufficient to skim read the content. You should carefully read and process
 and then follow along by typing the commands into your terminal emulator, taking notes as you go.
 We recommend writing the answers to any questions asked in this tutorial in your notes along with some
-context. These notes will be helpful for studying.
+context. These notes will be helpful for studying. If you have any questions as you are working through
+the tutorial, you are encouraged to post on the course Piazza page. Your questions will not only help
+you fill gaps in your knowledge but also give us insight on potential updates to the tutorials.
 
 Fully engaging with the content will improve your understanding of the content and help you retain 
 the information long term.
@@ -56,10 +58,8 @@ Simply type in your password, then press the return key to continue.
 If you have trouble logging into Odin, then please
 contact support@cs.uga.edu as soon as possible.
 
-When typing into a remote terminal, the commands that you enter
-are executed on the remote computer. It might look like you are
-running programs locally, but they are simply being displayed
-locally.
+Remember, when typing into a remote terminal, the commands that you enter
+are executed on the remote computer - not on your personal computer.
 
 .. table::
 
@@ -90,6 +90,9 @@ without permission violates sections 4.2 and 4.3 of the
 +++++++
 
 When you login to Odin, you are placed in your *home directory* (home folder).
+You can think of this as your own personal folder where your files will be stored
+on Odin. Any code you write in 1302 will be in a subfolder of your home directory.
+
 You can see where your home directory is on the system with the help of the
 ``pwd`` (print working directory) command. It always displays the absolute
 "path" of the directory that you are presently in. It is called an absolute
@@ -138,26 +141,23 @@ of which you may have seen in earlier examples.
    ``whoami``  Print the user name associated with the current user.
    ==========  ======================================================================================
 
-``.bash_profile``
-+++++++++++++++++
+``.bash_profile`` (Required Command)
+++++++++++++++++++++++++++++++++++++
 
 To continue with this tutorial, the **CSCI 1302 shell profile** needs
 to be enabled on your Odin account. Enabling this profile is also required
 to complete coursework in CSCI 1302. A *shell profile* includes commands
 and setting customizations that take effect when the profile is *sourced* (loaded).
-When ``bash`` is launched as a login shell, it sources a default system profile,
-then it looks in the user's home directory for ``.bash_profile``, ``.bash_login``,
-and ``.profile`` files, in that order, and sources the first one that is available.
+This step will set up your programming environment for 1302. It will tell the system
+where to find the java compiler and other tools that we will use throughout the 
+semester.
 
-You may already have the CSCI 1302 shell profile enabled. If you do, then
-you will see ``Setting up environment for CSCI 1302...``
-followed by lines prefixed with ``[cs1302]`` when you login to Odin.
-
+If you see something similar to what is presented below when you login,
+then the CSCI 1302 shell profile is enabled on your account, and you should
+proceed immediately to the next section of this tutorial.
+  
 .. figure:: img/cs1302-profile-check-demo.svg?1
 
-* If you see something similar to what is presented above when you login,
-  then the CSCI 1302 shell profile is enabled on your account, and you should
-  proceed immediately to the next section of this tutorial.
 
 * If you do not see any of that when you login, then the CSCI 1302 shell profile
   is not enabled on your account. To enable it, execute the command below. The
@@ -182,7 +182,14 @@ followed by lines prefixed with ``[cs1302]`` when you login to Odin.
 
   .. figure:: img/cs1302-profile-enable-demo.svg
 
-  * **Make sure that you logout, then login again before continuing.**
+
+**Make sure that you logout, then login again before continuing.**
+When you log back in, you should see output similar to what is shown in the video
+at the start of this section.
+
+Congratulations! If you see the output above when you log into Odin, you have set up your 
+Odin account. You're now ready to log into a remote computer and develop software!
+
 
 Navigating the File System
 -------------------------
