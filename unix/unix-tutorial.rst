@@ -24,7 +24,8 @@ When working through any tutorial in 1302, it is expected that you will fully en
 other words, it is not sufficient to skim read the content. You should carefully read and process
 and then follow along by typing the commands into your terminal emulator, taking notes as you go.
 We recommend writing the answers to any questions asked in this tutorial in your notes along with some
-context. These notes will be helpful for studying. If you have any questions as you are working through
+context. For this tutorial, **we recommend logging into Odin and typing the commands as you work through 
+the examples**. If you have any questions as you are working through
 the tutorial, you are encouraged to post on the course Piazza page. Your questions will not only help
 you fill gaps in your knowledge but also give us insight on potential updates to the tutorials.
 
@@ -34,7 +35,7 @@ the information long term.
 Navigating the File System
 -------------------------
 
-Earlier in this tutorial, you experienced the ``pwd`` (print working directory)
+In the previous tutorial, you experienced the ``pwd`` (print working directory)
 command and were provided a brief introduction to absolute paths. In Unix, a
 *directory file* or *directory* is the same concept as a folder in other
 operating systems; that is, in most cases the words "directory" and "folder"
