@@ -1,5 +1,5 @@
 .. sectnum::
-.. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Spring%202022-purple
+.. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Fall%202022-darkgreen
 
 ================
  Unix: Tutorial
@@ -11,6 +11,25 @@
    :depth: 3
 
 ----
+
+
+How to engage with this tutorial
+---------------------------------
+
+**Important:** If you have not completed the 
+`Unix: Getting Started <https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/unix/unix-getting-started.rst>`_ 
+tutorial, please complete that before beginning this tutorial.
+
+When working through any tutorial in 1302, it is expected that you will fully engage with the material. In
+other words, it is not sufficient to skim read the content. You should carefully read and process
+and then follow along by typing the commands into your terminal emulator, taking notes as you go.
+We recommend writing the answers to any questions asked in this tutorial in your notes along with some
+context. These notes will be helpful for studying. If you have any questions as you are working through
+the tutorial, you are encouraged to post on the course Piazza page. Your questions will not only help
+you fill gaps in your knowledge but also give us insight on potential updates to the tutorials.
+
+Fully engaging with the content will improve your understanding of the content and help you retain 
+the information long term.
 
 Navigating the File System
 -------------------------
