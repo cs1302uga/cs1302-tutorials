@@ -10,6 +10,20 @@
 .. contents:: **Table of Contents**
    :depth: 3
 
+How to engage with this tutorial
+================================
+
+When working through any tutorial in 1302, it is expected that you will fully engage with the material. In
+other words, it is not sufficient to skim read the content. You should carefully read and process
+and then follow along by typing the commands into your terminal emulator, taking notes as you go.
+We recommend writing the answers to any questions asked in this tutorial in your notes along with some
+context. These notes will be helpful for studying. If you have any questions as you are working through
+the tutorial, you are encouraged to post on the course Piazza page. Your questions will not only help
+you fill gaps in your knowledge but also give us insight on potential updates to the tutorials.
+
+Fully engaging with the content will improve your understanding of the content and help you retain 
+the information long term.
+
 Introduction
 ============
 
@@ -167,9 +181,155 @@ as illustrated in the figure below.
          all connected to a remote computer (center).
 
 Most Unix-like operating systems support multiple users and multiple sessions
-per user. The tutorial will show you how to establish a remote terminal
-session. After that, you are encouraged to try logging in more than once to
-see what it's like.
+per user. Next, we will show you how to establish a remote terminal
+session with our departmental server. After that, you are encouraged to try logging 
+in more than once to see what it's like.
+
+Logging into a Remote Unix Machine
+==================================
+
+In this section, you will log into your account on the computer science departmental server called
+Odin. We will do all of our programming this semester on this Unix server so you become comfortable
+working in a command-line Unix environment.
+
+Access to Odin is restricted behind a firewall. In order to access Odin from off-campus, you
+will need to connect to UGA's remote access VPN using the instructions found
+`here <https://eits.uga.edu/access_and_security/infosec/tools/vpn/>`_.
+
+``ssh``
++++++++
+
+Your username on Odin is your UGA MyID and the password is the same one that
+is associated with your MyID. Once you are successfully logged into the VPN,
+open up a local terminal in your terminal emulator and execute the ``ssh``
+(secure shell) command shown below to establish a secure connection -- be
+sure to replace ``username`` with your MyID. When you type in your password,
+it will not display anything to the screen -- this is the expected behavior.
+Simply type in your password, then press the return key to continue.
+
+.. code-block:: shell
+
+   $ ssh username@odin.cs.uga.edu
+
+.. figure:: img/login-demo.svg
+
+If you have trouble logging into Odin, then please
+contact support@cs.uga.edu as soon as possible.
+
+Remember, when typing into a remote terminal, the commands that you enter
+are executed on the remote computer - not on your personal computer.
+
+.. table::
+
+   =====================  ======================================================================
+   Command                 Description
+   =====================  ======================================================================
+   ``ssh user@hostname``  Start a secure shell connection to ``hostname`` and login as ``user``.
+   =====================  ======================================================================
+
+``pwd``
++++++++
+
+When you login to Odin, you are placed in your *home directory* (home folder).
+You can think of this as your own personal folder where your files will be stored
+on Odin. Any code you write in 1302 will be in a subfolder of your home directory.
+
+You can see where your home directory is on the system with the help of the
+``pwd`` (print working directory) command. It always displays the absolute
+"path" of the directory that you are presently in. It is called an absolute
+path, because it describes the path of directories that you would need to
+traverse to get from the root of the file system (i.e., the ``/`` directory)
+to the current working directory one directory at a time.
+
+.. code-block:: shell
+
+   $ pwd
+
+.. figure:: img/pwd-demo.svg?1
+
+.. code-block:: plain
+
+   /
+   └── home
+       └── myid
+           └── mepcott
+
+* What is the absolute path of your home directory?
+* What character does an absolute path always start with, and
+  what does it represent?
+
+.. table::
+
+   ========  ======================================================================
+   Command   Description
+   ========  ======================================================================
+   ``pwd``   Print absolute path of current working directory.
+   ========  ======================================================================
+
+``date``, ``exit``, ``whoami``
+++++++++++++++++++++++++++++++
+
+Listed below are some easy commands that you can try out immediately, some
+of which you may have seen in earlier examples.
+
+.. table::
+
+   ==========  ======================================================================================
+   Command     Description
+   ==========  ======================================================================================
+   ``date``    Print the system date and time.
+   ``exit``    Exit the current shell.
+   ``whoami``  Print the user name associated with the current user.
+   ==========  ======================================================================================
+
+``.bash_profile`` (Required Command)
+++++++++++++++++++++++++++++++++++++
+
+To continue with this tutorial, the **CSCI 1302 shell profile** needs
+to be enabled on your Odin account. Enabling this profile is also required
+to complete coursework in CSCI 1302. A *shell profile* includes commands
+and setting customizations that take effect when the profile is *sourced* (loaded).
+This step will set up your programming environment for 1302. It will tell the system
+where to find the java compiler and other tools that we will use throughout the 
+semester.
+
+If you see something similar to what is presented below when you login,
+then the CSCI 1302 shell profile is enabled on your account, and you should
+proceed immediately to the next section of this tutorial.
+  
+.. figure:: img/cs1302-profile-check-demo.svg?1
+
+
+* If you do not see any of that when you login, then the CSCI 1302 shell profile
+  is not enabled on your account. To enable it, execute the command below. The
+  command adds a line to the ``.bash_profile`` file in your home directory so
+  that the profile is sourced each time you login. You won't have to run this command
+  again this semester.
+  
+  **NOTE:** Unlike some of the examples you've seen with ``mepcott`` (i.e., Dr. Cotterell's
+  username), the ``mepcott`` in the following command should NOT be replaced with 
+  your username. The command is provided by Dr. Cotterell to enable the
+  CSCI 1302 shell profile on your account.
+
+  .. code-block:: shell
+
+     $ /usr/local/mepcott/cs1302.enable
+     
+  .. code-block:: shell
+  
+     #           |-------|
+     #               |
+     #    MUST USE "mepcott" HERE
+
+  .. figure:: img/cs1302-profile-enable-demo.svg
+
+
+**Make sure that you logout, then login again before continuing.**
+When you log back in, you should see output similar to what is shown in the video
+at the start of this section.
+
+Congratulations! If you see the output above when you log into Odin, you have set up your 
+Odin account. You're now ready to log into a remote computer and develop software!
 
 .. copyright and license information
 .. |copy| unicode:: U+000A9 .. COPYRIGHT SIGN
