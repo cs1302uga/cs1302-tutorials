@@ -19,6 +19,14 @@ CSCI class at UGA, then you should already have access. We recommend writing the
 answers to any questions asked in this tutorial in your notes along with some
 context. These notes will be helpful for studying.
 
+How to engage with this tutorial
+--------------------------------
+
+When working through any tutorial in 1302, it is expected that you will fully engage with the material. In
+other words, it is not sufficient to skim read the content. You should carefully read and process
+and then follow along by typing the commands into your terminal emulator, taking notes as you go.
+Doing so will improve your understanding of the content and help you retain it long term.
+
 Logging into a Unix Machine
 ---------------------------
 
