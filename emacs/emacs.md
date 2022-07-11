@@ -40,6 +40,12 @@ If you're interested in learning more about Emacs, check out the [Wikipedia Page
 
 In this tutorial, we will teach you the basics of the Emacs text editor.
 
+Since you will be writing and editing Java code in Emacs, it's important to know the basic shortcuts. We don't
+expect you to memorize all of these shortcuts at this time. Instead, just try to get a basic understanding of
+how Emacs works. You will be practicing with Emacs all semester. We also recommend keeping the 
+[Emacs Reference Card](https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf) next to you while coding - 
+especially for the first month or two of the course.
+
 ## Control and Meta
 
 Throughout this tutorial we will use `C` to refer to the control key (`CTRL`)
