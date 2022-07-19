@@ -6,7 +6,9 @@
 
 </div>
 
-## Prerequisites
+## Prerequisite Information
+
+This tutorial requires a basic understanding of variables, classes, and objects in the Java programming language. 
 
 Before starting this tutorial, please make sure to watch the 1301 review videos on eLC under
 "Content" -> "1301 Videos". Specifically, videos 14-22 will help you understand these concepts.
