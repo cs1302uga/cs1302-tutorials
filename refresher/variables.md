@@ -1,18 +1,22 @@
 # Refresher: Reference Variables
 
-![Approved for: Spring 2022](https://img.shields.io/badge/Approved%20for-Spring%202022-purple)
+![Approved for: Fall 2022](https://img.shields.io/badge/Approved%20for-Fall%202022-darkgreen)
 
 <div class="contents" depth="2">
 
 </div>
 
+## Prerequisites
+
+Before starting this tutorial, please make sure to watch the 1301 review videos on eLC under
+"Content" -> "1301 Videos". Specifically, videos 14-22 will help you understand these concepts.
+
 ## Introduction
 
 In computer programming, a **variable** is just an alias for a location
 in memory. Instead of requiring programmers to remember explicit memory
-addresses, we let them use variables as a matter of convenience. Some
-languages (e.g., C and C++) also allow programmers to deal directly with
-memory addresses. Every declared variable has the following:
+addresses, we let them use variables as a matter of convenience. Every 
+declared variable has the following:
 
 -   a **value**, the actual data stored in some memory location;
 -   a **type**, an attribute that tells the computer how to interpret
@@ -20,38 +24,59 @@ memory addresses. Every declared variable has the following:
 -   a **name**, an attribute that tells the computer the word that we
     want to use to refer to the associated data.
 
-According to [Chapter 4 of the Java Language
-Specification](https://docs.oracle.com/javase/specs/jls/se17/html/jls-4.html#jls-4.10.1),
+Take a moment to identify the value, type, and name of the variables declared
+and initialized below. Before looking ahead, write your answers in your notes.
 
-> There are two kinds of types in the Java programming language:
-> primitive types
-> ([§4.2](https://docs.oracle.com/javase/specs/jls/se17/html/jls-4.html#jls-4.2))
-> and reference types
-> ([§4.3](https://docs.oracle.com/javase/specs/jls/se17/html/jls-4.html#jls-4.3)).
-> There are, correspondingly, two kinds of data values that can be
-> stored in variables, passed as arguments, returned by methods, and
-> operated on: primitive values
-> ([§4.2](https://docs.oracle.com/javase/specs/jls/se17/html/jls-4.html#jls-4.2))
-> and reference values
-> ([§4.3](https://docs.oracle.com/javase/specs/jls/se17/html/jls-4.html#jls-4.3)).
+```java
+int x = 17;
+String s = "Hello!";
+```
+
+Did you come up with the answers below?
+
+
+| Declaration         | Value  | Type  | Name |
+|---------------------|--------|-------|------|
+|`int x = 17`         |  17    |  int  |  x   |
+|`String s = "Hello"` | "Hello"| String|  s   |
+
+
+Notice the type of the two variables above. The first, `int`, is a primitive type and the second,
+`String`, is a reference type. You can immediately tell that `String` is a reference type by the
+fact that it start with a capital letter. These two variables both contain values but they work
+very differently under the hood. In this tutorial, we will demonstrate the important 
+differences between these two types of variables.
 
 ## Reference Types Overview
 
 In Java, the **reference types**
 ([§4.3](https://docs.oracle.com/javase/specs/jls/se17/html/jls-4.html#jls-4.3))
-are class types, interface types, and array types.
+are class types, interface types, and array types. Of these three, you are likely familiar
+with creating variables of both class and array types. Below are two examples:
 
-An **object** is really just a collection of variables that are defined
-by a class. It is not uncommon to describe Java objects as dynamically
-constructed instances of a class. When an object is constructed, its
-collection of variables is stored contiguously in some location in
+```java
+Person ada;      // A class type variable (valid only if we have a class called Person on the classpath)
+double[] array;  // An array type variable 
+```
+
+Both of the above types are reference types which means that the variables
+contain the memory address (location) of the object that they refer to - not
+the object itself. 
+
+An **object** is really just a collection 
+of variables that are defined by a class. It is not uncommon to describe Java 
+objects as dynamically constructed instances of a class. When an object is 
+constructed, its collection of variables is stored contiguously in some location in
 memory, which we usually call the object’s **reference**. This is
 important because, in Java, the possible values of a reference type are
 references to compatible objects (or `null`).
 
+Below we describe various scenarios in which you may encounter/use reference variables
+in your code.
+
 ### Example 1: Refer to No Object
 
-Consider the following initialization:
+Consider the following declaration and initialization:
 
 ``` java
 Scanner s = null;
