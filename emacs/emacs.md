@@ -75,7 +75,7 @@ hit `h`, release `CTRL`, then hit `t`.
 | Emacs tutorial | `C-h t`   |             | `CTRL(h), (t)` |
 
 If a binding has consecutive occurences of either the `C` or `M` modifier keys, 
-then there is no need to release the modifer key between those occurances. This 
+then there is no need to release the modifer key between those occurences. This 
 can be seen in the first example, where both of the following keystroke sequences
 result in `C-x C-f`:
 * `CTRL(x), CTRL(f)`
@@ -230,8 +230,8 @@ navigate to where you want to paste, then yank the text from the kill buffer.
 To search for text, you can use the incremental search commands `C-s` and `C-r`,
 which differ only in their search direction. After pressing `C-s`, Emacs will
 display an `I-search:` prompt at the bottom of the screen. When prompted, type 
-the text you want to find, then press `RET`. If multiple occurances are found,
-then repeated calls to `C-s` will cycle through the occurances (`C-g` can be used
+the text you want to find, then press `RET`. If multiple occurences are found,
+then repeated calls to `C-s` will cycle through the occurences (`C-g` can be used
 to stop).
 
 | Binding   | Action                                                                 |
