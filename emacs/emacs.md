@@ -65,6 +65,9 @@ to understand how to read their associated key bindings so that you can
 successfully make the appropriate keystrokes. In the table below, we'll use
 `KEY(key)` to denote that you should press `key` while holding `KEY` and `(key)`
 to denote that `key` should be pressed without any kind of modifier key.
+For example, `CTRL(x, f)` means to hold `CTRL`, hit `x`, then hit `f`, then release
+`CTRL`. An allternative would be `CTRL(h), (t)` which means to hold `CTRL`,
+hit `h`, release `CTRL`, then hit `t`.
 
 | Command        | Binding   | Alternative | Keystrokes     |
 |----------------|-----------|-------------|----------------|
