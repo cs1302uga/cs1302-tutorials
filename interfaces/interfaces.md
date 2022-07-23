@@ -1,6 +1,6 @@
 # Interfaces Tutorial
 
-![Approved for: Spring 2022](https://img.shields.io/badge/Approved%20for-Spring%202022-purple) 
+![Approved for: Fall 2022](https://img.shields.io/badge/Approved%20for-Fall%202022-darkgreen)
 
 This tutorial introduces the reader to Java interfaces and polymorphism.
 
@@ -46,12 +46,17 @@ The steps in this tutorial assume that you are logged into the Odin server.
    reference type in Java, including classes, interfaces, and class-based enumerations. A 
    **reference type** in Java is any type that can serve as the type for a variable that refers to 
    an object. Such a variable is known as a **reference variable**. We will elaborate on this 
-   terminology a little more later in this tutorial.
+   terminology in the context of interfaces a little more later in this tutorial. If you are 
+   unfamiliar with these terms in general, please review the 
+   [Reference Variable Refresher](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/refresher/variables.md)
+   from last week. You are encouraged to ask questions about any parts that you find confusing.
 
 ### What is an Interface?
 
-In its simplest form, a Java **interface** is a reference type composed of abstract methods and 
-constants. An **abstract method** is a non-static method without an implementation (body). Constants
+In its simplest form, a Java **interface** is a reference type composed of **abstract methods** and 
+**constants**. An **abstract method** is a non-static method without an implementation (body). Think of
+creating a class, adding the method signatures, but not putting any code in the methods. This will seem
+strange at first but the benefit will become clear as you work through the example. **Constants**
 are variables (static or not) that are declared using the `final` keyword. As of Java 8, the
 technical definition for an *interface* allows it to contain only the following:
 abstract methods, constants, static methods, nested types, and default implementation
@@ -60,20 +65,55 @@ Nested types and default methods will not be covered in this tutorial. Java 9 ad
 for private methods within an interface.
 
 Interfaces are used to specify that a type *can do* a set of things specified by its
-abstract methods and constants. An interface serves as a contract for the classes that 
+abstract methods and constants. An interface serves as a *contract* for the classes that 
 claim to implement the interface. Multiple classes can implement the same interface,
 each providing their own implementation of the contracted functionality. For this
 reason, it is important that the documentation for an interface describe *what* a method
 does and not necessarily *how* it should do it. Such documentation is usually written using
 Javadoc comments in the interface.
 
+### Real World Example
+
+Remember, we said an interface is a *contract* for the classes that claim to implement it. Take a 
+moment to think about how contracts are used in the real world (forget Java for a second). 
+
+Hopefully, you came up with a definition of the word contract and maybe a few situations where 
+contracts are used. A contract is a formal and binding agreement between two or more parties. 
+
+Let's use the professional athlete as an example. Athletes sign a contract which is a 
+binding agreement between the athlete and the organization that ensures the athlete will compete
+in his/her sport. The contract states that the athlete must "compete" (yes, this is oversimplified)
+but it doesn't say specifically *how* they will compete or how they will respond to certain 
+situations while competing. These details are not relevant to the contract. The contract simply
+binds the athlete to compete. The specific details and decisions that occur while the competition
+is ongoing is up to the athlete. Once the contract is written, it could be signed by athletes
+in a wide variety of sports. The signer could be a track athlete, a baseball player, a football
+player, a racecar driver, etc. Note that the signer determines the details of how they will compete 
+- the contract only binds them to action of competing.
+
+Terminology
+contract == interface
+requirements in the contract == abstract methods
+contract signer == implementing class
+
+Now, let's tie this back to programming. In the example above, "compete" is the abstract method 
+that would be placed in the "athlete" interface (contract). The method is what the signer is obligated
+to do when they agree to implement the interface (a.k.a. sign the contract). The implementation details 
+of the `compete` method area not given in the interface itself but instead they are written in the 
+implementing class (signer). Again, the implementing class (contract signer) can be any type of athlete
+as they are all required to compete.
+
+This may all still seem a bit strange and why we do this in programming may not yet be clear.
+Hang in there! Let's work through an example in Java and then revisit this high level description.
+
 ### Declaring an Interface
 
 1. Interfaces, just like classes, have a fully qualified name. Their source code should be 
    positioned and named within your project the same as with classes. That is, an interface
    called `cs1302.interfaces.contract.Styleable` has an implied position within the package
-   directories of your source code and should be placed in a `Styleable.java` file.
-   The first big syntax difference between a class and an interface is illustrated in
+   directories of your source code (`cs1302/interfaces/contract`) and should be placed 
+   in a `Styleable.java` file within the implied directory. The first big syntax difference 
+   between a class and an interface is illustrated in 
    [`Styleable.java`](src/cs1302/interfaces/contract/Styleable.java):
    
    ```java
@@ -91,7 +131,7 @@ Javadoc comments in the interface.
    ```
    
    Notice that the `style()` method does not contain an implementation. The signature of the method 
-   ends with a semicolon. An abstract method may not have an implementation. The following is **NOT** an
+   ends with a semicolon. An abstract method must not have an implementation. The following is **NOT** an
    abstract method:
    
    ```java
