@@ -215,7 +215,7 @@ Hang in there! Let's work through an example in Java and then revisit this high 
    ```
    
 1. Reference variables are called as such because they refer to objects. However, you can only create
-   objects from classes! Therefore, what can an `Styleable` variable refer to? The answer is that 
+   objects from classes (not interfaces)! Therefore, what can a `Styleable` variable refer to? The answer is that 
    a variable with an interface as its type can refer to an object of any class that implements that
    interface. The code snippet below illustrates this:
    
