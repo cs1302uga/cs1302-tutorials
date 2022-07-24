@@ -1,13 +1,13 @@
 
-# Exceptions
+# Exceptions Part 2
 
 ![Approved for: Fall 2022](https://img.shields.io/badge/Approved%20for-Fall%202022-darkgreen)
 
 ## Prerequisites
 
-This tutorial assumes that the reader has a knowledge of basic Unix commands and experience working
-with a command-line text editor (e.g. emacs, vi, etc.). To get the most out of this tutorial,
-you should follow along and take notes.
+Before engaging with this tutorial, readers should first complete 
+[Exceptions Part 1](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/exceptions/exceptions1.md).
+To get the most out of this tutorial, you should follow along and take notes.
 
 ## Course-Specific Learning Outcomes
 
