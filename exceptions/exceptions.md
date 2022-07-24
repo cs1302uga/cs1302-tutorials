@@ -1,7 +1,7 @@
 
 # Exceptions
 
-![Approved for: Spring 2022](https://img.shields.io/badge/Approved%20for-Spring%202022-purple)
+![Approved for: Fall 2022](https://img.shields.io/badge/Approved%20for-Fall%202022-darkgreen)
 
 ## Prerequisites
 
@@ -90,7 +90,7 @@ are thrown in more complicated exceptional situations. Here, we take complicated
 to mean that there are a lot of conditions to check, including some that are
 potentially tricky to identify. Such exceptions are generally handled
 instead of avoided, although there is no reason a combination of both
-handling and avoiding can be employed.
+handling and avoiding can't be employed.
 
 ## Handling Exceptions
 
@@ -157,7 +157,8 @@ Let's look at an example.
    } // Test
    ```
 
-1. Compile and run `exceptions.Unchecked`. You should get an error message similar to the following
+1. Do you see where the exception object will be created and thrown? Go ahead and 
+   compile and run `exceptions.Unchecked`. You should get an error message similar to the following
    when you run the program:
 
    ```
@@ -167,7 +168,8 @@ Let's look at an example.
    An [`ArithmeticException`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/ArithmeticException.html)
    (specifically, a divide by zero) caused our program to crash. Since `ArithmeticException` is an **unchecked exception**, the
    Java compiler did not force us (the programmer) to catch or propagate this exception.  It is completely up to the programmer to decide
-   whether or not to handle exceptions of this type. You've probably experienced other, unchecked exceptions such as:
+   whether or not to handle exceptions of this type. Since we didn't handle it, our program crashed. You've probably experienced other, 
+   unchecked exceptions such as:
    [`StringIndexOutOfBoundsException`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/StringIndexOutOfBoundsException.html),
    [`NullPointerException`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/NullPointerException.html),
    [`NumberFormatException`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/NumberFormatException.html), etc.
