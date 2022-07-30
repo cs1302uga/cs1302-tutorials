@@ -78,14 +78,14 @@ Remember, we said an interface is a *contract* for the classes that claim to imp
 moment to think about how contracts are used in the real world (forget Java for a second). 
 
 Hopefully, you came up with a definition of the word contract and maybe a few situations where 
-contracts are used. A contract is a formal and binding agreement between two or more parties. 
+contracts are used. 
 
-Let's use the professional athlete as an example. Athletes sign a contract which is a 
-binding agreement between the athlete and the organization that ensures the athlete will compete
-in his/her sport. The contract states that the athlete must "compete" (yes, this is oversimplified)
-but it doesn't say specifically *how* they will compete or how they will respond to certain 
-situations while competing. These details are not relevant to the contract. The contract simply
-binds the athlete to compete. The specific details and decisions that occur while the competition
+In the real world, we think of a contract as a formal and binding agreement 
+between two or more parties. Let's use the professional athlete as an example. Athletes sign a contract which is a 
+binding agreement between the athlete and the team/organizaation that ensures the athlete will compete
+in his/her sport. The contract states that the athlete must "compete" but it doesn't say specifically 
+*how* they will compete. The details of exactly how an athlete should compete are not relevant to the contract. 
+The contract simply binds the athlete to compete. The specific details and decisions that occur while the competition
 is ongoing is up to the athlete. Once the contract is written, it could be signed by athletes
 in a wide variety of sports. The signer could be a track athlete, a baseball player, a football
 player, a racecar driver, etc. Note that the signer determines the details of how they will compete 
@@ -97,14 +97,16 @@ requirements in the contract == abstract methods
 contract signer == implementing class
 
 Now, let's tie this back to programming. In the example above, "compete" is the abstract method 
-that would be placed in the "athlete" interface (contract). The method is what the signer is obligated
+that would be placed in the "athlete" interface (contract). The abstract method represents the action that
+is required of the signer of the contract. In other words, the method is what the signer is obligated
 to do when they agree to implement the interface (a.k.a. sign the contract). The implementation details 
 of the `compete` method area not given in the interface itself but instead they are written in the 
 implementing class (signer). Again, the implementing class (contract signer) can be any type of athlete
 as they are all required to compete.
 
 This may all still seem a bit strange and why we do this in programming may not yet be clear.
-Hang in there! Let's work through an example in Java and then revisit this high level description.
+Hang in there! Let's work through an example in Java. Try to keep this terminology in mind as you work
+through this tutorial.
 
 ### Declaring an Interface
 
@@ -120,7 +122,8 @@ Hang in there! Let's work through an example in Java and then revisit this high 
    public interface Styleable {
    ```
    
-   Note the use of the `interface` keyword instead of `class` in the type header.
+   Note the use of the `interface` keyword instead of `class` in the type header. In this example,
+   `Styleable` is the contract that can be signed by implementing classes.
    
 
 1. The second big syntax difference involves the inclusion of abstract methods, illustrated
@@ -129,6 +132,11 @@ Hang in there! Let's work through an example in Java and then revisit this high 
    ```java
    public void style();
    ```
+ 
+   Remember, that the abstract method represents what the signer of the contract must do. If a class
+   implements the `Styleable` interface, it is obligated to have a `style` method. This is required 
+   because it signed the contract. The only thing we don't state at this point is how the `style` method
+   should be implemented.
    
    Notice that the `style()` method does not contain an implementation. The signature of the method 
    ends with a semicolon. An abstract method must not have an implementation. The following is **NOT** an
@@ -163,12 +171,17 @@ Hang in there! Let's work through an example in Java and then revisit this high 
    public class Fancy implements Styleable {
    ```
    
-   If the interface is not in the same package as the implementing class, then you will need to add
+   In this example, `Fancy` is the implementing class that has signed the `Styleable` contract. It signs
+   the contract as soon as you add `implements Styleable` to the class declaration as seen above. Now, `Fancy`
+   will not compile unless it has a syntactically correct implementation of the `style` method.
+   
+   **Note:** If the interface is not in the same package as the implementing class, then you will need to add
    an `import` statement or use the fully qualified name of the interface. If more than one interface
    is being implemented, then they can be written in a comma separated list following the
    `implements` keyword.
    
-1. When a class properly implements an interface in Java, it is required to provide implementations 
+1. As we mentioned before, when a class properly implements an interface in Java, it is required to 
+   provide implementations 
    for each of the abstract methods defined in the interface. If you inspect the source code for the 
    `cs1302.interfaces.impl.Fancy` class, you will see the abstract methods from `Styleable` 
    implemented. Notice that the implementatons contain method bodies (instead of their signatures
