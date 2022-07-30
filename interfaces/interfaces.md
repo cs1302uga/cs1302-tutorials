@@ -91,11 +91,6 @@ in a wide variety of sports. The signer could be a track athlete, a baseball pla
 player, a racecar driver, etc. Note that the signer determines the details of how they will compete 
 - the contract only binds them to action of competing.
 
-Terminology
-contract == interface
-requirements in the contract == abstract methods
-contract signer == implementing class
-
 Now, let's tie this back to programming. In the example above, "compete" is the abstract method 
 that would be placed in the "athlete" interface (contract). The abstract method represents the action that
 is required of the signer of the contract. In other words, the method is what the signer is obligated
@@ -123,7 +118,7 @@ through this tutorial.
    ```
    
    Note the use of the `interface` keyword instead of `class` in the type header. In this example,
-   `Styleable` is the contract that can be signed by implementing classes.
+   `Styleable` is the contract that can be signed by other classes.
    
 
 1. The second big syntax difference involves the inclusion of abstract methods, illustrated
@@ -132,11 +127,6 @@ through this tutorial.
    ```java
    public void style();
    ```
- 
-   Remember, that the abstract method represents what the signer of the contract must do. If a class
-   implements the `Styleable` interface, it is obligated to have a `style` method. This is required 
-   because it signed the contract. The only thing we don't state at this point is how the `style` method
-   should be implemented.
    
    Notice that the `style()` method does not contain an implementation. The signature of the method 
    ends with a semicolon. An abstract method must not have an implementation. The following is **NOT** an
@@ -149,6 +139,11 @@ through this tutorial.
    While the `{ }` may not do anything, it is, in fact, an implementation that does nothing. Compare that
    to the actual abstract method signature presented above that ends with a semicolon, thus lacking an
    implementation. 
+   
+   Remember, that the abstract method represents what the signer of the contract must be able to do. If a class
+   implements the `Styleable` interface, it is obligated to have a concrete (non-abstract) `style` method and 
+   an `unstyle` method as those are the two abstract methods in the interface. This is required 
+   because for any class that signs the contract.
    
    **NOTE:** In Java, the declaration of an abstract method in the source code for an interface may omit
    the `public` visibility modifier. If `public` is omitted in this context, the abstract method is
@@ -173,7 +168,7 @@ through this tutorial.
    
    In this example, `Fancy` is the implementing class that has signed the `Styleable` contract. It signs
    the contract as soon as you add `implements Styleable` to the class declaration as seen above. Now, `Fancy`
-   will not compile unless it has a syntactically correct implementation of the `style` method.
+   will not compile unless it has a concrete (non-abstract) implementation of both the `style` and `unstyle` methods.
    
    **Note:** If the interface is not in the same package as the implementing class, then you will need to add
    an `import` statement or use the fully qualified name of the interface. If more than one interface
