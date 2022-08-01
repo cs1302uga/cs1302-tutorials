@@ -244,13 +244,13 @@ Let's try it by placing the `HelloWorld` class into the `cs1302.hello` package!
    $ java -cp bin cs1302.hello.HelloWorld
    ```
       
-   <a id="fqn"/>In this example, `cs1302.hello.HelloWorld` is known as the **fully qualified name** of the
+   <a id="fqn"/>In this example, `cs1302.hello.HelloWorld` is known as the **fully qualified name (or FQN)** of the
    `HelloWorld` class in the `cs1302.hello` package. You have seen fully qualified names before--they
    are often used with `import` statements (remember `java.util.Scanner`?). When you import a class, you
    can use the simple class name in that file instead of having to type the fully qualified name each time.
    In this case, `HelloWorld` is known as the **name** or **simple name** of the class.
    
-   **PROTIP:** Although packages correspond to directories, a fully qualified name uses `.` (dot) 
+   **PROTIP:** Although packages correspond to directories, a fully qualified name (FQN) uses `.` (dot) 
    for the name separator and not a slash.
 
 ## Code Dependencies
@@ -262,7 +262,7 @@ on code that's not included with Java (e.g., code that you or someone else has w
 to let `javac` know where the _compiled_ version of that depedency is.
 
 1. Let's extend the code we just finished. Create a `cs1302.util.HelloUtility` class under `src`.
-   **Remember,** the fully qualified name implies a specific directory structure and package statement 
+   **Remember,** the fully qualified name (FQN) implies a specific directory structure and package statement 
    requirement with respect to `HelloUtility.java`. You will need to add the `util` directory in the proper
    place in your current directory hierarchy.
    
