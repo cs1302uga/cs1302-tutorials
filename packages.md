@@ -18,12 +18,18 @@ run any code examples, repeat as necessary**. Simply reading (or skimming) is no
 ## Java Packages
 
 In Java, a **package** is a grouping of related types providing access protection and name space management. 
-Note that types refers to classes, interfaces, enumerations, and annotation types [[1]](https://docs.oracle.com/javase/tutorial/java/package/packages.html).
+Note that types refers to classes, interfaces, enumerations, and annotation types [[1]](https://docs.oracle.com/javase/tutorial/java/package/packages.html). In other words, a package allows you to
+organize your source code. Proper code organizatioin becomes increasingly important as the size of the project
+increases.
+
 The two primary benefits of packages are:
 
 * **Name Space Management:**  Packages allow you to give a common name to a group of related types.
   For example, `java.util.Scanner` and `java.util.Random` are two utility classes provided in the `java.util` package.
-  You and other programmers can easily determine that these types are related.
+  You and other programmers can easily determine that these types are related. They are both utilities that you have
+  probably used in your code. It is important to note that you could have two types with the same simple name that 
+  are located in different packages. For example, you could have a `java.util.Random` class and a `edu.cs.uga.Random`
+  class. Both classes have the same name (`Random`) but they can be differentiated by their package names.
   
 * **Access Protection:** Visibility in Java is not limited to `public` and `private`. 
   Packages and additional visibility modifiers enable programmers to declare things as visible only within a package.
@@ -60,16 +66,17 @@ You should ask questions on Piazza if you are unable to proceed or if some aspec
 ## Default Package 
 
 Here, the `src` directory is the location of the **default package** (proper noun) 
-for source code. The default package contains classes (and other types) that are
-not in a named package. When developing small or temporary applications, it is a
-convenient place for package-less `.java` files 
+for source code. The default package for source code serves as the base directory 
+for named packages that you will create. You can think of it as the top-level directory
+for your package directories (more soon). The default package can also contain classes 
+(and other types) that are not in a named package. When developing small or temporary 
+applications, it is a convenient place for package-less `.java` files 
 [[2]](https://docs.oracle.com/javase/specs/jls/se8/html/jls-7.html).
-The default package location for source code also serves as the base directory 
-for named packages that you will create. 
 
-Let's dive in! The steps below show you how to create, compile, and execute a class 
-in the default package (i.e., a class in a package-less `.java` file). Once you
-are comfortable with that, move on to the next section to learn about
+Let's dive in! Before we get into creating named packages, we will start by compiling
+directly into the default package as a warmup. The steps below show you how to create, 
+compile, and execute a class in the default package (i.e., a class in a package-less 
+`.java` file). Once you are comfortable with that, move on to the next section to learn about
 named packages.
    
 1. Using Emacs, create a basic "Hello, World!" program in a driver class
@@ -84,7 +91,7 @@ named packages.
    } // HelloWorld
    ```
     
-2. Change directly into the default package directory (`src`) and compile the program using `javac`:
+2. Change directories into the default package directory (`src`) and compile the program using `javac`:
    
    ```
    $ javac HelloWorld.java
@@ -201,6 +208,7 @@ named packages.
 ## Named Package
 
 Now let's create a named package. To place a class (or interface) in named package, you must do two things:
+
 1. Place the `.java` file in the appropriate package directory; and
 2. Include a `package` statement at the top of the `.java` file.
    
@@ -209,6 +217,8 @@ Let's try it by placing the `HelloWorld` class into the `cs1302.hello` package!
 1. Change directly into `cs1302-packages` directory.
    
 2. Move the `HelloWorld.java` file into the `cs1302.hello` package directory.
+   You may need to create both the `cs1302` and `hello` directories before
+   executing the following command.
    
    ```
    $ mv src/HelloWorld.java src/cs1302/hello/
