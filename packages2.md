@@ -22,7 +22,7 @@ run any code examples, repeat as necessary**. Simply reading (or skimming) is no
 ## Introduction
 
 In the previous tutorial, [Java Packages Tutorial - Part 1](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/packages1.md),
-you compmiled and ran code that you placed into a named package. In that tutorial, you were working with a single Java
+you compiled and ran code that you placed into a named package. In that tutorial, you were working with a single Java
 file. In this tutorial, we will compile and run an application that depends on code located in multiple Java files. 
 When one Java file requires access to another file in order to run, it is called a **code dependency**. When there are
 dependencies in our projects, we need to make sure to consider these dependencies when compiling and running our code.
