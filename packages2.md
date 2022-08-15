@@ -175,11 +175,6 @@ Java automatically performs a wildcard import of the `java.lang` package (i.e., 
 every Java file, without requiring the programmer to explicitly write it. That is why you can use classes
 such as `java.lang.String` and `java.lang.System` by their simple names without importing!
 
-## References
-
-* [[1] Creating and Using Packages](https://docs.oracle.com/javase/tutorial/java/package/packages.html)
-* [[2] Packages](https://docs.oracle.com/javase/specs/jls/se8/html/jls-7.html)
-
 <hr/>
 
 **Feedback?** 
