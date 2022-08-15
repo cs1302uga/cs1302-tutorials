@@ -1,4 +1,4 @@
-# Java Packages Tutorial
+# Java Packages Tutorial - Part 1
 
 ![Approved for: Fall 2022](https://img.shields.io/badge/Approved%20for-Fall%202022-darkgreen)
 
@@ -245,9 +245,29 @@ Let's try it by placing the `HelloWorld` class into the `cs1302.hello` package!
    ```
       
 5. Execute the `find` command. Note that the `HelloWorld.class` file was created under `bin/cs1302/hello`.
-   The compiler automatically created the necessary package directories for our compiled code under `bin`!
-      
-5. Try to run the program using `javac` specify the classpath using `-cp` and include the
+   The output of `find` should look the same as the output below. Notice that The compiler automatically 
+   created the necessary package directories for our compiled code under `bin`!
+   
+   **Note:**  If you see any tilde (~) files, those are just backup copies of older versions 
+   of your files. You can ignore those. If you see any other differences between your
+   output and the output below, you likely had a small error in a command or in your package statement in
+   the `HelloWorld.java` file. Double check that you did everything correctly and, if you need assistance,
+   post a screenshot of your `find` output to Piazza.
+   
+   ```
+   .
+   ./bin
+   ./bin/cs1302
+   ./bin/cs1302/hello
+   ./bin/cs1302/hello/HelloWorld.class
+   ./src
+   ./src/cs1302
+   ./src/cs1302/hello
+   ./src/cs1302/hello/HelloWorld.java
+   ```
+ 
+
+6. Run the program using `javac` specify the classpath using `-cp` and include the
    fully qualified name (explained below) of the class containing the `main` method:
    
    ```
@@ -263,151 +283,10 @@ Let's try it by placing the `HelloWorld` class into the `cs1302.hello` package!
    **PROTIP:** Although packages correspond to directories, a fully qualified name (FQN) uses `.` (dot) 
    for the name separator and not a slash.
 
-## Code Dependencies
-
-When Java code uses other Java code, that creates a dependency. Most of the programs that you've
-written have used code provided by Oracle under the various `java` subpackages. When you compile,
-those dependencies are automatically included on the class path. However, when your code depends 
-on code that's not included with Java (e.g., code that you or someone else has written), you need
-to let `javac` know where the _compiled_ version of that depedency is.
-
-1. Let's extend the code we just finished. Create a `cs1302.util.HelloUtility` class under `src`.
-   **Remember,** the fully qualified name (FQN) implies a specific directory structure and package statement 
-   requirement with respect to `HelloUtility.java`. You will need to add the `util` directory in the proper
-   place in your current directory hierarchy.
+7. Congratulations on compiling your code to a named package! **Don't delete your work** unless you want to work
+   through the tutorial again for extra practice. The next tutorial will continue where this one left off.
    
-1. Write the code to declare the `cs1302.util.HelloUtility` class making sure to include the proper 
-   class declaration and package statement at the top. Then, within the class declaration, add the 
-   following method:
-
-   ```java
-   public static void excitingHello() {
-       System.out.println("HELLO!!!!");
-   } // excitingHello
-   ```
-   
-1. Save, then compile the `.java` file for the `cs1302.util.HelloUtility` class as usual, 
-   using `bin` as the destination for the compiled code. Once it compiles, make sure that the 
-   output from `find` matches the output below:
-   
-   **Note:**  If you see any tilde (~) files, those are just backup copies of older versions 
-   of your files. You can ignore those.
-   
-   ```
-   .
-   ./bin
-   ./bin/cs1302
-   ./bin/cs1302/hello
-   ./bin/cs1302/hello/HelloWorld.class
-   ./bin/cs1302/util
-   ./bin/cs1302/util/HelloUtility.class
-   ./src
-   ./src/cs1302
-   ./src/cs1302/hello
-   ./src/cs1302/hello/HelloWorld.java
-   ./src/cs1302/util
-   ./src/cs1302/util/HelloUtility.java
-   ```
-
-1. Now, modify the source code for your `cs1302.hello.HelloWorld` class to call the static method in
-   `cs1302.util.HelloUtility`. To do this, you may:
-   
-   1. Add an import statement between the `package` statement and class declation:
-   
-      ```java
-      import cs1302.util.HelloUtility;
-      ```
-   
-   1. Call the method in `main` using the simple class name:
-   
-      ```java
-      HelloUtility.excitingHello();
-      ```
-      
-   Completing these two steps create a **dependency**. Now, the `cs1302.hello.HelloWorld` class
-   **depends** on the `cs1302.util.HelloUtility` class because it uses a method defined within that
-   class.
-      
-1. If you try to compile the source code for your `cs1302.hello.HelloWorld` class exactly as you 
-   did before, then it will not work because the compiler cannot find `cs1302.util.HelloUtility` 
-   class on which `cs1302.hello.HelloWorld` depends. Try it! The error message should look like:
-   
-   ```
-   src/cs1302/hello/HelloWorld.java:3: error: package cs1302.util does not exist
-   import cs1302.util.HelloUtility;
-                     ^
-   src/cs1302/hello/HelloWorld.java:8: error: cannot find symbol
-        HelloUtility.excitingHello();
-        ^
-   symbol:   variable HelloUtility
-   location: class HelloWorld
-   ```
-   
-   The error output is just `javac` saying that it cannot find something. In this case, it cannot
-   find `cs1302.util.HelloUtility` as it is not in the same package as `cs1302.hello.HelloWorld`. 
-   Since we know it actually exists, we can just tell `javac` where to find it using `-cp`. 
-   
-   Remember that when your code depends on other code that you have written, you need to let 
-   `javac` know where the _compiled_ version of that depedency is. Since you compiled under `bin`,
-   that's where you should tell `javac` to look. Try to compile it again, but this time, be sure
-   to include the `-cp bin` option in addition to `-d bin` option. The program should now run as expected.
-
-## Further Important Notes
-
-### Setting the Class Path
-
-Both `javac` and `java` allow you specify the class path using the `-cp` or `-classpath` command-line
-option. The usual syntax is as follows:
-
-```
--cp some/path
-```
-
-If more than one default package is needed, then a colon `:` can be used to separate each path in a
-list of multiple paths:
-
-```
--cp path1:path2
-```
-
-Each path can be a path to a directory or a `.jar` file (usually used for third party libraries).
-
-**VERY IMPORTANT NOTE:** The class path should always point to a default package for _compiled_ code. 
-If you are compiling a `.java` file that depends on an already compiled class, then you will need to 
-specifiy the class path to the corresponding default package for that dependency when 
-invoking `javac`.
-
-### Import Statements
-
-In Java, you do not have to import classes that are in the same package. However, it's interesting to
-note that `import` statements are actually never required in Java. We just use them for convenience. 
-Assuming the corresponding default package for class's package is on the class path when compiling 
-and/or running, you can always refer to a class by its fully qualified name. Consider two uses of
-[`java.util.Random`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Random.html) below:
-
-```java
-// assuming the class was imported
-Random rng = new Random();
-```
-
-```java
-// assuming the class was NOT imported
-java.util.Random rng = new java.util.Random();
-```
-
-As you can imagine, the latter (without an import statement) might get annoying and repetetive.
-Therefore, we usually prefer to use an `import` statement for the convenience it provides.
-Why would anyone prefer to use the fully qualified name instead of the simple name for a class?
-It enables you to use two classes from different packages with the same simple name at the
-same time!
-
-### The `java.lang` Package
-
-Java automatically performs a wildcard import of the `java.lang` package (i.e., `import java.lang.*;`) in 
-every Java file, without requiring the programmer to explicitly write it. That is why you can use classes
-such as `java.lang.String` and `java.lang.System` by their simple names without importing!
-
-## References
+ ## References
 
 * [[1] Creating and Using Packages](https://docs.oracle.com/javase/tutorial/java/package/packages.html)
 * [[2] Packages](https://docs.oracle.com/javase/specs/jls/se8/html/jls-7.html)
