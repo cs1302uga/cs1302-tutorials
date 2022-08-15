@@ -1,4 +1,4 @@
-# Java Packages Tutorial - Part 1
+# Java Packages Tutorial - Part 2
 
 ![Approved for: Fall 2022](https://img.shields.io/badge/Approved%20for-Fall%202022-darkgreen)
 
