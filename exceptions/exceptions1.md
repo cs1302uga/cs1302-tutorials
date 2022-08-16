@@ -20,17 +20,19 @@ you should follow along and take notes.
 * [Handling Exceptions](#handling-exceptions)
 * [Regarding Scope](#regarding-scope)
 
-## Definition
+## Introduction
 
 In Java, an **exception** is an event that occurs during the execution of a program that
 encounters an error or some kind of exceptional situation. Often times, students get the
-impression that, when an exception occurs, the program is going to crash and give an
-obscure error message. For this reason, students often try to avoid exceptions at all costs.
+impression that, when an exception occurs, the only outcome is that the program will crash 
+and produce an obscure error message. For this reason, students often try to avoid exceptions 
+at all costs. In this tutorial, you will see that it is almost always better to let exceptions
+occur and then properly handle them instead of trying to avoid them.
 
-In this tutorial, we will demonstrate that exceptions, when used properly, can lead to cleaner
-code that has fewer bugs. You will see that exceptions are actually a way of passing a message 
-from one method to another indicating that something unexpected happened. They can actually be
-informative and useful and should be handled (properly) instead of avoided.
+We will demonstrate that exceptions, when used properly, can lead to cleaner code that has 
+fewer bugs. You will see that exceptions are a way of passing a message from one method to 
+another to indicate that something unexpected happened. Exceptions can be both informative and 
+useful and should be handled (properly) instead of avoided.
 
 When an exception occurs, two things happen:
 
@@ -41,8 +43,10 @@ The exception object that is created contains information about the location and
 
 You have likely encountered the dreaded
 [`NullPointerException`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/NullPointerException.html)
-before reading this tutorial. If not, it's easy to create a program that will
-throw a `NullPointerException` object:
+before reading this tutorial. If you click on the link, you will see that `NullPointerException` is a Java class
+that has constructors and methods that can be called from your programs.
+
+If you haven't see a `NullPointerException` before, it's easy to create a program that will generate one:
 
 ```java
 public class Exception {
@@ -65,9 +69,9 @@ i) creates a `NullPointerException` object on the second line of the `exception`
 ii) disrupts the normal flow of control to report to the
 user that the exception was thrown and abruptly terminates the program.
 
-In this example, the `exception` method is not completed and the program crashes. Please note that
-the program doesn't crash because an exception occurred. Instead, it crashes because the exception
-was not *handled* properly.
+In this example, the `exception` method does not finish executing as it normally would (because of the
+exception) and the program crashes. Please note that the program doesn't crash because an exception occurred. 
+Instead, it crashes because the exception was not *handled* properly.
 
 Go ahead and test it out. Copy/paste this code into a `.java` file on Odin and try to run it. Did it
 do what you expected?
@@ -89,10 +93,8 @@ this is the `main` method. That should make sense since all programs start in `m
 the `exception` method was called. Then, on line 9 of the `exception` method, the program generated an exception
 that was never handled. This caused the program to crash.
 
-Now, you may be tempted to go into the code and add `if` statements to avoid this exception altogether. However, a 
-much better way to deal with this is to let the exception happen and then handle it afterwards.
-
-So, in general, there are two ways to deal with exceptions:
+The error message above is informative to us as programmers but we don't want our users to see it! To protect them
+from these messages, we have to deal with exceptions in one of two ways:
 
 1. avoid them; and
 2. handle them.
