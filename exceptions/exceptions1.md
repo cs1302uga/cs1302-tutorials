@@ -200,7 +200,9 @@ try {
 // <---- ✗ nor any of the lines below
 ```
 
-There are two high-level strategies for dealing with this kind of scoping issue:
+There are two high-level strategies for dealing with this kind of scoping issue. You should be aware of the first
+strategy but you should always try to use the second strategy as it leads to more elegant solutions that are
+easier to program. These two strategies are outlined below:
 
 1. Increase the symbol's scope by declaring and initializing it on a line
    that precedes the enclosing try-block and changing original declaration to a
