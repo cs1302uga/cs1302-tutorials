@@ -165,7 +165,7 @@ let's make it someone else's responsibility using the `throws` keyword
 in the signature of the method containing the line:
 
 ```java
-int computeAverage(double[] nums) throws IllegalArgumentException {
+public int computeAverage(double[] nums) throws IllegalArgumentException {
     if (nums.length == 0) {
         throw new IllegalArgumentException("nums array cannot be empty");
     } // if
