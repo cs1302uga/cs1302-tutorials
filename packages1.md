@@ -167,6 +167,12 @@ named packages.
    `HelloWorld.java` file is not in that directory, we had to specify the relative path `src/HelloWorld.java`
    to tell the compiler how to find that file relative to the pwd. We're telling the compiler "first, go into the
    `src` directory and then you'll see the file `HelloWorld.java`".
+
+   **Important Note:** `bin` is just the relative path to the directory where the compiled `.class` files will
+   be placed. In this example, `bin` is a directory located inside of the present working directory. You can 
+   replace `bin` with any relative or absolute path to any directory that you have permission to write to. For
+   example, if we had a direcory called `class_files` in our present working directory, we could compile
+   the code with `-d class_files` and our `.class` files would be placed in that directory.
    
    Now, if you list the contents of the `bin` directory, you will see that it contains
    `HelloWorld.class`. Listing the `src` directory contents will show only `HelloWorld.java`. 
