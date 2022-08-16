@@ -23,11 +23,21 @@ you should follow along and take notes.
 ## Definition
 
 In Java, an **exception** is an event that occurs during the execution of a program that
-encounters an error or some kind of exceptional situation. When an exception occurs,
-two things happen:
+encounters an error or some kind of exceptional situation. Often times, students get the
+impression that, when an exception occurs, the program is going to crash and give an
+obscure error message. For this reason, students often try to avoid exceptions at all costs.
+
+In this tutorial, we will demonstrate that exceptions, when used properly, can lead to cleaner
+code that has fewer bugs. You will see that exceptions are actually a way of passing a message 
+from one method to another indicating that something unexpected happened. They can actually be
+informative and useful and should be handled (properly) instead of avoided.
+
+When an exception occurs, two things happen:
 
 1. an **exception object** is said to be _thrown_; and
 1. the normal flow of control is disrupted.
+
+The exception object that is created contains information about the location and cause of the exception.
 
 You have likely encountered the dreaded
 [`NullPointerException`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/NullPointerException.html)
@@ -35,22 +45,59 @@ before reading this tutorial. If not, it's easy to create a program that will
 throw a `NullPointerException` object:
 
 ```java
-String s = null;
-if (s.length() > 1) { // <------------------ throws NullPointerException object
-    System.out.println("string length > 1");
-} // if
+public class Exception {
+    public static void main(String[] args) {
+        exception();
+    } // main
+
+    public static void exception() {
+        String s = null;
+
+        if (s.length() > 1) { // causes a NullPointerException
+            System.out.println("string length > 1");
+        } // if
+    } // exception
+} // Exception
 ```
 
 If you run this code, then the JVM:
-i) throws a `NullPointerException` object on the second line; and
+i) creates a `NullPointerException` object on the second line of the `exception` method; and
 ii) disrupts the normal flow of control to report to the
 user that the exception was thrown and abruptly terminates the program.
-Go ahead and test it out.
 
-In general, there are two ways to deal with exceptions:
+In this example, the `exception` method is not completed and the program crashes. Please note that
+the program doesn't crash because an exception occurred. Instead, it crashes because the exception
+was not *handled* properly.
+
+Go ahead and test it out. Copy/paste this code into a `.java` file on Odin and try to run it. Did it
+do what you expected?
+
+The example code above, when executed, produces the following output:
+
+```java
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "String.length()" because "<local0>" is null
+	at Exception.exception(Exception.java:9)
+	at Exception.main(Exception.java:3)
+```
+
+When you see an error message like this, please take time to read through the message to understand what it is
+saying. The first line tells you that a `NullPointerException` occurred when the `length` method was invoked on
+a `null` reference. That's very informative. With this information, we can figure out that `s` must have been `null`.
+From there, we can see the exact method(s) that were called before the exception occurred. To understand this, start
+from the last line of output in the error. The last line corresponds to the first method that was called. In our example,
+this is the `main` method. That should make sense since all programs start in `main`. On line 3 of the `main` method,
+the `exception` method was called. Then, on line 9 of the `exception` method, the program generated an exception
+that was never handled. This caused the program to crash.
+
+Now, you may be tempted to go into the code and add `if` statements to avoid this exception altogether. However, a 
+much better way to deal with this is to let the exception happen and then handle it afterwards.
+
+So, in general, there are two ways to deal with exceptions:
 
 1. avoid them; and
 2. handle them.
+
+We will talk about each of these in detail in the next two sections. 
 
 ## Avoiding Exceptions
 
