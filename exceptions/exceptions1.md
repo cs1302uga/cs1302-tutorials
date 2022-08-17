@@ -91,7 +91,11 @@ From there, we can see the exact method(s) that were called before the exception
 from the last line of output in the error. The last line corresponds to the first method that was called. In our example,
 this is the `main` method. That should make sense since all programs start in `main`. On line 3 of the `main` method,
 the `exception` method was called. Then, on line 9 of the `exception` method, the program generated an exception
-that was never handled. This caused the program to crash.
+that was never handled. In this example, the `NullPointerException` originated in the `exception` method. Since the 
+`exception` method did not handle the exception, the exception was **propagated** (passed) to the calling method. In this 
+example, that is `main`. Since `main` also did not handle the exception, the exception propagated out of `main` 
+which led to the crash. Any time an exception is generated and is allowed to propagate out of `main`, the program
+will crash. 
 
 **Definition:** The last two lines of output above are called a **stack trace**. The stack trace tells the user which
 methods were active when the program crashed in the order that they were called (from bottom up). This facilitates
