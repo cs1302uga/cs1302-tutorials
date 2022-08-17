@@ -84,7 +84,7 @@ Exception in thread "main" java.lang.NullPointerException: Cannot invoke "String
 	at Exception.main(Exception.java:3)
 ```
 
-When you see an error message like this, please take time to read through the message to understand what it is
+When you see an error message like this, take a few seconds to read through the message to understand what it is
 saying. The first line tells you that a `NullPointerException` occurred when the `length` method was invoked on
 a `null` reference. That's very informative. With this information, we can figure out that `s` must have been `null`.
 From there, we can see the exact method(s) that were called before the exception occurred. To understand this, start
@@ -92,6 +92,10 @@ from the last line of output in the error. The last line corresponds to the firs
 this is the `main` method. That should make sense since all programs start in `main`. On line 3 of the `main` method,
 the `exception` method was called. Then, on line 9 of the `exception` method, the program generated an exception
 that was never handled. This caused the program to crash.
+
+**Definition:** The last two lines of output above are called a **stack trace**. The stack trace tells the user which
+methods were active when the program crashed in the order that they were called (from bottom up). This facilitates
+faster debugging by allowing you to better understand what was happening in the application when it crashed.
 
 The error message above is informative to us as programmers but we don't want our users to see it! To protect them
 from these messages, we have to deal with exceptions in one of two ways:
