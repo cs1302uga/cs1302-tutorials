@@ -91,7 +91,7 @@ path to that directory as a command-line argument.
   absolute path?
 
 While ``ls`` is nice and probably one of the most used Unix commands of all time,
-it doesn't really let us see the whole picture without us issuing repetetive
+it doesn't really let us see the whole picture without us issuing repetitive
 ``ls`` commands. To see the bigger picture, use the ``tree`` command, which
 lists the contents of a directory in a tree-like format.
 
@@ -110,7 +110,7 @@ lists the contents of a directory in a tree-like format.
    ===============  ======================================================================================================
    ``ls``           List contents of current working directory.
    ``ls PATH``      List contents of the last directory in the provided ``PATH`` (e.g., ``c`` in ``a/b/c`` or ``/a/b/c``).
-   ``tree PATH``    List contents of the last directory in the provided ``PATH`` and its subdirecoties, in a tree format.
+   ``tree PATH``    List contents of the last directory in the provided ``PATH`` and its subdirectories, in a tree format.
    ===============  ======================================================================================================
 
 ``ls -l``, ``ls -lh``
@@ -157,7 +157,7 @@ is included in the "long" output format, as described below the next few example
 
        The mode specifies the file type and permissions. The first character tells you what type of file is listed. 
        In most cases, this character will be either ``-`` for regular files and ``d`` for directories. 
-       The rest of the bits represent the permissions of the file. In other words, which users on the system are
+       The rest of the bits represent the permissions of the file; in other words, which users on the system are
        allowed to read, modify, and execute the file. We will talk about permissions in more detail in a few weeks.
        If you are interested in reading ahead, please see the 
        `1302 Octal Mode Tutorial <https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/octal-mode.md>`_.
@@ -166,7 +166,7 @@ is included in the "long" output format, as described below the next few example
 
        This topic is outside the scope of this reading. If you are interested in hard links,
        then you are encouraged to read about them `here <https://en.wikipedia.org/wiki/Hard_link>`_.
-       Symbolic links are more common, and will discussed in a future reading.
+       Symbolic links are more common, and will be discussed in a future reading.
 
 .. [3] .. rubric:: **User / Owner**
 
@@ -187,7 +187,7 @@ is included in the "long" output format, as described below the next few example
        Normally the size is printed as a byte count or block count without punctuation.
        These days, byte counts are not very readable, especially for larger file sizes. You can make
        the output more human-readable by supplying the ``-h`` (human-readable) option as a command-line
-       argument to ``ls -l``. The human-readable output uses unites like ``K`` (kilobyte), ``M`` (megabyte),
+       argument to ``ls -l``. The human-readable output uses units like ``K`` (kilobyte), ``M`` (megabyte),
        ``G`` (gigabyte), etc. whenever they apply. Block counts are usually shown for directories,
        but that topic is outside the scope of this reading.
 
@@ -271,7 +271,7 @@ then supply ``-`` (minus sign) as a command-line argument to ``cd``.
 
 .. figure:: img/cd-minus-demo.svg
 
-On most Unix systems, ``~`` (tilde) is an alias for the absolute path of your home directoy.
+On most Unix systems, ``~`` (tilde) is an alias for the absolute path of your home directory.
 While you can use it with ``cd`` to change directly to your home directory, it's more commonly
 used to change to directories nested under your home directory.
 
@@ -315,7 +315,7 @@ as a command-line argument.
 
 .. figure:: img/ls-all-demo.svg
 
-Every directy on a Unix system has two special hidden files
+Every directory on a Unix system has two special hidden files
 named ``.`` and ``..``.
 
 .. table::
@@ -393,7 +393,7 @@ Keyboard Shortcuts
    ========  ====================================================
    Key       Description
    ========  ====================================================
-   ``C``     ``CRTL`` (control)
+   ``C``     ``CTRL`` (control)
    ``M``     ``META`` (meta): usually ``ALT``, ``OPT`` or ``ESC``
    ========  ====================================================
 
@@ -590,8 +590,7 @@ supplying the relative path as a command-line argument.
 .. figure:: img/realpath-demo.svg
 
 To move or rename a file in Unix, use the ``mv`` (move) command.
-Here is some of usage information adapted from the
-manual:
+Here is some usage information adapted from the manual:
 
 .. table::
 
@@ -647,7 +646,7 @@ using ``man mv``.
 +++++++++++++++++
 
 To copy a file in Unix, use the ``cp`` (copy) command.
-Here is some of usage information adapted from the
+Here is some usage information adapted from the
 manual:
 
 .. table::
