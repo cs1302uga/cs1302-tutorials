@@ -298,7 +298,7 @@ to your home directory. How convenient!
    ``cd``             home directory
    ``cd -``           last previous working directory
    ``cd a/b/dest``    ``dest``, assuming ``a`` is in the current directory and ``a/b/dest`` is a valid *relative* path
-   ``cd /a/b/dest``   ``dest``, assuming ``/path/to/dest`` is a valid *absolute* path
+   ``cd /a/b/dest``   ``dest``, assuming ``/a/b/dest`` is a valid *absolute* path
    ``cd ~/a/b/dest``  ``dest``, assuming ``a`` is in your home directory and ``~/a/b/dest`` is a valid path
    =================  ================================================================================================
 
