@@ -154,7 +154,7 @@ through this tutorial.
    Find the `Styleable` interface on the website and compare the documentation provided there with what
    you see in the Javadoc comments included in `Styleable.java`. If you don't remember how to do this,
    then please refer back to your notes for the 
-   [Javadoc and API Documentation](https://github.com/cs1302uga/cs1302-tutorials/blob/master/javadoc/javadoc.md)
+   [Javadoc and API Documentation](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/javadoc/javadoc.md)
    tutorial.
 
 ### Implementing an Interface
@@ -320,7 +320,8 @@ etc.? With that in mind, let's go back to our code example:
     Remember, you may need to specify the class path in addition to the destination
     when using `javac` to compile Java code that depends on other Java code. If you need a
     refresher on this subject, then refer to the 
-    [Java Packages Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/packages.md).
+    [Java Packages Tutorial Part 1](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/packages1.md) and
+    [Java Packages Tutorial Part 2](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/packages2.md).
 
 ### Common Functionality among Disparate Classes
 
