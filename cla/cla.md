@@ -9,34 +9,35 @@ pieces of information, called **command-line arguments**, after the program's
 name in order to adjust the program's settings and supply values that the
 program needs to execute. For example, consider using `ls` to list all of the
 entries in `~/public_html` using the long listing format (`-l`), including
-files that being with a dor (`-a`):
+hidden files that begin with a dot `.` (`-a`):
 
 ```
 $ ls -l -a ~/public_html
 ```
 
+In the example above, the base command (program) is `ls` and the command-line 
+arguments used are `-l`, `-a`, and `~/public_html`. Each of the command-line 
+arguments provides information to the program about how it should run.
+
 When the program is launched, the command-line arguments are passed into
-to the program through its `main` method. Like many Unix programs, `ls` is
+to the program through its `main` method. The program reads these values as
+input and determines how to respond. Like many Unix programs, `ls` is
 written in C, but support for command-line arguments extends to other
 languges as well, including Java. Let's try it!
 
 1. Create a directory for this tutorial called `cs1302-cla`, then change into it.
 
 1. Create a `src` and `bin` directory, then create the `.java` file for a class
-   called `ArgTester` in a package called `cs1302.cla` such that the `src` directory
-   is the _default package for source code_.
+   called `ArgTester` and place `ArgTester.java` in the `src` directory.
 
    ```
    cs1302-cla
    ├── bin
    └── src
-       └── cs1302
-           └── cla
-               └── ArgTester.java
+       └── ArgTester.java
    ```
 
-1. In `ArgTester.java`, add the appropriate package statement, then
-   add the declaration for the `ArgTester` class.
+1. In `ArgTester.java`, add the declaration for the `ArgTester` class.
 
 1. In your `ArgTester` class, add the following `main` method:
 
@@ -52,16 +53,20 @@ languges as well, including Java. Let's try it!
 
 1. Take a few minutes to carefully read through the code above. Try and understand what it's doing.
    Note: Up until this point, you've always typed `String[] args` as a parameter to `main` but you've
-   never used it. That parameter is a reference to an array of command-line arguments.
+   probably never used it. That parameter is a reference to an array containing the command-line arguments.
 
 1. Compile the `ArgTester` class, specifying `bin` as the destination directory.
 
-1. Run `cs1302.cla.ArgTester` as usual using the `java` command. Here is what the command looks
+   ```
+   javac -d bin ArgTester.java
+   ```
+
+1. Run `ArgTester` as usual using the `java` command. Here is what the command looks
    like with the expected program output, assuming you are running it from the `cs1302-cla`
    directory:
 
    ```
-   $ java -cp bin cs1302.cla.ArgTester
+   $ java -cp bin ArgTester
    arguments:
    ```
 
@@ -71,10 +76,10 @@ languges as well, including Java. Let's try it!
 1. Now try the following command:
 
    ```
-   $ java -cp bin cs1302.cla.ArgTester one two three
+   $ java -cp bin ArgTester one two three
    ```
 
-   What happened? It looks like the for-loop iterated. The array referred to by `args` is not
+   What happened when you ran it? It looks like the for-loop iterated. The array referred to by `args` is not
    empty. That's right, we've actually used the `args` array for something! Here's the
    expected output:
 
@@ -92,15 +97,15 @@ languges as well, including Java. Let's try it!
    different command-line arguments are parsed. Try the following commands:
 
    ```
-   $ java -cp bin cs1302.cla.ArgTester "one two" three
+   $ java -cp bin ArgTester "one two" three
    ```
 
    ```
-   $ java -cp bin cs1302.cla.ArgTester --help "some topic"
+   $ java -cp bin ArgTester --help "some topic"
    ```
 
    ```
-   $ java -cp bin cs1302.cla.ArgTester --string "my \"awesome\" day"
+   $ java -cp bin ArgTester --string "my \"awesome\" day"
    ```
 
 2. That's it! The rest is purely in the realm of code. We've shown you how command-line
