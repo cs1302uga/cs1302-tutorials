@@ -278,7 +278,8 @@ Some Unix programs recognize that they do not need to reinvent the wheel when a 
 case is encountered where multi-line text entry is required. Instead of handling
 the text entry themselves, they invoke your default text editor. On most systems,
 the default text editor is `vi` or `vim`. You can change this by setting the 
-`EDITOR` environmental variable in your `~/.bash_profile` file. 
+`EDITOR` environmental variable in your `~/.bash_profile` file. We recommend adding
+the line below at the end of your current `~/.bash_profile` file:
 
 ```
 export EDITOR=emacs
