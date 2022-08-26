@@ -246,7 +246,7 @@ Try the following scenarios:
 1. Omit the `@Override` and mispell the `toString` method name, then recompile.
 1. Include the `@Override` and mispell the `toString` method name, then recompile.
 
-Notice the error that occurs in the thirs situation that did not occur in the
+Notice the error that occurs in the third situation that did not occur in the
 second. This is the primary purpose of the annotation. Although optional, it
 allowed you to tell the compiler that your intent is to override. If the compiler
 sees the `@Override` annotation, then it checks to make sure it's an override - and
