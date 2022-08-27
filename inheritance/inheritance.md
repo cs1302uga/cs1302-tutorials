@@ -57,6 +57,12 @@ To follow along with the video you'll need to first:
    <img src="http://i3.ytimg.com/vi/V5Y85rfMfPw/hqdefault.jpg" alt="IMAGE ALT TEXT">
    </a>
 
+Below is a UML diagram for the starter code. If you haven't been introduced to UML, it is just
+a way to visualize classes and their relationships. We will use a few simple UML diagrams in
+this reading and we will formally introduce the topic later in the semester. If you would like
+to read more about it now, see the [UML Class Diagrams](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/uml/uml.md)
+reading.
+
 Here is a UML diagram for the starter code:
 
 ![Starter Code](res/Inheritance1.png)
