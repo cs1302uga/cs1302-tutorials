@@ -120,6 +120,11 @@ to let `javac` know where the _compiled_ version of that depedency is.
    that's where you should tell `javac` to look. Try to compile it again, but this time, be sure
    to include the `-cp bin` option in addition to `-d bin` option. The program should now run as expected.
 
+1. Run the code to make sure it works. Since we're running the `HelloWorld` class (it has the `main` method), 
+   the command to run will not change from part 1 of this tutorial. Remember, the basic idea is to use the 
+   `java` command along with the FQN of the class you want to run. You will also need `-cp` to tell Java 
+   where to find the class to run.
+   
 ## Further Important Notes
 
 ### Setting the Class Path
