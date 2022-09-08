@@ -82,7 +82,7 @@ contracts are used.
 
 In the real world, we think of a contract as a formal and binding agreement 
 between two or more parties. Let's use the professional athlete as an example. Athletes sign a contract which is a 
-binding agreement between the athlete and the team/organizaation that ensures the athlete will compete
+binding agreement between the athlete and the team/organization that ensures the athlete will compete
 in his/her sport. The contract states that the athlete must "compete" but it doesn't say specifically 
 *how* they will compete. The details of exactly how an athlete should compete are usually not mentioned in the contract. 
 The contract simply binds the athlete to compete. The specific details and decisions that occur while the competition
