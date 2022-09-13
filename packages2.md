@@ -119,6 +119,14 @@ to let `javac` know where the _compiled_ version of that depedency is.
    `javac` know where the _compiled_ version of that depedency is. Since you compiled under `bin`,
    that's where you should tell `javac` to look. Try to compile it again, but this time, be sure
    to include the `-cp bin` option in addition to `-d bin` option. The program should now run as expected.
+   
+   The correct compilation command for `HelloWorld.java` is:
+   
+   ```
+   javac -d bin -cp bin src/cs1302/hello/HelloWorld.java
+   ```
+   
+   With the addition of `-cp bin`, it will be able to find the `HelloUtility` class that it is dependent on.
 
 1. Run the code to make sure it works. Since we're running the `HelloWorld` class (it has the `main` method), 
    the command to run will not change from part 1 of this tutorial. Remember, the basic idea is to use the 
