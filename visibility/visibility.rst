@@ -89,7 +89,7 @@ public           ``public``        ``+``       |Y|             |Y|              
           } // Person
 
 In this tutorial, we cover each available visibility option with a few examples,
-often illustrated using a combination of `UML diagrams <uml_tutorial>`__ and code
+often illustrated using a combination of `UML diagrams <https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/uml/uml.md>`__ and code
 snippets.
 
 We will take some liberties when discussing examples involving multiple
