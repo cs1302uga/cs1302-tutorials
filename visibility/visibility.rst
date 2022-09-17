@@ -3,7 +3,7 @@
 
 .. external links
 .. |uml_tutorial| replace:: UML Class Diagrams
-.. _uml_tutorial: https://github.com/cs1302uga/cs1302-tutorials/blob/master/uml/uml.md
+.. _uml_tutorial: https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/uml/uml.md
 
 .. internal links
 .. |reading_private| replace:: Private Visibility
