@@ -1,5 +1,5 @@
-.. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Spring%202022-purple
-   :alt: Approved for: Spring 2022
+.. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Fall%202022-darkgreen
+   :alt: Approved for: Fall 2022
 
 .. external links
 .. |jls11_access_control| replace:: The Java Language Specification (JLS) 11 Section 6.6
