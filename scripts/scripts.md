@@ -81,8 +81,13 @@ terminal shell. Let's create one!
    ```
    
 1. From the terminal shell itself, use the `chmod` command to enable
-   user execute permission for `cs1302-script.sh`. Verify that change
-   using `ls -l` or `stat`.
+   user execute permission for `cs1302-script.sh`:
+   
+   ```
+   chmod u+x cs1302-script.sh
+   ```
+   
+1. Verify that the permissions are changed using `ls -l` or `stat`.
    
 1. Execute the script. To do this simple provide an absolute path to
    the script name or an abbreviated absolute path using the `.`
