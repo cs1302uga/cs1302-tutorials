@@ -11,13 +11,20 @@ class must contain.
 
 Proper ADT descriptions do NOT depend on any implementation details, because it usually possible to implement 
 an ADT in several different ways (e.g., each involving a different underlying structure and/or set of 
-algorithms). In practical terms, this means that it is always possible to test the correctness of an 
-ADT implementation by comparing its behavior to the ADT description. This is extremely important, because
-each way of implementing an ADT has its own set of pros and cons that depend on how it will be used in a
-given application and how it impacts the rest of the code base -- there is NOT always one best choice 
-for all situations. When faced with these choices in practice, programmers tend to consider the impact 
-each choice has on an application's performance (e.g., speed, memory usage, etc.) and the readability 
-and maintainability of their code.
+algorithms). In practical terms, this means that it is always possible for a user to test the correctness 
+of an ADT implementation without looking at is code by comparing its behavior to the ADT description. 
+
+Each way of implementing an ADT has its own set of pros and cons that depend on factors like specific
+application it will be used in and how it impacts the rest of a code base. There is NOT always a single
+choice that works the best in all situations. When faced with these choices in practice, programmers 
+tend to consider the impact each choice has on an application's performance (e.g., its speed, memory 
+usage, etc.) and the readability and maintainability of the resulting code.
+
+The remainder of this reading is devoted to examples that illustrate the distinction between 
+ADTs and the underlying details of their particular implementation. The first example
+uses an analagy involving real-world objects, and subsequent examples involve an ADT 
+description for a *list* and the implementation details for two radically different 
+implementations of that *list* ADT.
 
 ### An Analogy
 
