@@ -1,6 +1,6 @@
 # Generic Methods Reading
 
-![Approved for: Spring 2022](https://img.shields.io/badge/Approved%20for-Spring%202022-purple)
+![Approved for: Fall 2022](https://img.shields.io/badge/Approved%20for-Fall%202022-darkgreen)
 
 This reading introduces the reader to generic methods in Java.
 
