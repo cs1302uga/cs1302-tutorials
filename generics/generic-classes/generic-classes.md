@@ -1,6 +1,6 @@
 # Generic Classes Tutorial
 
-![Approved for: Spring 2022](https://img.shields.io/badge/Approved%20for-Spring%202022-purple)
+![Approved for: Fall 2022](https://img.shields.io/badge/Approved%20for-Fall%202022-darkgreen)
 
 This tutorial introduces the reader to generic classes in Java by creating a new generic class
 and emphasizing some of the benefits of using generics.
