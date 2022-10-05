@@ -99,7 +99,7 @@ Here are some examples:
      Integer int2 = sc.foo(12, "help"); // R = String
   ```
 
-## Required Additional Reading
+## Recommended Additional Reading with More Examples
 
 Now that you're familiar with some of the basic concepts relate to generic
 methods in Java, you need to read the official Oracle reading:
