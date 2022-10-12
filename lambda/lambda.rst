@@ -366,4 +366,4 @@ four (unnamed) classes are created and instantiated using a single
 Video Examples
 ==============
 
-**Coming Soon**
+**Coming Soon** Attend class for live examples. 
