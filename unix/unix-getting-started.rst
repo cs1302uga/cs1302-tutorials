@@ -196,6 +196,24 @@ Access to Odin is restricted behind a firewall. In order to access Odin from off
 will need to connect to UGA's remote access VPN using the instructions found
 `here <https://eits.uga.edu/access_and_security/infosec/tools/vpn/>`_.
 
+Important Note
+++++++++++++++
+
+For CSCI 1302, you are expected to connect to Odin using SSH and the programs
+desribed in the instructions provided by your instructor. While other programs may exist
+that also allow you to establish an SSH connection to Odin, use of certain programs
+is explicitly forbidden in CSCI 1302 since they consume large amounts of remote system
+resources, disrupting other students' use of the system.
+You should NOT use any of the following programs to connect to Odin:
+
+* `Video Studio Code Remote Development Extension <https://code.visualstudio.com/docs/remote/remote-overview>`_
+* `code-server <https://github.com/coder/code-server>`_
+
+Using the programs mentioned above or programs like the ones mentioned above
+without permission violates sections 4.2 and 4.3 of the 
+`UGA Policies on the Use of Computers <https://t.uga.edu/2FS>`_.
+
+
 ``ssh``
 +++++++
 
