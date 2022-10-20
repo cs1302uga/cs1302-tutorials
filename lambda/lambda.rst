@@ -222,7 +222,7 @@ Let's break it down:
 
 2. A lambda expression is used to **create an object** that has one method
    by defining what that method should do. In this case, we want the
-   method's type layout o match the abstract method ``accept`` in
+   method's type layout to match the abstract method ``accept`` in
    ``Consumer<String>``, and it does.
 
 3. Assign the object's reference to the variable.
@@ -291,7 +291,7 @@ however, there's still room for improvement.
    If we don't include the parameter types in our lambda expression, then
    Java will try to determine what they are based on context. For example,
    if we're assigning the created object to a ``Consumer<String>`` variable,
-   then Java knows that the parameter list for ``aceppt`` is ``(String t)``
+   then Java knows that the parameter list for ``accept`` is ``(String t)``
    and will automatically convert ``(t)`` to ``(String t)``.
 
 3. If there is exactly one method parameter, then the parentheses for the
