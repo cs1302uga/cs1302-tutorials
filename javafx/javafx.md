@@ -23,8 +23,8 @@ page for direct links to commonly used classes.
    
    If you encounter problems in this step, then please ensure that you have followed the
    instructions provided at the beginning of the semester for
-   [MacOS users](https://github.com/cs1302uga/cs1302-exercises/blob/alsi/misc/MacOS.md) or
-   [Windows 10 users](https://github.com/cs1302uga/cs1302-exercises/blob/alsi/misc/Windows10.md).
+   [MacOS users](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/setup/MacOS.md) or
+   [Windows 10 users](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/setup/Windows.md).
    
    Also, the `-X` and `-Y` options can be used individually with or without each other. 
    See the manual page for `ssh` for more information about the differences between
@@ -115,7 +115,7 @@ page for direct links to commonly used classes.
       or second time that you attempt to run the program, then
       please ensure that you have followed the
       instructions provided at the beginning of the semester for
-      [MacOS users](https://github.com/cs1302uga/cs1302-exercises/blob/alsi/misc/MacOS.md). 
+      [MacOS users](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/setup/MacOS.md). 
       In particular, you really do need to restart your Mac after installing XQuartz
       via Homebrew.
 
