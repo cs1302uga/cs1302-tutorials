@@ -77,8 +77,6 @@ using inheritance and polymorphism to emphasize code reuse.
 1. The default size for the image in the ImageView container is 500x500 (Even though the image says 300x300). 
    Do a quick google search for "500x500 images" and load one or two of the images to make sure the app is 
    functioning properly. **Note:** the `Image` class only supports the BMP, GIF, JPEG, and PNG filetypes.
-
-1. Congratulations on compiling and running a good looking app!
    
 ## Creating a Custom Component
 
