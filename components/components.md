@@ -198,7 +198,7 @@ using inheritance and polymorphism to emphasize code reuse.
    1. Remove the code to create the subgraph
       (`HBox`, `ImageView`, `TextField`, and `Button`) from the constructor and `init` methods
       of `ImageApp`. All of that code will now be run when we create a new `ImageLoader`
-      object.
+      object. This includes the code to initialize the `ImageView` and set up the button handler.
       
    1. Take a moment to think about what you are doing. You have created your own, custom class that extends
       the JavaFX `VBox` class. This class is essentially a `VBox` with some of the components
@@ -213,7 +213,8 @@ using inheritance and polymorphism to emphasize code reuse.
       Now, instantiate two objects of type `ImageLoader` within the constructor
       of `ImageApp`.
       
-   1. Instantiate an `HBox` object within the constructor of `ImageApp`. This
+   1. Create an `HBox` instance variable in the `ImageApp` class and instantiate 
+      it within the constructor. This
       will serve as the container for our `ImageLoader` objects. Set
       the `spacing` property of the `HBox` to 10 by passing 10 into the `HBox`
       constructor. Now, in the `init` method, add the two `ImgLoader` objects to 
