@@ -221,7 +221,7 @@ using inheritance and polymorphism to emphasize code reuse.
    1. Compile and run your new app and load up a few 500x500 images.  You 
       should see something like the image below:
       
-      <img src="https://github.com/cs1302uga/cs1302-tutorials/raw/master/components/TwoPaneScreenShot.png?raw=true" width=300>
+      <img src="https://github.com/cs1302uga/cs1302-tutorials/raw/alsi/components/TwoPaneScreenShot.png?raw=true" width=300>
       
    1. Imagine all the ways you could use your new, custom component! Also, think
       of other custom components you could build by extending existing JavaFX
