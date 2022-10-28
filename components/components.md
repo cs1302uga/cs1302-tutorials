@@ -26,8 +26,8 @@ using inheritance and polymorphism to emphasize code reuse.
    
    If you encounter problems in this step, then please ensure that you have followed the
    instructions provided at the beginning of the semester for
-   [MacOS users](https://github.com/cs1302uga/cs1302-exercises/blob/master/misc/MacOS.md) or
-   [Windows 10 users](https://github.com/cs1302uga/cs1302-exercises/blob/master/misc/Windows10.md).
+   [MacOS users](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/setup/MacOS.md) or
+   [Windows 10 users](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/setup/Windows.md).
    
    Also, the `-X` and `-Y` options can be used individually with or without each other. 
    See the manual page for `ssh` for more information about the differences between
@@ -50,14 +50,14 @@ using inheritance and polymorphism to emphasize code reuse.
    ```
    
 1. Compile and run the provided code without any errors or warnings. If you need a reminder of the compile commands, review
-   the relevant parts of the [JavaFX Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/javafx/javafx.md). 
+   the relevant parts of the [JavaFX Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/javafx/javafx.md). 
    We recommend creating a compile script so you don't have to retype these commands. If you completed the previous steps 
    correctly, your app should look similar to the screenshot below. You may also find it helpful to review
    the scene graph for this app (also seen below).
    
    <table>
    <tr>
-      <td><img src="https://github.com/cs1302uga/cs1302-tutorials/raw/master/components/ScreenShot.png?raw=true" width=300>
+      <td><img src="https://github.com/cs1302uga/cs1302-tutorials/raw/alsi/components/ScreenShot.png?raw=true" width=300>
       <td><pre><code>                                     --|
                          Stage            |
                            |              |
