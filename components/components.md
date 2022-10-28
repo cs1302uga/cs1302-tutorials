@@ -86,7 +86,7 @@ using inheritance and polymorphism to emphasize code reuse.
    reusable component based on the set of existing components contained 
    in the application.
    
-   Consider the following containment hieararchy:
+   Consider the following containment hierarchy:
    
    ```
                                                              --|
@@ -161,14 +161,14 @@ using inheritance and polymorphism to emphasize code reuse.
    1. The class should contain the `static` constants from
       the `ImageApp` class. They can be cut and paste directly
       from that class, perhaps changing them to `protected`
-      visibility if you wish to do so.
+      visibility if you wish to do so. That way they can be accessed
+      by the other classes in the package.
 
-   1. Your class should have instance variables for the other
-      nodes in the sub-graph (make sure to import all required classes). 
-      For example, you will need
-      an instance variable called `urlLayer` of type `HBox`
-      as well as instance variables for the remaining nodes.
-      For the most part, these can be cut and paste from the
+   1. Your `ImageLoader` class should contain instance variables for the
+      nodes in the sub-graph above (`HBox`, `TextField`, `Button`, and `ImageView`).
+      You do not need an instance variable for `VBox` because the `ImageLoader` itself
+      is a `VBox`!
+      For the most part, the required instance variables can be cut and paste from the
       `ImageApp` class. Any instance variables that you move
       into the `ImageLoader` class can be removed from `ImageApp`. You can
       also remove any imports that are no longer needed in `ImageApp`.
@@ -182,7 +182,9 @@ using inheritance and polymorphism to emphasize code reuse.
       Use this knowledge to add your newly created nodes to the
       sub-graph rooted at `this` similar to how they are 
       added to the `VBox` node in the `ImageApp` class. 
-      Your code will likely look something like this:
+      Your code will likely look something like the code below with 
+      additional statements to instantiate the components and connect
+      them:
 	  
       ```java
       public ImageLoader() {
@@ -193,23 +195,29 @@ using inheritance and polymorphism to emphasize code reuse.
       } // ImageLoader
 	  ```
 	  
-   1. If you haven't done so already, remove the code to create the subgraph
-      (`HBox`, `ImageView`, `TextField`, and `Button`) from the `start` method 
-      of `ImageApp`. All of that code will be run when we create a new `ImageLoader`
+   1. Remove the code to create the subgraph
+      (`HBox`, `ImageView`, `TextField`, and `Button`) from the constructor and `init` methods
+      of `ImageApp`. All of that code will now be run when we create a new `ImageLoader`
       object.
       
-   1. Move the `loadImage` method from `ImageApp` to `ImageLoader`.
-      Don't forget to set the handler on your `ImageLoader`'s button.
+   1. Take a moment to think about what you are doing. You have created your own, custom class that extends
+      the JavaFX `VBox` class. This class is essentially a `VBox` with some of the components
+      built into it. Once we complete this class, we will be able to add objects of this class to a
+      scene graph and all the messy details of creating that object will be hidden inside of `ImageLoader`!
+      
+   1. Now, move the `loadImage` method from `ImageApp` to `ImageLoader`. This is the method that is
+      called when the button is clicked. Don't forget to set the handler on your `ImageLoader`'s button.
       
    1. You've probably noticed that `ImageApp` has significantly decreased
       in size.  We moved a lot of that code over into our custom component!
-      Now, instantiate two objects of type `ImageLoader` within the `start`
-      method of `ImageApp`.
+      Now, instantiate two objects of type `ImageLoader` within the constructor
+      of `ImageApp`.
       
-   1. Instantiate an `HBox` object within the `start` method of `ImageApp`. This
+   1. Instantiate an `HBox` object within the constructor of `ImageApp`. This
       will serve as the container for our `ImageLoader` objects. Set
       the `spacing` property of the `HBox` to 10 by passing 10 into the `HBox`
-      constructor. Now, Add the two `ImgLoader` objects to the `HBox` object of `ImageApp`.
+      constructor. Now, in the `init` method, add the two `ImgLoader` objects to 
+      the `HBox` object of `ImageApp`.
       
    1. Make sure you pass the reference to your newly created `HBox` object into the
       `Scene` constructor within the `start` method of `ImageApp`. Previously, the 
