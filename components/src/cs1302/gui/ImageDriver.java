@@ -9,6 +9,7 @@ public class ImageDriver {
             Application.launch(ImageApp.class, args);
         } catch (Exception e) {
             System.err.println(e);
+            e.printStackTrace();
             System.err.println("Likely due to X11 timeout. Logout and log back in...");
             System.exit(1);
         } // try
