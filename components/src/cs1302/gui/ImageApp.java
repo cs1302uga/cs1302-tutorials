@@ -14,7 +14,7 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.Priority;
 
 /**
- * A basic JavaFX 8 program which takes a user specified URL and loads it
+ * A basic JavaFX 17 program which takes a user specified URL and loads it
  * into an {@code ImageView}.
  *
  */
@@ -69,9 +69,10 @@ public class ImageApp extends Application {
         imgView = new ImageView(img);
         imgView.setPreserveRatio(true);
 
-        // EventHandler for our button using a fancy method reference.
-        //EventHandler<ActionEvent> loadImgHandler = this::loadImage;
-        loadImage.setOnAction(this::loadImage);
+        // EventHandler for our button                                                                    
+        EventHandler<ActionEvent> handler = (ActionEvent e) -> loadImage(e);
+        // Connect the handler to the button                                                              
+        loadImage.setOnAction(handler);
 
         // Add the hbox and imageview to the containing vbox and set the vbox
         // to be the root of the scene
