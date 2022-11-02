@@ -1,6 +1,6 @@
 # Maven Tutorial
 
-![Approved for: Spring 2022](https://img.shields.io/badge/Approved%20for-Spring%202022-purple) 
+![Approved for: Fall 2022](https://img.shields.io/badge/Approved%20for-Fall%202022-darkgreen)
 
 ## Maven
 
@@ -27,16 +27,16 @@ $ mvn --version
 It should print out your installed version of Maven, for example:
  
 ```
-Apache Maven 3.8.1 (05c21c65bdfed0f71a2f2ada8b84da59348c4c5d)
+Apache Maven 3.8.6 (84538c9988a25aec085021c365c560670ad80f63)
 Maven home: /usr/local/mepcott/cs1302/apache-maven
-Java version: 11.0.10, vendor: Oracle Corporation, runtime: /usr/local/mepcott/jdk/jdk-11.0.10
+Java version: 17.0.4.1, vendor: Oracle Corporation, runtime: /usr/local/mepcott/jdk/jdk-17.0.4.1
 Default locale: en_US, platform encoding: UTF-8
-OS name: "linux", version: "3.10.0-1160.el7.x86_64", arch: "amd64", family: "unix"
+OS name: "linux", version: "3.10.0-1160.42.2.el7.x86_64", arch: "amd64", family: "unix"
 ```
 
 If you are on Odin and the `mvn` command is not recognized, then please
 ensure that you have setup the CSCI 1302 shell profile according to the
-instructions provided [here](https://github.com/cs1302uga/cs1302-tutorials/blob/master/unix/unix-tutorial.rst#bash-profile).
+instructions provided [here](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/unix/unix-getting-started.rst#75bash_profile-required-command).
    
 ## Creating a Project
 
@@ -124,21 +124,21 @@ mode later in this tutorial once you are more familiar with the tool.
 ## Updating the POM
 
 By default, the `maven-archetype-quickstart` archetype (version `1.4`) is configured
-to use Java 7 (`1.7`)! We can remedy this by updating the project's `pom.xml` file.
+to use Java 7 (`1.7`)! We can remedy this by updating the project's `pom.xml` file using Emacs.
 
 1. Change into the `cs1302-mvn` directory, then change the values of the
-   `maven.compiler.source` and `maven.compiler.target` to `11` for Java 11. It should look
+   `maven.compiler.source` and `maven.compiler.target` to `17` for Java 17. It should look
    similar to the following:
    
    ```xml
    <properties>
      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-     <maven.compiler.source>11</maven.compiler.source>
-     <maven.compiler.target>11</maven.compiler.target>
+     <maven.compiler.source>17</maven.compiler.source>
+     <maven.compiler.target>17</maven.compiler.target>
    </properties>
    ```
    
-   That's it! After making that change, your project is now setup to use Java 11.
+   That's it! After making that change, your project is now setup to use Java 17.
 
 1. You can also add / update project dependencies. In the past, you may have done this
    by manually including a JAR file on your class path. With Maven, we can add the 
@@ -162,7 +162,7 @@ to use Java 7 (`1.7`)! We can remedy this by updating the project's `pom.xml` fi
    with appropriate values before the closing `</dependencies>` tag. Many libraries are packages
    for Maven. You can try searching for some on [Maven Central](https://search.maven.org/).
    
-1. When using Maven with your JavaFX projects, you would need to add the JavaFX 11 dependency to your
+1. When using Maven with your JavaFX projects, you would need to add the JavaFX 17 dependency to your
    `pom.xml` file. Adding this dependency to the existing `junit` dependency would look like this:
    
    ```xml
@@ -174,9 +174,9 @@ to use Java 7 (`1.7`)! We can remedy this by updating the project's `pom.xml` fi
          <scope>test</scope>
       </dependency>
       <dependency>
-         <groupId>org.openjfx</groupId>
-         <artifactId>javafx-controls</artifactId>
-         <version>11</version>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-controls</artifactId>
+        <version>17.0.2</version>
       </dependency>
    </dependencies>
    ```
