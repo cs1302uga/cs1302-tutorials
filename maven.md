@@ -1,6 +1,6 @@
 # Maven Tutorial
 
-![Approved for: Spring 2022](https://img.shields.io/badge/Approved%20for-Spring%202022-purple) 
+![Approved for: Fall 2022](https://img.shields.io/badge/Approved%20for-Fall%202022-darkgreen)
 
 ## Maven
 
@@ -36,7 +36,7 @@ OS name: "linux", version: "3.10.0-1160.el7.x86_64", arch: "amd64", family: "uni
 
 If you are on Odin and the `mvn` command is not recognized, then please
 ensure that you have setup the CSCI 1302 shell profile according to the
-instructions provided [here](https://github.com/cs1302uga/cs1302-tutorials/blob/master/unix/unix-tutorial.rst#bash-profile).
+instructions provided [here](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/unix/unix-tutorial.rst#bash-profile).
    
 ## Creating a Project
 
