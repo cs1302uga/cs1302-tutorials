@@ -301,7 +301,7 @@ to inform the client that we want it to interpret the body of the response
    HttpRequest request = HttpRequest.newBuilder()
        .uri(URI.create("https://www.gutenberg.org/files/1661/1661-0.txt"))
        .build();
-   HttpResponse<String> response = HTTP_CLIENT.send(response. BodyHandlers.ofString());
+   HttpResponse<String> response = HTTP_CLIENT.send(request, BodyHandlers.ofString());
    String body = response.body();
 
 **NOTE:** A rewritten version of the code above is provided in |ex0|_ so that
