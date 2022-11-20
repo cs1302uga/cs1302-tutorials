@@ -163,7 +163,7 @@ private key -- the Git program will do this with GitHub so long as the key pair 
       ----
       
       **NOTE:** The `-u` or `--set-upstream` option sets the *upstream* information 
-      for your the current brnach in your local instance of the repository. If 
+      for your the current branch in your local instance of the repository. If 
       `git push -u origin main` is successful, then argument-less `git pull`, `git push`, 
       and other commands will be enabled for your local repository. That is, if a remote repository name 
       and branch (or *refspec*) are expected but not provided, then many commands 
