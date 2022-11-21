@@ -198,7 +198,7 @@ private key -- the Git program will do this with GitHub so long as the key pair 
 ![Test Repo](https://github.com/cs1302uga/cs1302-tutorials/raw/master/img/testRepo.png)
 
 
-1. Now that your repository is set up, let's get some more pracice. On Odin, do the following:
+1. Now that your repository is set up, let's get some more practice. On Odin, do the following:
    1. Open your `README.md` file.
    1. Type a few additional sentences.
    1. Commit your changes locally.
