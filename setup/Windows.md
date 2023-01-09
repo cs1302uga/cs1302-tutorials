@@ -19,6 +19,11 @@ called [MobaXterm](https://mobaxterm.mobatek.net).
    extract the `.zip` file into a folder before attempting to install. Do not attempt to run the installer
    from within the `.zip` file. Instead, run the installer program from within the folder that you extract to.
 
+   **Note:** Your window may look slightly different than below. If you see "Extract All" instead of "Extract", go
+   ahead and click that button. You can choose the default location as the place to extract. It will likely use
+   your `Downloads` folder for the extracted files. Once it's extracted, you can double-click the installer to begin
+   the installation process.
+
    ![WARNING](in-zip-file.png)
 
    MobaXterm Website: https://mobaxterm.mobatek.net/download-home-edition.html
