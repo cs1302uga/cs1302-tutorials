@@ -296,7 +296,7 @@ Let's try it by placing the `HelloWorld` class into the `cs1302.hello` package!
  
  1. Follow along with Dr. Barnes as he works through another example of creating a named package in Java:
 
-   https://youtu.be/vuenX567T6c
+   https://www.youtube.com/watch?v=vuenX567T6c
 
    <a href="https://www.youtube.com/watch?v=vuenX567T6c">
    <img src="http://i3.ytimg.com/vi/vuenX567T6c/hqdefault.jpg" alt="IMAGE ALT TEXT">
