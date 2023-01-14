@@ -301,6 +301,7 @@ Let's try it by placing the `HelloWorld` class into the `cs1302.hello` package!
    <a href="https://www.youtube.com/watch?v=vuenX567T6c">
    <img src="http://i3.ytimg.com/vi/vuenX567T6c/hqdefault.jpg" alt="IMAGE ALT TEXT">
    </a>
+   
  ## References
 
 * [[1] Creating and Using Packages](https://docs.oracle.com/javase/tutorial/java/package/packages.html)
