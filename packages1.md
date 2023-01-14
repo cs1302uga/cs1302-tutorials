@@ -292,6 +292,15 @@ Let's try it by placing the `HelloWorld` class into the `cs1302.hello` package!
 7. Congratulations on compiling your code to a named package! **Don't delete your work** unless you want to work
    through the tutorial again for extra practice. The next tutorial will continue where this one left off.
    
+ ## Video Demo
+ 
+ 1. Follow along with Dr. Barnes as he works through another example of creating a named package in Java:
+
+   https://youtu.be/vuenX567T6c
+
+   <a href="https://www.youtube.com/watch?v=vuenX567T6c">
+   <img src="http://i3.ytimg.com/vi/vuenX567T6c/hqdefault.jpg" alt="IMAGE ALT TEXT">
+   </a>
  ## References
 
 * [[1] Creating and Using Packages](https://docs.oracle.com/javase/tutorial/java/package/packages.html)
