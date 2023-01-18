@@ -74,7 +74,9 @@ applications, it is a convenient place for package-less `.java` files
 [[2]](https://docs.oracle.com/javase/specs/jls/se8/html/jls-7.html).
 
 Let's dive in! Before we get into creating named packages, we will start by compiling
-directly into the default package as a warmup. The steps below show you how to create, 
+directly into the default package as a warmup. To be clear, you won't need to use the
+`cs1302` or `hello` directories in this step. You will use them in the next part of the tutorial.
+The steps below show you how to create, 
 compile, and execute a class in the default package (i.e., a class in a package-less 
 `.java` file). Once you are comfortable with that, move on to the next section to learn about
 named packages.
