@@ -1,7 +1,7 @@
 
 # Exceptions Part 1
 
-![Approved for: Fall 2022](https://img.shields.io/badge/Approved%20for-Fall%202022-darkgreen)
+![Approved for: Spring 2023](https://img.shields.io/badge/Approved%20for-Spring%202023-magenta)
 
 ## Prerequisites
 
