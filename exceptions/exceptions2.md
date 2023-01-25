@@ -96,6 +96,8 @@ Let's look at an example.
 1. Now, let's modify `Checked.java` to include an appropriate try-catch:
 
    ```java
+   package exceptions;
+
    import java.util.Scanner;
    import java.io.File;
    import java.io.FileNotFoundException;
@@ -114,7 +116,9 @@ Let's look at an example.
    } // Checked
    ```
 
-1. Create a `notes.txt` file in the directory where you will execute the program. Add a single line of text to the file.
+1. Create a `notes.txt` file in the directory where you will execute the program and add a single line of text to the file.
+   **Important Note:** The `notes.txt` file should be in the directory where you run the `java` command to run the program. If you
+   run the program from the parent directory of `bin` and `src`, that's where the file should be.
 
 1. Execute `exceptions.Checked`.  It should print the first line of `notes.txt`.
 
