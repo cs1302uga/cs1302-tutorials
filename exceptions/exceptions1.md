@@ -222,8 +222,9 @@ public static void main(String[] args) {
 } // main
 ```
 
-When you attempt to compile this example program, the compiler will emit
-a `cannot find symbol` error similar to the following:
+We recommend trying to compile this code. To do so, you will need to create proper package directories, add your
+class declaration, and any necessary imports to the top. Once everything is in place and you attempt to compile 
+this example program, the compiler will emit a `cannot find symbol` error similar to the following:
 
 ```
 src/cs1302/scope/Example.java:22: error: cannot find symbol
