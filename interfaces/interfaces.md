@@ -89,7 +89,7 @@ The contract simply binds the athlete to compete. The specific details and decis
 is ongoing is up to the athlete. Once the contract is written, it could be signed by athletes
 in a wide variety of sports. The signer could be a track athlete, a baseball player, a football
 player, a racecar driver, etc. Again, the signer determines the details of how they will compete. The contract only 
-binds them to action of competing.
+binds them to the action of competing.
 
 Now, let's tie this back to programming. In the example above, `compete` is the abstract method 
 that would be placed in the `Athlete` interface (contract) since all athletes must be able to compete. 
