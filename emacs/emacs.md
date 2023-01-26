@@ -224,6 +224,11 @@ navigate to where you want to paste, then yank the text from the kill buffer.
 | `C-w`     | Cut selection (goes into kill buffer)                                  |
 | `M-w`     | Copy selection (goes into kill buffer)                                 |
 | `C-y`     | Paste / Yank (from kill buffer)                                        |
+| `C-x h`   | Select all                                                             |
+
+When you edit source code using Emacs, you can usually use `<TAB>` to fix the
+indentation for a selected region of code -- this assumes that things like parentheses
+and curly braces, if applicable, are properly closed.
 
 ### Search and Replace
 
