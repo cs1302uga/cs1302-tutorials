@@ -560,8 +560,8 @@ using ASCII characters::
                  dirname                    basename
 
 Understanding this split is important when it comes to
-moving and renaming file as both concepts deal
-with the modification of a file's absolute path.
+moving and renaming a file as both of those tasks modify
+a file's absolute path when performed successfully.
 
 .. |Y| replace:: ✓
 .. |N| replace:: ✗
