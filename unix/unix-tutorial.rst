@@ -570,7 +570,7 @@ a file's absolute path when performed successfully.
    =======  ========  ======================
    If you modify      Related
    -----------------  ----------------------
-   dirname  basename  Concept
+   dirname  basename  Task
    =======  ========  ======================
    |Y|      |N|       move a file
    |N|      |Y|       rename a file
@@ -580,7 +580,7 @@ a file's absolute path when performed successfully.
 If you are unsure what the absolute path for a file is, but
 you do know some relative path for it, then you can
 print its absolute path using the ``realpath`` command,
-supplying the relative path as a command-line argument.
+supplying the relative path as a command-line argument:
 
 .. code-block:: shell
 
