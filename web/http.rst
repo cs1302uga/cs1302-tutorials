@@ -168,7 +168,7 @@ the concept of a URL; all URLs are also `URIs <URI>`__.
 a JavaFX ``Image`` object using the data included in the body of the associated
 response.
 
-.. |GitHubApi| replace:: GutHub REST API
+.. |GitHubApi| replace:: GitHub REST API
 .. _GitHubApi: https://docs.github.com/en/rest
 
 .. |get_a_license| replace:: get a license
