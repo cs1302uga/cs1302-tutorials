@@ -1,5 +1,5 @@
-.. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Fall%202022-darkgreen
-   :alt: Approved for: Fall 2022
+.. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Spring%202023-magenta
+   :alt: Approved for: Spring 2023
 
 .. external links
 .. |uml_tutorial| replace:: UML Class Diagrams
