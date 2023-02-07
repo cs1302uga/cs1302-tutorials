@@ -163,7 +163,11 @@ To work through this example, perform the following steps:
 
    Even if the visibility allowed you to write the lines above, you should avoid doing so!
    There is already code that sets up these variables. It's in the parent constructor.
-   Instead of duplicating code, just call the parent constructor.
+   Instead of duplicating code, just call the parent constructor using:
+   
+   ```java
+   super("Canis", "Familiaris");
+   ```
 
 1. Compile the `cs1302.animal.Animal` and `cs1302.animal.Dog` classes, specifying `bin`
    as the default package for compiled code. Since there is a dependency between those
