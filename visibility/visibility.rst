@@ -6,14 +6,12 @@
 .. _uml_tutorial: https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/uml/uml.md
 
 .. internal links
-.. |reading_private| replace:: Private Visibility
-.. _reading_private: private.rst
+.. |reading_public_and_private| replace:: Private Visibility
+.. _reading_public_and_private: public-and-private.rst
 .. |reading_package| replace:: Package Private Visibility
 .. _reading_package: package-private.rst
 .. |reading_protected| replace:: Protected Visibility
 .. _reading_protected: protected.rst
-.. |reading_public| replace:: Public Visibility
-.. _reading_public: public.rst
 .. 
   image:: img/in-progress.svg
 
@@ -117,10 +115,10 @@ and help others to understand the important details of visibility.
 Individual Readings
 *******************
 
-* |reading_private|_
+* |reading_public_and_private|_
 * |reading_package|_
 * |reading_protected|_
-* |reading_public|_
+
 
 Summary of Visibilities
 ***********************
