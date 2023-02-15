@@ -6,7 +6,7 @@
 .. _uml_tutorial: https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/uml/uml.md
 
 .. internal links
-.. |reading_public_and_private| replace:: Private Visibility
+.. |reading_public_and_private| replace:: Public and Private Visibility
 .. _reading_public_and_private: public-and-private.rst
 .. |reading_package| replace:: Package Private Visibility
 .. _reading_package: package-private.rst
