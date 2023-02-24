@@ -52,7 +52,8 @@ terminal shell. Let's create one!
    $ stat /path/to/bash
    ```
    
-1. Create a regular text file called `cs1302-script.sh` and setup the first
+1. By convention, the `.sh` file extension is used for shell scripts.
+   Create a regular text file called `cs1302-script.sh` and setup the first
    line so that it conforms to the beforementioned requirements for an
    interpreter script. Replace `interpreter` with the output of `which`,
    and exclude an optional arguments for now. It should look this:
