@@ -64,7 +64,7 @@ page for direct links to commonly used classes.
 1. Run the compiled code using the command below:
 
    ```
-   java -cp bin -p $JAVAFX_HOME/lib --add-modules javafx.controls cs1302.gui.ExampleDriver
+   java -cp bin -Dprism.order=sw -p $JAVAFX_HOME/lib --add-modules javafx.controls cs1302.gui.ExampleDriver
    ```
    
    Notice the use of the `-p` and `add-modules` command line arguments as in the previous step. 
@@ -98,14 +98,9 @@ page for direct links to commonly used classes.
         Current serial number in output stream:  24
       ```
 
-   **If you receive an error message in the terminal,** then this error message is related to the 
-   JavaFX graphics renderer. By default, it attempts to perform hardware-accelerated rendering. 
-   However, we need to enable to software-based rendering in order for it to work nicely with X-forwarding. 
-   Close out of the small GUI app. 
-   
-1. Regardless of whether you got an error, **rerun the driver but add `-Dprism.order=sw` in addition to 
-   the usual options when executing the related `java` command** to enable the software-based renderer. You may
-   still receive a slightly shorter error message but your application will run smoother (less lag) with this 
+1. **If you receive an error message in the terminal,** then this error message is related to the 
+   JavaFX graphics renderer. **rerun the driver and make sure you correctly typed the `-Dprism.order=sw` option properly.**. 
+   You may still receive a slightly shorter error message but your application will run smoother (less lag) with this 
    option set.
    
 1. If the small GUI app containing a nice message appears with or without a small error message, then you are okay to proceed!
