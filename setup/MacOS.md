@@ -1,6 +1,6 @@
 # Setup on macOS
 
-![Approved for: Spring 2023](https://img.shields.io/badge/Approved%20for-Spring%202023-magenta)
+![Approved for: Fall 2023](https://img.shields.io/badge/Approved%20for-Fall%202023-green)
 
 The following instructions are designed to help get you up and running with macOS for development
 in CSCI 1302. The majority of the time, you will not be developing directly on your Mac. Instead,
