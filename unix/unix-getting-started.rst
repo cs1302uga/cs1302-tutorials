@@ -1,5 +1,5 @@
 .. sectnum::
-.. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Spring%202023-magenta
+.. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Fall%202023-green
 
 =======================
  Unix: Getting Started
