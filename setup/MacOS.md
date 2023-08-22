@@ -48,9 +48,10 @@ On some systems, this is the same as the ESC or ALT key. On a Mac, you can set T
 use the OPTION key as META. 
 
 1. **Open Terminal.**
-2. In the menu bar, click **Terminal**, then click **Preferences**.
-3. In the window that appears, select the **Keyboard** tab in the pane that appears to the right.
-4. Near the bottom of the pane, check the box for **Use Option as Meta key.**
+2. In the menu bar, click **Terminal**, then click **Settings...**.
+3. In the window that appears, select the **Profiles** option at the top.
+4. In the tabs that appear below **Profiles**, select the **Keyboard** tab.
+5. Near the bottom of the pane, check the box for **Use Option as Meta key.**
    - **The setting does not take effect immediately!** 
      It will take effect the next time you open **Terminal**.
 6. Quit the **Terminal** app by selecting **Quit Terminal** from the **File** menu (or by
