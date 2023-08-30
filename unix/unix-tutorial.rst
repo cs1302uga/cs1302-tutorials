@@ -462,7 +462,7 @@ a path to the file you want to view as a command-line argument.
 ++++++++
 
 The ``cat`` command displays the entire contents of a file all at once,
-which may not be desirabe for large files. To display the contents of
+which may not be desirable for large files. To display the contents of
 a regular file one page (or screen) at a time, use the ``less`` command
 and supply a path to the file you want to view as a command-line argument.
 To quit out of ``less``, press the ``q`` key. To move up and down one
