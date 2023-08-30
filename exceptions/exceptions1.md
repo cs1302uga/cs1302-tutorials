@@ -57,7 +57,7 @@ public class Exception {
     public static void exception() {
         String s = null;
 
-        if (s.length() > 1) { // causes a NullPointerException
+        if (s.length() > 1) { // causes a NullPointerException because you can't call a method on a null reference.
             System.out.println("string length > 1");
         } // if
     } // exception
@@ -85,20 +85,26 @@ Exception in thread "main" java.lang.NullPointerException: Cannot invoke "String
 ```
 
 When you see an error message like this, take a few seconds to read through the message to understand what it is
-saying. The first line tells you that a `NullPointerException` occurred when the `length` method was invoked on
-a `null` reference. That's very informative. With this information, we can figure out that `s` must have been `null`.
+saying. The top line tells you that a `NullPointerException` occurred when the `length` method was invoked on
+a `null` reference. That's very informative. With this information, we can figure out that `s` must have been `null`
+since `s` is the only reference variable on line 9.
+
 From there, we can see the exact method(s) that were called before the exception occurred. To understand this, start
 from the last line of output in the error. The last line corresponds to the first method that was called. In our example,
-this is the `main` method. That should make sense since all programs start in `main`. On line 3 of the `main` method,
-the `exception` method was called. Then, on line 9 of the `exception` method, the program generated an exception
+this is the `main` method in the `Exception` class (or `Exception.main`) which makes sense since all programs start in 
+`main`. The `main` method executed until it got to line 3 and then it called the `exception` method (`Exception.exception`).
+We can tell that `main` called `exception` because the last line of output corresponds to the first method that was called
+and each subsequent method call is printed above it (think of this as a stack of method calls). 
+
+On line 9 of the `exception` method, the program generated an exception
 that was never handled. In this example, the `NullPointerException` originated in the `exception` method. Since the 
 `exception` method did not handle the exception, the exception was **propagated** (passed) to the calling method. In this 
-example, that is `main`. Since `main` also did not handle the exception, the exception propagated out of `main` 
+example, it was propagated to `main`. Since `main` also did not handle the exception, the exception propagated out of `main` 
 which led to the crash. Any time an exception is generated and is allowed to propagate out of `main`, the program
-will crash. 
+will crash. It's our job to make sure we catch the exceptions before they cause a crash.
 
 **Definition:** The last two lines of output above are called a **stack trace**. The stack trace tells the user which
-methods were active when the program crashed in the order that they were called (from bottom up). This facilitates
+methods were active when the program crashed in the order that they were called (from the bottom up). This facilitates
 faster debugging by allowing you to better understand what was happening in the application when it crashed.
 
 The error message above is informative to us as programmers but we don't want our users to see it! To protect them
@@ -109,7 +115,7 @@ from these messages, we have to deal with exceptions in one of two ways:
 
 We will talk about each of these in detail in the next two sections. 
 
-## Avoiding Exceptions
+## Approach 1: Avoiding Exceptions
 
 To *avoid the exception* in the example above, you need only ensure that you
 do not invoke members (i.e., call methods or access instance variables)
@@ -126,13 +132,13 @@ if (s != null) {
 ```
 
 ```java
-// avoid NPE via short circuiting
+// avoid NullPointerException via short circuiting
 if ((s != null) && (s.length() > 1)) {
     System.out.println("string length > 1");
 } // if
 ```
 
-In general, in order to avoid an exception object, you need to understand the
+In general, in order to avoid an exception, you need to understand the
 conditions in which that exception object is thrown, then write code that
 correctly identifies if those conditions are met prior to the line of code
 that throws the exception object. Although it is relatively easy to amend code
@@ -145,10 +151,10 @@ potentially tricky to identify. Such exceptions are generally handled
 instead of avoided, although there is no reason a combination of both
 handling and avoiding can't be employed.
 
-## Handling Exceptions
+## Approach 2: Handling Exceptions
 
 To *handle the exception* in the example above, you need to make use of a
-special control flow snytax known as a **try block** or **try-catch block**.
+special control flow syntax known as a **try block** or **try-catch block**.
 With this syntax, you place code that can throw an exception into the
 `try` block, then place code for how you want to deal with the exception
 in the `catch` block. These two go together, which is why we often
@@ -235,11 +241,11 @@ src/cs1302/scope/Example.java:22: error: cannot find symbol
 1 error
 ```
 
-Issues like simple typos, missing import statements, and even an incorrect
+Issues like simple typos, missing import statements and even an incorrect
 classpath often cause the Java compiler to emit the `cannot find symbol`; however,
 the cause of this particular `cannot find symbol` error is related to the
 scope of the symbol (the variable `file`), which does not extend to a specific
-line of code that attempts to use that symbol, as indicated by error message.
+line of code that attempts to use that symbol, as indicated by the error message.
 
 Since the variable `file` is declared inside the try-block, its scope only
 extends to subsequent lines within the try-block, as illustrated below.
@@ -302,10 +308,10 @@ easier to program. These two strategies are outlined below:
 
 2. Place code that depends on the symbol within the try-block with the understanding
    that it will be skipped should an exception occur within the try-block before that
-   line (as execution flows to a corresponding catch-block).
+   line (as execution flows to a corresponding catch block).
 
    * This strategy often requires changes to multiple lines of code; however, it also often
-     leads to a more elegent solution, as illustrated below:
+     leads to a more elegant solution, as illustrated below:
 
      ```java
      public static void main(String[] args) {
