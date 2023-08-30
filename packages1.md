@@ -19,7 +19,7 @@ run any code examples, repeat as necessary**. Simply reading (or skimming) is no
 
 In Java, a **package** is a grouping of related types providing access protection and name space management. 
 Note that types refers to classes, interfaces, enumerations, and annotation types [[1]](https://docs.oracle.com/javase/tutorial/java/package/packages.html). In other words, a package allows you to
-organize your source code. Proper code organizatioin becomes increasingly important as the size of the project
+organize your source code. Proper code organization becomes increasingly important as the size of the project
 increases.
 
 The two primary benefits of packages are:
@@ -253,7 +253,7 @@ Let's try it by placing the `HelloWorld` class into the `cs1302.hello` package!
    ```
       
 5. Execute the `find` command. Note that the `HelloWorld.class` file was created under `bin/cs1302/hello`.
-   The output of `find` should look the same as the output below. Notice that The compiler automatically 
+   The output of `find` should look the same as the output below. Notice that the compiler automatically 
    created the necessary package directories for our compiled code under `bin`!
    
    **Note:**  If you see any tilde (~) files, those are just backup copies of older versions 
@@ -275,7 +275,7 @@ Let's try it by placing the `HelloWorld` class into the `cs1302.hello` package!
    ```
  
 
-6. Run the program using `javac` specify the classpath using `-cp` and include the
+6. Run the program using `javac` with the classpath using `-cp` and include the
    fully qualified name (explained below) of the class containing the `main` method:
    
    ```
