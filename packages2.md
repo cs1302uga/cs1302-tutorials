@@ -137,7 +137,7 @@ to let `javac` know where the _compiled_ version of that depedency is.
 
 ### Setting the Class Path
 
-Both `javac` and `java` allow you specify the class path using the `-cp` or `-classpath` command-line
+Both `javac` and `java` allow you to specify the class path using the `-cp` or `-classpath` command-line
 option. The usual syntax is as follows:
 
 ```
@@ -155,7 +155,7 @@ Each path can be a path to a directory or a `.jar` file (usually used for third 
 
 **VERY IMPORTANT NOTE:** The class path should always point to a default package for _compiled_ code. 
 If you are compiling a `.java` file that depends on an already compiled class, then you will need to 
-specifiy the class path to the corresponding default package for that dependency when 
+specify the class path to the corresponding default package for that dependency when 
 invoking `javac`.
 
 ### Import Statements
@@ -176,7 +176,7 @@ Random rng = new Random();
 java.util.Random rng = new java.util.Random();
 ```
 
-As you can imagine, the latter (without an import statement) might get annoying and repetetive.
+As you can imagine, the latter (without an import statement) might get annoying and repetitive.
 Therefore, we usually prefer to use an `import` statement for the convenience it provides.
 Why would anyone prefer to use the fully qualified name instead of the simple name for a class?
 It enables you to use two classes from different packages with the same simple name at the
