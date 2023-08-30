@@ -110,31 +110,57 @@ to the explicit instructions provided below are explored in the FAQ section towa
 this tutorial. 
 
 1. Ensure that you have a `public_html` directory in your home directory. If the `~/public_html` 
-   directory does not exist, then you should create it. The purpose of this directory on Odin (and
+   directory does not exist, you should create it. The purpose of this directory on Odin (and
    on many systems) is to support user websites, which will be illustrated in the following steps. 
-   You are fully responsible for anything that you host through your Odin website.
+   Please note that you are fully responsible for anything that you host through your Odin website.
 
-1. Use `ln`, as described below, to **create a symbolic link** (shortcut) in your `public_html` 
-   directory to the `doc` subdirectory containing the API documentation website that you 
-   created in a previous step. The exact command is presented below--it assumes you are currently 
-   in the `cs1302-javadoc` directory. 
+1. To make our documentation publicly available on the web, we will set up a **symbolic link** to
+   the `doc` directory you created in the previous steps. You can think of a symbolic link as a
+   shortcut to those files. The symbolic link will need to be placed in the `~/public_html` folder
+   but the `doc` directory you created will not move.
+
+   The syntax for the command to create a symbolic link is:
 
    ```
-   $ ln -s $(pwd)/doc ~/public_html/cs1302-javadoc-doc
+   ln -s <absolute path to the doc directory> <relative path to the link being created>
    ```
+
+   Notice that the first path must be an absolute path and that the second path can be a relative
+   path. For example, if I were running the `ln` command from within the `cs1302-javadoc` directory
+   that contains my `doc` folder, my command might look something like this:
+
+   ```
+   ln -s /absolute/path/to/cs1302-javadoc/doc ~/public_html/cs1302-javadoc-doc
+   ```
+
+   where `/absolute/path/to/cs1302-javadoc/doc` is replaced with the real absolute path to `doc` and
+   `cs1302-javadoc-doc` is the name of the symbolic link being created. The absolute path required will
+   depend on your username and the name of the link can be anything you like (although we generally
+   recommend using the same names we use in the tutorial).
+
+   * Optional Shortcut (avoids typing the full absolute path)
+
+     If you want to avoid typing the absolute path every time, you can try the command below. However,
+     for this command to work properly, it must be executed from the directory that contains the `doc`
+     directory. In this example, **the command must be run from the `cs1302-javadoc` directory**.
+
+     ```
+     $ ln -s $(pwd)/doc ~/public_html/cs1302-javadoc-doc
+     ```
    
-   **Note:** The `ln` command requires the **absolute path** to our link's target (in this case, `doc`). 
-   Since our intended target is in the current directory, we know that its absolute path
-   is the same as the absolute path of the current directory followed by `/` followed by
-   the name of our target. We could manually figure out the desired path with the help of `pwd` 
-   or we can use `$(pwd)`, as seen above, to fill in the output of `pwd` instead. You could also
-   type out the entire absolute path but that would be tedious and error-prone.
+     **Explanation:** As previously stated, the `ln` command requires the absolute path to our link's
+     target (in this case, `doc`). 
+     Since our intended target is in the current directory, we know that its absolute path
+     is the same as the absolute path of the current directory followed by `/` followed by
+     the name of our target. We could manually figure out the desired path with the help of `pwd` 
+     or we can use `$(pwd)`, as seen above, to fill in the output of `pwd` instead. You could also
+     type out the entire absolute path but that would be tedious and error-prone.
    
-   In this scenario, the symbolic link is called `cs1302-javadoc-doc`. You can see it if you
-   change into your `public_html` directory and perform an `ls -l`. The entry for 
-   `cs1302-javadoc-doc` in the long listing indicates that the file is a symbolic link in
-   two different ways: i) an `l` is prefixed in the mode instead of `-` or `d`; and ii) the
-   filename lists an arrow pointing to the link target. 
+     In this scenario, the symbolic link is called `cs1302-javadoc-doc`. You can see it if you
+     change into your `public_html` directory and perform an `ls -l`. The entry for 
+     `cs1302-javadoc-doc` in the long listing indicates that the file is a symbolic link in
+     two different ways: i) an `l` is prefixed in the mode instead of `-` or `d`; and ii) the
+     filename lists an arrow pointing to the link target. 
 
 1. Navigate to the following URL in your web browser, replacing `user` with your Odin
    username:
