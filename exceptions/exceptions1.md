@@ -125,7 +125,7 @@ Here are some examples:
 ```java
 // use an if-statement to check
 if (s != null) {
-    if (s.length() > 1)) {
+    if (s.length() > 1) {
         System.out.println("string length > 1");
     } // if
 } // if
@@ -167,7 +167,7 @@ Here is an example:
 
 ```java
 try {
-    if (s.length() > 1)) {
+    if (s.length() > 1) {
         System.out.println("string length > 1");
     } // if
 } catch (NullPointerException npe) {
