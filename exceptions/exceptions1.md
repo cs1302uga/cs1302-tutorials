@@ -119,7 +119,15 @@ C. The *last* line in the stack trace indicates the *last executed line* of the 
    ```
 
 The stack trace, when read in reverse order (i.e., from bottom to top), tells us a story about what happened 
-when we ran the program. In our example, the stack trace tells us that the `main` method was executed until 
+when we ran the program. 
+
+```
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "String.length()" because "<local0>" is null
+     at Exception.exception(Exception.java:9)
+     at Exception.main(Exception.java:3)
+```
+
+In our example, the stack trace tells us that the `main` method was executed until 
 the program got to line 3, then the `exception` method (`Exception.exception`) was called and executed
 until the program got to line 9, the origin of the exception. 
 
@@ -128,6 +136,7 @@ to its calling method. In general, exception objects will continue to propagatio
 call stack (i.e., the methods we see in the stack trace) until the program either: 
 i) handles the exception object; or 
 ii) lets the exception propagates out of `main`. 
+
 In our example, the exception propagated from `exception` to `main`, and since the `main` method does not 
 handle the exception, the exception continued to oropagate out of `main` and crash the program. 
 Any time an exception is allowed to propagate out of `main`, the program will crash. It's our job to 
