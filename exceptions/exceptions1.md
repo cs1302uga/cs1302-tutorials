@@ -76,41 +76,75 @@ Instead, it crashes because the exception was not *handled* properly.
 Go ahead and test it out. Copy/paste this code into a `.java` file on Odin and try to run it. Did it
 do what you expected?
 
-The example code above, when executed, produces the following output:
+Here is an annotated version of the output produced by the example code:
 
-```java
-Exception in thread "main" java.lang.NullPointerException: Cannot invoke "String.length()" because "<local0>" is null
-	at Exception.exception(Exception.java:9)
-	at Exception.main(Exception.java:3)
+```
+A. | Exception in thread "main" java.lang.NullPointerException: Cannot invoke "String.length()" because "<local0>" is null
+B. |     at Exception.exception(Exception.java:9)
+C. |     at Exception.main(Exception.java:3)
 ```
 
 When you see an error message like this, take a few seconds to read through the message to understand what it is
-saying. The top line tells you that a `NullPointerException` occurred when the `length` method was invoked on
-a `null` reference. That's very informative. With this information, we can figure out that `s` must have been `null`
-since `s` is the only reference variable on line 9.
+saying. 
 
-From there, we can see the exact method(s) that were called before the exception occurred. To understand this, start
-from the last line of output in the error. The last line corresponds to the first method that was called. In our example,
-this is the `main` method in the `Exception` class (or `Exception.main`) which makes sense since all programs start in 
-`main`. The `main` method executed until it got to line 3 and then it called the `exception` method (`Exception.exception`).
-We can tell that `main` called `exception` because the last line of output corresponds to the first method that was called
-and each subsequent method call is printed above it (think of this as a stack of method calls). 
+A. The top line tells you that a `NullPointerException` occurred when the `length` method was invoked on
+   a `null` reference. That's very informative. With this information, we can figure out that `s` must have been `null`
+   since `s` is the only reference variable on line 9.
 
-On line 9 of the `exception` method, the program generated an exception
-that was never handled. In this example, the `NullPointerException` originated in the `exception` method. Since the 
-`exception` method did not handle the exception, the exception was **propagated** (passed) to the calling method. In this 
-example, it was propagated to `main`. Since `main` also did not handle the exception, the exception propagated out of `main` 
-which led to the crash. Any time an exception is generated and is allowed to propagate out of `main`, the program
-will crash. It's our job to make sure we catch the exceptions before they cause a crash.
+The indented lines starting with `at` in the output are collectively referred to a **stack trace**. The stack trace tells
+the user which methods were active when the program crashed in the order that they were called (from the bottom up). 
+This facilitates faster debugging by allowing you to better understand what was happening in the application when it crashed.
 
-**Definition:** The last two lines of output above are called a **stack trace**. The stack trace tells the user which
-methods were active when the program crashed in the order that they were called (from the bottom up). This facilitates
-faster debugging by allowing you to better understand what was happening in the application when it crashed.
+B. The *first* line in the stack trace indicates the **origin** of the exception; that is, it provides the class name,
+   method name, filename, and line number where the exception object was *first* thrown during program execution. Here
+   is a breakdown:
 
-The error message above is informative to us as programmers but we don't want our users to see it! To protect them
-from these messages, we have to deal with exceptions in one of two ways:
+   ```
+     class name              file name
+      ┌───┴───┐           ┌──────┴─────┐    
+   at Exception.exception(Exception.java:9)
+                └───┬───┘                │
+              method name            line number
+   ```
 
-1. avoid them; and
+C. The *last* line in the stack trace indicates the *last executed line* of the *first method executed* by our program;
+   in most cases, this is implictly the `main` method since most Java programs start in `main`. Here is a breakdown:
+
+   ```
+     class name         file name
+      ┌───┴───┐      ┌──────┴─────┐    
+   at Exception.main(Exception.java:3)
+                └─┬┘                │
+            method name         line number
+   ```
+
+The stack trace, when read in reverse order (i.e., from bottom to top), tells us a story about what happened 
+when we ran the program. In our example, the stack trace tells us that the `main` method was executed until 
+the program got to line 3, then the `exception` method (`Exception.exception`) was called and executed
+until the program got to line 9, the origin of the exception. 
+
+Since the `exception` method does not handle the exception, the exception object **propagated** (i.e., *thrown/passed back*)
+to its calling method. In general, exception objects will continue to propagation back through the calling methods in the
+call stack (i.e., the methods we see in the stack trace) until the program either: 
+i) handles the exception object; or 
+ii) lets the exception propagates out of `main`. 
+In our example, the exception propagated from `exception` to `main`, and since the `main` method does not 
+handle the exception, the exception continued to oropagate out of `main` and crash the program. 
+Any time an exception is allowed to propagate out of `main`, the program will crash. It's our job to 
+make sure that we catch exceptions before they cause a crash.
+
+```
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "String.length()" because "<local0>" is null
+     at Exception.exception(Exception.java:9)
+     at Exception.main(Exception.java:3)
+```
+
+Error messages produced when a program crashes from an exception, like the one shown above, are *very* informative 
+for us as programmers; however, they are often confusing, startling, or even scary when encountered by end 
+users who just witnessed the program crash and have no way to use the information in the error message. 
+To prevent our users from seeing these error messages, we need to handle exceptions in one of two ways:
+
+1. avoid them; or
 2. handle them.
 
 We will talk about each of these in detail in the next two sections. 
