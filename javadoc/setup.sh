@@ -14,8 +14,11 @@ if [ ! -d "${TODIR}" ]; then
   rm -rf ${FROMDIR}
   rm -rf .git
   mkdir bin doc
+  if command -v tree; then 
+    tree ${TODIR}
+  fi
   echo "subdirectory ${TODIR} successfully created"
 else
-  >&2 echo "subdirectory cs1302-javadoc already exists"
+  >&2 echo "subdirectory ${TODIR} already exists"
   >&2 echo "if you want to start over, delete or rename the existing directory"
 fi  
