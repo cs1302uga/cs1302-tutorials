@@ -6,6 +6,9 @@ BRANCH=alsi
 FROMDIR=javadoc
 TODIR=cs1302-javadoc
 
+FILESTOREMOVE=".git javadoc-figure.png javadoc-figure.pptx javadoc.md" # do not leave empty
+DIRSTOMAKE="bin doc" # do not leave empty
+
 if [ ! -d "${TODIR}" ]; then
   # get tutorial starter code
   git clone --depth 1 --no-checkout --branch ${BRANCH} ${REPO} ${TODIR}
@@ -15,9 +18,9 @@ if [ ! -d "${TODIR}" ]; then
   rm -f ${FROMDIR}/setup.sh
   mv ${FROMDIR}/* ./
   rm -rf ${FROMDIR}
-  rm -rf .git
+  rm -rf ${FILESTOREMOVE}
   # create bin and doc
-  mkdir bin doc
+  mkdir -p ${DIRSTOMAKE}
   popd &>/dev/null
   # if tree is available, show the directory
   if command -v tree &>/dev/null; then 
