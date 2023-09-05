@@ -15,7 +15,7 @@ if [ ! -d "${TODIR}" ]; then
   rm -rf .git
   mkdir bin doc
   popd
-  if command -v tree; then 
+  if command -v tree &>/dev/null; then 
     tree ${TODIR}
   fi
   echo "subdirectory ${TODIR} successfully created"
