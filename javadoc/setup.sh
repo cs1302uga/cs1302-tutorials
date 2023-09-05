@@ -9,7 +9,7 @@ TODIR=cs1302-javadoc
 if [ ! -d "${TODIR}" ]; then
   # get tutorial starter code
   git clone --depth 1 --no-checkout --branch ${BRANCH} ${REPO} ${TODIR}
-  pushd ${TODIR}
+  pushd ${TODIR} &>/dev/null
   git checkout ${BRANCH} -- ${FROMDIR}
   # clean up what we got
   rm -f ${FROMDIR}/setup.sh
@@ -18,7 +18,7 @@ if [ ! -d "${TODIR}" ]; then
   rm -rf .git
   # create bin and doc
   mkdir bin doc
-  popd
+  popd &>/dev/null
   # if tree is available, show the directory
   if command -v tree &>/dev/null; then 
     tree ${TODIR}
