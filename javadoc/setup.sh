@@ -7,13 +7,14 @@ TODIR=cs1302-javadoc
 
 if [ ! -d "${TODIR}" ]; then
   git clone --depth 1 --no-checkout --branch ${BRANCH} ${REPO} ${TODIR}
-  cd ${TODIR}
+  pushd ${TODIR}
   git checkout ${BRANCH} -- ${FROMDIR}
   rm -f ${FROMDIR}/setup.sh
   mv ${FROMDIR}/* ./
   rm -rf ${FROMDIR}
   rm -rf .git
   mkdir bin doc
+  popd
   if command -v tree; then 
     tree ${TODIR}
   fi
