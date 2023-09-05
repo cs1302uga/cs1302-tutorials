@@ -58,7 +58,7 @@ The steps in this tutorial assume that you are logged into the Odin server.
    called `cs1302-javadoc`:
 
    ```
-   $ curl -s -L https://git.io/fh0nG | bash
+   $ curl -s -L https://raw.githubusercontent.com/cs1302uga/cs1302-tutorials/alsi/javadoc/setup.sh | bash
    ```
   
 1. Change into the `cs1302-javadoc` directory that was just created and look around. There should be
