@@ -6,7 +6,7 @@ FROMDIR=javadoc
 TODIR=cs1302-javadoc
 
 if [ ! -d "${TODIR}" ]; then
-  git clone --depth 1 --no-checkout ${REPO} ${TODIR}
+  git clone --depth 1 --no-checkout --branch ${BRANCH} ${REPO} ${TODIR}
   cd ${TODIR}
   git checkout ${BRANCH} -- ${FROMDIR}
   rm -f ${FROMDIR}/setup.sh
