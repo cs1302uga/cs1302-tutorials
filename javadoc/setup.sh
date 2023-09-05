@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 REPO=https://github.com/cs1302uga/cs1302-tutorials.git
 BRANCH=alsi
