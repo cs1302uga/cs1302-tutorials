@@ -1,15 +1,21 @@
 #!/bin/bash
 
-if [ ! -d "cs1302-javadoc" ]; then
-  git clone --depth 1 --no-checkout https://github.com/cs1302uga/cs1302-tutorials.git cs1302-javadoc
-  cd cs1302-javadoc
-  git checkout master -- javadoc
-  rm -f javadoc/setup.sh
-  mv javadoc/* ./
-  rm -rf javadoc
+REPO=https://github.com/cs1302uga/cs1302-tutorials.git
+BRANCH=alsi
+FROMDIR=javadoc
+TODIR=cs1302-javadoc
+
+if [ ! -d "${TODIR}" ]; then
+  git clone --depth 1 --no-checkout ${REPO} ${TODIR}
+  cd ${TODIR}
+  git checkout ${BRANCH} -- ${FROMDIR}
+  rm -f ${FROMDIR}/setup.sh
+  mv ${FROMDIR}/* ./
+  rm -rf ${FROMDIR}
   rm -rf .git
   mkdir bin doc
-  echo "subdirectory cs1302-javadoc successfully created"
+  echo "subdirectory ${TODIR} successfully created"
 else
   >&2 echo "subdirectory cs1302-javadoc already exists"
+  >&2 echo "if you want to start over, delete or rename the existing directory"
 fi  
