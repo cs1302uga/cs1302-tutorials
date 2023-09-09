@@ -141,7 +141,7 @@ through this tutorial.
    
    If you open the `Styleable.java` file, you will see that it also contains an abstract `unstyle` method.
    Remember, that the abstract method(s) represent what the signer of the contract must be able to do. If a class
-   implements the `Styleable` interface, it is obligated to have a concrete (non-abstract) `style` and a concreate
+   implements the `Styleable` interface, it is obligated to have a concrete (non-abstract) `style` and a concrete
    `unstyle` method. If an implementing class does not have implementations for one or both of these methods,
    it will not compile.
    
@@ -204,7 +204,7 @@ specific details regarding how an athlete will compete are up to the athlete (no
    written in the source code for the implementing `Fancy` class. In some cases, new comments are 
    provided. In others, it appears as though Javadoc comments are omitted. In the latter case, this 
    is actually not true. View the API documentation website for both the `Styleable` interface and 
-   the `Fancy` class--bringthem up side-by-side, if possible. All of the methods in `Fancy` are 
+   the `Fancy` class—bring them up side-by-side, if possible. All of the methods in `Fancy` are 
    documented, even `style()` and `unstyle()` which have no Javadoc comments in the source code!
    
    This happens because the Javadoc tool has the ability to inherit comments from an interface when omitted
@@ -232,7 +232,7 @@ etc.? With that in mind, let's go back to our code example:
    
    ```java
    Fancy f;
-   Sytleable s;
+   Styleable s;
    ```
    
 1. Reference variables are called as such because they refer to objects. However, you can only create
@@ -255,14 +255,14 @@ etc.? With that in mind, let's go back to our code example:
    SuperFancy sf = new SuperFancy("some fancier message?");
    sf.style();                    // OK
    sf.unstyle();                  // OK
-   String about = sf.getAbout();  // OK -- variable type is SuperFancy
+   String about = sf.getAbout();  // OK — variable type is SuperFancy
    ```
    
    ```java
    Styleable s = new SuperFancy("some fancier message?");
    s.style();                    // OK
    s.unstyle();                  // OK
-   String about = s.getAbout();  // NOT OK! -- variable type is Styleable
+   String about = s.getAbout();  // NOT OK! — variable type is Styleable
    
    ```
    
@@ -328,7 +328,7 @@ etc.? With that in mind, let's go back to our code example:
 Below is a video that demonstrates how to use interfaces to write code involving 
 disparate classes with common functionality that is clean, easier to read, and 
 easier to modify. Here, we use the term disparate to describe classes that are
-disimilar in _what_ they describe but still, perhaps, share some common 
+dissimilar in _what_ they describe but still, perhaps, share some common 
 functionality.
 
 https://www.youtube.com/watch?v=kcBV6tlg44I
@@ -364,5 +364,5 @@ The content and opinions expressed on this Web page do not necessarily reflect t
 
 <small>
 Some of the code examples in this tutorial are inspired by code included with 
-Lewis, DePasquale, and Chase. _Java Foundations_. Fourth Edition.
+Lewis, DePasquale, and Chase. <i>Java Foundations</i>. Fourth Edition.
 </small>
