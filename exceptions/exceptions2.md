@@ -87,7 +87,7 @@ Let's look at an example.
    ```
    This error indicates that the `Scanner` constructor throws a `FileNotFoundException`.  `FileNotFoundException` is a
    **checked exception**.  When a method or constructor call throws a checked exception, the programmer must either:
-      * surround the relevant call with a try-catch or
+      * surround the relevant call with a try-catch; or
       * add a throws clause to the enclosing method (i.e., the method containing the call) to propogate this exception if it occurs.
 
    In `Checked.java`, the enclosing method is `main`.  We never want to add a `throws` clause to the `main` method as there is no code in
@@ -182,14 +182,14 @@ public int computeAverage(double[] nums) throws IllegalArgumentException {
 ```
 
 Using the `throws` keyword, we told Java that the `IllegalArgumentException`
-will not be handled directly in this method. Intead it will be _propagated_
+will not be handled directly in this method. Instead it will be _propagated_
 up to the calling method, i.e., the method or methods, somewhere else, that are
 actually calling `computeAverage`. In that other method, the programmer
 can either handle the exception (using a try-catch) or choose to propagate it again
 by repeating the `throws` in the calling method's signature.
 
 In Java, checked exceptions must either be handled directly using a try-catch
-or progated up using `throws`. Note, while it is possible to place a `throws`
+or progated up using `throws`. Note that while it is possible to place a `throws`
 in the signature of a program's `main` method, doing so is _strongly_ discouraged
 as exceptions propagated past `main` will always cause the program to crash.
 
