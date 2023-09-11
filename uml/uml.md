@@ -6,7 +6,7 @@
 
 In object-oriented programming, it's not uncommon to visualize classes
 and their relationships using the Unified Modeling Language (UML).
-While UML has many different types of diagrams, this reading focusses only
+While UML has many different types of diagrams, this reading focuses only
 on UML class diagrams.
 
 ### Basic Class Diagram
