@@ -1,5 +1,5 @@
-.. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Spring%202023-magenta
-   :alt: Approved for: Spring 2023
+.. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Fall%202023-green
+   :alt: Approved for: Fall 2023
 
 Visibility Reading
 ##################
