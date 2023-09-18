@@ -208,6 +208,7 @@ You should NOT use any of the following programs to connect to Odin:
 
 * `Video Studio Code Remote Development Extension <https://code.visualstudio.com/docs/remote/remote-overview>`_
 * `code-server <https://github.com/coder/code-server>`_
+* `JetBrains Remote Development Toolset <https://www.jetbrains.com/remote-development/>`_
 
 Using the programs mentioned above or programs like the ones mentioned above
 without permission violates sections 4.2 and 4.3 of the 
