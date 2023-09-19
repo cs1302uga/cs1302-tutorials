@@ -98,7 +98,7 @@ in which they are declared.
 
 According the Java Language Specification, the
 [`java.lang.Object`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html)
-class is the superclass for all other classes [1]. Take a few moments to look through
+class is the superclass for all other classes [[1]](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/inheritance/inheritance.md#references). Take a few moments to look through
 the `Object` class documentation. Write down any methods you recognize and may have used in the past
 in your notes. Remember, all classes that you create automatically inherit those methods. That is,
 if a class does not explicitly extend another class, then it implicitly extends `Object`. Therefore,
@@ -117,7 +117,7 @@ When we say that a parent constructor is called, we don't mean something like `n
 no object of the parent class is made in what we're describing. Instead, "using `super` to
 call a parent constructor" just means that we're telling Java to execute the code that's in a parent 
 constructor. Java does this in order to facilitate a separation of concerns; that is, it lets 
-each class setup/initialize their own stuff so that the child class doesn't have to duplicate the
+each class setup/initialize their own variables so that the child class doesn't have to duplicate the
 work that's written in the parent. We'll illustrate this with a small example in just a moment,
 but first take care to read the following note:
 
@@ -151,14 +151,14 @@ To work through this example, perform the following steps:
 
    Go ahead and call the `Animal` constructor from within the `Dog` constructor using `"Canis"` and
    `"Lupus Familiaris"` as the genus and species, respectively. This will setup the `genus` and `species`
-   variable within any `Dog` objects that are created - similar to what was done in the first example video.
+   variable within any `Dog` objects that are created — similar to what was done in the first example video.
 
    **Note: Since `genus` and `species` are declared with `private` visibility, you cannot do the following in
    the `Dog` constructor since you do not have direct access to those variables:**
 
    ```java
    super.genus = "Canis";
-   super.species = "Lupus Familiaris"
+   super.species = "Lupus Familiaris";
    ```
 
    Even if the visibility allowed you to write the lines above, you should avoid doing so!
@@ -253,14 +253,14 @@ an **optional** annotation that lets the compiler know your intent is to overrid
 Try the following scenarios:
 
 1. Omit the `@Override`, then recompile.
-1. Omit the `@Override` and mispell the `toString` method name, then recompile.
-1. Include the `@Override` and mispell the `toString` method name, then recompile.
+1. Omit the `@Override` and misspell the `toString` method name, then recompile.
+1. Include the `@Override` and misspell the `toString` method name, then recompile.
 
 Notice the error that occurs in the third situation that did not occur in the
 second. This is the primary purpose of the annotation. Although optional, it
 allowed you to tell the compiler that your intent is to override. If the compiler
-sees the `@Override` annotation, then it checks to make sure it's an override - and
-it can let you know if you made a mistake!
+sees the `@Override` annotation, then it checks to make sure it's an override and
+will let you know if you made a mistake!
 
 ### References
 
