@@ -17,7 +17,7 @@ An interpreter script needs to satisfy the following requirements:
   #! interpreter [optional-arg]
   ```
   
-  Historically, his first line is known as a _shebang_ since it starts with
+  Historically, this first line is known as a _shebang_ since it starts with
   the number sign followed by an exclamation mark.
 
 The interpreter must be a valid pathname for an executable program which is not 
@@ -90,7 +90,7 @@ terminal shell. Let's create one!
    
 1. Verify that the permissions are changed using `ls -l` or `stat`.
    
-1. Execute the script. To do this simple provide an absolute path to
+1. Execute the script. To do this, simply provide an absolute path to
    the script name or an abbreviated absolute path using the `.`
    directory. For example, you might try one of the following, the
    first of which will need to be modified slightly based on the
@@ -112,7 +112,7 @@ terminal shell. Let's create one!
  
  1. Notice the output. It executed both commands!
  
- 1. That's it! You now know know the basics of Bash scripts. There is a lot
+ 1. That's it! You now know the basics of Bash scripts. There is a lot
     more than can be done, but we recommend that you look those things
     up when you need them. For further reading, the nicely written and free
     _BASH Programming_ book by Mike G can be found 
