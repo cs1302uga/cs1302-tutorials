@@ -26,7 +26,7 @@ public static void printlns(PrintStream out, String[] args) {
 Then, [elsewhere](src/cs1302/util/Driver.java), you might call 
 the `printlns` method like this:
 
-```
+```java
 // elsewhere
 Helper.printlns(System.out, new String[] { "a", "b", "c" });
 Helper.printlns(System.out, new String[] { "d", "e" });
@@ -47,10 +47,10 @@ Helper.printlns(System.out, new String[] { "g", "h", "i", "j", "k" });
 ```
 
 To facilitate this, your first instinct might be to create a set
-of method _overloads_ for the `printlns` method. That's a good thought,
+of method _overloads_ for the `printlns` method. That's a good thought;
 however, it would also be tedious. How many parameters will the
 method need? Is it three? Two? One? We don't really know ahead of time. 
-This is where a **varags declaration** comes into play:
+This is where a **varargs declaration** comes into play:
 
 ```java
 /**
