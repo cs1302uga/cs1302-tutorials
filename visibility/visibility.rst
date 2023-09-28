@@ -65,11 +65,11 @@ public           ``public``        ``+``       |Y|             |Y|              
        interfaces.
 
 .. [2] A **member-level declaration** is any declaration of a class or interface member.
-       Members can include, where applicable, the constructors, methods, variables, constants,
-       etc. (both static or non-static/instance) of the class or interface; however, they
-       never includes Local-level declarations.
+       Members can include, where applicable, the constructors, methods, variables, and constants
+       (both static or non-static/instance) of a class or interface. However, they
+       never include local-level declarations.
 
-.. [3] A **local-level declaration** is any variable declaration that is local, in
+.. [3] A **local-level declaration** is any variable declaration that is local, or in
        scope, to a particular method. The local variables of a method include
        its parameter and any variables declared within the body of the
        method.
