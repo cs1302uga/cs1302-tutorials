@@ -28,7 +28,7 @@ Name             Same Class  Same Package  Child Class  Elsewhere
 public           |Y|         |Y|           |Y|          |Y|
 ===============  ==========  ============  ===========  =========
 
-* In Java, the ``public`` modifier must be included in a declararion for
+* In Java, the ``public`` modifier must be included in a declaration for
   it to be considered public by the compiler.
 * In UML, the ``+`` symbol is used just before a member's identifier to
   illustrate that it's public. It is also common practice to assume
@@ -56,14 +56,14 @@ Name             Same Class  Same Package  Child Class  Elsewhere
 private          |Y|         |N|           |N|          |N|
 ===============  ==========  ============  ===========  =========
 
-* In Java, the ``private`` modifier must be included in a member's declararion for
+* In Java, the ``private`` modifier must be included in a member's declaration for
   it to be considered private by the compiler.
 * In UML, the ``-`` symbol is used just before a member's identifier to
   illustrate that it's private.
 * The ``javadoc`` program does not include private declarations in a
   documentation website by default; however, they can be included  by
   adding the ``-private`` command-line argument (that option will
-  also include anything that is more visible than private -- so
+  also include anything that is more visible than private — so
   everything).
 
 Example 1
@@ -92,7 +92,7 @@ the same as ``this.checkAge``) declared within the same class.
 Although that method is private, it's visible from ``LINE1``
 because private members are always visible from within the same
 class. A similar argument can be made for the code on ``LINE2``,
-which attempts to access the private intance variable ``age``.
+which attempts to access the private instance variable ``age``.
 
 Example 2
 =========
@@ -136,7 +136,7 @@ to ``setAge`` on the next line (see the previous example for the inside of ``set
 We're not sure how the author of ``OtherClass`` knew about the ``checkAge`` method, but
 the error message lets them know that it's not for them to use. Had they referred to the
 Javadoc/API documentation for the ``Person`` class, it's unlikely that the private method
-would have been included (private members are not included in the `javadoc` output by default).
+would have been included (private members are not included in the ``javadoc`` output by default).
 If it's private, then it's not for others, and if it's not even listed in the documentation,
 then that's less stuff that other programmers need to understand before they're able
 to use your code.
