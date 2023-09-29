@@ -204,7 +204,7 @@ Perhaps that's a little dense. You may find it easier to remember this:
 Non-Visible Inherited Members
 =============================
 
-It's often possible to access access non-visible inherited members indirectly
+It's often possible to access non-visible inherited members indirectly
 via a member that is visible.
 
 * For inherited variables, the child class might utilize a visible getter or setter.
@@ -216,7 +216,7 @@ via a member that is visible.
 If we apply the second idea to constructors, then a child class constructor may be able to
 access non-visible inherited variables (e.g., to initialize them) using a call to a
 visible ``super()`` (or some overload of ``super``); this works really well when
-the parent constructor initializes it's own declared instance variables.
+the parent constructor initializes its own declared instance variables.
 This is considered **a common pattern** that exemplifies *separation of concerns* and
 *encapsulation* as each class is responsible for its own variables.
 
