@@ -26,7 +26,7 @@ package private  |Y|         |Y|           |N|          |N|
 * In Java, **there is no modifier keyword for package private visibility**. For
   top-level declarations and member-level declarations within a class, the omission
   of a visibility modifier will cause the compiler to treat the declared
-  thing as package private. This is behavior is different for member-level declarations
+  thing as package private. This behavior is different for member-level declarations
   within an interface, where the omission of a visibility modifier defaults
   a declaration's visibility to public.
 * In UML, the ``~`` symbol is used just before an identifier to
@@ -39,13 +39,13 @@ package private  |Y|         |Y|           |N|          |N|
 * The ``javadoc`` program does not include package private declarations in a
   documentation website by default; however, they can be included by
   adding the ``-package`` command-line argument (that option will
-  also include anything that is more visible than package private -- so
+  also include anything that is more visible than package private — so
   everything except private).
 
 Some people refer to package private visibility as the "default visibility" because
 a modifier isn't needed to indicate that certain declarations are package
-private; However, **the term "default" should be avoided when describing visibility**
-so that the concept is not confused with Java's default methods feature for interfaces.
+private; however, **the term "default" should be avoided when describing visibility**
+so that the concept is not confused with Java's default member-level visibility for interfaces.
 
 Example 1
 =========
@@ -99,7 +99,7 @@ constructor [7]_! You can read about it in the footnote.
        ``cs1302.foo.bar`` might be inside the directory for package ``cs1302.foo``,
        they're both considered by the compiler to be in different packages.
 
-.. [7] A **private constructor** may seen counterintuitive -- after all, constructors
+.. [7] A **private constructor** may seem counterintuitive — after all, constructors
        are used to make objects of a class, and constructor calls often
        occur in other classes. There are, however, some valid use cases:
 
@@ -114,7 +114,7 @@ constructor [7]_! You can read about it in the footnote.
          constructor along with a static method of some other visibility in
          a carefully setup way to restrict the total number of objects of a
          particular class that can be created. We won't go into the details
-         here, but the |wikipedia_singleton|_ is example of this idea that
+         here, but the singleton is an example of this idea that
          restricts the total number of objects to be no greater than one.
 
 Example 2
