@@ -114,7 +114,7 @@ constructor [7]_! You can read about it in the footnote.
          constructor along with a static method of some other visibility in
          a carefully setup way to restrict the total number of objects of a
          particular class that can be created. We won't go into the details
-         here, but the singleton is an example of this idea that
+         here, but the `singleton <https://en.wikipedia.org/wiki/Singleton_pattern>`_ is an example of this idea that
          restricts the total number of objects to be no greater than one.
 
 Example 2
