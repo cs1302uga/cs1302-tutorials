@@ -36,7 +36,7 @@ protected        |Y|         |Y|           |Y|          |N|
 Example 1
 =========
 
-In this example, we'll consider two situations that where a protected
+In this example, we'll consider two situations where a protected
 member is visible and one that's not. To get started, let's consider
 the UML diagram below and the three code snippets that follow it.
 There are two snippets for the ``Book`` class constructor, each
@@ -85,7 +85,7 @@ LINE  Name                 Declared   In           From            Same Package?
 In ``LINE1`` and ``LINE2``, the ``price`` variable was not visible (it's
 package private and the labelled lines are attempting access from another
 package). The author's two constructor approaches utilize indirection to
-initialize a non-visible inheritted member, something that discussed
+initialize a non-visible inherited member, something that is discussed
 further `here <#non-visible-inherited-members>`_.
 
 Example 2
@@ -185,8 +185,8 @@ more visible in the child. This can make some situations a little tricky
 to parse, but the general rule of thumb is this:
 
     If you try to access ``var.someMethod`` on some line of code, then
-    the visibility that's used by the compiler is determined by type of the
-    variable ``var``, itself, and not the type of the object that ``var``
+    the visibility that's used by the compiler is determined by the type of the
+    variable ``var`` itself, and not the type of the object that ``var``
     refers to. Java's dynamic binding [8]_ will still bind the call to the
     override that's closest to object's type (e.g., to allow for polymorphism).
 
@@ -204,7 +204,7 @@ Perhaps that's a little dense. You may find it easier to remember this:
 Non-Visible Inherited Members
 =============================
 
-It's often possible to access access non-visible inherited members indirectly
+It's often possible to access non-visible inherited members indirectly
 via a member that is visible.
 
 * For inherited variables, the child class might utilize a visible getter or setter.
@@ -216,7 +216,7 @@ via a member that is visible.
 If we apply the second idea to constructors, then a child class constructor may be able to
 access non-visible inherited variables (e.g., to initialize them) using a call to a
 visible ``super()`` (or some overload of ``super``); this works really well when
-the parent constructor initializes it's own declared instance variables.
+the parent constructor initializes its own declared instance variables.
 This is considered **a common pattern** that exemplifies *separation of concerns* and
 *encapsulation* as each class is responsible for its own variables.
 
@@ -266,7 +266,7 @@ and the two code snippets that follow it.
    // inside Student.java (cs1302.university package)
    public void printDetails() {
        System.out.println(this.getName());
-       System.out.ptintln(this.getSSN()); <---------- LINE1
+       System.out.println(this.getSSN()); <---------- LINE1
    } // printDetails
 
 .. code-block:: java
