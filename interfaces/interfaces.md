@@ -204,7 +204,7 @@ specific details regarding how an athlete will compete are up to the athlete (no
    written in the source code for the implementing `Fancy` class. In some cases, new comments are 
    provided. In others, it appears as though Javadoc comments are omitted. In the latter case, this 
    is actually not true. View the API documentation website for both the `Styleable` interface and 
-   the `Fancy` class—bring them up side-by-side, if possible. All of the methods in `Fancy` are 
+   the `Fancy` class — bring them up side-by-side, if possible. All of the methods in `Fancy` are 
    documented, even `style()` and `unstyle()` which have no Javadoc comments in the source code!
    
    This happens because the Javadoc tool has the ability to inherit comments from an interface when omitted
