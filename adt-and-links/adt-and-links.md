@@ -14,12 +14,12 @@ describing the operations that an implementing class must contain.
 ### An Analogy
 
 **Consider a vending machine description as a physical analogy for an ADT.** From the outside perspective, 
-users of a vending machine are only concerned with whether or not a machine _can_ vend. They do necessarily 
+users of a vending machine are only concerned with whether or not a machine _can_ vend. They don't necessarily 
 care _how_ a machine vends. An operation for a vending machine might be described by the following method:
 
 * `void vendItem(double payment, int item) throws UnavailableItemException, InsufficientPaymentException`
   * Users should be able to call a method called `vendItem`, specifying a payment amount and item number.
-    If valid and proper input is supplied, then the vending machine should vend the item to the user.
+    If valid input is supplied, then the vending machine should vend the item to the user.
   * If the item is unavailable, then the method throws an `UnavailableItemException` which causes the
     vending machine's display to update accordingly.
   * Likewise, if an insufficient amount for the specified item is supplied, then the method throws
@@ -61,7 +61,7 @@ we will use the following definitions:
 | `boolean`   | `add(int index, String s)`     | Inserts the specified object (String in this case) at the specified index. The method shifts the object currently at that position (if any) and any subsequent objects to the right (i.e. it adds one to  their indices). |
 | `String`    | `remove(int index)`            | Removes and returns the string at the specified position in the list. Shifts any subsequent elements to the left (i.e. subtracts one from their indices). |
 | `void`      | `clear()`                      | Removes all of the objects from the list. The list will be empty after this call returns. |
-| `String`    | `makeString(String separator)` | Returns a string representation of this list with every string in the sequence separated by the specified seprator string. |
+| `String`    | `makeString(String separator)` | Returns a string representation of this list with every string in the sequence separated by the specified separator string. |
 
 Notice that the description and operations given above were independent of any underlying data structure or implementation.
 When thinking of _using_ an ADT, try to avoid worrying about those details.
@@ -106,7 +106,7 @@ The main benefit of an array-based List implementation is extremely fast access 
 that arrays are laid out in a contiguous block of primary memory. The main drawback of an array-based approach is that
 an array's size is fixed. Therefore, if you want to increase the size of an array, you are forced to create a new array of 
 the larger size and subsequently copy over the elements of the old array to the new, larger array. As you can imagine, 
-creating an array and copying all elements is an expensive operation for the CPU to perform. Especially when the array 
+creating an array and copying all elements is an expensive operation for the CPU to perform — especially when the array 
 size is large.
 
 ### List ADT - Linked List Implementation
@@ -200,14 +200,14 @@ state of the List object, `myList`, using both an array and a linked list as the
    <tr>
    <td><img width="1500" src="res/Array2.png"></td>
    <td>
-    In the array list implementation, the item is stored at index position `0` within the array.
+    In the array list implementation, the item is stored at index position <code>0</code> within the array.
     </td>
    </tr>
    <tr>
    <td><img width="1500"  src="res/Linked2.png"></td>
    <td>
     In the linked list implementation, a node object is created that contains the item, then
-    `head` is assigned a reference to that node.</td>
+    <code>head</code> is assigned a reference to that node.</td>
    </tr>
    </table>
    
@@ -229,12 +229,12 @@ state of the List object, `myList`, using both an array and a linked list as the
    <table>
    <tr>
    <td>In the array list implementation, the current contents of the array were shifted to the right,
-    as needed, and the item is stored at index position `0` within the array.</td>
+    as needed, and the item is stored at index position <code>0</code> within the array.</td>
    <td><img width="1500" src="res/Array3.png"></td>
    </tr>
    <tr>
    <td>In the linked list implementation, a new node is created that contains the item, then
-    the newly created node's `next` variable and the list head are updated accordingly.</td>
+    the newly created node's <code>next</code> variable and the list head are updated accordingly.</td>
    <td><img width="1500"  src="res/Linked3.png"></td>
    </tr>
    </table>
@@ -254,19 +254,19 @@ state of the List object, `myList`, using both an array and a linked list as the
    
    <table>
    <tr>
-   <td>In the array list implementation, only the elements in indices `1` and greater are shifted
-    to the right before the item is stored at index position `1` within the array.</td>
+   <td>In the array list implementation, only the elements in indices <code>1</code> and greater are shifted
+    to the right before the item is stored at index position <code>1</code> within the array.</td>
    <td><img width="1500" src="res/Array4.png"></td>
    </tr>
    <tr>
    <td>In the linked list implementation, a new node is created that contains the item, then
-    the `next` variable of both the newly created node and the node referred to by `head`
+    the <code>next</code> variable of both the newly created node and the node referred to by <code>head</code>
     are updated accordingly.</td>
    <td><img width="1500"  src="res/Linked4.png"></td>
    </tr>
    </table>
       
-1. **Add element into index position 3.** In this example, this conceptually places the iteme
+1. **Add element into index position 3.** In this example, this conceptually places the item
    at the end of the list. 
 
    ```java
@@ -282,12 +282,12 @@ state of the List object, `myList`, using both an array and a linked list as the
    <table>
    <tr>
    <td><img width="1500" src="res/Array5.png"></td>
-   <td>In the array list implementation, the internal array capacity needed to be increased before the item could be stored at index position `3` within the array.</td>
+   <td>In the array list implementation, the internal array capacity needed to be increased before the item could be stored at index position <code>3</code> within the array.</td>
    </tr>
    <tr>
    <td><img width="1500"  src="res/Linked5.png"></td>
    <td>In the linked list implementation, a new node is created that contains the item, then
-    the `next` variable of the node in list position `2` is updated accordingly.</td>
+    the <code>next</code> variable of the node in list position <code>2</code> is updated accordingly.</td>
    </tr>
    </table>
 
@@ -307,13 +307,13 @@ state of the List object, `myList`, using both an array and a linked list as the
    
    <table>
    <tr>
-   <td>In the array list implementation, the contents of the array at index position `1` and 
+   <td>In the array list implementation, the contents of the array at index position <code>1</code> and 
     greater were shifted to the left by one position.</td>
    <td><img width="1500" src="res/Array6.png"></td>
    </tr>
    <tr>
-   <td>In the linked list implementation, `head` is simply assigned a reference to the node that
-    was previously referred to by the `next` variable in the first node.</td>
+   <td>In the linked list implementation, <code>head</code> is simply assigned a reference to the node that
+    was previously referred to by the <code>next</code> variable in the first node.</td>
    <td><img width="1500"  src="res/Linked6.png"></td>
    </tr>
    </table>
@@ -341,7 +341,7 @@ state of the List object, `myList`, using both an array and a linked list as the
    <tr>
    <td><img width="1500"  src="res/Linked6.png"></td>
    <td>In the linked list implementation, no changes are needed internally to accomodate this operation. 
-    That location cannot be accessed directly; it must be reached starting with the node referred to by `head`.</td>
+    That location cannot be accessed directly; it must be reached starting with the node referred to by <code>head</code>.</td>
    </tr>
    </table>
 
@@ -359,12 +359,12 @@ state of the List object, `myList`, using both an array and a linked list as the
    
    <table>
    <tr>
-   <td>In the array list implementation, the `size` is updated to `0`. It's up to the implementer whether or not
+   <td>In the array list implementation, the <code>size</code> is updated to <code>0</code>. It's up to the implementer whether or not
     the contents of the array are modified, since the user of the list does not interact with them directly.</td>
    <td><img width="1500" src="res/Array7.png"></td>
    </tr>
    <tr>
-   <td>In the linked list implementatino, the `size` is updated to `0` and the `head` is set to `null`.</td>
+   <td>In the linked list implementation, the <code>size</code> is updated to <code>0</code> and the <code>head</code> is set to <code>null</code>.</td>
    <td><img width="1500"  src="res/Linked1.png"></td>
    </tr>
    </table>
@@ -395,7 +395,7 @@ the instruction `myList.get(2)` is executed.
    ![Third Get Image](res/Get3.png)
 
 Compare this method to arrays where we would simply return `array[2]`. With an array implementation, the program can 
-directly access the requrested index (one of the benefits of arrays). Traversing the links in a linked list implementation
+directly access the requested index (one of the benefits of arrays). Traversing the links in a linked list implementation
 is more costly. Especially when the desired element is located toward the end of a long linked list.
 
 ### Linked List Add Operation
