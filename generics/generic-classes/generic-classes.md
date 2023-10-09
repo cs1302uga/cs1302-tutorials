@@ -52,8 +52,8 @@ https://youtu.be/m539u1hGP7E
 
 ## Additional Reading with More Examples
 
-Now that you're familiar with some of the basic concepts relate to generic
-methods in Java, you need to read the official Oracle reading:
+Now that you're familiar with some of the basic concepts related to generic
+methods in Java, you should read the official Oracle reading:
 
 * [The Java™ Tutorials: Why Use Generics?](https://docs.oracle.com/javase/tutorial/java/generics/why.html)
 * [The Java™ Tutorials: Generic Types](https://docs.oracle.com/javase/tutorial/java/generics/types.html)
