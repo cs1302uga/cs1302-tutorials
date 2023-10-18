@@ -362,8 +362,3 @@ four (unnamed) classes are created and instantiated using a single
 
    hello hello
    WORLD WORLD
-
-Video Examples
-==============
-
-**Coming Soon** Attend class for live examples. 
