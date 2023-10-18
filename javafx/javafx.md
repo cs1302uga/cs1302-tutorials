@@ -1,6 +1,6 @@
 # JavaFX Starter Tutorial
 
-![Approved for: Spring 2023](https://img.shields.io/badge/Approved%20for-Spring%202023-magenta)
+![Approved for: Fall 2023](https://img.shields.io/badge/Approved%20for-Fall%202023-green)
 
 JavaFX is a library for creating and delivering applications with graphical user interfaces (GUIs)
 in Java. In this tutorial, we will use JavaFX 17 along with Java 17. The API documentation for
@@ -14,7 +14,7 @@ page for direct links to commonly used classes.
 1. First, you need to ensure that your terminal emulator supports X-forwarding. This allows
    the GUI parts of your application to be forwarded to your local computer in addition to
    the terminal output. To check this, work through the rest of this section of the
-   tutorial. First, login to Odin using the `ssh` command along with the `-XY` option.
+   tutorial. First, log in to Odin using the `ssh` command along with the `-XY` option.
    As always, be sure to replace `username` with your Odin username.
    
    ```
