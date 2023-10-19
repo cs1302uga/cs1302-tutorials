@@ -3,7 +3,7 @@
 One of the most powerful features of Java is its support for generics. Generics
 is a language feature that enables us to write code that operates on various
 datatypes while still providing compile-time type safety. One way to write
-such code relies heavily on the use of the `Object` type and casting, however,
+such code relies heavily on the use of the `Object` type and casting; however,
 this often leads to programming mistakes that are not caught until run-time.
 With generics, we can can write the desired code a way that avoids casting
 and enables compile-time checking.
