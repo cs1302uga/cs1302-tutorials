@@ -255,14 +255,14 @@ etc.? With that in mind, let's go back to our code example:
    SuperFancy sf = new SuperFancy("some fancier message?");
    sf.style();                    // OK
    sf.unstyle();                  // OK
-   String about = sf.getAbout();  // OK — variable type is SuperFancy
+   String about = sf.getAbout();  // OK -- variable type is SuperFancy
    ```
    
    ```java
    Styleable s = new SuperFancy("some fancier message?");
    s.style();                    // OK
    s.unstyle();                  // OK
-   String about = s.getAbout();  // NOT OK! — variable type is Styleable
+   String about = s.getAbout();  // NOT OK! -- variable type is Styleable
    
    ```
    
