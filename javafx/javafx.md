@@ -54,7 +54,7 @@ page for direct links to commonly used classes.
    
    There are a few new command-line arguments to `javac` that you haven't seen before:
    
-      * `-p $JAVAFX_HOME/lib`: tells the java compiler where to find the JavaFX library files (.class files)
+      * `-p $JAVAFX_HOME/lib`: tells the java compiler where to find the JavaFX library files (`.class` files)
         on Odin.
 	
       * `--add-modules javafx.controls`: JavaFX is organized into 7 different modules. This option
@@ -67,15 +67,15 @@ page for direct links to commonly used classes.
    java -cp bin -Dprism.order=sw -p $JAVAFX_HOME/lib --add-modules javafx.controls cs1302.gui.ExampleDriver
    ```
    
-   Notice the use of the `-p` and `add-modules` command line arguments as in the previous step. 
+   Notice the use of the `-p` and `add-modules` command line arguments as shown in the previous step. 
    
 1. If the previous command was successful (it may not be and that's okay), then one of the following things should happen:
    
-   1. A small GUI app containing the text "Hello, World" will appear on your screen. This may appear in another
-      desktop or minimized if your computer utilizes multiple windows.
+   1. A small GUI app containing the text "Hello World!!!" will appear on your screen. This may appear in another
+      desktop or minimized if your computer utilizes multiple monitors.
    
-   1. A small GUI app containing the text "Hello, World" will appear on your screen. This may appear in another
-      desktop or minimized if your computer utilizes multiple windows. However, the following 
+   1. A small GUI app containing the text "Hello World!!!" will appear on your screen. This may appear in another
+      desktop or minimized if your computer utilizes multiple monitors. However, the following 
       <a name="fbConfigs1">error message</a> will appear in the terminal:
       
       ```
@@ -99,7 +99,7 @@ page for direct links to commonly used classes.
       ```
 
 1. **If you receive an error message in the terminal,** then this error message is related to the 
-   JavaFX graphics renderer. **rerun the driver and make sure you correctly typed the `-Dprism.order=sw` option properly.**. 
+   JavaFX graphics renderer. **Rerun the driver and make sure you correctly typed the `-Dprism.order=sw` option properly.** 
    You may still receive a slightly shorter error message but your application will run smoother (less lag) with this 
    option set.
    
@@ -127,7 +127,7 @@ page for direct links to commonly used classes.
    
    * The `try-catch` statement is included to ensure that if any exceptions propogate up to `main` method, then
      the user is presented with a nicer message than the usual stack trace. We also do this because one such
-     exception relates to a timeout issue with the X-forwarding -- in this case, we want to inform the user that
+     exception relates to a timeout issue with the X-forwarding — in this case, we want to inform the user that
      they can logout, then log back in to resolve the problem.
      
 1. The [`launch`](https://openjfx.io/javadoc/17/javafx.graphics/javafx/application/Application.html#launch(java.lang.Class,java.lang.String...))
@@ -136,20 +136,20 @@ page for direct links to commonly used classes.
 
    1. Constructs an instance of the specified `Application` subclass;
    1. Calls the app's [`init`](https://openjfx.io/javadoc/17/javafx.graphics/javafx/application/Application.html#init())
-      method, which the programmer may have overidden;
+      method, which the programmer may have overridden;
    1. Creates a `Stage` object and calls the app's [`start`](https://openjfx.io/javadoc/17/javafx.graphics/javafx/application/Application.html#start(javafx.stage.Stage))
       method with a reference to that `Stage` object;
    1. Waits for the app to finish, which happens when either of the following occur:
       
       * the app calls [`Platform.exit`](https://openjfx.io/javadoc/17/javafx.graphics/javafx/application/Platform.html#exit())
-      * the last window has been closed and the `implicitExit` attribute on `Platform` is true -- this is the default.
+      * the last window has been closed and the `implicitExit` attribute on `Platform` is true — this is the default.
     
    1. Calls the app's [`stop`](https://openjfx.io/javadoc/17/javafx.graphics/javafx/application/Application.html#stop()) 
       method, which the programmer may have overidden;
 
 ## Mid-Level Walkthrough 
 
-1. Now, let's go back to `ExampleApp.java`. Insepct the `start` method, which is required to be overridden in concrete
+1. Now, let's go back to `ExampleApp.java`. Inspect the `start` method, which is required to be overridden in concrete
    subclasses of the `Application` class.
    
    1. This method is considered the main entry point for a JavaFX app. 
@@ -190,7 +190,7 @@ page for direct links to commonly used classes.
       class. 
 
 1. Before you continue, you should note what each line in the `start` method of `ExampleApp.java` is doing by
-   referring to the corresponsing API documentation. This is something that you will be doing a lot while
+   referring to the corresponding API documentation. This is something that you will be doing a lot while
    working with JavaFX (and most other libraries).
    
    The scene graph was given in the previous step. You might also find the overall containment hierarchy for
@@ -213,7 +213,7 @@ page for direct links to commonly used classes.
 
 In JavaFX, nodes can generate [`Event`](https://openjfx.io/javadoc/17/javafx.base/javafx/event/Event.html)
 objects. This can happen automatically or in response to user input. Each event has a corresponding event handler,
-i.e., a method that is registered to handle the event when its generated. Let's add a button to `ExampleApp`, then
+i.e., a method that is registered to handle the event when it is generated. Let's add a button to `ExampleApp`, then
 register an event handler for one of the events the button might generate.
 
 1. In `ExampleApp.java`, import the [`Button`](https://openjfx.io/javadoc/17/javafx.controls/javafx/scene/control/Button.html),
@@ -221,7 +221,7 @@ register an event handler for one of the events the button might generate.
    ```java
    Button button = new Button("Click me!");
    ```
-   This creates a `Button` object, however, it will NOT automatically appear in the app's GUI!
+   This creates a `Button` object; however, it will NOT automatically appear in the app's GUI!
 
 1. To add the `Button` object to the GUI, you need to add it to the scene.
    Here, we will add the button as a child of the `HBox` object already contained in the scene graph.
@@ -236,7 +236,7 @@ register an event handler for one of the events the button might generate.
 1. Compile `ExampleApp.java`, then rerun `ExampleDriver`. You should now see the button!
    
    * Move your mouse over the button. You should notice that the styling of the button changes automatically
-     as your mouse cursor enters and leaves the visual area of the button (the change is very subtle. look closely). 
+     as your mouse cursor enters and leaves the visual area of the button (the change is very subtle; look closely). 
      Click on the button. Similarly, the styling of the button will change. As you interact with the button, 
      you are actually causing the button to generate events! These events have default event handlers that cause the 
      button's style to change.
