@@ -24,12 +24,13 @@ correctly, type the following command:
 $ mvn --version
 ```
    
-It should print out your installed version of Maven, for example:
+It should print out your installed version of Maven, for example (i.e., the version numbers
+may not match exactly):
  
 ```
-Apache Maven 3.8.6 (84538c9988a25aec085021c365c560670ad80f63)
-Maven home: /usr/local/mepcott/cs1302/apache-maven
-Java version: 17.0.4.1, vendor: Oracle Corporation, runtime: /usr/local/mepcott/jdk/jdk-17.0.4.1
+Apache Maven 3.9.4 (dfbb324ad4a7c8fb0bf182e6d91b0ae20e3d2dd9)
+Maven home: /usr/local/mepcott/apps/apache-maven/latest
+Java version: 17.0.8, vendor: Oracle Corporation, runtime: /usr/local/mepcott/apps/jdk/jdk-17.0.8
 Default locale: en_US, platform encoding: UTF-8
 OS name: "linux", version: "3.10.0-1160.42.2.el7.x86_64", arch: "amd64", family: "unix"
 ```
