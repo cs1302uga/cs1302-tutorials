@@ -1,11 +1,11 @@
 # CSCI 1302 Recursion Tutorial
 
-![Approved for: Spring 2023](https://img.shields.io/badge/Approved%20for-Spring%202023-magenta)
+![Approved for: Fall 2023](https://img.shields.io/badge/Approved%20for-Fall%202023-green)
 
 ## Introduction
 
 This tutorial is designed to help you learn about and understand recursion, a powerful
-programming technique in which a method can call itself in order to fulfill its purpose.
+programming technique in which a method can call itself to fulfill its purpose.
 
 A **recursive definition** is one which uses the word or concept being defined in the
 definition itself.
@@ -18,7 +18,7 @@ practice thinking recursively.
 
 ## Inductively Defined Recursive Data Definition
 
-An inductively defined recursive data definition is one that specifies how to construct
+An inductively defined recursive data definition specifies how to construct
 instances of the data. We often call these **recursive definitions**.
 
 **Example**: An inductively defined recursive _list_ definition
