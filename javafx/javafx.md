@@ -131,7 +131,7 @@ page for direct links to commonly used classes.
      they can logout, then log back in to resolve the problem.
      
 1. The [`launch`](https://openjfx.io/javadoc/17/javafx.graphics/javafx/application/Application.html#launch(java.lang.Class,java.lang.String...))
-   launches the app by initiating the JavaFX application life-cycle, a sequence of steps that occur over the life
+   method launches the app by initiating the JavaFX application life-cycle, a sequence of steps that occur over the life
    of the launched application. The JavaFX runtime does the following, in order, whenever an application is launched:
 
    1. Constructs an instance of the specified `Application` subclass;
