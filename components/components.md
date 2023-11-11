@@ -4,7 +4,7 @@
 
 JavaFX is a library for creating and delivering applications with graphical user interfaces (GUIs)
 in Java. In this tutorial, we will use JavaFX 17. The API documentation for
-the many packages included ith JavaFX can be found 
+the many packages included with JavaFX can be found 
 [here](https://openjfx.io/javadoc/17/).
 
 ## Course-Specific Learning Outcomes
@@ -74,9 +74,9 @@ using inheritance and polymorphism to emphasize code reuse.
    </tr>
    </table>
 
-1. The default size for the image in the ImageView container is 500x500 (Even though the image says 300x300). 
+1. The default size for the image in the ImageView container is 500x500 (even though the image says 300x300). 
    Do a quick google search for "500x500 images" and load one or two of the images to make sure the app is 
-   functioning properly. **Note:** the `Image` class only supports the BMP, GIF, JPEG, and PNG filetypes.
+   functioning properly. **Note:** The `Image` class only supports the BMP, GIF, JPEG, and PNG filetypes.
    
 ## Creating a Custom Component
 
@@ -174,10 +174,10 @@ using inheritance and polymorphism to emphasize code reuse.
       also remove any imports that are no longer needed in `ImageApp`.
 	  
    1. In `ImageLoader`, add a default constructor that explicitly
-      calls `super()`. After the call to `super`, the constructor
+      calls `super()`. After the call to `super()`, the constructor
       should instantiate the other nodes in the `ImageLoader` sub-graph
       (`HBox`, `ImageView`, `TextField`, and `Button`). Since 
-      `ImageLoader` extends `VBox`, it is-a `VBox`. Therefore, you
+      `ImageLoader` extends `VBox`, it "is-a" `VBox`. Therefore, you
       can call any `VBox` methods using `this` as the calling object.
       Use this knowledge to add your newly created nodes to the
       sub-graph rooted at `this` similar to how they are 
@@ -217,7 +217,7 @@ using inheritance and polymorphism to emphasize code reuse.
       it within the constructor. This
       will serve as the container for our `ImageLoader` objects. Set
       the `spacing` property of the `HBox` to 10 by passing 10 into the `HBox`
-      constructor. Now, in the `init` method, add the two `ImgLoader` objects to 
+      constructor. Now, in the `init` method, add the two `ImageLoader` objects to 
       the `HBox` object of `ImageApp`.
       
    1. Make sure you pass the reference to your newly created `HBox` object into the
