@@ -200,7 +200,7 @@ using inheritance and polymorphism to emphasize code reuse.
       of `ImageApp`. All of that code will now be run when we create a new `ImageLoader`
       object. This includes the code to initialize the `ImageView` and set up the button handler.
       
-   1. Take a moment to think about what you are doing. You have created your own, custom class that extends
+   1. Take a moment to think about what you are doing. You have created your own custom class that extends
       the JavaFX `VBox` class. This class is essentially a `VBox` with some of the components
       built into it. Once we complete this class, we will be able to add objects of this class to a
       scene graph and all the messy details of creating that object will be hidden inside of `ImageLoader`!
@@ -216,7 +216,7 @@ using inheritance and polymorphism to emphasize code reuse.
    1. Create an `HBox` instance variable in the `ImageApp` class and instantiate 
       it within the constructor. This
       will serve as the container for our `ImageLoader` objects. Set
-      the `spacing` property of the `HBox` to 10 by passing 10 into the `HBox`
+      the `spacing` property of the `HBox` to `10` by passing `10` into the `HBox`
       constructor. Now, in the `init` method, add the two `ImageLoader` objects to 
       the `HBox` object of `ImageApp`.
       
@@ -230,7 +230,7 @@ using inheritance and polymorphism to emphasize code reuse.
       
       <img src="https://github.com/cs1302uga/cs1302-tutorials/raw/alsi/components/TwoPaneScreenShot.png?raw=true" width=300>
       
-   1. Imagine all the ways you could use your new, custom component! Also, think
+   1. Imagine all the ways you could use your new custom component! Also, think
       of other custom components you could build by extending existing JavaFX
       components. We will explore more uses of the `ImageLoader` component in 
       class.

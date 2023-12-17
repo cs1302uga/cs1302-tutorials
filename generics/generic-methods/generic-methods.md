@@ -102,7 +102,7 @@ Here are some examples:
 ## Additional Reading with More Examples
 
 Now that you're familiar with some of the basic concepts relate to generic
-methods in Java, you need to read the official Oracle reading:
+methods in Java, you should read the official Oracle reading:
 
 * [The Java™ Tutorials: Generic Methods](https://docs.oracle.com/javase/tutorial/java/generics/methods.html)
 

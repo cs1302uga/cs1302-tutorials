@@ -53,11 +53,11 @@ Quick Review: Interfaces
 
 In Java, any interface can be implemented and utilized via the following steps.
 
-1. **Sign the contract:** Create a class in its own `.java` file, and include the
-   appropriate `implements` clause in the class declaration.
+1. **Sign the contract:** Create a class in its own ``.java`` file and include the
+   appropriate ``implements`` clause in the class declaration.
 
 2. **Meet the minimum requirements:** Override the abstract methods from the
-   interface so that code compiles.
+   interface so that the code compiles.
 
 3. **Meet the full requirements:** Ensure that each overridden method aligns
    with the expectations outlined in the interface documentation.
@@ -69,12 +69,12 @@ In Java, any interface can be implemented and utilized via the following steps.
    with any object (of a class) that implements the interface and not
    just objects of the new class you created.
 
-The code described in step 5 may have been written before you step 1
+The code described in step 5 may have been written before step 1
 is started, especially in cases where other classes that implement the
 interface already exist. The overall process outlined above has real,
-tangible benefites. For example, the new class can:
+tangible benefits. For example, the new class can:
 
-1. be reused (by utlizing its constructor);
+1. be reused (by utilizing its constructor);
 
 2. have instance variables that allow its objects to manage their state;
 
@@ -99,7 +99,7 @@ As mentioned in the introduction, any interface that only has one abstract
 method that doesn't match a method in the |java_lang_object|_ class is a
 **functional interface**, and while they can be implemented and used by
 following the five-step process outlined earlier, Java allows us to
-reduce that down to a two-step process by using something
+reduce that down to a two-step process by using something called
 **lambda expression** syntax:
 
 1. **Instantiate:** Use a lambda expression to create an object of an
@@ -198,7 +198,7 @@ with Java (its one abstract method is ``void accept(T t)``).
 
 In the second example that utilizes the lambda expression syntax, we didn't
 create an additional file for a class that implements the interface, but
-we did define a class that implements the interface and make an object
+we did define a class that implements the interface and made an object
 out of that class. **It all happened on one line:**
 
 .. code:: java

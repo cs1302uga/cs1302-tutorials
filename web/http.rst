@@ -91,17 +91,20 @@ of the reading.
 .. |HttpRequest_Builder| replace:: ``HttpRequest.Builder``
 .. _HttpRequest_Builder: https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html
 
+.. |HttpRequest_newBuilder| replace:: ``HttpRequest.newBuilder()``
+.. _HttpRequest_newBuilder: https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpRequest.html#newBuilder()
+
 .. |URI| replace:: URI
 .. _URI: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URI.html
 
 The |HttpRequest|_ class provided by |java_net_http|_ allows Java programs
 to "build" HTTP request messages that can be sent using an HTTP client. Instead of
 providing a public constructor, the authors of |HttpRequest| decided to use
-the |builder_pattern| -- |HttpRequest| objects are constructing by *building*
+the |builder_pattern| — |HttpRequest| objects are constructed by *building*
 them using an |HttpRequest_Builder|_ object returned from |HttpRequest_newBuilder|_.
 The authors' use of the |builder_pattern| prevents the construction of
-incomplete request objects and provides an nice alternative to potentially
-complex looking constructor calls..
+incomplete request objects and provides a nice alternative to potentially
+complex looking constructor calls.
 
 Most of the methods provided by |HttpRequest_Builder|
 merely update the request information stored in the builder object, then just
@@ -109,7 +112,7 @@ return a reference to builder object itself so that you can update it further
 via additional method calls. Once all the request information is specified,
 the ``build()`` method is called to construct the actual |HttpRequest|
 object. The following two code snippets build a request object using the
-exact same statement -- the second snippet distributes the statement across
+exact same statement — the second snippet distributes the statement across
 several lines to make it easier to read:
 
 .. code-block:: java
@@ -120,7 +123,7 @@ several lines to make it easier to read:
 
    HttpRequest request = HttpRequest.newBuilder()
        .uri(location) // sets the HttpRequest's URI
-       .build();      // builds and returns an HttpRequest.
+       .build();      // builds and returns an HttpRequest
 
 The HTTP specification requires that requests indicate their purpose and
 expectations regarding a successful result by setting a request *method*
@@ -134,13 +137,13 @@ code snippets build the same "GET" request:
    HttpRequest request = HttpRequest.newBuilder()
        .uri(location) // sets the HttpRequest's URI
        .GET();        // sets the HttpRequest's request method to GET
-       .build();      // builds and returns an HttpRequest.
+       .build();      // builds and returns an HttpRequest
 
 .. code-block:: java
 
    HttpRequest request = HttpRequest.newBuilder()
        .uri(location) // sets the HttpRequest's URI
-       .build();      // builds and returns an HttpRequest.
+       .build();      // builds and returns an HttpRequest
 
 
 Other request *method* values  are outside the scope of this
@@ -168,14 +171,14 @@ the concept of a URL; all URLs are also `URIs <URI>`__.
 a JavaFX ``Image`` object using the data included in the body of the associated
 response.
 
-.. |GitHubApi| replace:: GutHub REST API
+.. |GitHubApi| replace:: GitHub REST API
 .. _GitHubApi: https://docs.github.com/en/rest
 
 .. |get_a_license| replace:: get a license
 .. _get_a_license: https://docs.github.com/en/rest/reference/licenses#get-a-license
 
 Some HTTP servers host Application Programming Interfaces (APIs)
-that we can interact with using HTTP requests -- instead of a URI referring to
+that we can interact with using HTTP requests — instead of a URI referring to
 a "page" or "file", it refers to structured "data" that our program might
 leverage to accomplish some goal. For example, the |GitHubApi| provides
 URIs for accessing information stored by GitHub. Since GitHub supports many
@@ -183,7 +186,7 @@ open source projects, their API provides a URI for structured data about
 open source software licenses. The example below builds an
 |HttpRequest| to |get_a_license|_ (in this case, the MIT license) using the
 |GitHubApi|. According to GitHub's API documentation, they recommend setting the
-"Accept" header when building a request -- headers are one way to provide an HTTP server with more
+"Accept" header when building a request — headers are one way to provide an HTTP server with more
 information about a request. Here is the code:
 
 .. code-block:: java
@@ -257,7 +260,7 @@ settings:
 
 Since a single |HttpClient| object can be used to send multiple requests, you are
 encouraged to only create one |HttpClient| object for your program, unless a
-specific need to do otherwise arises -- you might do this by defining a static
+specific need to do otherwise arises — you might do this by defining a static
 constant:
 
 .. code-block:: java
@@ -292,7 +295,7 @@ Method                            Response Type              Response Body Type
 ================================  =========================  ===================
 
 In the example below, we access a copy of *The Adventures of Sherlock Holmes* by Arthur Conan Doyle
-that is hosted by Project Gutenberg -- when we send the request, we use ``BodyHandlers.ofString()``
+that is hosted by Project Gutenberg — when we send the request, we use ``BodyHandlers.ofString()``
 to inform the client that we want it to interpret the body of the response
 (i.e., the response content) as a string.
 
@@ -334,7 +337,7 @@ status code  ``statusCode()``  The "status code" integer     Usually ``200`` is 
 .. _http_status_here: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 
 Here is a generic method that you can use to throw an exception if the
-status code of a supplied response is not ``200`` (OK) -- you can see it
+status code of a supplied response is not ``200`` (OK) — you can see it
 used in several of the code examples provided in the `Complete Examples`_
 section:
 

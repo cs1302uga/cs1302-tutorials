@@ -39,7 +39,7 @@ public class Example3 {
      */
     private static class ItunesResponse {
         int resultCount;         // package private visibility is intentional
-        ItunesResult[] results;  // if you make these, private, then add getters
+        ItunesResult[] results;  // if you make these private, then add getters
     } // ItunesResponse
 
     /**

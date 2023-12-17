@@ -54,8 +54,8 @@ A thread's `daemon` property cannot be changed after the thread has started exec
 `daemon` property is set to the same as the thread that created it. 
 
 The *main thread* is a *non-daemon thread*, so any new threads that are 
-created in the main thread will also be non-daemon threads, i.e., unless their 
-`daemon` value is changed to `true` using using `setDaemon(true)` before they 
+created in the main thread will also be non-daemon threads, unless their 
+`daemon` value is changed to `true` using `setDaemon(true)` before they 
 are started.
 
 [^1]: [System.exit(int)](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/System.html#exit(int))
@@ -68,7 +68,7 @@ have finished executing.
 [^3]: In official Java documentation, a non-daemon thread is often referred to as a
 *user thread*; however, we chose not to use that term here since its 
 [usual definition](https://en.wikipedia.org/wiki/Thread_(computing)#User_threads)
-would include both both daemon and non-daemon threads in Java.
+would include both daemon and non-daemon threads in Java.
 
 ## JavaFX Application Thread
 
