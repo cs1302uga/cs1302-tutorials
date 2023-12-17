@@ -212,7 +212,7 @@ this tutorial.
 1. Make sure you are in `cs1302-javadoc`. Use the same command presented earlier to regenerate the API 
    documentation website for the code contained in this tutorial. Executing this command will update the
    files in the `doc` directory. Remember, we created a symbolic link in `public_html` that targets `doc`.
-   Therefore, we don't have to take additional steps to update the website--they are now visible by
+   Therefore, we don't have to take additional steps to update the website — they are now visible by
    refreshing the page in your web browser. In other words, **you do not need to create the symbolic link
    again using `ln`**! Since the symbolic link points to your `doc` folder, it will automatically point
    to the newly generated content. Go look (refresh your browser page)!
