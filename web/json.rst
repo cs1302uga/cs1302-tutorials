@@ -14,7 +14,7 @@ Quick Introduction to JSON
 
 JSON stands for "JavaScript Object Notation", a text format for storing data in
 strings based on the JavaScript programming language. You do not need to know
-JavaScript to use JSON -- the two are completely independent, and many libraries
+JavaScript to use JSON — the two are completely independent, and many libraries
 exist in various programming languages to let us work with the format instead
 of writing it by hand. Here is a small example of a JSON-formatted string
 constructed by hand using Java code:
@@ -32,7 +32,7 @@ constructed by hand using Java code:
        + "}                   ";
    System.out.println(jsonString);
 
-Here is the output for that example -- once printed, the JSON-formatted
+Here is the output for that example — once printed, the JSON-formatted
 string looks really nice:
 
 .. code-block:: json
@@ -73,7 +73,7 @@ of information, we can use Google's |GSON|_ library to
 parse the JSON-formatted string directly into a ``Student``
 object using the |Gson_fromJson|_ method. The example below
 assumes that Gson is added as a project dependency and that a
-``Gson`` object is available via ``GSON`` -- instructions
+``Gson`` object is available via ``GSON`` — instructions
 describing how to add Gson to a Maven project are included
 later in this reading:
 
@@ -140,7 +140,7 @@ Adding Gson to a Maven Project
 .. _maven_add_deps: https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Importing_Dependencies
 
 To use Gson in a Maven project, Gson must be added as a dependency
-in the project's ``pom.xml`` file -- refer to the |maven_add_deps|_
+in the project's ``pom.xml`` file — refer to the |maven_add_deps|_
 page in Maven's documentation for more information:
 
 .. code-block:: xml
@@ -154,8 +154,8 @@ page in Maven's documentation for more information:
 Once added as a dependency, Gson will automatically be available
 on the classpath. For example, you could include the following
 near the top a class to make a ``Gson`` object available within
-that class -- the code will compile using ``mvn compile`` so
-long as the Gson dependency is aded to the ``pom.xml`` file correctly:
+that class — the code will compile using ``mvn compile`` so
+long as the Gson dependency is added to the ``pom.xml`` file correctly:
 
 .. code-block:: java
 
