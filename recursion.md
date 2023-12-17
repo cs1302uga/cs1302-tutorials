@@ -46,11 +46,11 @@ following the definition one step at a time until we reach the base case.
    However, in order to show that this is a `LIST`, we need to know if `42, 37` is a `LIST`. 
    Don't jump ahead! We are limited to the rules given in our recursive definition.
    
-1. If we look at`42, 37`, we see that is also does not correspond to the base case. 
+1. If we look at `42, 37`, we see that is also does not correspond to the base case. 
    It is a number, `42`, followed by a comma followed by `37`.
    In order to verify `42, 37` is a `LIST`, we need to verify that `37` is a `LIST`.
    
-1. If we look at `37`, we see that is corresponds to our base!
+1. If we look at `37`, we see that it corresponds to our base!
    Therefore, fits the recursive definition of a `LIST`.
    
 1. Since `37` is a `LIST`, we can also say that `42, 37` is a `LIST`. 
@@ -131,9 +131,9 @@ considers to be errors that are non-recoverable during runtime.
 
 ## Problems and Sub-problems
 
-As you can probably imagine, we generally want to avoid infinite recursion.  That's why 
+As you can probably imagine, we generally want to avoid infinite recursion. That's why we
 make sure our recursive algorithms make progress toward the base case. In order to do this, we typically 
-want our recursive call to work on a smaller version of the original problem -- eventually reaching the
+want our recursive call to work on a smaller version of the original problem — eventually reaching the
 base case. A few general definitions:
 	
    * **Problem**: what you're trying to solve.
