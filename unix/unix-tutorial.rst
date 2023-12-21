@@ -1,5 +1,5 @@
 .. sectnum::
-.. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Fall%202023-green
+.. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Spring%202024-blue
 
 ================
  Unix: Tutorial
@@ -21,13 +21,13 @@ How to engage with this tutorial
 tutorial, please complete that before beginning this tutorial.
 
 When working through any tutorial in 1302, it is expected that you will fully engage with the material. In
-other words, it is not sufficient to skim read the content. You should carefully read and process
+other words, it is not sufficient to skim-read the content. You should carefully read and process
 and then follow along by typing the commands into your terminal emulator, taking notes as you go.
 We recommend writing the answers to any questions asked in this tutorial in your notes along with some
 context. For this tutorial, **we recommend logging into Odin and typing the commands as you work through 
 the examples**. If you have any questions as you are working through
 the tutorial, you are encouraged to post on the course Piazza page. Your questions will not only help
-you fill gaps in your knowledge but also give us insight on potential updates to the tutorials.
+you fill gaps in your knowledge but also give us insight into potential updates to the tutorials.
 
 Fully engaging with the content will improve your understanding of the content and help you retain 
 the information long term.
@@ -39,9 +39,9 @@ In the previous tutorial, you experienced the ``pwd`` (print working directory)
 command and were provided a brief introduction to absolute paths. In Unix, a
 *directory file* or *directory* is the same concept as a folder in other
 operating systems; that is, in most cases the words "directory" and "folder"
-are interchangeable. Your current working directory is the directory that you
-are currently executing commands in. There are other directories, and in Unix,
-they all organized under a top-most directory called ``/``, representing the
+are interchangeable. Your current working directory is the directory in which you
+are currently executing commands. There are other directories, and in Unix,
+they are all organized under a top-most directory called ``/``, representing the
 root of the file system. The macOS and Linux operating systems organize their
 file systems the same way. If you are coming from a Windows background, then it
 is reasonable to compare ``/`` to the ``C:`` drive.
@@ -51,7 +51,7 @@ some specific files in your home directory. To make sure that you
 have these files, you should execute the command below. The command
 may take a few seconds to run as it involves downloading some files
 from the Internet. You don't need to memorize or understand the command
-below; you just need to execute in order to proceed with the tutorial.
+below; you just need to execute it to proceed with the tutorial.
 
 .. code-block:: shell
 
@@ -91,9 +91,11 @@ path to that directory as a command-line argument.
   absolute path?
 
 While ``ls`` is nice and probably one of the most used Unix commands of all time,
-it doesn't really let us see the whole picture without us issuing repetitive
+it doesn't let us see the whole picture without us issuing repetitive
 ``ls`` commands. To see the bigger picture, use the ``tree`` command, which
-lists the contents of a directory in a tree-like format.
+lists the contents of a directory in a tree-like format. If this command doesn't work for you,
+please go back and make sure you have completed the previous tutorial and all the required setup
+steps.
 
 .. code-block:: shell
 
@@ -108,7 +110,7 @@ lists the contents of a directory in a tree-like format.
    ===============  ======================================================================================================
    Command          Description
    ===============  ======================================================================================================
-   ``ls``           List contents of current working directory.
+   ``ls``           List contents of the current working directory.
    ``ls PATH``      List contents of the last directory in the provided ``PATH`` (e.g., ``c`` in ``a/b/c`` or ``/a/b/c``).
    ``tree PATH``    List contents of the last directory in the provided ``PATH`` and its subdirectories, in a tree format.
    ===============  ======================================================================================================
@@ -119,7 +121,7 @@ lists the contents of a directory in a tree-like format.
 By default, the ``ls`` command displays the contents of a directory using its "simple"
 output format. A "long" output option can be specified by supplying a ``-l`` as a
 command-line argument. In addition to the name of each file, additional information
-is included in the "long" output format, as described below the next few examples.
+is included in the "long" output format, as described below in the next few examples.
 
 .. code-block:: shell
 
@@ -166,7 +168,7 @@ is included in the "long" output format, as described below the next few example
 
        This topic is outside the scope of this reading. If you are interested in hard links,
        then you are encouraged to read about them `here <https://en.wikipedia.org/wiki/Hard_link>`_.
-       Symbolic links are more common, and will be discussed in a future reading.
+       Symbolic links are more common and will be discussed in a future reading.
 
 .. [3] .. rubric:: **User / Owner**
 
@@ -402,12 +404,12 @@ Keyboard Shortcuts
    ========  ==========================================
    Shortcut  Description
    ========  ==========================================
-   ``C-a``   Move to beginning of line.
-   ``C-e``   Move to end of line.
-   ``C-f``   Move forward (right) one character.
-   ``M-f``   Move forward (right) one word.
-   ``C-b``   Move backward (left) one character.
-   ``M-b``   Move backward (left) one word.
+   ``C-a``   Move the cursor to the beginning of the line.
+   ``C-e``   Move the cursor to the end of the line.
+   ``C-f``   Move the cursor forward (right) one character.
+   ``M-f``   Move the cursor forward (right) one word.
+   ``C-b``   Move the cursor backward (left) one character.
+   ``M-b``   Move the cursor backward (left) one word.
    ========  ==========================================
 
 Getting Help
@@ -432,7 +434,7 @@ as a command-line argument, usually by itself.
 Unix systems come with a digital copy of their manual, which provides
 detailed information about the programs and features that are available.
 To access the manual entry ("man" page) for a command, enter the ``man``
-(manual) command and supply the command name you want to lookup as a
+(manual) command and supply the command name you want to look up as a
 command-line argument. To exit a man page, press the ``q`` key.
 
 .. code-block:: shell
