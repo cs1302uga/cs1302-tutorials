@@ -1,12 +1,12 @@
 # Command-Line Arguments
 
-![Approved for: Fall 2023](https://img.shields.io/badge/Approved%20for-Fall%202023-green)
+![Approved for: Spring 2024](https://img.shields.io/badge/Approved%20for-Spring%202024-blue)
 
 When working in a Unix-like environment, programs are launched when the user
 enters the program's name into the shell (i.e., they type it in, then press
 return). Many programs allow or even require the user to specify additional
 pieces of information, called **command-line arguments**, after the program's
-name in order to adjust the program's settings and supply values that the
+name to adjust the program's settings and supply values that the
 program needs to execute. For example, consider using `ls` to list all of the
 entries in `~/public_html` using the long listing format (`-l`), including
 hidden files that begin with a dot `.` (`-a`):
@@ -17,13 +17,13 @@ $ ls -l -a ~/public_html
 
 In the example above, the base command (program) is `ls` and the command-line 
 arguments used are `-l`, `-a`, and `~/public_html`. Each of the command-line 
-arguments provides information to the program about how it should run.
+arguments provide information to the program about how it should run.
 
 When the program is launched, the command-line arguments are passed into
-to the program through its `main` method. The program reads these values as
+the program through its `main` method. The program reads these values as
 input and determines how to respond. Like many Unix programs, `ls` is
 written in C, but support for command-line arguments extends to other
-languges as well, including Java. Let's try it!
+languages as well, including Java. Let's try it!
 
 1. Create a directory for this tutorial called `cs1302-cla`, then change into it.
 
@@ -70,7 +70,7 @@ languges as well, including Java. Let's try it!
    arguments:
    ```
 
-   As you can see, no iterations of the for-loop executed. This is expected as the `args` array would
+   As you can see, no iterations of the for-loop were executed. This is expected as the `args` array would
    be empty in this scenario (there are no command-line arguments provided).
 
 1. Now try the following command:
@@ -80,7 +80,7 @@ languges as well, including Java. Let's try it!
    ```
 
    What happened when you ran it? It looks like the for-loop iterated. The array referred to by `args` is not
-   empty. That's right, we've actually used the `args` array for something! Here's the
+   empty. That's right, we've used the `args` array for something! Here's the
    expected output:
 
    ```
