@@ -1,17 +1,17 @@
 # Java Packages Tutorial - Part 1
 
-![Approved for: Fall 2023](https://img.shields.io/badge/Approved%20for-Fall%202023-green)
+![Approved for: Spring 2024](https://img.shields.io/badge/Approved%20for-Spring%202024-blue)
 
 ## Prerequisites
 
 This tutorial assumes that the reader has a knowledge of basic Unix commands and experience working with a command-line 
 text editor (e.g. emacs, vi, etc.). To get the most out of this tutorial, you should **follow along, take notes, execute any given commands,
-run any code examples, repeat as necessary**. Simply reading (or skimming) is not sufficient for learning this material.
+run any code examples, and repeat as necessary**. Simply reading (or skimming) is not sufficient for learning this material.
 
 ## Course-Specific Learning Outcomes
 
 * **LO1.a:** Navigate and modify files, directories, and permissions in a multi-user Unix-like environment.
-* **LO1.c:** Create and modify textfiles and source code using a powerful terminal-based text editor such as Emacs or Vi.
+* **LO1.c:** Create and modify text files and source code using a powerful terminal-based text editor such as Emacs or Vi.
 * **LO1.d:** Use shell commands to compile new and existing software solutions that are organized into multi-level packages
   and have external dependencies.
   
@@ -134,7 +134,7 @@ named packages.
   
    Now try running the program again, specifying the location of the default package where our compiled code resides.  
    Since we compiled the class into the `src` directory, `src` is the default package for our compiled code (for now).  
-   Execute the following command to specify the class path:
+   Execute the following command to specify the classpath:
       
    ```
    $ java -cp src HelloWorld
@@ -146,7 +146,7 @@ named packages.
    the fully qualified name of the class containing the `main` method and the location of that 
    compiled class's associated default package, assuming proper file permissions. 
       
-6. You may have noticed in the previous step that the `.java` file and `.class` file
+6. You may have noticed in the previous step that the `.java` file and the `.class` file
    for the `HelloWorld` class are in the same directory. Let's keep our directories clean and
    separate our source code (`.java` files) from the compiled code (`.class` files). 
       
@@ -168,19 +168,19 @@ named packages.
    the commands you enter will be run. In the command above, our pwd is `cs1302-packages`. Since the
    `HelloWorld.java` file is not in that directory, we had to specify the relative path `src/HelloWorld.java`
    to tell the compiler how to find that file relative to the pwd. We're telling the compiler "first, go into the
-   `src` directory and then you'll see the file `HelloWorld.java`".
+   `src` directory, and then you'll see the file `HelloWorld.java`".
 
    **Important Note:** `bin` is just the relative path to the directory where the compiled `.class` files will
    be placed. In this example, `bin` is a directory located inside of the present working directory. You can 
    replace `bin` with any relative or absolute path to any directory that you have permission to write to. For
-   example, if we had a direcory called `class_files` in our present working directory, we could compile
+   example, if we had a directory called `class_files` in our present working directory, we could compile
    the code with `-d class_files` and our `.class` files would be placed in that directory.
    
    Now, if you list the contents of the `bin` directory, you will see that it contains
    `HelloWorld.class`. Listing the `src` directory contents will show only `HelloWorld.java`. 
    Now our project is more organized!
       
-   Try running the program again, specifying the new class path (`bin`) using `-cp`:
+   Try running the program again, specifying the new classpath (`bin`) using `-cp`:
       
    ```
    $ java -cp bin HelloWorld
@@ -200,7 +200,7 @@ named packages.
    ./src/HelloWorld.java
    ```
    
-   The output of the `find` command shows that we sucessfully separated the source code (`src`) from 
+   The output of the `find` command shows that we successfully separated the source code (`src`) from 
    the compiled code (`bin`). If you see any tilde (~) files, those are just backup copies of older versions 
    of your files. You can ignore those.
 
@@ -215,14 +215,14 @@ named packages.
 
 ## Named Package
 
-Now let's create a named package. To place a class (or interface) in named package, you must do two things:
+Now let's create a named package. To place a class (or interface) in a named package, you must do two things:
 
 1. Place the `.java` file in the appropriate package directory; and
 2. Include a `package` statement at the top of the `.java` file.
    
 Let's try it by placing the `HelloWorld` class into the `cs1302.hello` package!
    
-1. Change directly into `cs1302-packages` directory.
+1. Change directly into the `cs1302-packages` directory.
    
 2. Move the `HelloWorld.java` file into the `cs1302.hello` package directory.
    You may need to create both the `cs1302` and `hello` directories before
@@ -259,7 +259,7 @@ Let's try it by placing the `HelloWorld` class into the `cs1302.hello` package!
    **Note:**  If you see any tilde (~) files, those are just backup copies of older versions 
    of your files. You can ignore those. If you see any other differences between your
    output and the output below, you likely had a small error in a command or in your package statement in
-   the `HelloWorld.java` file. Double check that you did everything correctly and, if you need assistance,
+   the `HelloWorld.java` file. Double-check that you did everything correctly and, if you need assistance,
    post a screenshot of your `find` output to Piazza.
    
    ```
