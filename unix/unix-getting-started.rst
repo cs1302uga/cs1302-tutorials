@@ -14,7 +14,7 @@ How to engage with this tutorial
 ================================
 
 When working through any tutorial in 1302, it is expected that you will fully engage with the material. In
-other words, it is not sufficient to skim read the content. You should carefully read and process
+other words, it is not sufficient to skim-read the content. You should carefully read and process
 and then follow along by typing the commands into your terminal emulator, taking notes as you go.
 We recommend writing the answers to any questions asked in this tutorial in your notes along with some
 context. These notes will be helpful for studying. If you have any questions as you are working through
@@ -34,7 +34,7 @@ Unix-like; i.e., their user interface and basic set of utilities are
 reminiscent of a Unix system.
 
 In Unix, the primary end-user, command-line interface to the system is a program
-called the *shell*. This program can be usually be accessed via another program
+called the *shell*. This program can usually be accessed via another program
 called a *terminal emulator*. In the shell, you enter *commands* at a *prompt*.
 Here are some examples of what such a prompt might look like:
 
@@ -46,7 +46,7 @@ Here are some examples of what such a prompt might look like:
 
    zsh%
 
-The shell is just another way to interact with computer. Think of it as an interface
+The shell is just another way to interact with the computer. Think of it as an interface
 that allows you to type your commands on the keyboard instead of clicking icons on the
 screen. Both interfaces allow you to do the same things, just in a different way.
 These days, all students are familiar with the point-and-click graphical windowing systems
@@ -62,7 +62,7 @@ macOS operating system are presented. On the left, the window of a terminal
 emulator (or a "terminal window," for short) is displayed containing the output
 of the commands ``ls`` and ``tree`` (discussed later). On the right, the graphical
 Finder app is displayed containing some of the same information. Take a moment
-to convince yourself that both images are displaying roughly the same information 
+to convince yourself that both images display roughly the same information 
 in two different ways. On the left, the output of the ``tree`` command looks very 
 similar to the output on the right. The only difference is that the user typed 
 the command with the keyboard instead of double-clicking a folder icon as they would
@@ -171,7 +171,7 @@ machines; however, both are connected to the same remote computer. Just like
 you need credentials (e.g., a personal username and password) to access certain
 websites or online apps, you will also need credentials to initiate a remote
 terminal session. In the figure, the same user credentials were used in both
-images, which means that that they are both logged in as the same user on
+images, which means that they are both logged in as the same user on
 the remote computer. Since a terminal emulator is, itself, a program, you can
 even have two terminal emulators on the same machine connected to the remote computer,
 as illustrated in the figure below.
@@ -188,7 +188,7 @@ in more than once to see what it's like.
 Logging into a Remote Unix Machine
 ==================================
 
-In this section, you will log into your account on the computer science departmental server called
+In this section, you will login to your account on the computer science departmental server called
 Odin. We will do all of our programming this semester on this Unix server so you become comfortable
 working in a command-line Unix environment.
 
@@ -199,8 +199,8 @@ will need to connect to UGA's remote access VPN using the instructions found
 Important Note
 ++++++++++++++
 
-For CSCI 1302, you are expected to connect to Odin using SSH and the programs
-desribed in the instructions provided by your instructor. While other programs may exist
+For CSCI 1302, you are expected to connect to Odin using SSH, and the programs
+described in the instructions provided by your instructor. While other programs may exist
 that also allow you to establish an SSH connection to Odin, use of certain programs
 is explicitly forbidden in CSCI 1302 since they consume large amounts of remote system
 resources, disrupting other students' use of the system.
@@ -223,7 +223,7 @@ is associated with your MyID. Once you are successfully logged into the VPN,
 open up a local terminal in your terminal emulator and execute the ``ssh``
 (secure shell) command shown below to establish a secure connection -- be
 sure to replace ``username`` with your MyID. When you type in your password,
-it will not display anything to the screen -- this is the expected behavior.
+it will not display anything on the screen -- this is the expected behavior.
 Simply type in your password, then press the return key to continue.
 
 .. code-block:: shell
@@ -282,7 +282,7 @@ to the current working directory one directory at a time.
    ========  ======================================================================
    Command   Description
    ========  ======================================================================
-   ``pwd``   Print absolute path of current working directory.
+   ``pwd``   Print the absolute path of the current working directory.
    ========  ======================================================================
 
 ``date``, ``exit``, ``whoami``
@@ -309,12 +309,13 @@ to be enabled on your Odin account. Enabling this profile is also required
 to complete coursework in CSCI 1302. A *shell profile* includes commands
 and setting customizations that take effect when the profile is *sourced* (loaded).
 This step will set up your programming environment for 1302. It will tell the system
-where to find the java compiler and other tools that we will use throughout the 
+where to find the Java compiler and other tools that we will use throughout the 
 semester.
 
-If you see something similar to what is presented below when you login,
-then the CSCI 1302 shell profile is enabled on your account, and you should
-proceed immediately to the next section of this tutorial.
+If you see output that starts with ``[cs1302]`` when you login to Odin,
+then the CSCI 1302 shell profile is enabled on your account. Your output does not have
+to match the image below exactly as we often change the shell profile. If you see similar
+output, you can proceed to the next section of this tutorial.
   
 .. figure:: img/cs1302-profile-check-demo.svg?1
 
@@ -347,8 +348,8 @@ proceed immediately to the next section of this tutorial.
 When you log back in, you should see output similar to what is shown in the video
 at the start of this section.
 
-Congratulations! If you see the output above when you log into Odin, you have set up your 
-Odin account. You're now ready to log into a remote computer and develop software!
+Congratulations! If you see the output above when you login to Odin, you have set up your 
+Odin account. You're now ready to login to a remote computer and develop software!
 
 .. copyright and license information
 .. |copy| unicode:: U+000A9 .. COPYRIGHT SIGN
