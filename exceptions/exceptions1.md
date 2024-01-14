@@ -1,7 +1,7 @@
 
 # Exceptions Part 1
 
-![Approved for: Fall 2023](https://img.shields.io/badge/Approved%20for-Fall%202023-green)
+![Approved for: Spring 2024](https://img.shields.io/badge/Approved%20for-Spring%202024-blue)
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ you should follow along and take notes.
 ## Introduction
 
 In Java, an **exception** is an event that occurs during the execution of a program that
-encounters an error or some kind of exceptional situation. Often times, students get the
+encounters an error or some kind of exceptional situation. Oftentimes, students get the
 impression that, when an exception occurs, the only outcome is that the program will crash 
 and produce an obscure error message. For this reason, students often try to avoid exceptions 
 at all costs. In this tutorial, you will see that it is almost always better to let exceptions
@@ -46,7 +46,7 @@ You have likely encountered the dreaded
 before reading this tutorial. If you click on the link, you will see that `NullPointerException` is a Java class
 that has constructors and methods that can be called from your programs.
 
-If you haven't see a `NullPointerException` before, it's easy to create a program that will generate one:
+If you haven't seen a `NullPointerException` before, it's easy to create a program that will generate one:
 
 ```java
 public class Exception {
@@ -108,7 +108,7 @@ B. The *first* line in the stack trace indicates the **origin** of the exception
    ```
 
 C. The *last* line in the stack trace indicates the *last executed line* of the *first method executed* by our program;
-   in most cases, this is implictly the `main` method since most Java programs start in `main`. Here is a breakdown:
+   in most cases, this is implicitly the `main` method since most Java programs start in `main`. Here is a breakdown:
 
    ```
      class name         file name
@@ -132,13 +132,13 @@ the program got to line 3, then the `exception` method (`Exception.exception`) w
 until the program got to line 9, the origin of the exception. 
 
 Since the `exception` method does not handle the exception, the exception object **propagated** (i.e., *thrown/passed back*)
-to its calling method. In general, exception objects will continue to propagation back through the calling methods in the
+to its calling method. In general, exception objects will continue to propagate back through the calling methods in the
 call stack (i.e., the methods we see in the stack trace) until the program either: 
 i) handles the exception object; or 
-ii) lets the exception propagates out of `main`. 
+ii) lets the exception propagate out of `main`. 
 
 In our example, the exception propagated from `exception` to `main`, and since the `main` method does not 
-handle the exception, the exception continued to oropagate out of `main` and crash the program. 
+handle the exception, the exception continued to propagate out of `main` and crash the program. 
 Any time an exception is allowed to propagate out of `main`, the program will crash. It's our job to 
 make sure that we catch exceptions before they cause a crash.
 
@@ -175,13 +175,13 @@ if (s != null) {
 ```
 
 ```java
-// avoid NullPointerException via short circuiting
+// avoid NullPointerException via short-circuiting
 if ((s != null) && (s.length() > 1)) {
     System.out.println("string length > 1");
 } // if
 ```
 
-In general, in order to avoid an exception, you need to understand the
+In general, to avoid an exception, you need to understand the
 conditions in which that exception object is thrown, then write code that
 correctly identifies if those conditions are met prior to the line of code
 that throws the exception object. Although it is relatively easy to amend code
@@ -191,7 +191,7 @@ value `null`, the same statement cannot be said about exception objects that
 are thrown in more complicated exceptional situations. Here, we take complicated
 to mean that there are a lot of conditions to check, including some that are
 potentially tricky to identify. Such exceptions are generally handled
-instead of avoided, although there is no reason a combination of both
+instead of avoided, although there is no reason that a combination of both
 handling and avoiding can't be employed.
 
 ## Approach 2: Handling Exceptions
@@ -204,8 +204,8 @@ in the `catch` block. These two go together, which is why we often
 refer to it as a try-catch block. During execution, each line in a `try` block
 is executed until an exception object is thrown. When the exception is thrown,
 the JVM redirects the flow of control into an appropriate associated
-`catch` block. After the `catch` block is executed, flow of control is
-redirected to immediately after the entire try-catch construct.
+`catch` block. After the `catch` block is executed, the flow of control is
+redirected immediately after the entire try-catch construct.
 Here is an example:
 
 ```java
@@ -284,8 +284,8 @@ src/cs1302/scope/Example.java:22: error: cannot find symbol
 1 error
 ```
 
-Issues like simple typos, missing import statements and even an incorrect
-classpath often cause the Java compiler to emit the `cannot find symbol`; however,
+Issues like simple typos, missing import statements, and even an incorrect
+classpath often causes the Java compiler to emit the `cannot find symbol`; however,
 the cause of this particular `cannot find symbol` error is related to the
 scope of the symbol (the variable `file`), which does not extend to a specific
 line of code that attempts to use that symbol, as indicated by the error message.
@@ -312,16 +312,16 @@ strategy but you should always try to use the second strategy as it leads to mor
 easier to program. These two strategies are outlined below:
 
 1. Increase the symbol's scope by declaring and initializing it on a line
-   that precedes the enclosing try-block and changing original declaration to a
+   that precedes the enclosing try-block and changing the original declaration to a
    simple assignment -- this strategy is also sometimes used to fix similar scoping
-   issues with variables declared in if-statements and loops. If you are able to
-   extend the variable's scope to line that uses the symbol, then the compiler will
+   issues with variables declared in if-statements and loops. If you can
+   extend the variable's scope to the line that uses the symbol, then the compiler will
    be able to find it. This strategy does come at a cost:
 
    * The code that uses the variable after the try-catch cannot and should not
      assume the code in the try-block is ever executed as a thrown exception may
      cause it to get skipped. For example, if you initialize a reference variable to
-     `null` prior to a try-catch and reassign it to something that's not `null` within
+     `null` before a try-catch and reassign it to something that's not `null` within
      the try-block, then the code after the try-catch needs to account for the
      possibility that the variable was never reassigned and is still `null`. If it
      does not, then it runs the risk of throwing an unchecked `NullPointerException`
