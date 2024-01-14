@@ -1,7 +1,7 @@
 
 # Exceptions Part 2
 
-![Approved for: Fall 2023](https://img.shields.io/badge/Approved%20for-Fall%202023-green)
+![Approved for: Spring 2024](https://img.shields.io/badge/Approved%20for-Spring%202024-blue)
 
 ## Prerequisites
 
@@ -88,7 +88,7 @@ Let's look at an example.
    This error indicates that the `Scanner` constructor throws a `FileNotFoundException`.  `FileNotFoundException` is a
    **checked exception**.  When a method or constructor call throws a checked exception, the programmer must either:
       * surround the relevant call with a try-catch; or
-      * add a throws clause to the enclosing method (i.e., the method containing the call) to propogate this exception if it occurs.
+      * add a throws clause to the enclosing method (i.e., the method containing the call) to propagate this exception if it occurs.
 
    In `Checked.java`, the enclosing method is `main`.  We never want to add a `throws` clause to the `main` method as there is no code in
    our program above the `main` method to handle the exception. To fix `Checked.java`, we will use the first approach.
@@ -152,7 +152,7 @@ https://www.youtube.com/watch?v=j-GNWvLNLjs
 ## Explicitly Throwing Exceptions & Exception Propagation
 
 Now that you have seen how to handle exceptions in code written by others
-that can throw exceptions, it's important understand how and why you can
+that can throw exceptions, it's important to understand how and why you can
 throw exceptions yourself. In Java, the `throw` keyword is used to explicitly
 throw an exception. Here is an example where we create an
 [`IllegalArgumentException`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html)
@@ -165,7 +165,7 @@ throw new IllegalArgumentException("nums array cannot be empty");
 Since this line of code is known to throw an exception, we would
 usually want to handle the exception by placing the line in a try block.
 That may not always be ideal. Instead of handling the exception immediately,
-let's make it someone else's responsibility using the `throws` keyword
+let's make it someone else's responsibility by using the `throws` keyword
 in the signature of the method containing the line:
 
 ```java
@@ -182,14 +182,14 @@ public int computeAverage(double[] nums) throws IllegalArgumentException {
 ```
 
 Using the `throws` keyword, we told Java that the `IllegalArgumentException`
-will not be handled directly in this method. Instead it will be _propagated_
-up to the calling method, i.e., the method or methods, somewhere else, that are
-actually calling `computeAverage`. In that other method, the programmer
+will not be handled directly in this method. Instead, it will be _propagated_
+up to the calling method, i.e., the method (or methods), somewhere else, that is
+calling `computeAverage`. In that other method, the programmer
 can either handle the exception (using a try-catch) or choose to propagate it again
 by repeating the `throws` in the calling method's signature.
 
 In Java, checked exceptions must either be handled directly using a try-catch
-or progated up using `throws`. Note that while it is possible to place a `throws`
+or propagated up using `throws`. Note that while it is possible to place a `throws`
 in the signature of a program's `main` method, doing so is _strongly_ discouraged
 as exceptions propagated past `main` will always cause the program to crash.
 
