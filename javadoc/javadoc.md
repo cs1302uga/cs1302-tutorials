@@ -1,6 +1,6 @@
 # Javadoc and API Documentation
 
-![Approved for: Fall 2023](https://img.shields.io/badge/Approved%20for-Fall%202023-green)
+![Approved for: Spring 2024](https://img.shields.io/badge/Approved%20for-Spring%202024-blue)
 
 ## Prerequisites
 
@@ -16,7 +16,7 @@ set of requirements.
 
 ## Introduction
 
-A well written, organized collection of code provides an **Application Programming Interface (API)**
+A well-written, organized collection of code provides an **Application Programming Interface (API)**
 for users of that code. That is, the design choices that were made in the naming of certain things
 such as classes and methods impose an interface that programmers must follow when interacting with
 that code. In many cases, the exact implementation for a piece of code is not available, and users 
@@ -27,7 +27,7 @@ is usually referred to as **API documentation**, and it should be written to pro
 so that others can use the code being documented without seeing the implementation of the code itself.
 In other words, API documentation usually describes *what* a piece of code does and not *how* it
 does what it does (i.e., unless absolutely needed to explain the "what"). As an example, most students 
-are familar with the API documentation for the 
+are familiar with the API documentation for the 
 [`String`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html) and
 [`Scanner`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Scanner.html) classes
 provided by Java.
@@ -54,7 +54,7 @@ to generate and host the corresponding API documentation website on Odin.
 The steps in this tutorial assume that you are logged into the Odin server. 
 
 1. Use the following command to download and execute a shell script that retrieves 
-   the starter code for this tutorial and places it into a subdirectory 
+   the starter code for this tutorial and places the code into a subdirectory 
    called `cs1302-javadoc`:
 
    ```
@@ -91,7 +91,7 @@ methods, and fields. This effectively creates a website for the API documentatio
    $ javadoc -d doc -sourcepath src -subpackages cs1302
    ```
    
-   Here is a brief description of the command-line option that were used:
+   Here is a brief description of the command-line options that were used:
    * `-d` -- specifies the destination directory where javadoc saves the generated HTML files;
    * `-sourcepath` -- specifies the search paths for finding source files (`.java`); and
    * `-subpackages` -- specifies the packages for which documentation should be generated. 
@@ -200,7 +200,7 @@ this tutorial.
    
 1. Under the Method Summary section, you will notice that only some of the methods contain Javadoc
    comments.  We intentionally left out the comments for the `setRadius`, `getDiameter` and `getArea`
-   methods to give you an opportunity to write your own Javadoc comments.
+   methods to allow you to write your own Javadoc comments.
    
 1. Before adding comments to `Circle.java`, take a moment to look at the Method Detail section of the
    website. Compare a documented method (`getRadius` or `getPerimeter`) to an undocumented method.
