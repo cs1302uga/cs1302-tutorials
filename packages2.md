@@ -1,6 +1,6 @@
 # Java Packages Tutorial - Part 2
 
-![Approved for: Fall 2023](https://img.shields.io/badge/Approved%20for-Fall%202023-green)
+![Approved for: Spring 2024](https://img.shields.io/badge/Approved%20for-Spring%202024-blue)
 
 ## Prerequisites
 
@@ -8,14 +8,14 @@ This tutorial assumes that the reader has completed
 [Java Packages Tutorial - Part 1](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/packages1.md). 
 If you haven't completed that tutorial, please do so before moving on.
 
-This tutorial also, assumes that the reader has a knowledge of basic Unix commands and experience working with a command-line 
+This tutorial also assumes that the reader has a knowledge of basic Unix commands and experience working with a command-line 
 text editor (e.g. emacs, vi, etc.). To get the most out of this tutorial, you should **follow along, take notes, execute any given commands,
-run any code examples, repeat as necessary**. Simply reading (or skimming) is not sufficient for learning this material.
+run any code examples, and repeat as necessary**. Simply reading (or skimming) is not sufficient for learning this material.
 
 ## Course-Specific Learning Outcomes
 
 * **LO1.a:** Navigate and modify files, directories, and permissions in a multi-user Unix-like environment.
-* **LO1.c:** Create and modify textfiles and source code using a powerful terminal-based text editor such as Emacs or Vi.
+* **LO1.c:** Create and modify text files and source code using a powerful terminal-based text editor such as Emacs or Vi.
 * **LO1.d:** Use shell commands to compile new and existing software solutions that are organized into multi-level packages
   and have external dependencies.
   
@@ -23,8 +23,8 @@ run any code examples, repeat as necessary**. Simply reading (or skimming) is no
 
 In the previous tutorial, [Java Packages Tutorial - Part 1](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/packages1.md),
 you compiled and ran code that you placed into a named package. In that tutorial, you were working with a single Java
-file. In this tutorial, we will compile and run an application that depends on code located in multiple Java files. 
-When one Java file requires access to another file in order to run, it is called a **code dependency**. When there are
+file. In this tutorial, we will compile and run an application that depends on code in multiple Java files. 
+When one Java file requires access to another file to run, it is called a **code dependency**. When there are
 dependencies in our projects, we need to make sure to consider these dependencies when compiling and running our code.
 This tutorial will walk you through this process.
 
@@ -35,16 +35,16 @@ directories into the `cs1302-packages` directory you created while working throu
 
 When Java code uses other Java code, that creates a dependency. Most of the programs that you've
 written have used code provided by Oracle under the various `java` subpackages. When you compile,
-those dependencies are automatically included on the class path. However, when your code depends 
+those dependencies are automatically included on the classpath. However, when your code depends 
 on code that's not included with Java (e.g., code that you or someone else has written), you need
-to let `javac` know where the _compiled_ version of that depedency is.
+to let `javac` know where the _compiled_ version of that dependency is.
 
 1. Let's extend the code we wrote in the previous tutorial. Create a `cs1302.util.HelloUtility` class under `src`.
    **Remember,** the fully qualified name (FQN) implies a specific directory structure and package statement 
-   requirement with respect to `HelloUtility.java`. You will need to add the `util` directory in the proper
+   requirement with respect to `HelloUtility.java`. You must add the `util` directory in the proper
    place in your current directory hierarchy.
    
-1. Write the code to declare the `cs1302.util.HelloUtility` class making sure to include the proper 
+1. Write the code to declare the `cs1302.util.HelloUtility` class, including the proper 
    class declaration and package statement at the top. Then, within the class declaration, add the 
    following method:
 
@@ -80,7 +80,7 @@ to let `javac` know where the _compiled_ version of that depedency is.
 1. Now, modify the source code for your `cs1302.hello.HelloWorld` class to call the static method in
    `cs1302.util.HelloUtility`. To do this, you may:
    
-   1. Add an import statement between the `package` statement and class declation:
+   1. Add an import statement between the `package` statement and class declaration:
    
       ```java
       import cs1302.util.HelloUtility;
@@ -92,7 +92,7 @@ to let `javac` know where the _compiled_ version of that depedency is.
       HelloUtility.excitingHello();
       ```
       
-   Completing these two steps create a **dependency**. Now, the `cs1302.hello.HelloWorld` class
+   Completing these two steps creates a **dependency**. Now, the `cs1302.hello.HelloWorld` class
    **depends** on the `cs1302.util.HelloUtility` class because it uses a method defined within that
    class.
       
@@ -113,10 +113,10 @@ to let `javac` know where the _compiled_ version of that depedency is.
    
    The error output is just `javac` saying that it cannot find something. In this case, it cannot
    find `cs1302.util.HelloUtility` as it is not in the same package as `cs1302.hello.HelloWorld`. 
-   Since we know it actually exists, we can just tell `javac` where to find it using `-cp`. 
+   Since we know it exists, we can just tell `javac` where to find it using `-cp`. 
    
    Remember that when your code depends on other code that you have written, you need to let 
-   `javac` know where the _compiled_ version of that depedency is. Since you compiled under `bin`,
+   `javac` know where the _compiled_ version of that dependency is. Since you compiled under `bin`,
    that's where you should tell `javac` to look. Try to compile it again, but this time, be sure
    to include the `-cp bin` option in addition to `-d bin` option. The program should now run as expected.
    
@@ -137,7 +137,7 @@ to let `javac` know where the _compiled_ version of that depedency is.
 
 ### Setting the Class Path
 
-Both `javac` and `java` allow you to specify the class path using the `-cp` or `-classpath` command-line
+Both `javac` and `java` allow you to specify the classpath using the `-cp` or `-classpath` command-line
 option. The usual syntax is as follows:
 
 ```
@@ -151,28 +151,28 @@ list of multiple paths:
 -cp path1:path2
 ```
 
-Each path can be a path to a directory or a `.jar` file (usually used for third party libraries).
+Each path can be a path to a directory or a `.jar` file (usually used for third-party libraries).
 
-**VERY IMPORTANT NOTE:** The class path should always point to a default package for _compiled_ code. 
+**VERY IMPORTANT NOTE:** The classpath should always point to a default package for _compiled_ code. 
 If you are compiling a `.java` file that depends on an already compiled class, then you will need to 
-specify the class path to the corresponding default package for that dependency when 
+specify the classpath to the corresponding default package for that dependency when 
 invoking `javac`.
 
 ### Import Statements
 
 In Java, you do not have to import classes that are in the same package. However, it's interesting to
-note that `import` statements are actually never required in Java. We just use them for convenience. 
-Assuming the corresponding default package for class's package is on the class path when compiling 
+note that `import` statements are never required in Java. We just use them for convenience. 
+Assuming the corresponding default package for the class's package is on the classpath when compiling 
 and/or running, you can always refer to a class by its fully qualified name. Consider two uses of
 [`java.util.Random`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Random.html) below:
 
 ```java
-// assuming the class was imported
+// Assuming the class was imported
 Random rng = new Random();
 ```
 
 ```java
-// assuming the class was NOT imported
+// Assuming the class was NOT imported
 java.util.Random rng = new java.util.Random();
 ```
 
