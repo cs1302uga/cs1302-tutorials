@@ -24,7 +24,7 @@
 
 ## Introduction
 
-Emacs is a powerful text-editor that runs in the terminal. Emacs allows us to read and write source
+Emacs is a powerful text editor that runs in the terminal. Emacs allows us to read and write source
 code (and any other text documents) without having to leave our terminal environment. While you are welcome
 to use other text editors that are available in the Unix environment, we will focus on Emacs in this course.
 If you're interested in learning more about Emacs, check out the [Wikipedia Page](https://en.wikipedia.org/wiki/Emacs).
@@ -48,11 +48,11 @@ especially for the first month or two of the course.
 
 ## Control and Meta
 
-Throughout this tutorial we will use `C` to refer to the control key (`CTRL`)
+Throughout this tutorial, we will use `C` to refer to the control key (`CTRL`)
 and `M` to refer to the meta key. On most systems, `ALT` or `ESC`
 correspond to `M`. On macOS, the Terminal application can be configured
 to use `OPT` (`option`) as `M`. If you are using macOS and you haven't setup
-`OPT` to work as meta, the instructions are found [here](https://github.com/cs1302uga/cs1302-exercises/blob/master/misc/MacOS.md#install-homebrew).
+`OPT` to work as meta, the instructions are found [here](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/setup/MacOS.md#use-option-as-meta).
 
 | Key | Name    | Usually             |
 |-----|---------|---------------------|
@@ -66,7 +66,7 @@ successfully make the appropriate keystrokes. In the table below, we'll use
 `KEY(key)` to denote that you should press `key` while holding `KEY` and `(key)`
 to denote that `key` should be pressed without any kind of modifier key.
 For example, `CTRL(x, f)` means to hold `CTRL`, hit `x`, then hit `f`, then release
-`CTRL`. An allternative would be `CTRL(h), (t)` which means to hold `CTRL`,
+`CTRL`. An alternative would be `CTRL(h), (t)` which means to hold `CTRL`,
 hit `h`, release `CTRL`, then hit `t`.
 
 | Command        | Binding   | Alternative | Keystrokes     |
@@ -74,8 +74,8 @@ hit `h`, release `CTRL`, then hit `t`.
 | Open/Find File | `C-x C-f` | `C-xf`      | `CTRL(x, f)`   |
 | Emacs tutorial | `C-h t`   |             | `CTRL(h), (t)` |
 
-If a binding has consecutive occurences of either the `C` or `M` modifier keys, 
-then there is no need to release the modifer key between those occurences. This 
+If a binding has consecutive occurrences of either the `C` or `M` modifier keys, 
+then there is no need to release the modifier key between those occurrences. This 
 can be seen in the first example, where both of the following keystroke sequences
 result in `C-x C-f`:
 * `CTRL(x), CTRL(f)`
@@ -85,8 +85,8 @@ result in `C-x C-f`:
 
 If you're on Windows, you will need to make sure you have followed the instructions to [make backspace work properly](https://github.com/cs1302uga/cs1302-exercises/blob/master/misc/Windows10.md#setup-backspace-required) before the built-in tutorial will work properly.
 
-**Learn by doing.** Emacs comes with a built-in, interactive turorial. It can be 
-reached by launching Emacs using the `emacs` command, then following the instructions
+**Learn by doing.** Emacs comes with a built-in, interactive tutorial. It can be 
+reached by launching Emacs using the `emacs` command and then following the instructions
 on the Emacs welcome screen. With some terminal emulators, the shortcut used to 
 start the tutorial is `C-h t` (i.e., type `C-h`, then release `CTRL` and type `t`),
 while it may be `<f1> t` (i.e., press `<f1>`, then release `<f1>` and type `t`)
@@ -127,7 +127,7 @@ file you're trying to open.
 To **create a file**, it is not necessary to first use the `touch` command. Instead,
 you can use one of the methods just described with your desired
 filename. When you create a new file, Emacs will display `(New file)` at 
-the bottom of the screen. The new file does not actually exist until you
+the bottom of the screen. The new file does not exist until you
 save it, usually using `C-x C-s`.
 
 ## Basic Commands
@@ -153,7 +153,7 @@ To cancel a partially typed command (e.g., when you mistype), use `C-g`.
 ### Navigation
 
 In Emacs, there are special key bindings for navigation that can (and should) be
-used instead of the standard arrow keys so that your hands rarely have a need to
+used instead of the standard arrow keys so that your hands rarely need to
 leave the main part of the keyboard. If this sounds intimidating, then try not to
 worry; the arrow keys still work. The more time you spend in the main area of
 the keyboard, the more productive you can be when programming.
@@ -177,7 +177,7 @@ practicing and, over time, you'll be amazed at how productive you become!
 | `C-v`     | Move down one page                                                     |
 | `M-v`     | Move up one page                                                       |
 | `C-l`     | Scroll to make the current line appear in the center, bottom, then top |
-| `M-g M-g` | Go to line (enter number at prompt, then press `RET`)                  |
+| `M-g M-g` | Go to line (enter the number at prompt, then press `RET`)                  |
 | `M-<`     | Move to beginning of buffer (`META` + `SHIFT` + `,` = `M-<`)           |
 | `M->`     | Move to end of buffer (`META` + `SHIFT` + `.` = `M->`)                 |
 
@@ -264,7 +264,7 @@ the area containing the buffer's name.
 | Binding   | Action                                                                 |
 |-----------|------------------------------------------------------------------------|
 | `C-x 1`   | Maximize current buffer                                                |
-| `C-x 2`   | Split buffer horizontally (i.e., one stacked on top the other)         |
+| `C-x 2`   | Split buffer horizontally (i.e., one stacked on top of the other)      |
 | `C-x 3`   | Split buffer vertically (i.e., side-by-side)                           |
 | `C-x o`   | Navigate to an(o)ther buffer                                           |
 | `C-x C-b` | List available buffers                                                 |
@@ -272,7 +272,7 @@ the area containing the buffer's name.
 To open a file in another buffer, navigate to that buffer then use `C-x C-f` to
 find and open your desired file. If you previously opened the file, then it's
 likely still available. In that case, use `C-x C-b` to list the available buffers,
-navigate to the text for the file's name, then type `RET` to replace the current
+navigate to the text for the file's name, and then type `RET` to replace the current
 buffer area with the desired buffer.
 
 When you save using `C-x C-s`, only the current buffer is saved.
