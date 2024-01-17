@@ -186,7 +186,7 @@ named packages.
    $ java -cp bin HelloWorld
    ```
 
-7. We will use the Unix `find` command often in this course to see all files in a directory and its 
+7. We will use the Unix `find` command (or the similar `tree` command) often in this course to see all files in a directory and its 
    subdirectories. Go ahead and execute `find` from within the `cs1302-packages` directory. If you've
    followed the steps correctly up until now, you will see the following output:
    
@@ -204,7 +204,7 @@ named packages.
    the compiled code (`bin`). If you see any tilde (~) files, those are just backup copies of older versions 
    of your files. You can ignore those.
 
-   **PROTIP:** Remember, source code should really only be placed directly in the default 
+   **PROTIP:** Remember, source code should only be placed directly in the default 
    package directory (`src`) for convenience when developing small or temporary applications or when 
    just beginning development [[2]](https://docs.oracle.com/javase/specs/jls/se8/html/jls-7.html).
    While types in the default package can access types in other packages, the reverse is not true.
@@ -258,7 +258,7 @@ Let's try it by placing the `HelloWorld` class into the `cs1302.hello` package!
    
    **Note:**  If you see any tilde (~) files, those are just backup copies of older versions 
    of your files. You can ignore those. If you see any other differences between your
-   output and the output below, you likely had a small error in a command or in your package statement in
+   output and the output below, you likely had a small error in a command or your package statement in
    the `HelloWorld.java` file. Double-check that you did everything correctly and, if you need assistance,
    post a screenshot of your `find` output to Piazza.
    
