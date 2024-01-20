@@ -275,7 +275,7 @@ Let's try it by placing the `HelloWorld` class into the `cs1302.hello` package!
    ```
  
 
-6. Run the program using `javac` with the classpath using `-cp` and include the
+6. Run the program using `java` with the classpath using `-cp` and include the
    fully qualified name (explained below) of the class containing the `main` method:
    
    ```
