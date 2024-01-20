@@ -1,6 +1,6 @@
 # Setup on macOS
 
-![Approved for: Fall 2023](https://img.shields.io/badge/Approved%20for-Fall%202023-green)
+![Approved for: Spring 2024](https://img.shields.io/badge/Approved%20for-Spring%202024-blue)
 
 The following instructions are designed to help get you up and running with macOS for development
 in CSCI 1302. The majority of the time, you will not be developing directly on your Mac. Instead,
@@ -70,7 +70,7 @@ on your Mac via [Terminal](https://support.apple.com/guide/terminal/welcome/mac)
    1. When presenting commands, we often prepend the start of a command line with a `$` 
       to denote the shell prompt. The `$` lets you know that the line that follows is 
       something that you should type into your terminal emulator at the shell prompt, 
-      which usually ends with `$` pr `%` followed by a white-space. 
+      which usually ends with `$` pr `%` followed by a white space. 
       **Do not type or copy the `$` before the command name as it is not part of the command.**
 
    2. When installing Homebrew, the installer may ask you for a password. If it does, then
@@ -83,7 +83,7 @@ on your Mac via [Terminal](https://support.apple.com/guide/terminal/welcome/mac)
       ```
       
    4. Homebrew must be installed to continue. If installation fails, inspect the messages emitted
-      by the installer -- in most cases, it will tell you what you need to do in order to fix
+      by the installer -- in most cases, it will tell you what you need to do to fix
       the issues that are preventing installation.
 
 3. **Install Utilities via Homebrew.** Type the following command to install [git](https://git-scm.com/)
@@ -95,7 +95,7 @@ on your Mac via [Terminal](https://support.apple.com/guide/terminal/welcome/mac)
    
    **If you run into issues with `brew install`**, then please try running `brew doctor` first to see
    if it has a suggested fix. If it does, then try the fix. If it doesn't or if it does but that doesn't
-   resolve your issue, then you may need to ask Piazza or see instructor during office hours. 
+   resolve your issue, then you may need to ask Piazza or see an instructor during office hours. 
    
 ## Install XQuartz
 
