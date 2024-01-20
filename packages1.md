@@ -282,7 +282,7 @@ Let's try it by placing the `HelloWorld` class into the `cs1302.hello` package!
    $ java -cp bin cs1302.hello.HelloWorld
    ```
       
-   <a id="fqn"/>
+   <a id="fqn"/></a>
 
    In this example, `cs1302.hello.HelloWorld` is known as the **fully qualified name (or FQN)** of the
    `HelloWorld` class in the `cs1302.hello` package. You have seen fully qualified names before--they
