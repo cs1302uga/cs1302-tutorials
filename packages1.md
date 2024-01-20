@@ -275,14 +275,16 @@ Let's try it by placing the `HelloWorld` class into the `cs1302.hello` package!
    ```
  
 
-6. Run the program using `java` with the classpath using `-cp` and include the
-   fully qualified name (explained below) of the class containing the `main` method:
+6. Run the program using `java` and add `bin` to the classpath (using `-cp`) so `java` can
+   find the `cs1302.hello.HelloWorld` class that contains the `main` method:
    
    ```
    $ java -cp bin cs1302.hello.HelloWorld
    ```
       
-   <a id="fqn"/>In this example, `cs1302.hello.HelloWorld` is known as the **fully qualified name (or FQN)** of the
+   <a id="fqn"/>
+
+   In this example, `cs1302.hello.HelloWorld` is known as the **fully qualified name (or FQN)** of the
    `HelloWorld` class in the `cs1302.hello` package. You have seen fully qualified names before--they
    are often used with `import` statements (remember `java.util.Scanner`?). When you import a class, you
    can use the simple class name in that file instead of having to type the fully qualified name each time.
@@ -291,7 +293,7 @@ Let's try it by placing the `HelloWorld` class into the `cs1302.hello` package!
    **PROTIP:** Although packages correspond to directories, a fully qualified name (FQN) uses `.` (dot) 
    for the name separator and not a slash.
 
-7. Congratulations on compiling your code to a named package! **Don't delete your work** unless you want to work
+8. Congratulations on compiling your code to a named package! **Don't delete your work** unless you want to work
    through the tutorial again for extra practice. The next tutorial will continue where this one left off.
    
  ## Video Demo
