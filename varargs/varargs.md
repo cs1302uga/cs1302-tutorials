@@ -1,6 +1,6 @@
 # Variable Arguments (Varargs) Reading
 
-![Approved for: Fall 2023](https://img.shields.io/badge/Approved%20for-Fall%202023-green)
+![Approved for: Spring 2024](https://img.shields.io/badge/Approved%20for-Spring%202024-blue)
 
 ## Introduction
 
@@ -35,7 +35,7 @@ Helper.printlns(System.out, new String[] { "g", "h", "i", "j", "k" });
 ```
 
 However, the code snippet above is a little tedious because it requires
-the creation and use of any array. **The following will not work as-is, 
+the creation and use of an array. **The following will not work as-is, 
 but it would be nice _if we could make it work_:**
 
 ```java
@@ -76,7 +76,7 @@ Changing `String[] args` to `String... args` accomplishes two things:
 make its `printlns` method accept a variable number of trailing `String`
 arguments. The lines of code that would not work earlier should all work
 after you've changed the `args` parameter to have a varargs declaration.
-You may also find it helpful test various inputs to the `printlns`
+You may also find it helpful to test various inputs to the `printlns`
 method using the associated [`Driver`](src/cs1302/util/Driver.java)
 class.
 
