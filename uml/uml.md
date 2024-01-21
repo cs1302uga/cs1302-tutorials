@@ -1,6 +1,6 @@
 # UML Class Diagrams
 
-![Approved for: Fall 2023](https://img.shields.io/badge/Approved%20for-Fall%202023-green)
+![Approved for: Spring 2024](https://img.shields.io/badge/Approved%20for-Spring%202024-blue)
 
 ## Introduction
 
@@ -108,10 +108,10 @@ example, you might use the following stereotypes in different situations:
 ### Abstract Classes and Operations
 
 The usual way to denote that a class or operation is abstract is to italicize the
-name of class or operation. Sometimes this is impractical in situations where it's
+name of the class or operation. Sometimes this is impractical in situations where it's
 difficult to discern the difference between the normal lettering of a font and
-its italicized version. In such casses, the names might also be prefixed with
-an `<<abstract>>` stereotype in order to better communicate the intention to the
+its italicized version. In such cases, the names might also be prefixed with
+an `<<abstract>>` stereotype to better communicate the intention to the
 viewer of the diagram.
 
 To illustrate the differences, consider the following three `Shape` classes:
@@ -119,7 +119,7 @@ To illustrate the differences, consider the following three `Shape` classes:
 ![Abstract Comparison](img/abstract.png)
 
 In the diagram, the first class on the left is not abstract and the other two
-are. While the italics in the middle class indicate that its abstract, it
+are. While the italics in the middle class indicate that it is abstract, it
 can be easily confused as a non-abstract class if viewed quickly. For this
 reason, we suggest you italicize and use a stereotype to indicate that a
 class is abstract just as is done with the third class in the diagram.
@@ -137,13 +137,13 @@ are arguably the most common:
 | ![extends](img/extends.svg)       | Solid line; unfilled triangle arrowhead.  | `Child` extends `Parent`               |
 | ![implements](img/implements.svg) | Dashed line; unfilled triangle arrowhead. | `SomeClass` implements `SomeInterface` |
 
-**It may seem nit picky,** but each of these arrows is visually different
+**It may seem nitpicky,** but each of these arrows is visually different
 with respect to its line and its arrowhead!
 
 ## UML Software and Tools
 
 Before you continue reading, it's important to note that you do not need a special program to work with UML.
-It's quite possible (and encouraged) that you practice drawing UML digrams by hand either on paper or in
+It's quite possible (and encouraged) that you practice drawing UML diagrams by hand either on paper or in
 your note-taking software. The purpose of a UML class diagram is to help visualize multiple classes and
 their relationships. Over the years, we've seen many students skip directly to using UML software and
 get frustrated. Since these programs have a learning curve, students spend too much time trying to
@@ -155,7 +155,7 @@ deadline.
 Below is a list of popular UML software programs. **You are not required to have access to one for
 this course.** While many of these programs do require a paid license, you are encouraged to seek
 out a free community edition or a free/reduced-price student license before making any purchases.
-If you find a tool that's not in the list, then please share it on Piazza!
+If you find a tool that's not on the list, then please share it on Piazza!
 
 * [Astah UML](https://astah.net/products/astah-uml/)
 * [Diagrams.net](https://www.diagrams.net/)
