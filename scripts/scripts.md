@@ -1,6 +1,6 @@
 # Interpreter Scripts
 
-![Approved for: Fall 2023](https://img.shields.io/badge/Approved%20for-Fall%202023-green)
+![Approved for: Spring 2024](https://img.shields.io/badge/Approved%20for-Spring%202024-blue)
 
 ## What is an Interpreter Script?
 
@@ -11,7 +11,7 @@ we can, instead, place all of the commands in a script file.
 
 An interpreter script needs to satisfy the following requirements:
 * Execute permission enabled (to whoever will use it); and 
-* First line is of the form:
+* The first line is of the form:
 
   ```
   #! interpreter [optional-arg]
@@ -21,7 +21,7 @@ An interpreter script needs to satisfy the following requirements:
   the number sign followed by an exclamation mark.
 
 The interpreter must be a valid pathname for an executable program which is not 
-itself a script. When executed, then interpreter will be invoked with the following
+itself a script. When executed, the interpreter will be invoked with the following
 command-line arguments:
 
 ```
@@ -53,10 +53,10 @@ terminal shell. Let's create one!
    ```
    
 1. By convention, the `.sh` file extension is used for shell scripts.
-   Create a regular text file called `cs1302-script.sh` and setup the first
-   line so that it conforms to the beforementioned requirements for an
+   Create a regular text file called `cs1302-script.sh` and set the first
+   line so that it conforms to the aforementioned requirements for an
    interpreter script. Replace `interpreter` with the output of `which`,
-   and exclude an optional arguments for now. It should look this:
+   and exclude the optional arguments for now. It should look this:
 
    ```
    #!/bin/bash
@@ -108,7 +108,7 @@ terminal shell. Let's create one!
    will only work if the script is in the current directory.
    
    **ASIDE:** Remove user execute permission, attempt to execute
-   the script, then see what happens.
+   the script, and then see what happens.
  
  1. Notice the output. It executed both commands!
  
