@@ -1,6 +1,6 @@
 # Interfaces Tutorial
 
-![Approved for: Fall 2023](https://img.shields.io/badge/Approved%20for-Fall%202023-green)
+![Approved for: Spring 2024](https://img.shields.io/badge/Approved%20for-Spring%202024-blue)
 
 This tutorial introduces the reader to Java interfaces and polymorphism.
 
@@ -67,8 +67,8 @@ be covered in this tutorial.
 Interfaces are used to specify that a type *can do* a set of things specified by its
 abstract methods and constants. An interface serves as a *contract* for the classes that 
 claim to implement the interface. Multiple classes can implement the same interface,
-each providing their own implementation of the contracted functionality. For this
-reason, it is important that the documentation for an interface describe *what* a method
+each providing its own implementation of the contracted functionality. For this
+reason, the documentation for an interface must describe *what* a method
 does and not necessarily *how* it should do it. Such documentation is usually written using
 Javadoc comments in the interface.
 
@@ -95,8 +95,8 @@ Now, let's tie this back to programming. In the example above, `compete` is the 
 that would be placed in the `Athlete` interface (contract) since all athletes must be able to compete. 
 The abstract method represents the action that is required of the signer of the contract. In other words, 
 the method is what the signer is obligated to do when they agree to implement the interface (a.k.a. 
-sign the contract). The implementation details of the `compete` method area not given in the interface 
-itself but instead they are written in the implementing class (signer). Again, the implementing class 
+sign the contract). The implementation details of the `compete` method are not given in the interface 
+itself but instead, they are written in the implementing class (signer). Again, the implementing class 
 (contract signer) can be any type of athlete as they are all required to compete.
 
 This may all still seem a bit strange and why we do this in programming may not yet be clear.
@@ -148,7 +148,7 @@ through this tutorial.
    **NOTE:** In Java, the declaration of an abstract method in the source code for an interface may omit
    the `public` visibility modifier. If `public` is omitted in this context, the abstract method is
    still assumed to have `public` visibility. This behavior is different for classes, a topic that will
-   be covered more in depth at a later time when the nuances of visibility are presented. 
+   be covered more in-depth at a later time when the nuances of visibility are presented. 
 
 1. Generate, host, and view the API documentation website for the starter code provided with this tutorial.
    Find the `Styleable` interface on the website and compare the documentation provided there with what
@@ -177,14 +177,14 @@ specific details regarding how an athlete will compete are up to the athlete (no
    
    **Note:** If the interface is not in the same package as the implementing class, then you will need to add
    an `import` statement or use the fully qualified name of the interface. If more than one interface
-   is being implemented, then they can be written in a comma separated list following the
+   is being implemented, then they can be written in a comma-separated list following the
    `implements` keyword.
    
 1. As we mentioned before, when a class properly implements an interface in Java, it is required to 
    provide implementations 
    for each of the abstract methods defined in the interface. If you inspect the source code for the 
    `cs1302.interfaces.impl.Fancy` class, you will see the abstract methods from `Styleable` 
-   implemented. Notice that the implementatons contain method bodies (instead of their signatures
+   implemented. Notice that the implementations contain method bodies (instead of their signatures
    ending with a semicolon). A specific example can be seen with the `unstyle()` method 
    in [`Fancy.java`](src/cs1302/interfaces/impl/Fancy.java):
    
@@ -220,13 +220,13 @@ specific details regarding how an athlete will compete are up to the athlete (no
 
 In this section, we will motivate **why** we set up the interface/implementing class relationship. The main
 benefit is type compatibility between the interface type and the implementing class type(s). Leveraging this
-compatibility will lead to more elegant code that works with objects of any class that implement the interface.
-Connecting this to our real world example, we could write code that works with all athletes instead of having
+compatibility will lead to more elegant code that works with objects of any class that implements the interface.
+Connecting this to our real-world example, we could write code that works with all athletes instead of having
 to write separate (but similar) code for each type of athlete. Would you rather write one method that works
 for all athletes or write individual methods for basketball players, football players, track athletes, golfers, 
 etc.? With that in mind, let's go back to our code example:
 
-1. Interfaces are reference types in Java. This means that they can be serve as 
+1. Interfaces are reference types in Java. This means that they can serve as 
    the type for a reference variable. You should be familiar with the use of class names for reference
    variable types. The code snippet below illustrates both scenarios:
    
@@ -245,7 +245,7 @@ etc.? With that in mind, let's go back to our code example:
    ```
    
 1. When an object is referred to via a reference variable with an interface type, the only methods
-   than can be called using that variable are the ones declared in the interface, regardless of whether
+   then can be called using that variable are the ones declared in the interface, regardless of whether
    the object's class declared other methods. For example, even though the
    `getAbout()` method is declared in the [`SuperFancy.java`](src/cs1302/interfaces/impl/SuperFancy.java)
    class and therefore _is_ part of a `SuperFancy` object, it would not be available via an
@@ -272,7 +272,7 @@ etc.? With that in mind, let's go back to our code example:
    class, which are common to all objects in Java. We will come back to the `Object` class
    in a future tutorial or reading, but it includes methods like `equals` and `toString`. 
    
-1. You might be wondering why the previous example is useful? If so, that's okay. In general,
+1. You might be wondering why the previous example is useful. If so, that's okay. In general,
    you should try to be specific with the types you use for variables. However, the ability
    to assign object references to variables with interface types leads to a powerful programming
    technique known as **polymorphism**. Polymorphism is a fancy word (might be fun to style it in
@@ -308,8 +308,8 @@ etc.? With that in mind, let's go back to our code example:
     You should inspect both methods in the source code closely. What should they do? 
     What do they do? 
     
-    Write what you expect the output to be from an execution of `StyleDriver`. Then, 
-    compile and run the code provided with this tutorial. Since there are multiple 
+    Write what you expect the output to be from the execution of `StyleDriver`. Then, 
+    compile and run the starter code provided in this tutorial. Since there are multiple 
     dependencies, the order of compilation matters:
     
     1. `src/cs1302/interfaces/contract/Styleable.java`
@@ -317,7 +317,7 @@ etc.? With that in mind, let's go back to our code example:
     1. `src/cs1302/interfaces/impl/SuperFancy.java`
     1. `src/cs1302/interfaces/StyleDriver.java`
     
-    Remember, you may need to specify the class path in addition to the destination
+    Remember, you may need to specify the classpath in addition to the destination
     when using `javac` to compile Java code that depends on other Java code. If you need a
     refresher on this subject, then refer to the 
     [Java Packages Tutorial Part 1](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/packages1.md) and
