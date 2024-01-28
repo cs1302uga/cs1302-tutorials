@@ -188,7 +188,9 @@ that indicates that the location of the `doc` directory was not set properly. To
    1. Remove the broken symbolic link that's broken from `public_html` using the `rm` command.
    2. Run the `ln -s` command again using the full **absolute path** to your `doc` directory as the
       first argument.
-   3. If these steps don't fix the problem, share a screenshot of the output of
+   3. Verify that the new symbolic link is not red/flashing by running `ls -l ~/public_html` again.
+   4. Visit API documentation website  in your browser.
+   5. If these steps don't fix the problem, share a screenshot of the output of
       `ls -l ~/public_html` along with the command you used to generate the symbolic link
       on Piazza, and an instructor or TA will help you diagnose the problem.
       
