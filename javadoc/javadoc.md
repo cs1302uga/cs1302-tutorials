@@ -163,7 +163,8 @@ this tutorial.
      filename lists an arrow pointing to the link target. 
 
 1. Navigate to the following URL in your web browser, replacing `user` with your Odin
-   username:
+   username in the URL below. If you have any trouble viewing your website, see the next
+   section for troubleshooting tips:
 
    ```
    https://webwork.cs.uga.edu/~user/cs1302-javadoc-doc/
@@ -171,8 +172,26 @@ this tutorial.
 
    Congratulations! If you followed the steps correctly, then you should see the API
    documentation website that you generated earlier. Does this website look similar to any 
-   other websites that you may have visited? 
+   other websites that you may have visited?
 
+### Troubleshooting Tips
+
+If your API website is not working as expected, run the command:
+
+   ```
+   ls -l ~/public_html
+   ```
+
+to list the contents of your `public_html` directory. If you see a red/flashing link, 
+that indicates that the location of the `doc` directory was not set properly. To fix this:
+
+   1. Remove the broken symbolic link that's broken from `public_html` using the `rm` command.
+   2. Run the `ln -s` command again using the full **absolute path** to your `doc` directory as the
+      first argument.
+   3. If these steps don't fix the problem, share a screenshot of the output of
+      `ls -l ~/public_html` along with the command you used to generate the symbolic link
+      on Piazza, and an instructor or TA will help you diagnose the problem.
+      
 ### Try It
 
 1. When you first visit the website, you will see a link to the `Circle` class on the left and
