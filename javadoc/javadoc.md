@@ -163,8 +163,8 @@ this tutorial.
      filename lists an arrow pointing to the link target. 
 
 1. Navigate to the following URL in your web browser, replacing `user` with your Odin
-   username in the URL below. If you have any trouble viewing your website, see the next
-   section for troubleshooting tips:
+   username in the URL below (leave the `~`). If you have any trouble viewing your website,
+   see the next section for troubleshooting tips:
 
    ```
    https://webwork.cs.uga.edu/~user/cs1302-javadoc-doc/
