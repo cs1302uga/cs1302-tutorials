@@ -108,7 +108,7 @@ Let's look at an example.
            Scanner input = null;
            try {
                input = new Scanner(notesFile);
-           } catch(FileNotFoundException e) {
+           } catch (FileNotFoundException e) {
                System.out.println(e.getMessage());
            }
            System.out.println(input.nextLine());
