@@ -1,5 +1,5 @@
-.. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Fall%202023-green
-   :alt: Approved for: Fall 2023
+.. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Spring%202024-blue
+   :alt: Approved for: Spring 2024
 
 .. external links
 .. |jls11_access_control| replace:: The Java Language Specification (JLS) 11 Section 6.6
@@ -117,8 +117,8 @@ that follows it.
        } // for
    } // updateAges
 
-On the line labelled ``LINE1``, the code attempts to access the
-``checkAge`` method, an instance method declared within another
+On the line labeled ``LINE1``, the code attempts to access the
+``checkAge`` method, which is an instance method declared within another
 class. Since that method is private, it's not visible from this line
 because private members are only visible from within the class where
 they are declared. If you try to compile ``OtherClass.java``, then
