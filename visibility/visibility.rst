@@ -55,7 +55,7 @@ at each level.
 Visibility Name  Modifier Keyword  UML Symbol  Top-Level [1]_  Member-Level [2]_  Local-Level [3]_
 ===============  ================  ==========  ==============  =================  ================
 private          ``private``       ``-``       |N|             |Y|                |N|
-package-private  ..                ``~``       |Y|             |Y|                |N|
+package private  ..                ``~``       |Y|             |Y|                |N|
 protected        ``protected``     ``#``       |N|             |Y|                |N|
 public           ``public``        ``+``       |Y|             |Y|                |N|
 ===============  ================  ==========  ==============  =================  ================
