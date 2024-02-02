@@ -1,5 +1,5 @@
-.. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Fall%202023-green
-   :alt: Approved for: Fall 2023
+.. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Spring%202024-blue
+   :alt: Approved for: Spring 2024
 
 .. external links
 .. |uml_tutorial| replace:: UML Class Diagrams
@@ -55,13 +55,13 @@ at each level.
 Visibility Name  Modifier Keyword  UML Symbol  Top-Level [1]_  Member-Level [2]_  Local-Level [3]_
 ===============  ================  ==========  ==============  =================  ================
 private          ``private``       ``-``       |N|             |Y|                |N|
-package private  ..                ``~``       |Y|             |Y|                |N|
+package-private  ..                ``~``       |Y|             |Y|                |N|
 protected        ``protected``     ``#``       |N|             |Y|                |N|
 public           ``public``        ``+``       |Y|             |Y|                |N|
 ===============  ================  ==========  ==============  =================  ================
 
 .. [1] A **top-level declaration** is the outermost declaration in a ``.java`` file.
-       Some things that can be declared at the top-level include classes and
+       Some things that can be declared at the top level include classes and
        interfaces.
 
 .. [2] A **member-level declaration** is any declaration of a class or interface member.
@@ -92,22 +92,22 @@ snippets.
 
 We will take some liberties when discussing examples involving multiple
 labelled lines (e.g., ``LINE1``) of code; for example, whenever we consider
-whether or not a line will work, we will make a good faith assumption that
-all other labelled lines of code will also work, even if we find out later
-that they don't. We mention this because, technically, if one does not work,
+whether or not a line will work, we will make a good-faith assumption that
+all other labeled lines of code will also work, even if we find out later
+that they don't. We mention this because, technically if one does not work,
 then the whole thing might not work; however, at the same time, it's usually
 less constructive to break such an example into multiple examples as that
 impacts readability.
 
-While you are likely already familiar private and public visibility, please do not
+While you are likely already familiar with private and public visibility, please do not
 assume that you already understand how it works. Over the years, we have
-found that many students have a somewhat flawed conceptual model for how
-some visibility options work that is actually more complicated than what it actually is.
+found that many students have a somewhat flawed conceptual model of how
+visibility options work that is often more complicated than it needs to be.
 Regardless of your experience, you should work through each visibility example
-in this tutorial until you are able to:
+in this tutorial until you can:
 
 1. correctly determine the visibility outcome and justification; and
-2. write your own code that illustrates a similar visibility scenario.
+2. write code that illustrates a similar visibility scenario.
 
 We encourage you to make Piazza posts about your examples, ask questions,
 and help others to understand the important details of visibility.
