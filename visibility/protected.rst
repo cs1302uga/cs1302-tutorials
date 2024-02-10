@@ -1,5 +1,5 @@
-.. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Fall%202023-green
-   :alt: Approved for: Fall 2023
+.. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Spring%202024-blue
+   :alt: Approved for: Spring 2024
 
 Visibility Reading
 ##################
@@ -24,7 +24,7 @@ Name             Same Class  Same Package  Child Class  Elsewhere
 protected        |Y|         |Y|           |Y|          |N|
 ===============  ==========  ============  ===========  =========
 
-* In Java, the ``protected`` modifier must be included in a member's declararion for
+* In Java, the ``protected`` modifier must be included in a member's declaration for
   the compiler to consider it a protected member.
 * In UML, the ``#`` symbol is used just before a member's identifier to
   illustrate that it's protected.
@@ -69,7 +69,7 @@ see one or the other, but not both).
        lotr.setPrice(lotr.getPrice() * 0.8); // <---- LINE3
    } // main
 
-The visibility situation for each labelled line is summarized in the table
+The visibility situation for each labeled line is summarized in the table
 below.
 
 ====  ===================  =========  ===========  ==============  =============  ===========  ========
@@ -105,7 +105,7 @@ the UML diagram below and the code snippet that follows it.
        lotr.setPrice(lotr.getPrice() * 0.8); // <---- LINE1
    } // main
 
-The visibility situation for each labelled line is summarized in the table
+The visibility situation for each labeled line is summarized in the table
 below.
 
 ====  ===================  =========  ===========  ===============  =============  ===========  ========
@@ -142,7 +142,7 @@ To illustrate this, let's consider the UML diagram below and the code snippet th
        a.doStuff(); // <---- LINE3
    } // main
 
-The visibility situation for each labelled line is summarized in the table
+The visibility situation for each labeled line is summarized in the table
 below.
 
 ====  ===================  =========  =====  ==========  =============  ===========  ==================  =====  ========
@@ -172,7 +172,7 @@ You may recall from the inheritance-related readings that **child classes
 inherit instance members** from their parent. In such a scenario, it's
 usually pretty clear that inherited members are declared elsewhere
 (in the parent class); however, some situations involving overloading,
-shadowing, and initialization can be tricky to determine.
+shadowing and initialization can be tricky to determine.
 
 Overload Resolution
 ===================
@@ -188,7 +188,7 @@ to parse, but the general rule of thumb is this:
     the visibility that's used by the compiler is determined by the type of the
     variable ``var`` itself, and not the type of the object that ``var``
     refers to. Java's dynamic binding [8]_ will still bind the call to the
-    override that's closest to object's type (e.g., to allow for polymorphism).
+    override that's closest to the object's type (e.g., to allow for polymorphism).
 
 Perhaps that's a little dense. You may find it easier to remember this:
 
@@ -293,10 +293,10 @@ LINE  Name                 Declared   In           From         Same Package?  F
 ====  ===================  =========  ===========  ===========  =============  ===========  ===========  ===========  ========
 
 In practice, the scenario attempted on ``LINE3`` doesn't usually make sense. When a child class
-wants to call a protected member declared in a parent, it's usually the inherited verson
+wants to call a protected member declared in a parent, it's usually the inherited version
 of the method that is intended and not the version bound to objects of the parent. Since
 it would not make sense to prevent the assignment of parent objects to reference variables
-of the parent type, the official definition and its requirement align with usual intent
+of the parent type, the official definition and its requirement align with the usual intent
 that we just described. Even though ``LINE3`` is in a child class (a valid location), it
 does not have access to a protected member declared in a parent since the type of the
 variable used to attempt that access is above the child class in the overall
