@@ -1,5 +1,5 @@
-.. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Fall%202023-green
-   :alt: Approved for: Fall 2023
+.. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Spring%202024-blue
+   :alt: Approved for: Spring 2024
 
 Visibility Reading
 ##################
@@ -11,8 +11,8 @@ Package Private Visibility
 
 Instead of saying that something has **package private** visibility, we usually
 just say that it's package private. In Java, only top-level and member-level
-declarations are allowed to package private. Things that are package private are slightly
-more visible than things that are private; they are **only visible from lines of code
+declarations are allowed to be package private. Entities that are package private are slightly
+more visible than entities that are private; they are **only visible from lines of code
 in the same package**.
 
 ===============  ==========  ============  ===========  =========
@@ -30,7 +30,7 @@ package private  |Y|         |Y|           |N|          |N|
   within an interface, where the omission of a visibility modifier defaults
   a declaration's visibility to public.
 * In UML, the ``~`` symbol is used just before an identifier to
-  illustrate that it's package private. Some UML programs may not support displaying
+  illustrate that it is package private. Some UML programs may not support displaying
   the visibility for top-level declarations; in those cases, a quick hack
   is to include the ``~`` as part of the name. Although omitting a visibility
   modifier in Java code may default to package private, the same is not true
@@ -72,7 +72,7 @@ let's consider the UML diagram below and the two code snippets that follow it.
 
    // ... rest omitted
 
-On the line labelled ``LINE1``, the author omitted a visibility modifier
+On the line labeled ``LINE1``, the author omitted a visibility modifier
 in their top-level declaration of the ``Utility`` class. As discussed earlier,
 this causes the class to default to package private visibility. On ``LINE2``,
 which exists in ``Driver.java`` in a different package [6]_, an attempt is made to
