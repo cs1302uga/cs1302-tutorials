@@ -1,6 +1,6 @@
 # ADTs and Lists Tutorial
 
-![Approved for: Fall 2023](https://img.shields.io/badge/Approved%20for-Fall%202023-green)
+![Approved for: Spring 2024](https://img.shields.io/badge/Approved%20for-Spring%202024-blue)
 
 ## Introduction
 
@@ -30,7 +30,7 @@ any vending machine implementation have a `vendItem` operation, but it should op
 perspective, as described in the ADT description. 
 
 **What does the ADT not describe?** It doesn't describe 
-how the actual vending occurs. One vending machine implementation might use conveyer belts to vend an item,
+how the actual vending occurs. One vending machine implementation might use conveyor belts to vend an item,
 while another vending machine implementation might use robotic arms to do the same. That is, different
 vending machine manufacturers are responsible for the inner workings of their implementations so long
 as the `vendItem` operation works as previously described. Take special care to notice that the ADT
@@ -102,8 +102,8 @@ references in our examples but this same structure could apply to any datatype. 
 represents the number of items on the list. The `size` variable is optional but recommended as it simplifies the 
 implementation of many of the List ADT operations.
 
-The main benefit of an array-based List implementation is extremely fast access to List elements. This is due to the fact
-that arrays are laid out in a contiguous block of primary memory. The main drawback of an array-based approach is that
+The main benefit of an array-based List implementation is extremely fast access to List elements. This is because 
+arrays are laid out in a contiguous block of primary memory. The main drawback of an array-based approach is that
 an array's size is fixed. Therefore, if you want to increase the size of an array, you are forced to create a new array of 
 the larger size and subsequently copy over the elements of the old array to the new, larger array. As you can imagine, 
 creating an array and copying all elements is an expensive operation for the CPU to perform — especially when the array 
@@ -291,7 +291,7 @@ state of the List object, `myList`, using both an array and a linked list as the
    </tr>
    </table>
 
-1. **Remove first element.** Remember, the `remove` operation will shift any subsequent elements
+1. **Remove the first element.** Remember, the `remove` operation will shift any subsequent elements
    in the list to the left (i.e. subtracts one from their indices). 
    
    ```java
@@ -318,7 +318,7 @@ state of the List object, `myList`, using both an array and a linked list as the
    </tr>
    </table>
 
-1. **Get first element.** After all the changes to the list, we expect `"Milk"` to be the
+1. **Get the first element.** After all the changes to the list, we expect `"Milk"` to be the
    first item in the list.
 
    ```java
@@ -360,7 +360,7 @@ state of the List object, `myList`, using both an array and a linked list as the
    <table>
    <tr>
    <td>In the array list implementation, the <code>size</code> is updated to <code>0</code>. It's up to the implementer whether or not
-    the contents of the array are modified, since the user of the list does not interact with them directly.</td>
+    the contents of the array are modified since the user of the list does not interact with them directly.</td>
    <td><img width="1500" src="res/Array7.png"></td>
    </tr>
    <tr>
@@ -400,7 +400,7 @@ is more costly. Especially when the desired element is located toward the end of
 
 ### Linked List Add Operation
 
-The main benefit of an linked list implementation is the fact that these structures can easily increase size by adding a 
+The main benefit of a linked list implementation is the fact that these structures can easily increase size by adding a 
 new, dynamically allocated node object. The images below demonstrate how this might be accomplished if the instruction
 `myList.add(2, "F")` is executed.
 
@@ -439,7 +439,7 @@ and the loop required to transfer the contents from the old array to the new one
 
 The chosen implementation of an interface can have a large impact on the program in which it is used. Selecting the 
 appropriate implementation is an important decision. In this tutorial, we discussed a linked list vs array implementation
-for the List ADT. The benefits and drawbacks of each apprach are summarized in the table below:
+for the List ADT. The benefits and drawbacks of each approach are summarized in the table below:
 
    |        | Array Approach          | Linked List Approach      |
    |--------|-------------------------|---------------------------|
