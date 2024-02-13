@@ -4,21 +4,19 @@
 
 ## Introduction
 
-An **Abstract Data Type** (ADT) is a high-level (abstract) description of a data type which includes the operations (methods)
-available on the data type as well as what users of the data type should expect when using those operations. 
-In 1302, it may be helpful to think of an ADT as an interface containing the abstract methods that are available on
-a data type combined with the full documentation (Javadoc) explaining what each method does. In other words, you can think of an 
-ADT as a well-commented interface describing the operations that an implementing class must contain.
+An **Abstract Data Type** (ADT) is a high-level (abstract) description of the operations (methods) available on a 
+collection of data.
 
-Just like with interfaces, the exact implementation details, including the underlying structure, often vary with each
-implementing class.
+In 1302, you can think of an ADT as a well-documented interface describing the data-related operations that 
+implementing classes must have. As with other interfaces we have seen, the exact implementation details, 
+including the underlying structure used to store the data, may vary with each implementing class.
 
-In this tutorial, we explain how the operations in the popular `List` ADT can be implemented using two different data
-structures. The first implementation will use an array and we will call it `ArrayBasedList`. The second implementation
-will use a data structure that is likely new to you, a linked list, and we will call it `LinkedBasedList`. Please note
-that both of these implementing classes fulfill the requirements outlined in the documentation for the `List` ADT. They 
-just do so in different ways. At the end of this tutorial, we explain how each implementation is useful depending on
-what your application does.
+In this tutorial, we explain how the operations in the popular `List` ADT (interface) can be implemented using two different 
+underlying data structures for storing the data in the list. The first implementation, `ArrayBasedList`, uses an array, and 
+the second, `LinkedBasedList` uses a linked list. If you haven't worked with linked lists before, we will cover them in this
+tutorial as well. Both implementing classes fulfill the requirements outlined in the documentation
+for the `List` ADT in different ways. Thanks to polymorphism, code written to use the `List` interface will work regardless
+of whether the underlying object is an `ArrayBasedList` or a `LinkedBasedList`!
 
 In general, there are often many useful implementations for a given ADT. The decision of which implementation to use depends on 
 which one would be more efficient for the application at hand. 
@@ -45,10 +43,10 @@ any vending machine implementation have a `vendItem` operation, but it should op
 perspective, as described in the ADT description. 
 -->
 
-## The List ADT
+## The List Interface (ADT)
 
-A common ADT is the List ADT. When thinking of a List as an abstract type, you can think of a List as an ordered collection 
-of objects. There are a number of important operations (abstract methods) needed for a List. Some common list operations 
+A common ADT is the List interface. When thinking of a List as an abstract type, you can think of a List as an ordered collection 
+of objects. There are several important operations (abstract methods) needed for a List. Some common list operations 
 include, but are not limited to:
 
 * Creating a new list.
@@ -81,11 +79,11 @@ under exceptional circumstances.
 
 In the example below, we provide a few List ADT method calls. It is worth highlighting again that we can understand 
 this code without knowing any details of the underlying implementation. We recommend tracing through the code to see 
-if you can get the same output shown below. Since we don't know what a List is at this point, you can represent the
-`myList` using any structure you want.
+if you can get the same output shown below. You can represent the internals of the object referred to by
+`myList` using either implementation.
 
    ```java
-   List myList = new List();
+   List myList = new ArrayBasedList(); // or LinkedBasedList() 
    myList.add(0, "Bread");
    myList.add(0, "Cheese");
    myList.add(1, "Milk");
