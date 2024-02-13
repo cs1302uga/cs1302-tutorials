@@ -6,10 +6,25 @@
 
 An **Abstract Data Type** (ADT) is a high-level (abstract) description of a data type which includes the operations (methods)
 available on the data type as well as what users of the data type should expect when using those operations. 
-The exact implementation details, including the underlying structure, are left to the programmer. 
-There are often many useful implementations for a given ADT. The decision of which implementation to use depends on 
-which one would be more efficient for the application at hand. You can think of an ADT as a well-commented interface 
-describing the operations that an implementing class must contain.
+In 1302, it may be helpful to think of an ADT as an interface containing the abstract methods that are available on
+a data type combined with the full documentation (Javadoc) explaining what each method does. In other words, you can think of an 
+ADT as a well-commented interface describing the operations that an implementing class must contain.
+
+Just like with interfaces, the exact implementation details, including the underlying structure, often vary with each
+implementing class.
+
+In this tutorial, we explain how the operations in the popular `List` ADT can be implemented using two different data
+structures. The first implementation will use an array and we will call it `ArrayBasedList`. The second implementation
+will use a data structure that is likely new to you, a linked list, and we will call it `LinkedBasedList`. Please note
+that both of these implementing classes fulfill the requirements outlined in the documentation for the `List` ADT. They 
+just do so in different ways. At the end of this tutorial, we explain how each implementation is useful depending on
+what your application does.
+
+In general, there are often many useful implementations for a given ADT. The decision of which implementation to use depends on 
+which one would be more efficient for the application at hand. 
+
+<!--
+TODO: Move this to the interface tutorial?
 
 ### An Analogy
 
@@ -28,21 +43,13 @@ care _how_ a machine vends. An operation for a vending machine might be describe
 In this analogy, we have a VendingMachine ADT with one operation called `vendItem`. Not only should
 any vending machine implementation have a `vendItem` operation, but it should operate, from the user's
 perspective, as described in the ADT description. 
-
-**What does the ADT not describe?** It doesn't describe 
-how the actual vending occurs. One vending machine implementation might use conveyor belts to vend an item,
-while another vending machine implementation might use robotic arms to do the same. That is, different
-vending machine manufacturers are responsible for the inner workings of their implementations so long
-as the `vendItem` operation works as previously described. Take special care to notice that the ADT
-description did not only describe what should happen under normal circumstances. It described what
-should happen under exceptional circumstances as well. It did so without ever saying _how_ any of that
-should be done.
+-->
 
 ## The List ADT
 
 A common ADT is the List ADT. When thinking of a List as an abstract type, you can think of a List as an ordered collection 
-of objects. There are a number of important operations needed for a List. Some common list operations include, but are not
-limited to:
+of objects. There are a number of important operations (abstract methods) needed for a List. Some common list operations 
+include, but are not limited to:
 
 * Creating a new list.
 * Retrieving an object in the list at a particular index.
@@ -63,8 +70,12 @@ we will use the following definitions:
 | `void`      | `clear()`                      | Removes all of the objects from the list. The list will be empty after this call returns. |
 | `String`    | `makeString(String separator)` | Returns a string representation of this list with every string in the sequence separated by the specified separator string. |
 
-Notice that the description and operations given above were independent of any underlying data structure or implementation.
-When thinking of _using_ an ADT, try to avoid worrying about those details.
+**What does the ADT not describe?** It doesn't describe 
+how the operations work internally. One list implementation might use an array to store the items in the list,
+while another list implementation might use a linked list to do the same. That is, different
+implementing classes are responsible for the inner workings of their implementations so long
+as the list operations work as previously described. The complete ADT will also describe what should happen 
+under exceptional circumstances.
 
 **List ADT Example**
 
