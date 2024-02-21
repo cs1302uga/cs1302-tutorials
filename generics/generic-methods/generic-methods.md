@@ -1,6 +1,6 @@
 # Generic Methods Reading
 
-![Approved for: Fall 2023](https://img.shields.io/badge/Approved%20for-Fall%202023-green)
+![Approved for: Spring 2024](https://img.shields.io/badge/Approved%20for-Spring%202024-blue)
 
 This reading introduces the reader to generic methods in Java.
 
@@ -101,7 +101,7 @@ Here are some examples:
 
 ## Additional Reading with More Examples
 
-Now that you're familiar with some of the basic concepts relate to generic
+Now that you're familiar with some of the basic concepts related to generic
 methods in Java, you should read the official Oracle reading:
 
 * [The Java™ Tutorials: Generic Methods](https://docs.oracle.com/javase/tutorial/java/generics/methods.html)
