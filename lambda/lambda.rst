@@ -1,6 +1,6 @@
 .. rst setup
 .. sectnum::
-.. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Fall%202023-green
+.. |approval_notice| image:: https://img.shields.io/badge/Approved%20for-Spring%202024-blue
 .. copyright and license information
 .. |copy| unicode:: U+000A9 .. COPYRIGHT SIGN
 .. |copyright| replace:: Copyright |copy| Michael E. Cotterell, Bradley J. Barnes, and the University of Georgia.
