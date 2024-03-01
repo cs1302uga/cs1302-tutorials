@@ -217,7 +217,7 @@ Let's break it down:
    //         1          |3|                       2                         |
    //                                    the lambda expression
 
-1. First, a reference variable named ``shout`` is declared with type
+1. First, a reference variable named ``shout`` is declared with the type
    ``Consumer<String>``;
 
 2. A lambda expression is used to **create an object** that has one method
@@ -243,12 +243,12 @@ interface type. Here's an example:
 
    .. code:: java
 
-      // this won't compile, but it's a good way to get started
+      // This won't compile, but it's a good way to get started
       Consumer<String> shout = @Override public void accept(String t) {
           return System.out.println(t.toUpperCase());
       };
 
-2. Remove the annotation (``@Override``), the visibility modifer (``public``),
+2. Remove the annotation (``@Override``), the visibility modifier (``public``),
    the return type (``void``) and the method name (``accept``):
 
    .. code:: java
