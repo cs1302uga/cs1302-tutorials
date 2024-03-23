@@ -1,6 +1,6 @@
 # JavaFX Custom Component Tutorial
 
-![Approved for: Fall 2023](https://img.shields.io/badge/Approved%20for-Fall%202023-green)
+![Approved for: Spring 2024](https://img.shields.io/badge/Approved%20for-Spring%202024-blue)
 
 JavaFX is a library for creating and delivering applications with graphical user interfaces (GUIs)
 in Java. In this tutorial, we will use JavaFX 17. The API documentation for
@@ -14,11 +14,11 @@ using inheritance and polymorphism to emphasize code reuse.
 
 ## Getting Started
 
-1. First, you need to ensure that your terminal emulator supports X-forwarding. This allows
+1. First, you should ensure that your terminal emulator supports X-forwarding. This allows
    the GUI parts of your application to be forwarded to your local computer in addition to
    the terminal output. To check this, work through the rest of this section of the
-   tutorial. First, login to Odin using the `ssh` command along with the `-XY` option.
-   As always, be sure to replace `username` with your Odin username.
+   tutorial. First, log in to Odin using the `ssh` command with the `-XY` option.
+   As always, replace `username` with your Odin username.
    
    ```
    $ ssh -XY username@odin.cs.uga.edu
@@ -75,8 +75,8 @@ using inheritance and polymorphism to emphasize code reuse.
    </table>
 
 1. The default size for the image in the ImageView container is 500x500 (even though the image says 300x300). 
-   Do a quick google search for "500x500 images" and load one or two of the images to make sure the app is 
-   functioning properly. **Note:** The `Image` class only supports the BMP, GIF, JPEG, and PNG filetypes.
+   Do a quick Google search for "500x500 images" and load one or two of the images you find to ensure the
+   app functions properly. **Note:** The `Image` class only supports the BMP, GIF, JPEG, and PNG file types.
    
 ## Creating a Custom Component
 
@@ -116,7 +116,7 @@ using inheritance and polymorphism to emphasize code reuse.
    of redundancy!
    
    Consider the following scene graph where we replace the lower `VBox` 
-   sub-graphs with `ImageLoader`, a custom component that we will create 
+   sub-graphs with `ImageLoader`, a custom component we will create 
    in the next step. The resulting scene graph is much cleaner (kinda looks
    like a giraffe, no?)!
 
@@ -134,7 +134,7 @@ using inheritance and polymorphism to emphasize code reuse.
           |--                                                --|
    ```
    
-1. Now consider the sub-graph for the `ImageLoader` component that we
+1. Now consider the sub-graph for the `ImageLoader` component we
    will create. We want to avoid repeating this work by replacing this redundant
    part of the original scene graph with a single `ImageLoader` component:
 
@@ -159,7 +159,7 @@ using inheritance and polymorphism to emphasize code reuse.
    visible).
 
    1. The class should contain the `static` constants from
-      the `ImageApp` class. They can be cut and paste directly
+      the `ImageApp` class. They can be cut and pasted directly
       from that class, perhaps changing them to `protected`
       visibility if you wish to do so. That way they can be accessed
       by the other classes in the package.
@@ -205,7 +205,7 @@ using inheritance and polymorphism to emphasize code reuse.
       built into it. Once we complete this class, we will be able to add objects of this class to a
       scene graph and all the messy details of creating that object will be hidden inside of `ImageLoader`!
       
-   1. Now, move the `loadImage` method from `ImageApp` to `ImageLoader`. This is the method that is
+   1. Move the `loadImage` method from `ImageApp` to `ImageLoader`. This is the method that is
       called when the button is clicked. Don't forget to set the handler on your `ImageLoader`'s button.
       
    1. You've probably noticed that `ImageApp` has significantly decreased
