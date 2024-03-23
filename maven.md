@@ -1,10 +1,10 @@
 # Maven Tutorial
 
-![Approved for: Fall 2023](https://img.shields.io/badge/Approved%20for-Fall%202023-green)
+![Approved for: Spring 2024](https://img.shields.io/badge/Approved%20for-Spring%202024-blue)
 
 ## Maven
 
-This tutorial is designed to help you learn how to setup and work with Java-based 
+This tutorial is designed to help you learn how to set up and work with Java-based 
 Maven projects. While shell scripting is useful in a wide variety of situations, Maven is a more
 powerful option for compiling your Java projects. According to its authors, the [Apache Maven](https://maven.apache.org/)
 tool, named after a [Yiddish word](https://en.wikipedia.org/wiki/Maven) meaning 
@@ -17,7 +17,7 @@ usually figure out the rest -- even with dependencies!
 
 ## Install Maven on Odin
 
-Maven should already be installed and setup on Odin. To confirm that Apache Maven is installed 
+Maven should already be installed and set up on Odin. To confirm that Apache Maven is installed 
 correctly, type the following command:
 
 ```
@@ -35,7 +35,7 @@ OS name: "linux", version: "3.10.0-1160.42.2.el7.x86_64", arch: "amd64", family:
 ```
 
 If you are on Odin and the `mvn` command is not recognized, then please
-ensure that you have setup the CSCI 1302 shell profile according to the
+ensure that you have set up the CSCI 1302 shell profile according to the
 instructions provided [here](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/unix/unix-getting-started.rst#75bash_profile-required-command).
    
 ## Creating a Project
@@ -57,10 +57,10 @@ mode later in this tutorial once you are more familiar with the tool.
    | `-DarchetypeArtifactId` | Archetype         | An archetype is a template for the project. For most Java-based projects, the `maven-archetype-quickstart` archetype can be used. |
    | `-DarchetypeVersion`    | Archetype Version | The archetype / template version to use. At the time of this writing, the latest version of the `maven-archetype-quickstart` archetype is `1.4`. |
    
-1. With those terms in mind, let's create a project directory for this turorial called `cs1302-mvn` 
-   with a primary package called `cs1302.mvn` using following command (be careful to type the command 
-   exactly as given). You can press <Enter> after each `\` to contine the command on the next line. This
-   is equivalent to typing it all on one line but many people prefer to break a long command up on separate
+1. With those terms in mind, let's create a project directory for this tutorial called `cs1302-mvn` 
+   with a primary package called `cs1302.mvn` using the following command (be careful to type the command 
+   exactly as given). You can press <Enter> after each `\` to continue the command on the next line. This
+   is equivalent to typing it all on one line but many people prefer to break a long command up into separate
    lines:
    
    ```
@@ -87,7 +87,7 @@ mode later in this tutorial once you are more familiar with the tool.
    $ find cs1302-mvn
    ```
    
-   It should looks similar to this:
+   It should look similar to this:
    
    ```
    cs1302-mvn/
@@ -105,7 +105,7 @@ mode later in this tutorial once you are more familiar with the tool.
    cs1302-mvn/pom.xml
    ````
    
-   You probably notice that it created some starter code for you! Here, the
+   You may have noticed that it created some starter code for you! Here, the
    `src/main/java` subdirectory is the default package location for source code.
    This is a small change from previous exercises and tutorials where the default package 
    for source code was `src`. A simple driver class with a fully qualified name of 
@@ -114,11 +114,11 @@ mode later in this tutorial once you are more familiar with the tool.
    
    The `src/test/java` directory is the default package location for unit tests,
    a topic that will be covered at a later point in time. The last file that you see 
-   above, `pom.xml`, contains the configuration settings / metadata for the Project 
+   above, `pom.xml`, contains the configuration settings/metadata for the Project 
    Object Model (POM), which is what Maven uses to do its magic.
    
 1. In the future, you might try omitting the `-B` (batch mode) and subsequent options
-   to use Maven's interactive mode. Instead of specifiying some of the project properies
+   to use Maven's interactive mode. Instead of specifying some of the project properties
    as command-line options, Maven will prompt you for their values. 
 
 ## Updating the POM
@@ -138,12 +138,12 @@ to use Java 7 (`1.7`)! We can remedy this by updating the project's `pom.xml` fi
    </properties>
    ```
    
-   That's it! After making that change, your project is now setup to use Java 17.
+   That's it! After making that change, your project is now set up to use Java 17.
 
-1. You can also add / update project dependencies. In the past, you may have done this
-   by manually including a JAR file on your class path. With Maven, we can add the 
+1. You can also add/update project dependencies. In the past, you may have done this
+   by manually including a JAR file on your classpath. With Maven, we can add the 
    dependency in the POM and Maven will download the necessary JAR file and add it to the 
-   class path for us! For example, the `pom.xml` file in your `cs1302-mvn` project already
+   classpath for us! For example, the `pom.xml` file in your `cs1302-mvn` project already
    contains the following dependencies:
    
    ```xml
@@ -158,7 +158,7 @@ to use Java 7 (`1.7`)! We can remedy this by updating the project's `pom.xml` fi
    ```
    
    This adds a dependency called [JUnit 4.11](https://search.maven.org/artifact/junit/junit-dep/4.11/pom)
-   To add more dependecies, you would simply add an additional `<dependency></dependency>` tag
+   To add more dependencies, you would simply add an additional `<dependency></dependency>` tag
    with appropriate values before the closing `</dependencies>` tag. Many libraries are packages
    for Maven. You can try searching for some on [Maven Central](https://search.maven.org/).
    
@@ -196,17 +196,17 @@ using Maven.
    |-------------|-------------|
    | `compile`   | Compile the source code of the project. | 
    | `clean`     | Remove compiled files from the project. |
-   | `site`      | Generate a website for the project that includes the API documention. |
+   | `site`      | Generate a website for the project that includes the API documentation. |
    | `package`   | Take the compiled code and package it into a JAR file. |
    | `test`      | Execute unit tests, if available, using the project's unit testing framework. |
-   | `exec:java` | Execute the class specified by `-Dexec.mainClass` with dependencies added to the class path. |
+   | `exec:java` | Execute the class specified by `-Dexec.mainClass` with dependencies added to the classpath. |
    | `archetype:generate` | Generate a project directory based on an archetype. |
    | `javadoc:javadoc` | Generate API documentation only. |
    
    To execute a phase using Maven, simply type the phase name after the `mvn` command.
    Pay careful attention to the output of each command as it usually provides lots of
    useful information about what worked or didn't work related to that command.
-   **The _first time_ you execute a phase after creating / updating the POM, Maven
+   **The _first time_ you execute a phase after creating/updating the POM, Maven
    may need to download some files;** this is normal behavior. 
    
 1. Let's try compiling the code:
@@ -215,9 +215,9 @@ using Maven.
    $ mvn compile
    ```
    
-   The first time that you do this for a particular project, Maven might neeed to download some
+   The first time that you do this for a particular project, Maven might need to download some
    of the dependencies defined in the POM -- it should not need to download every time. If
-   compilation is successful, then you should see something similar to the following:
+   the compilation is successful, then you should see something similar to the following:
    
    ```
    [INFO] Scanning for projects...
@@ -228,7 +228,7 @@ using Maven.
    [INFO]
    [INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ cs1302-mvn ---
    [INFO] Using 'UTF-8' encoding to copy filtered resources.
-   [INFO] skip non existing resourceDirectory cs1302-mvn/src/main/resources
+   [INFO] skip non-existing resourceDirectory cs1302-mvn/src/main/resources
    [INFO]
    [INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ cs1302-mvn ---
    [INFO] Changes detected - recompiling the module!
@@ -340,7 +340,7 @@ using Maven.
    
    **Doesn't work!?** If Maven complains about missing classes, then you may need 
    to update the `mvn-site-plugin` to a newer version than the default. 
-   The dependency information that should be included / updated in your `pom.xml` file 
+   The dependency information that should be included/updated in your `pom.xml` file 
    can be found 
    [here](https://maven.apache.org/plugins/maven-site-plugin/dependency-info.html).
    **Remember to backup your POM (i.e., make a backup copy) before making edits!**
@@ -376,8 +376,8 @@ using Maven.
 	 
    * It redirects standard output to an output stream that does not flush automatically. This
      can cause issues if your program reads and writes from standard input and standard output,
-	 respectively. This can usually be mitigated by peforming `System.out.flush()` whenever
-	 you need to synchronize between a print and subsequent read. For example:
+	 respectively. This can usually be mitigated by performing `System.out.flush()` whenever
+	 you need to synchronize between a print and a subsequent read. For example:
 	 
 	 ```java
 	 System.out.print("enter a number: ");
@@ -386,7 +386,7 @@ using Maven.
 	 ```
 	 
    However, if your project has a runtime dependency, i.e., a library that is required during
-   runtime, then the `exec:java` phase will automatically ensure that it is on the class path
+   runtime, then the `exec:java` phase will automatically ensure that it is on the classpath
    when the driver class is executed! This is especially convenient when there are multiple
    such dependencies.
    
