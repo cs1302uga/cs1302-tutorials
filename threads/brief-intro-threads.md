@@ -1,10 +1,10 @@
 # Brief Introduction to Java Threads
 
-![Approved for: Fall 2023](https://img.shields.io/badge/Approved%20for-Fall%202023-green)
+![Approved for: Spring 2024](https://img.shields.io/badge/Approved%20for-Spring%202024-blue)
 
 ## Prerequisites
 
-This tutorial assumes that the reader has a knowledge of basic Unix commands and experience working with a command-line text editor (e.g. emacs, vi, etc.). Readers should also be familiar with compiling and running Java programs from the command-line. 
+This tutorial assumes that the reader has a knowledge of basic Unix commands and experience working with a command-line text editor (e.g. emacs, vi, etc.). Readers should also be familiar with compiling and running Java programs from the command line. 
 To get the most out of this tutorial, you should follow along and take notes.
 
 ## Course-Specific Learning Outcomes
@@ -50,11 +50,11 @@ will only exit under two conditions:
 | *daemon*         | `true`       | `false`                |
 
 A thread's `daemon` property cannot be changed after the thread has started executing
-(i.e., after it's `start()` method has been called). When a new thread is created, its
+(i.e., after its `start()` method has been called). When a new thread is created, its
 `daemon` property is set to the same as the thread that created it. 
 
 The *main thread* is a *non-daemon thread*, so any new threads that are 
-created in the main thread will also be non-daemon threads, unless their 
+created in the main thread will also be non-daemon threads unless their 
 `daemon` value is changed to `true` using `setDaemon(true)` before they 
 are started.
 
@@ -115,7 +115,7 @@ public class ThreadDriver {
     /**
      * Creates and immediately starts a new daemon thread that executes
      * {@code target.run()}. This method, which may be called from any thread,
-     * will return immediately its the caller.
+     * will return immediately to the caller.
      * @param target the object whose {@code run} method is invoked when this
      *               thread is started
      */
