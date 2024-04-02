@@ -22,7 +22,7 @@ the standard data exchange procedure used by the |wiki_WWW|_ (i.e., the "web").
 Whenever a program (e.g., a web browser) tries to access web content (i.e.,
 content located at a ``http://``-prefixed or ``https://``-prefixed |wiki_URL|_
 or |wiki_URI|_), it uses an **HTTP client** (web client) to communicate with the
-**HTTP server** (web server) that hosts the content. Sometimes the program itself
+**HTTP server** (webserver) that hosts the content. Sometimes the program itself
 is an HTTP client (i.e., it knows all the protocol details); however, it's more
 common these days to use an HTTP client provided by a library.
 
@@ -33,7 +33,7 @@ From a program's perspective, the following steps are taken to access web conten
 3. (hopefully) receive an HTTP response message; then
 4. decide how to update its program state.
 
-Here is diagram that illustrates the entire high-level data exchange
+Here is a diagram that illustrates the entire high-level data exchange
 that might occur when a program attempts to access content hosted
 by an HTTP server:
 
@@ -100,12 +100,12 @@ providing a public constructor, the authors of |HttpRequest| decided to use
 the |builder_pattern| -- |HttpRequest| objects are constructing by *building*
 them using an |HttpRequest_Builder|_ object returned from |HttpRequest_newBuilder|_.
 The authors' use of the |builder_pattern| prevents the construction of
-incomplete request objects and provides an nice alternative to potentially
-complex looking constructor calls..
+incomplete request objects and provides a nice alternative to potentially
+complex-looking constructor calls..
 
 Most of the methods provided by |HttpRequest_Builder|
 merely update the request information stored in the builder object, then just
-return a reference to builder object itself so that you can update it further
+return a reference to the builder object itself so that you can update it further
 via additional method calls. Once all the request information is specified,
 the ``build()`` method is called to construct the actual |HttpRequest|
 object. The following two code snippets build a request object using the
@@ -168,7 +168,7 @@ the concept of a URL; all URLs are also `URIs <URI>`__.
 a JavaFX ``Image`` object using the data included in the body of the associated
 response.
 
-.. |GitHubApi| replace:: GutHub REST API
+.. |GitHubApi| replace:: GitHub REST API
 .. _GitHubApi: https://docs.github.com/en/rest
 
 .. |get_a_license| replace:: get a license
@@ -179,8 +179,8 @@ that we can interact with using HTTP requests -- instead of a URI referring to
 a "page" or "file", it refers to structured "data" that our program might
 leverage to accomplish some goal. For example, the |GitHubApi| provides
 URIs for accessing information stored by GitHub. Since GitHub supports many
-open source projects, their API provides a URI for structured data about
-open source software licenses. The example below builds an
+open-source projects, their API provides a URI for structured data about
+open-source software licenses. The example below builds an
 |HttpRequest| to |get_a_license|_ (in this case, the MIT license) using the
 |GitHubApi|. According to GitHub's API documentation, they recommend setting the
 "Accept" header when building a request -- headers are one way to provide an HTTP server with more
@@ -280,7 +280,7 @@ constant:
 Once built, an |HttpClient| object's |HttpClient_send|_ method can be called
 to send an |HttpRequest|_; when doing so, an |HttpResponse_BodyHandler|_ must
 also be supplied so that the |HttpClient| object knows how to construct
-the |HttpResponse|_ object is creates for the response message. The
+the |HttpResponse|_ object it creates for the response message. The
 |HttpResponse_BodyHandlers|_ class provides some static methods to create
 create commonly used |HttpResponse_BodyHandler| objects:
 
@@ -321,12 +321,12 @@ Here are some typical examples:
 Information  Method            Description                   Note
 ===========  ================  ============================  ==================================
 body         ``body()``        The content of the response.  The return type of ``body()``
-                                                             is determined by the the
+                                                             is determined by the
                                                              |HttpResponse_BodyHandler|_ that
                                                              was used to |HttpClient_send|_
                                                              the request.
 status code  ``statusCode()``  The "status code" integer     Usually ``200`` is what you want.
-                               that indicates whether the    A list of more status code can be
+                               that indicates whether the    A list of more status codes can be
                                request was successful.       found |http_status_here|_.
 ===========  ================  ============================  ==================================
 
