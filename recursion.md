@@ -1,6 +1,6 @@
 # CSCI 1302 Recursion Tutorial
 
-![Approved for: Fall 2023](https://img.shields.io/badge/Approved%20for-Fall%202023-green)
+![Approved for: Spring 2024](https://img.shields.io/badge/Approved%20for-Spring%202024-blue)
 
 ## Introduction
 
@@ -43,14 +43,14 @@ following the definition one step at a time until we reach the base case.
 1. If we look at `88, 42, 37`, we see that it does not correspond to the base case. 
    Therefore, we must verify that it matches the recursive case.
    We see that it starts with a number and a comma. 
-   However, in order to show that this is a `LIST`, we need to know if `42, 37` is a `LIST`. 
+   However, to show that this is a `LIST`, we need to know if `42, 37` is a `LIST`. 
    Don't jump ahead! We are limited to the rules given in our recursive definition.
    
-1. If we look at`42, 37`, we see that is also does not correspond to the base case. 
+1. If we look at '42, 37`, we see that it also does not correspond to the base case. 
    It is a number, `42`, followed by a comma followed by `37`.
-   In order to verify `42, 37` is a `LIST`, we need to verify that `37` is a `LIST`.
+   To verify `42, 37` is a `LIST`, we need to verify that `37` is a `LIST`.
    
-1. If we look at `37`, we see that is corresponds to our base!
+1. If we look at `37`, we see that it corresponds to our base!
    Therefore, fits the recursive definition of a `LIST`.
    
 1. Since `37` is a `LIST`, we can also say that `42, 37` is a `LIST`. 
@@ -125,14 +125,14 @@ too many (unreturned) method calls, you get a `StackOverflowError`.
 
 **ASIDE:** You may have noticed that `StackOverflowError` is reported as an exception but it does not have
 `Exception` in its name. Indeed, it is reported the same as exceptions because it is a sub-class
-of `java.lang.Throwable`, however, it is NOT a sub-class of `java.lang.Exception`. Instead it is
+of `java.lang.Throwable`, however, it is NOT a sub-class of `java.lang.Exception`. Instead, it is
 a sub-class of `java.lang.Error`, a class whose children comprise what the Java Virtual Machine
 considers to be errors that are non-recoverable during runtime.
 
 ## Problems and Sub-problems
 
 As you can probably imagine, we generally want to avoid infinite recursion.  That's why 
-make sure our recursive algorithms make progress toward the base case. In order to do this, we typically 
+make sure our recursive algorithms make progress toward the base case. To do this, we typically 
 want our recursive call to work on a smaller version of the original problem -- eventually reaching the
 base case. A few general definitions:
 	
@@ -147,7 +147,7 @@ With respect to recursion:
 ## Recursive Countdown
 
 If asked to write a static method to countdown from a specified value to zero, you would
-likely write a for-loop and create a method that looks something like:
+likely write a for-loop and create a method that looks something like this:
 
    ```java
    public static void countFrom(int value) {
@@ -267,7 +267,7 @@ Here is a similar recursion tree for `countFrom(3)`:
 
 The recursion tree may give you the impression that all sub-problems are being evaluated
 concurrently. Without special code to facilitate this (e.g., using threads), these method
-calls occur only one at a time. To better illustrate this, here is a depiction how
+calls occur only one at a time. To better illustrate this, here is a depiction of how
 the _call stack_ changes as the recursive method calls approach and reach the base case
 (for an explanation of the call stack, please see the [On the Call Stack](#aside-on-the-call-stack) aside):
 
@@ -323,17 +323,17 @@ as depicted below:
 ### Aside: On the Call Stack
 
 You've seen a call stack before! When your Java programs crash from an exception
-or error, the output produces a _stack trace_. Each line in the stack trace represents a each method
-call that was made (exluding methods that have already returned), starting from `main` up to the 
+or error, the output produces a _stack trace_. Each line in the stack trace represents a method
+call that was made (excluding methods that have already returned), starting from `main` up to the 
 method that whose execution caused the crash. 
 
-In our depiction of the call stack, each boxed area called a _stack frame_ 
+In our depiction of the call stack, each boxed area is called a _stack frame_ 
 and represents a specific method call, including its local variables. You should think of this
 as the scratch space for that specific invocation of the method. The frames are usually
 depicted in a downward-moving stack as that is how they are generally stored in 
 computer memory. If a method calls another method, then the frame for that other method
-is pushed / added to the bottom end of this stack. When the other method returns, its frame 
-is popped / removed from the stack. Therefore, the frame at the end always represents the
+is pushed/added to the bottom end of this stack. When the other method returns, its frame 
+is popped/removed from the stack. Therefore, the frame at the end always represents the
 specific method where code is being executed at any given moment in time. 
 Of course, this assumes single-threaded execution. In a multi-threaded application, there is usually
 one call stack per thread. In our recursion examples, we do not explicitly create new threads
@@ -426,8 +426,8 @@ and reach the base case for `factorial(3)`:
                                                                         |------------------|
 ```
 
-As the recusive method calls return back to their calling methods, we begin to see the program 
-perform the multiplications in order to produce the return values:
+As the recursive method calls return back to their calling methods, we begin to see the program 
+perform the multiplications to produce the return values:
 
 ```
  immediately             immediately             immediately             immediately
@@ -449,7 +449,7 @@ perform the multiplications in order to produce the return values:
 | return 1 * 1 = 1 |
 |------------------|
 ```
-After all of our recursive calls complete, the value 6 is what is ultimately returned to the main method.
+After all of our recursive calls are complete, the value 6 is what is ultimately returned to the main method.
 
 Congratulations! You now have a basic understanding of recursion!
 
