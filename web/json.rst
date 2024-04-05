@@ -27,7 +27,7 @@ constructed by hand using Java code:
        + "  \"age\": \"19\",  " + nl
        + "  \"classes\": [    " + nl
        + "    \"CSCI 1302\",  " + nl
-       + "    \"CSCI 1730\"   " + nl
+       + "    \"CSCI 1730\",   " + nl
        + "    \"CSCI 2610\"   " + nl
        + "  ]                 " + nl
        + "}                   ";
