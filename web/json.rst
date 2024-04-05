@@ -28,6 +28,7 @@ constructed by hand using Java code:
        + "  \"classes\": [    " + nl
        + "    \"CSCI 1302\",  " + nl
        + "    \"CSCI 1730\"   " + nl
+       + "    \"CSCI 2610\"   " + nl
        + "  ]                 " + nl
        + "}                   ";
    System.out.println(jsonString);
@@ -54,7 +55,7 @@ In a JSON-formatted string,
 * ``[]`` is used to denote an array.
 
 With that in mind, let's consider a Java class that might
-organize its instance data in a similar to way to the
+organize its instance data in a similar way to the
 object described by the JSON-formatted string from earlier:
 
 .. code-block:: java
