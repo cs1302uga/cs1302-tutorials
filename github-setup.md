@@ -1,6 +1,6 @@
 # Setting up your own GitHub Account
 
-![Approved for: Fall 2023](https://img.shields.io/badge/Approved%20for-Fall%202023-green)
+![Approved for: Spring 2024](https://img.shields.io/badge/Approved%20for-Spring%202024-blue)
 
 In this tutorial, we will walk you through creating your own GitHub account, creating a private repository 
 (so your code won't be publicly visible on the web), and cloning and pushing content to your private, 
@@ -17,17 +17,17 @@ To set up your account:
 1. Go to the Education Pack "join page" on GitHub: https://education.github.com/pack/join
 1. Click on "Get your Pack".
 1. Click on “Get Student Benefits” and Sign In with your Account, if needed.
-1. Fill out the form and submit for review
-1. Wait on email confirmation from GitHub. Hopefully, this will take less than a day.
+1. Fill out the form and submit it for review
+1. Wait for email confirmation from GitHub. Hopefully, this will take less than a day.
 
 ## Setting up SSH Keys
 
 Before you can push and pull to private repositories hosted on GitHub from your Odin account, you
 will need to create an SSH public/private key pair on Odin. This will allow you to give a public
 key to GitHub (think of it as a padlock) that GitHub can use to authenticate your requests in
-addition to or in lieu of your GitHub username and password. It's sufficient to think of this 
+addition to or instead of your GitHub username and password. It's sufficient to think of this 
 key-based authentication process as you unlocking the public key (i.e., the padlock) using your
-private key -- the Git program will do this with GitHub so long as the key pair is setup correctly. 
+private key -- the Git program will do this with GitHub so long as the key pair is set up correctly. 
 
 1. Login to Odin.
 
@@ -45,16 +45,16 @@ private key -- the Git program will do this with GitHub so long as the key pair 
    $ ssh-keygen -t ed25519 -C "your_email@uga.edu"
    ```
   
-   This creates a public / private key pair in the default location: `~/.ssh/`.
+   This creates a public/private key pair in the default location: `~/.ssh/`.
   
 1. View your public key using `cat` and copy its output to your clipboard (usually by selecting
-   the text in your terminal, then right clicking on the selection and clicking "Copy"):
+   the text in your terminal, then right-clicking on the selection and clicking "Copy"):
 
    ```
    $ cat ~/.ssh/id_ed25519.pub
    ```
    
-1. Login to [GitHub](https://www.github.com/).
+1. log in to [GitHub](https://www.github.com/).
 
 1. In the upper-right corner of any page, click your profile photo, then click **Settings**.
 
@@ -112,7 +112,7 @@ private key -- the Git program will do this with GitHub so long as the key pair 
 
 ## Creating a Repository
 
-1. Login to [GitHub](https://www.github.com/)
+1. Log in to [GitHub](https://www.github.com/)
 1. Click on "New" under the repositories section on the left-hand side of the page.
 1. You should see a screen similar to the image below. Type `cs1302-testRepo`
    as the name of your repository, click the "private" radio button and then press
@@ -121,9 +121,9 @@ private key -- the Git program will do this with GitHub so long as the key pair 
 ![Create Repo](https://github.com/cs1302uga/cs1302-tutorials/raw/master/img/create_repo.png)
 
 1. Once you've clicked the "Create Repository" button, your repository is created
-   but still needs to be setup. GitHub should be showing a website which gives you
-   a few options on how to setup your repository. Instead of following those instructions
-   directly, we will setup our repository from Odin using the following commands:
+   but still needs to be set up. GitHub should be showing a website that gives you
+   a few options on how to set up your repository. Instead of following those instructions
+   directly, we will set up our repository from Odin using the following commands:
    
    1. Clone your repository on Odin using `git clone git@github.com:username/cs1302-testRepo.git`
       replacing `username` with your GitHub username. You may get a message saying
@@ -163,7 +163,7 @@ private key -- the Git program will do this with GitHub so long as the key pair 
       ----
       
       **NOTE:** The `-u` or `--set-upstream` option sets the *upstream* information 
-      for your the current branch in your local instance of the repository. If 
+      for your current branch in your local instance of the repository. If 
       `git push -u origin main` is successful, then argument-less `git pull`, `git push`, 
       and other commands will be enabled for your local repository. That is, if a remote repository name 
       and branch (or *refspec*) are expected but not provided, then many commands 
@@ -180,12 +180,12 @@ private key -- the Git program will do this with GitHub so long as the key pair 
       that your local repository is empty (i.e., its commit log is empty) --
       you can verify this using `git log`.
       
-      * If you're following this turorial for the first time and
+      * If you're following this tutorial for the first time and
         your commit log is empty, then that means you skipped one or more of 
         the previous three steps. Attempt to repeat the steps that you're missing
         before executing `git push -u origin main` again.
       * If you're replicating the steps in this tutorial for a new repository,
-        then simply stage and commit some files to the respository 
+        then simply stage and commit some files to the repository 
         before executing `git push -u origin main` again.
       
       ----
