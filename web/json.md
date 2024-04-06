@@ -115,8 +115,9 @@ $ ./compile.sh cs1302.web/cs1302.web.Example4
 ## Adding Gson to a Maven Project
 
 To use Gson in a Maven project, Gson must be added as a dependency in
-the project's `pom.xml` file — refer to the Importing Dependencies\_
-page in Maven's documentation for more information:
+the project's `pom.xml` file — refer to the
+[Dependency Management](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#dependency-management)
+section in Maven's documentation for more information:
 
 ```xml
 <dependency>
