@@ -122,9 +122,12 @@ page in Maven's documentation for more information:
 <dependency>
   <groupId>com.google.code.gson</groupId>
   <artifactId>gson</artifactId>
-  <version>2.9.0</version>
+  <version>2.10.1</version>
 </dependency>
 ```
+
+The latest version available is
+![Maven Central Version](https://img.shields.io/maven-central/v/com.google.code.gson/gson).
 
 Once added as a dependency, Gson will automatically be available on the
 classpath. For example, you could include the following near the top a
