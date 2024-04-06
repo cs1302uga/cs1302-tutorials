@@ -101,9 +101,9 @@ To download these examples, follow the instructions
 In addition to the examples listed in the HTTP reading, the following
 examples are specific to this JSON reading:
 
-| Name                               | Description                                                                                                 |
-|------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| `cs1302.web/cs1302.web.Example4`\_ | Create a JSON-formatted string by hand, then parse it into a Java object using using Google's Gson library. |
+| Name                             | Description                                                                                                 |
+|----------------------------------|-------------------------------------------------------------------------------------------------------------|
+| `cs1302.web/cs1302.web.Example4` | Create a JSON-formatted string by hand, then parse it into a Java object using using Google's Gson library. |
 
 To run an example, use the provided `compile.sh` script along with the
 name of the example:
