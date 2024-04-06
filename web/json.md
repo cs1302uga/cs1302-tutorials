@@ -126,7 +126,8 @@ page in Maven's documentation for more information:
 </dependency>
 ```
 
-The latest version available is
+The latest version of Gson available on Maven Central is:
+
 ![Maven Central Version](https://img.shields.io/maven-central/v/com.google.code.gson/gson).
 
 Once added as a dependency, Gson will automatically be available on the
