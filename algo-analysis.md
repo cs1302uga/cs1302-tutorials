@@ -1,6 +1,6 @@
 # CSCI 1302 Algorithm Analysis Tutorial
 
-![Approved for: Fall 2023](https://img.shields.io/badge/Approved%20for-Fall%202023-green)
+![Approved for: Spring 2024](https://img.shields.io/badge/Approved%20for-Spring%202024-blue)
 
 ## Introduction
 
@@ -63,13 +63,13 @@ These are the operations that we're intested in.
 Sometimes, we might focus on other operations. The key processing step ultimately
 depends on the problem in question. In general, this set usually comprises of operations 
 that are expensive (i.e., take a long time or require a lot of memory) as they will 
-dominate less expensive operations in their impact towards the overall complexity of 
+dominate less expensive operations in their impact on the overall complexity of 
 the algorithm. 
 
 ## Time Complexity Analysis
 
 First, let's focus on **time complexity analysis**. Suppose you have a set of
-algorithms that all solve the same problem. In order to analyze each of them, 
+algorithms that all solve the same problem. To analyze each of them, 
 we first need to do the following:
     
 1. Define the problem size (`n`); then
@@ -80,15 +80,14 @@ Think of this as identifying the units. We need to define the problem size and
 set of key processing steps the same way for all of the algorithms we wish to
 compare based on their time complexities so that it's a fair comparison. 
 
-In order to actually determine these time complexities, we need to do the
-following: 
+To  determine these time complexities, we need to do the following: 
     
 3. Derive a **timing function**, `T(n)`, that reflects the number of key processing
    steps in terms of the problem size.
   
 4. Classify `T(n)` into a **complexity class** based on the formula for the function.
 
-That's it! Those four steps are what you need to do in order to perform a time complexity
+That's it! Those four steps are what you need to do to perform a time complexity
 analysis for an algorithm. The trickiest part is usually the third step, which is what
 most of this tutorial will focus on. We will have a separate tutorial that focuses 
 exclusively on the fourth step.
@@ -146,8 +145,8 @@ exclusively on the fourth step.
      After multiple executions, we think we see a pattern: `T(n) = n`. Indeed, if we
      check this formula for each row in the table we made, then we'll see that this
      formula works! However, this strategy of finding a pattern is often tedious and
-     error prone as the algorithms get more complicated. Instead, we prefer to use
-     a more systematic approach that leads to less errors and gives us insight into
+     error-prone as the algorithms get more complicated. Instead, we prefer to use
+     a more systematic approach that leads to fewer errors and gives us insight into
      the structure of the algorithm with respect to the key processing steps.
      
      **NOTE:** That being said, creating the table is a good way to verify your 
@@ -413,9 +412,9 @@ exclusively on the fourth step.
      
      This was the tricky part. The inner for-loop may have as many as
      `n - 1` iterations, however, this number changes based on what iteration
-     of the outer-most loop the code is in. We don't want to mark the loop
-     as having the minumum number since that would undercount, however, it's
-     okay in this scenarion to mark it with the maximum number (technically
+     of the outermost loop the code is in. We don't want to mark the loop
+     as having the minimum number since that would undercount, however, it's
+     okay in this scenario to mark it with the maximum number (technically
      an overcount) so long as we indicate it's `<` that number. Just as before, 
      you can simply multiply across and add up the results, this time accounting
      for the presence of `<` instead of an `=`:
@@ -677,7 +676,7 @@ exclusively on the fourth step.
      We did make a pretty big assumption that `n` is a power of `3`. 
      If `n` is not a power of `3`, then the base-3 logarithm will
      not be in an integer -- this poses a problem as the count for the number of iterations
-     must be an integer. We could get fancy as use the `ceil` (ceiling function) to
+     must be an integer. We could get fancy and use the `ceil` (ceiling function) to
      get an exact answer:
      
      ```
@@ -696,7 +695,7 @@ exclusively on the fourth step.
      This is okay since `ceil(log3(n)) ≤ log3(n) + 1` for all reasonable `n` values. In a
      Discrete Mathematics course, you would need to be more rigorous about this. For now,
      we'll take it as a reasonable estimate. Now that we have a value for `k`, we
-     can subsitute it into our derivation: 
+     can substitute it into our derivation: 
      
      ```java    
      void printS(String s) {
@@ -708,7 +707,7 @@ exclusively on the fourth step.
      
      Therefore, `T(n) ≤ log3(n) + 1` for this particular `printS` method! Taking
      advantage of the way the loop iterates differently (i.e., multiply/dividing
-     vs. adding/subtracting) leads us to a much better estimate for the number
+     vs. adding/subtracting) leads us to a much better estimate of the number
      of key processing steps with respect to the problem size.
      
 ## Space Complexity Analysis
@@ -722,11 +721,10 @@ we first need to do the following:
 2. Define the unit of measurement.
 
 We need to define the problem size and the unit the same way for all of the 
-algorithms we wish to compare based on their spave complexities so that it's a 
+algorithms we wish to compare based on their space complexities so that it's a 
 fair comparison. 
 
-In order to actually determine these space complexities, we need to do the
-following: 
+To determine these space complexities, we need to do the following: 
     
 3. Derive a **spacing function**, `S(n)`, that reflects the number of units required
    to solve the problem in terms of the problem size.
