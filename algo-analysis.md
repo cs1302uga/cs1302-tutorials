@@ -817,7 +817,7 @@ exclusively on the fourth step.
      ```
      
      This starting value is derived from the fact that a `char` in Java is
-     2 bytes. Additionally, each of the local variables for the method take
+     2 bytes. Additionally, each of the local variables for the method takes
      up a spot in the method's call stack frame:
      
      | Variable | Description                       |
@@ -830,7 +830,7 @@ exclusively on the fourth step.
      S(n) = 2 * n + 8 + ?
      ```     
      
-     However, we're not done! In order to complete it's work, the recursive
+     However, we're not done! In order to complete its work, the recursive
      `printR` method calls itself on a slightly smaller `printS` method:
      
      ```
