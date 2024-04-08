@@ -237,36 +237,10 @@ what to do based on the information contained in that response message.
 This information can be accessed by calling methods on the associated
 `HttpResponse<T>`\_ object. Here are some typical examples:
 
-<table>
-<thead>
-<tr class="header">
-<th><code>HttpResponse&lt;T&gt;</code>_</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Information Method</td>
-<td>Description Note</td>
-</tr>
-<tr class="even">
-<td>=========== ================</td>
-<td>============================ ==================================</td>
-</tr>
-<tr class="odd">
-<td><p>body <code>body()</code></p></td>
-<td><dl>
-<dt>The content of the response. The return type of <code>body()</code></dt>
-<dd><p>is determined by the the <code>HttpResponse.BodyHandler&lt;T&gt;</code>_ that was used to <code>send</code>_ the request.</p>
-</dd>
-</dl></td>
-</tr>
-<tr class="even">
-<td><p>status code <code>statusCode()</code></p></td>
-<td><p>The "status code" integer Usually <code>200</code> is what you want. that indicates whether the A list of more status code can be request was successful. found here_.</p></td>
-</tr>
-</tbody>
-</table>
+| `HttpResponse<T>` Method | Details & Notes |
+|-|-|
+| `statusCode()` | The HTTP "status code" integer indicates whether the response should be considered successful or not. A value of `200` means "OK," and is typically what you want. Other values either indicate problems (e.g., `404` means the remote server was unable to find what we requested) or that further steps need to be taken (e.e., `301` means "Permanently Moved" the requested content has moved to some new location). In this course, we will consider any status code that is not `200` to be problematic. A list that described more HTTP status codes can be found [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status). |
+| `body()` | The body of an HTTP request is the content of the response. The return type of `body()` is is determined by the `<T>` in `HttpResponse<T>` and processed internally using the  `HttpResponse.BodyHandler<T>` that was used to `send` the request. It's possible for the body of an HTTP response with a problematic status code to still include content; however, in this course, we will ignore the response body in such cases. |
 
 Here is a generic method that you can use to throw an exception if the
 status code of a supplied response is not `200` (OK) — you can see it
