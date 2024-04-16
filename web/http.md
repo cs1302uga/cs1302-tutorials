@@ -222,7 +222,7 @@ response content) as a string.
 HttpRequest request = HttpRequest.newBuilder()
     .uri(URI.create("https://www.gutenberg.org/files/1661/1661-0.txt"))
     .build();
-HttpResponse<String> response = HTTP_CLIENT.send(response. BodyHandlers.ofString());
+HttpResponse<String> response = HTTP_CLIENT.send(request, BodyHandlers.ofString());
 String body = response.body();
 ```
 
