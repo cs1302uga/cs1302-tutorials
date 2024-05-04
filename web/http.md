@@ -277,10 +277,10 @@ Here is a list of the examples:
 
 | Name                             | Description                                                                                                                       |
 |----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| `cs1302.web/cs1302.web.Example0` | Get text content hosted by the Project Gutenberg website.                                                                         |
-| `cs1302.web/cs1302.web.Example1` | Get image data to construct a JavaFX `Image` object.                                                                              |
-| `cs1302.web/cs1302.web.Example2` | Get license data using the GitHub API, then parse the JSON-formatted string in the response body using Google's Gson library.[1]  |
-| `cs1302.web/cs1302.web.Example3` | Get results from the iTunes Search API, then parse the JSON-formatted string in the response body using Google's Gson library.[2] |
+| [`cs1302.web/cs1302.web.Example0`](src/main/java/cs1302/web/Example0.java) | Get text content hosted by the Project Gutenberg website.                                                                         |
+| [`cs1302.web/cs1302.web.Example1`](src/main/java/cs1302/web/Example1.java) | Get image data to construct a JavaFX `Image` object.                                                                              |
+| [`cs1302.web/cs1302.web.Example2`](src/main/java/cs1302/web/Example2.java) | Get license data using the GitHub API, then parse the JSON-formatted string in the response body using Google's Gson library.[1]  |
+| [`cs1302.web/cs1302.web.Example3`](src/main/java/cs1302/web/Example3.java) | Get results from the iTunes Search API, then parse the JSON-formatted string in the response body using Google's Gson library.[2] |
 
 To run an example, use the provided `compile.sh` script along with the
 name of the example:
