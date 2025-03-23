@@ -18,7 +18,7 @@ public class ExampleDriver {
             System.err.println("The exception listed below occurred. If it pertains to DISPLAY,");
             System.err.println("then please logout, then log back in passing -XY to ssh.");
             System.err.println(e);
-            System.err.println(e.printStackTrace());
+            e.printStackTrace();
             System.exit(1);
         } // try
     } // main
