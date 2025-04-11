@@ -1,24 +1,24 @@
 # Setting up your own GitHub Account
 
-![Approved for: Fall 2024](https://img.shields.io/badge/Approved%20for-Fall%202024-green)
+![Approved for: Spring 2025](https://img.shields.io/badge/Approved%20for-Spring%202025-blue)
 
 In this tutorial, we will walk you through creating your own GitHub account, creating a private repository 
 (so your code won't be publicly visible on the web), and cloning and pushing content to your private, 
 online repository.
 
-**Note**: You should never create a public repository for work that you are doing for a class.
+**Note**: You should never create a public repository for work you are doing for a class.
 
 ## Setting up an Account
 
 As students, you receive **free access** to [GitHub Pro](https://github.com/pricing) while you are a student.
 To set up your account:
 
-1. Make a normal GitHub account using your `@uga.edu` email address here: https://github.com/join 
+1. Make a regular GitHub account using your `@uga.edu` email address here: https://github.com/join 
 1. Go to the Education Pack "join page" on GitHub: https://education.github.com/pack/join
 1. Click on "Get your Pack".
-1. Click on “Get Student Benefits” and Sign In with your Account, if needed.
+1. Click “Get Student Benefits” and Sign In with your Account if needed.
 1. Fill out the form and submit it for review
-1. Wait for email confirmation from GitHub. Hopefully, this will take less than a day.
+1. Wait for the email confirmation from GitHub. Hopefully, this will take less than a day.
 
 ## Setting up SSH Keys
 
@@ -29,7 +29,7 @@ addition to or instead of your GitHub username and password. It's sufficient to 
 key-based authentication process as you unlocking the public key (i.e., the padlock) using your
 private key -- the Git program will do this with GitHub so long as the key pair is set up correctly. 
 
-1. Login to Odin.
+1. Log in to Odin.
 
 1. **Before you type the following command,** please note that it will prompt you to answer
    questions. 
@@ -54,7 +54,7 @@ private key -- the Git program will do this with GitHub so long as the key pair 
    $ cat ~/.ssh/id_ed25519.pub
    ```
    
-1. log in to [GitHub](https://www.github.com/).
+1. Log in to [GitHub](https://www.github.com/).
 
 1. In the upper-right corner of any page, click your profile photo, then click **Settings**.
 
@@ -73,7 +73,7 @@ private key -- the Git program will do this with GitHub so long as the key pair 
 
 1. If prompted, confirm your GitHub password.
 
-1. On Odin, verify that your key pair is setup correctly by trying to SSH to
+1. On Odin, verify that your key pair is set up correctly by trying to SSH to
    `git@github.com` (do not change the username):
    
    ```
@@ -126,7 +126,7 @@ private key -- the Git program will do this with GitHub so long as the key pair 
    directly, we will set up our repository from Odin using the following commands:
    
    1. Clone your repository on Odin using `git clone git@github.com:username/cs1302-testRepo.git`
-      replacing `username` with your GitHub username. You may get a message saying
+      and replace `username` with your GitHub username. You may get a message saying
       you've cloned an empty repository. That's okay! You should now have a folder
       called `cs1302-testRepo`.
    1. Change into the `cs1302-testRepo` directory.
@@ -144,7 +144,7 @@ private key -- the Git program will do this with GitHub so long as the key pair 
       ----
       
       **NOTE:** The `-M` option moves/renames a branch and the corresponding reflog. 
-      Historically, `master` is the name that many versions of `git` use for the 
+      Historically, `master` is the name many versions of `git` use for the 
       first branch that is automatically created via `git init`. In 2020, the Git development
       community and its partners reflected on the fact that the word "master" has negative 
       connotations for many groups of people and started encouraging the use of more inclusive 
@@ -191,7 +191,7 @@ private key -- the Git program will do this with GitHub so long as the key pair 
       ----
       
    1. Refresh your GitHub page to see the changes to the repository. Your repository should
-      look similar to the below image. Note the number of commits (1 so far) to this
+      look similar to the image below. Note the number of commits (1 so far) to this
       repository, the latest commit time, and the contents of the `README` file are
       all shown on `GitHub`.
       
